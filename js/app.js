@@ -85,9 +85,61 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
   });
 }
 
-// 설치 프롬프트 보관
+// 설치 (PWA)
+// Chrome이 설치 가능하다고 판단하면 beforeinstallprompt 가 옵니다. preventDefault 를 부르지 않아
+// Chrome 자체 배너도 그대로 뜨고, 추가로 앱 하단에 우리 설치 바를 띄워 어디서든 설치할 수 있게 합니다.
+const isStandalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+const isAndroid = /Android/i.test(navigator.userAgent);
 window.deferredInstall = null;
-window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); window.deferredInstall = e; });
+const $installbar = document.getElementById('installbar');
+const $installMsg = document.getElementById('installbar-msg');
+const $installBtn = document.getElementById('installbar-btn');
+
+function showInstallBar(msg, btnText) {
+  if (!$installbar || isStandalone() || sessionStorage.getItem('installbar-dismissed')) return;
+  $installMsg.textContent = msg;
+  $installBtn.textContent = btnText;
+  $installbar.classList.remove('hidden');
+  document.body.classList.add('has-installbar');
+}
+function hideInstallBar() {
+  $installbar?.classList.add('hidden');
+  document.body.classList.remove('has-installbar');
+}
+
+export async function promptInstall() {
+  const p = window.deferredInstall;
+  if (p) {
+    p.prompt();
+    const { outcome } = await p.userChoice;
+    if (outcome === 'accepted') window.deferredInstall = null;
+    return outcome;
+  }
+  const { toast } = await import('./util.js');
+  if (isStandalone()) toast('이미 앱으로 실행 중이에요');
+  else if (isIOS) toast('Safari 하단 공유 버튼 → "홈 화면에 추가"를 누르세요', 3500);
+  else toast('Chrome 오른쪽 위 ⋮ 메뉴 → "홈 화면에 추가" 또는 "앱 설치"를 누르세요', 3500);
+  return 'unavailable';
+}
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  window.deferredInstall = e;
+  showInstallBar('홈 화면에 앱으로 설치하면 전체 화면·오프라인으로 쓸 수 있어요.', '설치');
+});
+window.addEventListener('appinstalled', () => {
+  window.deferredInstall = null;
+  hideInstallBar();
+  import('./util.js').then(({ toast }) => toast('설치 완료! 홈 화면의 OPIc Coach 아이콘으로 실행하세요.', 4000));
+});
+$installBtn?.addEventListener('click', promptInstall);
+document.getElementById('installbar-close')?.addEventListener('click', () => { sessionStorage.setItem('installbar-dismissed', '1'); hideInstallBar(); });
+// 이벤트가 안 오는 브라우저(삼성 인터넷, 앱 내 브라우저, iOS Safari)에는 안내만 띄웁니다.
+setTimeout(() => {
+  if (window.deferredInstall || isStandalone() || location.protocol === 'file:') return;
+  if (isIOS) showInstallBar('Safari 공유 버튼 → "홈 화면에 추가"로 설치할 수 있어요.', '방법');
+  else if (isAndroid) showInstallBar('Chrome ⋮ 메뉴 → "홈 화면에 추가"로 설치할 수 있어요.', '방법');
+}, 4000);
 
 // 테마
 const theme = store.settings.theme;
