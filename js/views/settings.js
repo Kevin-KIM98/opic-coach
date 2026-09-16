@@ -16,8 +16,9 @@ export async function render(root) {
       <div class="card stack">
         <div class="field"><label>이름 (선택)</label><input type="text" id="name" value="${s.name || ''}" placeholder="홈 화면 인사에 사용"></div>
         <div class="field"><label>목표 등급</label><div class="seg" id="target">${raw(['IM3', 'IH', 'AL'].map(l => `<button data-v="${l}" class="${s.target === l ? 'active' : ''}">${l}</button>`).join(''))}</div>
-          <div class="xs muted">IM3 ≈ 토익스피킹 6레벨(130~150) · IH ≈ 7레벨 · AL ≈ 8레벨</div></div>
+          <div class="xs muted">IM3 = 일관된 문장 + 연결어 + 과거시제 · IH = 디테일·비교 · AL = 풍부한 어휘와 긴 발화</div></div>
         <div class="field"><label>시험일</label><input type="date" id="exam" value="${s.examDate || ''}"><div class="xs muted" id="examhint">${examHint(s)}</div></div>
+        <div class="xs muted">비워 두면 홈에서 <b>가장 빠른 응시 가능일</b>(일요일·공휴일 제외)로 D-day를 셉니다. 등록한 시험일이 지나도 자동으로 다음 날짜로 넘어갑니다.</div>
       </div>
 
       <div class="section-title">학습 과정</div>
@@ -93,7 +94,7 @@ export async function render(root) {
 }
 
 function examHint(s) {
-  if (!s.examDate) return '시험일을 등록하면 홈에 D-day가 표시됩니다.';
+  if (!s.examDate) return '미등록 — 가장 빠른 응시 가능일을 자동으로 사용합니다.';
   const d = daysBetween(todayKey(), s.examDate);
-  return d < 0 ? '시험일이 지났습니다. 새 일정을 등록하세요.' : `D-${d} · 추천 과정: ${d <= 35 ? '4주 집중' : d <= 63 ? '8주 표준' : '12주 여유'}`;
+  return d < 0 ? '시험일이 지나 자동으로 다음 응시 가능일을 사용 중입니다.' : `D-${d} · 추천 과정: ${d <= 35 ? '4주 집중' : d <= 63 ? '8주 표준' : '12주 여유'}`;
 }

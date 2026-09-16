@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 TYPES = {"describe", "routine", "experience", "comparison", "opinion", "roleplay-ask", "roleplay-solve",
-         "roleplay-experience", "tos-qa", "tos-opinion"}
+         "roleplay-experience"}
 LEVELS = {"IM", "IH", "AL"}
 errors = []
 
@@ -59,9 +59,43 @@ def check_topic(path, t):
         for lv in ("IM3", "IH", "AL"):
             if not ans.get(lv):
                 err(f"{rel}: questions[{i}] answers.{lv} 누락")
-    for i, r in enumerate(t.get("readAloud", [])):
-        if not r.get("id") or not r.get("text"):
-            err(f"{rel}: readAloud[{i}] id/text 누락")
+
+
+def check_focus(index):
+    """집중 학습 구성이 가리키는 주제·패턴·발음 id 가 실제로 존재하는지."""
+    focus = load(DATA / "focus.json")
+    if not focus or not index:
+        return
+    topic_ids = {e["id"] for e in index.get("topics", [])}
+    pats = load(DATA / "patterns.json") or {}
+    prons = load(DATA / "pronunciation.json") or {}
+    pattern_ids = {g.get("id") for g in pats.get("groups", [])}
+    pron_ids = {s.get("id") for s in prons.get("sets", [])}
+    targets = {t.get("level") for t in focus.get("tracks", [])}
+    for want in ("IM3", "IH", "AL"):
+        if want not in targets:
+            err(f"data/focus.json: '{want}' 코스가 없습니다 (설정의 목표 등급과 짝이 맞아야 합니다)")
+    for g in focus.get("survey", []):
+        for pick in g.get("pick", []):
+            tid = pick.get("topic")
+            if tid and tid not in topic_ids:
+                err(f"data/focus.json: survey '{g.get('id')}' 의 topic '{tid}' 가 없습니다")
+    for tid in focus.get("always", {}).get("topics", []):
+        if tid not in topic_ids:
+            err(f"data/focus.json: always.topics 의 '{tid}' 가 없습니다")
+    for tr in focus.get("tracks", []):
+        lv = tr.get("level")
+        if not tr.get("checklist"):
+            err(f"data/focus.json: '{lv}' 코스에 checklist 가 없습니다")
+        for tid in tr.get("topics", []):
+            if tid not in topic_ids:
+                err(f"data/focus.json: '{lv}' 코스의 topic '{tid}' 가 없습니다")
+        for pid in tr.get("patterns", []):
+            if pid not in pattern_ids:
+                err(f"data/focus.json: '{lv}' 코스의 pattern '{pid}' 가 없습니다")
+        for sid in tr.get("pron", []):
+            if sid not in pron_ids:
+                err(f"data/focus.json: '{lv}' 코스의 pron '{sid}' 가 없습니다")
 
 
 def main():
@@ -79,6 +113,7 @@ def main():
         for p in (DATA / "topics").glob("*.json"):
             if f"topics/{p.name}" not in listed:
                 err(f"{p.relative_to(ROOT)}: index.json 에 등록되지 않았습니다")
+    check_focus(index)
     for name in ("patterns.json", "pronunciation.json", "plans.json", "mock-sets.json"):
         d = load(DATA / name)
         if d is None:

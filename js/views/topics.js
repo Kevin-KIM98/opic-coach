@@ -11,6 +11,10 @@ export async function render(root, route) {
   root.innerHTML = html`
     <header class="topbar"><div class="title">주제별 학습</div><a class="icon-btn" href="#/settings">⚙️</a></header>
     <div class="chips">${raw(cats.map(([k, v]) => `<a class="chip ${k === cat ? 'active' : ''}" href="#/topics?cat=${k}">${v}</a>`).join(''))}</div>
+    <a class="card soft mt12 row between" href="#/focus">
+      <div class="grow"><div class="h3">⚡ 시간이 없다면</div>
+        <div class="xs muted mt8">목표 등급까지 필요한 주제만 골라 둔 집중 학습 + 서베이 추천 조합</div></div>
+      <span class="chev">›</span></a>
     <p class="small muted mt12">${idx.categories[cat]?.desc || '설문 주제는 OPIc 2~10번, 롤플레이 11~13번, 고난도 14~15번에 출제됩니다. 우선순위 순으로 정렬되어 있어요.'}</p>
     <div class="list mt12">
       ${raw(list.map(t => topicRow(t)).join(''))}

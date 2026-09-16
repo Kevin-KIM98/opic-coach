@@ -2,9 +2,9 @@ name: Validate content
 
 on:
   push:
-    paths: ["data/**", "tools/**", ".github/workflows/validate.yml"]
+    paths: ["data/**", "js/**", "tools/**", ".github/workflows/validate.yml"]
   pull_request:
-    paths: ["data/**", "tools/**"]
+    paths: ["data/**", "js/**", "tools/**"]
 
 jobs:
   validate:
@@ -14,5 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Validate data/*.json
         run: python tools/validate.py
+      - name: Test exam date logic
+        run: node tools/test-exam.mjs

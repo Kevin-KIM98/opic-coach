@@ -5,6 +5,7 @@ import { speak, stopSpeaking, isSpeaking } from '../speech.js';
 import { githubEditUrl } from '../config.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
+import { createAutoPlay, createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap } from '../autoplay.js';
 import { compareToText } from '../scoring.js';
 
 export async function render(root, route) {
@@ -24,17 +25,19 @@ export async function render(root, route) {
     <div id="tabbody" class="mt12"></div>`;
 
   const body = root.querySelector('#tabbody');
+  let player = null;
   const renderTab = (t) => {
     root.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === t));
+    player?.destroy(); player = null;
     stopSpeaking();
-    if (t === 'expr') renderExpr(body, topic);
+    if (t === 'expr') player = renderExpr(body, topic);
     else if (t === 'q') renderQuestions(body, topic, level, route.query);
-    else if (t === 'pron') renderPron(body, topic);
+    else if (t === 'pron') player = renderPron(body, topic);
     else renderGuide(body, topic);
   };
   root.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => renderTab(b.dataset.tab)));
   renderTab(tab);
-  return () => stopSpeaking();
+  return () => { player?.destroy(); stopSpeaking(); };
 }
 
 // ---------- 표현: 리스트 + 플래시카드 ----------
@@ -45,10 +48,20 @@ function renderExpr(body, topic) {
       <div class="small muted">${exprs.length}개 표현 · 🔊 탭하면 발음, 카드 모드로 암기</div>
       <button class="btn sm dark" data-flash>카드 모드</button>
     </div>
-    <div class="list" data-list>${raw(exprs.map((e, i) => exprRow(e, `${topic.id}#e${i}`)).join(''))}</div>`;
+    <div data-autoplay></div>
+    <div class="list mt12" data-list>${raw(exprs.map((e, i) => exprRow(e, `${topic.id}#e${i}`)).join(''))}</div>`;
 
   bindPlay(body);
-  body.querySelector('[data-flash]').addEventListener('click', () => flashcards(body, exprs.map((e, i) => ({ ...e, id: `${topic.id}#e${i}` })), () => renderExpr(body, topic)));
+  const list = body.querySelector('[data-list]');
+  const player = createAutoPlay(body.querySelector('[data-autoplay]'), list);
+  const handle = { stop: () => player.stop(), destroy: () => player.destroy() };
+  body.querySelector('[data-flash]').addEventListener('click', () => {
+    player.destroy();
+    // 카드 모드 플레이어로 교체해 탭 이동·화면 이탈 시 함께 멈추도록 한다
+    const fc = flashcards(body, exprs.map((e, i) => ({ ...e, id: `${topic.id}#e${i}` })), () => renderExpr(body, topic));
+    handle.stop = fc.stop; handle.destroy = fc.destroy;
+  });
+  return handle;
 }
 
 export function exprRow(e, id) {
@@ -72,6 +85,7 @@ export function bindPlay(scope) {
 
 export function flashcards(body, cards, onExit) {
   let i = 0, showKo = false;
+  const player = createSequencePlayer();   // 카드마다 반복 재생 + 화면 유지
   const due = new Set(store.dueExprs());
   // 복습 대상 우선, 그 다음 미학습, 마지막 학습완료
   cards = cards.slice().sort((a, b) => rank(a) - rank(b));
@@ -89,7 +103,9 @@ export function flashcards(body, cards, onExit) {
         ${c.note ? raw(`<div class="note ${showKo ? '' : 'hidden'}" data-ko>💡 ${c.note}</div>`) : ''}
         <div class="row mt8"><button class="play" data-say="${encodeURIComponent(c.en)}">🔊</button><button class="play" data-say="${encodeURIComponent(c.en)}" data-slow="1">🐢</button><button class="btn sm grow" data-reveal>${showKo ? '뜻 숨기기' : '뜻 보기'}</button></div>
       </div>
-      <p class="xs muted center mt12">듣고 → 소리 내어 3번 따라 말한 뒤 → 뜻을 보지 않고 말할 수 있으면 "알아요"</p>
+      <div class="row between mt8"><span class="xs muted">카드를 넘기면 자동으로 반복 재생돼요</span>
+        <span class="row" style="gap:6px"><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
+      <p class="xs muted center mt12">듣고 → 소리 내어 따라 말한 뒤 → 뜻을 보지 않고 말할 수 있으면 "알아요"</p>
       <div class="btn-row mt12"><button class="btn" data-rate="0">🙈 아직 몰라요</button><button class="btn teal" data-rate="1">✅ 알아요</button></div>
       <div class="btn-row mt8"><button class="btn ghost" data-prev>‹ 이전</button><button class="btn ghost" data-exit>목록으로</button><button class="btn ghost" data-next>다음 ›</button></div>`;
     bindPlay(body);
@@ -97,25 +113,27 @@ export function flashcards(body, cards, onExit) {
     body.querySelectorAll('[data-rate]').forEach(b => b.addEventListener('click', () => { store.rateExpr(c.id, b.dataset.rate === '1'); next(); }));
     body.querySelector('[data-next]').addEventListener('click', next);
     body.querySelector('[data-prev]').addEventListener('click', () => { i = (i - 1 + cards.length) % cards.length; showKo = false; draw(); });
-    body.querySelector('[data-exit]').addEventListener('click', () => { stopSpeaking(); onExit(); });
-    speak(c.en);
+    body.querySelector('[data-exit]').addEventListener('click', () => { player.stop(); stopSpeaking(); onExit(); });
+    body.querySelector('[data-repeat]').addEventListener('click', () => { cycleRepeat(); draw(); });
+    body.querySelector('[data-gap]').addEventListener('click', () => { cycleGap(); draw(); });
+    player.run([c.en]);
   };
   const next = () => { if (i + 1 >= cards.length) { toast('한 바퀴 완료! 🎉'); i = 0; } else i++; showKo = false; draw(); };
   draw();
+  return { stop: () => player.stop(), destroy: () => player.stop() };
 }
 
 // ---------- 질문·모범답안 ----------
 function renderQuestions(body, topic, level, query) {
   const qs = topic.questions || [];
-  const extra = topic.readAloud ? `<div class="section-title">파트 1 · 읽기 지문</div><div class="list">${topic.readAloud.map(r => `<a class="list-row" href="#/practice/${topic.id}/${r.id}"><div class="emoji">📖</div><div class="grow"><div class="t">${r.id}</div><div class="s">${r.text.slice(0, 60)}…</div></div><span class="chev">›</span></a>`).join('')}</div>` : '';
   body.innerHTML = html`
     <p class="small muted mb12">질문을 탭하면 IM3 / IH / AL 모범답안을 문장별로 듣고 섀도잉하거나, 직접 녹음해 채점받을 수 있어요.</p>
     <div class="list">${raw(qs.map(q => `<a class="list-row" href="#/practice/${topic.id}/${q.id}${query.mode === 'speak' ? '?mode=speak' : `?level=${level}`}"><div class="emoji">${iconFor(q.type)}</div><div class="grow"><div class="t">${q.en}</div><div class="s">${TYPE_LABEL[q.type] || q.type} · ${practiceCount(q.id)}회 연습</div></div><span class="chev">›</span></a>`).join(''))}</div>
-    ${raw(extra)}`;
+`;
 }
 function practiceCount(qid) { return store.state.practice.filter(p => p.qid === qid).length; }
 export function iconFor(type) {
-  return { describe: '🖼️', routine: '🔁', experience: '📖', comparison: '⚖️', opinion: '💬', 'roleplay-ask': '📞', 'roleplay-solve': '🛠️', 'roleplay-experience': '📖', 'tos-qa': '❓', 'tos-opinion': '💬' }[type] || '❔';
+  return { describe: '🖼️', routine: '🔁', experience: '📖', comparison: '⚖️', opinion: '💬', 'roleplay-ask': '📞', 'roleplay-solve': '🛠️', 'roleplay-experience': '📖' }[type] || '❔';
 }
 
 // ---------- 발음 ----------
@@ -123,9 +141,11 @@ function renderPron(body, topic) {
   const items = topic.pronunciation || [];
   body.innerHTML = html`
     <p class="small muted mb12">이 주제에서 한국인이 자주 틀리는 단어. 🔊 듣고 🎙️ 녹음하면 인식 결과로 발음을 확인합니다.</p>
-    <div class="list">${raw(items.map((p, i) => `<div class="expr" data-pron="${i}"><button class="play" data-say="${encodeURIComponent(p.word)}">🔊</button><div class="grow"><div class="en">${p.word} <span class="small muted" style="font-weight:500">${p.ipa || ''}</span></div><div class="ko">${p.tip || ''}</div><div class="xs mt8" data-result></div></div><button class="play" data-check="${i}">🎙️</button></div>`).join(''))}</div>`;
+    <div data-autoplay></div>
+    <div class="list mt12" data-list>${raw(items.map((p, i) => `<div class="expr" data-pron="${i}"><button class="play" data-say="${encodeURIComponent(p.word)}">🔊</button><div class="grow"><div class="en">${p.word} <span class="small muted" style="font-weight:500">${p.ipa || ''}</span></div><div class="ko">${p.tip || ''}</div><div class="xs mt8" data-result></div></div><button class="play" data-check="${i}">🎙️</button></div>`).join(''))}</div>`;
   bindPlay(body);
   body.querySelectorAll('[data-check]').forEach(b => b.addEventListener('click', () => quickCheck(b, items[Number(b.dataset.check)].word, body.querySelector(`[data-pron="${b.dataset.check}"] [data-result]`))));
+  return items.length ? createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]')) : null;
 }
 
 // 단어/문장 발음 빠른 확인: 4초 녹음 → 인식 결과 비교

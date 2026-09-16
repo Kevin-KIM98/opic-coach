@@ -1,4 +1,4 @@
-// 답변 전사(transcript)를 분석해 OPIc 등급 · 토익스피킹 레벨을 추정하는 휴리스틱 채점기.
+// 답변 전사(transcript)를 분석해 OPIc 등급을 추정하는 휴리스틱 채점기.
 // 실제 채점 기준(과제 수행·문맥·정확성·구성·유창성)을 근사한 것으로, 학습 방향을 잡는 용도입니다.
 
 const CONNECTORS = ['because', 'so', 'but', 'and then', 'after that', 'first', 'then', 'also', 'however', 'for example',
@@ -26,8 +26,6 @@ const TYPE_MARKERS = {
   'roleplay-ask': ['could you', 'can you', 'do you', 'is there', 'are there', 'how much', 'what time', 'when', 'where', 'how many', 'i was wondering', 'i\'d like to', 'i have a few questions', 'i\'m calling'],
   'roleplay-solve': ['sorry', 'problem', 'afraid', 'unfortunately', 'could we', 'how about', 'instead', 'would it be possible', 'another', 'refund', 'exchange', 'reschedule', 'is there any way', 'i understand'],
   'roleplay-experience': ['ago', 'last', 'when i', 'one day', 'at first', 'in the end', 'after that', 'happened', 'similar', 'i remember'],
-  'tos-qa': ['usually', 'because', 'prefer', 'i think', 'last time', 'times a', 'for example'],
-  'tos-opinion': ['i agree', 'i disagree', 'i think', 'because', 'first of all', 'first', 'second', 'for example', 'for these reasons', 'in my opinion', 'therefore'],
 };
 
 function norm(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9'\s]/g, ' ').replace(/\s+/g, ' ').trim(); }
@@ -39,13 +37,13 @@ function clamp(x, lo, hi) { return Math.max(lo, Math.min(hi, x)); }
 function ramp(x, x0, x1, y0, y1) { if (x <= x0) return y0; if (x >= x1) return y1; return y0 + (y1 - y0) * (x - x0) / (x1 - x0); }
 
 export const LEVELS = [
-  { level: 'NL/NM', min: 0, tos: '1~3', score: 0 },
-  { level: 'IL', min: 25, tos: '4', score: 1 },
-  { level: 'IM1', min: 40, tos: '5', score: 2 },
-  { level: 'IM2', min: 52, tos: '5~6', score: 3 },
-  { level: 'IM3', min: 63, tos: '6', score: 4 },
-  { level: 'IH', min: 78, tos: '7', score: 5 },
-  { level: 'AL', min: 90, tos: '8', score: 6 },
+  { level: 'NL/NM', min: 0, score: 0 },
+  { level: 'IL', min: 25, score: 1 },
+  { level: 'IM1', min: 40, score: 2 },
+  { level: 'IM2', min: 52, score: 3 },
+  { level: 'IM3', min: 63, score: 4 },
+  { level: 'IH', min: 78, score: 5 },
+  { level: 'AL', min: 90, score: 6 },
 ];
 export function toLevel(score) {
   let cur = LEVELS[0];
@@ -111,7 +109,7 @@ export function analyze(transcript, seconds, ctx = {}) {
 
   // ---------- 점수 ----------
   // 1. 발화량 (30)
-  const target = type.startsWith('roleplay-ask') ? 80 : type === 'tos-qa' ? 90 : 170;
+  const target = type.startsWith('roleplay-ask') ? 80 : 170;
   let volume = 26 * Math.sqrt(clamp(words / target, 0, 1)) + ramp(words, target, target * 1.3, 0, 4);
   if (wpm < 55 && words > 10) volume *= 0.8;
 
@@ -163,14 +161,14 @@ export function analyze(transcript, seconds, ctx = {}) {
   if (ttr < 3.2 && words > 40) fb.push({ kind: 'tip', text: '같은 단어가 반복돼요. good → great / amazing / relaxing, like → enjoy / love 로 바꿔 보세요.' });
 
   return {
-    score, level: level.level, tos: level.tos,
+    score, level: level.level,
     metrics: { words, wpm: Math.round(wpm), connectors, pastRatio: +pastRatio.toFixed(2), ttr: +ttr.toFixed(2), fillers, longPauses, questionCount, advUsed, exprHits: exprHits.length, seconds: Math.round(seconds || 0) },
     parts: { volume: Math.round(volume), structure: Math.round(structure), grammar: Math.round(grammar), vocab: Math.round(vocab), fluency: Math.round(fluency), bonus: Math.round(bonus) },
     feedback: fb,
   };
 }
 
-// 토익스피킹 파트1 (읽기) · 섀도잉: 원문과 전사 비교 (단어 정확도)
+// 섀도잉: 원문과 전사 비교 (단어 정확도)
 export function compareToText(transcript, text) {
   const a = norm(text).split(' ').filter(Boolean);
   const b = norm(transcript).split(' ').filter(Boolean);
@@ -195,7 +193,7 @@ export function compareToText(transcript, text) {
 // 모의고사 전체 점수 → 등급 (문항 평균, 롤플레이/고난도 가중)
 export function aggregateMock(items) {
   const scored = items.filter(i => i.result);
-  if (!scored.length) return { score: 0, level: 'NL/NM', tos: '1~3' };
+  if (!scored.length) return { score: 0, level: 'NL/NM' };
   let sum = 0, w = 0;
   for (const it of scored) {
     const weight = /roleplay|advanced|opinion/.test(it.type || '') ? 1.2 : 1;
@@ -203,5 +201,5 @@ export function aggregateMock(items) {
   }
   const score = Math.round(sum / w);
   const lv = toLevel(score);
-  return { score, level: lv.level, tos: lv.tos };
+  return { score, level: lv.level };
 }

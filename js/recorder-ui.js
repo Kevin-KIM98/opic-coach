@@ -1,6 +1,7 @@
 // 녹음 + 음성 인식 + 타이머 위젯 (연습 / 모의고사 / 섀도잉 공용)
 import { Recognizer, Recorder, support, stopSpeaking } from './speech.js';
 import { fmtTime } from './util.js';
+import { keepAwake } from './wake-lock.js';
 
 /**
  * @param {HTMLElement} container
@@ -12,6 +13,7 @@ export function createRecorderUI(container, opts = {}) {
   let prep = opts.prepSeconds || 0;
   let state = 'idle'; // idle | prep | rec | done
   let recognizer = null, recorder = null, startedAt = 0, tick = null, prepTick = null;
+  let releaseWake = null;   // 준비·녹음 중에는 화면이 꺼지지 않게 유지
 
   container.innerHTML = `
     <div class="rec-wrap">
@@ -38,6 +40,7 @@ export function createRecorderUI(container, opts = {}) {
     if (state === 'rec') return;
     clearInterval(prepTick);
     stopSpeaking();
+    releaseWake ||= keepAwake();
     state = 'rec';
     startedAt = Date.now();
     recognizer = new Recognizer({ onUpdate: setTranscript });
@@ -64,6 +67,7 @@ export function createRecorderUI(container, opts = {}) {
     if (state !== 'rec') return;
     state = 'done';
     clearInterval(tick);
+    releaseWake?.(); releaseWake = null;
     const seconds = (Date.now() - startedAt) / 1000;
     const { transcript, segments } = recognizer.stop();
     const audioUrl = await recorder.stop();
@@ -77,6 +81,7 @@ export function createRecorderUI(container, opts = {}) {
   }
 
   function startPrep() {
+    releaseWake ||= keepAwake();
     state = 'prep';
     let left = prep;
     $timer.textContent = fmtTime(left);
@@ -97,6 +102,10 @@ export function createRecorderUI(container, opts = {}) {
   return {
     start, stop, startPrep,
     get state() { return state; },
-    destroy() { clearInterval(tick); clearInterval(prepTick); try { recognizer?.stop(); recorder?.stop(); } catch { /* ignore */ } },
+    destroy() {
+      clearInterval(tick); clearInterval(prepTick);
+      releaseWake?.(); releaseWake = null;
+      try { recognizer?.stop(); recorder?.stop(); } catch { /* ignore */ }
+    },
   };
 }

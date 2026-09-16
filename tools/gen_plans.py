@@ -64,7 +64,7 @@ def four_week():
             [t("learn", topic="unexpected"), t("speak", topic="unexpected"), t("pattern", group="opener")],
             [t("learn", topic="advanced"), t("speak", topic="advanced"), t("pattern", group="compare")],
             [t("mock", set="opic-full"), t("review")],
-            [t("learn", topic="toeic-speaking"), t("mock", set="tos-mini"), t("review")],
+            [t("mock", set="opic-mini"), t("review")],
             [t("mock", set="opic-full"), t("speak", topic="roleplay")],
             [t("mock", set="opic-mini"), t("review"), t("pron", set="intonation")],
         ]
@@ -109,7 +109,7 @@ def eight_week():
             ]
         else:
             sched = [
-                [t("learn", topic="toeic-speaking"), t("mock", set="tos-mini")],
+                [t("mock", set="opic-mini"), t("review")],
                 [t("mock", set="opic-full"), t("review")],
                 [t("speak", topic="roleplay"), t("speak", topic="unexpected"), t("review")],
                 [t("mock", set="opic-mini"), t("pron", set="linking")],
@@ -152,7 +152,7 @@ def twelve_week():
             ],
             11: [
                 [t("learn", topic="advanced")], [t("speak", topic="advanced"), t("pattern", group="compare")],
-                [t("learn", topic="toeic-speaking")], [t("mock", set="tos-mini")],
+                [t("speak", topic="unexpected"), t("review")], [t("mock", set="opic-mini"), t("pattern", group="opinion")],
                 [t("mock", set="opic-full")], [t("review"), t("speak", topic="roleplay")], [t("review")],
             ],
             12: [

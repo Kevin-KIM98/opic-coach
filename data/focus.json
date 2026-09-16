@@ -1,0 +1,132 @@
+{
+  "_comment": "최단기 목표 달성용 Background Survey 추천 조합과 집중 학습 구성. 주제 id 는 data/index.json 과 일치해야 합니다.",
+  "intro": "OPIc은 시험 전 Background Survey에서 고른 항목이 그대로 2~10번 문제로 나옵니다. 서로 어휘와 스토리가 겹치는 항목만 고르면, 같은 답변을 여러 문제에 재활용할 수 있어 준비량이 절반으로 줄어듭니다.",
+  "difficulty": {
+    "recommend": "5 ~ 6",
+    "note": "난이도를 낮추면 쉬운 문제만 나와 IM3 위를 받기 어렵고, 너무 높이면 돌발·고난도 비중이 커집니다. IM3~IH 목표라면 5~6단계가 무난합니다."
+  },
+  "survey": [
+    {
+      "id": "job",
+      "title": "1~3. 직업 · 학생 · 거주지",
+      "min": "각 1개",
+      "pick": [
+        { "label": "사업/직장 경험 없음 (또는 현재 직장인)", "topic": "work", "why": "직장을 고르면 업무 묘사 문제가 추가로 나옵니다. 준비 시간이 없으면 '경험 없음'이 문항 수를 줄여 줍니다." },
+        { "label": "학위 과정 수업을 듣지 않음", "why": "학교 관련 문항을 통째로 없앱니다." },
+        { "label": "개인 주택이나 아파트에 홀로 거주", "topic": "housing", "why": "집 묘사는 설문과 무관하게 거의 항상 나옵니다. 혼자 산다고 하면 가족 관련 추가 질문이 줄어듭니다." }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "leisure",
+      "title": "4. 여가활동 (2개 이상)",
+      "min": "2개 이상",
+      "pick": [
+        { "label": "영화보기", "topic": "movies", "why": "묘사·경험·비교를 모두 물어보기 좋고, 음악 감상과 취향 어휘를 공유합니다." },
+        { "label": "공원 가기", "topic": "park", "why": "장소 묘사 답변을 조깅·걷기와 그대로 돌려 쓸 수 있습니다." },
+        { "label": "커피전문점 가기", "topic": "cafe", "why": "공원과 같은 '장소 묘사 + 루틴' 틀을 재활용합니다." }
+      ],
+      "avoid": [
+        { "label": "TV보기 · 리얼리티 방송 시청", "why": "프로그램 이름·줄거리를 영어로 설명해야 해서 어휘 부담이 큽니다." },
+        { "label": "자녀 관련 항목 전부", "why": "가족 구성까지 설명해야 하는 꼬리 질문이 붙습니다." },
+        { "label": "주거 개선 · 승용차 정비", "why": "전문 용어가 많고 재활용할 곳이 없습니다." }
+      ]
+    },
+    {
+      "id": "hobby",
+      "title": "5. 취미 · 관심사 (1개 이상)",
+      "min": "1개 이상",
+      "pick": [
+        { "label": "음악 감상하기", "topic": "music", "why": "'좋아하는 것 + 이유 + 언제 듣는지' 틀이 영화와 거의 같습니다." }
+      ],
+      "avoid": [
+        { "label": "악기 연주 · 뜨개질 · 바느질 · 그림그리기", "why": "동작과 도구를 영어로 묘사해야 해서 준비 비용이 큽니다." },
+        { "label": "애완동물 기르기", "why": "품종·습성 등 예측하기 어려운 어휘가 나옵니다." }
+      ]
+    },
+    {
+      "id": "sport",
+      "title": "6. 운동 (1개 이상)",
+      "min": "1개 이상",
+      "pick": [
+        { "label": "조깅 · 걷기", "topic": "jogging", "why": "공원 답변과 장소·루틴을 그대로 공유합니다. 규칙·장비 설명이 필요 없는 게 가장 큰 장점입니다." }
+      ],
+      "avoid": [
+        { "label": "축구 · 농구 · 야구 등 구기 종목", "why": "규칙·포지션·경기 전개를 영어로 설명해야 합니다." },
+        { "label": "운동을 전혀 하지 않음", "why": "'왜 안 하는지'를 계속 캐묻는 문항으로 이어져 오히려 어렵습니다." }
+      ]
+    },
+    {
+      "id": "vacation",
+      "title": "7. 휴가 · 출장 (1개 이상)",
+      "min": "1개 이상",
+      "pick": [
+        { "label": "국내여행", "topic": "travel-domestic", "why": "경험 서술(과거시제) 문제의 주력입니다. 한 번의 여행 스토리를 돌발·롤플레이에도 재활용합니다." },
+        { "label": "집에서 보내는 휴가", "topic": "vacation-home", "why": "루틴 답변을 그대로 쓸 수 있어 추가 준비가 거의 없습니다." }
+      ],
+      "avoid": [
+        { "label": "해외출장 · 국내출장", "why": "업무 상황과 직책 어휘가 얽혀 난도가 올라갑니다." }
+      ]
+    }
+  ],
+  "always": {
+    "title": "설문과 무관하게 나오는 문항",
+    "note": "아래는 무엇을 고르든 출제되므로 반드시 준비해야 합니다.",
+    "topics": ["self-intro", "neighborhood", "roleplay", "unexpected", "advanced"]
+  },
+  "tracks": [
+    {
+      "level": "IM3",
+      "title": "IM3 최단 코스",
+      "days": 14,
+      "minutesPerDay": 40,
+      "summary": "모든 문항에서 끊기지 않고 60초 이상, 과거시제와 기본 연결어를 유지하면 IM3가 나옵니다. 주제를 늘리지 말고 6개만 확실히 만드세요.",
+      "topics": ["self-intro", "housing", "park", "jogging", "movies", "roleplay"],
+      "patterns": ["opener", "describe", "routine", "closing"],
+      "pron": ["sound-rl", "sound-fp"],
+      "checklist": [
+        "자기소개를 60초, 막힘 없이 말할 수 있다",
+        "집·공원을 '전체 → 세부 2~3개 → 제일 좋아하는 부분'으로 묘사한다",
+        "because / so / after that 를 한 답변에 3번 이상 쓴다",
+        "경험 문제에서 과거시제(went, was, had)를 일관되게 쓴다",
+        "롤플레이 질문하기에서 질문 3개를 만든다"
+      ]
+    },
+    {
+      "level": "IH",
+      "title": "IH 최단 코스",
+      "days": 28,
+      "minutesPerDay": 50,
+      "summary": "IM3의 조건에 더해 디테일(숫자·이름·느낌)과 비교(used to / compared to)가 필요합니다. 돌발과 고난도에서 무너지지 않는 게 핵심입니다.",
+      "topics": ["self-intro", "housing", "neighborhood", "park", "jogging", "movies", "music", "travel-domestic", "roleplay", "unexpected"],
+      "patterns": ["opener", "describe", "routine", "experience", "compare", "closing"],
+      "pron": ["sound-rl", "sound-fp", "linking", "intonation"],
+      "checklist": [
+        "모든 문항에서 90초 이상, 100단어 이상 말한다",
+        "used to / compared to / nowadays 로 과거와 현재를 비교한다",
+        "답변마다 숫자·이름·장소 같은 구체적 디테일을 2개 이상 넣는다",
+        "돌발 주제가 나와도 아는 주제로 연결해 말한다",
+        "롤플레이 문제 해결에서 대안을 2개 이상 제시한다",
+        "말이 막혔을 때 필러(Well, let me think...)로 이어간다"
+      ]
+    },
+    {
+      "level": "AL",
+      "title": "AL 최단 코스",
+      "days": 42,
+      "minutesPerDay": 60,
+      "summary": "AL은 주제를 더 늘리는 게 아니라, 같은 주제를 더 길고 자연스럽게 말하는 싸움입니다. 고난도 의견 문항과 관용 표현에 시간을 몰아 쓰세요.",
+      "topics": ["self-intro", "housing", "neighborhood", "park", "jogging", "movies", "music", "cafe", "travel-domestic", "vacation-home", "roleplay", "unexpected", "advanced"],
+      "patterns": ["opener", "describe", "routine", "experience", "compare", "opinion", "filler", "closing"],
+      "pron": ["sound-rl", "sound-fp", "sound-th", "linking", "intonation", "twisters"],
+      "checklist": [
+        "모든 문항에서 2분 가까이, 끊김 없이 말한다",
+        "고난도 의견 문항에서 입장 + 이유 2개 + 예시 + 결론을 갖춘다",
+        "관용 표현(ended up, turned out, long story short)을 자연스럽게 섞는다",
+        "한 문장 안에서 관계사(which, who, that)로 정보를 덧붙인다",
+        "사회적 이슈(환경·기술·세대 변화)를 한 주제씩 말할 수 있다",
+        "모의고사에서 90점 이상을 두 번 연속 받는다"
+      ]
+    }
+  ]
+}

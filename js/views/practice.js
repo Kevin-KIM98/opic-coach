@@ -2,21 +2,21 @@ import { html, raw, splitSentences, toast, levelColor } from '../util.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
 import { speak, stopSpeaking } from '../speech.js';
+import { createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap } from '../autoplay.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
-import { analyze, compareToText } from '../scoring.js';
+import { analyze } from '../scoring.js';
 import { bindPlay, flashcards, quickCheck } from './topic.js';
 import { ring } from './home.js';
 
 let recUI = null;
+let shadowPlayer = null;   // 섀도잉 전체 듣기 플레이어 (탭 이동·화면 이탈 시 정리)
 
 export async function render(root, route) {
   const [topicId, qid] = route.parts;
   const topic = await data.topic(topicId);
   const q = (topic.questions || []).find(x => x.id === qid);
-  const ra = (topic.readAloud || []).find(x => x.id === qid);
-  if (!q && !ra) { root.innerHTML = '<div class="empty">질문을 찾을 수 없습니다.</div>'; return; }
-  if (ra) return renderReadAloud(root, topic, ra);
+  if (!q) { root.innerHTML = '<div class="empty">질문을 찾을 수 없습니다.</div>'; return; }
 
   const mode = route.query.mode || 'model';
   let level = route.query.level || store.settings.target || 'IM3';
@@ -38,13 +38,13 @@ export async function render(root, route) {
   const body = root.querySelector('#pbody');
   const show = (m) => {
     root.querySelectorAll('#ptabs button').forEach(b => b.classList.toggle('active', b.dataset.m === m));
-    stopSpeaking(); recUI?.destroy(); recUI = null;
+    stopSpeaking(); recUI?.destroy(); recUI = null; shadowPlayer?.stop(); shadowPlayer = null;
     if (m === 'model') renderModel(body, q, level, (lv) => { level = lv; renderModel(body, q, level, arguments[2]); });
     else renderSpeak(body, topic, q, exprBank);
   };
   root.querySelectorAll('#ptabs button').forEach(b => b.addEventListener('click', () => show(b.dataset.m)));
   show(mode);
-  return () => { stopSpeaking(); recUI?.destroy(); recUI = null; };
+  return () => { stopSpeaking(); recUI?.destroy(); recUI = null; shadowPlayer?.stop(); shadowPlayer = null; };
 }
 
 // ---------- 모범답안 섀도잉 ----------
@@ -59,6 +59,8 @@ function renderModel(body, q, level, setLevel) {
     <div class="card mt12">
       <div class="xs muted mb8">${words}단어 · ${sents.length}문장 · 문장을 탭하면 재생</div>
       <div class="row mb12" style="gap:6px"><button class="btn sm" data-all>▶ 전체 듣기</button><button class="btn sm" data-slow>🐢 느리게</button><button class="btn sm ghost" data-hide>🙈 가리기</button></div>
+      <div class="row between mb12"><span class="xs muted">전체 듣기는 문장마다 자동 반복돼요</span>
+        <span class="row" style="gap:6px"><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
       <div class="answer" data-answer>${raw(sents.map((s, i) => `<span class="sent" data-i="${i}">${s}</span> `).join(''))}</div>
     </div>
     <div class="card soft mt12">
@@ -80,11 +82,26 @@ function renderModel(body, q, level, setLevel) {
   body.querySelector('[data-say-cur]').addEventListener('click', () => speak(sents[cur]));
   body.querySelector('[data-check-cur]').addEventListener('click', (e) => quickCheck(e.currentTarget, sents[cur], body.querySelector('[data-result]')));
   body.querySelector('[data-hide]').addEventListener('click', (e) => { const a = body.querySelector('[data-answer]'); const hidden = a.style.filter; a.style.filter = hidden ? '' : 'blur(6px)'; e.currentTarget.textContent = hidden ? '🙈 가리기' : '👀 보기'; });
-  const playAll = async (rate) => {
-    for (let i = 0; i < sents.length; i++) { setCur(i); const ok = await speak(sents[i], { rate }); if (!ok) break; }
+  // 전체 듣기: 문장마다 설정한 횟수만큼 반복하고, 재생 중에는 화면을 켜 둔다
+  const player = createSequencePlayer();
+  const $all = body.querySelector('[data-all]');
+  const $slow = body.querySelector('[data-slow]');
+  const setPlayingUI = (on, which) => {
+    $all.textContent = on && which === 'all' ? '⏸ 멈춤' : '▶ 전체 듣기';
+    $slow.textContent = on && which === 'slow' ? '⏸ 멈춤' : '🐢 느리게';
+    $all.classList.toggle('on', on && which === 'all');
+    $slow.classList.toggle('on', on && which === 'slow');
   };
-  body.querySelector('[data-all]').addEventListener('click', () => playAll());
-  body.querySelector('[data-slow]').addEventListener('click', () => playAll(0.72));
+  const playAll = (rate, which) => {
+    if (player.playing) { player.stop(); setPlayingUI(false); return; }
+    setPlayingUI(true, which);
+    player.run(sents, { rate, onItem: (i) => setCur(i), onEnd: () => setPlayingUI(false) });
+  };
+  $all.addEventListener('click', () => playAll(undefined, 'all'));
+  $slow.addEventListener('click', () => playAll(0.72, 'slow'));
+  body.querySelector('[data-repeat]').addEventListener('click', (e) => { cycleRepeat(); e.currentTarget.textContent = `반복 ${repeatCount()}회`; });
+  body.querySelector('[data-gap]').addEventListener('click', (e) => { cycleGap(); e.currentTarget.textContent = gapLabel(); });
+  shadowPlayer = player;
   store.logActivity(1);
 }
 
@@ -94,7 +111,7 @@ function renderSpeak(body, topic, q, exprBank) {
     <div class="card"><div id="rec"></div></div>
     <div id="result" class="mt12"></div>
     <div class="card soft mt12 small ink2">💡 <b>답변 뼈대</b>: ${raw(skeleton(q.type))}</div>`;
-  const maxSeconds = /tos-qa/.test(q.type) ? 60 : /roleplay-ask/.test(q.type) ? 60 : 120;
+  const maxSeconds = /roleplay-ask/.test(q.type) ? 60 : 120;
   recUI = createRecorderUI(body.querySelector('#rec'), {
     maxSeconds,
     onDone: (res) => {
@@ -116,46 +133,19 @@ export function skeleton(type) {
     'roleplay-ask': '인사 + 목적(I\'m calling to ask about...) → 질문 3~4개 → 감사 인사',
     'roleplay-solve': '사과/상황 설명(I\'m afraid...) → 대안 2~3개(How about... / Would it be possible...) → 마무리',
     'roleplay-experience': '비슷한 경험 소개 → 언제·무슨 일 → 어떻게 해결 → 결과·느낌',
-    'tos-qa': 'Q5·Q6는 2문장(답 + 이유/디테일), Q7은 입장 + 이유 2개 + 예시',
-    'tos-opinion': 'I agree/disagree that... → First, ... (예시) → Second, ... (예시) → For these reasons, ...',
   }[type] || '핵심 답 → 이유 → 예시 → 느낌';
 }
 
 export function resultCard(r, q) {
   const parts = [['발화량', r.parts.volume, 30], ['구성·연결', r.parts.structure, 25], ['문법·시제', r.parts.grammar, 15], ['어휘', r.parts.vocab, 15], ['유창성', r.parts.fluency, 15]];
   return `<div class="card">
-    <div class="score-hero"><div class="lvl" style="color:${levelColor(r.level)}">${r.level}</div><div class="num">추정 OPIc 등급 · 토익스피킹 레벨 ${r.tos} · ${r.score}점</div></div>
+    <div class="score-hero"><div class="lvl" style="color:${levelColor(r.level)}">${r.level}</div><div class="num">추정 OPIc 등급 · ${r.score}점</div></div>
     <div class="metrics"><div class="metric"><b>${r.metrics.words}</b><span>단어</span></div><div class="metric"><b>${r.metrics.wpm}</b><span>분당 단어</span></div><div class="metric"><b>${r.metrics.connectors}</b><span>연결어</span></div></div>
     <div class="parts mt12">${parts.map(([n, v, m]) => `<div class="p"><span class="muted">${n}</span><div class="bar"><i style="width:${v / m * 100}%"></i></div><b>${v}/${m}</b></div>`).join('')}</div>
     <div class="divider"></div>
     ${r.feedback.map(f => `<div class="fb ${f.kind}"><span class="k">${{ good: '✅', bad: '❌', warn: '⚠️', tip: '💡' }[f.kind]}</span><span>${f.text}</span></div>`).join('')}
     ${q ? `<button class="btn ghost block mt12" onclick="document.querySelector('#ptabs [data-m=model]')?.click()">모범답안과 비교하기</button>` : ''}
   </div>`;
-}
-
-// ---------- 토익스피킹 파트1 읽기 ----------
-function renderReadAloud(root, topic, ra) {
-  root.innerHTML = html`
-    ${raw(header('파트 1 · 읽기'))}
-    <div class="qcard"><div class="row between mb8"><span class="badge type">Read Aloud · 준비 45초 · 답변 45초</span><button class="play sm" data-say="${encodeURIComponent(ra.text)}">🔊</button></div>
-      <div class="answer" style="font-size:17px">${ra.text}</div>
-      <div class="mt12">${raw((ra.tips || []).map(t => `<div class="tip">💡 ${t}</div>`).join(''))}</div></div>
-    <div class="card mt12"><div id="rec"></div></div>
-    <div id="result" class="mt12"></div>`;
-  bindPlay(root);
-  recUI = createRecorderUI(root.querySelector('#rec'), {
-    maxSeconds: 45,
-    onDone: (res) => {
-      const cmp = compareToText(res.transcript, ra.text);
-      const wpm = Math.round(cmp.words.length / Math.max(res.seconds, 5) * 60);
-      const marked = cmp.words.map((w, i) => `<span style="${cmp.matched[i] ? '' : 'color:var(--bad);text-decoration:underline'}">${w}</span>`).join(' ');
-      root.querySelector('#result').innerHTML = `<div class="card"><div class="score-hero"><div class="lvl" style="color:${cmp.score >= 90 ? 'var(--good)' : cmp.score >= 75 ? 'var(--gold)' : 'var(--bad)'}">${cmp.score}%</div><div class="num">단어 일치율 · ${res.seconds.toFixed(0)}초 · ${wpm} wpm (목표 130~150)</div></div>
-        <p class="small answer">${marked}</p>
-        <div class="fb ${cmp.score >= 85 ? 'good' : 'warn'} mt12"><span class="k">${cmp.score >= 85 ? '✅' : '⚠️'}</span><span>${cmp.score >= 85 ? '발음이 명확하게 인식됐어요. 이제 억양과 끊어 읽기에 집중하세요.' : `빨간 단어가 인식되지 않았어요. 🔊로 다시 듣고 그 단어만 3번씩 반복하세요.`}</span></div></div>`;
-      store.addPractice({ qid: ra.id, topicId: topic.id, type: 'read-aloud', score: cmp.score, level: '-', words: cmp.words.length, seconds: Math.round(res.seconds), transcript: res.transcript });
-    },
-  });
-  return () => { stopSpeaking(); recUI?.destroy(); recUI = null; };
 }
 
 // ---------- 복습 (간격 반복) ----------

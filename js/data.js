@@ -17,6 +17,8 @@ export const data = {
   pronunciation: () => getJSON('data/pronunciation.json'),
   plans: () => getJSON('data/plans.json'),
   mockSets: () => getJSON('data/mock-sets.json'),
+  examSchedule: () => getJSON('data/exam-schedule.json'),
+  focus: () => getJSON('data/focus.json'),
 
   async topic(id) {
     const idx = await this.index();
@@ -56,5 +58,4 @@ export const data = {
 export const TYPE_LABEL = {
   describe: '묘사', routine: '습관·루틴', experience: '경험', comparison: '비교·변화', opinion: '의견',
   'roleplay-ask': '롤플레이 · 질문하기', 'roleplay-solve': '롤플레이 · 문제 해결', 'roleplay-experience': '롤플레이 · 경험',
-  'tos-qa': 'TOS 파트3 · Q&A', 'tos-opinion': 'TOS 파트5 · 의견', 'read-aloud': 'TOS 파트1 · 읽기',
 };

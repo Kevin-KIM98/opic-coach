@@ -25,7 +25,7 @@
   "title": "집 · 거주지",         ← 앱에 표시되는 한국어 제목
   "titleEn": "Housing",
   "emoji": "🏠",
-  "category": "survey",          ← survey | roleplay | advanced | unexpected | tos
+  "category": "survey",          ← survey | roleplay | advanced | unexpected
   "priority": 1,                 ← 목록 정렬 순서 (작을수록 위)
   "intro": "출제 경향과 전략 설명 (한국어)",
   "strategy": ["전략 1", "전략 2", "전략 3"],
@@ -60,8 +60,6 @@
 | `roleplay-ask` | 롤플레이 질문하기 | **질문 문장 3개 이상** |
 | `roleplay-solve` | 롤플레이 문제 해결 | 사과 + 대안 제시 표현 |
 | `roleplay-experience` | 롤플레이 관련 경험 | 과거시제 |
-| `tos-qa` | 토스 파트3 | 짧은 답 + 이유 |
-| `tos-opinion` | 토스 파트5 | 입장 + 이유 2개 + 예시 |
 
 ### 표현 `level` 값
 `IM` (IM3 목표 필수) · `IH` · `AL`. 카드 배지 색으로 표시됩니다.
@@ -91,3 +89,13 @@
 ```bash
 python tools/validate.py
 ```
+
+## data/focus.json — 집중 학습 구성
+
+목표 등급별 최단 코스와 서베이 추천 조합입니다.
+
+- `survey[].pick[]` — 고를 항목. `topic` 을 넣으면 해당 주제로 가는 링크가 붙습니다
+- `survey[].avoid[]` — 피할 항목과 이유
+- `tracks[]` — `level`(IM3/IH/AL) 별 `topics` · `patterns` · `pron` · `checklist`
+
+여기 적은 id 는 실제 데이터에 있어야 합니다. `python tools/validate.py` 가 대조해 검사합니다.
