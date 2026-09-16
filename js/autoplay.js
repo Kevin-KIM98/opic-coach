@@ -1,4 +1,5 @@
 // 자동 반복 재생: 문장 목록을 순서대로, 각 문장을 설정한 횟수만큼 읽어 줍니다.
+// 🔁 켜져 있으면 목록 끝까지 간 뒤 처음부터 다시 — 멈출 때까지 계속 반복합니다(기본값).
 // 버튼을 매번 누르지 않아도 듣고 → 따라 말하기를 반복할 수 있게 하는 것이 목적입니다.
 // 재생 중에는 화면이 꺼지지 않도록 wake lock 을 잡습니다.
 import { speak, stopSpeaking, support } from './speech.js';
@@ -13,6 +14,11 @@ export const repeatGap = () => store.settings.repeatGap ?? 1.5;
 export const cycleRepeat = () => store.setSetting('repeatCount', REPEATS[(REPEATS.indexOf(repeatCount()) + 1) % REPEATS.length]);
 export const cycleGap = () => store.setSetting('repeatGap', GAPS[(GAPS.indexOf(repeatGap()) + 1) % GAPS.length]);
 export const gapLabel = () => (repeatGap() ? `간격 ${repeatGap()}초` : '간격 없음');
+
+// 🔁 계속 반복: 멈추기 전까지 처음부터 다시 재생한다.
+export const repeatLoop = () => store.settings.repeatLoop ?? true;
+export const toggleLoop = () => store.setSetting('repeatLoop', !repeatLoop());
+export const loopLabel = () => (repeatLoop() ? '🔁 계속' : '🔂 한 번');
 
 /**
  * 반복 재생 엔진. 한 번에 하나의 재생만 살아 있고, stop() 하면 남은 대기까지 즉시 끊습니다.
@@ -91,6 +97,7 @@ export function createAutoPlay(mount, scope, opts = {}) {
     <div class="row between">
       <button class="btn primary sm" data-toggle>▶ 자동 재생</button>
       <div class="row" style="gap:6px">
+        <button class="chip" data-loop title="멈출 때까지 처음부터 계속 반복">🔁</button>
         <button class="chip" data-repeat title="한 항목을 몇 번 읽을지">반복 —</button>
         <button class="chip" data-gap title="따라 말할 시간">간격 —</button>
       </div>
@@ -98,11 +105,14 @@ export function createAutoPlay(mount, scope, opts = {}) {
     <div class="xs muted mt8" data-status></div>`;
 
   const $toggle = mount.querySelector('[data-toggle]');
+  const $loop = mount.querySelector('[data-loop]');
   const $repeat = mount.querySelector('[data-repeat]');
   const $gap = mount.querySelector('[data-gap]');
   const $status = mount.querySelector('[data-status]');
 
   const drawSettings = () => {
+    $loop.textContent = loopLabel();
+    $loop.classList.toggle('active', repeatLoop());
     $repeat.textContent = `반복 ${repeatCount()}회`;
     $gap.textContent = gapLabel();
   };
@@ -135,19 +145,22 @@ export function createAutoPlay(mount, scope, opts = {}) {
     mount.classList.add('on');
     player.run(() => rows().map(el => decodeURIComponent(el.dataset.say)), {
       rate: opts.rate,
-      loop: true,
+      loop: repeatLoop(),
       onItem: (i, total) => {
         const el = rows()[i];
         if (el) highlight(el);
         $status.textContent = `${i + 1} / ${total} · ${decodeURIComponent(el?.dataset.say || '').slice(0, 40)}`;
         if (i === 0) store.logActivity(0.5);
       },
+      onEnd: () => idle('한 바퀴 다 읽었어요. 🔁 을 켜면 멈출 때까지 계속 반복해요.'),
     });
   }
 
   function stop(msg) { player.stop(); idle(msg); }
 
   $toggle.addEventListener('click', () => (player.playing ? stop() : start()));
+  // 재생 중에 🔁 을 바꾸면 바로 반영되도록 다시 시작한다
+  $loop.addEventListener('click', () => { toggleLoop(); drawSettings(); if (player.playing) start(); });
   $repeat.addEventListener('click', () => { cycleRepeat(); drawSettings(); });
   $gap.addEventListener('click', () => { cycleGap(); drawSettings(); });
 

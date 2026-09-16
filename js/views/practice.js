@@ -2,7 +2,7 @@ import { html, raw, splitSentences, toast, levelColor } from '../util.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
 import { speak, stopSpeaking } from '../speech.js';
-import { createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap } from '../autoplay.js';
+import { createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap, repeatLoop, toggleLoop, loopLabel } from '../autoplay.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
 import { analyze } from '../scoring.js';
@@ -59,8 +59,8 @@ function renderModel(body, q, level, setLevel) {
     <div class="card mt12">
       <div class="xs muted mb8">${words}단어 · ${sents.length}문장 · 문장을 탭하면 재생</div>
       <div class="row mb12" style="gap:6px"><button class="btn sm" data-all>▶ 전체 듣기</button><button class="btn sm" data-slow>🐢 느리게</button><button class="btn sm ghost" data-hide>🙈 가리기</button></div>
-      <div class="row between mb12"><span class="xs muted">전체 듣기는 문장마다 자동 반복돼요</span>
-        <span class="row" style="gap:6px"><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
+      <div class="row between wrap mb12"><span class="xs muted" data-loop-hint>${repeatLoop() ? '전체 듣기는 멈출 때까지 계속 반복돼요' : '전체 듣기는 한 바퀴만 읽고 멈춰요'}</span>
+        <span class="row" style="gap:6px"><button class="chip ${repeatLoop() ? 'active' : ''}" data-loop title="멈출 때까지 계속 반복">${loopLabel()}</button><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
       <div class="answer" data-answer>${raw(sents.map((s, i) => `<span class="sent" data-i="${i}">${s}</span> `).join(''))}</div>
     </div>
     <div class="card soft mt12">
@@ -82,7 +82,8 @@ function renderModel(body, q, level, setLevel) {
   body.querySelector('[data-say-cur]').addEventListener('click', () => speak(sents[cur]));
   body.querySelector('[data-check-cur]').addEventListener('click', (e) => quickCheck(e.currentTarget, sents[cur], body.querySelector('[data-result]')));
   body.querySelector('[data-hide]').addEventListener('click', (e) => { const a = body.querySelector('[data-answer]'); const hidden = a.style.filter; a.style.filter = hidden ? '' : 'blur(6px)'; e.currentTarget.textContent = hidden ? '🙈 가리기' : '👀 보기'; });
-  // 전체 듣기: 문장마다 설정한 횟수만큼 반복하고, 재생 중에는 화면을 켜 둔다
+  // 전체 듣기: 문장마다 설정한 횟수만큼 반복하고, 🔁 이 켜져 있으면 끝나도 처음부터 다시 — 멈출 때까지 계속.
+  // 재생 중에는 화면을 켜 둔다
   const player = createSequencePlayer();
   const $all = body.querySelector('[data-all]');
   const $slow = body.querySelector('[data-slow]');
@@ -95,10 +96,20 @@ function renderModel(body, q, level, setLevel) {
   const playAll = (rate, which) => {
     if (player.playing) { player.stop(); setPlayingUI(false); return; }
     setPlayingUI(true, which);
-    player.run(sents, { rate, onItem: (i) => setCur(i), onEnd: () => setPlayingUI(false) });
+    player.run(sents, { rate, loop: repeatLoop(), onItem: (i) => setCur(i), onEnd: () => setPlayingUI(false) });
   };
   $all.addEventListener('click', () => playAll(undefined, 'all'));
   $slow.addEventListener('click', () => playAll(0.72, 'slow'));
+  const $loop = body.querySelector('[data-loop]');
+  $loop.addEventListener('click', () => {
+    toggleLoop();
+    $loop.textContent = loopLabel();
+    $loop.classList.toggle('active', repeatLoop());
+    body.querySelector('[data-loop-hint]').textContent = repeatLoop()
+      ? '전체 듣기는 멈출 때까지 계속 반복돼요' : '전체 듣기는 한 바퀴만 읽고 멈춰요';
+    // 재생 중이면 바뀐 설정으로 이어서 재생한다
+    if (player.playing) { const slow = $slow.classList.contains('on'); player.stop(); playAll(slow ? 0.72 : undefined, slow ? 'slow' : 'all'); }
+  });
   body.querySelector('[data-repeat]').addEventListener('click', (e) => { cycleRepeat(); e.currentTarget.textContent = `반복 ${repeatCount()}회`; });
   body.querySelector('[data-gap]').addEventListener('click', (e) => { cycleGap(); e.currentTarget.textContent = gapLabel(); });
   shadowPlayer = player;

@@ -4,7 +4,7 @@
 // 편집자 모드가 꺼져 있으면 앱 어디에도 저장소 주소·계정이 드러나지 않는다.
 export const CONFIG = {
   appName: 'OPIc Coach',
-  version: '1.3.1',
+  version: '1.3.2',
   // 기본 설정값 (설정 화면에서 변경 가능)
   defaults: {
     target: 'IM3',          // IM3 | IH | AL
@@ -13,6 +13,7 @@ export const CONFIG = {
     ttsVoice: '',
     examDate: '',
     repeatCount: 2,         // 자동 재생: 한 항목을 읽는 횟수
+    repeatLoop: true,       // 자동 재생: 끝까지 가면 처음부터 다시 (멈출 때까지 계속)
     repeatGap: 1.5,         // 자동 재생: 따라 말할 간격(초)
   },
 };
