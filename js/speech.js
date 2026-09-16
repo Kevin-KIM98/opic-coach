@@ -55,18 +55,40 @@ export function stopSpeaking() { if (synth) synth.cancel(); currentUtter = null;
 export function isSpeaking() { return !!synth && synth.speaking; }
 
 // ---------- STT ----------
+const norm = (s) => s.toLowerCase().replace(/[^a-z0-9' ]+/g, ' ').replace(/\s+/g, ' ').trim();
+
+// 안드로이드 Chrome 은 resultIndex 가 0 으로 고정된 채 누적 결과("hi" → "hi my" → "hi my name" …)를
+// 이벤트마다 다시 보내고 isFinal 도 반복 표시한다. 앞 항목이 뒤 항목의 접두어(또는 동일)이면 접어서 하나로 만든다.
+function collapse(items) {
+  const out = [];
+  for (const it of items) {
+    const n = norm(it.text);
+    if (!n) continue;
+    const prev = out[out.length - 1];
+    if (prev && n.startsWith(norm(prev.text))) { out[out.length - 1] = { ...it, t: prev.t }; continue; }
+    if (prev && norm(prev.text).startsWith(n)) continue;
+    out.push(it);
+  }
+  return out;
+}
+
 export class Recognizer {
   constructor({ onUpdate } = {}) {
     this.onUpdate = onUpdate || (() => {});
-    this.finals = [];      // {text, t}
+    this.done = [];        // 이전 인식 세션(자동 재시작 전)들의 확정 결과 {text, t}
+    this.session = [];     // 현재 세션의 확정 결과 — 이벤트마다 e.results 전체로 다시 계산
+    this.sessionT = [];    // 현재 세션 결과별 최초 확정 시각
     this.interim = '';
     this.active = false;
     this.startedAt = 0;
     this.rec = null;
     this.error = null;
   }
+  get finals() { return collapse(this.done.concat(this.session)); }
   get transcript() {
-    return (this.finals.map(f => f.text).join(' ') + ' ' + this.interim).replace(/\s+/g, ' ').trim();
+    const parts = this.finals;
+    if (this.interim) parts.push({ text: this.interim, t: 0 });
+    return collapse(parts).map(f => f.text).join(' ').replace(/\s+/g, ' ').trim();
   }
   start() {
     if (!SR) return false;
@@ -81,14 +103,25 @@ export class Recognizer {
     rec.continuous = true;
     rec.interimResults = true;
     rec.maxAlternatives = 1;
+    // 이전 세션 결과를 done 으로 넘기고 새 세션 시작
+    this.done = this.finals;
+    this.session = [];
+    this.sessionT = [];
     rec.onresult = (e) => {
+      // 증분(resultIndex) 대신 e.results 전체로 매번 재구성 → 같은 결과가 두 번 쌓이지 않는다
+      const finals = [];
       let interim = '';
-      for (let i = e.resultIndex; i < e.results.length; i++) {
+      for (let i = 0; i < e.results.length; i++) {
         const r = e.results[i];
-        if (r.isFinal) this.finals.push({ text: r[0].transcript.trim(), t: (Date.now() - this.startedAt) / 1000 });
-        else interim += r[0].transcript;
+        const text = (r[0]?.transcript || '').trim();
+        if (!text) continue;
+        if (r.isFinal) {
+          if (this.sessionT[i] == null) this.sessionT[i] = (Date.now() - this.startedAt) / 1000;
+          finals.push({ text, t: this.sessionT[i] });
+        } else interim += ' ' + text;
       }
-      this.interim = interim.trim();
+      this.session = collapse(finals);
+      this.interim = interim.replace(/\s+/g, ' ').trim();
       this.onUpdate(this.transcript);
     };
     rec.onerror = (e) => {
@@ -105,8 +138,11 @@ export class Recognizer {
   stop() {
     this.active = false;
     try { this.rec?.stop(); } catch { /* ignore */ }
-    if (this.interim) { this.finals.push({ text: this.interim, t: (Date.now() - this.startedAt) / 1000 }); this.interim = ''; }
-    return { transcript: this.transcript, segments: this.finals.slice() };
+    if (this.interim) { this.session.push({ text: this.interim, t: (Date.now() - this.startedAt) / 1000 }); this.interim = ''; }
+    this.done = this.finals;
+    this.session = [];
+    this.sessionT = [];
+    return { transcript: this.transcript, segments: this.done.slice() };
   }
 }
 
