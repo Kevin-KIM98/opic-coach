@@ -1,0 +1,88 @@
+{
+  "id": "work",
+  "title": "직장 · 업무",
+  "titleEn": "Work & office",
+  "emoji": "💼",
+  "category": "survey",
+  "priority": 10,
+  "intro": "직장인이 설문에서 '사업/회사'를 선택하면 회사·사무실 묘사 → 하루 업무 일과 → 기억에 남는 프로젝트 경험 → 과거와 현재 비교 순으로 나옵니다. 자기 직무를 정확히 설명하려고 애쓰기보다 'planning team', 'work on projects', 'meetings' 같은 일반적인 표현으로 단순하게 말하는 것이 점수에 유리합니다. 출퇴근·회의·점심 같은 일상 요소는 다른 주제와도 겹치므로 한 번 준비하면 여러 곳에서 씁니다.",
+  "strategy": [
+    "회사 묘사는 위치·규모·업종 → 내 팀과 자리 → 좋아하는 점 순서로 말합니다.",
+    "일과 질문은 출근 → 오전 업무 → 점심 → 오후 회의 → 퇴근으로 시간 순서를 지키고 빈도 부사를 넣습니다.",
+    "경험 질문은 마감·첫 출근 같은 하나의 사건을 골라 문제 → 내가 한 행동 → 결과 → 배운 점으로 정리합니다."
+  ],
+  "expressions": [
+    {"en": "I work for a mid-sized company in Seoul.", "ko": "저는 서울에 있는 중견기업에서 일해요.", "level": "IM", "note": "work for + 회사"},
+    {"en": "I'm on the planning team, and there are eight people on my team.", "ko": "저는 기획팀 소속이고 팀원은 여덟 명이에요.", "level": "IM", "note": "on the + team"},
+    {"en": "Our office is on the 7th floor of a building near Gangnam Station.", "ko": "사무실은 강남역 근처 건물 7층에 있어요.", "level": "IM"},
+    {"en": "I usually get to work around nine and leave around six.", "ko": "보통 아홉 시쯤 출근하고 여섯 시쯤 퇴근해요.", "level": "IM", "note": "get to work = 출근하다"},
+    {"en": "We have a team meeting every Monday morning.", "ko": "매주 월요일 아침에 팀 회의가 있어요.", "level": "IM"},
+    {"en": "I spend most of the day answering emails and making reports.", "ko": "하루 대부분을 이메일 답장하고 보고서 만드는 데 써요.", "level": "IM", "note": "spend + 시간 + ~ing"},
+    {"en": "My desk is by the window, so I get a lot of sunlight.", "ko": "제 자리가 창가라서 햇빛이 잘 들어와요.", "level": "IM"},
+    {"en": "I have lunch with my coworkers at a restaurant near the office.", "ko": "동료들이랑 사무실 근처 식당에서 점심을 먹어요.", "level": "IM", "note": "coworker = colleague"},
+    {"en": "My job is to plan new projects and make sure everything stays on schedule.", "ko": "제 일은 새 프로젝트를 기획하고 모든 게 일정대로 진행되게 하는 거예요.", "level": "IH", "note": "make sure (that) ~"},
+    {"en": "We had a really tight deadline, so the whole team stayed late for a week.", "ko": "마감이 정말 빠듯해서 팀 전체가 일주일 동안 야근했어요.", "level": "IH", "note": "tight deadline = 빠듯한 마감"},
+    {"en": "When I first started, I was nervous about everything, but now I feel comfortable.", "ko": "처음 입사했을 땐 모든 게 긴장됐는데, 지금은 편해요.", "level": "IH"},
+    {"en": "We used to work in the office every day, but now we work from home twice a week.", "ko": "예전엔 매일 사무실에 출근했는데, 지금은 주 2회 재택근무를 해요.", "level": "IH", "note": "work from home = 재택근무하다"},
+    {"en": "What I like most about my job is that I get to work with different departments.", "ko": "제 일에서 제일 좋은 점은 여러 부서와 일해 볼 수 있다는 거예요.", "level": "IH", "note": "get to + 동사 = ~할 기회를 얻다"},
+    {"en": "It was stressful at the time, but looking back, it really helped me grow.", "ko": "그땐 스트레스였는데, 돌아보면 정말 성장에 도움이 됐어요.", "level": "AL", "note": "looking back = 돌이켜 보면"},
+    {"en": "The pace can be hectic, but I've learned to take things one step at a time.", "ko": "속도가 정신없을 때도 있지만, 하나씩 차근차근 하는 법을 배웠어요.", "level": "AL"}
+  ],
+  "questions": [
+    {
+      "id": "work-describe",
+      "type": "describe",
+      "en": "I understand that you work at a company. Can you tell me about your company and your office? Where is it, and what does your workplace look like?",
+      "ko": "회사에 다니신다고 하셨죠. 회사와 사무실에 대해 말해 주세요. 어디에 있고, 근무 환경은 어떤 모습인가요?",
+      "tips": ["회사 위치·규모·업종 → 사무실 층·구조 → 내 팀·자리 → 좋아하는 점", "'I'm on the ~ team', 'My desk is by the window' 같은 문장으로 구체화"],
+      "answers": {
+        "IM3": "I work for a mid-sized company in Seoul. Our office is on the 7th floor of a building near Gangnam Station. There are about 150 people in the company. I'm on the planning team, and there are eight people on my team. My desk is by the window, so I get a lot of sunlight. There is a small kitchen with a coffee machine. I like our office because it is clean and bright. Also, it takes only 20 minutes to get there by subway.",
+        "IH": "Sure. I work for a mid-sized company in Seoul that makes educational software. Our office is on the 7th floor of a building near Gangnam Station, so it's very convenient. There are about 150 employees in total, and I'm on the planning team with eight other people. Actually, the office was renovated last year, so it looks pretty modern now. It's an open space with long white desks, and there are a few glass meeting rooms along the wall. My desk is by the window, so I get a lot of sunlight, which I really like. There's also a small kitchen with a coffee machine, and that's where I spend my breaks. What I like most about my office is that it's only 20 minutes from home by subway. Compared to my old company, which was in a dark old building, this place feels much more comfortable. It's not fancy, but it's a nice place to work.",
+        "AL": "Sure, I'd be glad to. I work for a mid-sized company in Seoul that develops educational software. Our office takes up the 7th floor of a building just a few minutes' walk from Gangnam Station, which is a huge plus because my commute is only about 20 minutes by subway. The company has around 150 employees, and I'm on the planning team, which is a group of nine people who basically map out new projects and keep them on track. The office itself was renovated last year, so it's got that modern, open-plan feel with long white desks and a couple of glass meeting rooms along one side. My desk happens to be right by the window, so I get plenty of natural light, although in summer I do have to fight the glare on my monitor. There's a small kitchen area with a decent coffee machine, and to be honest, that's where half of our informal meetings happen. The atmosphere is fairly relaxed for a Korean company. People don't wear suits, and my manager is pretty easygoing. Compared to my previous job, which was in a cramped, dimly lit building, this place feels like a breath of fresh air. It's not a flashy office, but it's comfortable, and that makes a big difference when you spend nine hours a day there."
+      }
+    },
+    {
+      "id": "work-routine",
+      "type": "routine",
+      "en": "Tell me about a typical day at work. What time do you get there, and what do you usually do during the day?",
+      "ko": "회사에서의 전형적인 하루에 대해 말해 주세요. 몇 시에 출근하고, 하루 동안 보통 무엇을 하나요?",
+      "tips": ["출근 → 오전 업무 → 점심 → 오후 회의 → 퇴근 순서", "'First thing in the morning', 'After lunch' 같은 시간 연결어 활용"],
+      "answers": {
+        "IM3": "I take the subway to work, and it takes about 20 minutes. I get to the office around nine. First, I check my emails and drink a cup of coffee. On Monday, we have a team meeting at ten. In the morning, I usually make reports and plan new projects. At noon, I have lunch with my coworkers near the office. In the afternoon, I have meetings with other teams. I finish work around six and go home. It's a busy day, but I like it.",
+        "IH": "Well, my workday is pretty predictable. I leave home around 8:30 and take the subway, which takes about 20 minutes. I get to the office a little before nine, and the first thing I do is grab a coffee and check my emails. On Mondays, we have a team meeting at ten to go over the week's schedule. The rest of the morning, I usually work on reports or plan new projects. At noon, I have lunch with my coworkers at one of the restaurants near the office. We often go to a Korean place that has really good kimchi stew. After lunch, I usually have one or two meetings with other departments, like the design team or the marketing team. Between meetings, I answer emails and update our project schedule. I try to finish around six, but if there's a deadline, I sometimes stay until eight. To be honest, the day goes by fast because I'm always busy. It's tiring sometimes, but I like having a clear routine.",
+        "AL": "My workday follows a pretty steady rhythm. I'm out the door by 8:30 and on the subway, which gets me to the office in about 20 minutes. I usually roll in a bit before nine, grab a coffee from the kitchen, and spend the first half hour going through emails and figuring out what needs to get done that day. Mondays kick off with a team meeting at ten, where we go over the week's schedule and flag anything that's falling behind. The rest of the morning is usually my most productive time, so I try to save my heavier tasks, like writing project proposals, for then. Around noon, I head out for lunch with a few coworkers. We rotate between a handful of restaurants nearby, but there's a kimchi stew place we end up at at least twice a week. Afternoons are mostly meetings with other departments, like design or marketing, and in between, I'm answering emails and updating our project timeline. I try to wrap up by six, but when a deadline is looming, I'll stay until eight or so. The day flies by, to be honest, because there's rarely a quiet moment. It can be hectic, but I've learned to take things one step at a time. Overall, I like having a routine I can count on."
+      }
+    },
+    {
+      "id": "work-experience",
+      "type": "experience",
+      "en": "Tell me about a challenging project or a memorable event at work. What happened, what did you do, and how did it turn out?",
+      "ko": "직장에서 힘들었던 프로젝트나 기억에 남는 일에 대해 말해 주세요. 무슨 일이 있었고, 어떻게 했으며, 결과는 어땠나요?",
+      "tips": ["언제 → 어떤 상황(마감·문제) → 내가 한 행동 → 결과 → 배운 점, 모두 과거시제", "'We had a tight deadline', 'looking back' 같은 표현으로 사건과 교훈을 연결"],
+      "answers": {
+        "IM3": "Last spring, my team had a big project. We had to make a presentation for an important client. The deadline was very tight, and we had only one week. So the whole team stayed late every day. I made the slides and checked the data, and sometimes we worked until ten. Finally, we finished on time, and the client liked it. I was very tired, but I felt proud. Our manager bought us lunch to say thank you. It was hard, but it was a good experience.",
+        "IH": "The one that comes to mind was a project last spring. Our team had to prepare a proposal for a big client, and we had a really tight deadline. Normally we'd have a month, but we only had one week. So the whole team stayed late every day. My job was to make the presentation slides and double-check all the numbers. Actually, on the third day, I found a big mistake in the data, and we had to redo half the slides. It was stressful, but everyone helped each other. We ordered pizza and worked until ten or eleven most nights. In the end, we finished the night before the deadline, and the client loved the proposal. When we heard the news, the whole team cheered. Our manager took us out for a nice dinner to say thank you. It was the hardest week I've had at work, but it also made our team much closer.",
+        "AL": "The one that really stands out happened last spring. Our team was asked to put together a proposal for a major client, and the catch was that we had just one week to do it, when normally we'd get at least a month. So from day one, it was all hands on deck. I was in charge of building the presentation and making sure all the numbers held up. On the third day, I was going through the data and realized that one of the key figures was based on an outdated report. That meant half of our slides had to be redone. My heart sank, but I flagged it right away, and the team just rolled up their sleeves. We ended up ordering pizza and staying until ten or eleven most nights. By Thursday night, we had a version we were actually proud of, and we submitted it with a few hours to spare. A week later, the client said yes, and the whole team cheered. Our manager took us out for a proper dinner to celebrate. Looking back, it was probably the most stressful week I've had at work, but it taught me that catching a mistake early is always better than hoping nobody notices. And honestly, it brought our team a lot closer."
+      }
+    },
+    {
+      "id": "work-compare",
+      "type": "comparison",
+      "en": "How has your work life changed since you first started working? For example, how is your job now different from your first job or your early days at the company?",
+      "ko": "처음 일을 시작했을 때와 비교해서 직장 생활이 어떻게 달라졌나요? 예를 들어, 지금 일이 첫 직장이나 입사 초기와 어떻게 다른가요?",
+      "tips": ["과거: used to / was / had to  vs  현재: now / these days", "달라진 점 2~3개(업무·근무 방식·마음가짐) + 어느 쪽이 더 좋은지"],
+      "answers": {
+        "IM3": "When I first started working, everything was new and difficult. I was nervous about everything. I didn't know how to write a good report. Also, I had to go to the office every day. Now, I feel comfortable at work. I know my job well, and I can help new coworkers. These days, I work from home twice a week. It saves time because I don't have to commute. I think my work life is much better now.",
+        "IH": "It's changed quite a lot, actually. When I first started, I was nervous about everything. I didn't know how to write a proper report, and I was afraid to speak up in meetings. Back then, we used to go to the office every single day, and staying late was normal. Now, after several years, I feel much more comfortable. I know how things work, and I even train new coworkers. The biggest change is the work style. Since the pandemic, we work from home twice a week, which I love because it saves me the commute. Also, we use messaging apps instead of long meetings, so communication is much faster. To be honest, I miss the energy of my early days a little. But overall, my work life is better now because I have more confidence and more balance.",
+        "AL": "It's changed in more ways than I expected, to be honest. When I first started, I was a nervous wreck. I didn't know how to write a decent report, and I'd sit through meetings without saying a word because I was scared of sounding stupid. Back then, everyone was in the office five days a week, and staying late was just part of the culture, whether or not you actually had work to do. Fast-forward a few years, and things look pretty different. I've gotten comfortable with my role, and I'm now the one showing new hires the ropes. The biggest shift, though, has been in how we work. Since the pandemic, our company lets us work from home twice a week, and that's been a game changer for me. I get two mornings without the subway, and I can focus without constant interruptions. We've also moved a lot of communication to messaging apps, so instead of an hour-long meeting, we can sort things out in a few messages. I do sometimes miss the energy of those early days when everything was new and exciting. But overall, I'd say my work life is in a much better place now, mainly because I've got more confidence and a lot more balance."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "colleague", "ipa": "/ˈkɑː.liːɡ/", "tip": "첫 음절 강세 '칼리그'. '콜리그' 아님, 끝은 g로 닫기"},
+    {"word": "presentation", "ipa": "/ˌprez.ənˈteɪ.ʃən/", "tip": "'테이'에 강세. 앞의 prezen은 빠르고 약하게"},
+    {"word": "deadline", "ipa": "/ˈded.laɪn/", "tip": "ea는 '에'. '데드라인', d 두 개 모두 살리기"},
+    {"word": "project", "ipa": "/ˈprɑː.dʒekt/", "tip": "명사는 첫 음절 강세 '프라젝트'. '프로젝트'처럼 '로' 아님"},
+    {"word": "department", "ipa": "/dɪˈpɑːrt.mənt/", "tip": "'파트'에 강세. 첫 di는 약하게 '디'"}
+  ]
+}

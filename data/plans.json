@@ -1,0 +1,3206 @@
+{
+ "intro": "시험 D-day에 맞춰 과정을 고르면 오늘 할 일이 자동으로 정해집니다. 완료 체크는 폰에 저장되며, 밀린 날은 다음 날로 자동 이월됩니다.",
+ "taskTypes": {
+  "learn": {
+   "title": "표현 학습",
+   "minutes": 15,
+   "desc": "핵심 표현 듣고 따라 말하기"
+  },
+  "shadow": {
+   "title": "모범답안 섀도잉",
+   "minutes": 15,
+   "desc": "모범답안을 문장 단위로 듣고 따라 말하기"
+  },
+  "speak": {
+   "title": "직접 답변하기",
+   "minutes": 15,
+   "desc": "질문에 녹음으로 답하고 채점받기"
+  },
+  "pattern": {
+   "title": "만능 패턴",
+   "minutes": 8,
+   "desc": "주제 무관 뼈대 문장 암기"
+  },
+  "pron": {
+   "title": "발음 훈련",
+   "minutes": 7,
+   "desc": "소리·강세·연음 집중"
+  },
+  "mock": {
+   "title": "모의고사",
+   "minutes": 25,
+   "desc": "실전 형식으로 채점"
+  },
+  "review": {
+   "title": "복습",
+   "minutes": 10,
+   "desc": "틀리거나 약한 표현 다시 보기"
+  }
+ },
+ "plans": [
+  {
+   "id": "4w",
+   "title": "4주 집중 과정",
+   "weeks": 4,
+   "dailyMinutes": 75,
+   "desc": "하루 60~90분. 3주 안에 전 주제를 훑고 마지막 주는 롤플레이·돌발·모의고사로 마무리. 시험이 한 달 남았을 때.",
+   "weekMeta": [
+    {
+     "week": 1,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 2,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 3,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 4,
+     "title": "롤플레이 · 돌발 · 실전"
+    }
+   ],
+   "days": [
+    {
+     "day": 1,
+     "week": 1,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "self-intro"
+      },
+      {
+       "type": "shadow",
+       "topic": "self-intro",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "self-intro"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 2,
+     "week": 1,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "housing"
+      },
+      {
+       "type": "shadow",
+       "topic": "housing",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "housing"
+      },
+      {
+       "type": "pattern",
+       "group": "describe"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 3,
+     "week": 1,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "shadow",
+       "topic": "neighborhood",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "pattern",
+       "group": "routine"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 4,
+     "week": 1,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "movies"
+      },
+      {
+       "type": "shadow",
+       "topic": "movies",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "movies"
+      },
+      {
+       "type": "pattern",
+       "group": "experience"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 5,
+     "week": 1,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "shadow",
+       "topic": "self-intro",
+       "level": "IH"
+      },
+      {
+       "type": "speak",
+       "topic": "housing"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 6,
+     "week": 1,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "speak",
+       "topic": "movies"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "opinion"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 7,
+     "week": 1,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "closing"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 8,
+     "week": 2,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "music"
+      },
+      {
+       "type": "shadow",
+       "topic": "music",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "music"
+      },
+      {
+       "type": "pattern",
+       "group": "filler"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 9,
+     "week": 2,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "park"
+      },
+      {
+       "type": "shadow",
+       "topic": "park",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "park"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 10,
+     "week": 2,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "jogging"
+      },
+      {
+       "type": "shadow",
+       "topic": "jogging",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "jogging"
+      },
+      {
+       "type": "pattern",
+       "group": "describe"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 11,
+     "week": 2,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "shadow",
+       "topic": "travel-domestic",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "pattern",
+       "group": "routine"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 12,
+     "week": 2,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "shadow",
+       "topic": "music",
+       "level": "IH"
+      },
+      {
+       "type": "speak",
+       "topic": "park"
+      },
+      {
+       "type": "pattern",
+       "group": "experience"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 13,
+     "week": 2,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "jogging"
+      },
+      {
+       "type": "speak",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 14,
+     "week": 2,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "opinion"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 15,
+     "week": 3,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "shadow",
+       "topic": "travel-overseas",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "pattern",
+       "group": "closing"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 16,
+     "week": 3,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "cafe"
+      },
+      {
+       "type": "shadow",
+       "topic": "cafe",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "cafe"
+      },
+      {
+       "type": "pattern",
+       "group": "filler"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 17,
+     "week": 3,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "work"
+      },
+      {
+       "type": "shadow",
+       "topic": "work",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "work"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 18,
+     "week": 3,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "vacation-home"
+      },
+      {
+       "type": "shadow",
+       "topic": "vacation-home",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "vacation-home"
+      },
+      {
+       "type": "pattern",
+       "group": "describe"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 19,
+     "week": 3,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "shadow",
+       "topic": "travel-overseas",
+       "level": "IH"
+      },
+      {
+       "type": "speak",
+       "topic": "cafe"
+      },
+      {
+       "type": "pattern",
+       "group": "routine"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 20,
+     "week": 3,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "work"
+      },
+      {
+       "type": "speak",
+       "topic": "vacation-home"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "experience"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 21,
+     "week": 3,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 22,
+     "week": 4,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "roleplay"
+      },
+      {
+       "type": "shadow",
+       "topic": "roleplay",
+       "level": "IM3"
+      },
+      {
+       "type": "speak",
+       "topic": "roleplay"
+      }
+     ]
+    },
+    {
+     "day": 23,
+     "week": 4,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "unexpected"
+      },
+      {
+       "type": "speak",
+       "topic": "unexpected"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      }
+     ]
+    },
+    {
+     "day": 24,
+     "week": 4,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "advanced"
+      },
+      {
+       "type": "speak",
+       "topic": "advanced"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      }
+     ]
+    },
+    {
+     "day": 25,
+     "week": 4,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 26,
+     "week": 4,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "toeic-speaking"
+      },
+      {
+       "type": "mock",
+       "set": "tos-mini"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 27,
+     "week": 4,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      },
+      {
+       "type": "speak",
+       "topic": "roleplay"
+      }
+     ]
+    },
+    {
+     "day": 28,
+     "week": 4,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8w",
+   "title": "8주 표준 과정",
+   "weeks": 8,
+   "dailyMinutes": 50,
+   "desc": "하루 45~60분. 주당 주제 2개를 깊게 익히고 매주 미니 모의고사. IM3를 안정적으로, IH까지 노리는 표준 코스.",
+   "weekMeta": [
+    {
+     "week": 1,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 2,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 3,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 4,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 5,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 6,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 7,
+     "title": "롤플레이 · 돌발 · 실전"
+    },
+    {
+     "week": 8,
+     "title": "롤플레이 · 돌발 · 실전"
+    }
+   ],
+   "days": [
+    {
+     "day": 1,
+     "week": 1,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "self-intro"
+      },
+      {
+       "type": "shadow",
+       "topic": "self-intro",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      }
+     ]
+    },
+    {
+     "day": 2,
+     "week": 1,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "self-intro"
+      },
+      {
+       "type": "shadow",
+       "topic": "self-intro",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 3,
+     "week": 1,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "housing"
+      },
+      {
+       "type": "shadow",
+       "topic": "housing",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      },
+      {
+       "type": "pattern",
+       "group": "routine"
+      }
+     ]
+    },
+    {
+     "day": 4,
+     "week": 1,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "housing"
+      },
+      {
+       "type": "shadow",
+       "topic": "housing",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 5,
+     "week": 1,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "self-intro"
+      },
+      {
+       "type": "speak",
+       "topic": "housing"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 6,
+     "week": 1,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 7,
+     "week": 1,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 8,
+     "week": 2,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "shadow",
+       "topic": "neighborhood",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      },
+      {
+       "type": "pattern",
+       "group": "filler"
+      }
+     ]
+    },
+    {
+     "day": 9,
+     "week": 2,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "shadow",
+       "topic": "neighborhood",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 10,
+     "week": 2,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "movies"
+      },
+      {
+       "type": "shadow",
+       "topic": "movies",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      },
+      {
+       "type": "pattern",
+       "group": "describe"
+      }
+     ]
+    },
+    {
+     "day": 11,
+     "week": 2,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "movies"
+      },
+      {
+       "type": "shadow",
+       "topic": "movies",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 12,
+     "week": 2,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "speak",
+       "topic": "movies"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 13,
+     "week": 2,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 14,
+     "week": 2,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "describe"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 15,
+     "week": 3,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "music"
+      },
+      {
+       "type": "shadow",
+       "topic": "music",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      },
+      {
+       "type": "pattern",
+       "group": "closing"
+      }
+     ]
+    },
+    {
+     "day": 16,
+     "week": 3,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "music"
+      },
+      {
+       "type": "shadow",
+       "topic": "music",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 17,
+     "week": 3,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "park"
+      },
+      {
+       "type": "shadow",
+       "topic": "park",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      }
+     ]
+    },
+    {
+     "day": 18,
+     "week": 3,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "park"
+      },
+      {
+       "type": "shadow",
+       "topic": "park",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 19,
+     "week": 3,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "music"
+      },
+      {
+       "type": "speak",
+       "topic": "park"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 20,
+     "week": 3,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 21,
+     "week": 3,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "routine"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 22,
+     "week": 4,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "jogging"
+      },
+      {
+       "type": "shadow",
+       "topic": "jogging",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      },
+      {
+       "type": "pattern",
+       "group": "opinion"
+      }
+     ]
+    },
+    {
+     "day": 23,
+     "week": 4,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "jogging"
+      },
+      {
+       "type": "shadow",
+       "topic": "jogging",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 24,
+     "week": 4,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "shadow",
+       "topic": "travel-domestic",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      },
+      {
+       "type": "pattern",
+       "group": "filler"
+      }
+     ]
+    },
+    {
+     "day": 25,
+     "week": 4,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "shadow",
+       "topic": "travel-domestic",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 26,
+     "week": 4,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "jogging"
+      },
+      {
+       "type": "speak",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 27,
+     "week": 4,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 28,
+     "week": 4,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "experience"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 29,
+     "week": 5,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "shadow",
+       "topic": "travel-overseas",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      }
+     ]
+    },
+    {
+     "day": 30,
+     "week": 5,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "shadow",
+       "topic": "travel-overseas",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 31,
+     "week": 5,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "cafe"
+      },
+      {
+       "type": "shadow",
+       "topic": "cafe",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      },
+      {
+       "type": "pattern",
+       "group": "closing"
+      }
+     ]
+    },
+    {
+     "day": 32,
+     "week": 5,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "cafe"
+      },
+      {
+       "type": "shadow",
+       "topic": "cafe",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 33,
+     "week": 5,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "speak",
+       "topic": "cafe"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 34,
+     "week": 5,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 35,
+     "week": 5,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 36,
+     "week": 6,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "work"
+      },
+      {
+       "type": "shadow",
+       "topic": "work",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      },
+      {
+       "type": "pattern",
+       "group": "experience"
+      }
+     ]
+    },
+    {
+     "day": 37,
+     "week": 6,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "work"
+      },
+      {
+       "type": "shadow",
+       "topic": "work",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 38,
+     "week": 6,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "vacation-home"
+      },
+      {
+       "type": "shadow",
+       "topic": "vacation-home",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      },
+      {
+       "type": "pattern",
+       "group": "opinion"
+      }
+     ]
+    },
+    {
+     "day": 39,
+     "week": 6,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "vacation-home"
+      },
+      {
+       "type": "shadow",
+       "topic": "vacation-home",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 40,
+     "week": 6,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "work"
+      },
+      {
+       "type": "speak",
+       "topic": "vacation-home"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 41,
+     "week": 6,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 42,
+     "week": 6,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "opinion"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 43,
+     "week": 7,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "roleplay"
+      },
+      {
+       "type": "shadow",
+       "topic": "roleplay",
+       "level": "IM3"
+      }
+     ]
+    },
+    {
+     "day": 44,
+     "week": 7,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "roleplay"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      }
+     ]
+    },
+    {
+     "day": 45,
+     "week": 7,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "unexpected"
+      },
+      {
+       "type": "speak",
+       "topic": "unexpected"
+      }
+     ]
+    },
+    {
+     "day": 46,
+     "week": 7,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-unexpected"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 47,
+     "week": 7,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "advanced"
+      },
+      {
+       "type": "speak",
+       "topic": "advanced"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      }
+     ]
+    },
+    {
+     "day": 48,
+     "week": 7,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      }
+     ]
+    },
+    {
+     "day": 49,
+     "week": 7,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 50,
+     "week": 8,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "toeic-speaking"
+      },
+      {
+       "type": "mock",
+       "set": "tos-mini"
+      }
+     ]
+    },
+    {
+     "day": 51,
+     "week": 8,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 52,
+     "week": 8,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "roleplay"
+      },
+      {
+       "type": "speak",
+       "topic": "unexpected"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 53,
+     "week": 8,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 54,
+     "week": 8,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 55,
+     "week": 8,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "closing"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 56,
+     "week": 8,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12w",
+   "title": "12주 여유 과정",
+   "weeks": 12,
+   "dailyMinutes": 35,
+   "desc": "하루 30~45분. 주당 주제 1개, 충분한 반복과 격주 모의고사. 기초부터 차근차근 IM3 이상을 만드는 코스.",
+   "weekMeta": [
+    {
+     "week": 1,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 2,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 3,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 4,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 5,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 6,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 7,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 8,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 9,
+     "title": "설문 주제 정복"
+    },
+    {
+     "week": 10,
+     "title": "롤플레이 · 돌발 · 실전"
+    },
+    {
+     "week": 11,
+     "title": "롤플레이 · 돌발 · 실전"
+    },
+    {
+     "week": 12,
+     "title": "롤플레이 · 돌발 · 실전"
+    }
+   ],
+   "days": [
+    {
+     "day": 1,
+     "week": 1,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "self-intro"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 2,
+     "week": 1,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "self-intro",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 3,
+     "week": 1,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "self-intro"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 4,
+     "week": 1,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "self-intro",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 5,
+     "week": 1,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "self-intro"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 6,
+     "week": 1,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "speak",
+       "topic": "self-intro"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 7,
+     "week": 1,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 8,
+     "week": 2,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "housing"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 9,
+     "week": 2,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "housing",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 10,
+     "week": 2,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "housing"
+      },
+      {
+       "type": "pattern",
+       "group": "describe"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 11,
+     "week": 2,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "housing",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 12,
+     "week": 2,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "housing"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 13,
+     "week": 2,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 14,
+     "week": 2,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 15,
+     "week": 3,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 16,
+     "week": 3,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "neighborhood",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 17,
+     "week": 3,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "pattern",
+       "group": "routine"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 18,
+     "week": 3,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "neighborhood",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 19,
+     "week": 3,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "neighborhood"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 20,
+     "week": 3,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "speak",
+       "topic": "housing"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 21,
+     "week": 3,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 22,
+     "week": 4,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "movies"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 23,
+     "week": 4,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "movies",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 24,
+     "week": 4,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "movies"
+      },
+      {
+       "type": "pattern",
+       "group": "experience"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 25,
+     "week": 4,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "movies",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 26,
+     "week": 4,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "movies"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 27,
+     "week": 4,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 28,
+     "week": 4,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 29,
+     "week": 5,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "music"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 30,
+     "week": 5,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "music",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 31,
+     "week": 5,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "music"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 32,
+     "week": 5,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "music",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 33,
+     "week": 5,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "music"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 34,
+     "week": 5,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "speak",
+       "topic": "movies"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 35,
+     "week": 5,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 36,
+     "week": 6,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "park"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 37,
+     "week": 6,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "park",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 38,
+     "week": 6,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "park"
+      },
+      {
+       "type": "pattern",
+       "group": "opinion"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 39,
+     "week": 6,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "park",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 40,
+     "week": 6,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "park"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 41,
+     "week": 6,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 42,
+     "week": 6,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 43,
+     "week": 7,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "jogging"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 44,
+     "week": 7,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "jogging",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 45,
+     "week": 7,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "jogging"
+      },
+      {
+       "type": "pattern",
+       "group": "closing"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 46,
+     "week": 7,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "jogging",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 47,
+     "week": 7,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "jogging"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 48,
+     "week": 7,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "speak",
+       "topic": "park"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 49,
+     "week": 7,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 50,
+     "week": 8,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 51,
+     "week": 8,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "travel-domestic",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 52,
+     "week": 8,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "pattern",
+       "group": "filler"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 53,
+     "week": 8,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "travel-domestic",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 54,
+     "week": 8,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-th"
+      }
+     ]
+    },
+    {
+     "day": 55,
+     "week": 8,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "pron",
+       "set": "sound-zj"
+      }
+     ]
+    },
+    {
+     "day": 56,
+     "week": 8,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vowel"
+      }
+     ]
+    },
+    {
+     "day": 57,
+     "week": 9,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "pron",
+       "set": "stress"
+      }
+     ]
+    },
+    {
+     "day": 58,
+     "week": 9,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "travel-overseas",
+       "level": "IM3"
+      },
+      {
+       "type": "pron",
+       "set": "linking"
+      }
+     ]
+    },
+    {
+     "day": 59,
+     "week": 9,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "pattern",
+       "group": "opener"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 60,
+     "week": 9,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "travel-overseas",
+       "level": "IH"
+      },
+      {
+       "type": "pron",
+       "set": "twisters"
+      }
+     ]
+    },
+    {
+     "day": 61,
+     "week": 9,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "travel-overseas"
+      },
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-rl"
+      }
+     ]
+    },
+    {
+     "day": 62,
+     "week": 9,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "speak",
+       "topic": "travel-domestic"
+      },
+      {
+       "type": "pron",
+       "set": "sound-fp"
+      }
+     ]
+    },
+    {
+     "day": 63,
+     "week": 9,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "sound-vb"
+      }
+     ]
+    },
+    {
+     "day": 64,
+     "week": 10,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "roleplay"
+      }
+     ]
+    },
+    {
+     "day": 65,
+     "week": 10,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "shadow",
+       "topic": "roleplay",
+       "level": "IM3"
+      }
+     ]
+    },
+    {
+     "day": 66,
+     "week": 10,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "roleplay"
+      }
+     ]
+    },
+    {
+     "day": 67,
+     "week": 10,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "unexpected"
+      }
+     ]
+    },
+    {
+     "day": 68,
+     "week": 10,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "unexpected"
+      }
+     ]
+    },
+    {
+     "day": 69,
+     "week": 10,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-unexpected"
+      }
+     ]
+    },
+    {
+     "day": 70,
+     "week": 10,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 71,
+     "week": 11,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "advanced"
+      }
+     ]
+    },
+    {
+     "day": 72,
+     "week": 11,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "advanced"
+      },
+      {
+       "type": "pattern",
+       "group": "compare"
+      }
+     ]
+    },
+    {
+     "day": 73,
+     "week": 11,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "learn",
+       "topic": "toeic-speaking"
+      }
+     ]
+    },
+    {
+     "day": 74,
+     "week": 11,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "tos-mini"
+      }
+     ]
+    },
+    {
+     "day": 75,
+     "week": 11,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      }
+     ]
+    },
+    {
+     "day": 76,
+     "week": 11,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "speak",
+       "topic": "roleplay"
+      }
+     ]
+    },
+    {
+     "day": 77,
+     "week": 11,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 78,
+     "week": 12,
+     "weekday": 0,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      }
+     ]
+    },
+    {
+     "day": 79,
+     "week": 12,
+     "weekday": 1,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pron",
+       "set": "intonation"
+      }
+     ]
+    },
+    {
+     "day": 80,
+     "week": 12,
+     "weekday": 2,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      }
+     ]
+    },
+    {
+     "day": 81,
+     "week": 12,
+     "weekday": 3,
+     "tasks": [
+      {
+       "type": "speak",
+       "topic": "unexpected"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    },
+    {
+     "day": 82,
+     "week": 12,
+     "weekday": 4,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-full"
+      }
+     ]
+    },
+    {
+     "day": 83,
+     "week": 12,
+     "weekday": 5,
+     "tasks": [
+      {
+       "type": "review"
+      },
+      {
+       "type": "pattern",
+       "group": "closing"
+      }
+     ]
+    },
+    {
+     "day": 84,
+     "week": 12,
+     "weekday": 6,
+     "tasks": [
+      {
+       "type": "mock",
+       "set": "opic-mini"
+      },
+      {
+       "type": "review"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

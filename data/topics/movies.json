@@ -1,0 +1,88 @@
+{
+  "id": "movies",
+  "title": "영화 보기",
+  "titleEn": "Watching movies",
+  "emoji": "🎬",
+  "category": "survey",
+  "priority": 3,
+  "intro": "설문에서 '영화 보기'를 고르면 거의 확정적으로 나오는 주제입니다. 좋아하는 장르·극장 묘사 → 영화 보는 루틴(전·후 포함) → 최근 인상 깊은 영화 경험 → 극장 vs 집 비교 순으로 출제됩니다. 영화 한 편을 정해 줄거리 3문장 + 느낌 2문장을 미리 만들어 두는 것이 핵심입니다.",
+  "strategy": [
+    "장르 질문은 장르 → 이유(스트레스 해소 등) → 극장 위치·시설 → 좋은 점 순서로 답합니다.",
+    "경험 질문은 언제·누구와 → 줄거리 2~3문장 → 반전/명장면 → 본 뒤 한 행동 → 느낌으로 마무리합니다.",
+    "IH 이상은 'be into', 'nothing beats', 'so ~ that' 같은 표현과 구체적 숫자(횟수·가격·좌석)를 넣습니다."
+  ],
+  "expressions": [
+    {"en": "I'm a big fan of action movies.", "ko": "저는 액션 영화를 정말 좋아해요.", "level": "IM"},
+    {"en": "My favorite genre is comedy because it helps me relax.", "ko": "제일 좋아하는 장르는 코미디인데, 긴장을 풀어 주거든요.", "level": "IM"},
+    {"en": "I usually go to the movies about twice a month.", "ko": "보통 한 달에 두 번 정도 영화 보러 가요.", "level": "IM", "note": "go to the movies: 영화 보러 가다"},
+    {"en": "I usually watch movies with my friend on Saturday afternoons.", "ko": "보통 토요일 오후에 친구랑 영화를 봐요.", "level": "IM"},
+    {"en": "The theater I go to is right next to the subway station.", "ko": "제가 가는 극장은 지하철역 바로 옆에 있어요.", "level": "IM"},
+    {"en": "Before the movie, we always buy popcorn and a large Coke.", "ko": "영화 보기 전에 항상 팝콘이랑 큰 콜라를 사요.", "level": "IM"},
+    {"en": "After the movie, we usually go to a cafe and talk about it.", "ko": "영화가 끝나면 보통 카페에 가서 영화 얘기를 해요.", "level": "IM"},
+    {"en": "The story was really touching, and I almost cried.", "ko": "이야기가 정말 감동적이어서 거의 울 뻔했어요.", "level": "IM"},
+    {"en": "I'm really into thrillers these days, especially ones with a big twist at the end.", "ko": "요즘 스릴러에 푹 빠졌는데, 특히 마지막에 큰 반전이 있는 영화요.", "level": "IH", "note": "be into ~: ~에 푹 빠지다"},
+    {"en": "What I like about the theater near my place is that the seats are really comfortable.", "ko": "집 근처 극장이 좋은 건 좌석이 정말 편하다는 거예요.", "level": "IH"},
+    {"en": "I used to watch a lot of romantic comedies, but my taste has changed over the years.", "ko": "예전엔 로맨틱 코미디를 많이 봤는데, 시간이 지나면서 취향이 바뀌었어요.", "level": "IH"},
+    {"en": "The movie was so good that I couldn't stop thinking about it for days.", "ko": "영화가 너무 좋아서 며칠 동안 계속 생각났어요.", "level": "IH", "note": "so + 형용사 + that ...: 너무 ~해서 ...하다"},
+    {"en": "These days, I watch most movies at home, but nothing beats the big screen.", "ko": "요즘은 영화를 대부분 집에서 보지만, 큰 스크린만 한 게 없죠.", "level": "IH", "note": "nothing beats ~: ~만 한 게 없다"},
+    {"en": "The plot was a bit predictable, but the acting more than made up for it.", "ko": "줄거리는 좀 뻔했지만, 연기가 그걸 충분히 만회했어요.", "level": "AL", "note": "make up for: 만회하다, 보충하다"},
+    {"en": "I'm the kind of person who stays through the credits, just to soak it all in.", "ko": "저는 여운을 다 느끼려고 엔딩 크레딧까지 앉아 있는 타입이에요.", "level": "AL", "note": "soak in: 흠뻑 느끼다, 음미하다"}
+  ],
+  "questions": [
+    {
+      "id": "movies-describe",
+      "type": "describe",
+      "en": "You indicated in the survey that you like to watch movies. What kind of movies do you like, and why? Also, tell me about the theater you usually go to.",
+      "ko": "설문에서 영화 보는 걸 좋아한다고 했네요. 어떤 영화를 좋아하고, 왜 좋아하나요? 그리고 주로 가는 극장에 대해서도 말해 주세요.",
+      "tips": ["장르 + 이유 → 두 번째 장르 → 극장 위치·거리 → 시설(좌석·스크린·상영시간) → 좋은 점", "'I'm a big fan of ~' / 'It's right next to ~'로 시작하면 쉬워요"],
+      "answers": {
+        "IM3": "I like action movies the most. They are exciting, and I can forget about work for two hours. I also like comedies because they make me laugh. I usually go to a theater near my apartment. It's right next to the subway station, so it's easy to get to. The theater is big and clean. The seats are comfortable, and the screen is huge. I like that theater because it's close and the popcorn is good.",
+        "IH": "Sure. I'm a big fan of action movies, especially superhero movies and spy thrillers. I think it's because my job is pretty routine, so for two hours I get to escape into a world full of explosions and car chases. Actually, I'm also into mystery movies with a big twist at the end. The kind where you want to watch it again to see what you missed. As for the theater, I usually go to a big multiplex about ten minutes from my apartment. It's right above the subway station, so it's really easy to get to after work. It has about eight screens, and the seats are wide and really comfortable. What I like most is that they have a late show around ten, so I can go even on a weekday. The popcorn is a little expensive, but I get it anyway. To be honest, going there has become one of my favorite ways to relax.",
+        "AL": "Sure. I'd say I'm mostly an action and thriller person. There's something about a well-made spy movie or a heist film that just pulls me in. And after a week of staring at spreadsheets, two hours of car chases is exactly the kind of escape I need. Lately, though, I've also gotten into mystery movies with a big twist, the kind where you walk out of the theater and immediately want to see it again to catch everything you missed. I'm not really a horror fan, to be honest. I jump at everything, and I'd rather not lose sleep over a movie. As for where I go, there's a big multiplex about ten minutes from my apartment, right above the subway station, and it's become my go-to spot. It's got eight or nine screens, wide seats that actually recline a little, and a sound system that makes every explosion rattle your chest. The best part is they run late shows around ten, so I can catch something even on a weeknight without planning ahead. The popcorn is overpriced, like everywhere, but I cave every single time. Honestly, walking into that lobby on a Friday night is one of my favorite feelings of the week."
+      }
+    },
+    {
+      "id": "movies-routine",
+      "type": "routine",
+      "en": "Tell me about how you usually watch movies. When do you go, who do you go with, and what do you do before and after the movie?",
+      "ko": "보통 영화를 어떻게 보는지 말해 주세요. 언제 가고, 누구와 가고, 영화 전후에는 무엇을 하나요?",
+      "tips": ["빈도·요일 → 함께 가는 사람 → 예매·간식(전) → 카페·대화(후) → 느낌", "'Before the movie, ~ / Afterward, ~'로 순서를 분명히 해요"],
+      "answers": {
+        "IM3": "I usually go to the movies about twice a month. I go on Saturday afternoons because it's less crowded. Most of the time, I go with my best friend. Before the movie, we buy tickets on my phone and get popcorn and a Coke. Sometimes we have lunch near the theater first. After the movie, we go to a cafe and talk about it. We talk about our favorite scenes. Then I go home and relax. It's a nice way to spend the weekend.",
+        "IH": "Well, I have a pretty set routine when it comes to movies. I go to the theater about twice a month, usually on Saturday afternoons because the tickets are cheaper and it's less crowded. Most of the time, I go with my best friend. We've been doing this for years, so we both know what the other one likes. I always book the seats on my phone a few days before, and I try to get the ones in the middle of the back row. Before the movie, we usually grab a quick lunch near the theater and then get popcorn and a large Coke to share. Afterward, we always go to a cafe next door and talk about the movie for an hour. Actually, that's my favorite part. We argue about the ending and pick our favorite scenes. On weeknights, I sometimes watch something on Netflix at home, but it's not the same. The theater is a whole experience, not just a movie.",
+        "AL": "I've got my movie routine down to a science, to be honest. I hit the theater about twice a month, almost always on a Saturday afternoon. The tickets are cheaper then, and you don't have to fight through the Friday-night crowds. Nine times out of ten, I go with my best friend from college. We've been doing this since we were students, so at this point we can pick a movie in about thirty seconds without arguing. I book the seats on my phone a few days ahead and always aim for the middle of the back row. On the day, we grab a quick lunch somewhere near the theater, then load up on popcorn and a large Coke to share before heading in. And I'm one of those people who stays through the credits, partly for the extra scenes and partly just to let the movie sink in. The real highlight, though, is afterward. We head to the cafe next door and spend a good hour picking the movie apart and arguing about the ending. During the week, I might throw something on Netflix at home, but it just doesn't compare. For me, the theater is a whole ritual, not just a way to watch a movie."
+      }
+    },
+    {
+      "id": "movies-experience",
+      "type": "experience",
+      "en": "Tell me about the most memorable movie you've seen recently. What was it about, and how did you feel about it?",
+      "ko": "최근에 본 영화 중 가장 기억에 남는 영화에 대해 말해 주세요. 어떤 내용이었고, 어떤 느낌이 들었나요?",
+      "tips": ["언제·누구와 → 줄거리 2~3문장 → 반전·명장면 → 본 뒤 한 일 → 느낌·평가", "'The one that really stuck with me was ~' / 'I didn't see it coming'"],
+      "answers": {
+        "IM3": "The most memorable movie I watched recently was a Korean thriller. I saw it last month with my friend. The story was about a detective looking for his missing daughter. He followed a lot of clues, and at the end, there was a big twist. I didn't expect the ending at all. I was surprised and a little sad. After the movie, my friend and I talked about it for a long time. It was one of the best movies I've seen this year.",
+        "IH": "The one that really stuck with me was a Korean thriller I saw about a month ago. I went on a Saturday afternoon with my best friend. The story was about a detective whose daughter goes missing, and he spends the whole movie chasing clues that lead him to people he trusted. About halfway through, I thought I had figured out who did it. But then, in the last ten minutes, there was a twist that completely turned everything upside down. I actually gasped out loud, and the whole theater went silent. When the credits started, nobody moved for a few seconds. Afterward, my friend and I sat in a cafe for almost two hours going over every scene to find the hints we had missed. To be honest, I even watched it again at home the following week. The acting was amazing, especially the lead actor, and the ending left me feeling shocked and a little sad. It was easily the best movie I've seen this year.",
+        "AL": "The one that really stayed with me was a Korean thriller I caught about a month ago. It was a regular Saturday afternoon, and my best friend and I picked it on a whim. The story follows a detective whose teenage daughter disappears. As he digs into the case, every clue points closer and closer to the people he trusts most. For the first hour or so, I was sure I had it all figured out. Then, in the final ten minutes, the film pulled the rug out from under me with a twist I genuinely never saw coming. I actually gasped out loud, which I never do, and you could feel the entire theater go dead silent. When the credits rolled, nobody got up for a good ten seconds. My friend and I ended up in the cafe next door for nearly two hours, replaying every scene and kicking ourselves for all the hints we'd missed. I was so hooked that I rewatched it at home the following week. The lead actor was phenomenal, and the ending hit me with this strange mix of shock and sadness that I couldn't shake for days. Hands down, it's the best thing I've seen this year."
+      }
+    },
+    {
+      "id": "movies-compare",
+      "type": "comparison",
+      "en": "How is watching movies at the theater different from watching them at home? Which do you prefer, and why?",
+      "ko": "극장에서 영화를 보는 것과 집에서 보는 것은 어떻게 다른가요? 어느 쪽을 더 좋아하고, 그 이유는 무엇인가요?",
+      "tips": ["극장 장점·단점 → 집 장점·단점 → 나의 선택 + 조건(어떤 영화는 극장, 나머지는 집)", "'On the other hand' / 'nothing beats the big screen' 활용"],
+      "answers": {
+        "IM3": "Watching movies at the theater and at home are very different. At the theater, the screen is huge and the sound is loud. I can focus on the movie better. But tickets and popcorn are expensive. At home, I can watch movies on Netflix anytime. I can lie on my sofa and pause the movie anytime. But I often check my phone, so I don't focus well. I prefer the theater for action movies, but I like home for comedies.",
+        "IH": "Well, they're two completely different experiences. At the theater, everything is bigger. The screen is huge, the sound shakes your seat, and there's nothing to distract you, so you get completely lost in the story. That's why I always watch action movies and thrillers at the theater. The downside is the cost. A ticket plus popcorn is easily 20,000 won these days, so I can't go every week. At home, on the other hand, it's cheap and comfortable. I can lie on my sofa, pause whenever I want, and wear whatever I want. The thing is, I get distracted really easily at home. I end up checking my phone or getting a snack, and I miss half the movie. I used to think home was good enough, but the more I go to the theater, the more I realize nothing beats the big screen. So if it's a movie I really care about, I go to the theater. For everything else, home is fine.",
+        "AL": "They're really two different animals, to be honest. At the theater, everything is dialed up. The screen fills your whole field of vision, the sound rattles your seat, and with the lights off, you have no choice but to get completely absorbed. That's why anything with big action or a twist I don't want spoiled, I'll always see on the big screen. The catch, of course, is the price. Between the ticket and the popcorn, you're easily looking at 20,000 won, so it's a treat, not a habit. Watching at home is the opposite. It's cheap, it's comfortable, and I can pause for a snack or watch in my pajamas. The problem is that I have the attention span of a goldfish when I'm on my own sofa. I'll pick up my phone during a slow scene, and before I know it, I've missed a whole plot point. I used to think streaming had replaced the theater for me, but the more I go back, the more I realize nothing beats a dark room full of strangers all holding their breath at the same moment. If it's a movie I really care about, I see it at the theater. Everything else can wait for a lazy Sunday on the couch."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "genre", "ipa": "/ˈʒɑːn.rə/", "tip": "'장르' 아님. 프랑스어식 '잔러', 첫소리는 ʒ(쥬에 가까운 유성음)"},
+    {"word": "theater", "ipa": "/ˈθiː.ə.tɚ/", "tip": "th는 무성음(혀 내밀고 바람). '씨어터'에 가깝게, 첫 음절 강세"},
+    {"word": "thriller", "ipa": "/ˈθrɪl.ɚ/", "tip": "th+r 연속. '스릴러' 아님, 혀 내밀고 바로 r로"},
+    {"word": "comedy", "ipa": "/ˈkɑː.mə.di/", "tip": "첫 음절 강세 '카머디'. '코메디' 아님"},
+    {"word": "documentary", "ipa": "/ˌdɑː.kjəˈmen.tɚ.i/", "tip": "'멘'에 강세. 5음절 '다큐멘터리'"}
+  ]
+}

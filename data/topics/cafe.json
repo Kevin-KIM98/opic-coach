@@ -1,0 +1,88 @@
+{
+  "id": "cafe",
+  "title": "카페 · 커피",
+  "titleEn": "Cafes & coffee",
+  "emoji": "☕",
+  "category": "survey",
+  "priority": 11,
+  "intro": "설문에서 '카페 가기'를 선택하면 자주 가는 카페 묘사 → 카페에 가는 이유와 거기서 하는 일 → 카페에서 있었던 경험 → 과거와 현재 카페 문화 비교로 출제됩니다. 한국인에게 가장 친숙한 소재라 디테일(메뉴·인테리어·소리)을 넣기 쉽고, 그 디테일이 곧 점수가 됩니다. 커피 취향 하나(예: iced Americano)와 카페 이름 하나만 정해 두면 답변이 훨씬 구체적으로 들립니다.",
+  "strategy": [
+    "카페 묘사는 위치 → 인테리어(빛·가구·음악) → 내 단골 메뉴 → 왜 좋은지 순서로 말합니다.",
+    "일과 질문은 언제(주말 아침·퇴근 후) → 누구와 → 무엇을 하는지(일·수다·독서)를 빈도 부사와 함께 말합니다.",
+    "경험 질문은 오랜만에 친구를 만난 날, 주문 실수 같은 작은 사건 하나를 골라 과거시제로 결과와 느낌까지 말합니다."
+  ],
+  "expressions": [
+    {"en": "I go to a cafe near my apartment almost every weekend.", "ko": "거의 주말마다 우리 집 근처 카페에 가요.", "level": "IM"},
+    {"en": "I usually order an iced Americano, even in winter.", "ko": "저는 겨울에도 보통 아이스 아메리카노를 시켜요.", "level": "IM", "note": "order = 주문하다"},
+    {"en": "The cafe has big windows and lots of natural light.", "ko": "그 카페는 창이 크고 자연광이 많이 들어와요.", "level": "IM"},
+    {"en": "It's a good place to work because it's quiet and the Wi-Fi is fast.", "ko": "조용하고 와이파이가 빨라서 일하기 좋은 곳이에요.", "level": "IM", "note": "a good place to + 동사"},
+    {"en": "I like to sit by the window and read a book.", "ko": "창가에 앉아서 책 읽는 걸 좋아해요.", "level": "IM"},
+    {"en": "My friends and I meet at a cafe and chat for hours.", "ko": "친구들이랑 카페에서 만나서 몇 시간씩 수다를 떨어요.", "level": "IM", "note": "chat = 수다 떨다"},
+    {"en": "The coffee is a little expensive, but the atmosphere is great.", "ko": "커피가 좀 비싸긴 한데 분위기가 정말 좋아요.", "level": "IM", "note": "atmosphere 발음 주의"},
+    {"en": "After work, I often stop by a cafe on my way home.", "ko": "퇴근 후에 집에 가는 길에 카페에 자주 들러요.", "level": "IM", "note": "stop by = 잠깐 들르다"},
+    {"en": "It's become my go-to place whenever I need to get some work done.", "ko": "일을 좀 해야 할 때마다 가는 단골 장소가 됐어요.", "level": "IH", "note": "go-to place = 늘 찾는 곳"},
+    {"en": "What I love about this place is that the staff remember my order.", "ko": "이 카페에서 제일 좋은 건 직원들이 제 주문을 기억한다는 거예요.", "level": "IH", "note": "What I love about ~ is that ~"},
+    {"en": "There used to be only a few cafes in my neighborhood, but now there's one on every corner.", "ko": "예전엔 동네에 카페가 몇 개 없었는데, 지금은 모퉁이마다 하나씩 있어요.", "level": "IH", "note": "There used to be ~"},
+    {"en": "Chain cafes are convenient, but independent cafes have more character.", "ko": "체인 카페는 편리하지만, 개인 카페는 개성이 더 있어요.", "level": "IH", "note": "have character = 개성이 있다"},
+    {"en": "I ran into an old friend there, and we ended up talking for three hours.", "ko": "거기서 옛 친구를 우연히 만나서 결국 세 시간을 얘기했어요.", "level": "IH", "note": "run into = 우연히 만나다 / end up ~ing"},
+    {"en": "For a lot of Koreans, cafes aren't just about coffee; they're a second living room.", "ko": "많은 한국인에게 카페는 단순히 커피 마시는 곳이 아니라 제2의 거실이에요.", "level": "AL"},
+    {"en": "There's something about the hum of a busy cafe that helps me focus.", "ko": "북적이는 카페의 웅성거림에는 묘하게 집중을 돕는 무언가가 있어요.", "level": "AL", "note": "There's something about ~ that ~"}
+  ],
+  "questions": [
+    {
+      "id": "cafe-describe",
+      "type": "describe",
+      "en": "You indicated in the survey that you like going to cafes. Tell me about a cafe you often go to. Where is it, what does it look like, and what do you usually order?",
+      "ko": "설문에서 카페 가는 걸 좋아한다고 하셨네요. 자주 가는 카페에 대해 말해 주세요. 어디에 있고, 어떤 모습이며, 보통 무엇을 주문하나요?",
+      "tips": ["위치 → 인테리어(창·가구·음악) → 단골 메뉴 → 왜 좋은지", "'The cafe has big windows and lots of natural light' 처럼 시각적 디테일 넣기"],
+      "answers": {
+        "IM3": "My favorite cafe is near my apartment. It takes about five minutes on foot. It's a small cafe with big windows and lots of natural light. There are wooden tables and some plants. The music is soft and quiet. I usually order an iced Americano, even in winter. Sometimes I also get a croissant. I like this cafe because it is quiet and the coffee is good.",
+        "IH": "Sure. There's a small cafe about five minutes from my apartment, and I go there almost every weekend. It's called Morning Bean, and it's on the first floor of an old brick building. When you walk in, the first thing you notice is the big windows and all the natural light. There are wooden tables, a few plants, and a long counter where you can see them making coffee. They always play soft jazz, so it's really relaxing. I usually order an iced Americano, even in winter, and sometimes a croissant if I skipped breakfast. What I love about this place is that the staff remember my order. Compared to the big chain cafes, it's a little more expensive, but the atmosphere is much better. It's become my go-to place whenever I want to read or get some work done.",
+        "AL": "Sure, there's a little cafe called Morning Bean about a five-minute walk from my apartment, and it's become a real fixture in my weekends. It's tucked into the first floor of an old brick building, and honestly, you could walk right past it if you didn't know it was there. Inside, though, it's lovely. The whole front wall is glass, so the place is flooded with natural light in the morning. There are mismatched wooden tables, a couple of plants hanging by the window, and a long counter where you can watch the barista pull espresso shots. They always have soft jazz playing at just the right volume, loud enough to feel cozy but not so loud that you can't think. My usual is an iced Americano, and yes, I order it even in the dead of winter, which the staff find funny. If I've skipped breakfast, I'll grab one of their almond croissants, too. What really makes the place special is that the owner knows the regulars by name and remembers what they drink. It's a bit pricier than the chain cafes down the street, but I'm happy to pay for the atmosphere. It's the kind of spot where I can sit for two hours with a book and nobody bothers me."
+      }
+    },
+    {
+      "id": "cafe-routine",
+      "type": "routine",
+      "en": "When do you usually go to cafes, and why? What do you normally do there?",
+      "ko": "보통 언제 카페에 가고, 왜 가나요? 거기서 주로 무엇을 하나요?",
+      "tips": ["언제(주말 아침·퇴근 후) → 누구와 → 하는 일(일·수다·독서) → 이유", "'stop by', 'get some work done', 'chat for hours' 같은 표현 활용"],
+      "answers": {
+        "IM3": "I go to cafes two or three times a week. On weekday evenings, I sometimes stop by a cafe on my way home from work. I drink coffee and read a book for an hour. On weekends, I go to a cafe with my friends. We chat for hours about our jobs and our lives. Sometimes I bring my laptop and do some work there. I go to cafes because they are quiet and comfortable. Also, I love the smell of coffee.",
+        "IH": "Well, I probably go to a cafe two or three times a week. On weekday evenings, I sometimes stop by a cafe on my way home from work, especially when I've had a stressful day. I sit by the window with a coffee and read for about an hour, and it really helps me relax. On weekends, cafes are more of a social thing. My friends and I usually meet at a cafe on Saturday afternoon and chat for hours about work, dating, and whatever is going on. Actually, on Sunday mornings, I often bring my laptop and get some work done or plan my week. The thing is, my apartment is comfortable, but I get lazy there. At a cafe, I can focus much better. I also just love the smell of coffee and the sound of people talking. So for me, cafes are where I relax, socialize, and work, all at the same time.",
+        "AL": "I'd say I'm at a cafe two or three times a week, and each visit has a slightly different purpose. On weekday evenings, especially after a rough day at the office, I'll stop by a cafe on my way home rather than heading straight back to the apartment. I'll grab a coffee, sit by the window, and read for an hour or so, and by the time I leave, the stress has mostly worn off. Weekends are more social. My friends and I have a standing Saturday afternoon coffee date, and we can easily spend three hours catching up on work, relationships, and whatever else is going on. Then on Sunday mornings, I usually bring my laptop and knock out some work or plan the week ahead. The thing is, my apartment is comfortable, but that's exactly the problem. I end up on the sofa scrolling through my phone. There's something about the hum of a busy cafe that helps me focus. Plus, I just genuinely love the smell of fresh coffee and the little ritual of ordering. So for me, cafes wear a lot of hats. They're where I unwind, where I socialize, and where I actually get things done."
+      }
+    },
+    {
+      "id": "cafe-experience",
+      "type": "experience",
+      "en": "Tell me about a memorable experience you had at a cafe. What happened, who were you with, and why do you remember it?",
+      "ko": "카페에서 있었던 기억에 남는 경험을 말해 주세요. 무슨 일이 있었고, 누구와 함께였으며, 왜 기억에 남나요?",
+      "tips": ["언제 → 누구와 → 무슨 일(우연한 만남·주문 실수) → 결과 → 느낌, 과거시제", "'ran into', 'ended up ~ing', 'turned out' 으로 사건 전개"],
+      "answers": {
+        "IM3": "Last year, I had a funny experience at a cafe. I went to a cafe near my office with a coworker. I ordered an iced Americano, but the staff gave me a hot latte. I didn't notice until I drank it. It was very sweet, and I was surprised. My coworker laughed a lot. I told the staff, and they gave me the right coffee for free. It was a small mistake, but we still talk about it. Now I always check my cup before I leave.",
+        "IH": "Yes, one that comes to mind happened last spring. I was at Morning Bean, my usual cafe, on a Saturday morning. I was reading by the window when someone said my name. I looked up, and it was Minji, my best friend from university. We hadn't seen each other in almost five years because she had moved to Busan. It turned out that she was in Seoul for a wedding and had just walked in for a coffee. We were both so surprised that we actually screamed a little. We ended up talking for three hours, and I completely forgot about my book. We talked about our jobs, our old classmates, and how much things had changed. To be honest, it felt like no time had passed at all. Since then, we message each other almost every week. It was such a lucky coincidence, and it's still my favorite cafe memory.",
+        "AL": "Oh, there's one I'll never forget. It was a Saturday morning last spring, and I was at my usual spot in Morning Bean, halfway through a book and my second iced Americano. Out of nowhere, someone behind me said my name, and when I turned around, it was Minji, my closest friend from university. We'd completely lost touch after she moved to Busan for work, so it had been close to five years. It turned out she was in town for a cousin's wedding and had wandered in for a coffee because the place looked nice. Neither of us could believe it. We actually shrieked, and the whole cafe turned to look at us. I put my book away, she pulled up a chair, and we ended up talking for three straight hours. We covered everything, from her new job to old classmates to how strange it was that we'd both ended up in the exact same cafe on the exact same morning. What struck me was how easy it felt, like no time had passed at all. Since that day, we've kept in touch, and she even came to stay with me last month. It was pure luck, but it reminded me that some friendships just pick up right where they left off."
+      }
+    },
+    {
+      "id": "cafe-compare",
+      "type": "comparison",
+      "en": "How has cafe culture in Korea changed compared to the past? Or, how are chain cafes different from small independent cafes?",
+      "ko": "한국의 카페 문화는 과거와 비교해 어떻게 달라졌나요? 또는 체인 카페와 소규모 개인 카페는 어떻게 다른가요?",
+      "tips": ["과거(used to / there were) → 현재(these days / now) 대비 2~3개", "체인 vs 개인 카페 장단점을 대칭으로 말하고 내 취향으로 마무리"],
+      "answers": {
+        "IM3": "Cafe culture in Korea has changed a lot. In the past, there were only a few cafes, and people went there just to drink coffee. Now there are cafes on every corner. People go to cafes to study, work, or meet friends. Chain cafes like Starbucks are convenient because they are everywhere. But small independent cafes have better coffee and a unique style. I like both, but I prefer small cafes. They feel more special and cozy.",
+        "IH": "It's changed a lot, actually. When I was in high school, there used to be only a few cafes in my neighborhood, and they were mostly for adults meeting over coffee. These days, there's a cafe on every corner, and people go there for all kinds of reasons. Students study there, office workers have meetings there, and I even see people working on their laptops all day. Another big change is the variety. In the past, most cafes were big chains like Starbucks. Now there are so many small independent cafes with their own unique style. Chain cafes are convenient because they're everywhere and the coffee always tastes the same. Independent cafes, on the other hand, have more character, better coffee, and a more relaxed feel. To be honest, I go to chains when I'm in a hurry, but on weekends I always choose a small cafe. For a lot of Koreans, cafes have become a second living room, and I think that's a good thing.",
+        "AL": "Cafe culture here has changed dramatically, even just in the last ten years or so. When I was in high school, cafes were kind of a special-occasion thing. There were a few big chains in the busy areas, and you went there to meet someone, not to hang out for hours. Now, there's literally a cafe on every corner, and they've become an extension of people's homes. Students camp out with their textbooks, freelancers work from them all day, and couples on dates hop from one cafe to the next. The other huge shift is the rise of small independent cafes. It used to be that if you wanted good coffee, you went to Starbucks. These days, every neighborhood has a few tiny cafes run by people who are genuinely obsessed with coffee, and many of them roast their own beans. Chains still have their place. They're consistent, they're everywhere, and you know exactly what you're getting. But independent cafes have soul. The coffee is usually better, the owner knows the regulars, and each one has a personality of its own. I'll grab a chain coffee on a busy workday, but when I actually want to enjoy myself, it's always a small cafe. For a lot of Koreans, cafes aren't just about coffee anymore; they're a second living room."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "atmosphere", "ipa": "/ˈæt.məs.fɪr/", "tip": "첫 음절 강세 '앳머스피어'. '아트모스피어' 아님"},
+    {"word": "croissant", "ipa": "/kwɑːˈsɑːnt/", "tip": "미국식 '크와상(트)'. c 뒤에 w 소리, 끝 t는 약하게"},
+    {"word": "latte", "ipa": "/ˈlɑː.teɪ/", "tip": "'라테이'. 끝이 '테'가 아니라 '테이'"},
+    {"word": "espresso", "ipa": "/eˈspres.oʊ/", "tip": "'에스프레소'. x 소리 없음, 'expresso' 아님"},
+    {"word": "cozy", "ipa": "/ˈkoʊ.zi/", "tip": "'코우지'. z는 성대를 울리는 소리, '코지'보다 '코우'를 길게"}
+  ]
+}

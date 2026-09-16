@@ -1,0 +1,88 @@
+{
+  "id": "housing",
+  "title": "집 · 거주지",
+  "titleEn": "Housing",
+  "emoji": "🏠",
+  "category": "survey",
+  "priority": 1,
+  "intro": "OPIc 설문에서 거의 항상 출제되는 핵심 주제입니다. 집 묘사(방·가구·전망) → 집에서 하는 일상 → 집과 관련된 경험(이사·문제) 3단 콤보로 나옵니다. 묘사는 '전체 → 세부 → 내 느낌' 순서만 지켜도 IM3가 나옵니다.",
+  "strategy": [
+    "묘사 질문은 위치·크기·방 개수 → 가장 좋아하는 공간 → 이유/느낌 순서로 답합니다.",
+    "경험 질문은 언제·어디서·무슨 일·결과·느낌 5요소를 과거시제로 말합니다.",
+    "IH 이상은 비교 표현(compared to, used to)과 구체적 디테일(숫자·색·소리)을 넣습니다."
+  ],
+  "expressions": [
+    {"en": "I live in a two-bedroom apartment on the 12th floor.", "ko": "저는 12층에 있는 방 두 개짜리 아파트에 살아요.", "level": "IM", "note": "on the + 서수 + floor"},
+    {"en": "It's a small but cozy place.", "ko": "작지만 아늑한 곳이에요.", "level": "IM"},
+    {"en": "When you walk in, the first thing you see is the living room.", "ko": "들어가면 제일 먼저 보이는 게 거실이에요.", "level": "IM", "note": "묘사 시작 만능 문장"},
+    {"en": "My favorite spot is the balcony because I can see the river from there.", "ko": "제일 좋아하는 공간은 발코니인데, 거기서 강이 보이거든요.", "level": "IM"},
+    {"en": "I've been living here for about three years.", "ko": "여기 산 지 3년 정도 됐어요.", "level": "IM", "note": "현재완료진행: 지속 기간"},
+    {"en": "It takes me about 20 minutes to get to work from home.", "ko": "집에서 회사까지 20분 정도 걸려요.", "level": "IM"},
+    {"en": "The kitchen is right next to the living room, so it feels open.", "ko": "부엌이 거실 바로 옆이라 탁 트인 느낌이에요.", "level": "IM"},
+    {"en": "I usually spend most of my time in the living room watching TV.", "ko": "저는 보통 거실에서 TV 보면서 대부분의 시간을 보내요.", "level": "IM"},
+    {"en": "What I like most about my place is that it's close to a subway station.", "ko": "우리 집에서 제일 마음에 드는 건 지하철역이 가깝다는 거예요.", "level": "IH", "note": "What I like most about ~ is that ~"},
+    {"en": "Compared to my old place, this one is much brighter and quieter.", "ko": "예전 집에 비하면 여기가 훨씬 밝고 조용해요.", "level": "IH"},
+    {"en": "I used to live in a studio, but it was too cramped.", "ko": "예전엔 원룸에 살았는데 너무 비좁았어요.", "level": "IH", "note": "used to: 과거 습관/상태"},
+    {"en": "One thing I'd like to change is the old wallpaper.", "ko": "바꾸고 싶은 게 하나 있다면 오래된 벽지예요.", "level": "IH"},
+    {"en": "I moved in last spring, and it took a while to get settled.", "ko": "작년 봄에 이사 왔는데 자리 잡는 데 시간이 좀 걸렸어요.", "level": "IH"},
+    {"en": "The place isn't fancy, but it really feels like home.", "ko": "화려한 집은 아니지만 정말 집 같은 느낌이에요.", "level": "AL"},
+    {"en": "Ever since I put a plant on the windowsill, the room has felt a lot more alive.", "ko": "창턱에 화분을 놓은 뒤로 방이 훨씬 생기 있어졌어요.", "level": "AL", "note": "Ever since ~, 현재완료"}
+  ],
+  "questions": [
+    {
+      "id": "housing-describe",
+      "type": "describe",
+      "en": "I'd like to know about where you live. Can you describe your home? What does it look like?",
+      "ko": "당신이 사는 곳에 대해 알고 싶어요. 집을 묘사해 주세요. 어떻게 생겼나요?",
+      "tips": ["위치·종류·층 → 방 구성 → 가장 좋아하는 공간 → 느낌", "'When you walk in...' 으로 시작하면 자연스러워요"],
+      "answers": {
+        "IM3": "I live in an apartment in Seoul. It's on the 12th floor. It has two bedrooms, a living room, and a kitchen. When you walk in, the first thing you see is the living room. There is a big sofa and a TV. My favorite spot is the balcony because I can see the river from there. It's a small but cozy place, and I really like it.",
+        "IH": "Sure. I live in a two-bedroom apartment on the 12th floor in Seoul. I've been living here for about three years. When you walk in, the first thing you see is the living room, which has a gray sofa, a coffee table, and a big TV on the wall. The kitchen is right next to the living room, so it feels open and bright. My favorite spot is definitely the balcony. In the evening, I like to sit there with a cup of coffee and look at the river. Compared to my old place, this one is much quieter, so I sleep really well. It's not a big place, but it really feels like home.",
+        "AL": "Sure, I'd be happy to. I live in a two-bedroom apartment on the 12th floor of a fairly new building in Seoul, and I've been there for about three years now. The moment you walk in, you're in an open living area with a gray sofa, a wooden coffee table, and a big TV mounted on the wall. The kitchen flows right into the living room, which makes the whole place feel a lot bigger than it actually is. My favorite spot, hands down, is the balcony. Ever since I put a couple of plants out there, it's become my little escape. I'll sit there in the evening with a coffee and watch the river and the city lights. Compared to the cramped studio I used to live in, this place is brighter, quieter, and honestly just more peaceful. It isn't fancy, but it really feels like home."
+      }
+    },
+    {
+      "id": "housing-routine",
+      "type": "routine",
+      "en": "What do you usually do at home? Tell me about a typical day at your home from morning to night.",
+      "ko": "집에서 보통 무엇을 하나요? 아침부터 밤까지 집에서의 일상을 말해 주세요.",
+      "tips": ["시간 순서 연결어: In the morning / After work / Before bed", "빈도 부사 usually, always, sometimes 활용"],
+      "answers": {
+        "IM3": "On weekdays, I get up at seven and make a simple breakfast in the kitchen. After work, I come home around seven in the evening. I usually cook dinner or order food. Then I watch TV or YouTube in the living room. Before bed, I take a shower and read a little. On weekends, I clean the house and relax. That's my typical day at home.",
+        "IH": "Well, on weekdays my day at home is pretty simple. I get up around seven, make a quick breakfast, usually toast and coffee, and eat it standing in the kitchen. After work, I get home around seven in the evening. I usually cook something simple like pasta, or if I'm tired, I just order food. After dinner, I spend most of my time in the living room watching YouTube or a drama. Before bed, I take a shower and read for about 20 minutes. Weekends are different. I sleep in, do laundry, clean the apartment, and sometimes invite a friend over for dinner. Home is where I recharge, so I try to keep it relaxing.",
+        "AL": "My weekdays at home are pretty routine, to be honest. I'm up around seven, and the first thing I do is make coffee and some toast, which I usually eat standing at the kitchen counter while checking my phone. I'm out the door by eight. I get back around seven in the evening, and depending on how tired I am, I either cook something quick like pasta or just order in. After dinner, I'll usually be on the sofa with a drama or YouTube on, and around ten I'll take a shower and read for a bit before bed. Weekends feel completely different. I sleep in, catch up on laundry and cleaning, and sometimes have a friend over for dinner. Since I spend so much of the week outside, home is really where I recharge, so I try to keep it calm and clutter-free."
+      }
+    },
+    {
+      "id": "housing-experience",
+      "type": "experience",
+      "en": "Have you ever had a problem at your home, like something breaking? What happened and how did you handle it?",
+      "ko": "집에서 무언가 고장 나는 것 같은 문제를 겪은 적이 있나요? 무슨 일이 있었고 어떻게 해결했나요?",
+      "tips": ["과거시제 확실히: broke, called, came, fixed", "언제 → 무슨 문제 → 내가 한 행동 → 결과 → 느낀 점"],
+      "answers": {
+        "IM3": "Yes, I had a problem last winter. One morning, the hot water didn't work. It was very cold, so I couldn't take a shower. I called the management office. A repairman came in the afternoon. He said the boiler was broken. He fixed it in about an hour. I was very happy because I could take a hot shower again. Now I check the boiler before winter.",
+        "IH": "Yes, actually. Last winter, I had a problem with the hot water. One morning, I turned on the shower and it was freezing cold. It was the middle of January, so it was a big deal. I called the management office right away, and they sent a repairman in the afternoon. It turned out that the boiler was broken. He replaced a part, and it took about an hour. I was so relieved when the hot water came back. Since then, I always check the boiler before winter starts. It was a small problem, but it taught me to take care of things in my home.",
+        "AL": "Oh, definitely. The one that comes to mind happened last January. I got up one morning, turned on the shower, and the water was ice cold. It was the coldest week of the year, so it was actually a pretty big deal. I called the management office first thing, and luckily they sent a repairman that afternoon. It turned out that a part inside the boiler had worn out. He replaced it in about an hour, and I've never been so happy to hear the boiler kick on. The whole thing was a bit stressful, but it taught me to get the boiler checked before winter instead of waiting for something to break. So now that's part of my routine every November."
+      }
+    },
+    {
+      "id": "housing-compare",
+      "type": "comparison",
+      "en": "How is the home you live in now different from the home you lived in as a child?",
+      "ko": "지금 사는 집은 어릴 때 살던 집과 어떻게 다른가요?",
+      "tips": ["과거: used to / was / had  vs  현재: is / has", "차이점 2~3개 + 어느 쪽이 더 좋은지 한 줄"],
+      "answers": {
+        "IM3": "When I was a child, I lived in a house with a small yard. It was in a quiet town. Now I live in an apartment in a big city. My childhood home was bigger, and I had a garden. My apartment now is smaller, but it is very convenient. There are many stores and a subway station nearby. I miss the yard, but I like my apartment because it is easy to live in.",
+        "IH": "They're pretty different. When I was a kid, I lived in a house with a small yard in a quiet town. We used to have a dog, and I played outside all the time. Now I live in an apartment in the middle of a big city. My childhood home was bigger and had more space, but it was far from everything. My apartment now is smaller, but it's really convenient. There's a subway station, a supermarket, and a gym within five minutes. To be honest, I miss the yard sometimes, but I prefer my current place because it fits my busy lifestyle.",
+        "AL": "They couldn't be more different, actually. I grew up in a house with a small yard in a quiet town, and we had a dog that I'd play with outside almost every day. Now I'm in an apartment right in the middle of Seoul. The house I grew up in was definitely more spacious, and there was a real sense of peace and quiet there. My apartment, on the other hand, is compact, but everything I need is within a five-minute walk, from the subway to the gym. I do miss the yard sometimes, especially in spring, but I think my current place suits my lifestyle much better. I'm out most of the day, so convenience matters more to me now than space."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "apartment", "ipa": "/əˈpɑːrt.mənt/", "tip": "'파트'에 강세. 앞의 a는 약하게 '어'"},
+    {"word": "comfortable", "ipa": "/ˈkʌmf.tə.bəl/", "tip": "3음절로 '컴프터블'. '컴포터블' 아님"},
+    {"word": "balcony", "ipa": "/ˈbæl.kə.ni/", "tip": "첫 음절 강세, 끝은 '니'"},
+    {"word": "furniture", "ipa": "/ˈfɜːr.nɪ.tʃər/", "tip": "f는 윗니로 아랫입술 살짝 물고. 불가산명사"},
+    {"word": "neighborhood", "ipa": "/ˈneɪ.bɚ.hʊd/", "tip": "gh 묵음, '네이버후드'"}
+  ]
+}

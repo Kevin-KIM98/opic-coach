@@ -1,0 +1,88 @@
+{
+  "id": "jogging",
+  "title": "걷기 · 조깅",
+  "titleEn": "Walking & jogging",
+  "emoji": "🏃",
+  "category": "survey",
+  "priority": 6,
+  "intro": "'걷기·조깅'은 설문 운동 항목 중 가장 답하기 쉬운 주제로, 코스 묘사 → 루틴(빈도·준비·장비) → 시작 계기나 부상 경험 → 습관 변화 비교 순서로 출제됩니다. 집 근처 강변 공원 코스 하나를 정해 두고 모든 답변을 그 코스 중심으로 연결하면 내용이 흔들리지 않습니다.",
+  "strategy": [
+    "코스 묘사는 위치 → 길의 특징(flat, paved, along the river) → 주변 풍경 → 왜 좋은지 순서로 답합니다.",
+    "루틴 질문은 빈도(three times a week) → 시간대 → 준비(stretch, gear, app) → 뛴 후 순서로 시간 흐름을 따릅니다.",
+    "경험 질문은 '시작 계기'가 가장 안전합니다. 건강검진 → 첫 날 힘들었음 → 한 달 후 변화 → 지금 순서로 과거시제를 유지하세요."
+  ],
+  "expressions": [
+    {"en": "I usually go jogging along the river near my apartment.", "ko": "저는 보통 집 근처 강변을 따라 조깅해요.", "level": "IM", "note": "go + -ing: 운동/여가 활동"},
+    {"en": "I jog three times a week, mostly in the evening.", "ko": "일주일에 세 번, 주로 저녁에 조깅해요.", "level": "IM", "note": "빈도: ~ times a week"},
+    {"en": "The route is flat, so it's easy to run.", "ko": "코스가 평평해서 뛰기 편해요.", "level": "IM"},
+    {"en": "Before I run, I always stretch for about five minutes.", "ko": "뛰기 전에 항상 5분 정도 스트레칭해요.", "level": "IM"},
+    {"en": "I run for about 30 minutes, and then I walk for ten.", "ko": "30분 정도 뛰고 나서 10분 걸어요.", "level": "IM"},
+    {"en": "I use a running app to check my distance and pace.", "ko": "거리랑 페이스를 확인하려고 러닝 앱을 써요.", "level": "IM"},
+    {"en": "I feel refreshed after a run.", "ko": "뛰고 나면 상쾌해요.", "level": "IM", "note": "refreshed = 상쾌해진 (사람 주어)"},
+    {"en": "I started jogging because I wanted to lose some weight.", "ko": "살을 좀 빼고 싶어서 조깅을 시작했어요.", "level": "IM"},
+    {"en": "I try to run at least five kilometers each time.", "ko": "매번 최소 5킬로미터는 뛰려고 해요.", "level": "IH", "note": "try to + 동사: ~하려고 노력하다"},
+    {"en": "I've been jogging for about two years now.", "ko": "조깅한 지 이제 2년 정도 됐어요.", "level": "IH", "note": "현재완료진행 + for 기간"},
+    {"en": "At first, I could barely run for ten minutes.", "ko": "처음엔 10분도 제대로 못 뛰었어요.", "level": "IH", "note": "could barely = 거의 ~하지 못했다"},
+    {"en": "Jogging helps me clear my head after a long day at work.", "ko": "조깅은 긴 하루 끝에 머리를 식히는 데 도움이 돼요.", "level": "IH"},
+    {"en": "I used to run only on weekends, but now I go on weekdays too.", "ko": "예전엔 주말에만 뛰었는데 이제 평일에도 가요.", "level": "IH", "note": "used to: 과거 습관 (지금은 아님)"},
+    {"en": "Once you get into a rhythm, the time just flies by.", "ko": "리듬을 타기 시작하면 시간이 정말 금방 가요.", "level": "AL", "note": "fly by = (시간이) 쏜살같이 지나가다"},
+    {"en": "It's not about speed for me; it's more about clearing my mind.", "ko": "저한테는 속도가 중요한 게 아니라 마음을 비우는 게 더 중요해요.", "level": "AL", "note": "It's not about A; it's about B"}
+  ],
+  "questions": [
+    {
+      "id": "jogging-describe",
+      "type": "describe",
+      "en": "You said in the survey that you like walking or jogging. Where do you usually walk or jog? Tell me about the route and what it's like.",
+      "ko": "설문에서 걷기나 조깅을 좋아한다고 하셨네요. 보통 어디서 걷거나 뛰나요? 코스와 그곳이 어떤지 말해 주세요.",
+      "tips": ["위치·거리 → 길의 특징(flat, paved, 5km) → 풍경(trees, city lights) → 왜 좋은지", "'My usual route is...' 로 시작하고, 마지막에 Compared to running on the streets로 비교를 넣으세요"],
+      "answers": {
+        "IM3": "I usually jog along the river near my apartment. There is a park by the river with a long running path. It takes about ten minutes to walk there from my home. The route is flat and about five kilometers long. There are many trees along the path, so it's nice and shady. In the evening, I can see the city lights across the river. It's usually quiet, but there are other joggers too. I really like this route.",
+        "IH": "Sure. My usual route is the riverside path in the park near my apartment. It's about a ten-minute walk from my front door, so it's really convenient. The path is flat and well paved. It runs along the river for about five kilometers, which is perfect for a weekday run. There are trees on both sides, so it's shady in summer, and there are distance markers every 500 meters. I usually run in the evening, and around that time, the city lights across the river look really pretty. It can get busy with cyclists and other joggers, so I have to watch out sometimes. Compared to running on the streets, it's much safer because there are no cars or traffic lights. To be honest, that route is the main reason I've been able to keep jogging for so long.",
+        "AL": "Sure. My usual route is the riverside path that runs through the park near my apartment. It's only about a ten-minute walk from my front door. It's flat, well paved, and stretches along the river for about five kilometers before it loops back, so I can do the whole thing in around 35 minutes. There are trees lining both sides of the path, which is a lifesaver in summer, and there are distance markers every 500 meters that help me keep my pace. I usually head out in the evening, and by the time I hit the halfway point, the sun is going down and the city lights across the river start coming on. It's honestly one of the best views in the neighborhood. The path does get busy with cyclists and other joggers, so you have to keep an eye out, but that's part of the fun. I like seeing the same regulars every week. Compared to running through the streets, dodging traffic lights and cars, it's a completely different experience. It's calm, safe, and just beautiful. To be honest, that route is the main reason I've stuck with jogging for as long as I have."
+      }
+    },
+    {
+      "id": "jogging-routine",
+      "type": "routine",
+      "en": "How often do you go walking or jogging? Tell me about your routine, including how you prepare and what you bring with you.",
+      "ko": "얼마나 자주 걷거나 조깅하나요? 준비 과정과 챙겨 가는 것을 포함해서 루틴을 말해 주세요.",
+      "tips": ["빈도 → 시간대 → 뛰기 전 준비(옷·스트레칭) → 장비(shoes, phone, app) → 뛴 후", "Before I run / After that / Then 으로 순서를 잡고, 마지막에 used to로 변화를 한 줄 넣으세요"],
+      "answers": {
+        "IM3": "I jog three times a week, usually on Monday, Wednesday, and Friday. I go in the evening after work, around eight. Before I run, I change into my running clothes and stretch for five minutes. I always bring my phone and earphones. I use a running app to check my distance and time. I run for about 30 minutes and then walk for ten. After that, I go home and take a shower. Then I feel refreshed and sleep well.",
+        "IH": "I go jogging about three times a week, usually on weekday evenings after work. I get home around seven, change into my running clothes, and head out by eight. Before I start, I always stretch for about five minutes, because I hurt my knee once when I skipped it. As for gear, I keep it simple. I wear a good pair of running shoes, a light jacket if it's cold, and I always bring my phone and wireless earphones. I use a running app that tracks my distance, pace, and time, and I like checking my progress after each run. I usually run about five kilometers, which takes me around 35 minutes. On weekends, I sometimes do a longer, slower run in the morning. I used to run only on weekends, but I found that running on weekdays actually helps me sleep better. It's become a habit now, and I feel off when I skip a week.",
+        "AL": "I try to get out three times a week, usually on weekday evenings. I'm home from work by seven, and by eight I've changed into my running gear and I'm out the door. I never skip stretching anymore, because I learned the hard way that a tight calf can take you out for two weeks. As for gear, I keep things pretty minimal. A decent pair of running shoes is the one thing I don't cheap out on, and I replace them roughly every 600 kilometers. Other than that, it's just my phone strapped to my arm, wireless earphones, and a light jacket if it's chilly. I use a running app that tracks my distance and pace, and I'll admit I'm a little addicted to checking the stats afterward. A typical run is about five kilometers along the river, which takes me around 35 minutes at an easy pace. On Saturday mornings, if I'm up for it, I'll go a bit longer and slower, more of a jog-walk. I used to only run on weekends, but once I started going on weekdays, I noticed I was sleeping better and feeling less stressed at work. It's become such a habit now. Honestly, I feel off if I miss a week."
+      }
+    },
+    {
+      "id": "jogging-experience",
+      "type": "experience",
+      "en": "How did you first get into walking or jogging? Tell me about when you started and what made you keep doing it.",
+      "ko": "처음에 어떻게 걷기나 조깅을 시작하게 됐나요? 언제 시작했고, 무엇 때문에 계속하게 됐는지 말해 주세요.",
+      "tips": ["언제 → 계기(건강검진·체중) → 첫 날의 어려움 → 한 달 후 변화 → 결과 → 지금", "과거시제 유지: started, gained, told, went, could barely / 'That was a wake-up call' 로 계기를 강조"],
+      "answers": {
+        "IM3": "I started jogging about two years ago. At that time, I gained some weight because I sat at my desk all day. My doctor told me to exercise more. So one evening, I went to the park and ran for ten minutes. It was very hard, and I was out of breath. But I went again the next week. After one month, I could run for 30 minutes. I lost some weight and felt much healthier. That's why I still jog today.",
+        "IH": "Well, I started jogging about two years ago, and to be honest, it wasn't my idea. I had gained about five kilos because I was sitting at my desk all day and eating late at night. Then I had a health checkup, and the doctor told me my cholesterol was getting high. That was a wake-up call. So the next evening, I put on some old sneakers and went to the park near my apartment. I could barely run for ten minutes, and my legs hurt for three days after. But I didn't want to give up, so I went again the following week. After about a month, I could run for 30 minutes without stopping. I lost the extra weight in three months, and my next checkup was fine. Now jogging is part of my week. It's funny, because something that started as a doctor's order turned into one of my favorite hobbies.",
+        "AL": "Well, it actually started with a health checkup, of all things. About two years ago, I'd put on five or six kilos from sitting at a desk all day and eating late, and my company checkup came back with some numbers I didn't like. My doctor didn't lecture me, but she did say, pretty bluntly, that I needed to move more. That stuck with me. So the next evening, I dug out an old pair of sneakers, walked down to the park by the river, and tried to run. I made it maybe ten minutes before I had to stop, gasping, with my hands on my knees. My legs were sore for three days straight. But something about it felt good, so I forced myself to go back the following week, and then again, and again. After about a month, I could run 30 minutes without stopping, and by the third month I'd dropped the extra weight. My next checkup came back clean, which felt like a small victory. What surprised me, though, is that the jogging outlasted the reason I started. I don't run for the numbers anymore. I run because it's the one part of my day that's just mine."
+      }
+    },
+    {
+      "id": "jogging-compare",
+      "type": "comparison",
+      "en": "How have your walking or jogging habits changed over time? Or, how does jogging compare to other kinds of exercise you have tried?",
+      "ko": "걷기나 조깅 습관이 시간이 지나면서 어떻게 달라졌나요? 또는 조깅은 다른 운동과 비교해 어떤가요?",
+      "tips": ["처음(When I started) vs 지금(Now) → 빈도·거리·장비·이유 순서로 2~3가지 차이", "'The biggest change is my reason for running' 처럼 마음가짐 변화를 넣으면 IH 이상으로 올라가요"],
+      "answers": {
+        "IM3": "My jogging habits have changed a lot. When I started, I ran only on weekends. I ran slowly, and only for ten or 15 minutes. Now I run three times a week in the evening. I can run for 30 minutes or more. I also use a running app now, and I have good running shoes. Before, I ran to lose weight. Now I run because it makes me feel good. I think jogging is a big part of my life now.",
+        "IH": "They've changed quite a bit. When I first started two years ago, I only ran on Saturday mornings, and honestly, just ten or 15 minutes felt like a lot. I didn't have any real gear either. I just wore old sneakers and cotton T-shirts, and I never stretched. Now I run three times a week, usually on weekday evenings, and I can comfortably do five kilometers. I've also invested in proper running shoes, and I always use an app to track my pace. The biggest change, though, is my reason for running. At first, it was all about losing weight, so I checked the scale every day. Now I don't really care about the numbers. I run because it helps me clear my head after work, and I sleep much better on the days I run. So I guess jogging went from being a chore to being something I actually look forward to.",
+        "AL": "They've changed a lot, actually, in ways I didn't expect. When I first started two years ago, I only ran on Saturday mornings, and ten or 15 minutes felt like a marathon. I had no real gear, just old sneakers and cotton T-shirts, and I never stretched, which is probably why I was always sore. These days I'm out three times a week on weekday evenings, and five kilometers feels pretty comfortable. I've invested in proper running shoes, I track everything on an app, and I've gotten a bit obsessive about my warm-up routine. But the biggest shift has been in my head, not my legs. In the beginning, it was purely about losing weight, so I'd step on the scale every morning and get frustrated when nothing changed. At some point, I stopped caring about the numbers. Now I run because it's the only 35 minutes of my day when nobody needs anything from me. I've tried other things, like the gym and yoga, but they never stuck the way jogging did. I think it's because jogging is so simple. You put on your shoes and go. So yeah, it went from being a chore I dreaded to something I genuinely look forward to."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "jogging", "ipa": "/ˈdʒɑː.ɡɪŋ/", "tip": "j는 '쥐'에 가까운 파열음. '조깅'의 ㅈ보다 입술을 더 동그랗게"},
+    {"word": "stretch", "ipa": "/stretʃ/", "tip": "한 음절. '스트레치'처럼 4음절로 늘리지 말고 str을 한 번에 붙여서"},
+    {"word": "athlete", "ipa": "/ˈæθ.liːt/", "tip": "2음절 '애θ릿'. '애슬레트' 3음절 아님. th 뒤에 l 바로 연결"},
+    {"word": "kilometer", "ipa": "/kɪˈlɑː.mə.t̬ɚ/", "tip": "미국식은 두 번째 음절 '라'에 강세. '킬로미터'처럼 평평하게 말하지 않기"},
+    {"word": "breath", "ipa": "/breθ/", "tip": "명사 breath는 짧은 '에'와 무성 th. 동사 breathe /briːð/와 구분 (out of breath)"}
+  ]
+}

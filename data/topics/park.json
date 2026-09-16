@@ -1,0 +1,88 @@
+{
+  "id": "park",
+  "title": "공원 가기",
+  "titleEn": "Going to parks",
+  "emoji": "🌳",
+  "category": "survey",
+  "priority": 5,
+  "intro": "설문에서 '공원 가기'를 고르면 자주 가는 공원 묘사 → 공원에서 하는 일 → 공원에서 있었던 일 → 예전 공원과의 비교 순서로 출제됩니다. 위치·시설·분위기 세 가지만 순서대로 말해도 묘사는 충분하고, 경험은 '날씨·사고·해프닝' 하나를 골라 과거시제로 풀면 됩니다.",
+  "strategy": [
+    "묘사 질문은 위치(집에서 얼마나) → 시설(산책로·놀이터·벤치) → 분위기·내가 좋아하는 자리 순서로 답합니다.",
+    "일상 질문은 언제·누구와·무엇을 3요소를 빈도 부사(usually, sometimes)와 함께 말합니다.",
+    "IH 이상은 계절 디테일(cherry blossoms, shady in summer)과 used to / compared to 비교 문장을 하나씩 넣습니다."
+  ],
+  "expressions": [
+    {"en": "There's a big park near my apartment, right by the river.", "ko": "우리 아파트 근처에, 강 바로 옆에 큰 공원이 있어요.", "level": "IM", "note": "right by = 바로 옆에"},
+    {"en": "It takes about ten minutes to walk there.", "ko": "걸어서 10분 정도 걸려요.", "level": "IM", "note": "It takes + 시간 + to 동사"},
+    {"en": "There are lots of trees, a walking path, and a small playground.", "ko": "나무가 많고, 산책로랑 작은 놀이터가 있어요.", "level": "IM", "note": "시설 나열은 There are + 복수"},
+    {"en": "I usually go there on weekends to take a walk.", "ko": "저는 보통 주말에 산책하러 거기 가요.", "level": "IM", "note": "to + 동사원형: ~하러"},
+    {"en": "On sunny days, the park is full of families and couples.", "ko": "날씨 좋은 날엔 공원이 가족들이랑 커플들로 가득해요.", "level": "IM"},
+    {"en": "I like to sit on a bench and drink coffee.", "ko": "벤치에 앉아서 커피 마시는 걸 좋아해요.", "level": "IM"},
+    {"en": "The park is very peaceful in the early morning.", "ko": "이른 아침에는 공원이 아주 평화로워요.", "level": "IM"},
+    {"en": "Sometimes I go there with my friends and have a picnic.", "ko": "가끔 친구들이랑 가서 피크닉을 해요.", "level": "IM"},
+    {"en": "The best thing about the park is that it's right along the river.", "ko": "그 공원의 제일 좋은 점은 강을 따라 있다는 거예요.", "level": "IH", "note": "The best thing about ~ is that ~"},
+    {"en": "Whenever I feel stressed, I go to the park to clear my head.", "ko": "스트레스 받을 때마다 머리 식히러 공원에 가요.", "level": "IH", "note": "clear my head = 머리를 식히다"},
+    {"en": "In spring, the cherry blossoms along the path are absolutely beautiful.", "ko": "봄에는 산책로를 따라 핀 벚꽃이 정말 아름다워요.", "level": "IH"},
+    {"en": "It gets pretty crowded on weekends, so I try to go early.", "ko": "주말엔 꽤 붐벼서 일찍 가려고 해요.", "level": "IH", "note": "get + 형용사: ~해지다"},
+    {"en": "When I was a kid, the park near my house used to have just a few swings.", "ko": "어릴 때 우리 집 근처 공원엔 그네 몇 개밖에 없었어요.", "level": "IH", "note": "used to: 지금은 아닌 과거 상태"},
+    {"en": "It's my go-to place whenever I need a break from the city.", "ko": "도시에서 벗어나 쉬고 싶을 때 항상 찾는 곳이에요.", "level": "AL", "note": "go-to place = 단골로 찾는 곳"},
+    {"en": "There's something about being surrounded by trees that just calms me down.", "ko": "나무에 둘러싸여 있으면 왠지 마음이 차분해져요.", "level": "AL", "note": "There's something about ~ that ~: 뭔가 ~한 게 있다"}
+  ],
+  "questions": [
+    {
+      "id": "park-describe",
+      "type": "describe",
+      "en": "You indicated in the survey that you like going to parks. Tell me about a park you often go to. Where is it, and what does it look like?",
+      "ko": "설문에서 공원 가는 것을 좋아한다고 하셨네요. 자주 가는 공원에 대해 말해 주세요. 어디에 있고, 어떻게 생겼나요?",
+      "tips": ["위치·거리 → 시설(산책로·놀이터·벤치) → 분위기 → 내가 좋아하는 자리", "'There's a big park near my apartment...' 로 시작하고 There are로 시설을 나열하세요"],
+      "answers": {
+        "IM3": "There is a big park near my apartment. It's right by the river, and it takes about ten minutes to walk there. The park has lots of trees, a long walking path, and a small playground. There are also many benches and a bike path. On weekends, the park is full of families and couples. I like to sit on a bench and drink coffee. It's very peaceful, so I feel relaxed there. It's my favorite place in my neighborhood.",
+        "IH": "Sure. The park I go to most often is a riverside park about ten minutes from my apartment. It's actually one of the main reasons I chose to live in this neighborhood. The park runs along the river, so there's a long walking path and a separate bike path. There are lots of tall trees, a small playground, and a few outdoor exercise machines. In spring, the cherry blossoms along the path are absolutely beautiful. On weekends, it gets pretty crowded with families and couples having picnics, so I usually go early in the morning when it's quiet. My favorite spot is a bench near the water. I like to sit there with a coffee and just watch the river. Compared to other parks in Seoul, it's not fancy, but it has a really relaxed atmosphere. To be honest, that park is the best thing about where I live.",
+        "AL": "Sure, I'd love to. The park I go to most often is a riverside park about a ten-minute walk from my apartment, and honestly, it's one of the main reasons I picked this neighborhood. It stretches along the river for a couple of kilometers, so there's a long walking path on one side and a bike path on the other. There are rows of tall trees, a small playground, some outdoor exercise machines, and a convenience store near the entrance where people grab snacks and beer. In spring, the whole path turns pink with cherry blossoms, and it feels like the entire city shows up to take pictures. On weekends, it gets packed with families spreading out picnic mats and couples riding tandem bikes, so I tend to go early in the morning when it's still calm. My favorite spot is a bench right by the water. I'll sit there with a coffee and watch the river go by. It's the easiest way I know to let my mind wander. There's something about being surrounded by trees that calms me down, even with the city right behind me. It's not a fancy park by any means, but it's my go-to place whenever I need a break. I'd say it's the best thing about where I live."
+      }
+    },
+    {
+      "id": "park-routine",
+      "type": "routine",
+      "en": "What do you usually do when you go to the park? When do you go, and who do you usually go with?",
+      "ko": "공원에 가면 보통 무엇을 하나요? 언제 가고, 주로 누구와 함께 가나요?",
+      "tips": ["언제(요일·시간) → 누구와 → 하는 일 순서 → 마무리 한 줄", "On weekend mornings / On weekday evenings 로 상황을 나누면 길이가 자연스럽게 늘어나요"],
+      "answers": {
+        "IM3": "I usually go to the park on weekend mornings. I go there around nine because it's quiet. Most of the time, I go alone. I take a walk along the river for about 30 minutes. Then I buy a coffee and sit on a bench. On weekdays, I sometimes walk through the park after work, too. Sometimes I go with my friends in the afternoon. We have a picnic and talk for a long time. Going to the park is a good way to relax.",
+        "IH": "Well, it depends on the day. On weekend mornings, I usually go by myself around nine, before it gets crowded. I walk along the river for about 30 or 40 minutes, and then I grab a coffee from the convenience store and sit on my favorite bench. I just watch the water and people passing by. It sounds simple, but it really helps me clear my head. On weekday evenings, I sometimes walk through the park on my way home from work, just to get some fresh air. In spring and fall, I go with friends on Saturday afternoons. We bring some food, spread out a mat, and talk for hours. Actually, I used to go to the gym on weekends, but now I prefer the park because it's free and much more relaxing. All in all, the park is a big part of my weekend routine.",
+        "AL": "It really depends on the day, but I have a pretty set routine. On weekend mornings, I head over by myself around nine, before the crowds show up. I'll walk along the river for 30 or 40 minutes, then grab an iced coffee from the convenience store by the entrance and settle onto my favorite bench facing the water. I don't do much there, to be honest. I just watch the river, listen to some music, and let my brain slow down after a long week. On weekday evenings, I sometimes cut through the park on my way home from work, which adds five minutes to my commute but makes a huge difference to my mood. When the weather is nice, usually in spring and fall, I meet up with a couple of friends on Saturday afternoons. We pick up some chicken and beer, spread out a mat under the trees, and end up talking for hours. I used to spend my weekends at the gym. But at some point I realized the park does more for me than any treadmill ever did. It's free, it's outdoors, and I always leave feeling lighter. So yeah, the park is basically the anchor of my weekends."
+      }
+    },
+    {
+      "id": "park-experience",
+      "type": "experience",
+      "en": "Tell me about a memorable experience you had at a park. When was it, what happened, and why do you still remember it?",
+      "ko": "공원에서 있었던 기억에 남는 경험을 말해 주세요. 언제였고, 무슨 일이 있었으며, 왜 아직도 기억에 남나요?",
+      "tips": ["언제·누구와 → 무엇을 하려 했나 → 갑작스러운 일(비·사고) → 대처 → 결과·느낌", "과거시제 확실히: went, started to rain, ran, laughed / 'out of nowhere' 로 반전을 주세요"],
+      "answers": {
+        "IM3": "Last spring, I went to the park with my friends. We wanted to see the cherry blossoms. The park was very crowded, but the flowers were beautiful. We sat on a mat and ate chicken and pizza. Then it suddenly started to rain. We didn't have umbrellas, so we ran to a convenience store. We were all wet, but we laughed a lot. It was a fun day, and I still remember it.",
+        "IH": "Sure. The most memorable one was last April, during cherry blossom season. Three of my friends and I decided to have a picnic at the riverside park near my apartment. It was a Saturday afternoon, and the park was packed, but we managed to find a spot under a big cherry tree. We ordered fried chicken, opened some beer, and took a bunch of photos with the pink flowers everywhere. Then, out of nowhere, the sky turned dark and it started pouring. None of us had an umbrella, so we grabbed everything and ran to the convenience store. We were completely soaked, but honestly, we couldn't stop laughing. We ended up eating the rest of the chicken inside the store. It wasn't the picnic we planned, but it was one of the best days of that year. Every time I see cherry blossoms now, I think of that day.",
+        "AL": "Oh, there's one that comes to mind right away. It was last April, right in the middle of cherry blossom season. Three of my friends and I had been planning a picnic at the riverside park near my place for weeks, and we finally got a sunny Saturday. The park was absolutely packed, but we managed to snag a spot under a huge cherry tree. We ordered fried chicken, cracked open some beer, and took way too many photos with the blossoms in the background. Then, out of nowhere, the sky went dark and it started pouring. None of us had thought to bring an umbrella, so we scooped everything up and sprinted to the convenience store by the entrance. By the time we got there, we were soaked to the bone, and we just stood in the doorway laughing like idiots. We ended up finishing the chicken right there in the store while the rain came down. It was nothing like the picnic we'd planned, but honestly, that's exactly why it stuck with me. Sometimes the best memories are the ones that go completely wrong. Now, every spring when the blossoms come out, that afternoon is the first thing I think of."
+      }
+    },
+    {
+      "id": "park-compare",
+      "type": "comparison",
+      "en": "How are the parks today different from the parks you went to when you were a child? What has changed?",
+      "ko": "요즘 공원은 어릴 때 갔던 공원과 어떻게 다른가요? 무엇이 달라졌나요?",
+      "tips": ["과거: used to / had / was  vs  현재: has / is → 차이 2~3개 → 어느 쪽이 더 좋은지", "시설 변화 + 이용자 변화(who uses the park) 두 축으로 나누면 IH 이상이 쉬워요"],
+      "answers": {
+        "IM3": "When I was a child, the park near my house was very simple. It had a few swings, a slide, and a sandbox. There were not many trees. Now parks are much bigger and nicer. They have walking paths, bike paths, and exercise machines. Some parks even have cafes and free Wi-Fi. Parks today are also cleaner and safer. I think parks are much better now, but I miss playing in the sandbox.",
+        "IH": "They've changed a lot, actually. When I was a kid, the park near my house was really basic. It had a couple of swings, a slide, a sandbox, and that was about it. There weren't many trees, and the ground was just dirt, so I always came home dirty. These days, parks are much bigger and better designed. The park near my apartment has a walking path, a bike path, outdoor exercise machines, and even clean public restrooms. There are also cafes and food trucks nearby, so people spend the whole day there. Another big change is who uses the park. Parks used to be mostly for kids, but now I see people of all ages, from joggers to older people doing stretches. To be honest, I miss the simple sandbox days a little, but I think parks today are much better for everyone.",
+        "AL": "Well, they've changed quite a bit, actually. When I was growing up, the park near my house was about as basic as it gets. There was a swing set, a slide, a sandbox, and a couple of benches, and that was pretty much it. The ground was just dirt, so I'd come home covered in dust every single day, which my mom didn't love. Parks today are a completely different story. The riverside park near my apartment has a walking path, a separate bike lane, outdoor gym equipment, clean restrooms, and even a couple of cafes right at the entrance. People don't just drop by for 20 minutes anymore; they spend the whole afternoon there. What's really changed, though, is who you see. Back then, parks were basically for kids, but now they're for everyone, from early-morning joggers to retirees doing stretches to couples on dates. I think cities have finally figured out that green space is something adults need just as much as children do. Part of me misses the simplicity of those dirt playgrounds. But I wouldn't trade what we have now for anything."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "path", "ipa": "/pæθ/", "tip": "th는 혀끝을 윗니 사이에 살짝. '패스' 아니라 '패θ'. 복수 paths도 θs"},
+    {"word": "atmosphere", "ipa": "/ˈæt.məs.fɪr/", "tip": "첫 음절 강세 '앳', ph는 f 발음. '아트모스피어' 아님"},
+    {"word": "crowded", "ipa": "/ˈkraʊ.dɪd/", "tip": "r 발음 후 '아우' 이중모음. -ded는 '디드'로 한 음절 더"},
+    {"word": "blossom", "ipa": "/ˈblɑː.səm/", "tip": "b 다음 l을 붙여서 '블라섬'. 끝은 '섬'으로 약하게"},
+    {"word": "picnic", "ipa": "/ˈpɪk.nɪk/", "tip": "두 음절 '픽닉'. '피크닉' 3음절로 늘리지 않기"}
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "music",
+  "title": "음악 감상",
+  "titleEn": "Listening to music",
+  "emoji": "🎧",
+  "category": "survey",
+  "priority": 4,
+  "intro": "설문 취미 항목 중 가장 많이 선택되고 가장 자주 나오는 주제입니다. 좋아하는 장르·가수 → 언제·어디서·어떻게 듣는지 → 콘서트나 음악 관련 경험 → 예전과 지금의 음악 감상 방식 비교 순서로 출제됩니다. 가수 한 명, 앱 하나, 콘서트 하나만 정해 두면 네 질문이 전부 연결됩니다.",
+  "strategy": [
+    "장르·가수 질문은 장르 → 가수 이름 → 좋아하는 이유(가사·목소리) → 언제 듣는지 → 나에게 음악의 의미 순서로 답합니다.",
+    "경험 질문은 언제·어디서·누구와 → 티켓·입장 → 하이라이트 장면 → 끝난 뒤 → 지금까지 남은 느낌으로 과거시제를 유지합니다.",
+    "IH 이상은 'be into', 'on repeat', 'as I've gotten older', 'hit home' 같은 표현으로 취향 변화를 구체적으로 말합니다."
+  ],
+  "expressions": [
+    {"en": "I listen to music every day, mostly on my way to work.", "ko": "저는 매일 음악을 듣는데, 주로 출근길에 들어요.", "level": "IM"},
+    {"en": "My favorite kind of music is pop, especially K-pop.", "ko": "제일 좋아하는 음악은 팝인데, 특히 K-pop이요.", "level": "IM"},
+    {"en": "My favorite singer is IU because her voice is soft and calming.", "ko": "제일 좋아하는 가수는 아이유인데, 목소리가 부드럽고 편안해서요.", "level": "IM"},
+    {"en": "I usually listen to music on my phone with wireless earbuds.", "ko": "보통 무선 이어폰으로 폰에서 음악을 들어요.", "level": "IM"},
+    {"en": "Music helps me relax after a long day at work.", "ko": "음악은 긴 하루 일과 후에 긴장을 풀어 줘요.", "level": "IM"},
+    {"en": "When I feel down, I listen to upbeat songs to cheer myself up.", "ko": "기분이 가라앉을 때는 신나는 노래를 들으면서 기운을 내요.", "level": "IM", "note": "cheer ~ up: 기운 나게 하다"},
+    {"en": "I have a playlist for every mood, like one for work and one for the gym.", "ko": "기분별로 플레이리스트가 있어요. 일할 때용, 헬스장용 이렇게요.", "level": "IM"},
+    {"en": "I went to her concert two years ago, and it was amazing.", "ko": "2년 전에 그 가수 콘서트에 갔는데 정말 대단했어요.", "level": "IM"},
+    {"en": "I'm really into indie music these days, especially bands with acoustic guitars.", "ko": "요즘 인디 음악에 푹 빠졌어요. 특히 어쿠스틱 기타 밴드요.", "level": "IH", "note": "be into ~: ~에 푹 빠지다"},
+    {"en": "I used to listen to hip-hop all the time, but my taste has changed as I've gotten older.", "ko": "예전엔 힙합만 들었는데, 나이가 들면서 취향이 바뀌었어요.", "level": "IH", "note": "as I've gotten older: 나이가 들면서"},
+    {"en": "What I love about live concerts is the energy you feel from the crowd.", "ko": "라이브 콘서트에서 제일 좋은 건 관객들에게서 느껴지는 에너지예요.", "level": "IH"},
+    {"en": "Ever since I found that band, I've had their album on repeat.", "ko": "그 밴드를 알게 된 뒤로 앨범을 계속 반복해서 듣고 있어요.", "level": "IH", "note": "on repeat: 반복 재생으로"},
+    {"en": "Back in the day, I had to buy CDs, but now everything is just a tap away.", "ko": "예전엔 CD를 사야 했는데, 지금은 터치 한 번이면 다 들을 수 있어요.", "level": "IH", "note": "back in the day: 옛날에는"},
+    {"en": "Her lyrics really hit home for me because they're about the ups and downs of everyday life.", "ko": "그 가수 가사는 일상의 기복을 다루고 있어서 정말 와닿아요.", "level": "AL", "note": "hit home: 마음에 와닿다"},
+    {"en": "The moment the first song started, the whole crowd just lost it.", "ko": "첫 곡이 시작되는 순간 관객 전체가 완전히 열광했어요.", "level": "AL", "note": "lose it: (감정이) 폭발하다, 열광하다"}
+  ],
+  "questions": [
+    {
+      "id": "music-describe",
+      "type": "describe",
+      "en": "You indicated that you enjoy listening to music. What kind of music do you like, and who is your favorite singer or band? Why do you like them?",
+      "ko": "음악 듣는 걸 좋아한다고 했네요. 어떤 음악을 좋아하고, 가장 좋아하는 가수나 밴드는 누구인가요? 왜 좋아하나요?",
+      "tips": ["장르 → 가수 이름 + 팬 기간 → 좋아하는 이유 2가지(가사·목소리) → 예전 취향과 비교 → 음악의 의미", "'I've been a fan for ~' / 'What I love about her is that ~'"],
+      "answers": {
+        "IM3": "I like pop music the most. My favorite singer is IU. She is a Korean singer, and her voice is soft and calming. I like her songs because they make me feel relaxed. I've been a fan for about ten years. I also like ballads when I feel tired. Sometimes I listen to hip-hop when I exercise. Music is very important to me because it helps me relax after work. I listen to music every day.",
+        "IH": "Well, I listen to a little bit of everything, but pop and ballads are definitely my favorites. My favorite singer is IU, and I've been a fan for almost ten years. What I love about her is that she writes her own songs, and her lyrics are about everyday feelings that anyone can relate to. Her voice is soft and warm, so her songs are perfect when I'm tired after work. Actually, I used to listen to hip-hop all the time in college, but my taste has changed as I've gotten older. These days I want music that calms me down instead of pumping me up. I still play upbeat songs at the gym, though. To be honest, music is a big part of my life. I have a playlist for every mood, and I can't imagine my 20-minute commute without my earbuds. It's the easiest way for me to relax.",
+        "AL": "I'd say my taste is pretty broad, but if I had to pick, pop and ballads are where my heart is. My favorite artist, hands down, is IU. I've been a fan for close to ten years now, and what keeps me hooked is that she writes her own songs. Her lyrics are about the small ups and downs of everyday life, like missing someone or getting through a rough week, and they really hit home for me. On top of that, her voice has this warm, soft quality that just melts the stress away after a long day at the office. Funny enough, back in college I was all about hip-hop. I'd blast it on the way to class and knew every verse by heart. But somewhere in my late twenties, my taste shifted, and now I want music that calms me down rather than pumps me up. I still keep an upbeat playlist for the gym, of course, because nobody can run to a ballad. Music is honestly woven into my whole day. I've got a playlist for every mood, and my 20-minute commute would feel twice as long without my earbuds. It's the simplest, cheapest way I know to reset my mood."
+      }
+    },
+    {
+      "id": "music-routine",
+      "type": "routine",
+      "en": "When and where do you usually listen to music? Tell me about how you listen, like the devices or apps you use.",
+      "ko": "보통 언제, 어디서 음악을 듣나요? 어떤 기기나 앱을 쓰는지 등 음악을 어떻게 듣는지 말해 주세요.",
+      "tips": ["기기·앱 → 출근길 → 회사 → 저녁(집) → 주말 → 음악이 주는 효과", "'on my way to work' / 'I connect my phone to a Bluetooth speaker'"],
+      "answers": {
+        "IM3": "I listen to music every day. I usually listen on my phone with wireless earbuds. In the morning, I listen to music on the subway on my way to work. It takes about 20 minutes, so I can listen to five or six songs. At work, I sometimes listen to quiet music when I do simple tasks. In the evening, I play music on a small speaker while I cook. I use a music app, and I have several playlists. Music makes my day better.",
+        "IH": "Well, music is basically the soundtrack to my whole day. I listen mostly on my phone with wireless earbuds, and I use a streaming app that costs about 10,000 won a month. My commute is where I listen the most. It's a 20-minute subway ride, so that's about five or six songs each way, and I usually pick something upbeat in the morning to wake myself up. At work, I put on quiet instrumental music when I'm doing something simple like data entry. It helps me focus and blocks out the office noise. In the evening, I connect my phone to a small Bluetooth speaker in the kitchen and play something mellow while I cook. On weekends, I like to sit on the balcony with a coffee and just listen to a whole album. Actually, I used to just play whatever was popular, but these days I make my own playlists for different moods. It's a small thing, but it makes every part of my day better.",
+        "AL": "Honestly, music runs through pretty much my entire day. It all lives on my phone, with wireless earbuds I'd be lost without and a streaming subscription that costs about 10,000 won a month. The bulk of my listening happens on my commute. It's a 20-minute subway ride each way, which works out to five or six songs. In the morning, I always go for something upbeat to shake off the sleepiness. Once I'm at the office, I switch to quiet instrumental stuff, mostly lo-fi or piano, whenever I'm doing something mindless like cleaning up data. It keeps me in the zone and drowns out the chatter around me. In the evening, I hook my phone up to a little Bluetooth speaker in the kitchen and put on something mellow while I cook. And on weekend mornings, my favorite ritual is sitting out on the balcony with a coffee and playing an album from start to finish. I used to just hit shuffle on whatever was trending. But at some point I got into building playlists for specific moods, and now I've got one for everything from Monday mornings to rainy Sundays. It sounds like a small thing, but having the right song at the right moment makes the whole day feel smoother."
+      }
+    },
+    {
+      "id": "music-experience",
+      "type": "experience",
+      "en": "Have you ever been to a concert or a live performance? Tell me about it. When was it, who did you go with, and what made it memorable?",
+      "ko": "콘서트나 라이브 공연에 가 본 적이 있나요? 그 경험에 대해 말해 주세요. 언제였고, 누구와 갔고, 무엇이 기억에 남나요?",
+      "tips": ["언제·어디서·누구와 → 티켓 구하기 → 공연 시작 순간 → 최고의 순간 → 끝난 뒤 → 지금 느낌", "'The best moment was when ~' / 'I got goosebumps'"],
+      "answers": {
+        "IM3": "Yes, I went to a concert two years ago. It was IU's concert in Seoul, in November. I went with my best friend. We bought the tickets three months before because they sell out fast. The concert was in a big arena, and there were about 10,000 people. When she sang my favorite song, everyone sang together. I was so happy that I almost cried. It was the best night of that year. I still remember it clearly.",
+        "IH": "Yes, actually, the most memorable one was IU's concert about two years ago. It was in November, at a big arena in Seoul, and I went with my best friend, who is an even bigger fan than I am. Getting the tickets was a battle. They sold out in about five minutes, but luckily my friend managed to grab two seats. On the day, we got there two hours early to buy merchandise and take pictures. When the lights went down and the first song started, the whole crowd screamed at the same time. I got goosebumps right away. The best moment was when she sang my favorite ballad, and about 10,000 people sang along with her. To be honest, I had tears in my eyes. The concert lasted almost three hours, and my voice was gone the next day. It was easily the best night of that year, and I still get emotional when I hear that song.",
+        "AL": "Oh, absolutely. The one that stands out is IU's concert about two years ago, in November, at one of the big arenas in Seoul. I went with my best friend, who's an even bigger fan than I am. The tickets sold out in about five minutes, and I remember us both frantically refreshing the page. She got through, I didn't, so I owe her for that one. On the day, we showed up two hours early, grabbed some merchandise, and took way too many pictures. The moment the lights went down and the first note hit, the entire crowd lost it, and I had goosebumps from head to toe. But the part I'll never forget was near the end, when she sang my favorite ballad. About 10,000 people sang every word along with her, and it was so loud and so beautiful that I just stood there with tears running down my face. My friend didn't even tease me about it, which tells you she was crying too. The show ran nearly three hours, and I had no voice left the next morning, but I couldn't have cared less. Even now, whenever that song comes on during my commute, I'm right back in that arena for a few seconds."
+      }
+    },
+    {
+      "id": "music-compare",
+      "type": "comparison",
+      "en": "How has the way people listen to music changed compared to the past? How is it different from when you were younger?",
+      "ko": "사람들이 음악을 듣는 방식은 예전과 비교해 어떻게 변했나요? 당신이 어렸을 때와는 어떻게 다른가요?",
+      "tips": ["예전(CD·MP3, used to) → 지금(스트리밍·무선 이어폰) → 듣는 방식의 변화(앨범 통째 vs 스킵) → 장단점 + 내 생각", "'Back then, ~ / These days, ~' 대비 구조와 'a tap away'"],
+      "answers": {
+        "IM3": "The way people listen to music has changed a lot. When I was young, I bought CDs and listened to them on a CD player. I could only listen to a few albums. Now I use a streaming app on my phone. I can listen to any song anytime. I also use wireless earbuds, so there are no cables. In the past, I listened to one album many times. Now I skip songs quickly. I think it's more convenient now, but I miss listening to a whole album.",
+        "IH": "It's changed completely, actually. When I was in middle school, I used to save my allowance to buy CDs. I'd have maybe ten albums, and I listened to each one over and over until I knew every word. Later, in high school, I had an MP3 player that held a few hundred songs, and I thought that was amazing. Now, everything is on my phone. I pay about 10,000 won a month for a streaming app, and I can listen to basically any song ever made. I also use wireless earbuds, so no more tangled cables in my pocket. The biggest change, though, is how we listen. Back then, I listened to whole albums from beginning to end. These days, I skip a song after 20 seconds if I don't like it. To be honest, it's much more convenient now, and I discover new artists every week. But sometimes I miss the days when one album meant so much to me.",
+        "AL": "It's honestly night and day. When I was in middle school, buying an album was a whole event. I'd save up my allowance for weeks and then play that one CD on repeat until I could recite the lyrics in my sleep. I probably owned ten albums, and every one of them meant something to me. By high school, I'd moved on to an MP3 player that held a few hundred songs, which felt like magic. Fast-forward to now, and my entire music life lives in a streaming app on my phone. For about 10,000 won a month, I've got basically every song ever recorded a tap away, and my wireless earbuds mean I'm never fighting with a tangled cable again. But the biggest shift isn't the technology, it's the way we actually listen. Back then, you sat with an album from the first track to the last, because that's what you had. Now, if a song doesn't grab me in 20 seconds, I'm already skipping to the next one. There's no question it's more convenient. I stumble onto new artists every week that I never would have found otherwise. Still, every once in a while, I catch myself missing the days when a single album could carry me through an entire semester."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "music", "ipa": "/ˈmjuː.zɪk/", "tip": "s는 유성음 z. '뮤직'이지 '뮤씩' 아님"},
+    {"word": "lyrics", "ipa": "/ˈlɪr.ɪks/", "tip": "l로 시작해서 r로 이어짐. '리릭스', 혀 위치 두 번 바꾸기"},
+    {"word": "rhythm", "ipa": "/ˈrɪð.əm/", "tip": "h 묵음, th는 유성음(혀 내밀고 목 울림). '리듬'"},
+    {"word": "concert", "ipa": "/ˈkɑːn.sɚt/", "tip": "첫 음절 강세 '칸서트'. '콘서트'처럼 뒤를 세게 말하지 않기"},
+    {"word": "guitar", "ipa": "/ɡɪˈtɑːr/", "tip": "뒤 음절 강세 '기타-'. 앞의 gi는 짧게 '기'"}
+  ]
+}

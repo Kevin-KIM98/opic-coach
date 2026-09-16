@@ -1,0 +1,164 @@
+{
+  "intro": "한국인 학습자의 점수를 깎는 발음은 정해져 있습니다. 소리 6종 · 강세 · 연음 · 억양만 잡으면 IM3에서 IH로 올라갈 때 가장 큰 벽이 사라집니다. 각 항목은 '듣기 → 따라 말하기 → 인식 확인' 순서로 훈련합니다.",
+  "sets": [
+    {
+      "id": "sound-rl",
+      "title": "R vs L",
+      "kind": "minimal-pairs",
+      "tip": "R: 혀끝이 입천장에 닿지 않게 뒤로 말고 입술을 살짝 둥글게. L: 혀끝을 윗니 뒤 잇몸에 확실히 붙였다 뗍니다.",
+      "pairs": [
+        ["right", "light"], ["rice", "lice"], ["road", "load"], ["correct", "collect"], ["pray", "play"], ["fry", "fly"], ["arrive", "alive"], ["river", "liver"]
+      ],
+      "sentences": [
+        "I really like to read on the river.",
+        "The red light is on the left.",
+        "We usually arrive late on Friday."
+      ]
+    },
+    {
+      "id": "sound-fp",
+      "title": "F vs P",
+      "kind": "minimal-pairs",
+      "tip": "F: 윗니를 아랫입술에 살짝 대고 바람만 내보냅니다. 입술을 붙이면 P가 됩니다.",
+      "pairs": [
+        ["fine", "pine"], ["fan", "pan"], ["coffee", "copy"], ["fool", "pool"], ["fast", "past"], ["fair", "pair"], ["leaf", "leap"], ["food", "pooed"]
+      ],
+      "sentences": [
+        "I prefer fresh coffee in the office.",
+        "My favorite place is a small cafe near the park.",
+        "It feels fantastic after a fast run."
+      ]
+    },
+    {
+      "id": "sound-vb",
+      "title": "V vs B",
+      "kind": "minimal-pairs",
+      "tip": "V: F와 같은 입 모양에 성대를 울립니다. B는 입술을 붙였다 터뜨립니다.",
+      "pairs": [
+        ["very", "berry"], ["vest", "best"], ["vote", "boat"], ["vase", "base"], ["curve", "curb"], ["marvel", "marble"], ["vet", "bet"], ["invest", "in best"]
+      ],
+      "sentences": [
+        "I've never been so busy in November.",
+        "We have a very big living room.",
+        "The vacation was better than I expected."
+      ]
+    },
+    {
+      "id": "sound-th",
+      "title": "TH (θ / ð)",
+      "kind": "minimal-pairs",
+      "tip": "혀끝을 윗니와 아랫니 사이에 살짝 내밀고 바람을 냅니다. 'ㅆ'나 'ㄷ'로 대체하면 감점.",
+      "pairs": [
+        ["think", "sink"], ["thank", "tank"], ["three", "tree"], ["bath", "bass"], ["they", "day"], ["there", "dare"], ["breathe", "breed"], ["mouth", "mouse"]
+      ],
+      "sentences": [
+        "I think there are three things I like about my neighborhood.",
+        "They live together with their mother.",
+        "Thanks to that, I feel healthier than before."
+      ]
+    },
+    {
+      "id": "sound-zj",
+      "title": "Z · J · S 끝소리",
+      "kind": "minimal-pairs",
+      "tip": "Z는 S 위치에서 성대를 울립니다. 단어 끝 -s, -es, -ed 소리를 삼키지 않는 것이 핵심.",
+      "pairs": [
+        ["zoo", "Sue"], ["prize", "price"], ["eyes", "ice"], ["jam", "zam"], ["jeans", "genes"], ["watched", "watch"], ["lives", "life"], ["closes", "close"]
+      ],
+      "sentences": [
+        "I usually use these apps on my phone.",
+        "She jogs and does yoga on weekends.",
+        "He always closes the windows at night."
+      ]
+    },
+    {
+      "id": "sound-vowel",
+      "title": "모음 길이 (i / iː, æ / e)",
+      "kind": "minimal-pairs",
+      "tip": "sheep-ship, bad-bed 차이는 입 벌림 정도. 긴 모음은 입꼬리를 당기고 길게, 짧은 모음은 짧고 힘없이.",
+      "pairs": [
+        ["sheep", "ship"], ["leave", "live"], ["feel", "fill"], ["seat", "sit"], ["bad", "bed"], ["man", "men"], ["sad", "said"], ["pan", "pen"]
+      ],
+      "sentences": [
+        "I live near the beach and I love to leave work early.",
+        "My friend said the bed was too bad to sleep on.",
+        "Please fill the seat and feel free to sit."
+      ]
+    },
+    {
+      "id": "stress",
+      "title": "단어 강세",
+      "kind": "stress",
+      "tip": "강세 음절은 길고 크게, 나머지는 짧고 약하게(schwa 'ə'). 강세 위치가 틀리면 원어민이 못 알아듣습니다.",
+      "words": [
+        {"word": "comfortable", "stressed": "COM-f'ta-ble", "tip": "3음절, 첫 음절 강세"},
+        {"word": "interesting", "stressed": "IN-tres-ting", "tip": "3음절로 줄여 발음"},
+        {"word": "hotel", "stressed": "ho-TEL", "tip": "뒤 강세"},
+        {"word": "photograph / photography", "stressed": "PHO-to-graph / pho-TOG-ra-phy", "tip": "품사 따라 강세 이동"},
+        {"word": "vegetable", "stressed": "VEJ-ta-ble", "tip": "3음절"},
+        {"word": "restaurant", "stressed": "RES-t'rant", "tip": "2~3음절"},
+        {"word": "apartment", "stressed": "a-PART-ment", "tip": "두 번째 음절"},
+        {"word": "usually", "stressed": "U-zhu-ly", "tip": "s는 'ㅈ' 계열 소리"},
+        {"word": "exercise", "stressed": "EK-ser-size", "tip": "첫 음절 강세"},
+        {"word": "environment", "stressed": "en-VI-ron-ment", "tip": "n 소리 살리기"}
+      ],
+      "sentences": [
+        "The apartment is comfortable and the restaurant is interesting.",
+        "I usually exercise before I photograph the environment."
+      ]
+    },
+    {
+      "id": "linking",
+      "title": "연음 (Linking)",
+      "kind": "linking",
+      "tip": "자음 + 모음은 붙여서. 't'는 모음 사이에서 'ㄹ'처럼(water → 워러). 연음이 되면 유창성 점수가 눈에 띄게 오릅니다.",
+      "words": [
+        {"word": "an apple", "stressed": "a-NAP-ple", "tip": "n이 다음 모음으로"},
+        {"word": "pick it up", "stressed": "pi-ki-DUP", "tip": "세 단어를 한 덩어리로"},
+        {"word": "a lot of", "stressed": "a-LOT-tuv", "tip": "t 약화"},
+        {"word": "get up", "stressed": "ge-DUP", "tip": "t → d/ㄹ"},
+        {"word": "What are you doing?", "stressed": "wha-da-ya-DO-ing", "tip": "what are you → 와다야"},
+        {"word": "I'm going to", "stressed": "I'm GON-na", "tip": "구어체 축약"},
+        {"word": "kind of", "stressed": "KIN-da", "tip": "of → 어"},
+        {"word": "used to", "stressed": "YUS-ta", "tip": "d 소리 거의 없음"}
+      ],
+      "sentences": [
+        "I get up at seven and pick up a cup of coffee.",
+        "There's a lot of stuff I want to talk about.",
+        "What are you going to do this weekend?"
+      ]
+    },
+    {
+      "id": "intonation",
+      "title": "억양 · 문장 강세",
+      "kind": "intonation",
+      "tip": "내용어(명사·동사·형용사)는 세게, 기능어(a, the, of, to)는 약하게. 평서문은 끝을 내리고, 나열은 올리다가 마지막에 내립니다.",
+      "words": [
+        {"word": "I LIVE in a SMALL aPARTment near the RIver.", "stressed": "내용어만 강조", "tip": "기능어 in, a, the는 거의 안 들리게"},
+        {"word": "I like MOvies, MUsic, and JOGging.", "stressed": "올림 ↗ 올림 ↗ 내림 ↘", "tip": "나열 억양"},
+        {"word": "Do you like it? ↗", "stressed": "Yes/No 의문문은 끝 올림", "tip": ""},
+        {"word": "What do you do? ↘", "stressed": "Wh- 의문문은 끝 내림", "tip": ""},
+        {"word": "It was FANtastic!", "stressed": "감정어 강조", "tip": "표현력 = 억양 폭"}
+      ],
+      "sentences": [
+        "I live in a small apartment near the river.",
+        "I like movies, music, and jogging.",
+        "It was one of the best trips I have ever taken."
+      ]
+    },
+    {
+      "id": "twisters",
+      "title": "텅 트위스터",
+      "kind": "twisters",
+      "tip": "천천히 정확하게 3번 → 속도 올려 3번. 입 근육 워밍업용으로 매일 2분.",
+      "sentences": [
+        "Red lorry, yellow lorry, red lorry, yellow lorry.",
+        "Fresh fried fish, fish fresh fried.",
+        "Three free throws for the thirty-three thieves.",
+        "Very well, very well, Vicky's berries were very well.",
+        "She sells seashells by the seashore.",
+        "I scream, you scream, we all scream for ice cream."
+      ]
+    }
+  ]
+}

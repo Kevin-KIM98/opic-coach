@@ -1,0 +1,112 @@
+{
+  "id": "roleplay",
+  "title": "롤플레이 (11~13번)",
+  "titleEn": "Role-play",
+  "emoji": "🎭",
+  "category": "roleplay",
+  "priority": 13,
+  "intro": "OPIc 11~13번은 한 상황이 세 문제로 이어지는 롤플레이 구간입니다. 11번은 주어진 상황에서 상대에게 질문 3~4개 하기(roleplay-ask), 12번은 문제가 생겨서 전화로 상황을 설명하고 해결책 2~3개를 제안하기(roleplay-solve), 13번은 그와 비슷한 나의 경험 이야기하기(roleplay-experience)입니다. 실제 시험에서는 상대방 대답 없이 혼자 말하므로, 음성 메시지를 남기듯 한 번에 쭉 이어서 말하면 됩니다. 유형별로 시작·마무리 틀을 고정해 외워 두면 어떤 상황이 나와도 흔들리지 않습니다.",
+  "strategy": [
+    "11번(질문하기)은 'Hi, I'm calling to ask about ~. I have a few questions.' → First of all / Also / One more thing 으로 질문 3~4개 → 'Thank you so much for your help.' 틀을 고정합니다.",
+    "12번(문제 해결)은 'I'm afraid there's a problem with ~' → 상황 설명 한두 문장 → 'Is there any way ~? / If not, ~ / Or how about ~?' 로 대안 2~3개 → 'Please call me back' 으로 마무리합니다.",
+    "13번(경험)은 일반 경험 문제와 같습니다. 언제·무슨 일·내가 한 행동·결과·배운 점을 과거시제로 말하고, 앞의 12번 상황과 비슷한 소재를 고르면 준비가 쉽습니다."
+  ],
+  "expressions": [
+    {"en": "Hi, I'm calling to ask about the movie showing this weekend.", "ko": "안녕하세요, 이번 주말에 상영하는 영화 때문에 전화드렸어요.", "level": "IM", "note": "11번 만능 시작 문장. about 뒤에 주제만 바꾸기"},
+    {"en": "I have a few questions.", "ko": "몇 가지 여쭤볼 게 있어요.", "level": "IM", "note": "이 한 문장으로 '지금부터 질문 시작'을 알림"},
+    {"en": "First of all, what time does it start?", "ko": "우선, 몇 시에 시작하나요?", "level": "IM", "note": "First of all → Also → One more thing 순서로"},
+    {"en": "Also, I was wondering if you have any discounts.", "ko": "그리고 혹시 할인이 있는지 궁금해서요.", "level": "IM", "note": "I was wondering if + 평서문 = 공손한 질문"},
+    {"en": "Could you tell me what time the last show is?", "ko": "마지막 상영이 몇 시인지 알려 주실 수 있나요?", "level": "IM", "note": "간접의문문: what time + 주어 + 동사 어순"},
+    {"en": "Do you have seats available for Saturday evening?", "ko": "토요일 저녁에 남은 좌석이 있나요?", "level": "IM"},
+    {"en": "How much does it cost to change the date?", "ko": "날짜를 바꾸면 비용이 얼마나 드나요?", "level": "IM", "note": "How much does it cost to + 동사원형"},
+    {"en": "I'm afraid there's a problem with my reservation.", "ko": "죄송하지만 제 예약에 문제가 생겼어요.", "level": "IM", "note": "12번 만능 시작 문장"},
+    {"en": "I'm really sorry, but my friend can't make it.", "ko": "정말 죄송한데, 제 친구가 못 오게 됐어요.", "level": "IM", "note": "can't make it = 참석 못 하다"},
+    {"en": "Is there any way I could get a refund?", "ko": "혹시 환불받을 방법이 있을까요?", "level": "IH", "note": "대안 1번 제시용"},
+    {"en": "How about we go next Saturday instead?", "ko": "대신 다음 주 토요일에 가는 건 어때요?", "level": "IH", "note": "How about we + 동사원형 ~ instead?"},
+    {"en": "Would it be possible to change the tickets to another day?", "ko": "표를 다른 날로 바꾸는 게 가능할까요?", "level": "IH", "note": "가장 공손한 요청 표현"},
+    {"en": "Please call me back when you get this message.", "ko": "이 메시지 들으시면 다시 전화 주세요.", "level": "IM", "note": "12번 마무리 고정 문장"},
+    {"en": "Thank you so much for your help.", "ko": "도와주셔서 정말 감사합니다.", "level": "IM", "note": "11번·12번 공통 마무리"},
+    {"en": "I know this is a hassle, but I'd really appreciate it if you could look into it.", "ko": "번거로우신 거 알지만, 한번 확인해 주시면 정말 감사하겠습니다.", "level": "AL", "note": "hassle = 번거로운 일. 마무리 직전에 넣으면 자연스러움"}
+  ],
+  "questions": [
+    {
+      "id": "roleplay-ask-movie",
+      "type": "roleplay-ask",
+      "en": "I'd like to give you a situation and ask you to act it out. You want to see a movie with a friend. Call the movie theater and ask three or four questions about the movie.",
+      "ko": "상황을 드릴 테니 연기해 보세요. 친구와 영화를 보고 싶습니다. 영화관에 전화해서 영화에 대해 서너 가지를 질문하세요.",
+      "tips": ["독백이 아니라 '질문'을 3~4개 해야 합니다. 시간·가격·할인·좌석 예매 중에서 고르세요.", "'Hi, I'm calling to ask about ~. I have a few questions.' 으로 시작하고 질문마다 First of all / Also / One more thing 을 붙이세요."],
+      "answers": {
+        "IM3": "Hi, I'm calling to ask about the movie this weekend. I have a few questions. First of all, what time does the movie start on Saturday? Also, how much does a ticket cost? Do you have any discounts for students? One more thing, can I book the tickets on the phone? Thank you so much for your help.",
+        "IH": "Hi, I'm calling to ask about the new action movie that's playing this weekend. My friend and I are planning to come on Saturday, so I have a few questions. First of all, could you tell me what time the evening shows start? Also, how much does a ticket cost, and do you have any discounts if we book online? I was also wondering if the theater has a parking lot, because my friend is driving. Oh, and one more thing, is it possible to choose our seats in advance? Thank you so much for your help.",
+        "AL": "Hi there, I'm calling to ask about the new action movie that just came out. A friend and I are hoping to catch it this Saturday, so I've got a few quick questions if you don't mind. First of all, could you tell me what time the evening showings are? We'd prefer something around seven if there's one. Also, how much are the tickets, and is there any kind of discount for booking online or paying with a certain card? I was also wondering if you have any IMAX or 4D screens for this movie, because my friend really wants the full experience. And lastly, is it possible to reserve our seats in advance? If so, I'd love to book two seats right now. Thanks so much, I really appreciate your help."
+      }
+    },
+    {
+      "id": "roleplay-ask-travel",
+      "type": "roleplay-ask",
+      "en": "I'd like to give you a situation and ask you to act it out. You want to go on a trip during your vacation. Call a travel agency and ask three or four questions about a trip package you are interested in.",
+      "ko": "상황을 드릴 테니 연기해 보세요. 휴가 때 여행을 가고 싶습니다. 여행사에 전화해서 관심 있는 여행 패키지에 대해 서너 가지를 질문하세요.",
+      "tips": ["날짜·가격·호텔·포함 사항(항공·식사) 네 가지가 기본 질문 세트입니다.", "'Does the price include ~?' 와 'What kind of hotel is it?' 만 외워도 두 질문이 해결됩니다."],
+      "answers": {
+        "IM3": "Hello, I'm calling to ask about the Jeju Island trip package on your website. I have a few questions. First of all, what dates are available in August? Also, how much does the package cost per person? Does the price include the hotel and breakfast? One more thing, is the flight included? Thank you so much for your help.",
+        "IH": "Hi, I'm calling to ask about the three-day Jeju Island package I saw on your website. I'm planning to take a vacation in August with a friend, so I have a few questions. First of all, could you tell me what dates are still available in the middle of August? Also, how much does the package cost per person, and does that include the flight and the hotel? I was also wondering what kind of hotel it is. Is it near the beach? And one more thing, are meals included, or do we need to pay for those separately? Thank you so much. Please call me back when you get this message.",
+        "AL": "Hi, I'm calling about the three-day Jeju Island package that's listed on your website. A friend and I are hoping to get away for a few days in mid-August, and this one looks perfect, so I've got a few questions. First of all, which dates are still open around August 14th or 15th? We're pretty flexible, so I'd love to hear what's available. Second, how much is it per person, and does that cover both the round-trip flight and the hotel? Speaking of the hotel, could you tell me a bit about it? We'd really prefer something near the beach with a nice view. I was also wondering what's actually included in the package. Are breakfast or any tours part of the deal, or are those extra? And finally, what's the cancellation policy in case something comes up? Thanks so much for your help, and please give me a call back whenever you get a chance."
+      }
+    },
+    {
+      "id": "roleplay-solve-movie",
+      "type": "roleplay-solve",
+      "en": "I'm sorry, but there is a problem I need you to resolve. You bought two movie tickets for this weekend, but your friend just told you that he or she can't come. Call the theater, explain the situation, and suggest two or three alternatives.",
+      "ko": "죄송하지만 해결해야 할 문제가 있습니다. 이번 주말 영화표 두 장을 샀는데 친구가 방금 못 온다고 했습니다. 영화관에 전화해서 상황을 설명하고 두세 가지 대안을 제안하세요.",
+      "tips": ["문제 설명은 두 문장이면 충분합니다. 핵심은 대안 2~3개를 순서대로 말하는 것.", "대안 틀: Is there any way ~? → If that's not possible, ~ → Or how about ~ instead?"],
+      "answers": {
+        "IM3": "Hello, I'm calling about the movie tickets I bought for this Saturday. I'm afraid there's a problem. My friend can't come this weekend because she is sick. I'm really sorry, but I need to change the tickets. Is there any way I could change the date to next Saturday? If that's not possible, could I get a refund for one ticket? Or how about I give the ticket to another friend instead? Please let me know what I can do. Thank you so much.",
+        "IH": "Hi, I'm calling about two tickets I booked for the seven o'clock show this Saturday. I'm afraid there's a problem. My friend just told me she can't make it because she has to work that day. I'm really sorry about this, but I was wondering if we could work something out. First, is there any way I could change both tickets to next Saturday at the same time? If that's not possible, would it be possible to get a refund for just one ticket and keep the other? Or, how about I transfer the ticket to another friend instead? I'd just need to change the name on the booking. Any of those would be great. Please call me back when you get this message, and thank you so much for your help.",
+        "AL": "Hi there, I'm calling about a booking I made for two seats at the seven o'clock showing this Saturday. Unfortunately, I've run into a bit of a problem. My friend just called to say she can't make it after all, because something urgent came up at work. I'm really sorry for the last-minute change, but I'm hoping we can figure something out. The easiest option, I think, would be to move both tickets to next Saturday, same time, if seats are still available. If that doesn't work, would it be possible to get a refund for just her ticket? I'd still love to come on my own. And if neither of those is an option, how about I hand the ticket over to another friend instead? I'd just need to update the name on the reservation. I know this is a hassle, and I really appreciate you looking into it. Please give me a call back when you get this message. Thanks so much."
+      }
+    },
+    {
+      "id": "roleplay-solve-travel",
+      "type": "roleplay-solve",
+      "en": "I'm sorry, but there is a problem I need you to resolve. You booked a trip through a travel agency, but you just found out that your flight has been canceled. Call the travel agency, explain the situation, and suggest two or three alternatives.",
+      "ko": "죄송하지만 해결해야 할 문제가 있습니다. 여행사를 통해 여행을 예약했는데 항공편이 취소된 것을 방금 알았습니다. 여행사에 전화해서 상황을 설명하고 두세 가지 대안을 제안하세요.",
+      "tips": ["취소 이유(태풍·기상 악화)를 한 문장 붙이면 상황이 훨씬 구체적으로 들립니다.", "대안: 같은 날 다른 항공편 → 일정 일주일 연기 → 환불 순서로 준비하세요."],
+      "answers": {
+        "IM3": "Hello, I'm calling about my trip to Jeju Island next Friday. I'm afraid there's a problem. I just got a text message that my flight was canceled. I'm really sorry to bother you, but I need your help. Is there any way I could get a seat on another flight on the same day? If not, could I change my trip to the next weekend? Or how about a refund for the package? Please call me back when you get this message. Thank you so much.",
+        "IH": "Hi, I'm calling about the Jeju Island package I booked for next Friday. I'm afraid there's a problem. I just got a text from the airline saying my morning flight has been canceled because of a typhoon warning. I'm really sorry to bother you, but I need to sort this out quickly. First, is there any way I could get on a later flight on the same day? I don't mind arriving in the evening. If that's not possible, would it be possible to push the whole trip back by one week? I'd like to keep the same hotel if I can. And if neither option works, I'd like to ask about a refund for the package. Please call me back when you get this message. Thank you so much for your help.",
+        "AL": "Hi there, I'm calling about the three-day Jeju Island package I booked through your agency for next Friday. Unfortunately, I've just run into a problem. I got a message from the airline about an hour ago saying that my morning flight has been canceled because of the typhoon that's expected to hit this weekend. I'm really sorry to call so close to the departure date, but I'm hoping you can help me figure something out. My first choice would be to get a seat on a later flight that same day, even if it's in the evening. I'd rather arrive late than miss the trip. If that's not possible, would it be possible to push the entire package back by a week? I'd love to keep the same hotel if they still have a room. And if neither of those works out, I'd like to talk about a refund, or at least a credit I could use later this year. I know this is a hassle, and I really appreciate you looking into it. Please give me a call back as soon as you get this message. Thanks so much."
+      }
+    },
+    {
+      "id": "roleplay-exp-plan",
+      "type": "roleplay-experience",
+      "en": "That's the end of the situation. Have you ever had a plan canceled or changed at the last minute? Tell me what happened and how you handled it.",
+      "ko": "상황은 여기까지입니다. 계획이 막판에 취소되거나 바뀐 적이 있나요? 무슨 일이 있었고 어떻게 대처했는지 말해 주세요.",
+      "tips": ["언제 → 무슨 계획 → 왜 취소됐는지 → 내가 한 행동(전화·취소·변경) → 결과 → 배운 점", "과거시제 확실히: planned, booked, called, canceled, got back"],
+      "answers": {
+        "IM3": "Yes, I have. Last summer, I planned a trip to Busan with my friend. We booked a train and a hotel. But the day before the trip, my friend got sick. She had a bad cold. So we had to cancel the trip. I was very disappointed. I called the hotel and canceled the room. Luckily, I got most of the money back. We went to Busan two months later, and it was really fun.",
+        "IH": "Yes, actually, this happened to me last summer. My friend and I had planned a weekend trip to Busan for months. We booked the KTX tickets and a hotel near the beach, and I was really looking forward to it. But the night before we were supposed to leave, my friend called me and said she had a terrible cold and couldn't go. Of course, I was disappointed, but I didn't want to go alone. So the next morning, I called the hotel and explained the situation. Luckily, they let me cancel without a fee. I also changed the train tickets online and got most of the money back. In the end, we went to Busan about two months later, and it was even better because the weather was perfect. Since then, I always check the cancellation policy before I book anything.",
+        "AL": "Oh, definitely. The one that comes to mind happened last summer. A close friend and I had been planning a weekend trip to Busan for months. We'd booked the KTX tickets, found a nice hotel near Haeundae Beach, and I'd even made a list of cafes I wanted to try. Then, the night before we were supposed to leave, she called me sounding awful and said she'd come down with a terrible cold. I'd be lying if I said I wasn't disappointed, but obviously her health came first. Rather than just sulking about it, I got on the phone the next morning and called the hotel to explain what had happened. Luckily, they were really understanding and waived the cancellation fee. I also managed to change our train tickets online and got most of the money back. In the end, we rescheduled for two months later, and honestly, it worked out even better because the weather was perfect. That experience taught me two things: always check the cancellation policy before booking, and don't stress too much when plans fall apart, because things usually work out in the end."
+      }
+    },
+    {
+      "id": "roleplay-exp-ticket",
+      "type": "roleplay-experience",
+      "en": "That's the end of the situation. Have you ever had a problem with a ticket, a reservation, or something you bought? Tell me what the problem was and how you solved it.",
+      "ko": "상황은 여기까지입니다. 표나 예약, 구매한 물건에 문제가 생긴 적이 있나요? 어떤 문제였고 어떻게 해결했는지 말해 주세요.",
+      "tips": ["'잘못된 날짜로 예매' 같은 작은 실수 에피소드가 말하기 쉽고 결말도 깔끔합니다.", "해결 과정에서 '직원에게 설명했다 → 직원이 바꿔 줬다 → 안도했다' 흐름을 넣으세요."],
+      "answers": {
+        "IM3": "Yes, I had a problem with a movie ticket last year. I booked two tickets online for a Friday night show. But when I got to the theater, the ticket was for the wrong day. I had booked Thursday by mistake. I was really embarrassed. I went to the ticket counter and explained the problem. The staff was very kind. She changed my tickets to the Friday show for free. I was so relieved. Now I always check the date twice before I pay.",
+        "IH": "Yes, actually, I had a problem with a movie ticket last year. I booked two tickets online for a Friday night show with my friend. When we got to the theater, I showed the ticket at the entrance, and the staff said it was for Thursday, not Friday. I had picked the wrong date by mistake. I was really embarrassed because my friend was standing right there. So I went to the ticket counter and explained the situation. Luckily, the staff was very understanding. She said that since there were still seats left, she could change the tickets to the Friday show for free. I was so relieved. We got in just before the movie started, and it was a great night after all. Since then, I always double-check the date and time before I pay for anything online.",
+        "AL": "Yes, I have, and it's actually a funny story now, even though it wasn't at the time. Last year, I booked two tickets online for a Friday night movie with a friend. We got to the theater a bit early, grabbed some popcorn, and headed to the entrance. That's when the staff scanned my ticket and told me it was for Thursday, not Friday. It turned out I'd clicked the wrong date without noticing. I was so embarrassed, especially with my friend standing right there. So I went straight to the ticket counter and explained what had happened. To my relief, the woman at the counter was incredibly understanding. She checked the seating chart, found two seats that were still open, and switched our tickets to the Friday show without charging me anything. We made it in just as the previews were ending. Looking back, it was a small mistake, but it could have ruined the night. Since then, I've made it a habit to double-check the date and time before I pay for anything online, and I always take a screenshot of the confirmation just in case."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "reservation", "ipa": "/ˌrez.ərˈveɪ.ʃən/", "tip": "'베이'에 강세. 앞의 re는 약하게 '레저'"},
+    {"word": "available", "ipa": "/əˈveɪ.lə.bəl/", "tip": "'베이'에 강세, 4음절 '어베일러블'"},
+    {"word": "refund", "ipa": "/ˈriː.fʌnd/", "tip": "명사는 앞 강세 '리펀드'. 동사로 쓰면 뒤 강세"},
+    {"word": "schedule", "ipa": "/ˈskedʒ.uːl/", "tip": "미국식은 '스케줄'. '쉐줄'은 영국식"},
+    {"word": "canceled", "ipa": "/ˈkæn.səld/", "tip": "첫 음절 강세. 끝의 -ed는 'd'로 가볍게, '캔슬드'"}
+  ]
+}

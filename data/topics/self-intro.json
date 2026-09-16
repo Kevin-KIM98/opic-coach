@@ -1,0 +1,88 @@
+{
+  "id": "self-intro",
+  "title": "자기소개",
+  "titleEn": "Self-introduction",
+  "emoji": "🙋",
+  "category": "survey",
+  "priority": 0,
+  "intro": "OPIc 1번 질문은 100% 자기소개입니다. 채점 비중은 낮지만 첫인상을 결정하고, 뒤에 나올 질문(직장·취미·일상)의 밑바탕이 됩니다. 이름·나이·직업·사는 곳·취미·성격을 한 문장씩 준비해 두면 40초 안에 자연스럽게 끝낼 수 있습니다.",
+  "strategy": [
+    "이름 → 나이/거주지 → 직업 → 취미 → 성격 순서로 6~8문장을 통째로 외워 둡니다.",
+    "설문에서 고른 주제(영화·음악·동네)를 취미로 언급해 뒤 질문과 자연스럽게 연결합니다.",
+    "IH 이상은 'I'd say I'm ~', 'the kind of person who ~', 'used to'로 성격을 구체적으로 풀어 말합니다."
+  ],
+  "expressions": [
+    {"en": "Hi, my name is Minsu, and I'm in my early thirties.", "ko": "안녕하세요, 제 이름은 민수이고 30대 초반이에요.", "level": "IM", "note": "in my early / mid / late thirties"},
+    {"en": "I work at an IT company in Seoul as an office worker.", "ko": "저는 서울에 있는 IT 회사에서 사무직으로 일해요.", "level": "IM"},
+    {"en": "I've been working there for about five years.", "ko": "거기서 일한 지 5년 정도 됐어요.", "level": "IM", "note": "현재완료진행: 지속 기간"},
+    {"en": "I live in a two-bedroom apartment in Seoul, about 20 minutes from my office.", "ko": "서울에 있는 방 두 개짜리 아파트에 사는데, 회사에서 20분 정도 거리예요.", "level": "IM"},
+    {"en": "In my free time, I like to watch movies and listen to music.", "ko": "여가 시간에는 영화 보고 음악 듣는 걸 좋아해요.", "level": "IM"},
+    {"en": "I'm an outgoing person, and I like meeting new people.", "ko": "저는 외향적인 사람이고 새로운 사람 만나는 걸 좋아해요.", "level": "IM"},
+    {"en": "On weekdays, I usually get up at seven and leave for work at eight.", "ko": "평일에는 보통 7시에 일어나서 8시에 출근해요.", "level": "IM"},
+    {"en": "I'm a big coffee lover, so I always start my day with a cup of coffee.", "ko": "저는 커피를 정말 좋아해서 항상 커피 한 잔으로 하루를 시작해요.", "level": "IM"},
+    {"en": "I'd say I'm pretty easygoing, but I can be serious when it comes to work.", "ko": "저는 꽤 느긋한 편인데, 일에 관해서는 진지해질 수 있어요.", "level": "IH", "note": "when it comes to ~: ~에 관해서는"},
+    {"en": "I'm the kind of person who likes to plan things ahead.", "ko": "저는 미리 계획 세우는 걸 좋아하는 타입이에요.", "level": "IH", "note": "the kind of person who ~"},
+    {"en": "To be honest, I'm a bit of an introvert, but I open up once I get to know people.", "ko": "솔직히 저는 좀 내향적인데, 사람을 알고 나면 마음을 열어요.", "level": "IH"},
+    {"en": "My job mainly involves handling customer data and preparing reports.", "ko": "제 일은 주로 고객 데이터를 다루고 보고서를 만드는 거예요.", "level": "IH", "note": "involve + -ing"},
+    {"en": "What I enjoy most about my job is working with my team.", "ko": "제 일에서 제일 좋은 건 팀원들과 함께 일하는 거예요.", "level": "IH"},
+    {"en": "I wouldn't say I'm super ambitious, but I do take pride in doing my job well.", "ko": "엄청 야망이 크다고는 못 하겠지만, 제 일을 잘 해내는 데 자부심은 있어요.", "level": "AL", "note": "do + 동사: 강조"},
+    {"en": "Outside of work, I try to keep a good balance between staying active and just taking it easy.", "ko": "일 외에는 활동적인 것과 그냥 쉬는 것 사이에서 균형을 잡으려고 해요.", "level": "AL"}
+  ],
+  "questions": [
+    {
+      "id": "self-intro-general",
+      "type": "describe",
+      "en": "Let's start the interview now. Tell me a little about yourself.",
+      "ko": "이제 인터뷰를 시작하겠습니다. 자기소개를 간단히 해 주세요.",
+      "tips": ["이름 → 나이·거주지 → 직업 → 취미 → 마무리 한 줄", "'I've been working there for ~'로 근무 기간을 넣으면 문법 점수가 올라가요"],
+      "answers": {
+        "IM3": "Hi, my name is Minsu. I'm 32 years old, and I live in Seoul. I work at an IT company as an office worker. I've been working there for about five years. I live in a two-bedroom apartment on the 12th floor. It takes about 20 minutes to get to work. In my free time, I like to watch movies and listen to music. I also love coffee, so I go to cafes on weekends. That's a little about me.",
+        "IH": "Sure. My name is Minsu, and I'm 32 years old. I was born in Daejeon, but I've been living in Seoul for about eight years now. I work at an IT company in Gangnam, where I handle customer data and prepare reports. I've been there for about five years, and I really like my team. I live in a two-bedroom apartment on the 12th floor, which is only 20 minutes from my office. Personality-wise, I'd say I'm pretty easygoing and I get along well with most people. In my free time, I like watching movies and listening to music, especially on weekends. I'm also a big coffee lover, so I know almost every cafe in my neighborhood. To be honest, I used to be quite shy, but my job has helped me become more outgoing. That's pretty much who I am.",
+        "AL": "Sure, I'd be happy to. My name is Minsu, and I'm 32. I grew up in Daejeon, but I moved to Seoul for college and ended up staying, so it's been about eight years now. These days I work at an IT company in Gangnam, mostly dealing with customer data and putting together reports for the sales team. It's not the most glamorous job, but I take pride in doing it well, and I've got a great team, which makes a huge difference. I live in a two-bedroom apartment on the 12th floor, about 20 minutes from the office, so my commute is pretty painless. As for my personality, I'd describe myself as easygoing and a bit of a planner. I like to know what's coming, but I don't stress out when things change. Outside of work, I'm a bit of a movie buff, and I always have music playing when I'm at home. I'm also a serious coffee lover, to the point where my weekends usually revolve around finding a new cafe. Funny enough, I used to be really shy in school, but five years of meetings and presentations kind of forced me out of my shell. So that's me in a nutshell."
+      }
+    },
+    {
+      "id": "self-intro-personality",
+      "type": "describe",
+      "en": "Tell me more about yourself. What kind of person are you, and what do you like to do in your free time?",
+      "ko": "자신에 대해 좀 더 말해 주세요. 어떤 성격이고, 여가 시간에는 무엇을 하는 걸 좋아하나요?",
+      "tips": ["성격 2~3가지(장점 + 살짝 단점) → 취미 2~3개 + 빈도 → 취미가 주는 느낌", "'I'd say I'm ~' / 'I'm a bit of an introvert'로 성격을 부드럽게 표현해요"],
+      "answers": {
+        "IM3": "I think I'm a friendly and positive person. I like talking with people, and I smile a lot. But I'm also a little shy at first. I have a few hobbies. I love watching movies, so I go to the theater about twice a month. I also listen to music every day on my way to work. On weekends, I like to go to a nice cafe and drink coffee. These hobbies help me relax after a busy week.",
+        "IH": "Well, I'd say I'm pretty easygoing and positive. I don't get upset easily, and my friends often tell me I'm a good listener. To be honest, I'm a bit of an introvert, so I need some time alone to recharge. But once I get to know people, I open up and become quite talkative. As for hobbies, watching movies is my number one. I go to the theater about twice a month, usually on Saturday afternoons. I also listen to music every day, especially during my 20-minute commute. On weekends, I love finding a quiet cafe and having a good cup of coffee. I used to play basketball in college, but these days I mostly just go for walks near my apartment. Overall, I'm a simple person who enjoys small, everyday pleasures.",
+        "AL": "That's a good question. I'd describe myself as easygoing and pretty even-tempered. It takes a lot to get me upset, and my friends say I'm the one they call when they need someone to just listen. That said, I'm more of an introvert than I look. I enjoy being around people, but after a long day of meetings, I really need some quiet time on my own to recharge. When it comes to hobbies, movies are my thing. I catch something at the theater about twice a month, and I'm the kind of person who stays through the credits. Music is also a big part of my day. I've got my headphones on during my whole commute, and there's always something playing while I cook. And then there's coffee, which is honestly more of an obsession than a hobby. Most of my weekends involve hunting down a new cafe somewhere in Seoul. I used to play basketball back in college, but these days I've swapped that for long walks along the river near my apartment. All in all, I'm a pretty low-key person who gets a lot of joy out of small, everyday things."
+      }
+    },
+    {
+      "id": "self-intro-weekday",
+      "type": "routine",
+      "en": "Tell me about a typical weekday for you. What do you do from the time you get up until you go to bed?",
+      "ko": "평일 일상에 대해 말해 주세요. 일어나서 잠들 때까지 무엇을 하나요?",
+      "tips": ["시간 순서: get up → leave home → work → lunch → after work → bed", "'It takes about 20 minutes' / 'I try to get to bed by ~' 활용"],
+      "answers": {
+        "IM3": "On weekdays, I get up at seven. I take a quick shower and drink a cup of coffee. I leave home at eight and take the subway to work. It takes about 20 minutes. I work from nine to six. I usually have lunch with my coworkers near the office. After work, I go home and cook dinner. Then I watch TV or listen to music. I go to bed around eleven.",
+        "IH": "Well, my weekdays are pretty much the same. I get up around seven, take a quick shower, and make myself a cup of coffee. I can't really start my day without it. I leave home at eight and take the subway, which takes about 20 minutes. Work starts at nine, and the morning is usually the busiest part of my day because of emails and meetings. Around noon, I have lunch with my coworkers at a small restaurant near the office. In the afternoon, I mostly work on reports. I finish around six, and then I head home. I usually cook something simple, like fried rice or pasta. After dinner, I relax on the sofa with some music or a YouTube video. I try to get to bed by eleven so I'm not tired the next day. It's not exciting, but it works for me.",
+        "AL": "To be honest, my weekdays run like clockwork. I'm up at seven, and the first thing I do is put the coffee on, because I'm basically useless without it. After a quick shower, I'm out the door by eight and on the subway, which gets me to the office in about 20 minutes. Mornings are usually the most hectic part of my day. I go through my emails, sit in on a team meeting, and try to knock out anything urgent before lunch. Around noon, I grab lunch with a few coworkers at one of the small restaurants near the office. We almost always end up at a cafe afterward for another coffee. Afternoons are quieter, so that's when I dig into reports and data work. I try to wrap things up by six, though it sometimes runs later. Once I get home, I'll cook something simple, like fried rice or pasta, and then just unwind on the sofa with some music or a show. I make a point of being in bed by eleven, because if I stay up later, the next morning is rough. It's a pretty simple routine, but honestly, I like the rhythm of it."
+      }
+    },
+    {
+      "id": "self-intro-job",
+      "type": "describe",
+      "en": "You said you're a working professional. Tell me about your job. What do you do at work, and what is a typical day like?",
+      "ko": "직장인이라고 하셨는데, 하는 일에 대해 말해 주세요. 회사에서 무슨 일을 하고, 하루 일과는 어떤가요?",
+      "tips": ["회사·부서 → 주요 업무 2가지 → 하루 흐름 → 좋은 점/힘든 점 → 마무리", "'My job mainly involves -ing' / 'What I enjoy most about my job is ~'"],
+      "answers": {
+        "IM3": "I work at an IT company in Seoul. I'm an office worker in the sales support team. My main job is to manage customer data. I also make reports for my team every week. I usually work from nine to six. I have a lot of meetings in the morning. In the afternoon, I work on my computer. My job is sometimes busy, but I like my coworkers. So I enjoy my work.",
+        "IH": "Sure. I work at an IT company in Gangnam, Seoul, and I've been there for about five years. I'm on the sales support team, which has about eight people. My job mainly involves managing customer data and preparing weekly reports for the sales managers. In the morning, I usually have a team meeting and answer emails. In the afternoon, I work on the reports and check the data for mistakes. The end of the month is always the busiest time because everyone needs the numbers. What I enjoy most about my job is working with my team. They're friendly and supportive, so even stressful days are okay. To be honest, the work itself can be a little repetitive. But I've learned a lot about data, and I think it's a good skill for the future.",
+        "AL": "Sure. I work at a mid-sized IT company in Gangnam. I've been there for about five years now. Officially, my title is sales support specialist, but in plain terms, I'm the person who keeps the customer data clean and turns it into reports the sales team can actually use. A typical day starts with a quick team meeting where we go over what's urgent, and then I spend the morning dealing with emails and requests from the sales managers. Afternoons are when I get my real work done, which is mostly digging through spreadsheets and putting together weekly and monthly reports. The end of the month is always a bit of a crunch, since everyone suddenly needs their numbers at the same time. What I like most about the job is my team. There are eight of us, and we've been through enough deadlines together that we really have each other's backs. I'll admit the work itself can get repetitive, and there are days when I stare at the same spreadsheet for hours. But I've picked up some solid data skills along the way, and those are going to be useful no matter where I end up. So overall, I'd say it's a good fit for me right now."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "introduce", "ipa": "/ˌɪn.trəˈduːs/", "tip": "'듀스'에 강세. '인트로듀스'가 아니라 '인트러듀스'"},
+    {"word": "personality", "ipa": "/ˌpɜːr.səˈnæl.ə.ti/", "tip": "'낼'에 강세. 5음절, 끝은 '러티'로 가볍게"},
+    {"word": "colleague", "ipa": "/ˈkɑː.liːɡ/", "tip": "2음절 '칼리그'. '콜리그'나 3음절 아님"},
+    {"word": "thirty", "ipa": "/ˈθɜːr.ti/", "tip": "th는 혀를 이 사이에. 첫 음절 강세(thirteen은 뒤 강세)"},
+    {"word": "company", "ipa": "/ˈkʌm.pə.ni/", "tip": "'컴퍼니'. '콤파니' 아님, 첫 음절 강세"}
+  ]
+}

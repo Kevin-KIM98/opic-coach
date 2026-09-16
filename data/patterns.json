@@ -1,0 +1,122 @@
+{
+  "intro": "어떤 주제가 나와도 답변의 뼈대를 만들어 주는 만능 패턴입니다. 주제별 표현보다 먼저 이 패턴들을 '입에 붙게' 외우면, 모르는 주제가 나와도 IM3 이상으로 버틸 수 있습니다.",
+  "groups": [
+    {
+      "id": "opener",
+      "title": "시작 · 시간 벌기",
+      "desc": "질문을 듣고 바로 말을 시작하게 해주는 문장. 침묵을 없애는 것이 IM3의 첫 조건입니다.",
+      "items": [
+        {"en": "Okay, let me tell you about my favorite park.", "ko": "좋아요, 제가 좋아하는 공원에 대해 말씀드릴게요.", "level": "IM", "note": "let me tell you about + 명사"},
+        {"en": "That's an interesting question. Let me think for a second.", "ko": "흥미로운 질문이네요. 잠깐만 생각해 볼게요.", "level": "IM"},
+        {"en": "Well, there are a few things I can say about that.", "ko": "음, 그것에 대해 말할 수 있는 게 몇 가지 있어요.", "level": "IM"},
+        {"en": "To be honest, I haven't thought about it much, but I'd say...", "ko": "솔직히 별로 생각해 본 적은 없는데, 제 생각엔...", "level": "IH"},
+        {"en": "Speaking of movies, I actually went to the theater last weekend.", "ko": "영화 얘기가 나와서 말인데, 사실 지난 주말에 극장에 갔었어요.", "level": "IH", "note": "speaking of ~: ~ 얘기가 나와서 말인데"},
+        {"en": "Where should I start? Okay, I'll start with the basics.", "ko": "어디서부터 시작할까요? 기본적인 것부터 말할게요.", "level": "IH"}
+      ]
+    },
+    {
+      "id": "describe",
+      "title": "묘사하기",
+      "desc": "장소·사물·사람 묘사. '전체 → 위치별 세부 → 내 느낌' 순서로.",
+      "items": [
+        {"en": "It's located in the middle of the city, right next to the subway station.", "ko": "도시 한가운데, 지하철역 바로 옆에 있어요.", "level": "IM", "note": "be located in / next to"},
+        {"en": "When you walk in, the first thing you notice is the big window.", "ko": "들어가면 처음 눈에 띄는 게 큰 창문이에요.", "level": "IM"},
+        {"en": "There's a small table on the left and a bookshelf on the right.", "ko": "왼쪽에 작은 테이블이 있고 오른쪽에 책장이 있어요.", "level": "IM"},
+        {"en": "It's not very big, but it's clean and well organized.", "ko": "아주 크진 않지만 깨끗하고 잘 정리되어 있어요.", "level": "IM"},
+        {"en": "What I like most about it is the atmosphere. It's really relaxing.", "ko": "제일 마음에 드는 건 분위기예요. 정말 편안해요.", "level": "IH"},
+        {"en": "It has a kind of cozy, old-fashioned feel to it.", "ko": "아늑하고 옛날 느낌이 나는 곳이에요.", "level": "IH"},
+        {"en": "The place is always packed on weekends, so I usually go on weekdays.", "ko": "주말엔 항상 붐벼서 보통 평일에 가요.", "level": "IH", "note": "packed = 꽉 찬"},
+        {"en": "It's the kind of place where you can just sit back and forget about everything.", "ko": "그냥 편히 앉아서 모든 걸 잊을 수 있는 그런 곳이에요.", "level": "AL"}
+      ]
+    },
+    {
+      "id": "routine",
+      "title": "습관 · 루틴",
+      "desc": "빈도 + 시간 순서 연결어만 있으면 어떤 루틴 질문도 답할 수 있습니다.",
+      "items": [
+        {"en": "I usually go there about twice a week, mostly after work.", "ko": "보통 일주일에 두 번 정도, 주로 퇴근 후에 가요.", "level": "IM", "note": "once / twice / three times a week"},
+        {"en": "First, I ... Then, I ... After that, I ...", "ko": "먼저 ... 그다음에 ... 그러고 나서 ...", "level": "IM", "note": "순서 연결어 3종 세트"},
+        {"en": "On weekdays, I don't have much time, so I keep it short.", "ko": "평일엔 시간이 별로 없어서 짧게 해요.", "level": "IM"},
+        {"en": "Before I go, I always check the weather on my phone.", "ko": "가기 전에 항상 폰으로 날씨를 확인해요.", "level": "IM"},
+        {"en": "It usually takes about an hour from start to finish.", "ko": "처음부터 끝까지 보통 한 시간 정도 걸려요.", "level": "IM"},
+        {"en": "I try to make it a habit, but sometimes I skip it when I'm busy.", "ko": "습관으로 만들려고 하는데, 바쁠 땐 가끔 건너뛰어요.", "level": "IH"},
+        {"en": "Whenever I have some free time, I tend to just put on some music and relax.", "ko": "여유 시간이 생기면 그냥 음악 틀어 놓고 쉬는 편이에요.", "level": "IH", "note": "tend to = ~하는 편이다"},
+        {"en": "It's become such a big part of my routine that I feel off when I skip it.", "ko": "루틴의 큰 부분이 되어서 건너뛰면 뭔가 이상해요.", "level": "AL"}
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "경험 말하기 (과거)",
+      "desc": "언제 → 어디서 → 무슨 일 → 내가 한 행동 → 결과 → 느낌. 과거시제를 끝까지 유지하는 것이 핵심.",
+      "items": [
+        {"en": "This happened about two years ago, when I was on vacation.", "ko": "한 2년 전, 휴가 중이었을 때 있었던 일이에요.", "level": "IM"},
+        {"en": "At first, everything was fine, but then something went wrong.", "ko": "처음엔 다 괜찮았는데, 그러다 문제가 생겼어요.", "level": "IM", "note": "went wrong = 잘못되다"},
+        {"en": "I didn't know what to do, so I called my friend.", "ko": "뭘 해야 할지 몰라서 친구한테 전화했어요.", "level": "IM"},
+        {"en": "In the end, it worked out fine, and I was really relieved.", "ko": "결국 잘 해결됐고 정말 안심했어요.", "level": "IM"},
+        {"en": "It was one of the best days I've ever had.", "ko": "제 인생 최고의 날 중 하나였어요.", "level": "IM", "note": "one of the + 최상급 + 복수명사"},
+        {"en": "I still remember how nervous I was at that moment.", "ko": "그 순간 얼마나 긴장했는지 아직도 기억나요.", "level": "IH"},
+        {"en": "Looking back, it was a good lesson for me.", "ko": "돌이켜 보면 저한테 좋은 교훈이었어요.", "level": "IH"},
+        {"en": "What made it so special was that I did it all by myself.", "ko": "특별했던 이유는 전부 혼자 해냈다는 거예요.", "level": "IH"},
+        {"en": "Long story short, we ended up missing the last train.", "ko": "짧게 말하면, 결국 막차를 놓쳤어요.", "level": "AL", "note": "end up -ing = 결국 ~하게 되다"}
+      ]
+    },
+    {
+      "id": "compare",
+      "title": "비교 · 변화",
+      "desc": "과거(used to) → 현재(nowadays) → 차이점 → 내 선호. IH 이상 필수.",
+      "items": [
+        {"en": "In the past, I used to ..., but now I ...", "ko": "예전엔 ...했는데, 지금은 ...해요.", "level": "IM", "note": "used to + 동사원형"},
+        {"en": "The biggest difference is the size.", "ko": "가장 큰 차이는 크기예요.", "level": "IM"},
+        {"en": "A is much bigger than B, but B is more convenient.", "ko": "A가 B보다 훨씬 크지만, B가 더 편리해요.", "level": "IM", "note": "much + 비교급"},
+        {"en": "Compared to ten years ago, things have changed a lot.", "ko": "10년 전에 비하면 많이 달라졌어요.", "level": "IH"},
+        {"en": "Back then, we didn't have smartphones, so we had to ...", "ko": "그땐 스마트폰이 없어서 ...해야 했어요.", "level": "IH"},
+        {"en": "These days, more and more people are ...", "ko": "요즘은 점점 더 많은 사람들이 ...해요.", "level": "IH"},
+        {"en": "They both have their pros and cons, but if I had to choose, I'd go with A.", "ko": "둘 다 장단점이 있지만, 굳이 고르자면 A를 택할래요.", "level": "AL", "note": "if I had to choose, I'd ~"},
+        {"en": "It's not that B is bad; it's just that A suits me better.", "ko": "B가 나쁘다는 게 아니라, 그냥 A가 저한테 더 맞는 거예요.", "level": "AL"}
+      ]
+    },
+    {
+      "id": "opinion",
+      "title": "의견 · 이유",
+      "desc": "의견 → 이유 1 → 이유 2 → 예시 → 결론. 토익스피킹 파트5에도 그대로 씁니다.",
+      "items": [
+        {"en": "I think ... because ...", "ko": "저는 ...라고 생각해요, 왜냐하면 ...", "level": "IM"},
+        {"en": "There are two reasons. First, ... Second, ...", "ko": "이유는 두 가지예요. 첫째, ... 둘째, ...", "level": "IM"},
+        {"en": "For example, when I was ..., I ...", "ko": "예를 들어 제가 ...했을 때, ...", "level": "IM"},
+        {"en": "In my opinion, it's a good thing overall.", "ko": "제 생각엔 전반적으로 좋은 일이에요.", "level": "IM"},
+        {"en": "Personally, I prefer A, mainly because it saves time.", "ko": "개인적으로 A를 선호하는데, 주로 시간을 아껴 주기 때문이에요.", "level": "IH", "note": "mainly because"},
+        {"en": "Some people might disagree, but I think it depends on the situation.", "ko": "반대하는 사람도 있겠지만, 상황에 따라 다르다고 봐요.", "level": "IH"},
+        {"en": "That's why I believe ...", "ko": "그래서 저는 ...라고 믿어요.", "level": "IH"},
+        {"en": "At the end of the day, it comes down to what you value more.", "ko": "결국엔 무엇을 더 중요하게 여기느냐의 문제예요.", "level": "AL"}
+      ]
+    },
+    {
+      "id": "closing",
+      "title": "마무리",
+      "desc": "답변이 끝났음을 분명히 알려 주면 채점자가 듣기 편합니다. 한 문장이면 충분.",
+      "items": [
+        {"en": "So, that's pretty much it.", "ko": "그래서, 대충 그게 다예요.", "level": "IM"},
+        {"en": "That's why I like it so much.", "ko": "그래서 제가 그걸 그렇게 좋아해요.", "level": "IM"},
+        {"en": "Overall, it was a great experience.", "ko": "전반적으로 정말 좋은 경험이었어요.", "level": "IM"},
+        {"en": "Anyway, that's the story of my ...", "ko": "아무튼, 그게 제 ... 이야기예요.", "level": "IH"},
+        {"en": "I hope that answers your question.", "ko": "질문에 답이 됐으면 좋겠네요.", "level": "IH"},
+        {"en": "All in all, I wouldn't trade it for anything.", "ko": "다 합쳐 보면, 그 무엇과도 바꾸지 않을 거예요.", "level": "AL"}
+      ]
+    },
+    {
+      "id": "filler",
+      "title": "연결어 · 필러",
+      "desc": "'어...' 대신 영어 필러를 쓰면 유창하게 들립니다. 남용 금지: 문장당 최대 1개.",
+      "items": [
+        {"en": "Actually, ...", "ko": "사실은, ...", "level": "IM"},
+        {"en": "You know, ...", "ko": "있잖아요, ...", "level": "IM"},
+        {"en": "I mean, ...", "ko": "그러니까 제 말은, ...", "level": "IM"},
+        {"en": "Anyway, ...", "ko": "아무튼, ...", "level": "IM"},
+        {"en": "The thing is, ...", "ko": "문제는 말이죠, ...", "level": "IH"},
+        {"en": "As I said before, ...", "ko": "아까 말했듯이, ...", "level": "IH"},
+        {"en": "On top of that, ...", "ko": "게다가, ...", "level": "IH"},
+        {"en": "Come to think of it, ...", "ko": "생각해 보니까, ...", "level": "AL"}
+      ]
+    }
+  ]
+}

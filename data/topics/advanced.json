@@ -1,0 +1,112 @@
+{
+  "id": "advanced",
+  "title": "고난도 · 비교/변화 (14~15번)",
+  "titleEn": "Advanced questions",
+  "emoji": "🧠",
+  "category": "advanced",
+  "priority": 14,
+  "intro": "OPIc 14~15번은 설문 주제와 연결된 '시간에 따른 변화·비교·사회 이슈' 질문입니다. 예를 들어 '20년 전과 지금의 집은 어떻게 다른가', '요즘 사람들이 여행에서 걱정하는 문제는 무엇인가' 같은 식입니다. IH·AL을 노린다면 반드시 대비해야 하고, IM3가 목표라면 필수는 아니지만 짧게라도 시도하면 점수가 올라갑니다. '과거 → 현재 → 내 생각' 3단 틀과 시간 벌기 표현만 있으면 어떤 주제가 나와도 60초 이상 말할 수 있습니다.",
+  "strategy": [
+    "변화 질문은 'Back then / In the past → Nowadays / These days → Personally, I think' 3단으로 답합니다. 각 단계에 구체적인 예 하나씩만 넣어도 IH입니다.",
+    "의견 질문은 결론을 먼저 말하고 이유 두 개, 그리고 반대 의견을 한 문장 인정한 뒤 다시 내 입장으로 돌아옵니다(On the one hand ~ On the other hand ~).",
+    "질문이 어려우면 'That's a tough question. Let me think about it for a second.' 로 시간을 벌고, 모르는 통계 대신 내 경험(I've noticed that ~)으로 근거를 만드세요."
+  ],
+  "expressions": [
+    {"en": "Over the past ten years, housing in Korea has changed a lot.", "ko": "지난 10년 동안 한국의 주거 형태가 많이 바뀌었어요.", "level": "IH", "note": "Over the past + 기간 + 현재완료"},
+    {"en": "Back then, people used to live in houses, but nowadays most people live in apartments.", "ko": "그때는 사람들이 주택에 살았는데, 요즘은 대부분 아파트에 살아요.", "level": "IH", "note": "Back then ~ used to / nowadays ~ 대비 구조"},
+    {"en": "One big difference is that everything is online now.", "ko": "큰 차이점 하나는 이제 모든 게 온라인이라는 거예요.", "level": "IM", "note": "One big difference is that + 문장"},
+    {"en": "In the past, people bought CDs. These days, they just stream music.", "ko": "예전엔 사람들이 CD를 샀어요. 요즘은 그냥 스트리밍하죠.", "level": "IM", "note": "가장 쉬운 과거/현재 대비"},
+    {"en": "On the one hand, it's convenient. On the other hand, it can be expensive.", "ko": "한편으로는 편리하지만, 다른 한편으로는 비쌀 수 있어요.", "level": "IH", "note": "양면 제시. 둘 다 말해야 세트"},
+    {"en": "I think the main reason is that people are busier than before.", "ko": "가장 큰 이유는 사람들이 예전보다 바빠졌기 때문인 것 같아요.", "level": "IM"},
+    {"en": "Some people say remote work is less productive, but personally, I think it depends on the person.", "ko": "재택근무가 생산성이 떨어진다고들 하지만, 개인적으로는 사람에 따라 다르다고 생각해요.", "level": "IH", "note": "반대 의견 인정 → 내 의견"},
+    {"en": "It's hard to say, but if I had to choose, I'd say city life is better for young people.", "ko": "말하기 어렵지만, 굳이 고르자면 젊은 사람들에겐 도시 생활이 더 낫다고 봐요.", "level": "IH", "note": "결론 내리기 어려울 때"},
+    {"en": "This has both good and bad sides.", "ko": "여기엔 좋은 면과 나쁜 면이 다 있어요.", "level": "IM", "note": "양면 답변 예고 문장"},
+    {"en": "In the long run, I think this change is good for society.", "ko": "장기적으로 보면 이 변화는 사회에 좋다고 생각해요.", "level": "IH", "note": "마무리 문장으로 활용"},
+    {"en": "That's a tough question. Let me think about it for a second.", "ko": "어려운 질문이네요. 잠깐 생각 좀 해 볼게요.", "level": "IM", "note": "시간 벌기. 침묵 대신 반드시 소리 내기"},
+    {"en": "Looking back, it's amazing how much things have changed in such a short time.", "ko": "돌이켜 보면 이렇게 짧은 시간에 이만큼 바뀌었다는 게 놀라워요.", "level": "AL", "note": "Looking back, ~ 으로 변화 답변 시작"},
+    {"en": "Compared to twenty years ago, things are much more convenient.", "ko": "20년 전에 비하면 훨씬 편리해졌어요.", "level": "IM", "note": "Compared to + 시점"},
+    {"en": "The biggest concern for most people these days is the cost.", "ko": "요즘 대부분 사람들의 가장 큰 걱정은 비용이에요.", "level": "IH"},
+    {"en": "As far as I'm concerned, the benefits outweigh the drawbacks.", "ko": "제가 보기엔 장점이 단점보다 커요.", "level": "AL", "note": "outweigh = ~보다 더 크다/중요하다"}
+  ],
+  "questions": [
+    {
+      "id": "advanced-housing-change",
+      "type": "comparison",
+      "en": "How has housing in Korea changed over the last 20 years? What are the biggest differences between homes today and homes 20 years ago?",
+      "ko": "지난 20년 동안 한국의 주거는 어떻게 변했나요? 오늘날의 집과 20년 전 집의 가장 큰 차이점은 무엇인가요?",
+      "tips": ["과거: 주택·저층 아파트·주차 부족 / 현재: 고층 단지·편의시설·높은 가격", "'편리해졌지만 비싸졌다' 양면으로 마무리하면 의견까지 자연스럽게 들어갑니다"],
+      "answers": {
+        "IM3": "Housing in Korea has changed a lot over the past 20 years. Back then, many people lived in houses with a yard. Now, most people live in apartments like me. One big difference is that new apartments are much more convenient. They have elevators, parking lots, and gyms. Another thing that has changed is the price. Apartments in Seoul are very expensive now. I think this has both good and bad sides. Life is more comfortable, but it is hard for young people to buy a home.",
+        "IH": "That's an interesting question. I think housing in Korea has changed a lot over the past 20 years. When I was a kid, a lot of families lived in small houses or old low-rise apartments, and there wasn't much space for parking. Nowadays, most people, including me, live in high-rise apartment complexes. One big difference is that new apartments come with all kinds of facilities, like underground parking, a gym, and even a cafe inside the complex. Another thing that has changed is the price. Compared to 20 years ago, apartments in Seoul are unbelievably expensive, so a lot of young people have given up on buying a home. Personally, I think this has both good and bad sides. On the one hand, life is a lot more convenient and comfortable. On the other hand, housing has become a huge source of stress for my generation.",
+        "AL": "That's a big question, but let me try. Looking back, it's amazing how much housing in Korea has changed in just 20 years. When I was growing up, plenty of families still lived in detached houses or older five-story buildings without elevators, and things like underground parking were pretty rare. Fast forward to today, and the standard is a high-rise apartment complex with a gym, a daycare center, and sometimes even a small library right on the grounds. I live on the 12th floor of one of those buildings myself, and honestly, the convenience is hard to beat. Another major shift is how people think about their homes. Back then, a house was mostly a place to live. These days, it's seen as an investment, which is part of the reason prices in Seoul have gone through the roof. That's the downside, in my opinion. On the one hand, homes are safer, cleaner, and more comfortable than ever. On the other hand, a lot of people my age feel like owning a place is out of reach no matter how hard they work. So overall, I'd say the quality of housing has improved dramatically, but affordability has gotten much worse, and in the long run, that's something the country really needs to fix."
+      }
+    },
+    {
+      "id": "advanced-movie-industry",
+      "type": "comparison",
+      "en": "How has the movie industry changed over the years? How is the way people watch movies today different from the past, and what do you think about these changes?",
+      "ko": "영화 산업은 시간이 지나면서 어떻게 변했나요? 요즘 사람들이 영화를 보는 방식은 과거와 어떻게 다르고, 이런 변화에 대해 어떻게 생각하나요?",
+      "tips": ["과거: 극장·DVD 대여 / 현재: 스트리밍·스마트폰·혼자 보기", "'편리하지만 극장의 경험을 잃었다' + 나는 여전히 극장에 간다 로 의견 마무리"],
+      "answers": {
+        "IM3": "The way people watch movies has changed a lot. In the past, people went to the theater or rented DVDs. Now, most people watch movies at home on Netflix or other streaming services. One big difference is that we can watch anything we want, anytime. I think this is very convenient. But it has both good and bad sides. Many small theaters have closed. Personally, I still like going to the theater with my friends because the big screen is more exciting.",
+        "IH": "Sure. I think the movie industry has changed a lot, especially in the last ten years. Back then, if you wanted to see a new movie, you had to go to the theater or wait a few months for the DVD. Nowadays, most people just open Netflix or another streaming service on their phone and watch whatever they want, whenever they want. One big difference is that a lot of movies now go straight to streaming without ever playing in theaters. Another thing that has changed is that people watch alone more often, instead of going out with friends. Personally, I think this has both good and bad sides. On the one hand, it's much cheaper and more convenient. On the other hand, I feel like we're losing something. Watching a movie on a big screen with a crowd is a totally different experience, so I still try to go to the theater at least once a month.",
+        "AL": "The movie industry has transformed over the past decade. When I was in college, seeing a new release meant going to the theater, buying popcorn, and sitting in a dark room with a hundred strangers. If you missed it, you had to wait months for the DVD. These days, most people just open Netflix or another streaming app and watch whatever they feel like, whenever they feel like it. One big difference is that a lot of major films now skip theaters entirely and go straight to streaming, which was unthinkable 20 years ago. Another thing that's changed is the viewing experience itself. Movies used to be a social event, and now they're more of a solo activity. As for what I think, I'm honestly a bit torn. On the one hand, streaming has made movies far more accessible and affordable, and I've discovered a lot of great foreign films I never would have found otherwise. On the other hand, I do think we're losing something. There's a kind of magic to watching a film on a giant screen with an audience that laughs and gasps together. So personally, I use streaming during the week, but I still make a point of going to the theater a couple of times a month, because some movies just deserve the big screen."
+      }
+    },
+    {
+      "id": "advanced-music-tech",
+      "type": "comparison",
+      "en": "How has technology changed the way people listen to music? Compare how people listened to music in the past with how they do it now.",
+      "ko": "기술은 사람들이 음악을 듣는 방식을 어떻게 바꿨나요? 과거에 음악을 듣던 방식과 지금의 방식을 비교해 주세요.",
+      "tips": ["CD → MP3 → 스트리밍, 세 단계로 말하면 변화가 선명해집니다", "'추천 알고리즘으로 새 음악을 발견한다' 는 IH 이상 디테일"],
+      "answers": {
+        "IM3": "Technology has changed the way people listen to music a lot. In the past, people bought CDs and used a CD player. Later, people used MP3 players. Now, most people stream music on their phones with apps like Spotify or Melon. One big difference is that we don't need to buy albums anymore. We can listen to any song for a small monthly fee. I think this is very convenient. I listen to music on my phone every day when I jog by the river.",
+        "IH": "Oh, it's changed completely. When I was in middle school, I used to save my allowance to buy CDs, and I'd listen to the same album over and over on my CD player. Then MP3 players came out, and everyone started downloading songs. Nowadays, almost nobody buys music. People just stream it on their phones using apps like Spotify or Melon. One big difference is that we now have access to millions of songs for a small monthly fee. Another thing that has changed is how we discover music. Back then, you heard new songs on TV or the radio, but now the app recommends songs based on what you've listened to. Personally, I think it's mostly a good change. It's convenient, and I've found a lot of artists I'd never have heard of otherwise. On the other hand, I sometimes miss the feeling of owning an album and reading the lyrics inside the CD case.",
+        "AL": "Technology has completely reshaped how people listen to music, and I've seen the whole shift myself. When I was in middle school, I'd save up my allowance to buy a CD, take it home, and listen to the entire album from start to finish, lyrics booklet in hand. Then MP3 players came along, and suddenly everyone was downloading individual songs and carrying a thousand tracks in their pocket. Fast forward to today, and hardly anyone owns music at all. We just stream it. I pay a small monthly fee, and I can pull up practically any song ever recorded within seconds. One of the biggest differences, in my opinion, is how we discover music. Back then, you relied on the radio or TV, but now an algorithm recommends songs based on what you've already played, so you end up finding artists from all over the world. Personally, I think the change is overwhelmingly positive. I listen to music constantly, whether I'm on the subway or jogging along the river, and it's never been easier. That said, there's a small part of me that misses the ritual of buying an album and really living with it. Music feels a bit more disposable now, and in the long run, I wonder if that changes how much we value it."
+      }
+    },
+    {
+      "id": "advanced-travel-issue",
+      "type": "opinion",
+      "en": "What are some problems or concerns that people have about traveling these days? Why do you think these issues have come up?",
+      "ko": "요즘 사람들이 여행에 대해 갖고 있는 문제나 걱정에는 어떤 것들이 있나요? 이런 문제들이 왜 생겼다고 생각하나요?",
+      "tips": ["문제 세 가지: 비용 상승 → 오버투어리즘(과잉 관광) → 환경. 그중 하나를 '나에게 가장 큰 문제'로 지정", "원인은 '여행이 너무 쉬워지고 SNS로 같은 곳에 몰린다' 한 줄이면 충분"],
+      "answers": {
+        "IM3": "I think people have a few concerns about traveling these days. First, the cost is a big problem. Flights and hotels are much more expensive than before. Second, many famous places are too crowded. For example, some cities in Europe have too many tourists, and the local people are not happy. Third, some people worry about the environment because airplanes cause a lot of pollution. Personally, I think the main problem is the cost. I want to travel more, but it is hard to save enough money.",
+        "IH": "That's a good question. I think people have several concerns about traveling these days. The biggest one is probably the cost. Over the past few years, flights and hotels have gotten so much more expensive that even a simple weekend trip can cost a fortune. Another big issue is overtourism. Famous places like Kyoto or Venice are so crowded now that local residents are complaining, and some cities have even started charging tourist fees. Some people are also worried about the environment, because flying creates a lot of carbon emissions. I think the main reason for all this is that traveling has become so easy. Everyone shares photos on social media, so everyone wants to go to the same places at the same time. Personally, the cost is what worries me most. I'd love to travel abroad more often, but as an office worker, I really have to save up for it.",
+        "AL": "That's a tough one, but let me think. I'd say there are three main concerns people have about traveling these days. First and foremost is the cost. Airfares and hotel rates have gone through the roof over the past few years, and a trip that used to be affordable now feels like a luxury for a lot of people, myself included. The second issue is overtourism. Popular destinations like Kyoto, Barcelona, or even Jeju Island get so packed during peak season that locals are pushing back, and some cities have started charging entry fees or limiting the number of visitors. Third, more and more people are thinking about the environmental impact of flying, especially younger travelers. I think the main reason these issues have come up is that travel has become incredibly accessible. Cheap flights and social media mean that everyone ends up wanting to go to the same handful of places at the same time. Personally, what concerns me most is the cost, since I'm on an office worker's salary. But I also feel a bit uncomfortable about the crowds, so lately I've been trying to visit less famous places in the off-season. It's cheaper, quieter, and honestly a lot more enjoyable."
+      }
+    },
+    {
+      "id": "advanced-work-remote",
+      "type": "opinion",
+      "en": "Some people prefer working from home, while others prefer working at the office. What are the advantages and disadvantages of each? Which do you prefer, and why?",
+      "ko": "어떤 사람들은 재택근무를 선호하고, 어떤 사람들은 사무실 근무를 선호합니다. 각각의 장단점은 무엇인가요? 당신은 어느 쪽을 선호하고, 그 이유는 무엇인가요?",
+      "tips": ["재택: 통근 없음·집중 / 외로움·소통 어려움  vs  사무실: 소통·팀워크 / 통근·방해", "결론은 '하이브리드가 최고' 로 잡으면 양쪽을 다 인정하면서 자연스럽게 마무리됩니다"],
+      "answers": {
+        "IM3": "I think both have good and bad sides. Working from home is very convenient. I don't need to commute, so I can sleep more. I can also focus better because it is quiet. But it is hard to talk with my coworkers, and sometimes I feel lonely. Working at the office is good for teamwork. I can ask questions easily and eat lunch with my team. But the commute is tiring. Personally, I prefer a mix. I like working at the office three days and at home two days.",
+        "IH": "That's an interesting question, because my company actually lets us do both. On the one hand, working from home has some big advantages. You don't have to commute, so you save time and energy, and it's much easier to focus without people talking around you. On the other hand, it can get lonely, and it's harder to ask a quick question or build a good relationship with your team. Working at the office is the opposite. The commute is tiring, and there are more distractions, but communication is much faster, and I feel more connected to my coworkers. Some people say remote work is less productive, but personally, I think it depends on the person and the job. If I had to choose, I'd say a mix is best. I go to the office three days a week for meetings and teamwork, and I work from home the other two days when I need to concentrate. That balance works really well for me.",
+        "AL": "Honestly, I've done both, so I have pretty strong feelings about this. Working from home has some obvious perks. You skip the commute, which in my case means an extra 40 minutes a day, and you can knock out deep, focused work without someone stopping by your desk every ten minutes. On the flip side, it can feel isolating after a while, and I've noticed that small misunderstandings pile up when everything happens over chat instead of face-to-face. Office work is basically the reverse. The commute and the constant interruptions are draining, but communication is faster, problems get solved on the spot, and you actually build real relationships with your team. Some people insist that remote work kills productivity, but personally, I think that's an excuse. In my experience, it depends far more on the person and the type of work than on the location. If I had to choose one, I'd lean toward a hybrid setup, and that's what I do now. I'm in the office three days a week for meetings and collaboration, and I stay home the other two when I need to concentrate. In the long run, I think most companies will end up somewhere in the middle, because both extremes have real downsides."
+      }
+    },
+    {
+      "id": "advanced-city-life",
+      "type": "comparison",
+      "en": "Compare living in a big city with living in a small town. Which do you think is better for young people, and why?",
+      "ko": "대도시 생활과 소도시 생활을 비교해 보세요. 젊은 사람들에게는 어느 쪽이 더 낫다고 생각하고, 그 이유는 무엇인가요?",
+      "tips": ["대도시: 일자리·교통·즐길 거리 / 붐빔·비쌈  vs  소도시: 조용·저렴 / 일자리 부족·심심", "'젊을 때는 기회가 중요하니 도시, 나중엔 조용한 곳도 좋다' 로 균형 잡힌 결론"],
+      "answers": {
+        "IM3": "Big cities and small towns are very different. In a big city like Seoul, there are many jobs, good public transportation, and lots of things to do. But it is crowded, noisy, and expensive. In a small town, life is quiet and cheap, and the air is clean. But there are fewer jobs and not many things to do. If I had to choose, I'd say a big city is better for young people. They need job opportunities and new experiences. That's why I live in Seoul.",
+        "IH": "It's hard to say, but let me compare the two first. Living in a big city like Seoul has a lot of advantages. There are far more job opportunities, public transportation is excellent, and you can find a good restaurant, a gym, or a movie theater within walking distance. On the other hand, it's crowded, noisy, and the rent is ridiculously high. A small town is the opposite. It's quiet and peaceful, the cost of living is low, and people know each other. But there aren't many jobs, and it can feel boring, especially if you're in your twenties. Some people say small-town life is healthier, but personally, I think a big city is better for young people. When you're young, you need opportunities to grow, meet different kinds of people, and try new things, and a big city gives you all of that. You can always move to a quieter place later, once you've settled down.",
+        "AL": "That's a tough one, and I've thought about it quite a bit since I grew up in a small town and now live in Seoul. Big cities have a lot going for them. There's a huge job market, public transportation that runs like clockwork, and endless things to do, from concerts to late-night cafes. The downside, of course, is that everything is crowded, fast-paced, and expensive. My rent alone would cover a whole house back in my hometown. Small towns offer the opposite. Life is slower, the air is cleaner, people actually know their neighbors, and you're not constantly stressed about money. But the trade-off is fewer career options and, frankly, not much to do once the sun goes down. As for which is better for young people, I'd say a big city, without much hesitation. In your twenties and early thirties, the most valuable things are opportunities and exposure. You need to meet all kinds of people, take risks, and figure out what you're good at, and that's just much easier in a city. That said, I don't think it has to be permanent. A lot of my friends talk about moving somewhere quieter once they've built a career and started a family, and honestly, I can see myself doing the same someday."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "technology", "ipa": "/tekˈnɑː.lə.dʒi/", "tip": "'날'에 강세. '테크놀로지'가 아니라 '텍날러지'"},
+    {"word": "convenient", "ipa": "/kənˈviː.ni.ənt/", "tip": "'비'에 강세, 4음절 '컨비니언트'"},
+    {"word": "definitely", "ipa": "/ˈdef.ɪ.nət.li/", "tip": "첫 음절 강세. '데피니틀리'. 'definately' 아님"},
+    {"word": "environment", "ipa": "/ɪnˈvaɪ.rən.mənt/", "tip": "'바이'에 강세. 중간의 n 빼먹지 않기"},
+    {"word": "opportunity", "ipa": "/ˌɑː.pərˈtuː.nə.ti/", "tip": "'튜'에 강세. 미국식은 '아퍼투너티'"}
+  ]
+}

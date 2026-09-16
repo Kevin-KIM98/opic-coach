@@ -1,0 +1,88 @@
+{
+  "id": "travel-overseas",
+  "title": "해외 여행",
+  "titleEn": "Overseas travel",
+  "emoji": "✈️",
+  "category": "survey",
+  "priority": 8,
+  "intro": "'해외 여행'은 좋아하는 나라·도시 묘사 → 출국 전 준비 루틴 → 해외에서 겪은 문제(수하물·언어) → 10년 전 또는 국내 여행과의 비교 순서로 출제됩니다. 가까운 일본 한 곳을 정해 두면 묘사가 쉽고, 경험 질문은 '짐 분실' 같은 작은 사건 하나를 결말까지 준비하면 어떤 변형 질문에도 대응할 수 있습니다.",
+  "strategy": [
+    "묘사 질문은 어느 나라·언제·누구와 → 좋았던 점 2가지(깨끗함·음식) → 서울과의 차이 → 다시 가고 싶은 이유 순서로 답합니다.",
+    "준비 루틴은 시간 역순 표현(two months before, a week before, the night before)으로 예약 → 여권 → 짐 → 환전 → 앱 순서를 잡습니다.",
+    "경험 질문은 문제 발생 → 내가 한 행동(filed a report, bought clothes) → 결과 → 교훈(Since then, I always...) 구조로 과거시제를 유지합니다."
+  ],
+  "expressions": [
+    {"en": "I've been to Japan twice, and I really liked it.", "ko": "일본에 두 번 가봤는데 정말 좋았어요.", "level": "IM", "note": "have been to = ~에 가본 적 있다"},
+    {"en": "The country I want to visit most is Italy.", "ko": "제일 가보고 싶은 나라는 이탈리아예요.", "level": "IM"},
+    {"en": "I usually book my flight about two or three months in advance.", "ko": "보통 두세 달 전에 항공권을 예약해요.", "level": "IM"},
+    {"en": "I exchange some money at the bank before I leave.", "ko": "떠나기 전에 은행에서 환전을 해요.", "level": "IM", "note": "exchange money = 환전하다"},
+    {"en": "I make a packing list so I don't forget anything.", "ko": "아무것도 안 잊어버리게 짐 목록을 만들어요.", "level": "IM", "note": "so (that) + 주어 + 동사: ~하도록"},
+    {"en": "I always check if my passport is still valid.", "ko": "여권이 아직 유효한지 항상 확인해요.", "level": "IM"},
+    {"en": "The food was different, but it was really good.", "ko": "음식이 좀 달랐지만 정말 맛있었어요.", "level": "IM"},
+    {"en": "I couldn't speak the language, so I used a translation app.", "ko": "언어를 못해서 번역 앱을 썼어요.", "level": "IM"},
+    {"en": "The best part of the trip was walking around the old town at night.", "ko": "여행에서 제일 좋았던 건 밤에 구시가지를 돌아다닌 거였어요.", "level": "IH", "note": "The best part of ~ was -ing"},
+    {"en": "My luggage didn't show up, so I had to file a report at the airport.", "ko": "짐이 안 나와서 공항에서 신고를 해야 했어요.", "level": "IH", "note": "show up = 나타나다 / file a report = 신고하다"},
+    {"en": "Compared to domestic trips, overseas trips take a lot more planning.", "ko": "국내 여행에 비해 해외 여행은 계획이 훨씬 많이 필요해요.", "level": "IH"},
+    {"en": "Ten years ago, I had to carry a paper map everywhere, but now my phone does everything.", "ko": "10년 전엔 종이 지도를 들고 다녔는데 이젠 폰이 다 해줘요.", "level": "IH", "note": "had to: 과거의 의무"},
+    {"en": "Even though I was nervous, I managed to find my hotel by myself.", "ko": "긴장했지만 혼자 힘으로 호텔을 찾아갔어요.", "level": "IH", "note": "manage to = 어떻게든 ~해내다"},
+    {"en": "Getting lost turned out to be the best part of the trip.", "ko": "길을 잃은 게 오히려 여행에서 제일 좋은 순간이 됐어요.", "level": "AL", "note": "turn out to be = 결국 ~로 드러나다"},
+    {"en": "Traveling abroad really opened my eyes to how differently people live.", "ko": "해외 여행은 사람들이 얼마나 다르게 사는지 눈을 뜨게 해줬어요.", "level": "AL", "note": "open one's eyes to = ~에 눈뜨게 하다"}
+  ],
+  "questions": [
+    {
+      "id": "travel-overseas-describe",
+      "type": "describe",
+      "en": "You said you like to travel abroad. Tell me about a country or city you have visited and really liked. What was it like, and what did you enjoy there?",
+      "ko": "해외 여행을 좋아한다고 하셨네요. 방문해서 정말 좋았던 나라나 도시에 대해 말해 주세요. 어떤 곳이었고, 무엇이 좋았나요?",
+      "tips": ["어디·언제·누구와 → 첫인상(clean, safe) → 음식 → 근교 여행 → 서울과 비교 → 다시 가고 싶은 이유", "'What I loved about Osaka is that...' 로 이유를 말하고, 마지막은 I'd love to go back으로 마무리"],
+      "answers": {
+        "IM3": "I have been to Japan twice, and I really liked it. Last year, I went to Osaka with my friend. We stayed for four days and walked around the city every day. It was very clean and safe, and the subway was easy to use. The food was amazing, especially the ramen and takoyaki. We also visited Kyoto for one day. There were many old temples and beautiful gardens. People were very kind and polite. I want to go back to Japan again.",
+        "IH": "Sure. The place I liked most was Osaka, in Japan. I went there last spring with a friend from work for four days. What I loved about Osaka is that it's a big city, but it feels much more relaxed than Seoul. The streets were incredibly clean, and the subway was easy to use, even though we couldn't read Japanese. The food was definitely the highlight. We ate ramen, takoyaki, and okonomiyaki almost every day, and everything was cheaper than I expected. We also took a day trip to Kyoto, which is only about 30 minutes away by train. The old temples and bamboo forest there were absolutely beautiful. Compared to Seoul, everything felt a little slower and quieter, which was exactly what I needed. To be honest, four days wasn't enough. I'd love to go back in the fall to see the autumn leaves.",
+        "AL": "Sure. The place that really won me over was Osaka, in Japan. I went last spring with a coworker for four days, and honestly, I didn't expect to love it as much as I did. It's a huge city, but it has this easygoing energy that Seoul just doesn't have. The streets were spotless, the trains ran to the minute, and even though neither of us could read a word of Japanese, we never once got lost. The food, though, was the real star of the trip. We basically ate our way through Dotonbori, from ramen and takoyaki to okonomiyaki at a tiny counter where the owner cooked it right in front of us. We also squeezed in a day trip to Kyoto, which is only 30 minutes away by train. Walking through the bamboo forest early in the morning, before the tour groups showed up, was one of those moments I'll never forget. Compared to Seoul, everything felt a notch slower and quieter, which was exactly what I needed after a stressful few months at work. Four days flew by way too fast. I've already promised myself I'll go back in the fall for the autumn leaves."
+      }
+    },
+    {
+      "id": "travel-overseas-routine",
+      "type": "routine",
+      "en": "What do you usually do to prepare for a trip abroad? Tell me about the steps you take, from booking to packing.",
+      "ko": "해외 여행을 준비할 때 보통 무엇을 하나요? 예약부터 짐 싸기까지 단계별로 말해 주세요.",
+      "tips": ["두세 달 전(항공·호텔) → 여권 확인 → 일주일 전(짐 목록) → 환전 → 전날(앱 다운로드)", "About two months before / A week before / The night before 로 시간 역순 표현을 쓰면 구조가 잡혀요"],
+      "answers": {
+        "IM3": "I usually start preparing about two months before the trip. First, I book a flight and a hotel online. I try to find a cheap flight. Then I check my passport to make sure it is still valid. About a week before, I make a packing list. I pack clothes, a charger, and a travel adapter. I also exchange some money at the bank. Finally, I download a map app and a translation app. Then I am ready to go.",
+        "IH": "Well, I'm a pretty organized traveler, so I start early. About two or three months before the trip, I book my flight, because tickets get expensive fast. I usually compare prices on a couple of apps and go with the cheapest direct flight. Then I book hotels, and I always read the reviews carefully. The next thing I check is my passport, since I once almost had a problem with an expiring one. A week before I leave, I write a packing list on my phone. I keep it simple: clothes, a charger, a travel adapter, some medicine, and a copy of my passport. I also go to the bank and exchange a little cash, though these days I mostly use my card abroad. The night before, I download an offline map and a translation app, just in case. It sounds like a lot, but doing it step by step keeps me from stressing out at the airport.",
+        "AL": "I'm a pretty organized traveler, mostly because I've learned what happens when I'm not. I start about two or three months out by booking the flight, since prices climb fast. I'll admit I spend an embarrassing amount of time comparing fares before I commit. Then I lock in the hotels, and I read the reviews obsessively, especially the ones that mention noise or the distance from the subway. The next thing I do is pull out my passport and check the expiration date, because I once came within a month of not being allowed to board. A week before departure, I put together a packing list on my phone and tick things off as they go into the suitcase. Clothes, a charger, a universal adapter, basic medicine, and a printed copy of my passport are the non-negotiables. I still stop by the bank to exchange a bit of cash, even though these days I pay for almost everything with my card. The night before, I download offline maps and a translation app. I also screenshot the hotel address in the local language. It probably sounds like overkill. But doing everything in stages means that by the time I get to the airport, all I have to do is relax and enjoy the coffee."
+      }
+    },
+    {
+      "id": "travel-overseas-experience",
+      "type": "experience",
+      "en": "Have you ever had a problem while traveling abroad? Tell me about a memorable or difficult moment, what happened, and how you dealt with it.",
+      "ko": "해외 여행 중에 문제를 겪은 적이 있나요? 기억에 남거나 힘들었던 순간, 무슨 일이 있었고 어떻게 대처했는지 말해 주세요.",
+      "tips": ["언제·어디 → 문제(luggage didn't show up) → 내가 한 행동(counter, report, shopping) → 결과 → 교훈", "과거시제: flew, didn't come out, went, bought, arrived / 마지막은 Since then, I always... 로 교훈"],
+      "answers": {
+        "IM3": "Yes, I had a problem three years ago in Bangkok. When I arrived at the airport, my luggage didn't come out. I was very worried because all my clothes were in it. I went to the airline counter and showed my ticket. The staff said my bag was still in Seoul. They told me it would arrive the next day. So I bought a T-shirt and some underwear at a store. The next day, the bag came to my hotel. I was so relieved.",
+        "IH": "Yes. Three years ago, I flew to Bangkok for a five-day vacation, and my luggage didn't show up. I stood at the baggage claim for almost 40 minutes, and I started to panic. Everything I had, my clothes, my chargers, even my sunscreen, was in that suitcase. I went to the airline counter and filed a report, and the staff told me my bag was still sitting in Seoul. Luckily, they said it would arrive on the next flight the following morning. So that night, I went to a night market and bought a cheap T-shirt, some shorts, and a toothbrush. To be honest, it was fun shopping like a local. The next afternoon, my suitcase was delivered right to my hotel, and I was so relieved. Since then, I always pack a change of clothes and my chargers in my carry-on. It was stressful at the time, but now it's just a funny story I tell my friends.",
+        "AL": "Oh, I've got one. Three years ago, I flew to Bangkok for a five-day vacation, and my suitcase never came off the plane. I stood at the baggage claim for almost an hour until the belt finally stopped and I was the only one left standing there. Everything I owned for the week was in that suitcase, from my clothes to my chargers to my sunscreen. I tracked down the airline counter, filed a report, and found out my bag had never even left Seoul. The good news was that it would be on the first flight out the next morning. So instead of feeling sorry for myself, I took a taxi to a night market and picked up a T-shirt, shorts, flip-flops, and a toothbrush for about ten dollars. Honestly, wandering through that market with nothing but a phone and a wallet turned out to be one of the best evenings of the trip. My suitcase showed up at the hotel the next afternoon. I was so relieved I actually hugged it. Ever since then, I keep a change of clothes and my chargers in my carry-on, no exceptions. It was stressful in the moment, but looking back, it's the story from that trip I tell most often."
+      }
+    },
+    {
+      "id": "travel-overseas-compare",
+      "type": "comparison",
+      "en": "How is traveling abroad today different from traveling abroad ten years ago? Or, how does traveling overseas compare to traveling within your country?",
+      "ko": "요즘 해외 여행은 10년 전과 어떻게 다른가요? 또는 해외 여행은 국내 여행과 비교해 어떤가요?",
+      "tips": ["과거(paper map, guidebook, cash) vs 현재(phone, card, apps) → 비용 변화 → 단점(crowded) → 결론", "Ten years ago, I had to... / These days, my phone does... 로 대비하고, The flip side is 로 단점을 한 줄"],
+      "answers": {
+        "IM3": "Traveling abroad is very different from ten years ago. Ten years ago, I used a paper map and a guidebook. I also had to exchange a lot of cash. Now I use my phone for everything. I can find my way with a map app and pay with my card. Translation apps also help a lot. Flights are cheaper now, too, so more people travel. I think traveling abroad is much easier than before. But it's also more crowded at famous places.",
+        "IH": "It's changed a lot, actually. Ten years ago, when I took my first trip abroad, I carried a paper map, a thick guidebook, and a lot of cash. I remember getting lost in Tokyo for two hours because I couldn't read the signs. These days, my phone does everything. I use a map app to get around, a translation app to read menus, and I pay for almost everything with my card. I also book hotels and even restaurants online before I leave. Another big difference is the cost. Budget airlines have made flights much cheaper, so I can go to Japan for the price of a nice dinner in Seoul. Of course, that also means famous places are much more crowded than they used to be. Still, I think it's a good change. Traveling abroad used to feel like a big adventure, but now it feels almost as easy as a domestic trip.",
+        "AL": "It's a completely different experience, honestly. Ten years ago, when I took my first trip abroad to Tokyo, I had a folded paper map, a guidebook the size of a brick, and an envelope full of cash that I was terrified of losing. I remember wandering around Shinjuku Station for two hours because I couldn't make sense of the signs and was too shy to ask anyone. Now, my phone handles all of that. I navigate with a map app, point my camera at a menu and read it in Korean, and tap my card for nearly everything. I even book restaurants before I leave home. The cost has come down dramatically, too. Budget airlines mean I can fly to Osaka for less than a fancy dinner in Seoul, which was unthinkable back then. The flip side is that everyone else can, too, so the famous spots are packed with tourists taking the same photo. That's probably the one thing I miss about the old days: the feeling that you'd discovered something on your own. But if I'm being honest, I wouldn't trade the convenience for it. Going abroad used to feel like a huge leap into the unknown, whereas now it feels almost as easy as hopping on the KTX to Busan."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "abroad", "ipa": "/əˈbrɔːd/", "tip": "두 번째 음절 '브로ː드'에 강세. 첫 a는 약한 '어'. '어브로드'"},
+    {"word": "luggage", "ipa": "/ˈlʌɡ.ɪdʒ/", "tip": "'러기지'. 끝은 '쥐'로 짧게. 불가산명사라 luggages 없음"},
+    {"word": "foreign", "ipa": "/ˈfɔːr.ən/", "tip": "g 묵음, 2음절 '포런'. f는 윗니로 아랫입술 살짝"},
+    {"word": "flight", "ipa": "/flaɪt/", "tip": "f 다음 l을 바로 붙이고 gh는 묵음. '플라이트'가 아니라 한 음절 '플라잇'"},
+    {"word": "exchange", "ipa": "/ɪksˈtʃeɪndʒ/", "tip": "두 번째 음절 '체인지'에 강세. 첫 ex는 '익스'로 약하게"}
+  ]
+}

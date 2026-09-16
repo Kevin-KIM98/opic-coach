@@ -1,0 +1,88 @@
+{
+  "id": "travel-domestic",
+  "title": "국내 여행",
+  "titleEn": "Domestic travel",
+  "emoji": "🚄",
+  "category": "survey",
+  "priority": 7,
+  "intro": "'국내 여행'은 설문에서 고르면 거의 확정 출제되는 주제로, 좋아하는 여행지 → 여행 준비 루틴 → 기억에 남는 여행 → 과거와의 비교 순서로 나옵니다. 부산·제주 같은 대표 여행지 하나를 정해 두고 교통(KTX)·음식·풍경 세 가지 디테일을 준비하면 모든 질문에 재활용할 수 있습니다.",
+  "strategy": [
+    "여행지 묘사는 어디(위치·거리·교통) → 무엇이 좋은지 2가지(beach, seafood) → 서울과의 차이 → 얼마나 자주 가는지 순서로 답합니다.",
+    "준비 루틴은 First / Then / A week before 순서로 예약 → 짐 → 동행자를 말하고, 마지막에 계획 스타일 변화(used to plan everything)를 한 줄 넣습니다.",
+    "경험 질문은 언제·어디·누구와 → 하이라이트 한 장면(등산·비 오는 날) → 결과·느낌을 과거시제로 말하고, 마지막에 배운 점으로 마무리합니다."
+  ],
+  "expressions": [
+    {"en": "My favorite place to visit in Korea is Busan.", "ko": "한국에서 제일 좋아하는 여행지는 부산이에요.", "level": "IM"},
+    {"en": "It takes about two and a half hours by KTX from Seoul.", "ko": "서울에서 KTX로 2시간 반 정도 걸려요.", "level": "IM", "note": "by + 교통수단 (관사 없음)"},
+    {"en": "I usually go on a trip once or twice a year.", "ko": "보통 1년에 한두 번 여행을 가요.", "level": "IM", "note": "go on a trip = 여행을 가다"},
+    {"en": "I like to visit the beach and eat fresh seafood.", "ko": "해변에 가서 신선한 해산물 먹는 걸 좋아해요.", "level": "IM"},
+    {"en": "I usually book a hotel about a month in advance.", "ko": "보통 한 달 전쯤 호텔을 예약해요.", "level": "IM", "note": "in advance = 미리"},
+    {"en": "I always pack light, just a small carry-on bag.", "ko": "항상 짐을 가볍게 싸요. 작은 기내용 가방 하나만요.", "level": "IM", "note": "pack light = 짐을 가볍게 싸다"},
+    {"en": "I usually travel with my friends, but sometimes I go alone.", "ko": "보통 친구들이랑 가는데 가끔 혼자 가기도 해요.", "level": "IM"},
+    {"en": "The view from the top of the mountain was amazing.", "ko": "산 정상에서 본 경치가 정말 멋졌어요.", "level": "IM"},
+    {"en": "What I love about Jeju is that it feels like a completely different country.", "ko": "제주도가 좋은 이유는 완전히 다른 나라에 온 것 같은 느낌이 들어서예요.", "level": "IH", "note": "What I love about ~ is that ~"},
+    {"en": "I'd rather take the train than drive because I can relax on the way.", "ko": "운전하는 것보다 기차를 타는 게 나아요. 가는 길에 쉴 수 있거든요.", "level": "IH", "note": "would rather A than B"},
+    {"en": "We ended up staying an extra night because we loved it so much.", "ko": "너무 좋아서 결국 하루 더 묵게 됐어요.", "level": "IH", "note": "end up -ing = 결국 ~하게 되다"},
+    {"en": "I used to plan every hour of my trip, but now I just go with the flow.", "ko": "예전엔 여행 일정을 시간 단위로 짰는데 이젠 그냥 흘러가는 대로 해요.", "level": "IH", "note": "go with the flow = 흐름에 맡기다"},
+    {"en": "Traveling in Korea has gotten so much easier thanks to the KTX.", "ko": "KTX 덕분에 국내 여행이 훨씬 쉬워졌어요.", "level": "IH", "note": "thanks to = ~ 덕분에"},
+    {"en": "It's one of those places that never gets old, no matter how many times you go.", "ko": "몇 번을 가도 절대 질리지 않는 그런 곳이에요.", "level": "AL", "note": "never gets old = 질리지 않는다"},
+    {"en": "The trip didn't go as planned, but that's exactly what made it memorable.", "ko": "계획대로 되진 않았지만 바로 그래서 더 기억에 남아요.", "level": "AL", "note": "go as planned = 계획대로 되다"}
+  ],
+  "questions": [
+    {
+      "id": "travel-domestic-describe",
+      "type": "describe",
+      "en": "You indicated that you enjoy traveling within your country. Tell me about a place in Korea you like to visit. Where is it, and why do you like it?",
+      "ko": "국내 여행을 즐긴다고 하셨네요. 한국에서 즐겨 가는 곳에 대해 말해 주세요. 어디에 있고, 왜 좋아하나요?",
+      "tips": ["어디·거리·교통 → 좋은 점 2가지(해변·음식) → 서울과의 차이 → 얼마나 자주 가는지", "'What I love about Busan is that...' 로 이유를 강조하고, 마지막에 It never gets old로 마무리"],
+      "answers": {
+        "IM3": "My favorite place in Korea is Busan. It's a big city on the south coast. It takes about two and a half hours by KTX from Seoul. I like Busan because it has beautiful beaches. Haeundae Beach is my favorite. In the evening, I like to walk along the beach and watch the sunset. The seafood is also very fresh and delicious. The people there are friendly, and the city has a relaxed feeling. I go there almost every summer.",
+        "IH": "Sure. My favorite place to visit in Korea is definitely Busan. It's a big port city on the southeast coast, and it only takes about two and a half hours from Seoul by KTX, so it's perfect for a weekend trip. What I love about Busan is that it feels totally different from Seoul. Seoul is busy and a bit stressful, but Busan has a much more relaxed vibe. I usually stay near Haeundae Beach, and in the morning I like to walk along the sand with a coffee. The seafood there is amazing, too. There's a famous fish market called Jagalchi where you can pick your own fish and eat it right there. I've been there four or five times now, and I always find something new. To be honest, it never gets old. If I had to pick one city in Korea to live in besides Seoul, it would be Busan.",
+        "AL": "Sure. If I had to pick one place, it would be Busan, hands down. It's a big port city on the southeast coast. Thanks to the KTX, it's only about two and a half hours from Seoul, which makes it perfect for a spontaneous weekend getaway. What I love about Busan is that it feels like a completely different country from Seoul. Seoul is fast, crowded, and a little tense, while Busan has this laid-back, coastal energy that hits you the moment you step off the train. I usually stay somewhere near Haeundae Beach, and my favorite ritual is grabbing a coffee first thing in the morning and walking along the sand before the crowds show up. And the food, honestly, is reason enough to go. There's a famous fish market called Jagalchi where you point at a live fish, and ten minutes later it's on your table as sashimi. I've been there five or six times now, and I always stumble onto something new, like a hidden cafe up in the hills or a tiny noodle place the locals swear by. It's one of those places that just never gets old. If I ever left Seoul, Busan would be at the top of my list."
+      }
+    },
+    {
+      "id": "travel-domestic-routine",
+      "type": "routine",
+      "en": "How do you usually plan and prepare for a trip within Korea? What do you pack, and who do you usually travel with?",
+      "ko": "국내 여행은 보통 어떻게 계획하고 준비하나요? 무엇을 챙기고, 주로 누구와 함께 가나요?",
+      "tips": ["빈도 → 계획(날씨·맛집 검색) → 예약(KTX·호텔) → 짐 → 동행자 → 계획 스타일", "First / Then / A week before 로 순서를 잡고, I'm a light packer 같은 짧은 자기소개 문장을 섞으세요"],
+      "answers": {
+        "IM3": "I usually go on a trip once or twice a year. First, I choose a place and check the weather. Then I book train tickets and a hotel online. I usually book about a month in advance. I pack light, just a small bag with clothes, a charger, and some snacks. I always bring my camera, too. I usually travel with two close friends. Sometimes I go alone for a short trip. Planning is fun for me.",
+        "IH": "Well, I usually take one or two trips a year, mostly long weekends. When I decide to go somewhere, the first thing I do is check the weather and look up a few places to eat on Instagram or blogs. Then I book the KTX tickets and a hotel, usually about a month ahead, because prices go up fast, especially in summer. I'm a light packer. I bring one small carry-on with two or three outfits, a charger, a portable battery, and some snacks for the train. I also bring a camera, because I like taking photos of the food and the sea. As for company, I mostly travel with two close friends from college. We split the planning, so one person handles the hotel and another finds restaurants. Actually, I used to plan every hour of the trip, but now I just book the essentials and go with the flow. It's much less stressful that way, and I enjoy the trip more.",
+        "AL": "I usually squeeze in one or two trips a year, mostly over long weekends. Once I've picked a destination, the first thing I do is check the weather and dig through Instagram and blogs for places to eat, since food is half the reason I travel. Then I lock in the KTX tickets and a hotel, ideally a month out, since prices in places like Busan or Gangneung shoot up in the summer. I'm a light packer. One small carry-on with a few outfits, a charger, a portable battery, and some snacks for the train is all I need. I always throw in my camera as well, because I like documenting the little things, like the color of the sea or a bowl of noodles. As for company, I mostly go with two close friends from college. We've traveled together so many times that we've got a system: one books the hotel, one finds the restaurants, and I handle transportation. I used to plan every single hour and get stressed when we fell behind schedule. These days, I just nail down the essentials and let the rest happen. Some of my favorite moments have come from a wrong turn or an unplanned detour. So now I'd say I'm more of a loose planner than a strict one."
+      }
+    },
+    {
+      "id": "travel-domestic-experience",
+      "type": "experience",
+      "en": "Tell me about a memorable trip you took in Korea. When did you go, where did you go, and what happened?",
+      "ko": "한국에서 갔던 기억에 남는 여행에 대해 말해 주세요. 언제, 어디로 갔고, 무슨 일이 있었나요?",
+      "tips": ["언제·어디·누구와 → 하이라이트 한 장면(등산) → 힘들었던 순간 → 결과(정상 풍경) → 느낌", "과거시제: went, rented, climbed, took, was / 'The highlight was...' 로 한 장면에 집중"],
+      "answers": {
+        "IM3": "Two years ago, I went to Jeju Island with my friends. We went in October, and the weather was perfect. We rented a car and drove around the island. On the second day, we climbed Hallasan Mountain. It took about five hours, and it was very hard. But the view from the top was amazing. We were very tired, so we ate black pork for dinner. It was the best trip of my life.",
+        "IH": "Sure. The trip I remember most is when I went to Jeju Island two years ago with two friends. We went in early October, when the weather is usually perfect. We rented a car at the airport and drove around the island for three days. The highlight was climbing Hallasan on the second day. We started at six in the morning, and it took us about five hours to reach the top. To be honest, I almost gave up halfway because my legs were shaking. But when we finally got to the top, the view of the crater lake and the clouds below us was unbelievable. We just sat there for 30 minutes without saying anything. That night, we ate grilled black pork and drank makgeolli, and I've never had a meal taste so good. My legs hurt for three days after, but it was totally worth it. It's still the best trip I've taken in Korea.",
+        "AL": "Oh, the one that always comes to mind is my Jeju trip from two years ago. Two friends and I went in early October, which is the best time to be there, with clear skies and none of the summer crowds. We rented a car at the airport and spent three days circling the island, stopping wherever looked interesting. The highlight, though, was climbing Hallasan on day two. We set out at six in the morning with a couple of kimbap rolls and way too little water. About halfway up, my legs were shaking and I considered turning around, but my friends kept pushing me on. It took us just under five hours to reach the summit. And when we got there, with the crater lake below us and clouds rolling in under our feet, all three of us just went quiet. We sat on the rocks for half an hour without saying a word. That night, we treated ourselves to grilled black pork and a bottle of makgeolli, and I swear nothing has ever tasted better. I could barely walk down stairs for the next three days. But it was worth every step. That trip taught me that the hard parts are usually the ones you end up remembering."
+      }
+    },
+    {
+      "id": "travel-domestic-compare",
+      "type": "comparison",
+      "en": "How has traveling within Korea changed compared to the past? Or, how is the way you travel now different from how you used to travel?",
+      "ko": "국내 여행은 예전과 비교해 어떻게 달라졌나요? 또는 지금의 여행 방식은 예전과 어떻게 다른가요?",
+      "tips": ["교통 변화(car → KTX) → 기술 변화(paper map → phone) → 내 스타일 변화(plan everything → relax)", "과거는 used to / had to, 현재는 Now I can / thanks to 로 대비시키세요"],
+      "answers": {
+        "IM3": "Traveling in Korea has changed a lot. When I was young, we usually drove for many hours to go to the beach. Now I can take the KTX and get to Busan in two and a half hours. Also, I used to buy paper maps and guidebooks. Now I use my phone for everything. I book hotels online and find restaurants on apps. My travel style changed too. Before, I made a full plan, but now I relax more. Traveling is much easier now.",
+        "IH": "It's changed a lot, actually. When I was a kid, going to the beach meant sitting in the car for five or six hours in traffic. Now, thanks to the KTX, I can get to Busan in about two and a half hours and be on the beach by lunchtime. Another huge change is technology. My parents used to rely on paper maps and thick guidebooks, but now I do everything on my phone, from booking the hotel to finding a good restaurant nearby. My own travel style has changed too. In my early twenties, I planned every hour and tried to see ten places in one day. These days, I prefer to stay in one area, walk around slowly, and spend time in cafes. I guess I care more about the experience than about checking things off a list. Overall, traveling in Korea is so much easier and more comfortable than it used to be.",
+        "AL": "It's changed in a big way, both in how we travel and in how I travel. When I was a kid, a family beach trip meant five or six hours in the back seat, stuck in holiday traffic, with my dad arguing with a paper map. These days, I can hop on the KTX after breakfast and be eating fresh sashimi in Busan by lunchtime. The whole country has basically shrunk. Technology has changed things just as much. My parents used to lug around thick guidebooks, whereas now my phone handles everything, from booking the hotel to translating a menu to finding the cafe with the best view. But the biggest change is probably in me. In my early twenties, I'd cram ten spots into a single day and come home more exhausted than when I left. Now I'd rather pick one neighborhood, wander around slowly, and let the day unfold. I care far less about ticking places off a list and far more about how a place actually feels. I think that's partly because travel is so easy now that there's no pressure to see everything in one go. You can always come back next month. So in a way, easier travel has made me a more relaxed traveler."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "travel", "ipa": "/ˈtræv.əl/", "tip": "v는 윗니로 아랫입술을 물고 진동. '트래블'의 ㅂ이 아님. 두 번째 음절은 아주 약하게"},
+    {"word": "island", "ipa": "/ˈaɪ.lənd/", "tip": "s 묵음. '아일랜드'. '이슬랜드' 절대 아님"},
+    {"word": "beach", "ipa": "/biːtʃ/", "tip": "장모음 '이ː'를 길게. 짧게 발음하면 다른 단어(bitch)로 들려요"},
+    {"word": "vacation", "ipa": "/veɪˈkeɪ.ʃən/", "tip": "두 번째 음절 '케이'에 강세. 첫 v는 입술 진동"},
+    {"word": "scenery", "ipa": "/ˈsiː.nə.ri/", "tip": "3음절 '시너리'. sc의 c는 묵음, '스케너리' 아님"}
+  ]
+}
