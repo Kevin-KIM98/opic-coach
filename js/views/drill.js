@@ -4,7 +4,7 @@ import { store } from '../store.js';
 import { speak, stopSpeaking } from '../speech.js';
 import { exprRow, bindPlay, flashcards, quickCheck } from './topic.js';
 import { createAutoPlay } from '../autoplay.js';
-import { githubEditUrl } from '../config.js';
+import { editLinkHtml } from '../config.js';
 
 export async function render(root, route) {
   const tab = route.query.tab || 'patterns';
@@ -37,7 +37,7 @@ async function renderPatterns(body, groupId, setPlayer = () => {}) {
         const learned = g.items.filter((it, i) => store.exprInfo(`pat:${g.id}#${i}`).box >= 3).length;
         return `<a class="list-row" href="#/drill?tab=patterns&group=${g.id}"><div class="emoji">${{ opener: '🚀', describe: '🖼️', routine: '🔁', experience: '📖', compare: '⚖️', opinion: '💬', closing: '🏁', filler: '🧩' }[g.id] || '🧩'}</div><div class="grow"><div class="t">${g.title}</div><div class="s">${g.desc}</div><div class="bar teal mt8" style="height:5px"><i style="width:${learned / g.items.length * 100}%"></i></div></div><span class="chev">›</span></a>`;
       }).join(''))}</div>
-      <a class="btn ghost block mt16" href="${githubEditUrl('data/patterns.json')}" target="_blank" rel="noopener">✏️ GitHub에서 패턴 수정</a>`;
+      ${raw(editLinkHtml('data/patterns.json', '✏️ GitHub에서 패턴 수정'))}`;
     return;
   }
   const cards = group.items.map((it, i) => ({ ...it, id: `pat:${group.id}#${i}` }));
@@ -64,7 +64,7 @@ async function renderPron(body, setId, setPlayer = () => {}) {
   if (!set) {
     body.innerHTML = html`<p class="small ink2 mb12">${p.intro}</p>
       <div class="list">${raw(p.sets.map(s => `<a class="list-row" href="#/drill?tab=pron&set=${s.id}"><div class="emoji">${{ 'minimal-pairs': '👂', stress: '🎯', linking: '🔗', intonation: '🎵', twisters: '👅' }[s.kind] || '👄'}</div><div class="grow"><div class="t">${s.title}</div><div class="s">${s.tip.slice(0, 48)}…</div></div><span class="chev">›</span></a>`).join(''))}</div>
-      <a class="btn ghost block mt16" href="${githubEditUrl('data/pronunciation.json')}" target="_blank" rel="noopener">✏️ GitHub에서 발음 자료 수정</a>`;
+      ${raw(editLinkHtml('data/pronunciation.json', '✏️ GitHub에서 발음 자료 수정'))}`;
     return;
   }
   let inner = '';

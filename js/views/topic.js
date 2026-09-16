@@ -2,7 +2,7 @@ import { html, raw, splitSentences, toast, sheet } from '../util.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
 import { speak, stopSpeaking, isSpeaking } from '../speech.js';
-import { githubEditUrl } from '../config.js';
+import { editLinkHtml } from '../config.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
 import { createAutoPlay, createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap } from '../autoplay.js';
@@ -15,7 +15,7 @@ export async function render(root, route) {
   const level = route.query.level || store.settings.target || 'IM3';
 
   root.innerHTML = html`
-    ${raw(header(`${topic.emoji} ${topic.title}`, { right: `<a class="icon-btn" title="GitHub에서 이 주제 수정" href="${githubEditUrl(topic.file)}" target="_blank" rel="noopener">✏️</a>` }))}
+    ${raw(header(`${topic.emoji} ${topic.title}`, { right: editLinkHtml(topic.file, '✏️', 'icon-btn') }))}
     <div class="tabs" id="tabs">
       <button data-tab="expr" class="${tab === 'expr' ? 'active' : ''}">표현 ${topic.expressions?.length || 0}</button>
       <button data-tab="q" class="${tab === 'q' ? 'active' : ''}">질문·답안 ${topic.questions?.length || 0}</button>
@@ -175,5 +175,5 @@ function renderGuide(body, topic) {
         <li>질문 탭 → 목표 레벨 모범답안 문장별 섀도잉 (5분)</li>
         <li>같은 질문에 직접 녹음 답변 → 채점 → 피드백 반영해 한 번 더 (5분)</li>
       </ol></div>
-    <a class="btn ghost block mt12" href="${githubEditUrl(topic.file)}" target="_blank" rel="noopener">✏️ GitHub에서 이 주제 내용 수정</a>`;
+    ${raw(editLinkHtml(topic.file, '✏️ GitHub에서 이 주제 내용 수정', 'btn ghost block mt12'))}`;
 }

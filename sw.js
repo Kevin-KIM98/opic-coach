@@ -1,5 +1,5 @@
 // 서비스워커: 모든 동일 출처 파일은 네트워크 우선(오프라인 시 캐시). CDN 폰트는 캐시 우선.
-const VERSION = 'v1.3.0';
+const VERSION = 'v1.3.1';
 const SHELL = `opic-shell-${VERSION}`;
 const DATA = `opic-data`;
 const SHELL_FILES = [

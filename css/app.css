@@ -113,6 +113,7 @@ body.has-installbar #toast { bottom: calc(var(--nav-h) + 84px + env(safe-area-in
 .xs { font-size: 12px; }
 .ink2 { color: var(--ink-2); }
 .center { text-align: center; }
+.link-inline { color: inherit; text-decoration: underline; }
 .mt8 { margin-top: 8px; } .mt12 { margin-top: 12px; } .mt16 { margin-top: 16px; } .mt24 { margin-top: 24px; }
 .mb8 { margin-bottom: 8px; } .mb12 { margin-bottom: 12px; }
 

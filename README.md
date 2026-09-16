@@ -63,13 +63,14 @@ data/                 ★ 학습 콘텐츠 (모바일에서 수정 가능)
   pronunciation.json  발음 훈련 세트
   plans.json          4/8/12주 일정 (tools/gen_plans.py 로 생성)
   mock-sets.json      모의고사 구성 · 등급 기준
-tools/                validate.py (검증) · gen_plans.py · make_icons.py
+tools/                validate.py (검증) · gen_plans.py · make_icons.py · test-*.mjs (UI 테스트)
 .github/workflows     push 마다 데이터 자동 검증
 ```
 
 ## 콘텐츠 수정 (폰에서도 가능)
 
-앱 안의 ✏️ 버튼이 해당 JSON 파일의 GitHub 편집 화면으로 바로 연결됩니다. 자세한 형식은 [CONTENT_GUIDE.md](CONTENT_GUIDE.md) 참고.
+**편집자 모드**(설정 맨 아래 버전 표시를 7번 탭)를 켜면 ✏️ 버튼이 나타나, 해당 JSON 파일의 GitHub 편집 화면으로 바로 연결됩니다.
+평소에는 저장소 링크가 모두 숨겨져 있습니다 → [편집자 모드](#편집자-모드-저장소-링크). 자세한 형식은 [CONTENT_GUIDE.md](CONTENT_GUIDE.md) 참고.
 잘못된 JSON을 저장하면 GitHub Actions가 실패 표시를 해주고, 앱은 마지막으로 정상이던 파일을 계속 사용합니다.
 
 ## 로컬에서 실행
@@ -83,7 +84,23 @@ python -m http.server 8765
 ## 배포
 
 GitHub → Settings → Pages → Source: **Deploy from a branch**, Branch: `main` / `/ (root)`.
-몇 분 후 `https://<계정>.github.io/<저장소>/` 에서 접속할 수 있습니다. `js/config.js` 의 `repo` 값이 저장소와 맞아야 ✏️ 편집 링크가 정확히 열립니다.
+몇 분 후 `https://<계정>.github.io/<저장소>/` 에서 접속할 수 있습니다.
+
+### 편집자 모드 (저장소 링크)
+
+앱 화면에는 **저장소 주소도, GitHub 계정도 나오지 않습니다.** ✏️ 편집 링크는 *편집자 모드*
+에서만 나타나고, 이 모드는 **설정 맨 아래 버전 표시(`OPIc Coach v…`)를 7번 연속으로 누르면**
+켜집니다. 켜고 끈 상태는 그 기기 브라우저(`localStorage`)에만 저장되므로, 앱을 받은 다른
+사람의 화면에는 아무것도 보이지 않습니다.
+
+편집 링크의 주소는 소스에 적어 두지 않고 **접속한 GitHub Pages 주소에서 그때그때 유추**합니다
+(`kevin.github.io/foo` → `github.com/kevin/foo`). 그래서 `js/config.js` 에는 계정명이 없습니다.
+로컬 서버(`localhost`)에서는 유추할 수 없으니 편집자 모드를 켜도 링크 대신 안내 문구가 나옵니다.
+
+> ⚠️ 이건 **화면에서 감추는 것**이지 접근 차단이 아닙니다. 공개 저장소는 주소만 알면 누구나 볼 수
+> 있고, GitHub Pages 주소(`<계정>.github.io`)에 이미 계정명이 들어 있습니다. 저장소 내용을
+> 정말 비공개로 두려면 **Settings → General → Change visibility → Private** 로 바꾸세요
+> (비공개 저장소에서 Pages 를 게시하려면 GitHub Pro 이상이 필요하고, 배포된 앱은 그대로 동작합니다).
 
 ## 채점 방식 안내
 
