@@ -2,7 +2,7 @@ import { html, raw, toast, todayKey, daysBetween } from '../util.js';
 import { store } from '../store.js';
 import { data } from '../data.js';
 import { englishVoices, speak, support, requestMic } from '../speech.js';
-import { header } from '../app.js';
+import { header, promptInstall } from '../app.js';
 import { CONFIG, githubUrl } from '../config.js';
 
 export async function render(root) {
@@ -78,7 +78,7 @@ export async function render(root) {
     root.querySelector('#test').addEventListener('click', () => speak("Hi, I'm your OPIc coach. Let's start the interview now. Tell me a little about yourself."));
     root.querySelector('#mic').addEventListener('click', async () => toast(await requestMic() ? '마이크 사용 가능 ✅' : '마이크 권한이 거부됐어요. 브라우저 설정에서 허용하세요.'));
     root.querySelectorAll('#theme button').forEach(b => b.addEventListener('click', () => { store.setSetting('theme', b.dataset.v); if (b.dataset.v) document.documentElement.dataset.theme = b.dataset.v; else delete document.documentElement.dataset.theme; draw(); }));
-    root.querySelector('#install').addEventListener('click', async () => { const p = window.deferredInstall; if (p) { p.prompt(); await p.userChoice; window.deferredInstall = null; } else toast('브라우저 메뉴에서 "홈 화면에 추가"를 선택하세요'); });
+    root.querySelector('#install').addEventListener('click', promptInstall);
     root.querySelector('#export').addEventListener('click', () => {
       const blob = new Blob([store.exportJSON()], { type: 'application/json' });
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `opic-coach-backup-${todayKey()}.json`; a.click();
