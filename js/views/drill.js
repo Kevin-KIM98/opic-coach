@@ -3,6 +3,7 @@ import { data } from '../data.js';
 import { store } from '../store.js';
 import { speak, stopSpeaking } from '../speech.js';
 import { exprRow, bindPlay, flashcards, quickCheck } from './topic.js';
+import { createAutoPlay } from '../autoplay.js';
 import { githubEditUrl } from '../config.js';
 
 export async function render(root, route) {
@@ -12,18 +13,22 @@ export async function render(root, route) {
     <div class="tabs" id="dtabs"><button data-t="patterns" class="${tab === 'patterns' ? 'active' : ''}">만능 패턴</button><button data-t="pron" class="${tab === 'pron' ? 'active' : ''}">발음 훈련</button></div>
     <div id="dbody" class="mt12"></div>`;
   const body = root.querySelector('#dbody');
-  const show = (t) => {
+  // 탭을 바꾸거나 화면을 떠나면 자동 재생을 멈춘다
+  let player = null;
+  const setPlayer = (p) => { player = p; };
+  const show = async (t) => {
     root.querySelectorAll('#dtabs button').forEach(b => b.classList.toggle('active', b.dataset.t === t));
+    player?.destroy(); player = null;
     stopSpeaking();
-    if (t === 'patterns') renderPatterns(body, route.query.group);
-    else renderPron(body, route.query.set);
+    if (t === 'patterns') await renderPatterns(body, route.query.group, setPlayer);
+    else await renderPron(body, route.query.set, setPlayer);
   };
   root.querySelectorAll('#dtabs button').forEach(b => b.addEventListener('click', () => show(b.dataset.t)));
   show(tab);
-  return () => stopSpeaking();
+  return () => { player?.destroy(); stopSpeaking(); };
 }
 
-async function renderPatterns(body, groupId) {
+async function renderPatterns(body, groupId, setPlayer = () => {}) {
   const p = await data.patterns();
   const group = p.groups.find(g => g.id === groupId) || null;
   if (!group) {
@@ -40,14 +45,20 @@ async function renderPatterns(body, groupId) {
     body.innerHTML = html`
       <div class="row between mb12"><div><div class="h3">${group.title}</div><div class="xs muted">${group.desc}</div></div><button class="btn sm dark" data-flash>카드</button></div>
       <div class="chips mb12">${raw(p.groups.map(g => `<a class="chip ${g.id === group.id ? 'active' : ''}" href="#/drill?tab=patterns&group=${g.id}">${g.title}</a>`).join(''))}</div>
-      <div class="list">${raw(cards.map(c => exprRow(c, c.id)).join(''))}</div>`;
+      <div data-autoplay></div>
+      <div class="list mt12" data-list>${raw(cards.map(c => exprRow(c, c.id)).join(''))}</div>`;
     bindPlay(body);
-    body.querySelector('[data-flash]').addEventListener('click', () => flashcards(body, cards, list));
+    const player = createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]'));
+    setPlayer(player);
+    body.querySelector('[data-flash]').addEventListener('click', () => {
+      player.destroy();
+      setPlayer(flashcards(body, cards, list));   // 카드 모드도 탭 이동 시 함께 멈추도록
+    });
   };
   list();
 }
 
-async function renderPron(body, setId) {
+async function renderPron(body, setId, setPlayer = () => {}) {
   const p = await data.pronunciation();
   const set = p.sets.find(s => s.id === setId);
   if (!set) {
@@ -68,8 +79,11 @@ async function renderPron(body, setId) {
   body.innerHTML = html`
     <div class="chips mb12">${raw(p.sets.map(s => `<a class="chip ${s.id === set.id ? 'active' : ''}" href="#/drill?tab=pron&set=${s.id}">${s.title}</a>`).join(''))}</div>
     <div class="card"><div class="h3 mb8">${set.title}</div><p class="small ink2">${set.tip}</p></div>
-    ${raw(inner)}${raw(sentences)}`;
+    <div class="mt12" data-autoplay></div>
+    <div data-drill>${raw(inner)}${raw(sentences)}</div>`;
   bindPlay(body);
+  // 듣기 퀴즈 버튼은 자동 재생 대상이 아니므로 연습 항목만 범위로 잡는다
+  setPlayer(createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-drill]')));
   body.querySelectorAll('[data-check]').forEach(b => b.addEventListener('click', () => quickCheck(b, set.words[Number(b.dataset.check)].word, body.querySelector(`[data-w="${b.dataset.check}"] [data-result]`))));
   body.querySelectorAll('[data-check-s]').forEach(b => b.addEventListener('click', () => quickCheck(b, set.sentences[Number(b.dataset.checkS)], body.querySelector(`[data-s="${b.dataset.checkS}"] [data-result]`))));
 

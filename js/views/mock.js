@@ -4,6 +4,7 @@ import { store } from '../store.js';
 import { speak, stopSpeaking } from '../speech.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
+import { keepAwake } from '../wake-lock.js';
 import { analyze, compareToText, aggregateMock, LEVELS } from '../scoring.js';
 import { resultCard, skeleton } from './practice.js';
 import { ring } from './home.js';
@@ -75,6 +76,8 @@ async function runMock(root, setId, query) {
   const survey = topics.filter(t => t.category === 'survey' && t.id !== 'self-intro');
   const needsPick = set.slots.some(s => s.pick === 'survey');
   const startedAt = Date.now();
+  // 시험이 시작되면 끝날 때까지 화면을 켜 둔다 (문제 읽기·준비 시간 포함)
+  let releaseWake = null;
 
   const showIntro = () => {
     root.innerHTML = html`
@@ -92,6 +95,7 @@ async function runMock(root, setId, query) {
     }));
     root.querySelector('#start').addEventListener('click', async () => {
       const items = await buildQuestions(set, { topics: [...picked] });
+      releaseWake ||= keepAwake();
       runItems(items);
     });
   };
@@ -150,11 +154,12 @@ async function runMock(root, setId, query) {
       durationSec: Math.round((Date.now() - startedAt) / 1000),
       items: items.map(it => ({ id: it.q?.id || it.id, topic: it.topic.id, topicTitle: it.topic.title, type: it.type, question: it.q?.en || it.text, score: it.result?.score ?? null, level: it.result?.level ?? null, words: it.result?.metrics?.words ?? 0, seconds: it.seconds || 0, transcript: it.transcript || '', feedback: it.result?.feedback || [] })),
     });
+    releaseWake?.(); releaseWake = null;
     location.hash = `#/mock/result/${rec.id}`;
   };
 
   showIntro();
-  return () => { recUI?.destroy(); recUI = null; stopSpeaking(); };
+  return () => { recUI?.destroy(); recUI = null; releaseWake?.(); releaseWake = null; stopSpeaking(); };
 }
 
 async function showResult(root, id) {

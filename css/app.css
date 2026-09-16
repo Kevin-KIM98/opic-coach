@@ -296,6 +296,63 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .trend-up { color: var(--teal); font-weight: 700; }
 .trend-down { color: var(--accent); font-weight: 700; }
 
+/* 자동 반복 재생 바 */
+.autoplay {
+  background: var(--surface-2); border-radius: 14px; padding: 10px 12px;
+  /* 재생 중에도 멈춤 버튼에 항상 닿을 수 있도록 상단에 고정 */
+  position: sticky; top: 56px; z-index: 15;
+}
+.autoplay.on { background: var(--accent-soft); }
+.autoplay [data-status]:empty { display: none; }
+.autoplay [data-status] { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.autoplay .chip { background: var(--surface); }
+.play.on, .btn.on { animation: pulse 1.1s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
+
+/* 자동 재생 중인 항목 */
+.saying { outline: 2px solid var(--accent); outline-offset: 2px; }
+.expr.saying, .list-row.saying { background: var(--accent-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .play.on, .btn.on { animation: none; }
+  .saying { transition: none; }
+}
+
+/* 가로 화면 (낮은 높이): 좌우 공간을 쓰고 세로 높이를 아낀다 */
+@media (orientation: landscape) and (max-height: 560px) {
+  :root { --nav-h: 48px; }
+  #app { max-width: 920px; }
+  .nav-inner { max-width: 920px; }
+  .nav a { font-size: 10px; }
+  .nav a .ico { font-size: 18px; }
+  .page { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+  .topbar { min-height: 48px; padding-top: calc(6px + env(safe-area-inset-top)); padding-bottom: 6px; }
+
+  .hero { padding: 14px 18px; }
+  .hero .big { font-size: 30px; }
+  .hero::after { width: 110px; height: 110px; right: -30px; top: -30px; }
+
+  .flash { min-height: 150px; padding: 18px; }
+  .flash .en { font-size: 20px; }
+  .timer { font-size: 32px; }
+  .section-title { margin: 12px 0 6px; }
+
+  /* 세로 공간이 귀하니 머리글·탭·컨트롤을 얇게 */
+  .tabs { padding: 3px; }
+  .tabs button { padding: 6px 6px; font-size: 12px; }
+  .mt12 { margin-top: 8px; }
+  .mt16 { margin-top: 10px; }
+  .mt24 { margin-top: 14px; }
+  .mb12 { margin-bottom: 8px; }
+  .card { padding: 12px 14px; }
+  .autoplay { padding: 7px 10px; }
+
+  /* 목록은 두 칸으로 펼쳐 스크롤을 줄인다 (설정의 .card.stack 은 그대로 둔다) */
+  .list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-content: start; }
+  .list > * { margin: 0 !important; }
+  .grid-2 { grid-template-columns: repeat(4, 1fr); }
+  .autoplay { top: 48px; }
+}
+
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .pair button { padding: 12px; border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); font-weight: 700; font-size: 16px; }
 .pair button:active { background: var(--accent-soft); }

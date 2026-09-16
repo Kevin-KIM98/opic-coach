@@ -1,7 +1,7 @@
 // 앱 전역 설정. 저장소 정보는 "콘텐츠 수정" 링크(GitHub 모바일 편집)에 사용됩니다.
 export const CONFIG = {
   appName: 'OPIc Coach',
-  version: '1.1.0',
+  version: '1.2.0',
   repo: {
     owner: 'Kevin-KIM98',
     name: 'opic-coach',
@@ -14,6 +14,8 @@ export const CONFIG = {
     ttsRate: 0.95,
     ttsVoice: '',
     examDate: '',
+    repeatCount: 2,         // 자동 재생: 한 항목을 읽는 횟수
+    repeatGap: 1.5,         // 자동 재생: 따라 말할 간격(초)
   },
 };
 

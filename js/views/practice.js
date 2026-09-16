@@ -2,6 +2,7 @@ import { html, raw, splitSentences, toast, levelColor } from '../util.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
 import { speak, stopSpeaking } from '../speech.js';
+import { createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap } from '../autoplay.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
 import { analyze, compareToText } from '../scoring.js';
@@ -9,6 +10,7 @@ import { bindPlay, flashcards, quickCheck } from './topic.js';
 import { ring } from './home.js';
 
 let recUI = null;
+let shadowPlayer = null;   // 섀도잉 전체 듣기 플레이어 (탭 이동·화면 이탈 시 정리)
 
 export async function render(root, route) {
   const [topicId, qid] = route.parts;
@@ -38,13 +40,13 @@ export async function render(root, route) {
   const body = root.querySelector('#pbody');
   const show = (m) => {
     root.querySelectorAll('#ptabs button').forEach(b => b.classList.toggle('active', b.dataset.m === m));
-    stopSpeaking(); recUI?.destroy(); recUI = null;
+    stopSpeaking(); recUI?.destroy(); recUI = null; shadowPlayer?.stop(); shadowPlayer = null;
     if (m === 'model') renderModel(body, q, level, (lv) => { level = lv; renderModel(body, q, level, arguments[2]); });
     else renderSpeak(body, topic, q, exprBank);
   };
   root.querySelectorAll('#ptabs button').forEach(b => b.addEventListener('click', () => show(b.dataset.m)));
   show(mode);
-  return () => { stopSpeaking(); recUI?.destroy(); recUI = null; };
+  return () => { stopSpeaking(); recUI?.destroy(); recUI = null; shadowPlayer?.stop(); shadowPlayer = null; };
 }
 
 // ---------- 모범답안 섀도잉 ----------
@@ -59,6 +61,8 @@ function renderModel(body, q, level, setLevel) {
     <div class="card mt12">
       <div class="xs muted mb8">${words}단어 · ${sents.length}문장 · 문장을 탭하면 재생</div>
       <div class="row mb12" style="gap:6px"><button class="btn sm" data-all>▶ 전체 듣기</button><button class="btn sm" data-slow>🐢 느리게</button><button class="btn sm ghost" data-hide>🙈 가리기</button></div>
+      <div class="row between mb12"><span class="xs muted">전체 듣기는 문장마다 자동 반복돼요</span>
+        <span class="row" style="gap:6px"><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
       <div class="answer" data-answer>${raw(sents.map((s, i) => `<span class="sent" data-i="${i}">${s}</span> `).join(''))}</div>
     </div>
     <div class="card soft mt12">
@@ -80,11 +84,26 @@ function renderModel(body, q, level, setLevel) {
   body.querySelector('[data-say-cur]').addEventListener('click', () => speak(sents[cur]));
   body.querySelector('[data-check-cur]').addEventListener('click', (e) => quickCheck(e.currentTarget, sents[cur], body.querySelector('[data-result]')));
   body.querySelector('[data-hide]').addEventListener('click', (e) => { const a = body.querySelector('[data-answer]'); const hidden = a.style.filter; a.style.filter = hidden ? '' : 'blur(6px)'; e.currentTarget.textContent = hidden ? '🙈 가리기' : '👀 보기'; });
-  const playAll = async (rate) => {
-    for (let i = 0; i < sents.length; i++) { setCur(i); const ok = await speak(sents[i], { rate }); if (!ok) break; }
+  // 전체 듣기: 문장마다 설정한 횟수만큼 반복하고, 재생 중에는 화면을 켜 둔다
+  const player = createSequencePlayer();
+  const $all = body.querySelector('[data-all]');
+  const $slow = body.querySelector('[data-slow]');
+  const setPlayingUI = (on, which) => {
+    $all.textContent = on && which === 'all' ? '⏸ 멈춤' : '▶ 전체 듣기';
+    $slow.textContent = on && which === 'slow' ? '⏸ 멈춤' : '🐢 느리게';
+    $all.classList.toggle('on', on && which === 'all');
+    $slow.classList.toggle('on', on && which === 'slow');
   };
-  body.querySelector('[data-all]').addEventListener('click', () => playAll());
-  body.querySelector('[data-slow]').addEventListener('click', () => playAll(0.72));
+  const playAll = (rate, which) => {
+    if (player.playing) { player.stop(); setPlayingUI(false); return; }
+    setPlayingUI(true, which);
+    player.run(sents, { rate, onItem: (i) => setCur(i), onEnd: () => setPlayingUI(false) });
+  };
+  $all.addEventListener('click', () => playAll(undefined, 'all'));
+  $slow.addEventListener('click', () => playAll(0.72, 'slow'));
+  body.querySelector('[data-repeat]').addEventListener('click', (e) => { cycleRepeat(); e.currentTarget.textContent = `반복 ${repeatCount()}회`; });
+  body.querySelector('[data-gap]').addEventListener('click', (e) => { cycleGap(); e.currentTarget.textContent = gapLabel(); });
+  shadowPlayer = player;
   store.logActivity(1);
 }
 
@@ -155,7 +174,7 @@ function renderReadAloud(root, topic, ra) {
       store.addPractice({ qid: ra.id, topicId: topic.id, type: 'read-aloud', score: cmp.score, level: '-', words: cmp.words.length, seconds: Math.round(res.seconds), transcript: res.transcript });
     },
   });
-  return () => { stopSpeaking(); recUI?.destroy(); recUI = null; };
+  return () => { stopSpeaking(); recUI?.destroy(); recUI = null; shadowPlayer?.stop(); shadowPlayer = null; };
 }
 
 // ---------- 복습 (간격 반복) ----------
