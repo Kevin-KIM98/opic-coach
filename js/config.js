@@ -1,7 +1,7 @@
 // 앱 전역 설정. 저장소 정보는 "콘텐츠 수정" 링크(GitHub 모바일 편집)에 사용됩니다.
 export const CONFIG = {
   appName: 'OPIc Coach',
-  version: '1.0.1',
+  version: '1.1.0',
   repo: {
     owner: 'Kevin-KIM98',
     name: 'opic-coach',

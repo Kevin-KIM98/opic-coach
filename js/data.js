@@ -17,6 +17,7 @@ export const data = {
   pronunciation: () => getJSON('data/pronunciation.json'),
   plans: () => getJSON('data/plans.json'),
   mockSets: () => getJSON('data/mock-sets.json'),
+  examSchedule: () => getJSON('data/exam-schedule.json'),
 
   async topic(id) {
     const idx = await this.index();

@@ -1,10 +1,10 @@
 // 서비스워커: 모든 동일 출처 파일은 네트워크 우선(오프라인 시 캐시). CDN 폰트는 캐시 우선.
-const VERSION = 'v1.0.1';
+const VERSION = 'v1.1.0';
 const SHELL = `opic-shell-${VERSION}`;
 const DATA = `opic-data`;
 const SHELL_FILES = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
-  './js/app.js', './js/config.js', './js/util.js', './js/store.js', './js/data.js', './js/speech.js', './js/scoring.js', './js/plan.js', './js/recorder-ui.js',
+  './js/app.js', './js/config.js', './js/util.js', './js/store.js', './js/data.js', './js/speech.js', './js/scoring.js', './js/plan.js', './js/exam.js', './js/recorder-ui.js',
   './js/views/home.js', './js/views/topics.js', './js/views/topic.js', './js/views/practice.js', './js/views/drill.js',
   './js/views/mock.js', './js/views/progress.js', './js/views/plan.js', './js/views/settings.js',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',

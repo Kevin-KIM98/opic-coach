@@ -148,6 +148,9 @@ body.has-installbar #toast { bottom: calc(var(--nav-h) + 84px + env(safe-area-in
 .badge.IL { background: var(--gold-soft); color: var(--gold); }
 .badge.NL { background: var(--surface-2); color: var(--muted); }
 .badge.type { background: var(--surface-2); color: var(--ink-2); }
+.badge.ok { background: var(--teal-soft); color: var(--teal); }
+.badge.warn { background: var(--gold-soft); color: var(--gold); }
+.badge.bad { background: var(--accent-soft); color: var(--accent); }
 
 /* Lists */
 .list { display: flex; flex-direction: column; gap: 10px; }

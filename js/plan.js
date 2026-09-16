@@ -62,9 +62,3 @@ export function planProgress(plan) {
   for (const day of plan.days) { total += day.tasks.length; done += store.doneTasks(plan.id, day.day).length; }
   return { total, done, pct: total ? Math.round(done / total * 100) : 0 };
 }
-
-export function examCountdown() {
-  const ex = store.settings.examDate;
-  if (!ex) return null;
-  return daysBetween(todayKey(), ex);
-}
