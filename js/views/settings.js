@@ -3,7 +3,7 @@ import { store } from '../store.js';
 import { data } from '../data.js';
 import { englishVoices, speak, support, requestMic } from '../speech.js';
 import { header, promptInstall } from '../app.js';
-import { CONFIG, githubUrl } from '../config.js';
+import { CONFIG, githubUrl, isEditor, setEditor, contentBranch } from '../config.js';
 
 export async function render(root) {
   const plans = await data.plans();
@@ -50,13 +50,8 @@ export async function render(root) {
         <div class="xs muted">기록은 이 기기 브라우저에만 저장됩니다. 기기를 바꾸면 백업 파일로 옮기세요.</div>
       </div>
 
-      <div class="section-title">콘텐츠 · 저장소</div>
-      <div class="card stack small ink2">
-        <div>모든 학습 자료는 <code>data/</code> 폴더의 JSON 파일입니다. GitHub 앱이나 웹에서 파일을 수정하면 몇 분 안에 앱에 반영됩니다.</div>
-        <a class="btn" href="${githubUrl('tree/' + CONFIG.repo.branch + '/data')}" target="_blank" rel="noopener">📂 GitHub에서 콘텐츠 열기</a>
-        <a class="btn ghost" href="${githubUrl('blob/' + CONFIG.repo.branch + '/CONTENT_GUIDE.md')}" target="_blank" rel="noopener">📝 콘텐츠 수정 가이드</a>
-        <div class="xs muted">${CONFIG.appName} v${CONFIG.version} · ${CONFIG.repo.owner}/${CONFIG.repo.name}</div>
-      </div>`;
+      ${raw(isEditor() ? editorCard() : '')}
+      <div class="xs muted center mt12" id="about" role="button" tabindex="0">${CONFIG.appName} v${CONFIG.version}</div>`;
 
     root.querySelector('#name').addEventListener('change', e => store.setSetting('name', e.target.value.trim()));
     root.querySelectorAll('#target button').forEach(b => b.addEventListener('click', () => { store.setSetting('target', b.dataset.v); draw(); }));
@@ -89,6 +84,7 @@ export async function render(root) {
       try { store.importJSON(await f.text()); toast('가져오기 완료'); draw(); } catch (err) { toast('가져오기 실패: ' + err.message); }
     });
     root.querySelector('#reset').addEventListener('click', () => { if (confirm('모든 학습 기록과 설정을 지울까요?')) { store.reset(); toast('초기화했어요'); draw(); } });
+    bindAbout(root, draw);
   };
   draw();
 }
@@ -97,4 +93,43 @@ function examHint(s) {
   if (!s.examDate) return '미등록 — 가장 빠른 응시 가능일을 자동으로 사용합니다.';
   const d = daysBetween(todayKey(), s.examDate);
   return d < 0 ? '시험일이 지나 자동으로 다음 응시 가능일을 사용 중입니다.' : `D-${d} · 추천 과정: ${d <= 35 ? '4주 집중' : d <= 63 ? '8주 표준' : '12주 여유'}`;
+}
+
+// 편집자(저장소 소유자) 전용 카드 — 편집자 모드가 켜져 있을 때만 그린다.
+function editorCard() {
+  const dataUrl = githubUrl('tree/' + contentBranch() + '/data');
+  const guideUrl = githubUrl('blob/' + contentBranch() + '/CONTENT_GUIDE.md');
+  const links = dataUrl
+    ? `<a class="btn" href="${dataUrl}" target="_blank" rel="noopener">📂 GitHub에서 콘텐츠 열기</a>
+       <a class="btn ghost" href="${guideUrl}" target="_blank" rel="noopener">📝 콘텐츠 수정 가이드</a>`
+    : '<div class="xs muted">이 주소에서는 저장소를 찾을 수 없어 편집 링크를 만들지 못했습니다.</div>';
+  return `<div class="section-title">편집자 모드</div>
+    <div class="card stack small ink2">
+      <div>학습 자료는 <code>data/</code> 폴더의 JSON 파일입니다. 수정하면 몇 분 안에 앱에 반영됩니다.</div>
+      ${links}
+      <button class="btn ghost" id="editorOff">🔒 편집자 모드 끄기</button>
+      <div class="xs muted">이 모드는 이 기기 브라우저에만 저장됩니다. 다른 사람의 화면에는 저장소 정보가 보이지 않습니다.</div>
+    </div>`;
+}
+
+// 버전 표시를 7번 누르면 편집자 모드가 켜진다 (평소에는 아무 표시도 없음).
+function bindAbout(root, draw) {
+  const off = root.querySelector('#editorOff');
+  if (off) off.addEventListener('click', () => { setEditor(false); toast('편집자 모드를 껐어요'); draw(); });
+
+  const about = root.querySelector('#about');
+  if (!about || isEditor()) return;
+  let taps = 0, timer = null;
+  const tap = () => {
+    taps++;
+    clearTimeout(timer);
+    timer = setTimeout(() => { taps = 0; }, 1500);
+    if (taps < 7) return;
+    taps = 0;
+    setEditor(true);
+    toast('편집자 모드를 켰어요');
+    draw();
+  };
+  about.addEventListener('click', tap);
+  about.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tap(); } });
 }

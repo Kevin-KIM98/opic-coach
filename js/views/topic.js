@@ -2,10 +2,10 @@ import { html, raw, splitSentences, toast, sheet } from '../util.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
 import { speak, stopSpeaking, isSpeaking } from '../speech.js';
-import { githubEditUrl } from '../config.js';
+import { editLinkHtml } from '../config.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
-import { createAutoPlay, createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap } from '../autoplay.js';
+import { createAutoPlay, createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap, repeatLoop, toggleLoop, loopLabel } from '../autoplay.js';
 import { compareToText } from '../scoring.js';
 
 export async function render(root, route) {
@@ -15,7 +15,7 @@ export async function render(root, route) {
   const level = route.query.level || store.settings.target || 'IM3';
 
   root.innerHTML = html`
-    ${raw(header(`${topic.emoji} ${topic.title}`, { right: `<a class="icon-btn" title="GitHub에서 이 주제 수정" href="${githubEditUrl(topic.file)}" target="_blank" rel="noopener">✏️</a>` }))}
+    ${raw(header(`${topic.emoji} ${topic.title}`, { right: editLinkHtml(topic.file, '✏️', 'icon-btn') }))}
     <div class="tabs" id="tabs">
       <button data-tab="expr" class="${tab === 'expr' ? 'active' : ''}">표현 ${topic.expressions?.length || 0}</button>
       <button data-tab="q" class="${tab === 'q' ? 'active' : ''}">질문·답안 ${topic.questions?.length || 0}</button>
@@ -85,7 +85,7 @@ export function bindPlay(scope) {
 
 export function flashcards(body, cards, onExit) {
   let i = 0, showKo = false;
-  const player = createSequencePlayer();   // 카드마다 반복 재생 + 화면 유지
+  const player = createSequencePlayer();   // 카드마다 반복 재생 + 화면 유지 (🔁 켜져 있으면 멈출 때까지 계속)
   const due = new Set(store.dueExprs());
   // 복습 대상 우선, 그 다음 미학습, 마지막 학습완료
   cards = cards.slice().sort((a, b) => rank(a) - rank(b));
@@ -103,8 +103,9 @@ export function flashcards(body, cards, onExit) {
         ${c.note ? raw(`<div class="note ${showKo ? '' : 'hidden'}" data-ko>💡 ${c.note}</div>`) : ''}
         <div class="row mt8"><button class="play" data-say="${encodeURIComponent(c.en)}">🔊</button><button class="play" data-say="${encodeURIComponent(c.en)}" data-slow="1">🐢</button><button class="btn sm grow" data-reveal>${showKo ? '뜻 숨기기' : '뜻 보기'}</button></div>
       </div>
-      <div class="row between mt8"><span class="xs muted">카드를 넘기면 자동으로 반복 재생돼요</span>
-        <span class="row" style="gap:6px"><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
+      <div class="row between wrap mt8"><button class="btn sm" data-toggle>⏸ 멈춤</button>
+        <span class="row" style="gap:6px"><button class="chip ${repeatLoop() ? 'active' : ''}" data-loop title="멈출 때까지 계속 반복">${loopLabel()}</button><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
+      <div class="xs muted mt8">${repeatLoop() ? '멈추거나 카드를 넘길 때까지 계속 반복해요.' : `이 카드를 ${repeatCount()}번 읽고 멈춰요.`}</div>
       <p class="xs muted center mt12">듣고 → 소리 내어 따라 말한 뒤 → 뜻을 보지 않고 말할 수 있으면 "알아요"</p>
       <div class="btn-row mt12"><button class="btn" data-rate="0">🙈 아직 몰라요</button><button class="btn teal" data-rate="1">✅ 알아요</button></div>
       <div class="btn-row mt8"><button class="btn ghost" data-prev>‹ 이전</button><button class="btn ghost" data-exit>목록으로</button><button class="btn ghost" data-next>다음 ›</button></div>`;
@@ -116,7 +117,15 @@ export function flashcards(body, cards, onExit) {
     body.querySelector('[data-exit]').addEventListener('click', () => { player.stop(); stopSpeaking(); onExit(); });
     body.querySelector('[data-repeat]').addEventListener('click', () => { cycleRepeat(); draw(); });
     body.querySelector('[data-gap]').addEventListener('click', () => { cycleGap(); draw(); });
-    player.run([c.en]);
+
+    const $toggle = body.querySelector('[data-toggle]');
+    const setPlayUI = (on) => { $toggle.textContent = on ? '⏸ 멈춤' : '▶ 다시 듣기'; $toggle.classList.toggle('on', on); };
+    const play = () => { setPlayUI(true); player.run([c.en], { loop: repeatLoop(), onEnd: () => setPlayUI(false) }); };
+    $toggle.addEventListener('click', () => { if (player.playing) { player.stop(); setPlayUI(false); } else play(); });
+    body.querySelector('[data-loop]').addEventListener('click', () => { toggleLoop(); draw(); });
+    // 🔊 / 🐢 를 직접 누르면 자동 반복은 비켜 준다
+    body.querySelectorAll('[data-say]').forEach(b => b.addEventListener('click', () => { player.stop(); setPlayUI(false); }, true));
+    play();
   };
   const next = () => { if (i + 1 >= cards.length) { toast('한 바퀴 완료! 🎉'); i = 0; } else i++; showKo = false; draw(); };
   draw();
@@ -175,5 +184,5 @@ function renderGuide(body, topic) {
         <li>질문 탭 → 목표 레벨 모범답안 문장별 섀도잉 (5분)</li>
         <li>같은 질문에 직접 녹음 답변 → 채점 → 피드백 반영해 한 번 더 (5분)</li>
       </ol></div>
-    <a class="btn ghost block mt12" href="${githubEditUrl(topic.file)}" target="_blank" rel="noopener">✏️ GitHub에서 이 주제 내용 수정</a>`;
+    ${raw(editLinkHtml(topic.file, '✏️ GitHub에서 이 주제 내용 수정', 'btn ghost block mt12'))}`;
 }

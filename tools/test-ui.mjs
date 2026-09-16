@@ -171,7 +171,7 @@ async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
   await page.close();
 }
 
-// ---- 7. 카드 모드: 카드마다 자동 반복 ----
+// ---- 7. 카드 모드: 카드마다 자동 반복 (🔁 기본값이라 멈출 때까지 계속 — tools/test-repeat.mjs 참고) ----
 {
   const { page, errs } = await open('http://localhost:8777/index.html#/topic/self-intro?tab=expr', { repeat: 3, gap: 0 });
   await page.click('[data-flash]');
@@ -184,8 +184,10 @@ async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
   await page.click('[data-next]');
   await page.waitForTimeout(400);
   const after = await page.evaluate(() => window.__spoken);
-  check('다음 카드도 자동 재생된다', after.length >= 2 && after[0] === after[1], JSON.stringify(after));
-  check('다음 카드는 다른 문장', after[0] !== spoken[0]);
+  // 이전 카드가 계속 반복 중이었으므로 앞쪽에 그 마지막 발화가 섞일 수 있다 — 뒤쪽으로 확인한다
+  const tail = after.slice(-3);
+  check('다음 카드도 자동 재생된다', tail.length >= 2 && tail[0] === tail[1], JSON.stringify(after));
+  check('다음 카드는 다른 문장', tail[0] !== spoken[0], JSON.stringify(tail));
 
   await page.click('[data-exit]');
   await page.waitForTimeout(300);
