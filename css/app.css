@@ -285,6 +285,13 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .spark i { flex: 1; background: var(--surface-2); border-radius: 4px 4px 0 0; position: relative; min-width: 8px; }
 .spark i.on { background: var(--accent); }
 .spark i.t { background: var(--teal); }
+.spark i.ghost { height: 6%; background: var(--surface-2); opacity: .5; }  /* 기록이 적을 때의 빈 칸 */
+.spark.gauge { position: relative; margin-top: 14px; }  /* 목표선 라벨 자리 (padding 은 막대 % 기준을 바꾸므로 사용하지 않음) */
+.spark .goal { position: absolute; left: 0; right: 0; border-top: 1px dashed var(--muted); pointer-events: none; }
+.spark .goal b { position: absolute; left: 0; top: -14px; font-size: 10px; font-weight: 700; color: var(--muted);
+  background: var(--surface); padding: 0 4px; border-radius: 4px; }  /* 막대 위에 겹쳐도 읽히도록 카드색 배경 */
+.trend-up { color: var(--teal); font-weight: 700; }
+.trend-down { color: var(--accent); font-weight: 700; }
 
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .pair button { padding: 12px; border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); font-weight: 700; font-size: 16px; }
