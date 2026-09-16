@@ -19,6 +19,8 @@ OPIc **IM3 · IH · AL** 및 토익스피킹 **6레벨** 취득을 위한 모바
 
 ## 바로 시작하기
 
+안드로이드 설치(APK 필요 여부 포함)는 [ANDROID.md](ANDROID.md) 참고.
+
 1. **GitHub Pages 주소**를 폰 브라우저(Android Chrome / iPhone Safari)로 엽니다.
 2. 홈 화면에 추가: Android는 메뉴 → **앱 설치**, iPhone은 공유 → **홈 화면에 추가**.
 3. 설정(⚙️)에서 **목표 등급 · 시험일**을 입력하고 **"시험일에 맞춰 자동 설정"**을 누릅니다.
