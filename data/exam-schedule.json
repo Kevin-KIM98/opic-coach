@@ -9,13 +9,13 @@
     "note": "OPIc은 연중 상시 시험입니다. 일요일과 공휴일에는 대부분 시행하지 않습니다.",
     "closedWeekdays": [0],
     "officialUrl": "https://www.opic.or.kr",
-    "scheduleUrl": "https://www.opic.or.kr/opics/servlet/controller.opic.site.receipt.AnnualScheduleServlet?p_process=select-new-list"
+    "scheduleUrl": "https://www.opic.or.kr"
   },
   "registration": {
     "closesDaysBefore": 2,
     "recommendDaysBefore": 14,
     "note": "접수·변경·취소는 마감일 자정까지 가능합니다. 지역별 좌석이 조기 마감되므로 2주 전 접수를 권장합니다.",
-    "url": "https://www.opic.or.kr/opics/servlet/controller.opic.site.receipt.ExamReceiptServlet?p_process=select-list&p_nav=1_1"
+    "url": "https://www.opic.or.kr"
   },
   "holidays": [
     { "date": "2026-01-01", "name": "신정" },
