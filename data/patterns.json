@@ -78,7 +78,7 @@
     {
       "id": "opinion",
       "title": "의견 · 이유",
-      "desc": "의견 → 이유 1 → 이유 2 → 예시 → 결론. 토익스피킹 파트5에도 그대로 씁니다.",
+      "desc": "의견 → 이유 1 → 이유 2 → 예시 → 결론. 고난도 의견 문항에 그대로 씁니다.",
       "items": [
         {"en": "I think ... because ...", "ko": "저는 ...라고 생각해요, 왜냐하면 ...", "level": "IM"},
         {"en": "There are two reasons. First, ... Second, ...", "ko": "이유는 두 가지예요. 첫째, ... 둘째, ...", "level": "IM"},

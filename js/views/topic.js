@@ -126,15 +126,14 @@ export function flashcards(body, cards, onExit) {
 // ---------- 질문·모범답안 ----------
 function renderQuestions(body, topic, level, query) {
   const qs = topic.questions || [];
-  const extra = topic.readAloud ? `<div class="section-title">파트 1 · 읽기 지문</div><div class="list">${topic.readAloud.map(r => `<a class="list-row" href="#/practice/${topic.id}/${r.id}"><div class="emoji">📖</div><div class="grow"><div class="t">${r.id}</div><div class="s">${r.text.slice(0, 60)}…</div></div><span class="chev">›</span></a>`).join('')}</div>` : '';
   body.innerHTML = html`
     <p class="small muted mb12">질문을 탭하면 IM3 / IH / AL 모범답안을 문장별로 듣고 섀도잉하거나, 직접 녹음해 채점받을 수 있어요.</p>
     <div class="list">${raw(qs.map(q => `<a class="list-row" href="#/practice/${topic.id}/${q.id}${query.mode === 'speak' ? '?mode=speak' : `?level=${level}`}"><div class="emoji">${iconFor(q.type)}</div><div class="grow"><div class="t">${q.en}</div><div class="s">${TYPE_LABEL[q.type] || q.type} · ${practiceCount(q.id)}회 연습</div></div><span class="chev">›</span></a>`).join(''))}</div>
-    ${raw(extra)}`;
+`;
 }
 function practiceCount(qid) { return store.state.practice.filter(p => p.qid === qid).length; }
 export function iconFor(type) {
-  return { describe: '🖼️', routine: '🔁', experience: '📖', comparison: '⚖️', opinion: '💬', 'roleplay-ask': '📞', 'roleplay-solve': '🛠️', 'roleplay-experience': '📖', 'tos-qa': '❓', 'tos-opinion': '💬' }[type] || '❔';
+  return { describe: '🖼️', routine: '🔁', experience: '📖', comparison: '⚖️', opinion: '💬', 'roleplay-ask': '📞', 'roleplay-solve': '🛠️', 'roleplay-experience': '📖' }[type] || '❔';
 }
 
 // ---------- 발음 ----------

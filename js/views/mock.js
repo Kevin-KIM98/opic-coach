@@ -5,7 +5,7 @@ import { speak, stopSpeaking } from '../speech.js';
 import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
 import { keepAwake } from '../wake-lock.js';
-import { analyze, compareToText, aggregateMock, LEVELS } from '../scoring.js';
+import { analyze, aggregateMock, LEVELS } from '../scoring.js';
 import { resultCard, skeleton } from './practice.js';
 import { ring } from './home.js';
 
@@ -24,10 +24,10 @@ async function list(root) {
   root.innerHTML = html`
     <header class="topbar"><div class="title">모의고사</div><a class="icon-btn" href="#/settings">⚙️</a></header>
     <p class="small ink2">${sets.intro}</p>
-    <div class="list mt12">${raw(sets.sets.map(s => `<a class="list-row" href="#/mock/run/${s.id}"><div class="emoji">${s.kind === 'tos' ? '🎯' : s.id === 'opic-full' ? '📝' : s.id === 'opic-mini' ? '⚡' : '🎲'}</div><div class="grow"><div class="t">${s.title}</div><div class="s">${s.desc}</div></div><span class="chev">›</span></a>`).join(''))}</div>
+    <div class="list mt12">${raw(sets.sets.map(s => `<a class="list-row" href="#/mock/run/${s.id}"><div class="emoji">${s.id === 'opic-full' ? '📝' : s.id === 'opic-mini' ? '⚡' : '🎲'}</div><div class="grow"><div class="t">${s.title}</div><div class="s">${s.desc}</div></div><span class="chev">›</span></a>`).join(''))}</div>
     <div class="section-title">등급 기준 (추정)</div>
-    <div class="card"><table class="lvtable"><tr><th>OPIc</th><th>토스</th><th>점수</th><th>특징</th></tr>${raw(sets.levels.opic.map(l => `<tr><td><b style="color:${levelColor(l.level)}">${l.level}</b></td><td>${l.tos}</td><td>${l.min}+</td><td class="xs">${l.desc}</td></tr>`).join(''))}</table></div>
-    ${recent.length ? raw(`<div class="section-title">최근 결과</div><div class="list">${recent.map(m => `<a class="list-row" href="#/mock/result/${m.id}"><div class="emoji" style="color:${levelColor(m.level)};font-weight:800;font-size:15px">${m.level}</div><div class="grow"><div class="t">${m.title}</div><div class="s">${new Date(m.date).toLocaleDateString('ko-KR')} · ${m.score}점 · 토스 ${m.tos}</div></div><span class="chev">›</span></a>`).join('')}</div>`) : ''}`;
+    <div class="card"><table class="lvtable"><tr><th>OPIc</th><th>점수</th><th>특징</th></tr>${raw(sets.levels.opic.map(l => `<tr><td><b style="color:${levelColor(l.level)}">${l.level}</b></td><td>${l.min}+</td><td class="xs">${l.desc}</td></tr>`).join(''))}</table></div>
+    ${recent.length ? raw(`<div class="section-title">최근 결과</div><div class="list">${recent.map(m => `<a class="list-row" href="#/mock/result/${m.id}"><div class="emoji" style="color:${levelColor(m.level)};font-weight:800;font-size:15px">${m.level}</div><div class="grow"><div class="t">${m.title}</div><div class="s">${new Date(m.date).toLocaleDateString('ko-KR')} · ${m.score}점</div></div><span class="chev">›</span></a>`).join('')}</div>`) : ''}`;
 }
 
 // 세트 정의 → 실제 문항 배열
@@ -39,11 +39,6 @@ async function buildQuestions(set, opts = {}) {
   for (const slot of set.slots) {
     const prep = slot.prepSeconds ?? set.prepSeconds ?? 0;
     const ans = slot.answerSeconds ?? set.answerSeconds ?? 120;
-    if (slot.readAloud) {
-      const t = byId[slot.topic];
-      pick(t?.readAloud || [], slot.readAloud).forEach(r => items.push({ kind: 'read', topic: t, text: r.text, id: r.id, prep, ans, type: 'read-aloud', tips: r.tips }));
-      continue;
-    }
     if (slot.pick === 'survey') {
       const chosen = opts.topics?.length ? opts.topics.map(id => byId[id]).filter(Boolean) : pick(surveyTopics, slot.count || 3);
       for (const t of chosen) {
@@ -108,38 +103,33 @@ async function runMock(root, setId, query) {
       if (i >= items.length) return finish(items);
       const it = items[i];
       const bank = [...(it.topic.expressions || []).map(e => e.en), ...patternBank];
-      const isRead = it.kind === 'read';
       root.innerHTML = html`
         <header class="topbar"><button class="icon-btn" id="quit">✕</button><div class="title">${set.title} · ${i + 1} / ${items.length}</div><button class="icon-btn" id="replay" title="다시 듣기">🔁</button></header>
         <div class="bar mb12"><i style="width:${(i) / items.length * 100}%"></i></div>
         <div class="qcard">
           <div class="row between mb8"><span class="badge type">${TYPE_LABEL[it.type] || it.type}</span><span class="xs muted">${it.topic.emoji} ${it.topic.title}</span></div>
-          ${isRead ? raw(`<div class="answer" style="font-size:16px">${it.text}</div>`) : raw(`<div class="q-en">${it.q.en}</div><div class="q-ko muted" id="qko" style="filter:blur(5px)" title="탭하면 해석">${it.q.ko}</div>`)}
+          ${raw(`<div class="q-en">${it.q.en}</div><div class="q-ko muted" id="qko" style="filter:blur(5px)" title="탭하면 해석">${it.q.ko}</div>`)}
         </div>
         <div class="card mt12"><div id="rec"></div></div>
-        <div class="card soft mt12 small ink2">💡 ${isRead ? '내용어를 강하게, 쉼표·마침표에서 짧게 끊어 읽기' : skeleton(it.type)}</div>
+        <div class="card soft mt12 small ink2">💡 ${skeleton(it.type)}</div>
         <div class="btn-row mt12"><button class="btn" id="skip">건너뛰기</button><button class="btn dark" id="next" disabled>다음 문항 ›</button></div>`;
       root.querySelector('#qko')?.addEventListener('click', e => { e.currentTarget.style.filter = ''; });
       root.querySelector('#quit').addEventListener('click', () => { if (confirm('모의고사를 중단할까요? 지금까지 답한 문항만 채점됩니다.')) finish(items.slice(0, i)); });
       let replays = 1;
-      root.querySelector('#replay').addEventListener('click', () => { if (replays-- > 0 && !isRead) speak(it.q.en); });
+      root.querySelector('#replay').addEventListener('click', () => { if (replays-- > 0) speak(it.q.en); });
       const $next = root.querySelector('#next');
       let done = false;
       const onDone = (res) => {
-        let result;
-        if (isRead) { const cmp = compareToText(res.transcript, it.text); result = { score: cmp.score, level: '-', tos: '-', metrics: { words: cmp.words.length, seconds: Math.round(res.seconds) }, feedback: [], cmp }; }
-        else result = analyze(res.transcript, res.seconds, { type: it.type, expressions: bank, segments: res.segments });
+        const result = analyze(res.transcript, res.seconds, { type: it.type, expressions: bank, segments: res.segments });
         it.result = result; it.transcript = res.transcript; it.seconds = Math.round(res.seconds);
         done = true; $next.disabled = false;
         // 자동 진행 (3초 후)
         setTimeout(() => { if (root.contains($next) && items[i] === it) { i++; step(); } }, 2500);
       };
       // 녹음 위젯은 즉시 표시 (버튼으로 바로 시작 가능), 질문 음성이 끝나면 자동 시작
-      recUI = createRecorderUI(root.querySelector('#rec'), { maxSeconds: it.ans, prepSeconds: it.prep, autoStart: isRead, onDone });
-      if (!isRead) {
-        const ui = recUI;
-        speak(it.q.en).then(() => { if (ui === recUI && ui.state === 'idle') { if (it.prep) ui.startPrep(); else ui.start(); } });
-      }
+      recUI = createRecorderUI(root.querySelector('#rec'), { maxSeconds: it.ans, prepSeconds: it.prep, onDone });
+      const ui = recUI;
+      speak(it.q.en).then(() => { if (ui === recUI && ui.state === 'idle') { if (it.prep) ui.startPrep(); else ui.start(); } });
       root.querySelector('#skip').addEventListener('click', () => { recUI?.destroy(); i++; step(); });
       $next.addEventListener('click', () => { if (done) { i++; step(); } });
     };
@@ -150,7 +140,7 @@ async function runMock(root, setId, query) {
     recUI?.destroy(); recUI = null; stopSpeaking();
     const agg = aggregateMock(items.filter(it => it.kind === 'q'));
     const rec = store.addMock({
-      set: set.id, title: set.title, kind: set.kind, score: agg.score, level: agg.level, tos: agg.tos,
+      set: set.id, title: set.title, kind: set.kind, score: agg.score, level: agg.level,
       durationSec: Math.round((Date.now() - startedAt) / 1000),
       items: items.map(it => ({ id: it.q?.id || it.id, topic: it.topic.id, topicTitle: it.topic.title, type: it.type, question: it.q?.en || it.text, score: it.result?.score ?? null, level: it.result?.level ?? null, words: it.result?.metrics?.words ?? 0, seconds: it.seconds || 0, transcript: it.transcript || '', feedback: it.result?.feedback || [] })),
     });
@@ -173,7 +163,7 @@ async function showResult(root, id) {
   root.innerHTML = html`
     ${raw(header('모의고사 결과', { right: '<a class="icon-btn" href="#/mock">✕</a>' }))}
     <div class="card"><div class="score-hero"><div class="xs muted">${m.title} · ${new Date(m.date).toLocaleString('ko-KR')}</div>
-      <div class="lvl" style="color:${levelColor(m.level)}">${m.level}</div><div class="num">추정 OPIc 등급 · 토익스피킹 레벨 ${m.tos} · ${m.score}점 · 목표 ${target}</div></div>
+      <div class="lvl" style="color:${levelColor(m.level)}">${m.level}</div><div class="num">추정 OPIc 등급 · ${m.score}점 · 목표 ${target}</div></div>
       <div class="row" style="justify-content:center;gap:16px"><div class="ring">${raw(ring(m.score, levelColor(m.level)))}</div></div>
       <p class="small ink2 center mt12">${raw(verdict(m, target))}</p></div>
 

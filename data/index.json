@@ -1,28 +1,83 @@
 {
   "version": 1,
   "topics": [
-    {"id": "self-intro", "file": "topics/self-intro.json"},
-    {"id": "housing", "file": "topics/housing.json"},
-    {"id": "neighborhood", "file": "topics/neighborhood.json"},
-    {"id": "movies", "file": "topics/movies.json"},
-    {"id": "music", "file": "topics/music.json"},
-    {"id": "park", "file": "topics/park.json"},
-    {"id": "jogging", "file": "topics/jogging.json"},
-    {"id": "travel-domestic", "file": "topics/travel-domestic.json"},
-    {"id": "travel-overseas", "file": "topics/travel-overseas.json"},
-    {"id": "cafe", "file": "topics/cafe.json"},
-    {"id": "work", "file": "topics/work.json"},
-    {"id": "vacation-home", "file": "topics/vacation-home.json"},
-    {"id": "roleplay", "file": "topics/roleplay.json"},
-    {"id": "unexpected", "file": "topics/unexpected.json"},
-    {"id": "advanced", "file": "topics/advanced.json"},
-    {"id": "toeic-speaking", "file": "topics/toeic-speaking.json"}
+    {
+      "id": "self-intro",
+      "file": "topics/self-intro.json"
+    },
+    {
+      "id": "housing",
+      "file": "topics/housing.json"
+    },
+    {
+      "id": "neighborhood",
+      "file": "topics/neighborhood.json"
+    },
+    {
+      "id": "movies",
+      "file": "topics/movies.json"
+    },
+    {
+      "id": "music",
+      "file": "topics/music.json"
+    },
+    {
+      "id": "park",
+      "file": "topics/park.json"
+    },
+    {
+      "id": "jogging",
+      "file": "topics/jogging.json"
+    },
+    {
+      "id": "travel-domestic",
+      "file": "topics/travel-domestic.json"
+    },
+    {
+      "id": "travel-overseas",
+      "file": "topics/travel-overseas.json"
+    },
+    {
+      "id": "cafe",
+      "file": "topics/cafe.json"
+    },
+    {
+      "id": "work",
+      "file": "topics/work.json"
+    },
+    {
+      "id": "vacation-home",
+      "file": "topics/vacation-home.json"
+    },
+    {
+      "id": "roleplay",
+      "file": "topics/roleplay.json"
+    },
+    {
+      "id": "unexpected",
+      "file": "topics/unexpected.json"
+    },
+    {
+      "id": "advanced",
+      "file": "topics/advanced.json"
+    }
   ],
   "categories": {
-    "survey": {"title": "설문 주제", "desc": "Background Survey에서 고른 주제. 2~10번 문제"},
-    "roleplay": {"title": "롤플레이", "desc": "11~13번. 질문하기 · 문제 해결 · 관련 경험"},
-    "advanced": {"title": "고난도", "desc": "14~15번. 비교 · 변화 · 사회적 이슈"},
-    "unexpected": {"title": "돌발 주제", "desc": "설문과 무관하게 나오는 주제"},
-    "tos": {"title": "토익스피킹", "desc": "파트 1~5 템플릿과 연습"}
+    "survey": {
+      "title": "설문 주제",
+      "desc": "Background Survey에서 고른 주제. 2~10번 문제"
+    },
+    "roleplay": {
+      "title": "롤플레이",
+      "desc": "11~13번. 질문하기 · 문제 해결 · 관련 경험"
+    },
+    "advanced": {
+      "title": "고난도",
+      "desc": "14~15번. 비교 · 변화 · 사회적 이슈"
+    },
+    "unexpected": {
+      "title": "돌발 주제",
+      "desc": "설문과 무관하게 나오는 주제"
+    }
   }
 }

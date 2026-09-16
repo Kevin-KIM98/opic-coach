@@ -353,6 +353,19 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
   .autoplay { top: 48px; }
 }
 
+/* 집중 학습: 체크 목록 · 피해야 할 항목 */
+.checkrow { display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left; padding: 10px; border-radius: 12px; background: var(--surface-2); }
+.checkrow:active { background: var(--accent-soft); }
+.checkrow .check { width: 22px; height: 22px; border-radius: 7px; border: 2px solid var(--line); background: var(--surface); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: transparent; flex-shrink: 0; margin-top: 1px; }
+.checkrow.done .check { background: var(--teal); border-color: var(--teal); color: #fff; }
+.checkrow.done .grow { opacity: .6; }
+.checkrow.done > .grow > .small { text-decoration: line-through; }
+.pickrow { display: flex; align-items: center; gap: 8px; }
+.pickrow .chip { flex-shrink: 0; }
+.avoid { display: flex; gap: 8px; align-items: flex-start; padding: 8px 10px; border-radius: 10px; font-size: 13px; }
+.avoid + .avoid { margin-top: 6px; }
+.avoid > span:first-child { color: var(--bad); font-weight: 800; flex-shrink: 0; }
+
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .pair button { padding: 12px; border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); font-weight: 700; font-size: 16px; }
 .pair button:active { background: var(--accent-soft); }

@@ -16,6 +16,9 @@ const defaultState = () => ({
   // 학습 활동 일자: {date: minutes}
   activity: {},
   bookmarks: [],
+  // 집중 학습: 서베이에서 고르기로 한 항목 · 등급별 달성 체크
+  surveyPicks: [],
+  focusChecks: [],
 });
 
 let state = load();
@@ -107,6 +110,21 @@ export const store = {
     this.logActivity(Math.round((rec.durationSec || 600) / 60));
     save();
     return r;
+  },
+  isSurveyPicked(label) { return state.surveyPicks.includes(label); },
+  toggleSurveyPick(encoded) {
+    const label = decodeURIComponent(encoded);
+    const i = state.surveyPicks.indexOf(label);
+    if (i >= 0) state.surveyPicks.splice(i, 1); else state.surveyPicks.push(label);
+    save();
+    return i < 0;
+  },
+  isFocusChecked(key) { return state.focusChecks.includes(key); },
+  toggleFocusCheck(key) {
+    const i = state.focusChecks.indexOf(key);
+    if (i >= 0) state.focusChecks.splice(i, 1); else state.focusChecks.push(key);
+    save();
+    return i < 0;
   },
   toggleBookmark(id) {
     const i = state.bookmarks.indexOf(id);

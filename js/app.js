@@ -6,6 +6,7 @@ import { html, raw } from './util.js';
 const views = {
   home: () => import('./views/home.js'),
   topics: () => import('./views/topics.js'),
+  focus: () => import('./views/focus.js'),
   topic: () => import('./views/topic.js'),
   practice: () => import('./views/practice.js'),
   drill: () => import('./views/drill.js'),
@@ -56,7 +57,7 @@ async function render() {
     $view.innerHTML = `<div class="empty">화면을 불러오지 못했습니다.<br><small>${err.message}</small><br><br><a class="btn" href="#/home">홈으로</a></div>`;
   }
   // nav active
-  const top = route.name === 'topic' || route.name === 'practice' ? 'topics' : route.name === 'review' ? 'drill' : route.name;
+  const top = route.name === 'topic' || route.name === 'practice' || route.name === 'focus' ? 'topics' : route.name === 'review' ? 'drill' : route.name;
   $nav.querySelectorAll('a').forEach(a => a.classList.toggle('active', a.dataset.nav === top));
   $nav.style.display = $view.classList.contains('no-nav') ? 'none' : '';
 }

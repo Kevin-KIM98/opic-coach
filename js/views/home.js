@@ -53,6 +53,12 @@ export async function render(root) {
 
     ${dueCount ? raw(`<a class="card soft mt16 row" href="#/review"><div class="grow"><div class="h3">복습할 표현 ${dueCount}개</div><div class="small muted">간격 반복으로 외운 표현이 잊히기 전에 확인</div></div><span class="chev">›</span></a>`) : ''}
 
+    <a class="card accent mt16 row between" href="#/focus">
+      <div class="grow"><div class="xs" style="opacity:.75">목표 ${s.target} · 최단 코스</div>
+        <div class="h3 mt8">집중 학습 — 서베이 조합 + 핵심 주제</div>
+        <div class="xs mt8" style="opacity:.8">전체를 다 하지 말고, 목표에 필요한 것만</div></div>
+      <span class="chev" style="color:inherit;opacity:.7">›</span></a>
+
     <div class="section-title">빠른 시작</div>
     <div class="grid-2">
       <a class="card" href="#/mock/run/opic-mini"><div style="font-size:26px">⚡</div><div class="h3 mt8">15분 미니 모의고사</div><div class="xs muted">출퇴근길 실전 감각</div></a>
@@ -126,7 +132,7 @@ function levelCard(mock, target) {
   const cur = levelIndex(mock.level), tgt = levelIndex(target);
   const gap = tgt - cur;
   const msg = gap <= 0 ? `목표 ${target}에 도달했어요. 이제 안정적으로 유지하는 훈련을 하세요.` : gap === 1 ? `목표까지 한 단계. 발화량과 연결어를 늘리면 충분히 넘습니다.` : `목표까지 ${gap}단계. 매일 섀도잉 + 직접 답변을 꾸준히 하면 좁혀집니다.`;
-  return `<div class="card mt16"><div class="row between"><div><div class="xs muted">최근 추정 레벨</div><div class="h2" style="color:${levelColor(mock.level)}">${mock.level} <span class="small muted">/ 토스 ${mock.tos}</span></div></div><div class="ring">${ring(mock.score)}</div></div><p class="small ink2 mt8">${msg}</p></div>`;
+  return `<div class="card mt16"><div class="row between"><div><div class="xs muted">최근 추정 레벨</div><div class="h2" style="color:${levelColor(mock.level)}">${mock.level} <span class="small muted">${mock.score}점</span></div></div><div class="ring">${ring(mock.score)}</div></div><p class="small ink2 mt8">${msg}</p></div>`;
 }
 
 export function ring(pct, color = 'var(--accent)') {

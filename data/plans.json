@@ -702,12 +702,8 @@
      "weekday": 4,
      "tasks": [
       {
-       "type": "learn",
-       "topic": "toeic-speaking"
-      },
-      {
        "type": "mock",
-       "set": "tos-mini"
+       "set": "opic-mini"
       },
       {
        "type": "review"
@@ -1758,12 +1754,11 @@
      "weekday": 0,
      "tasks": [
       {
-       "type": "learn",
-       "topic": "toeic-speaking"
+       "type": "mock",
+       "set": "opic-mini"
       },
       {
-       "type": "mock",
-       "set": "tos-mini"
+       "type": "review"
       }
      ]
     },
@@ -3060,8 +3055,11 @@
      "weekday": 2,
      "tasks": [
       {
-       "type": "learn",
-       "topic": "toeic-speaking"
+       "type": "speak",
+       "topic": "unexpected"
+      },
+      {
+       "type": "review"
       }
      ]
     },
@@ -3072,7 +3070,11 @@
      "tasks": [
       {
        "type": "mock",
-       "set": "tos-mini"
+       "set": "opic-mini"
+      },
+      {
+       "type": "pattern",
+       "group": "opinion"
       }
      ]
     },

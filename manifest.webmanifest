@@ -1,7 +1,7 @@
 {
   "name": "OPIc Coach — 스피킹 트레이너",
   "short_name": "OPIc Coach",
-  "description": "OPIc IM3~AL, 토익스피킹 6레벨을 위한 모바일 스피킹 트레이너",
+  "description": "OPIc IM3~AL을 위한 모바일 스피킹 트레이너",
   "id": "/opic-coach/",
   "start_url": "./index.html#/home",
   "scope": "./",
