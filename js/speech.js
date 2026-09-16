@@ -43,7 +43,7 @@ export function speak(text, { rate, onBoundary } = {}) {
     u.rate = rate ?? store.settings.ttsRate ?? 0.95;
     u.pitch = 1;
     // 일부 기기에서 onend 가 오지 않는 경우를 대비한 안전 타이머
-    const watchdog = setTimeout(() => { currentUtter = null; resolve(true); }, (3000 + text.length * 130) / u.rate);
+    const watchdog = setTimeout(() => { currentUtter = null; resolve(true); }, (2000 + text.length * 100) / u.rate);
     u.onend = () => { clearTimeout(watchdog); currentUtter = null; resolve(true); };
     u.onerror = () => { clearTimeout(watchdog); currentUtter = null; resolve(false); };
     if (onBoundary) u.onboundary = onBoundary;

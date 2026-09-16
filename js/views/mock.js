@@ -130,12 +130,12 @@ async function runMock(root, setId, query) {
         // 자동 진행 (3초 후)
         setTimeout(() => { if (root.contains($next) && items[i] === it) { i++; step(); } }, 2500);
       };
-      const start = () => {
-        recUI = createRecorderUI(root.querySelector('#rec'), { maxSeconds: it.ans, prepSeconds: it.prep, autoStart: true, onDone });
-      };
-      // 질문 읽어주기 → 녹음 시작
-      if (isRead) start();
-      else speak(it.q.en).then(start);
+      // 녹음 위젯은 즉시 표시 (버튼으로 바로 시작 가능), 질문 음성이 끝나면 자동 시작
+      recUI = createRecorderUI(root.querySelector('#rec'), { maxSeconds: it.ans, prepSeconds: it.prep, autoStart: isRead, onDone });
+      if (!isRead) {
+        const ui = recUI;
+        speak(it.q.en).then(() => { if (ui === recUI && ui.state === 'idle') { if (it.prep) ui.startPrep(); else ui.start(); } });
+      }
       root.querySelector('#skip').addEventListener('click', () => { recUI?.destroy(); i++; step(); });
       $next.addEventListener('click', () => { if (done) { i++; step(); } });
     };
