@@ -57,6 +57,42 @@ export function isSpeaking() { return !!synth && synth.speaking; }
 // ---------- STT ----------
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9' ]+/g, ' ').replace(/\s+/g, ' ').trim();
 
+// 재시작해도 소용없는 오류 — 원인을 알려주고 멈춘다
+const FATAL_ERRORS = new Set(['not-allowed', 'service-not-allowed', 'audio-capture', 'language-not-supported']);
+
+/**
+ * 인식 실패 원인을 사람 말로 풀어 준다. (recorder-ui / 채점 피드백 공용)
+ * @param {string|null} err Recognizer.error
+ * @returns {{code:string, title:string, steps:string[]}}
+ */
+export function sttDiagnosis(err) {
+  if (!support.stt) return {
+    code: 'unsupported',
+    title: '이 브라우저는 음성 인식을 지원하지 않아요.',
+    steps: ['Android는 Chrome, iPhone은 Safari로 열어 보세요.', '녹음은 되니 직접 들어 보며 자가 평가하거나, 아래에 답변을 입력해 채점받을 수 있어요.'],
+  };
+  if (err === 'not-allowed' || err === 'service-not-allowed') return {
+    code: 'permission',
+    title: '마이크 권한이 거부돼 있어요.',
+    steps: ['주소창 왼쪽 자물쇠 → 권한 → 마이크 → 허용', '홈 화면 앱으로 설치했다면 폰 설정 → 앱 → 마이크 권한도 확인하세요.', '허용한 뒤 화면을 새로고침하세요.'],
+  };
+  if (err === 'audio-capture') return {
+    code: 'mic',
+    title: '마이크에서 소리를 가져오지 못했어요.',
+    steps: ['다른 앱(통화·녹음·화상회의)이 마이크를 쓰고 있지 않은지 확인하세요.', '이어폰을 뺐다 다시 꽂거나, 블루투스 마이크 대신 폰 마이크로 시도해 보세요.'],
+  };
+  if (err === 'network' || !navigator.onLine) return {
+    code: 'offline',
+    title: '음성 인식은 인터넷 연결이 필요해요.',
+    steps: ['Wi-Fi 또는 데이터가 켜져 있는지 확인하세요.', '연결 후 다시 녹음하면 됩니다. (듣기·표현 학습은 오프라인에서도 돼요)'],
+  };
+  return {
+    code: 'no-speech',
+    title: '말소리가 잡히지 않았어요.',
+    steps: ['마이크에 조금 더 가까이, 평소 대화 크기로 말해 보세요.', '조용한 곳에서 이어폰 마이크를 쓰면 인식률이 올라갑니다.', '계속 안 되면 설정에서 "답변 오디오 녹음"을 끄고 인식만 써 보세요.'],
+  };
+}
+
 // 안드로이드 Chrome 은 resultIndex 가 0 으로 고정된 채 누적 결과("hi" → "hi my" → "hi my name" …)를
 // 이벤트마다 다시 보내고 isFinal 도 반복 표시한다. 앞 항목이 뒤 항목의 접두어(또는 동일)이면 접어서 하나로 만든다.
 function collapse(items) {
@@ -73,8 +109,9 @@ function collapse(items) {
 }
 
 export class Recognizer {
-  constructor({ onUpdate } = {}) {
+  constructor({ onUpdate, onError } = {}) {
     this.onUpdate = onUpdate || (() => {});
+    this.onError = onError || (() => {});
     this.done = [];        // 이전 인식 세션(자동 재시작 전)들의 확정 결과 {text, t}
     this.session = [];     // 현재 세션의 확정 결과 — 이벤트마다 e.results 전체로 다시 계산
     this.sessionT = [];    // 현재 세션 결과별 최초 확정 시각
@@ -83,6 +120,9 @@ export class Recognizer {
     this.startedAt = 0;
     this.rec = null;
     this.error = null;
+    this.heard = false;    // 한 번이라도 결과가 들어왔는지 (실패 원인 판별용)
+    this.restarts = 0;     // 자동 재시작 횟수 — 폭주 방지
+    this.retryTimer = null;
   }
   get finals() { return collapse(this.done.concat(this.session)); }
   get transcript() {
@@ -91,14 +131,23 @@ export class Recognizer {
     return collapse(parts).map(f => f.text).join(' ').replace(/\s+/g, ' ').trim();
   }
   start() {
-    if (!SR) return false;
+    if (!SR) { this.error = 'unsupported'; return false; }
     this.active = true;
     this.startedAt = Date.now();
+    this.restarts = 0;
     this._spawn();
     return true;
   }
+  _fail(code) {
+    this.error = code;
+    this.active = false;
+    clearTimeout(this.retryTimer);
+    try { this.rec?.abort?.(); } catch { /* ignore */ }
+    this.onError(code);
+  }
   _spawn() {
     const rec = new SR();
+    const spawnedAt = Date.now();
     rec.lang = 'en-US';
     rec.continuous = true;
     rec.interimResults = true;
@@ -109,6 +158,9 @@ export class Recognizer {
     this.sessionT = [];
     rec.onresult = (e) => {
       // 증분(resultIndex) 대신 e.results 전체로 매번 재구성 → 같은 결과가 두 번 쌓이지 않는다
+      this.heard = true;
+      this.restarts = 0;   // 소리가 잡히면 재시작 카운터를 되돌린다
+      if (this.error && this.error !== 'not-allowed' && this.error !== 'service-not-allowed') this.error = null;
       const finals = [];
       let interim = '';
       for (let i = 0; i < e.results.length; i++) {
@@ -125,24 +177,38 @@ export class Recognizer {
       this.onUpdate(this.transcript);
     };
     rec.onerror = (e) => {
-      // no-speech / aborted 는 재시작, 권한 거부는 종료
-      if (e.error === 'not-allowed' || e.error === 'service-not-allowed') { this.error = e.error; this.active = false; }
+      // 권한·마이크 오류는 재시작해도 같은 결과 → 즉시 원인을 알리고 멈춘다.
+      // no-speech / aborted 는 안드로이드에서 정상적으로 자주 나오므로 재시작에 맡긴다.
+      if (FATAL_ERRORS.has(e.error)) return this._fail(e.error);
+      // network 는 한 번 더 시도해 보고 계속 실패하면 오프라인으로 본다
+      if (e.error === 'network') this.error = 'network';
+      else if (e.error && e.error !== 'no-speech' && e.error !== 'aborted') this.error = e.error;
     };
     rec.onend = () => {
-      // 안드로이드는 침묵 시 자동 종료되므로 활성 상태면 재시작
-      if (this.active) { try { this._spawn(); } catch { /* ignore */ } }
+      if (!this.active) return;
+      // 안드로이드는 침묵 시 자동 종료되므로 활성 상태면 재시작한다.
+      // 다만 시작하자마자 끝나는 상태가 이어지면(마이크 점유·서비스 미설치) 폭주하므로 횟수를 제한한다.
+      if (Date.now() - spawnedAt < 400) this.restarts++;
+      if (this.restarts >= 8) return this._fail(this.error || (navigator.onLine ? 'audio-capture' : 'network'));
+      const delay = Math.min(1000, this.restarts * 150);
+      clearTimeout(this.retryTimer);
+      this.retryTimer = setTimeout(() => { if (this.active) { try { this._spawn(); } catch { /* ignore */ } } }, delay);
     };
     this.rec = rec;
     try { rec.start(); } catch { /* already started */ }
   }
   stop() {
     this.active = false;
+    clearTimeout(this.retryTimer);
     try { this.rec?.stop(); } catch { /* ignore */ }
     if (this.interim) { this.session.push({ text: this.interim, t: (Date.now() - this.startedAt) / 1000 }); this.interim = ''; }
     this.done = this.finals;
     this.session = [];
     this.sessionT = [];
-    return { transcript: this.transcript, segments: this.done.slice() };
+    const transcript = this.transcript;
+    // 아무것도 못 알아들었는데 뚜렷한 오류도 없으면 "말소리 없음" 으로 본다
+    if (!transcript && !this.error) this.error = navigator.onLine ? 'no-speech' : 'network';
+    return { transcript, segments: this.done.slice(), error: transcript ? null : this.error };
   }
 }
 

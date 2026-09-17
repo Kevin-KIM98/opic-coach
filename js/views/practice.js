@@ -1,10 +1,10 @@
 import { html, raw, splitSentences, toast, levelColor } from '../util.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
-import { speak, stopSpeaking } from '../speech.js';
+import { speak, stopSpeaking, sttDiagnosis } from '../speech.js';
 import { createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap, repeatLoop, toggleLoop, loopLabel } from '../autoplay.js';
 import { header } from '../app.js';
-import { createRecorderUI } from '../recorder-ui.js';
+import { createRecorderUI, sttHelpHtml } from '../recorder-ui.js';
 import { analyze } from '../scoring.js';
 import { bindPlay, flashcards, quickCheck } from './topic.js';
 import { ring } from './home.js';
@@ -123,15 +123,51 @@ function renderSpeak(body, topic, q, exprBank) {
     <div id="result" class="mt12"></div>
     <div class="card soft mt12 small ink2">💡 <b>답변 뼈대</b>: ${raw(skeleton(q.type))}</div>`;
   const maxSeconds = /roleplay-ask/.test(q.type) ? 60 : 120;
+  const $result = body.querySelector('#result');
+
+  // 전사(말한 것 또는 직접 입력한 것)를 채점하고 기록한다
+  const score = (transcript, res, manual = false) => {
+    const sttNote = manual
+      ? '영어 단어를 찾지 못했어요. 답변을 영어로 입력해 주세요.'
+      : sttDiagnosis(res.sttError).title;
+    const result = analyze(transcript, res.seconds, { type: q.type, expressions: exprBank, segments: res.segments, sttNote });
+    // 채점이 성립한 답변만 기록에 남긴다 (0점 기록이 추이 그래프를 망가뜨리지 않게)
+    if (!result.failed) store.addPractice({ qid: q.id, topicId: topic.id, type: q.type, score: result.score, level: result.level, words: result.metrics.words, seconds: result.metrics.seconds, transcript });
+    $result.innerHTML = resultCard(result, q);
+    $result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   recUI = createRecorderUI(body.querySelector('#rec'), {
     maxSeconds,
+    onStart: () => { $result.innerHTML = ''; },   // 다시 녹음하면 지난 결과·안내를 지운다
     onDone: (res) => {
-      const result = analyze(res.transcript, res.seconds, { type: q.type, expressions: exprBank, segments: res.segments });
-      store.addPractice({ qid: q.id, topicId: topic.id, type: q.type, score: result.score, level: result.level, words: result.metrics.words, seconds: result.metrics.seconds, transcript: res.transcript });
-      body.querySelector('#result').innerHTML = resultCard(result, q);
-      body.querySelector('#result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // 인식 실패는 "0점 NL/NM" 이 아니다 — 기록에 남기지 않고 원인과 대안을 보여 준다
+      if (!res.transcript.trim()) { showSttFailure($result, res, (text) => score(text, res, true)); return; }
+      score(res.transcript, res);
     },
   });
+}
+
+// 인식 실패 화면: 원인 · 해결 단계 · 직접 입력 채점
+function showSttFailure($result, res, onManual) {
+  const micConflict = res.recorded && res.sttError === 'no-speech';
+  $result.innerHTML = `
+    <div class="card">
+      <div class="h3 mb8">채점하지 못했어요</div>
+      ${sttHelpHtml(res.sttError)}
+      ${micConflict ? '<div class="fb warn mt8"><span class="k">⚠️</span><span>녹음 파일은 만들어졌는데 인식만 실패했어요. 안드로이드에서는 녹음이 마이크를 잡고 있으면 인식이 막히기도 합니다. <a href="#/settings">설정</a>에서 <b>답변 오디오 녹음</b>을 끄고 다시 시도해 보세요.</span></div>' : ''}
+      <div class="divider"></div>
+      <div class="small ink2 mb8">말한 내용을 기억한다면 <b>직접 입력해서 채점</b>받을 수 있어요. (말한 시간 ${Math.round(res.seconds)}초 기준으로 속도도 계산합니다)</div>
+      <textarea class="textarea" data-manual placeholder="I live in a small apartment in Seoul. It has two rooms..."></textarea>
+      <button class="btn primary block mt8" data-score>입력한 답변으로 채점</button>
+    </div>`;
+  const $ta = $result.querySelector('[data-manual]');
+  $result.querySelector('[data-score]').addEventListener('click', () => {
+    const text = $ta.value.trim();
+    if (!text) { toast('답변을 입력하세요'); return; }
+    onManual(text);
+  });
+  $result.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 export function skeleton(type) {
@@ -149,6 +185,11 @@ export function skeleton(type) {
 
 export function resultCard(r, q) {
   const parts = [['발화량', r.parts.volume, 30], ['구성·연결', r.parts.structure, 25], ['문법·시제', r.parts.grammar, 15], ['어휘', r.parts.vocab, 15], ['유창성', r.parts.fluency, 15]];
+  // 인식 실패는 등급·막대를 그리지 않는다 (0점인데 항목만 차 있는 모순 방지)
+  if (r.failed) return `<div class="card">
+    <div class="score-hero"><div class="lvl" style="color:var(--muted)">—</div><div class="num">인식된 답변이 없어 채점하지 못했어요</div></div>
+    ${r.feedback.map(f => `<div class="fb ${f.kind}"><span class="k">${{ good: '✅', bad: '❌', warn: '⚠️', tip: '💡' }[f.kind]}</span><span>${f.text}</span></div>`).join('')}
+  </div>`;
   return `<div class="card">
     <div class="score-hero"><div class="lvl" style="color:${levelColor(r.level)}">${r.level}</div><div class="num">추정 OPIc 등급 · ${r.score}점</div></div>
     <div class="metrics"><div class="metric"><b>${r.metrics.words}</b><span>단어</span></div><div class="metric"><b>${r.metrics.wpm}</b><span>분당 단어</span></div><div class="metric"><b>${r.metrics.connectors}</b><span>연결어</span></div></div>

@@ -21,3 +21,5 @@ jobs:
         run: python tools/validate.py
       - name: Test exam date logic
         run: node tools/test-exam.mjs
+      - name: Test scoring logic
+        run: node tools/test-scoring.mjs
