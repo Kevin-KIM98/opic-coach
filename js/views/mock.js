@@ -1,9 +1,9 @@
 import { html, raw, shuffle, pick, fmtTime, levelColor, sheet } from '../util.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
-import { speak, stopSpeaking } from '../speech.js';
+import { speak, stopSpeaking, sttDiagnosis } from '../speech.js';
 import { header } from '../app.js';
-import { createRecorderUI } from '../recorder-ui.js';
+import { createRecorderUI, sttHelpHtml } from '../recorder-ui.js';
 import { keepAwake } from '../wake-lock.js';
 import { analyze, aggregateMock, LEVELS } from '../scoring.js';
 import { resultCard, skeleton } from './practice.js';
@@ -112,6 +112,7 @@ async function runMock(root, setId, query) {
         </div>
         <div class="card mt12"><div id="rec"></div></div>
         <div class="card soft mt12 small ink2">💡 ${skeleton(it.type)}</div>
+        <div class="mt12 hidden" id="sttwarn"></div>
         <div class="btn-row mt12"><button class="btn" id="skip">건너뛰기</button><button class="btn dark" id="next" disabled>다음 문항 ›</button></div>`;
       root.querySelector('#qko')?.addEventListener('click', e => { e.currentTarget.style.filter = ''; });
       root.querySelector('#quit').addEventListener('click', () => { if (confirm('모의고사를 중단할까요? 지금까지 답한 문항만 채점됩니다.')) finish(items.slice(0, i)); });
@@ -120,14 +121,25 @@ async function runMock(root, setId, query) {
       const $next = root.querySelector('#next');
       let done = false;
       const onDone = (res) => {
-        const result = analyze(res.transcript, res.seconds, { type: it.type, expressions: bank, segments: res.segments });
+        const result = analyze(res.transcript, res.seconds, { type: it.type, expressions: bank, segments: res.segments, sttNote: sttDiagnosis(res.sttError).title });
         it.result = result; it.transcript = res.transcript; it.seconds = Math.round(res.seconds);
         done = true; $next.disabled = false;
+        // 인식 실패면 자동으로 넘기지 않는다 — 원인을 보여 주고 다시 답할 기회를 준다
+        if (result.failed) {
+          const $w = root.querySelector('#sttwarn');
+          $w.innerHTML = `${sttHelpHtml(res.sttError)}<div class="xs muted mt8">🎙️ 를 다시 눌러 답변하거나, 다음 문항으로 넘어가세요. (이 문항은 미응답으로 처리됩니다)</div>`;
+          $w.classList.remove('hidden');
+          return;
+        }
+        root.querySelector('#sttwarn')?.classList.add('hidden');
         // 자동 진행 (3초 후)
         setTimeout(() => { if (root.contains($next) && items[i] === it) { i++; step(); } }, 2500);
       };
       // 녹음 위젯은 즉시 표시 (버튼으로 바로 시작 가능), 질문 음성이 끝나면 자동 시작
-      recUI = createRecorderUI(root.querySelector('#rec'), { maxSeconds: it.ans, prepSeconds: it.prep, onDone });
+      recUI = createRecorderUI(root.querySelector('#rec'), {
+        maxSeconds: it.ans, prepSeconds: it.prep, onDone,
+        onStart: () => root.querySelector('#sttwarn')?.classList.add('hidden'),
+      });
       const ui = recUI;
       speak(it.q.en).then(() => { if (ui === recUI && ui.state === 'idle') { if (it.prep) ui.startPrep(); else ui.start(); } });
       root.querySelector('#skip').addEventListener('click', () => { recUI?.destroy(); i++; step(); });
@@ -142,7 +154,8 @@ async function runMock(root, setId, query) {
     const rec = store.addMock({
       set: set.id, title: set.title, kind: set.kind, score: agg.score, level: agg.level,
       durationSec: Math.round((Date.now() - startedAt) / 1000),
-      items: items.map(it => ({ id: it.q?.id || it.id, topic: it.topic.id, topicTitle: it.topic.title, type: it.type, question: it.q?.en || it.text, score: it.result?.score ?? null, level: it.result?.level ?? null, words: it.result?.metrics?.words ?? 0, seconds: it.seconds || 0, transcript: it.transcript || '', feedback: it.result?.feedback || [] })),
+      // 인식 실패 문항은 점수·등급 없이 "미응답" 으로 남기고, 원인 피드백만 보관한다
+      items: items.map(it => ({ id: it.q?.id || it.id, topic: it.topic.id, topicTitle: it.topic.title, type: it.type, question: it.q?.en || it.text, score: it.result && !it.result.failed ? it.result.score : null, level: it.result && !it.result.failed ? it.result.level : null, words: it.result?.metrics?.words ?? 0, seconds: it.seconds || 0, transcript: it.transcript || '', failed: !!it.result?.failed, feedback: it.result?.feedback || [] })),
     });
     releaseWake?.(); releaseWake = null;
     location.hash = `#/mock/result/${rec.id}`;
@@ -156,6 +169,7 @@ async function showResult(root, id) {
   const m = store.state.mocks.find(x => x.id === id);
   if (!m) { root.innerHTML = '<div class="empty">결과를 찾을 수 없습니다.</div>'; return; }
   const answered = m.items.filter(it => it.score != null);
+  const failedCount = m.items.filter(it => it.failed).length;
   const weak = answered.filter(it => it.level && it.level !== '-').sort((a, b) => a.score - b.score).slice(0, 3);
   const target = store.settings.target;
   const byType = {};
@@ -165,7 +179,8 @@ async function showResult(root, id) {
     <div class="card"><div class="score-hero"><div class="xs muted">${m.title} · ${new Date(m.date).toLocaleString('ko-KR')}</div>
       <div class="lvl" style="color:${levelColor(m.level)}">${m.level}</div><div class="num">추정 OPIc 등급 · ${m.score}점 · 목표 ${target}</div></div>
       <div class="row" style="justify-content:center;gap:16px"><div class="ring">${raw(ring(m.score, levelColor(m.level)))}</div></div>
-      <p class="small ink2 center mt12">${raw(verdict(m, target))}</p></div>
+      <p class="small ink2 center mt12">${raw(verdict(m, target))}</p>
+      ${failedCount ? raw(`<div class="fb warn mt12"><span class="k">⚠️</span><span>${failedCount}개 문항은 음성이 인식되지 않아 채점에서 제외했어요. 점수는 채점된 ${answered.length}개 문항 기준입니다.</span></div>`) : ''}</div>
 
     <div class="section-title">유형별 평균</div>
     <div class="metrics">${raw(Object.entries(byType).map(([k, arr]) => `<div class="metric"><b>${Math.round(arr.reduce((a, b) => a + b, 0) / arr.length)}</b><span>${TYPE_LABEL[k] || k}</span></div>`).join(''))}</div>
@@ -173,8 +188,8 @@ async function showResult(root, id) {
     ${weak.length ? raw(`<div class="section-title">우선 보완할 문항</div><div class="list">${weak.map(it => `<a class="list-row" href="#/practice/${it.topic}/${it.id}?mode=speak"><div class="emoji" style="font-weight:800;font-size:14px;color:${levelColor(it.level)}">${it.level}</div><div class="grow"><div class="t">${it.question}</div><div class="s">${it.topicTitle} · ${it.words}단어 · ${it.score}점</div></div><span class="chev">›</span></a>`).join('')}</div>`) : ''}
 
     <div class="section-title">문항별 상세</div>
-    <div class="list">${raw(m.items.map((it, i) => `<div class="card" style="padding:14px"><div class="row between"><div class="grow"><div class="xs muted">${i + 1}. ${it.topicTitle} · ${TYPE_LABEL[it.type] || it.type}</div><div class="small" style="font-weight:700">${it.question}</div></div><div style="text-align:right"><b style="color:${levelColor(it.level)}">${it.level ?? '-'}</b><div class="xs muted">${it.score ?? '—'}점</div></div></div>
-      ${it.transcript ? `<details class="mt8"><summary class="xs muted">전사 · ${it.words}단어 · ${fmtTime(it.seconds)}</summary><p class="small ink2 mt8">${it.transcript}</p>${it.feedback.map(f => `<div class="fb ${f.kind} mt8"><span class="k">${{ good: '✅', bad: '❌', warn: '⚠️', tip: '💡' }[f.kind]}</span><span>${f.text}</span></div>`).join('')}</details>` : '<div class="xs muted mt8">답변 없음</div>'}</div>`).join(''))}</div>
+    <div class="list">${raw(m.items.map((it, i) => `<div class="card" style="padding:14px"><div class="row between"><div class="grow"><div class="xs muted">${i + 1}. ${it.topicTitle} · ${TYPE_LABEL[it.type] || it.type}</div><div class="small" style="font-weight:700">${it.question}</div></div><div style="text-align:right"><b style="color:${levelColor(it.level)}">${it.level ?? '-'}</b><div class="xs muted">${it.score == null ? (it.failed ? '인식 실패' : '미응답') : it.score + '점'}</div></div></div>
+      ${it.transcript ? `<details class="mt8"><summary class="xs muted">전사 · ${it.words}단어 · ${fmtTime(it.seconds)}</summary><p class="small ink2 mt8">${it.transcript}</p>${it.feedback.map(f => `<div class="fb ${f.kind} mt8"><span class="k">${{ good: '✅', bad: '❌', warn: '⚠️', tip: '💡' }[f.kind]}</span><span>${f.text}</span></div>`).join('')}</details>` : it.failed ? `<div class="fb bad mt8"><span class="k">❌</span><span>${it.feedback[0]?.text || '음성이 인식되지 않았어요.'}</span></div>` : '<div class="xs muted mt8">답변 없음</div>'}</div>`).join(''))}</div>
     <div class="btn-row mt16"><a class="btn" href="#/mock">목록</a><a class="btn primary" href="#/mock/run/${m.set}">다시 도전</a></div>`;
 }
 

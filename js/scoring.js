@@ -52,6 +52,17 @@ export function toLevel(score) {
 }
 export function levelIndex(level) { return LEVELS.findIndex(l => l.level === level); }
 
+// 인식 실패 결과: 모든 항목 0점 · 등급 표시 없음 · 원인 안내만.
+// ctx.sttNote 로 화면에서 진단한 원인 한 줄을 받는다 (speech.js 의 sttDiagnosis().title).
+function failedResult(seconds, ctx = {}) {
+  return {
+    score: 0, level: '-', failed: true,
+    metrics: { words: 0, wpm: 0, connectors: 0, pastRatio: 0, ttr: 0, fillers: 0, longPauses: 0, questionCount: 0, advUsed: [], exprHits: 0, seconds: Math.round(seconds || 0) },
+    parts: { volume: 0, structure: 0, grammar: 0, vocab: 0, fluency: 0, bonus: 0 },
+    feedback: [{ kind: 'bad', text: ctx.sttNote || '음성이 인식되지 않아 채점하지 못했어요. 마이크 권한과 인터넷 연결(음성 인식은 온라인 필요)을 확인하세요.' }],
+  };
+}
+
 /**
  * @param {string} transcript
  * @param {number} seconds 발화 시간
@@ -62,6 +73,11 @@ export function analyze(transcript, seconds, ctx = {}) {
   const text = norm(transcript);
   const tokens = text ? text.split(' ') : [];
   const words = tokens.length;
+
+  // 인식된 말이 하나도 없으면 채점 자체가 성립하지 않는다.
+  // 기본 점수를 준 항목(문법·어휘·유창성)만 막대가 차 있어 "0점인데 7/15" 처럼 보이던 문제를 막는다.
+  if (words === 0) return failedResult(seconds, ctx);
+
   const minutes = Math.max(seconds || 1, 5) / 60;
   const wpm = words / minutes;
 
@@ -117,19 +133,21 @@ export function analyze(transcript, seconds, ctx = {}) {
   let structure = clamp(connectors * 2.5, 0, 14) + clamp(markerHits.length * 2.2, 0, 11);
   if (type === 'roleplay-ask') structure = clamp(questionCount * 4, 0, 16) + clamp(markerHits.length * 1.5, 0, 9);
 
+  // 짧은 답변일수록 기본 점수를 깎는다 (25단어 미만은 비례해서 축소)
+  const cover = clamp(words / 25, 0, 1);
+
   // 3. 문법·시제 (15)
   let grammar;
   if (/experience/.test(type)) grammar = clamp(pastRatio * 22, 0, 12) + (advUsed.length ? 3 : 0);
   else if (type === 'comparison') grammar = 7 + (count(text, 'used to') || count(text, 'than') || count(text, 'compared') ? 5 : 0) + (advUsed.length ? 3 : 0);
   else grammar = 7 + clamp(advUsed.length * 2, 0, 8);
-  if (words < 25) grammar *= 0.5;
+  grammar *= cover;
 
   // 4. 어휘 (15)
-  let vocab = clamp(ramp(ttr, 2.5, 7.5, 2, 11), 0, 11) + clamp(longWords * 25, 0, 4);
-  if (words < 25) vocab *= 0.5;
+  let vocab = (clamp(ramp(ttr, 2.5, 7.5, 2, 11), 0, 11) + clamp(longWords * 25, 0, 4)) * cover;
 
   // 5. 유창성 (15)
-  let fluency = ramp(wpm, 40, 110, 4, 12) + 3;
+  let fluency = (ramp(wpm, 40, 110, 4, 12) + 3) * cover;
   fluency -= clamp(fillers * 0.7, 0, 5);
   fluency -= clamp(longPauses * 2, 0, 6);
   fluency = clamp(fluency, 0, 15);
@@ -137,14 +155,12 @@ export function analyze(transcript, seconds, ctx = {}) {
   // 보너스: 학습 표현 사용
   const bonus = clamp(exprHits.length * 1.5, 0, 5);
 
-  let score = Math.round(clamp(volume + structure + grammar + vocab + fluency + bonus, 0, 100));
-  if (words === 0) score = 0;
+  const score = Math.round(clamp(volume + structure + grammar + vocab + fluency + bonus, 0, 100));
   const level = toLevel(score);
 
   // ---------- 피드백 ----------
   const fb = [];
-  if (words === 0) fb.push({ kind: 'bad', text: '음성이 인식되지 않았습니다. 마이크 권한과 인터넷 연결(음성 인식은 온라인 필요)을 확인하세요.' });
-  if (words > 0 && words < target * 0.5) fb.push({ kind: 'bad', text: `발화량이 부족해요 (${words}단어). 목표는 ${target}단어 이상. '이유 + 예시 + 느낌' 한 세트를 더 붙이세요.` });
+  if (words < target * 0.5) fb.push({ kind: 'bad', text: `발화량이 부족해요 (${words}단어). 목표는 ${target}단어 이상. '이유 + 예시 + 느낌' 한 세트를 더 붙이세요.` });
   else if (words >= target) fb.push({ kind: 'good', text: `발화량 충분 (${words}단어). 이제 디테일의 질을 올릴 차례예요.` });
   if (wpm > 0 && wpm < 70 && words > 15) fb.push({ kind: 'warn', text: `말하기 속도가 느려요 (${Math.round(wpm)} wpm). 섀도잉으로 문장을 통째로 입에 붙이면 빨라집니다. 목표 100 wpm.` });
   if (connectors < 3) fb.push({ kind: 'warn', text: '연결어가 적어요. because / so / and then / after that / actually 를 문장 사이에 넣어 보세요.' });
@@ -161,7 +177,7 @@ export function analyze(transcript, seconds, ctx = {}) {
   if (ttr < 3.2 && words > 40) fb.push({ kind: 'tip', text: '같은 단어가 반복돼요. good → great / amazing / relaxing, like → enjoy / love 로 바꿔 보세요.' });
 
   return {
-    score, level: level.level,
+    score, level: level.level, failed: false,
     metrics: { words, wpm: Math.round(wpm), connectors, pastRatio: +pastRatio.toFixed(2), ttr: +ttr.toFixed(2), fillers, longPauses, questionCount, advUsed, exprHits: exprHits.length, seconds: Math.round(seconds || 0) },
     parts: { volume: Math.round(volume), structure: Math.round(structure), grammar: Math.round(grammar), vocab: Math.round(vocab), fluency: Math.round(fluency), bonus: Math.round(bonus) },
     feedback: fb,
@@ -192,7 +208,8 @@ export function compareToText(transcript, text) {
 
 // 모의고사 전체 점수 → 등급 (문항 평균, 롤플레이/고난도 가중)
 export function aggregateMock(items) {
-  const scored = items.filter(i => i.result);
+  // 인식 실패 문항은 "0점" 이 아니라 "미응답" — 평균을 끌어내리지 않는다
+  const scored = items.filter(i => i.result && !i.result.failed);
   if (!scored.length) return { score: 0, level: 'NL/NM' };
   let sum = 0, w = 0;
   for (const it of scored) {

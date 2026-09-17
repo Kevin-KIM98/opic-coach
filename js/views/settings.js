@@ -1,7 +1,7 @@
 import { html, raw, toast, todayKey, daysBetween } from '../util.js';
 import { store } from '../store.js';
 import { data } from '../data.js';
-import { englishVoices, speak, support, requestMic } from '../speech.js';
+import { englishVoices, speak, support, requestMic, Recognizer, sttDiagnosis } from '../speech.js';
 import { header, promptInstall } from '../app.js';
 import { CONFIG, githubUrl, isEditor, setEditor, contentBranch } from '../config.js';
 
@@ -34,8 +34,12 @@ export async function render(root) {
         <div class="field"><label>TTS 음성 (${voices.length}개 감지)</label><select id="voice"><option value="">자동 선택</option>${raw(voices.map(v => `<option value="${v.name}" ${s.ttsVoice === v.name ? 'selected' : ''}>${v.name} (${v.lang})</option>`).join(''))}</select>
           <div class="xs muted">영어 음성이 없으면 폰 설정 → 언어 및 입력 → TTS에서 영어(미국) 음성을 설치하세요.</div></div>
         <div class="field"><label>재생 속도 <span id="rateval">${s.ttsRate}</span>x</label><input type="range" id="rate" min="0.6" max="1.3" step="0.05" value="${s.ttsRate}"></div>
+        <div class="field"><label>답변 오디오 녹음</label><div class="seg" id="recaudio">${raw([[1, '켬'], [0, '끔']].map(([v, t]) => `<button data-v="${v}" class="${(s.recordAudio !== false) === !!v ? 'active' : ''}">${t}</button>`).join(''))}</div>
+          <div class="xs muted">켜면 답변을 다시 들어볼 수 있습니다. 안드로이드에서 <b>음성 인식이 계속 실패</b>하면 녹음이 마이크를 잡고 있는 경우가 있으니 꺼 보세요.</div></div>
         <div class="btn-row"><button class="btn" id="test">🔊 테스트</button><button class="btn" id="mic">🎙️ 마이크 권한</button></div>
-        <div class="xs muted">지원: TTS ${support.tts ? '✅' : '❌'} · 음성 인식 ${support.stt ? '✅' : '❌ (Android Chrome / iOS Safari 권장)'} · 녹음 ${support.recorder ? '✅' : '❌'}</div>
+        <button class="btn block" id="sttcheck">🩺 음성 인식 점검 (5초)</button>
+        <div class="xs mt8" id="sttresult"></div>
+        <div class="xs muted">지원: TTS ${support.tts ? '✅' : '❌'} · 음성 인식 ${support.stt ? '✅' : '❌ (Android Chrome / iOS Safari 권장)'} · 녹음 ${support.recorder ? '✅' : '❌'} · 인터넷 ${navigator.onLine ? '✅' : '❌ (음성 인식은 온라인 필요)'}</div>
       </div>
 
       <div class="section-title">화면</div>
@@ -73,6 +77,8 @@ export async function render(root) {
     root.querySelector('#rate').addEventListener('input', e => { store.setSetting('ttsRate', Number(e.target.value)); root.querySelector('#rateval').textContent = e.target.value; });
     root.querySelector('#test').addEventListener('click', () => speak("Hi, I'm your OPIc coach. Let's start the interview now. Tell me a little about yourself."));
     root.querySelector('#mic').addEventListener('click', async () => toast(await requestMic() ? '마이크 사용 가능 ✅' : '마이크 권한이 거부됐어요. 브라우저 설정에서 허용하세요.'));
+    root.querySelectorAll('#recaudio button').forEach(b => b.addEventListener('click', () => { store.setSetting('recordAudio', b.dataset.v === '1'); draw(); }));
+    root.querySelector('#sttcheck').addEventListener('click', e => runSttCheck(e.currentTarget, root.querySelector('#sttresult')));
     root.querySelectorAll('#theme button').forEach(b => b.addEventListener('click', () => { store.setSetting('theme', b.dataset.v); if (b.dataset.v) document.documentElement.dataset.theme = b.dataset.v; else delete document.documentElement.dataset.theme; draw(); }));
     root.querySelector('#install').addEventListener('click', promptInstall);
     root.querySelector('#export').addEventListener('click', () => {
@@ -87,6 +93,22 @@ export async function render(root) {
     bindAbout(root, draw);
   };
   draw();
+}
+
+// 5초 동안 실제로 인식을 돌려 보고 되는지/안 되면 왜 안 되는지 알려 준다
+async function runSttCheck(btn, $out) {
+  if (!support.stt) { $out.innerHTML = help(sttDiagnosis(null)); return; }
+  btn.disabled = true; btn.textContent = '듣는 중… 영어로 아무 말이나 해보세요';
+  const rec = new Recognizer({ onUpdate: t => { $out.textContent = t; } });
+  rec.start();
+  await new Promise(r => setTimeout(r, 5000));
+  const { transcript, error } = rec.stop();
+  btn.disabled = false; btn.textContent = '🩺 음성 인식 점검 (5초)';
+  if (transcript) $out.innerHTML = `<div class="fb good"><span class="k">✅</span><span>정상 작동: "<b>${transcript}</b>"</span></div>`;
+  else $out.innerHTML = help(sttDiagnosis(error));
+}
+function help(d) {
+  return `<div class="fb bad"><span class="k">❌</span><span><b>${d.title}</b><ul class="xs" style="padding-left:16px;margin:6px 0 0">${d.steps.map(x => `<li>${x}</li>`).join('')}</ul></span></div>`;
 }
 
 function examHint(s) {
