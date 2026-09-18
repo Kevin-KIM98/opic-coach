@@ -36,10 +36,15 @@ export async function render(root, route) {
   bindPlay(root);
 
   const body = root.querySelector('#pbody');
+  // 레벨(IM3·IH·AL)은 몇 번이든 바꿀 수 있어야 한다 — 바꿀 때마다 같은 콜백으로 다시 그린다
+  const showModel = () => {
+    stopSpeaking(); shadowPlayer?.stop(); shadowPlayer = null;
+    level = renderModel(body, q, level, (lv) => { if (lv !== level) { level = lv; showModel(); } });
+  };
   const show = (m) => {
     root.querySelectorAll('#ptabs button').forEach(b => b.classList.toggle('active', b.dataset.m === m));
     stopSpeaking(); recUI?.destroy(); recUI = null; shadowPlayer?.stop(); shadowPlayer = null;
-    if (m === 'model') renderModel(body, q, level, (lv) => { level = lv; renderModel(body, q, level, arguments[2]); });
+    if (m === 'model') { showModel(); store.logActivity(1); }
     else renderSpeak(body, topic, q, exprBank);
   };
   root.querySelectorAll('#ptabs button').forEach(b => b.addEventListener('click', () => show(b.dataset.m)));
@@ -48,6 +53,7 @@ export async function render(root, route) {
 }
 
 // ---------- 모범답안 섀도잉 ----------
+// 선택된 레벨로 섀도잉 화면을 그리고, 실제로 사용한 레벨을 돌려준다
 function renderModel(body, q, level, setLevel) {
   const answers = q.answers || {};
   const levels = ['IM3', 'IH', 'AL'].filter(l => answers[l]);
@@ -72,7 +78,7 @@ function renderModel(body, q, level, setLevel) {
     </div>
     <p class="xs muted center mt12">모범답안은 예시일 뿐입니다. 자신의 실제 정보로 바꿔 말하는 연습을 하세요.</p>`;
 
-  body.querySelectorAll('[data-lv]').forEach(b => b.addEventListener('click', () => setLevel(b.dataset.lv, setLevel)));
+  body.querySelectorAll('[data-lv]').forEach(b => b.addEventListener('click', () => setLevel(b.dataset.lv)));
   const $sents = body.querySelectorAll('.sent');
   let cur = 0;
   const setCur = (i) => { cur = (i + sents.length) % sents.length; body.querySelector('[data-cur]').textContent = `${cur + 1} / ${sents.length}`; body.querySelector('[data-cur-text]').textContent = sents[cur]; body.querySelector('[data-result]').textContent = ''; $sents.forEach((s, k) => s.classList.toggle('on', k === cur)); };
@@ -113,7 +119,7 @@ function renderModel(body, q, level, setLevel) {
   body.querySelector('[data-repeat]').addEventListener('click', (e) => { cycleRepeat(); e.currentTarget.textContent = `반복 ${repeatCount()}회`; });
   body.querySelector('[data-gap]').addEventListener('click', (e) => { cycleGap(); e.currentTarget.textContent = gapLabel(); });
   shadowPlayer = player;
-  store.logActivity(1);
+  return level;
 }
 
 // ---------- 직접 답변 채점 ----------

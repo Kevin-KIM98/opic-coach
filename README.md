@@ -192,6 +192,7 @@ UI 테스트(자동 재생·화면 유지·가로 화면)는 `tools/test-ui.mjs`
 ### 브라우저 테스트
 
 `tools/test-ui.mjs`(자동 재생·화면 유지·가로 화면), `tools/test-focus.mjs`(집중 학습),
-`tools/test-mock.mjs`(모의고사 전 과정), `tools/test-stt-fail.mjs`(음성 인식 실패 처리).
+`tools/test-mock.mjs`(모의고사 전 과정), `tools/test-stt-fail.mjs`(음성 인식 실패 처리),
+`tools/test-level.mjs`(모범답안 레벨 IM3·IH·AL 전환).
 저장소를 의존성 없이 유지하려고 CI 에는 넣지 않았으니, 각 파일 맨 위 안내를 따라 실행하세요.
 채점 로직만 보는 `tools/test-scoring.mjs` 는 브라우저 없이 `node tools/test-scoring.mjs` 로 바로 돌아갑니다.
