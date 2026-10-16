@@ -5,29 +5,103 @@
   "emoji": "🙋",
   "category": "survey",
   "priority": 0,
-  "intro": "OPIc 첫 질문은 거의 항상 'Tell me about yourself.' 자기소개입니다. 채점 비중은 낮지만 첫인상을 만들고, 여기서 말한 정보(경영학과 대학생, 서울에서 가족과 거주, 친구·영화 좋아함)가 뒤에 나올 집·동네·영화·여행 답변의 밑바탕이 됩니다. 모범 영상처럼 짧고 쉬운 문장 6~7개로 40초 안에 끝내는 것이 목표입니다.",
+  "intro": "OPIc 첫 질문은 거의 항상 'Tell me about yourself.' 자기소개입니다. 채점 비중은 낮지만 첫인상을 만들고, 여기서 말한 정보(서울 IT 회사 마케팅팀 직장인, 회사 근처 아파트에서 혼자 거주, 친구·영화 좋아함)가 뒤에 나올 집·동네·영화·여행 답변의 밑바탕이 됩니다. 모범 영상처럼 짧고 쉬운 문장 7~8개로 40초 안에 끝내는 것이 목표입니다.",
   "strategy": [
-    "답변 흐름: 'Okay, let me tell you about myself.' → 이름·신분(경영학과 대학생) → 사는 곳(서울, 가족과) → 일상(수업이 많아 바쁨) → 여가(친구, 영화) → 'Yeah, that's a short introduction about myself.'",
-    "여가에서 친구 Minji·영화·음악·조깅을 언급해 두면 뒤에 나올 설문 주제와 같은 이야기로 자연스럽게 이어집니다.",
+    "답변 흐름: 'Okay, let me tell you about myself.' → 이름·직업(IT 회사 마케팅팀) → 사는 곳(회사 근처 아파트, 혼자) → 일상(회의가 많아 바쁨) → 여가(친구, 영화) → 'Yeah, that's a short introduction about myself.'",
+    "설문에서 직장인을 골랐다면 회사·업무 질문이 이어서 나옵니다. 팀(마케팅팀 6명), 업무(SNS 캠페인 기획·보고서·회의), 입사 동기 Minji를 미리 정해 두면 어떤 질문에도 같은 이야기로 답할 수 있어요.",
     "'pretty busy', 'hanging out with my friends'처럼 실제로 말하는 쉬운 표현을 쓰고, 어려운 단어로 길게 늘이지 않습니다.",
     "IH 이상은 이유(because)·빈도(about three times a week)·성격 한두 줄을 덧붙여 길이를 늘립니다."
   ],
   "expressions": [
-    {"en": "Okay, let me tell you about myself.", "ko": "네, 제 소개를 해 볼게요.", "level": "IM", "note": "자기소개 시작 문장"},
-    {"en": "My name is Jenny, and I'm a junior in college.", "ko": "제 이름은 Jenny이고, 대학교 3학년이에요.", "level": "IM", "note": "freshman(1) / sophomore(2) / junior(3) / senior(4)"},
-    {"en": "I'm currently a college student majoring in business.", "ko": "저는 지금 경영학을 전공하는 대학생이에요.", "level": "IM", "note": "majoring in + 전공"},
-    {"en": "I live with my family in Seoul.", "ko": "저는 서울에서 가족과 함께 살아요.", "level": "IM"},
-    {"en": "My daily life is pretty busy because I usually have a lot of classes.", "ko": "보통 수업이 많아서 일상이 꽤 바빠요.", "level": "IM", "note": "pretty = 꽤 (구어체)"},
-    {"en": "In my free time, I like hanging out with my friends.", "ko": "여가 시간에는 친구들이랑 어울려 노는 걸 좋아해요.", "level": "IM", "note": "hang out with: ~와 어울려 놀다"},
-    {"en": "I also like watching movies at home.", "ko": "집에서 영화 보는 것도 좋아해요.", "level": "IM"},
-    {"en": "It takes about 30 minutes to get to school by subway.", "ko": "지하철로 학교까지 30분 정도 걸려요.", "level": "IM", "note": "It takes + 시간 + to 동사원형"},
-    {"en": "I'd say I'm a pretty cheerful and outgoing person.", "ko": "저는 꽤 밝고 외향적인 사람인 것 같아요.", "level": "IH", "note": "I'd say ~: 부드럽게 의견 말하기"},
-    {"en": "My best friend Minji is in the same major, so we take a lot of classes together.", "ko": "제일 친한 친구 Minji가 같은 과라서 수업을 많이 같이 들어요.", "level": "IH"},
-    {"en": "When I get stressed out, I usually go jogging or listen to music.", "ko": "스트레스를 받으면 보통 조깅을 하거나 음악을 들어요.", "level": "IH", "note": "get stressed out: 스트레스 받다"},
-    {"en": "What I like most about my major is that it's really practical.", "ko": "제 전공에서 제일 좋은 점은 정말 실용적이라는 거예요.", "level": "IH", "note": "What I like most about ~ is that ~"},
-    {"en": "So yeah, that's pretty much who I am.", "ko": "네, 저는 대충 이런 사람이에요.", "level": "IH", "note": "마무리 문장"},
-    {"en": "I wouldn't say I'm super organized, but I try to keep a good balance between school and fun.", "ko": "엄청 계획적이라고는 못 하겠지만, 학업과 노는 것 사이에서 균형을 잡으려고 해요.", "level": "AL", "note": "I wouldn't say ~, but ~: 부드러운 양보"},
-    {"en": "Watching a movie with my family is my go-to way to unwind after a long week.", "ko": "가족과 영화 보는 게 긴 한 주를 보내고 쉬는 제 단골 방법이에요.", "level": "AL", "note": "go-to: 늘 찾는, 단골의"}
+    {
+      "en": "Okay, let me tell you about myself.",
+      "ko": "네, 제 소개를 해 볼게요.",
+      "level": "IM",
+      "note": "자기소개 시작 문장"
+    },
+    {
+      "en": "I'm currently working at an IT company in Seoul.",
+      "ko": "저는 지금 서울에 있는 IT 회사에서 일하고 있어요.",
+      "level": "IM",
+      "note": "work at / work for + 회사 둘 다 자연스러워요"
+    },
+    {
+      "en": "I'm on the marketing team.",
+      "ko": "저는 마케팅팀 소속이에요.",
+      "level": "IM",
+      "note": "be on the ~ team: ~팀 소속이다"
+    },
+    {
+      "en": "I live alone in a small apartment near my office.",
+      "ko": "회사 근처 작은 아파트에서 혼자 살아요.",
+      "level": "IM",
+      "note": "live alone = live by myself"
+    },
+    {
+      "en": "My daily life is pretty busy because I usually have a lot of meetings.",
+      "ko": "보통 회의가 많아서 일상이 꽤 바빠요.",
+      "level": "IM",
+      "note": "pretty = 꽤 (구어체)"
+    },
+    {
+      "en": "In my free time, I like hanging out with my friends.",
+      "ko": "여가 시간에는 친구들이랑 어울려 노는 걸 좋아해요.",
+      "level": "IM",
+      "note": "hang out with: ~와 어울려 놀다"
+    },
+    {
+      "en": "I also like watching movies at home.",
+      "ko": "집에서 영화 보는 것도 좋아해요.",
+      "level": "IM"
+    },
+    {
+      "en": "It takes about 15 minutes to get to work by subway.",
+      "ko": "지하철로 회사까지 15분 정도 걸려요.",
+      "level": "IM",
+      "note": "It takes + 시간 + to 동사원형"
+    },
+    {
+      "en": "I've been working there for about three years.",
+      "ko": "거기서 일한 지 3년 정도 됐어요.",
+      "level": "IH",
+      "note": "현재완료진행: 과거부터 지금까지 계속"
+    },
+    {
+      "en": "I'd say I'm a pretty cheerful and outgoing person.",
+      "ko": "저는 꽤 밝고 외향적인 사람인 것 같아요.",
+      "level": "IH",
+      "note": "I'd say ~: 부드럽게 의견 말하기"
+    },
+    {
+      "en": "My coworker Minji and I joined the company at the same time, so we're really close.",
+      "ko": "동료 Minji와 저는 입사 동기라서 정말 친해요.",
+      "level": "IH",
+      "note": "joined the company at the same time: 입사 동기"
+    },
+    {
+      "en": "When I get stressed out at work, I usually go jogging or listen to music.",
+      "ko": "회사에서 스트레스를 받으면 보통 조깅을 하거나 음악을 들어요.",
+      "level": "IH",
+      "note": "get stressed out: 스트레스 받다"
+    },
+    {
+      "en": "So yeah, that's pretty much who I am.",
+      "ko": "네, 저는 대충 이런 사람이에요.",
+      "level": "IH",
+      "note": "마무리 문장"
+    },
+    {
+      "en": "I wouldn't say my job is easy, but it's definitely rewarding.",
+      "ko": "제 일이 쉽다고는 못 하겠지만, 확실히 보람은 있어요.",
+      "level": "AL",
+      "note": "I wouldn't say ~, but ~: 부드러운 양보"
+    },
+    {
+      "en": "Watching a movie on Friday night is my go-to way to unwind after a long week.",
+      "ko": "금요일 밤에 영화 보는 게 긴 한 주를 보내고 쉬는 제 단골 방법이에요.",
+      "level": "AL",
+      "note": "go-to: 늘 찾는, 단골의"
+    }
   ],
   "questions": [
     {
@@ -35,11 +109,15 @@
       "type": "describe",
       "en": "Let's start the interview now. Please tell me a little bit about yourself.",
       "ko": "이제 인터뷰를 시작하겠습니다. 자기소개를 간단히 해 주세요.",
-      "tips": ["답변 흐름: 시작 문장 → 이름·신분 → 사는 곳 → 바쁜 일상 → 여가 → 'Yeah, that's ~' 마무리", "IM3 답안은 모범 영상 답변 그대로입니다. 문장 단위로 통째로 외워 두세요.", "'majoring in business', 'pretty busy'처럼 짧고 쉬운 표현이 오히려 자연스럽게 들립니다."],
+      "tips": [
+        "답변 흐름: 시작 문장 → 이름·직업 → 사는 곳 → 바쁜 일상 → 여가 → 'Yeah, that's ~' 마무리",
+        "IM3 답안은 모범 영상 답변을 직장인 버전으로 바꾼 것입니다. 문장 단위로 통째로 외워 두세요.",
+        "'I'm on the marketing team', 'pretty busy'처럼 짧고 쉬운 표현이 오히려 자연스럽게 들립니다."
+      ],
       "answers": {
-        "IM3": "Okay, let me tell you about myself. My name is Jenny. I'm currently a college student majoring in business. I live with my family in Seoul. My daily life is pretty busy because I usually have a lot of classes. In my free time, I like hanging out with my friends or watching movies at home. Yeah, that's a short introduction about myself.",
-        "IH": "Okay, let me tell you about myself. My name is Jenny, and I'm a junior in college. I'm majoring in business at a university in Seoul. I live with my family, my mom, my dad, and my younger brother Junho, in an apartment in Seoul. We've been living there for about ten years. My daily life is pretty busy because I usually have a lot of classes, and it takes about 30 minutes to get to school by subway. But I don't mind it that much, because I get to see my best friend Minji almost every day. We're in the same major, so we take a lot of classes together. In my free time, I like hanging out with my friends at cafes or watching movies at home. I'd say I'm a pretty cheerful person, and I really love being around people. Yeah, that's a short introduction about myself.",
-        "AL": "Okay, let me tell you about myself. My name is Jenny, and I'm currently a junior in college, majoring in business. I live in Seoul with my family, which is my mom, my dad, and my younger brother Junho. We've been in the same apartment for about ten years now, so it really feels like home. To be honest, my daily life is pretty busy. I usually have a lot of classes, and with a 30-minute subway ride each way, my weekdays just fly by. Luckily, my best friend Minji is in the same major, so we get through the stressful days together. When I finally get some free time, I like hanging out with my friends. We usually try a new restaurant, chat at a cafe for hours, or go to a karaoke room. On quieter nights, I'd rather stay in and watch a movie at home with my family. I'd say I'm a cheerful and outgoing person, but I also need some time to recharge. So when I get stressed out, I go jogging along the Han River or just put on some music. Yeah, that's pretty much who I am in a nutshell."
+        "IM3": "Okay, let me tell you about myself. My name is Jenny. I'm currently working at an IT company in Seoul. I'm on the marketing team. I live alone in a small apartment near my office. My daily life is pretty busy because I usually have a lot of meetings. In my free time, I like hanging out with my friends or watching movies at home. Yeah, that's a short introduction about myself.",
+        "IH": "Okay, let me tell you about myself. My name is Jenny, and I'm in my late twenties. I'm currently working at an IT company in Seoul, near Seongsu. I'm on the marketing team, and I've been working there for about three years. I live alone in a small apartment near my office. It only takes about 15 minutes to get to work by subway, which is really nice. My family lives in Daejeon, so I visit them during the holidays. My daily life is pretty busy because I usually have a lot of meetings. But I don't mind it that much, because my coworker Minji is on the same team, and we're really close. In my free time, I like hanging out with my friends at cafes or watching movies at home. I'd say I'm a pretty cheerful person, and I really love being around people. Yeah, that's a short introduction about myself.",
+        "AL": "Okay, let me tell you about myself. My name is Jenny, and I'm in my late twenties. I'm currently working at an IT company in Seoul, and I'm on the marketing team. I majored in business in college, so marketing felt like a natural fit for me. I've been with the company for about three years now. I live alone in a small one-bedroom apartment near my office. My family lives in Daejeon, so moving out on my own was a big change at first, but now I really enjoy having my own space. To be honest, my daily life is pretty busy. I usually have a lot of meetings, and some days I barely have time to check my email. Luckily, my coworker Minji and I joined the company at the same time, so we get through the stressful days together. When I finally get some free time, I like hanging out with my friends. We usually try a new restaurant or chat at a cafe for hours. On quieter nights, I'd rather stay in and watch a movie at home. I'd say I'm a cheerful and outgoing person, but I also need some time to recharge. So when work gets stressful, I go jogging along the Han River or just put on some music. Yeah, that's pretty much who I am in a nutshell."
       }
     },
     {
@@ -47,11 +125,15 @@
       "type": "describe",
       "en": "Tell me more about yourself. What kind of person are you, and what do you like to do in your free time?",
       "ko": "자신에 대해 좀 더 말해 주세요. 어떤 성격이고, 여가 시간에는 무엇을 하는 걸 좋아하나요?",
-      "tips": ["답변 흐름: 'Sure, I'd love to talk about that.' → 성격 2가지 → 취미 2~3개와 빈도 → 취미가 주는 느낌 → 'Yeah, that's ~' 마무리", "성격은 'I'd say I'm ~'로 부드럽게, 취미는 영화·음악·조깅처럼 뒤 주제와 연결되는 것으로 고르세요.", "'about three times a week', 'on weekend nights' 같은 빈도 표현을 꼭 넣으세요."],
+      "tips": [
+        "답변 흐름: 'Sure, I'd love to talk about that.' → 성격 2가지 → 취미 2~3개와 빈도 → 취미가 주는 느낌 → 'Yeah, that's ~' 마무리",
+        "성격은 'I'd say I'm ~'로 부드럽게, 취미는 영화·음악·조깅처럼 뒤 주제와 연결되는 것으로 고르세요.",
+        "'about three times a week', 'on Friday nights' 같은 빈도 표현을 꼭 넣으세요."
+      ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about that. I think I'm a cheerful and friendly person. I really like being with my friends. My best friend is Minji, and we're in the same major. In my free time, I like watching movies at home. I usually watch comedies or action movies on Netflix on weekend nights. I also listen to music a lot, especially K-pop. And I go jogging about three times a week. Yeah, that's what I'm like.",
-        "IH": "Sure, I'd love to talk about that. I'd say I'm a pretty cheerful and outgoing person. I love being around people, and my friends say I'm easy to talk to. My best friend Minji is in the same major, so we hang out a lot, usually at cafes or nice restaurants. But I also need some quiet time, especially after a busy week of classes. That's when I watch movies at home. On weekend nights, I usually watch a comedy or an action movie on Netflix. Music is also a big part of my day. I always listen to K-pop or ballads on the subway, and my favorite singer is IU. And to stay healthy, I go jogging along the Han River about three times a week. These hobbies really help me relieve stress. Yeah, that's pretty much what I'm like.",
-        "AL": "Sure, I'd love to talk about that. I'd describe myself as a cheerful and outgoing person. I really enjoy being around people, and my friends often tell me I'm the one who keeps the mood light. My best friend Minji and I are in the same major, so we spend a lot of time together, whether we're studying at a cafe or trying a new restaurant. That said, I'm not out every night. After a long week of classes, I need some time to recharge, and that's when movies come in. On weekend nights, I love curling up on the sofa and watching a comedy or an action movie on Netflix. Music is another big part of my life. I've always got my earphones in on the subway, usually listening to K-pop or ballads, and IU is my all-time favorite singer. On top of that, I go jogging along the Han River about three times a week. It only takes thirty minutes, but it clears my head like nothing else. So whenever school gets stressful, I've got movies, music, and jogging to fall back on. Yeah, that's pretty much what I'm like."
+        "IM3": "Sure, I'd love to talk about that. I think I'm a cheerful and friendly person. I really like being with people. My closest coworker is Minji, and we're on the same team. In my free time, I like watching movies at home. I usually watch comedies or action movies on Netflix on Friday nights. I also listen to music a lot, especially K-pop. And I go jogging about three times a week. Yeah, that's what I'm like.",
+        "IH": "Sure, I'd love to talk about that. I'd say I'm a pretty cheerful and outgoing person. I love being around people, and my friends say I'm easy to talk to. My coworker Minji and I joined the company at the same time, so we hang out a lot, usually at cafes or nice restaurants after work. But I also need some quiet time, especially after a week full of meetings. That's when I watch movies at home. On Friday nights, I usually watch a comedy or an action movie on Netflix. Music is also a big part of my day. I always listen to K-pop or ballads on the subway, and my favorite singer is IU. And to stay healthy, I go jogging along the Han River about three times a week. These hobbies really help me relieve stress. Yeah, that's pretty much what I'm like.",
+        "AL": "Sure, I'd love to talk about that. I'd describe myself as a cheerful and outgoing person. I really enjoy being around people, and my coworkers often tell me I'm the one who keeps the mood light in meetings. My coworker Minji and I joined the company at the same time, so we've become really close. We often grab dinner after work or try a new cafe on the weekend. That said, I'm not out every night. Since I live alone, I actually love having quiet nights at home to recharge, and that's when movies come in. On Friday nights, I love curling up on the sofa and watching a comedy or an action movie on Netflix. Music is another big part of my life. I've always got my earphones in on the subway, usually listening to K-pop or ballads, and IU is my all-time favorite singer. On top of that, I go jogging along the Han River about three times a week. It only takes thirty minutes, but it clears my head like nothing else. So whenever work gets stressful, I've got movies, music, and jogging to fall back on. Yeah, that's pretty much what I'm like."
       }
     },
     {
@@ -59,31 +141,59 @@
       "type": "routine",
       "en": "Tell me about a typical weekday for you. What do you do from the time you get up until you go to bed?",
       "ko": "평일 일상에 대해 말해 주세요. 일어나서 잠들 때까지 무엇을 하나요?",
-      "tips": ["답변 흐름: 'Okay, let me tell you about my weekday.' → 아침 → 학교(지하철 30분, 수업) → 저녁 → 잠자기 전 → 'Yeah, that's ~' 마무리", "시간 순서 표현 first, after that, then, after dinner를 쓰면 흐름이 깔끔해요.", "'It takes about 30 minutes' / 'I try to go to bed by ~'를 활용하세요."],
+      "tips": [
+        "답변 흐름: 'Okay, let me tell you about my weekday.' → 아침 → 출근(지하철 15분) → 회사(회의·점심) → 퇴근 후 저녁 → 잠자기 전 → 'Yeah, that's ~' 마무리",
+        "시간 순서 표현 first, after that, then, after work를 쓰면 흐름이 깔끔해요.",
+        "'I get off work at six' / 'I work from home on Fridays' 같은 직장인 표현을 넣어 보세요."
+      ],
       "answers": {
-        "IM3": "Okay, let me tell you about my weekday. I get up at seven. I take a quick shower and have breakfast with my family. Then I take the subway to school. It takes about 30 minutes. I usually have three or four classes a day, so it's pretty busy. I have lunch with my friend Minji at school. After class, I sometimes study at a cafe. I get home around seven and have dinner. Then I do my homework and go to bed around midnight. Yeah, that's my typical weekday.",
-        "IH": "Okay, let me tell you about my typical weekday. I usually get up at seven, take a quick shower, and have a simple breakfast with my family. My mom always makes toast or rice, and my brother Junho is usually half asleep. I leave home around eight and take the subway to school, which takes about 30 minutes. I listen to music on the way, so the ride goes by fast. My weekdays are pretty busy because I usually have three or four classes. At lunchtime, I eat with my best friend Minji in the school cafeteria. After class, we often go to a cafe near campus to do our assignments over an iced americano. I get home around seven and have dinner with my family. After that, I finish my homework on my laptop and watch a short video before bed. I try to go to bed by midnight. Yeah, that's what my weekdays look like.",
-        "AL": "Okay, let me tell you about a typical weekday for me. My alarm goes off at seven, and honestly, getting out of bed is the hardest part of my day. After a quick shower, I sit down for breakfast with my family. It's usually toast or rice, and it's the only time we all see each other in the morning. I'm out the door by eight and on the subway, which gets me to school in about 30 minutes. I always have my earphones in, so it's kind of my little music time before things get crazy. And they do get crazy, because I usually have three or four classes back to back. Around noon, I grab lunch with my best friend Minji in the school cafeteria, and we complain about our assignments together. After class, we often head to a cafe near campus and work on our projects over iced americanos. I usually get home around seven, just in time for dinner with my family. Then I go to my room, sit at my desk, and finish whatever homework is left on my laptop. If I have some energy left, I watch an episode of something before bed. I try to be asleep by midnight, though that doesn't always happen. Yeah, that's pretty much my weekday in a nutshell."
+        "IM3": "Okay, let me tell you about my weekday. I get up at seven thirty. I take a quick shower and have a simple breakfast. Then I take the subway to work. It only takes about 15 minutes. I start work at nine. I usually have a lot of meetings, so it's pretty busy. I have lunch with my coworkers near the office. I get off work at six. Then I go jogging or cook dinner at home. I go to bed around midnight. Yeah, that's my typical weekday.",
+        "IH": "Okay, let me tell you about my typical weekday. I usually get up at seven thirty, take a quick shower, and have a simple breakfast, like toast and coffee. I leave home around eight thirty and take the subway to work. It only takes about 15 minutes, and I listen to music on the way. I start work at nine, and my mornings are pretty busy because I usually have two or three meetings. At lunchtime, I eat with Minji and other coworkers at a restaurant near the office. In the afternoon, I work on reports or plan our social media campaigns. I get off work at six. About three times a week, I go jogging along the Han River. Then I make a simple dinner and watch a short video before bed. I try to go to bed by midnight. Oh, and on Fridays, I work from home. Yeah, that's what my weekdays look like.",
+        "AL": "Okay, let me tell you about a typical weekday for me. My alarm goes off at seven thirty, and honestly, getting out of bed is the hardest part of my day. After a quick shower, I make some toast and coffee. Since I live alone, my mornings are pretty quiet, and I actually enjoy that peaceful time. I'm out the door by eight thirty and on the subway, which gets me to the office in about 15 minutes. I always have my earphones in, so it's kind of my little music time before things get crazy. And they do get crazy, because I usually have meetings back to back all morning. Around noon, I grab lunch with Minji and a few other coworkers near the office, and we complain about our deadlines together. In the afternoon, I sit at my desk by the window and work on reports or plan our next social media campaign. I get off work at six, and three nights a week, I go jogging along the Han River to clear my head. After that, I cook something simple and finally relax on the sofa. I try to be asleep by midnight, though that doesn't always happen. Fridays are a bit different, because I work from home. Yeah, that's pretty much my weekday in a nutshell."
       }
     },
     {
       "id": "self-intro-job",
       "type": "describe",
-      "en": "You indicated in the survey that you are a student. Tell me about your school and your major. What do you study, and what is a typical school day like?",
-      "ko": "설문에서 학생이라고 하셨는데요. 학교와 전공에 대해 말해 주세요. 무엇을 공부하고, 학교에서의 하루는 어떤가요?",
-      "tips": ["답변 흐름: 'Sure, I'd love to talk about my school.' → 학교·학년·전공 → 듣는 수업 → 학교에서의 하루 → 좋은 점/힘든 점 → 'Yeah, that's ~' 마무리", "'I'm majoring in business' / 'What I like most about my major is that ~'을 활용하세요.", "팀 프로젝트, 발표, 시험 기간처럼 대학생다운 구체적 디테일을 하나 넣으면 IH 이상이 됩니다."],
+      "en": "You indicated in the survey that you work at a company. Tell me about your job and your company. What do you do, and what is a typical day at work like?",
+      "ko": "설문에서 회사에 다닌다고 하셨는데요. 직업과 회사에 대해 말해 주세요. 어떤 일을 하고, 회사에서의 하루는 어떤가요?",
+      "tips": [
+        "답변 흐름: 'Sure, I'd love to talk about my job.' → 회사·팀·근무 기간 → 맡은 업무 → 회사에서의 하루 → 좋은 점/힘든 점 → 'Yeah, that's ~' 마무리",
+        "'I'm in charge of ~' / 'What I like most about my job is that ~'을 활용하세요.",
+        "회의, 보고서 마감, 캠페인 결과처럼 직장인다운 구체적 디테일을 하나 넣으면 IH 이상이 됩니다."
+      ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about my school. I go to a university in Seoul. I'm a junior, and I'm majoring in business. This semester, I'm taking marketing, accounting, and economics. I have a lot of classes, so my days are pretty busy. I also have many team projects. My best friend Minji is in the same major, so we study together. The campus is big and pretty. It takes about 30 minutes by subway. Yeah, that's my school life.",
-        "IH": "Sure, I'd love to talk about my school. I go to a university in Seoul, and it takes about 30 minutes to get there by subway. I'm a junior, and I'm majoring in business. This semester, I'm taking five classes, like marketing, accounting, and economics. My favorite class is marketing, because we study real companies and their ads. What I like most about my major is that it's really practical. On a typical school day, I have three or four classes, and I have lunch with my best friend Minji in the cafeteria. We're in the same major, so we often work on team projects together. To be honest, accounting is pretty hard for me, and exam weeks are really stressful. But I like my classmates, and I'm learning a lot. Yeah, that's pretty much my school life.",
-        "AL": "Sure, I'd love to talk about my school. I go to a university in Seoul, about a 30-minute subway ride from my home. I'm a junior now, majoring in business, and this semester I'm taking five classes, including marketing, accounting, and economics. Marketing is by far my favorite. We look at real companies, figure out why their ads work, and sometimes even come up with our own campaigns. What I like most about my major is that it feels really practical, like I'm learning things I'll actually use someday. On a typical day, I have three or four classes, and there's usually a team meeting squeezed in somewhere. Business majors do a ton of group projects, so a lot of my time goes into presentations and slides. Thankfully, my best friend Minji is in most of my classes, so we usually team up. We have lunch together in the cafeteria and then head to a cafe to work. I'll admit accounting is a real struggle for me, and during exam weeks, I basically live in the library. But overall, I really enjoy my classes and the people around me. Yeah, that's pretty much what my school life looks like."
+        "IM3": "Sure, I'd love to talk about my job. I work at an IT company in Seoul. It's a mid-sized company near Seongsu. I'm on the marketing team, and there are six people on my team. I plan social media campaigns and write reports. I have a lot of meetings, so my days are pretty busy. My office is on the ninth floor, and my desk is by the window. My coworker Minji is on my team, too. Yeah, that's my job.",
+        "IH": "Sure, I'd love to talk about my job. I work at a mid-sized IT company near Seongsu in Seoul, and I've been there for about three years. I'm on the marketing team. There are six people on my team, including my team leader. I'm mainly in charge of planning social media campaigns for our apps. On a typical day, I start work at nine and have two or three meetings in the morning. Then I have lunch with my coworkers at a restaurant near the office. In the afternoon, I check how our campaigns are doing and write reports. What I like most about my job is that I can see the results of my ideas right away. To be honest, deadlines can be really stressful. But my teammates are great, especially Minji, who joined the company with me. Yeah, that's pretty much my job.",
+        "AL": "Sure, I'd love to talk about my job. I work at a mid-sized IT company near Seongsu in Seoul, and this is actually my fourth year there. I'm on the marketing team, which is a small team of six people, including my team leader. I'm mainly in charge of planning social media campaigns for our apps, and I also write a lot of reports. I majored in business in college, so this job felt like a perfect fit. On a typical day, I get to the office a little before nine. Our office is on the ninth floor, and I'm lucky enough to have a desk by the window. My mornings are usually packed with meetings, so I barely have time to check my email. Around noon, I grab lunch with my coworkers at one of the restaurants nearby. In the afternoon, I look at how our campaigns are doing and put together reports for my team leader. What I like most about my job is that I can see the results of my ideas right away. I'll admit the deadlines can be brutal, but Minji and I joined the company at the same time, so we always help each other out. Yeah, that's pretty much what my job looks like."
       }
     }
   ],
   "pronunciation": [
-    {"word": "introduction", "ipa": "/ˌɪn.trəˈdʌk.ʃən/", "tip": "'덕'에 강세. '인트로덕션'보다 '인트러덕션'처럼 가볍게"},
-    {"word": "business", "ipa": "/ˈbɪz.nəs/", "tip": "2음절 '비즈니스'가 아니라 '비즈너스'. 가운데 i는 소리 나지 않아요"},
-    {"word": "majoring", "ipa": "/ˈmeɪ.dʒər.ɪŋ/", "tip": "'메이저링'. 첫 음절 '메이'에 강세"},
-    {"word": "currently", "ipa": "/ˈkɜːr.ənt.li/", "tip": "'커런틀리'. 첫 음절에 강세, t는 거의 삼키듯"},
-    {"word": "usually", "ipa": "/ˈjuː.ʒu.ə.li/", "tip": "'유주얼리'. s는 '스'가 아니라 '쥬' 소리"}
+    {
+      "word": "introduction",
+      "ipa": "/ˌɪn.trəˈdʌk.ʃən/",
+      "tip": "'덕'에 강세. '인트로덕션'보다 '인트러덕션'처럼 가볍게"
+    },
+    {
+      "word": "company",
+      "ipa": "/ˈkʌm.pə.ni/",
+      "tip": "'컴퍼니'. 첫 음절 '컴'에 강세, o는 '오'가 아니라 '어' 소리"
+    },
+    {
+      "word": "marketing",
+      "ipa": "/ˈmɑːr.kɪ.t̬ɪŋ/",
+      "tip": "'마케팅'이 아니라 '마r키딩'. 첫 음절에 강세, t는 부드럽게 굴려요"
+    },
+    {
+      "word": "currently",
+      "ipa": "/ˈkɜːr.ənt.li/",
+      "tip": "'커런틀리'. 첫 음절에 강세, t는 거의 삼키듯"
+    },
+    {
+      "word": "usually",
+      "ipa": "/ˈjuː.ʒu.ə.li/",
+      "tip": "'유주얼리'. s는 '스'가 아니라 '쥬' 소리"
+    }
   ]
 }

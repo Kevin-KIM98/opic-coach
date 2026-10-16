@@ -5,61 +5,61 @@
   "emoji": "🛋️",
   "category": "survey",
   "priority": 9,
-  "intro": "집에서 보내는 휴가는 '휴가 때 집에서 하는 일 → 휴가 중 하루 일과 → 기억에 남는 집 휴가 → 여행 vs 집 휴가 의견'으로 출제됩니다. 서울 아파트(10층, 내 방, 거실)에서 가족과 함께 늦잠 자기, 넷플릭스 영화 몰아보기, 가족 외식을 핵심 장면으로 정하면 집·영화·동네 주제와 자연스럽게 연결됩니다. '학기 중에 너무 바빠서 휴가 때는 푹 쉬고 싶다'는 이유를 꼭 넣으세요.",
+  "intro": "집에서 보내는 휴가는 '휴가 때 집에서 하는 일 묘사 → 휴가 하루 일과 → 기억에 남는 집 휴가 → 여행과 집 휴가의 장단점 비교'로 출제됩니다. 연차를 내고 혼자 사는 아파트에서 늦잠 자기, 넷플릭스 영화 몰아보기, 한강 조깅, 친구들과 집 근처 맛집 가기, 대전 본가 방문을 묶어서 하나의 이야기로 준비하세요. '평소 회의가 많아 바쁘니까 휴가 때는 쉬는 게 최고'라는 이유가 핵심입니다.",
   "strategy": [
-    "답변 흐름: 시작 문장(Oh, ~? Let me think.) → 언제·누구와(방학, 가족) → 하는 일 세부(늦잠, 영화 몰아보기, 외식) → 집 휴가를 좋아하는 이유·느낌 → 마무리 문장(That's why I really like ~)",
-    "하루 일과 질문은 아침(늦잠) → 오후(산책·카페·조깅) → 저녁(가족 외식) → 밤(영화) 시간 순서로 말하세요.",
-    "영화·음악·조깅·동네 공원 등 다른 주제에서 쓴 표현을 그대로 가져와 재활용하면 준비 시간이 줄어듭니다.",
-    "여행 vs 집 휴가 의견 질문은 입장 → 장점·단점 각각 → 내 선택과 이유 → 결론 순서로 정리하세요."
+    "답변 흐름: 시작 문장(Oh, my vacation at home? Let me think.) → 언제·누구와 → 집에서 하는 일(늦잠, 영화 몰아보기, 조깅, 친구 초대) → 집에서 쉬는 이유·느낌 → 마무리 문장(Yeah, that's ~)",
+    "장면을 고정하세요: 연차, 혼자 사는 7층 아파트, 소파에서 넷플릭스, 발코니 화분, 한강 조깅, 친구들·Minji와 동네 맛집, 대전 본가 방문.",
+    "하루 일과 질문은 아침 → 점심 → 오후 → 저녁 → 밤 시간 순서로, In the morning / After lunch / In the evening 을 쓰세요.",
+    "장단점 비교(여행 vs 집 휴가)는 입장 → 각각의 장점·단점 하나씩 → 내 경험 예시 → 결론 순서로 말하면 IH 이상 구조가 됩니다."
   ],
   "expressions": [
     {"en": "Oh, my vacation at home? Let me think.", "ko": "아, 집에서 보내는 휴가요? 생각해 볼게요.", "level": "IM", "note": "집 휴가 질문의 시작 문장"},
-    {"en": "I sleep in until about ten.", "ko": "열 시쯤까지 늦잠을 자요.", "level": "IM", "note": "sleep in: 늦잠 자다"},
-    {"en": "I watch movies on Netflix all day.", "ko": "하루 종일 넷플릭스로 영화를 봐요.", "level": "IM"},
-    {"en": "We go out to eat as a family.", "ko": "가족끼리 외식하러 나가요.", "level": "IM", "note": "go out to eat: 외식하다"},
-    {"en": "I just stay in my pajamas.", "ko": "그냥 잠옷 차림으로 있어요.", "level": "IM"},
-    {"en": "I don't have to worry about classes.", "ko": "수업 걱정을 안 해도 돼요.", "level": "IM", "note": "don't have to: ~할 필요 없다"},
-    {"en": "It's cheap and comfortable.", "ko": "돈도 안 들고 편해요.", "level": "IM"},
-    {"en": "I feel really relaxed.", "ko": "정말 편안한 기분이 들어요.", "level": "IM"},
-    {"en": "I binge-watch a whole series in one day.", "ko": "시리즈 하나를 하루 만에 몰아 봐요.", "level": "IH", "note": "binge-watch: 몰아 보다"},
-    {"en": "My semester is so busy that I just want to rest.", "ko": "학기가 너무 바빠서 그냥 쉬고 싶어요.", "level": "IH", "note": "so ~ that ~ 구조"},
-    {"en": "It's a great way to recharge.", "ko": "재충전하기에 아주 좋은 방법이에요.", "level": "IH", "note": "recharge: 재충전하다"},
-    {"en": "On the other hand, traveling can be really tiring.", "ko": "반면에 여행은 정말 피곤할 수 있어요.", "level": "IH", "note": "장단점 비교할 때 연결어"},
-    {"en": "That's why I really like spending my vacations at home.", "ko": "그래서 저는 집에서 휴가 보내는 걸 정말 좋아해요.", "level": "IH", "note": "마무리 문장"},
-    {"en": "There's nothing better than doing nothing after a long semester.", "ko": "긴 학기가 끝나고 아무것도 안 하는 것보다 좋은 건 없어요.", "level": "AL", "note": "There's nothing better than ~ing"},
-    {"en": "I didn't realize how much I needed it until I actually rested.", "ko": "실제로 쉬어 보고 나서야 그게 얼마나 필요했는지 깨달았어요.", "level": "AL", "note": "not A until B: B하고 나서야 A하다"}
+    {"en": "I take a few days off and just stay home.", "ko": "며칠 연차를 내고 그냥 집에 있어요.", "level": "IM", "note": "take ~ days off: 며칠 쉬다"},
+    {"en": "I sleep in until ten.", "ko": "열 시까지 늦잠을 자요.", "level": "IM", "note": "sleep in: 늦잠 자다"},
+    {"en": "I watch movies all day on the couch.", "ko": "소파에서 하루 종일 영화를 봐요.", "level": "IM"},
+    {"en": "I order delivery food.", "ko": "배달 음식을 시켜요.", "level": "IM"},
+    {"en": "I don't have to check my work email.", "ko": "회사 메일을 확인하지 않아도 돼요.", "level": "IM", "note": "don't have to: ~할 필요 없다"},
+    {"en": "I go jogging by the Han River.", "ko": "한강에서 조깅을 해요.", "level": "IM"},
+    {"en": "I visit my family in Daejeon.", "ko": "대전에 있는 가족을 보러 가요.", "level": "IM"},
+    {"en": "I binge-watch movies on Netflix.", "ko": "넷플릭스로 영화를 몰아 봐요.", "level": "IH", "note": "binge-watch: 몰아서 보다"},
+    {"en": "It's the only time I can really recharge.", "ko": "제가 진짜 재충전할 수 있는 유일한 시간이에요.", "level": "IH", "note": "recharge: 재충전하다"},
+    {"en": "I don't have to worry about packing or booking anything.", "ko": "짐 싸거나 뭘 예약할 걱정을 안 해도 돼요.", "level": "IH"},
+    {"en": "Traveling can be pretty tiring and expensive.", "ko": "여행은 꽤 피곤하고 돈이 많이 들 수 있어요.", "level": "IH", "note": "장단점 비교 질문에 사용"},
+    {"en": "I spent the whole day in my pajamas.", "ko": "하루 종일 잠옷 차림으로 지냈어요.", "level": "IH"},
+    {"en": "There's no place like home.", "ko": "집만 한 곳이 없어요.", "level": "AL", "note": "관용 표현, 결론 직전에 쓰면 좋아요"},
+    {"en": "Yeah, that's why I love spending my vacation at home.", "ko": "그래서 제가 집에서 휴가 보내는 걸 좋아해요.", "level": "AL", "note": "마무리 문장으로 사용"}
   ],
   "questions": [
     {
       "id": "vacation-home-describe",
       "type": "describe",
       "en": "You indicated in the survey that you spend your vacations at home. What do you usually do during a vacation at home, and why do you prefer staying home?",
-      "ko": "설문에서 휴가를 집에서 보낸다고 하셨습니다. 집에서 휴가를 보낼 때 보통 무엇을 하고, 왜 집에 있는 걸 더 좋아하나요?",
+      "ko": "설문에서 휴가를 집에서 보낸다고 하셨습니다. 집에서 휴가를 보낼 때 보통 무엇을 하고, 왜 집에 있는 것을 더 좋아하나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제(방학)·누구와(가족) → 하는 일 3가지(늦잠, 영화 몰아보기, 가족 외식) → 집에 있는 걸 좋아하는 이유 → 마무리",
-        "이유는 '학기 중 너무 바쁨 → 쉬고 싶음', '돈이 안 듦', '가족과 시간' 중 2개를 고르세요.",
-        "거실 소파, 내 방 침대처럼 집 주제의 장소를 넣으면 장면이 생생해집니다."
+        "답변 흐름: 시작 문장 → 언제 휴가를 내는지 → 집에서 하는 일 3가지(늦잠, 영화, 조깅·친구) → 집이 좋은 이유 → 'Yeah, that's why ~' 마무리",
+        "'평소 회의가 많아서 정말 바쁘다'를 이유로 넣으면 자연스럽게 감정이 들어가요.",
+        "혼자 사는 아파트의 소파, 발코니 같은 장소 디테일을 하나씩 넣어 보세요."
       ],
       "answers": {
-        "IM3": "Oh, my vacation at home? Let me think. I usually spend my vacations at home with my family. First, I sleep in until about ten. Then I watch movies on Netflix all day. I like comedies and action movies. In the evening, my family and I often go out to eat. I like staying home because my school life is really busy. At home, I can rest and feel relaxed. Yeah, that's what I usually do on vacation.",
-        "IH": "Sure, I'd love to talk about my vacations at home. I'm a college student, and my semester is so busy that I usually just want to rest when vacation starts. So I spend most of my vacation at home in Seoul with my family. The first thing I do is sleep in. I don't set an alarm at all, and I usually wake up around ten or eleven. Then I lie on the sofa in the living room and binge-watch movies or a whole series on Netflix. I love comedies and action movies, so I can watch them for hours. In the evening, my family and I go out to eat at a restaurant in our neighborhood. I like staying home because it's cheap and comfortable, and I don't have to plan anything. It's a great way to recharge. That's why I really like spending my vacations at home.",
-        "AL": "Oh, what I do on vacation at home? Let me think. Well, honestly, I'm a total homebody when it comes to vacations. During the semester, my life is pretty hectic. I have tons of classes, team projects, and a thirty-minute subway ride to school every day, so by the time vacation comes around, I'm completely exhausted. That's why I usually spend my vacations at home with my family. My day pretty much starts whenever I wake up, which is usually around ten or eleven. I stay in my pajamas, make some toast, and then I set myself up on the sofa in the living room. That's where the real fun begins, because I binge-watch movies on Netflix, mostly comedies and action movies. Sometimes my younger brother Junho joins me, and we argue about what to watch next. In the evening, my whole family goes out to eat at a restaurant in our neighborhood, which is one of my favorite parts of the day. The reason I prefer staying home is simple. There's nothing better than doing nothing after a long semester. I don't have to plan anything or spend a lot of money, and I get to really recharge. Yeah, that's why I love spending my vacations at home."
+        "IM3": "Oh, my vacation at home? Let me think. A few times a year, I take a few days off and just stay home. I live alone in a small apartment near my office. During my vacation, I sleep in until ten. Then I watch movies all day on the couch. I also go jogging by the Han River. My daily life is pretty busy because I have a lot of meetings. So I just want to rest. Yeah, that's why I love spending my vacation at home.",
+        "IH": "Oh, my vacation at home? Let me think. I work at an IT company, and my daily life is pretty busy because I usually have a lot of meetings. So a few times a year, I take a few days off and just stay home. I live alone in a one-bedroom apartment, so it's really quiet and comfortable. First, I sleep in as long as I want. Then I binge-watch movies on Netflix, usually comedies or action movies. In the evening, I go jogging by the Han River, which is only ten minutes away by bike. Sometimes I meet my friends at a restaurant in my neighborhood. I prefer staying home because I don't have to worry about packing or booking anything. It's the only time I can really recharge. Yeah, that's why I love spending my vacation at home.",
+        "AL": "Oh, my vacation at home? Let me think. Honestly, staying home is my favorite way to spend a vacation. I work at an IT company on the marketing team, and my daily life is pretty busy because I usually have a lot of meetings. By the time I get home, I'm totally drained. So a few times a year, I take a few days off and do absolutely nothing special. I live alone in a one-bedroom apartment near my office, so it's my own little space. On the first day, I turn off my alarm and sleep in until I naturally wake up, which almost never happens on weekdays. Then I make a big cup of coffee, sit on the couch, and binge-watch movies on Netflix. I love comedies and action movies, so I'll watch three or four in a row. In the evening, I go jogging by the Han River to get some fresh air. And if I miss my family, I hop on the KTX and visit them in Daejeon for a day or two. The reason I prefer staying home is simple. I don't have to plan anything, pack anything, or spend a lot of money. It's the only time I can really recharge. Yeah, that's why I love spending my vacation at home."
       }
     },
     {
       "id": "vacation-home-routine",
       "type": "routine",
       "en": "Tell me about a typical day when you are on vacation at home. What do you do from the morning until night, and who do you spend the time with?",
-      "ko": "집에서 휴가를 보낼 때의 평범한 하루에 대해 말해 주세요. 아침부터 밤까지 무엇을 하고, 누구와 시간을 보내나요?",
+      "ko": "집에서 휴가를 보낼 때의 전형적인 하루에 대해 말해 주세요. 아침부터 밤까지 무엇을 하고, 누구와 시간을 보내나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 아침(늦잠, 아침 식사) → 오후(공원 산책·카페·조깅) → 저녁(가족 외식) → 밤(영화) → 마무리",
-        "In the morning / In the afternoon / In the evening / At night 로 시간대를 분명히 나누세요.",
-        "누구와 함께하는지(엄마, 아빠, Junho, 가끔 Minji)를 시간대마다 하나씩 넣으면 디테일이 풍부해져요."
+        "답변 흐름: 시작 문장 → 아침(늦잠, 브런치) → 오후(카페에서 책, 공원 산책) → 저녁(친구들과 맛집 또는 조깅) → 밤(영화) → 마무리 문장",
+        "혼자 사니까 '낮에는 혼자, 저녁에는 친구들'처럼 누구와 보내는지를 분명히 말하세요.",
+        "In the morning, After that, In the afternoon, In the evening, Before bed 로 시간 순서를 만들어요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about a typical vacation day at home. In the morning, I sleep in until about ten. Then I eat a late breakfast with my mom. In the afternoon, I take a walk in the small park near my apartment, or I go to a café. In the evening, I have dinner with my family. At night, I watch a movie on Netflix in my room. It's a really simple day, but I love it. Yeah, that's my typical vacation day at home.",
-        "IH": "Sure, I'd love to talk about a typical day on vacation. In the morning, I sleep in as late as I want, usually until ten or so. When I get up, I have a late breakfast with my mom, and we just chat about random stuff. In the afternoon, I try to get out of the house a little. I take a walk in the small park near my apartment, or I meet my friend Minji at a café in my neighborhood and drink an iced Americano. Sometimes I go jogging along the Han River, because it's only ten minutes away by bike. In the evening, my dad comes home, and my whole family goes out to eat, usually at a Korean barbecue place. At night, I lie on my bed and watch movies on my laptop until really late. It's a simple day, but it's exactly what I need after a busy semester. So yeah, that's pretty much my typical vacation day.",
-        "AL": "Oh, a typical vacation day at home? Let me think. Well, it's honestly the complete opposite of a school day. During the semester, I'm up at seven and rushing to the subway, but on vacation, I turn off my alarm and sleep in until about ten or eleven. When I finally get up, I usually have a late brunch with my mom, who loves to tell me all the neighborhood gossip. In the afternoon, I try not to stay on the sofa the whole day, so I take a slow walk in the little park near our apartment while listening to IU. If Minji is free, we meet up at our favorite café in the neighborhood, order iced Americanos, and talk for hours about everything except school. On some days, I ride my bike to the Han River and go jogging there for about thirty minutes, which really clears my head. In the evening, my dad gets home from work, and the four of us, including my brother Junho, go out to eat. We usually pick a barbecue place or a noodle restaurant nearby. At night, I crawl into bed with my laptop and watch movies until two in the morning, because I can. Yeah, that's my perfect vacation day at home."
+        "IM3": "Okay, let me tell you about a typical day on my vacation. In the morning, I sleep in until ten. Then I make a simple brunch at home. In the afternoon, I go to a cafe near my apartment. I drink an iced americano and read a book. In the evening, I meet my friends for dinner. We usually go to a restaurant in my neighborhood. At night, I watch a movie on Netflix. Yeah, that's a typical vacation day for me.",
+        "IH": "Okay, let me tell you about a typical day on my vacation at home. I live alone, so I spend most of the day by myself. In the morning, I sleep in until about ten. I don't set an alarm at all. Then I make a simple brunch, like toast and eggs, and water the plants on my balcony. In the afternoon, I walk to a cafe near my apartment. I order an iced americano and read a book for a couple of hours. After that, I take a walk in the small park in my neighborhood. In the evening, I usually meet my friends for dinner. We try a new restaurant and talk about everything. When I get home, I put on my pajamas and watch a movie on Netflix until late. Yeah, that's pretty much a typical vacation day for me.",
+        "AL": "Sure, I'd love to talk about that. A typical vacation day for me is super slow and relaxing, which is the total opposite of my workdays. Since I live alone, I spend most of the day by myself, and honestly, I kind of love that. In the morning, I don't set an alarm, so I usually sleep in until ten or even later. Then I make myself a lazy brunch, maybe toast, eggs, and a big cup of coffee, and I water the little plants on my balcony while I listen to some IU songs. Around two, I walk to my favorite cafe in the neighborhood. I grab an iced americano and get lost in a book for a couple of hours, without checking my work messages even once. After that, I take a walk in the small park near my place or go jogging by the Han River if the weather is nice. In the evening, I usually meet up with my friends, and sometimes Minji joins us if she's not too busy at work. We try a new restaurant and chat for hours. When I get home, I change into my pajamas, curl up on the couch, and watch a movie until I fall asleep. Yeah, that's what a perfect vacation day looks like for me."
       }
     },
     {
@@ -68,30 +68,30 @@
       "en": "Tell me about a memorable vacation you spent at home. When was it, what did you do, and did anyone visit you? Why was it so memorable?",
       "ko": "집에서 보낸 기억에 남는 휴가에 대해 말해 주세요. 언제였고, 무엇을 했으며, 누가 찾아왔나요? 왜 그렇게 기억에 남나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제(지난 겨울방학) → 무슨 일(Minji가 놀러 와서 같이 영화 몰아보기, 배달 음식) → 그때 감정 → 기억에 남는 이유 → 마무리",
-        "과거 시제를 일관되게 쓰고, 처음 계획과 실제로 일어난 일을 대비시키면 이야기가 살아납니다.",
-        "AL은 'I didn't realize ~ until ~' 같은 깨달음 문장으로 마무리 직전에 감정을 정리하세요."
+        "답변 흐름: 시작 문장 → 언제·왜 휴가를 냈는지 → 무엇을 했는지·누가 왔는지 → 특별했던 순간 → 느낌 + 마무리 문장",
+        "남동생 Junho가 대전에서 올라와 내 아파트에서 같이 지낸 이야기처럼 '혼자 사는 집에 누가 찾아온' 장면을 쓰면 기억에 남는 이유가 분명해요.",
+        "과거 시제(took, came, cooked, watched)를 끝까지 일관되게 쓰세요."
       ],
       "answers": {
-        "IM3": "Oh, a memorable vacation at home? Let me think. It was last winter vacation. After my final exams, I was really tired, so I stayed home for a week. On one weekend, my friend Minji came over to my apartment. We watched three movies in a row in the living room. We ordered fried chicken and talked a lot. My mom made us hot chocolate. It was so fun and cozy. Yeah, that's my most memorable vacation at home.",
-        "IH": "Sure, I'd love to talk about that. It was last winter vacation. My final exams had just finished, and I was completely exhausted, so I decided to stay home for the whole week. On the first few days, I just slept in and watched movies alone. Then on Saturday, my friend Minji came over to my place. It was snowing outside, so we decided not to go out at all. We made a big blanket fort on the sofa in the living room and watched three movies in a row, two comedies and one action movie. We ordered fried chicken, and my mom even made hot chocolate for us. Later, my brother Junho joined us, and we played board games until midnight. It was such a simple day, but I laughed so much. That's why it was the most memorable vacation I've spent at home.",
-        "AL": "Oh, a memorable vacation at home? Let me think. Yeah, I definitely remember one. It was last winter vacation, right after my final exams. That semester was really rough, because I had a ton of team projects in my business classes, and I was basically running on coffee and four hours of sleep. So when vacation started, I decided I wasn't going anywhere. For the first few days, I literally didn't leave the apartment. I slept until noon, stayed in my pajamas, and binge-watched movies on Netflix. Then on Saturday, my best friend Minji texted me and asked if she could come over. It was snowing like crazy outside, so we decided to have a movie marathon at my place. We built a little blanket fort on the sofa in the living room, ordered fried chicken, and watched three movies in a row. My mom made us hot chocolate, and later my brother Junho joined us for board games, which got way too competitive. We were laughing so hard that my dad came out of his room to see what was going on. Honestly, I didn't realize how much I needed a day like that until I actually had it. So yeah, that's my most memorable vacation at home."
+        "IM3": "Okay, let me tell you about a memorable vacation at home. Last winter, I took five days off after a big project. I was really tired. My younger brother Junho came from Daejeon and stayed at my apartment. We cooked dinner together and watched movies every night. We also went jogging by the Han River. It was really fun because I usually live alone. Yeah, that's my most memorable vacation at home.",
+        "IH": "Okay, let me tell you about a memorable vacation I spent at home. It was last winter. My team had just finished a really big marketing campaign, so I was totally exhausted. I took five days off and decided to just stay home. The surprise was that my younger brother Junho came up from Daejeon to visit me. He stayed at my apartment for three days. Since I live alone, it was a little crowded, but it was so much fun. We slept in, ordered fried chicken, and binge-watched action movies on Netflix. One evening, we went jogging by the Han River, and he was way faster than me. It was memorable because we hadn't spent that much time together since I moved to Seoul. Yeah, that's why it was my most memorable vacation at home.",
+        "AL": "Oh, a memorable vacation at home? Let me think. It has to be last winter. My team had just wrapped up a huge marketing campaign, and for about two months, I had been working late almost every night. By the end, I was completely burned out. So I took five days off, turned off my work notifications, and planned to do absolutely nothing. But on the second day, my younger brother Junho texted me out of the blue and said he was coming up from Daejeon. He ended up staying at my apartment for three days. My place is just a one-bedroom, so he slept on the couch, and we were bumping into each other all the time. But honestly, it was one of the best vacations I've ever had. We spent the whole day in our pajamas, ordered way too much fried chicken, and stayed up late watching action movies. One night, we went jogging by the Han River, and he kept teasing me for being slow. What made it so special was that we hadn't hung out like that since I moved out for work. It reminded me of when we lived together in our old apartment. There's no place like home, especially with family. Yeah, that's my most memorable vacation at home."
       }
     },
     {
       "id": "vacation-home-compare",
       "type": "comparison",
       "en": "Some people like to travel during their vacations, while others prefer to stay home. What are the advantages and disadvantages of each? Which do you prefer and why?",
-      "ko": "어떤 사람들은 휴가 때 여행하는 것을 좋아하고, 어떤 사람들은 집에 있는 것을 선호합니다. 각각의 장단점은 무엇인가요? 당신은 어느 쪽을 더 좋아하고 그 이유는 무엇인가요?",
+      "ko": "어떤 사람들은 휴가 때 여행을 좋아하고, 어떤 사람들은 집에 있는 것을 더 좋아합니다. 각각의 장점과 단점은 무엇인가요? 당신은 어느 쪽을 더 좋아하며, 그 이유는 무엇인가요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 여행의 장점·단점(새로운 경험 vs 돈·피로) → 집 휴가의 장점·단점(편함·저렴 vs 지루할 수 있음) → 내 선택과 이유(내 경험 예시) → 마무리",
-        "On the one hand / On the other hand 로 장단점을 나누면 구조가 분명해집니다.",
-        "예시는 작년 여름 오사카 가족 여행(재미있지만 피곤)과 지난 겨울방학 집 휴가(푹 쉼)로 페르소나 이야기를 재활용하세요."
+        "답변 흐름: 시작 문장 → 여행의 장점·단점 → 집 휴가의 장점·단점 → 내 선택 + 경험 예시(오사카 여행 vs 집 휴가) → 결론 마무리 문장",
+        "On the other hand, The downside is, But at the end of the day 같은 연결어로 장단점을 깔끔하게 나누세요.",
+        "직장인 입장에서 '연차가 많지 않고 평소에 바빠서 집에서 쉬는 게 진짜 재충전'이라는 결론을 내면 페르소나와 맞아요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you what I think. Traveling is fun because you can see new places and try new food. But it costs a lot of money, and it can be tiring. Staying home is cheap and comfortable, but it can be a little boring. For me, I prefer staying home. My school life is really busy, so I just want to rest on vacation. I can sleep in and watch movies. Yeah, that's why I like staying home more.",
-        "IH": "Sure, I'd love to talk about that. I think both have advantages and disadvantages. On the one hand, traveling is exciting. You can see new places, try new food, and make special memories. For example, last summer my family went to Osaka, and it was a lot of fun. On the other hand, traveling can be really tiring and expensive. We walked all day in the heat, and I was exhausted when I got back. Staying home is the opposite. It's cheap and comfortable, and you don't have to plan anything. The only downside is that it can get boring after a few days. Personally, I prefer staying home for most of my vacations. My semester is so busy that I really need time to rest and recharge. I'd rather sleep in and watch movies with my family. That's why I really like spending my vacations at home.",
-        "AL": "Oh, travel or stay home? Let me think. Honestly, I think both have pretty clear pros and cons. On the one hand, traveling gives you experiences you just can't get at home. You see new places, try food you've never had before, and make memories with the people you love. When my family went to Osaka last summer, we still talk about the street food and the crazy lines at Universal Studios. On the other hand, traveling can be expensive and surprisingly exhausting. We walked around all day in the heat, and by the end of the trip, I honestly felt like I needed another vacation just to recover. Staying home is basically the opposite. It costs almost nothing, it's super comfortable, and you don't have to plan a single thing. The downside is that it can feel a little boring, and sometimes you feel like you wasted your free time. For me, though, I'd choose staying home most of the time. As a business major, my semester is so packed that what I really need is rest, not more schedules. Last winter vacation, I just stayed home, watched movies, and hung out with Minji and my family, and I felt completely recharged. That said, I'd still take one big trip a year. So yeah, that's pretty much how I feel about it."
+        "IM3": "Oh, that's a good question. Let me think. Traveling is fun and exciting. You can see new places and try new food. But traveling can be pretty tiring and expensive. Staying home is cheap and relaxing. But sometimes it's a little boring. I like both, but I prefer staying home. My job is really busy, so I just want to rest on my vacation. Yeah, that's why I love spending my vacation at home.",
+        "IH": "Oh, that's a good question. Let me think. Both have pros and cons. First, traveling is exciting. You can see new places, try new food, and make great memories. For example, my trip to Osaka with my coworker Minji was amazing. The downside is that traveling can be pretty tiring and expensive. You have to book everything and pack, and sometimes you come back more tired than before. On the other hand, staying home is cheap and relaxing. I don't have to worry about packing or booking anything. But it can get a little boring if you stay inside too long. Personally, I prefer staying home. My daily life is pretty busy because I usually have a lot of meetings, so on vacation, I just want to sleep in and watch movies. Yeah, that's why I love spending my vacation at home.",
+        "AL": "Oh, that's a tough one. Let me think. I think both options have clear pros and cons. Traveling is exciting because you get to see new places, try new food, and make memories you'll never forget. Last summer, I went to Osaka with my coworker Minji, and I still talk about it all the time. But the downside is that traveling can be pretty tiring and expensive. You have to book flights, pack, and run around all day, and sometimes you come back to work more exhausted than before. On the other hand, staying home is cheap and super relaxing. You can sleep in, eat whatever you want, and you don't have to plan a thing. The only problem is that it can feel a little boring, and you might end up wasting the whole vacation on your phone. Personally, I prefer staying home, at least most of the time. As an office worker, I only get so many days off, and my daily life is pretty busy because I have a lot of meetings. So when I finally get a break, what I really need is rest, not another schedule. At the end of the day, there's no place like home. Yeah, that's why I love spending my vacation at home."
       }
     }
   ],
@@ -100,6 +100,6 @@
     {"word": "relaxed", "ipa": "/rɪˈlækst/", "tip": "끝의 -xed 는 '렉스트'처럼 [kst] 로 짧게 끝내요. '릴랙스드'가 아닙니다."},
     {"word": "pajamas", "ipa": "/pəˈdʒɑːməz/", "tip": "두 번째 음절 '자-'에 강세. '퍼자-머즈'처럼 말해요."},
     {"word": "exhausted", "ipa": "/ɪɡˈzɔːstɪd/", "tip": "h는 소리 내지 않아요. '이그저스티드', x는 [gz] 소리예요."},
-    {"word": "comfortable", "ipa": "/ˈkʌmftərbəl/", "tip": "첫 음절에 강세, '컴프터블' 세 음절처럼 빠르게 말해요."}
+    {"word": "recharge", "ipa": "/riːˈtʃɑːrdʒ/", "tip": "두 번째 음절 '차-'에 강세. 끝 ge는 '지'를 약하게, '리차지'처럼 말해요."}
   ]
 }
