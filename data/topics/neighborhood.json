@@ -5,85 +5,195 @@
   "emoji": "🏘️",
   "category": "survey",
   "priority": 2,
-  "intro": "집 주제와 짝으로 자주 나오는 단골 주제로, 동네 묘사 → 동네에서 하는 일 → 동네의 변화 → 어릴 때 동네와 비교 순서로 출제됩니다. 모든 답변은 '조용한 주거 지역, 지하철역 5분, 편의점·카페·작은 공원, 한강까지 자전거 10분'이라는 하나의 동네로 통일하세요. 공원 산책·한강 조깅·카페 공부 이야기가 그대로 공원·조깅·카페 주제 답변으로 재활용됩니다.",
+  "intro": "집 주제와 짝으로 자주 나오는 단골 주제로, 동네 묘사 → 동네에서 하는 일 → 동네의 변화 → 어릴 때 동네와 비교 순서로 출제됩니다. 모든 답변은 '회사 근처 조용한 주거 지역, 지하철역 5분, 편의점·카페·작은 공원, 한강까지 자전거 10분'이라는, 3년째 혼자 사는 하나의 동네로 통일하세요. 공원 산책·한강 조깅·카페 독서 이야기가 그대로 공원·조깅·카페 주제 답변으로 재활용되고, 비교 질문에는 대학 때까지 살던 대전 동네를 씁니다.",
   "strategy": [
-    "답변 흐름: 'Sure, I'd love to talk about my neighborhood.' → 기본 정보(서울, 조용한 주거 지역, 10년째) → 주변 시설(지하철역·편의점·카페·공원·한강) → 내가 좋아하는 이유 → 'Yeah, that's ~' 마무리",
-    "'There's a ~ right next to ~', '~ is only five minutes away'로 거리와 위치를 구체적으로 말하세요.",
-    "변화·경험 질문은 예전 모습 → 무엇이 바뀌었는지 → 내 생활에 준 영향 → 느낌 순서로 과거시제와 현재를 대비시킵니다.",
-    "IH 이상은 사람·소리·계절 같은 생생한 디테일과 비교 표현(compared to, used to)을 더합니다."
+    "답변 흐름: 'Okay, let me tell you about my neighborhood.' → 동네 기본 정보(조용한 주거 지역, 회사 근처) → 주변 시설(지하철역·편의점·카페·공원·한강) → 좋아하는 점과 이유 → 'Yeah, that's ~' 마무리",
+    "위치는 거리·시간으로 구체적으로 말하세요: 'It's a five-minute walk to the subway station.' / 'It takes ten minutes by bike.'",
+    "혼자 사는 직장인 시점으로 '퇴근길에 들르는 편의점', '주말 아침 카페', '저녁 한강 조깅'처럼 내 생활과 연결하면 IH 이상이 됩니다.",
+    "변화·비교 질문은 '3년 전 처음 이사 왔을 때 vs 지금', '대전에서 자란 동네 vs 지금 서울 동네'로 차이 2가지와 느낌을 말합니다."
   ],
   "expressions": [
-    {"en": "Sure, I'd love to talk about my neighborhood.", "ko": "네, 우리 동네에 대해 기꺼이 말씀드릴게요.", "level": "IM", "note": "동네 주제 시작 문장"},
-    {"en": "I live in a quiet residential area in Seoul.", "ko": "저는 서울의 조용한 주거 지역에 살아요.", "level": "IM", "note": "residential area: 주거 지역"},
-    {"en": "The subway station is only five minutes away on foot.", "ko": "지하철역이 걸어서 5분밖에 안 걸려요.", "level": "IM", "note": "~ minutes away on foot"},
-    {"en": "There's a convenience store right in front of my apartment.", "ko": "우리 아파트 바로 앞에 편의점이 있어요.", "level": "IM"},
-    {"en": "There are a few nice cafes near my home.", "ko": "집 근처에 괜찮은 카페가 몇 군데 있어요.", "level": "IM"},
-    {"en": "There's a small park where I like to take walks.", "ko": "제가 산책하기 좋아하는 작은 공원이 있어요.", "level": "IM", "note": "take a walk: 산책하다"},
-    {"en": "It only takes ten minutes to get to the Han River by bike.", "ko": "자전거로 한강까지 10분밖에 안 걸려요.", "level": "IM"},
-    {"en": "My neighbors are really friendly.", "ko": "이웃들이 정말 친절해요.", "level": "IM"},
-    {"en": "What I like most about my neighborhood is that it's quiet but still convenient.", "ko": "우리 동네에서 제일 좋은 점은 조용하면서도 편리하다는 거예요.", "level": "IH", "note": "What I like most about ~ is that ~"},
-    {"en": "The park used to be pretty run-down, but now it looks totally different.", "ko": "공원이 예전엔 꽤 낡았는데, 지금은 완전히 달라졌어요.", "level": "IH", "note": "run-down: 낡은, 허름한"},
-    {"en": "Compared to the neighborhood I grew up in, this one is much more convenient.", "ko": "제가 자란 동네에 비하면 여기가 훨씬 편리해요.", "level": "IH", "note": "the neighborhood I grew up in"},
-    {"en": "I often run into my neighbors at the convenience store.", "ko": "편의점에서 이웃들을 자주 마주쳐요.", "level": "IH", "note": "run into: 우연히 마주치다"},
-    {"en": "So yeah, that's why I really like my neighborhood.", "ko": "네, 그래서 저는 우리 동네가 정말 좋아요.", "level": "IH", "note": "마무리 문장"},
-    {"en": "It's the kind of place where you can just walk out the door and find something to do.", "ko": "문만 열고 나가면 할 게 있는 그런 동네예요.", "level": "AL", "note": "the kind of place where ~"},
-    {"en": "After ten years here, I can't really picture myself living anywhere else.", "ko": "여기서 10년을 살고 나니, 다른 데서 사는 건 잘 상상이 안 돼요.", "level": "AL", "note": "picture myself -ing: ~하는 내 모습을 상상하다"}
+    {
+      "en": "Okay, let me tell you about my neighborhood.",
+      "ko": "네, 우리 동네에 대해 말해 볼게요.",
+      "level": "IM",
+      "note": "동네 주제 시작 문장"
+    },
+    {
+      "en": "I live in a quiet residential area.",
+      "ko": "저는 조용한 주거 지역에 살아요.",
+      "level": "IM",
+      "note": "residential area: 주거 지역"
+    },
+    {
+      "en": "It's a five-minute walk to the subway station.",
+      "ko": "지하철역까지 걸어서 5분이에요.",
+      "level": "IM",
+      "note": "a five-minute walk: minute는 단수로!"
+    },
+    {
+      "en": "There's a convenience store right next to my building.",
+      "ko": "우리 건물 바로 옆에 편의점이 있어요.",
+      "level": "IM",
+      "note": "right next to: 바로 옆에"
+    },
+    {
+      "en": "There are a lot of nice cafes around here.",
+      "ko": "이 근처에 괜찮은 카페가 많아요.",
+      "level": "IM",
+      "note": "There are + 복수 명사"
+    },
+    {
+      "en": "There's a small park near my apartment.",
+      "ko": "우리 아파트 근처에 작은 공원이 있어요.",
+      "level": "IM"
+    },
+    {
+      "en": "It only takes ten minutes to get to the Han River by bike.",
+      "ko": "자전거로 한강까지 10분밖에 안 걸려요.",
+      "level": "IM",
+      "note": "by bike / by subway: 교통수단"
+    },
+    {
+      "en": "My neighborhood is really safe, even at night.",
+      "ko": "우리 동네는 밤에도 정말 안전해요.",
+      "level": "IM",
+      "note": "even: ~조차도, ~에도"
+    },
+    {
+      "en": "What I like most about my neighborhood is that it's so convenient.",
+      "ko": "우리 동네에서 제일 좋은 점은 정말 편리하다는 거예요.",
+      "level": "IH",
+      "note": "What I like most about ~ is that ~"
+    },
+    {
+      "en": "I often stop by the convenience store on my way home from work.",
+      "ko": "퇴근길에 편의점에 자주 들러요.",
+      "level": "IH",
+      "note": "stop by: 잠깐 들르다 / on my way home: 집에 가는 길에"
+    },
+    {
+      "en": "It's close to my office, but it doesn't feel busy at all.",
+      "ko": "회사와 가깝지만 전혀 복잡하게 느껴지지 않아요.",
+      "level": "IH",
+      "note": "not ~ at all: 전혀 ~하지 않다"
+    },
+    {
+      "en": "A lot has changed since I first moved here.",
+      "ko": "처음 이사 왔을 때 이후로 많은 게 바뀌었어요.",
+      "level": "IH",
+      "note": "since + 과거 시점 → 현재완료"
+    },
+    {
+      "en": "So yeah, that's why I really like my neighborhood.",
+      "ko": "네, 그래서 저는 우리 동네가 정말 좋아요.",
+      "level": "IH",
+      "note": "마무리 문장"
+    },
+    {
+      "en": "It's the perfect mix of city life and peace and quiet.",
+      "ko": "도시 생활과 한적함이 완벽하게 섞여 있어요.",
+      "level": "AL",
+      "note": "peace and quiet: 평화롭고 조용함"
+    },
+    {
+      "en": "It didn't take long for this place to feel like home.",
+      "ko": "이곳이 집처럼 느껴지기까지 오래 걸리지 않았어요.",
+      "level": "AL",
+      "note": "It didn't take long for A to ~: A가 ~하는 데 오래 걸리지 않았다"
+    }
   ],
   "questions": [
     {
       "id": "neighborhood-describe",
       "type": "describe",
       "en": "Tell me about your neighborhood. What does it look like, and what is there around your home?",
-      "ko": "사는 동네에 대해 말해 주세요. 어떤 모습이고, 집 주변에는 무엇이 있나요?",
-      "tips": ["답변 흐름: 시작 문장 → 서울·조용한 주거 지역·10년째 → 지하철역·편의점·카페·공원·한강 → 좋아하는 이유 → 'Yeah, that's ~' 마무리", "'There's a ~ right in front of ~', '~ minutes away'로 위치와 거리를 꼭 말하세요.", "IH 이상은 저녁이나 주말의 동네 분위기(조용함, 산책하는 사람들)를 한 줄 넣으세요."],
+      "ko": "사는 동네에 대해 말해 주세요. 어떻게 생겼고, 집 주변에는 무엇이 있나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 동네 기본 정보(조용한 주거 지역, 회사 근처) → 지하철역·편의점·카페·공원·한강 → 좋아하는 점과 이유 → 'Yeah, that's ~' 마무리",
+        "'It's a five-minute walk to ~', 'right next to ~'로 위치를 구체적으로 말하세요.",
+        "시설을 나열만 하지 말고 '퇴근길에 들른다'처럼 내가 그곳을 어떻게 이용하는지 한 줄씩 붙이세요."
+      ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about my neighborhood. I live in a quiet residential area in Seoul. My family has lived here for about ten years. There are a lot of apartments and trees. The subway station is only five minutes away. There's a convenience store right in front of my apartment. There are also a few nice cafes and a small park. The Han River is just ten minutes away by bike. Yeah, that's why I really like my neighborhood.",
-        "IH": "Sure, I'd love to talk about my neighborhood. I live in a quiet residential area in Seoul, and my family has been here for about ten years. There are mostly apartment buildings, and the streets are lined with trees, so it looks really green in the summer. It's very convenient, too. The subway station is only five minutes away on foot, so getting to school is easy. There's a convenience store right in front of my apartment, and there are a few nice cafes nearby. I often go to one of them to study with an iced americano. There's also a small park where I like to take walks in the evening. And if I ride my bike for ten minutes, I can get to the Han River. What I like most about my neighborhood is that it's quiet but still convenient. Yeah, that's why I really like it here.",
-        "AL": "Sure, I'd love to talk about my neighborhood. I live in a quiet residential area in Seoul, and my family has been here for about ten years now, so I know pretty much every corner of it. It's mostly apartment buildings, but the streets are lined with big trees, so in the summer, the whole area feels green and peaceful. Even though it's quiet, it's surprisingly convenient. The subway station is only a five-minute walk away, which is a lifesaver on busy school days. There's a convenience store right in front of my building, and I'm there almost every night grabbing snacks. There are also a few cozy cafes nearby, and one of them has basically become my second study room. Then there's a small park just around the corner. In the evening, you see people walking their dogs, kids playing, and older couples chatting on the benches. And the best part is the Han River, which is only ten minutes away by bike. I go jogging there a few times a week, and the view at sunset is amazing. Honestly, it's the kind of place where you can just walk out the door and find something to do. Yeah, that's why I really love my neighborhood."
+        "IM3": "Okay, let me tell you about my neighborhood. I live near my office in Seoul. It's a quiet residential area. The subway station is a five-minute walk from my apartment. There's a convenience store right next to my building. There are also a lot of nice cafes. There's a small park near my apartment, too. And it only takes ten minutes to get to the Han River by bike. Yeah, that's my neighborhood.",
+        "IH": "Okay, let me tell you about my neighborhood. I live in a quiet residential area in Seoul, close to my office. I moved here about three years ago, when I started my job. It's really convenient. The subway station is just a five-minute walk from my apartment, so my commute is easy. There's a convenience store right next to my building, and I often stop by on my way home from work. There are also a lot of nice cafes around here. On weekends, I like reading a book at one of them with an iced americano. There's a small park near my place, too, and I take walks there in the evening. Plus, it only takes ten minutes to get to the Han River by bike. What I like most is that it's close to work, but it doesn't feel busy at all. Yeah, that's why I really like my neighborhood.",
+        "AL": "Okay, let me tell you about my neighborhood. I live in a quiet residential area in Seoul, not far from my office. I moved here about three years ago when I got my job, and honestly, it didn't take long for this place to feel like home. The best part is how convenient everything is. The subway station is just a five-minute walk away, so my commute is super easy. There's a convenience store right next to my building, and I stop by almost every night on my way home for a snack or some milk. The streets are lined with small cafes, and on weekend mornings, you can usually find me at my favorite one, reading a book with an iced americano. There's also a little park a few minutes from my place. It's nothing fancy, just some trees, benches, and a walking path, but it's perfect for an evening walk after a long day. And if I want more space, the Han River is only ten minutes away by bike. That's where I go jogging a few times a week. Even though it's close to a busy business area, my street is really calm, especially at night. It's the perfect mix of city life and peace and quiet. Yeah, that's why I really like my neighborhood."
       }
     },
     {
       "id": "neighborhood-routine",
       "type": "routine",
       "en": "What do you usually do in your neighborhood on weekends? Where do you go, and who do you go with?",
-      "ko": "주말에 동네에서 보통 무엇을 하나요? 어디에 가고, 누구와 함께 가나요?",
-      "tips": ["답변 흐름: 'Oh, my weekends? Let me think.' → 토요일 오전/오후/저녁 순서 → 장소(카페·공원·한강) + 함께하는 사람(Minji, 가족) → 느낌 → 'Yeah, that's ~' 마무리", "'I usually ~', 'Sometimes ~', 'After that, ~'로 빈도와 순서를 표현하세요.", "공원 산책·한강 조깅·카페 공부 이야기는 공원·조깅·카페 주제에도 그대로 쓸 수 있어요."],
+      "ko": "주말에 동네에서 주로 무엇을 하나요? 어디에 가고, 누구와 함께 가나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 토요일 아침(카페) → 오후(공원·장보기) → 저녁(친구들과 맛집) → 일요일(한강) → 'Yeah, that's ~' 마무리",
+        "'usually', 'often', 'sometimes' 같은 빈도 부사로 습관을 표현하세요.",
+        "혼자 하는 것(카페 독서·산책)과 친구와 하는 것(맛집·한강)을 나눠 말하면 자연스럽게 길어집니다."
+      ],
       "answers": {
-        "IM3": "Oh, my weekends? Let me think. On Saturdays, I usually sleep in. In the afternoon, I meet my friend Minji at a cafe near my home. We drink iced americanos and study together. Sometimes we just talk for hours. In the evening, I take a walk in the small park with my mom. On Sundays, I ride my bike to the Han River and go jogging. It takes about ten minutes. Yeah, that's what I usually do on weekends.",
-        "IH": "Oh, my weekends? Let me think. Since my weekdays are pretty busy with classes, I like to keep my weekends relaxed. On Saturdays, I usually sleep in until ten. In the afternoon, I meet my best friend Minji at a cafe near my apartment. We order iced americanos and work on our assignments, but to be honest, we end up chatting most of the time. After that, we sometimes grab dinner at a small restaurant in the neighborhood. In the evening, I often take a walk in the park near my home with my mom. It's quiet and peaceful, so it's a nice way to end the day. On Sunday mornings, I ride my bike to the Han River, which takes about ten minutes, and go jogging for half an hour. It really helps me get ready for the new week. Yeah, that's pretty much my weekend.",
-        "AL": "Oh, my weekends? Let me think. My weekdays are packed with classes, so on weekends, I try to slow things down and just enjoy my neighborhood. On Saturdays, I let myself sleep in until about ten, which feels like the best luxury in the world. In the afternoon, I usually meet my best friend Minji at a little cafe around the corner from my apartment. The plan is always to study, so we order iced americanos and open our laptops, but somehow we end up talking for two hours straight. If we're hungry afterward, we grab dinner at one of the small restaurants nearby. Later in the evening, I often take a walk in the park near my home with my mom. It's our little catch-up time, since we barely see each other during the week. Sunday mornings are for exercise. I hop on my bike, ride about ten minutes to the Han River, and go jogging along the river for half an hour. The air is fresh, there are tons of people out cycling, and it honestly clears my head for the week ahead. It's nothing fancy, but I love how I can do all of this without leaving my neighborhood. Yeah, that's what my weekends usually look like."
+        "IM3": "Sure, I'd love to talk about my weekends. On Saturday mornings, I usually sleep in. Then I go to a cafe near my apartment. I read a book there with an iced americano. In the afternoon, I take a walk in the small park. Sometimes I go grocery shopping. In the evening, I meet my friends. We go to a nice restaurant in my neighborhood. On Sundays, I ride a bike to the Han River. Yeah, that's my weekend.",
+        "IH": "Sure, I'd love to talk about my weekends. Since I'm busy with work during the week, I like to take it easy on weekends. On Saturday mornings, I usually sleep in until ten. Then I walk to my favorite cafe near my apartment. I order an iced americano and read a book there for a couple of hours. It's my little me time. In the afternoon, I take a walk in the small park near my place, or I go grocery shopping for the week. On Saturday evenings, I often meet my friends in my neighborhood. We try new restaurants, because a lot of new places open around here. On Sundays, if the weather is nice, I ride a bike to the Han River. It only takes ten minutes. Sometimes Minji joins me, and we get fried chicken by the river. Yeah, that's what I usually do on weekends.",
+        "AL": "Sure, I'd love to talk about my weekends. Since my weekdays are packed with meetings, I try to keep my weekends slow and easy, and most of the time, I don't even leave my neighborhood. On Saturdays, I sleep in until about ten. Then I walk over to my favorite cafe, which is just around the corner. I always get an iced americano, find a seat by the window, and get lost in a book for a couple of hours. Honestly, that's my favorite part of the whole week. In the afternoon, I take a walk in the little park near my place or pick up groceries for the week. Saturday evenings are for my friends. There are tons of new restaurants popping up around here, so we usually pick one and spend hours eating and catching up. On Sundays, if the weather is nice, I hop on a bike and ride to the Han River, which only takes about ten minutes. My coworker Minji often comes along. We sit on the grass, order some fried chicken, and just watch the sunset. It's a simple routine, but it really recharges me for the week ahead. Yeah, that's what my weekends usually look like."
       }
     },
     {
       "id": "neighborhood-experience",
       "type": "experience",
       "en": "Has your neighborhood changed since you first moved there? Tell me about a memorable change. What happened, and how did it affect you?",
-      "ko": "처음 이사 왔을 때와 비교해 동네가 변했나요? 기억에 남는 변화에 대해 말해 주세요. 무슨 일이 있었고, 그것이 당신에게 어떤 영향을 주었나요?",
-      "tips": ["답변 흐름: 'Oh, changes in my neighborhood? Let me think.' → 예전 모습 → 언제·무엇이 바뀌었는지 → 내 생활의 변화 → 느낌 → 'Yeah, that's ~' 마무리", "'used to + 동사원형'(예전) vs. 'Now, ~'(지금) 대비로 변화를 보여 주세요.", "IH 이상은 변화가 내 일상(산책, 조깅, 공부)에 준 구체적 영향을 꼭 말하세요."],
+      "ko": "처음 이사 왔을 때 이후로 동네가 바뀌었나요? 기억에 남는 변화에 대해 말해 주세요. 무슨 일이 있었고, 나에게 어떤 영향을 주었나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 처음 이사 왔을 때 모습(3년 전) → 기억에 남는 변화(공원 리모델링) → 나에게 준 영향 → 느낌 → 'Yeah, that's ~' 마무리",
+        "'When I first moved here, ~'(과거) → 'Now, ~'(현재) / 'A lot has changed since ~'(현재완료)로 시제를 구분하세요.",
+        "변화의 좋은 점 하나, 아쉬운 점 하나를 같이 말하면 IH 이상의 답변이 됩니다."
+      ],
       "answers": {
-        "IM3": "Oh, changes in my neighborhood? Let me think. Yes, my neighborhood changed a lot. The small park near my home used to be old and dark. There were only a few benches. About two years ago, the city fixed the park. Now it has a walking path, new benches, and lots of flowers. It's also bright at night. So I started taking walks there every evening. I really like it. Yeah, that's the biggest change in my neighborhood.",
-        "IH": "Oh, changes in my neighborhood? Let me think. When we first moved here about ten years ago, the small park near my apartment was pretty run-down. There were a few old benches and some broken lights, so it was too dark to go there at night. About two years ago, the city renovated the whole park. It took about six months, and there was a lot of noise, so it was a little annoying. But when it opened again, it looked totally different. Now there's a nice walking path, new benches, and lots of flowers and trees. There are bright lights, so it feels safe at night. Since then, I've been taking walks there almost every evening. Sometimes I go with my mom, and sometimes I just listen to music alone. Yeah, that's the most memorable change in my neighborhood.",
-        "AL": "Oh, changes in my neighborhood? Let me think. Actually, the biggest change happened to the small park right near my apartment. When my family first moved here about ten years ago, that park was pretty run-down. There were a couple of old benches, the playground was rusty, and half the lights didn't work, so nobody really went there after dark. Then about two years ago, the city decided to renovate the whole thing. For about six months, there was construction noise every morning, and to be honest, it drove me a little crazy, especially during exam season. But when the park finally reopened, I could hardly believe it was the same place. Now there's a smooth walking path that loops around the park, new benches under the trees, and flowers everywhere in the spring. They also put in bright lights, so it feels safe even late at night. That change really affected my daily life. I started taking walks there almost every evening, sometimes with my mom and sometimes alone with my earphones in. It's become my favorite place to clear my head after a long day of classes. Looking back, those six months of noise were totally worth it. Yeah, that's the most memorable change in my neighborhood."
+        "IM3": "Oh, my neighborhood? Let me think. Yes, it has changed a lot. I moved here about three years ago. Back then, the small park near my apartment was old and dark. Last year, the city fixed it up. Now there's a new walking path and a lot of lights. There are also new benches and flowers. I take a walk there almost every evening. I feel safe at night, too. Yeah, that's the biggest change in my neighborhood.",
+        "IH": "Oh, my neighborhood? Let me think. Yes, a lot has changed since I first moved here about three years ago. The most memorable change is the small park near my apartment. When I first moved here, it was pretty old and dark. There were only a few broken benches, and I never went there at night. But last year, the city fixed it up. It took about four months. Now there's a new walking path, a lot of bright lights, and pretty flowers everywhere. The change really affected my daily life. Now I take a walk there almost every evening after work, and I feel safe even at night. It's also a great place to cool down after jogging. The only bad thing is that it's a lot more crowded now. Yeah, that's the biggest change in my neighborhood.",
+        "AL": "Oh, my neighborhood? Let me think. Yeah, a lot has changed since I first moved here about three years ago, but one change really stands out. It's the little park near my apartment. When I first moved in, honestly, it was kind of sad. The benches were old and broken, there were hardly any lights, and I always walked around it at night instead of going through it. Then last spring, the city started fixing it up. For about four months, there was just noisy construction, and I was getting pretty annoyed. But when it finally reopened, I was blown away. There was a brand-new walking path, bright lights everywhere, and flower beds along the edges. It completely changed my evenings. Since I live alone, I used to just go straight home after work and stay on the sofa. Now I take a walk there almost every night, and it's become my favorite way to clear my head after a long day. I even see the same neighbors walking their dogs, so it feels more like a community now. The only downside is that it gets pretty crowded on weekends. Yeah, that's the change in my neighborhood that I'm most thankful for."
       }
     },
     {
       "id": "neighborhood-compare",
       "type": "comparison",
       "en": "How is the neighborhood you live in now different from the one you grew up in?",
-      "ko": "지금 사는 동네는 어린 시절을 보낸 동네와 어떻게 다른가요?",
-      "tips": ["답변 흐름: 'Oh, the neighborhood I grew up in? Let me think.' → 예전 동네 소개 → 지금 동네와 다른 점 2~3개 → 어느 쪽이 좋은지와 이유 → 'Yeah, that's ~' 마무리", "'Compared to ~', 'used to', 'much more convenient'로 비교를 분명하게 하세요.", "집 주제와 맞춰 '10년 전쯤 초등학생 때 서울의 다른 동네에서 이사 왔다'로 통일하세요."],
+      "ko": "지금 사는 동네는 자란 동네와 어떻게 다른가요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 자란 동네(대전, 오래된 아파트 단지) → 지금 동네(서울, 회사 근처) → 차이점 2가지(편리함, 이웃과의 관계) → 어느 쪽이 좋은지와 이유 → 'Yeah, that's ~' 마무리",
+        "'used to + 동사원형'으로 예전 습관을, 'On the other hand, ~'로 대조를 표현하세요.",
+        "한쪽만 칭찬하지 말고 각각의 장점을 인정하면 수준 높은 답변이 됩니다."
+      ],
       "answers": {
-        "IM3": "Oh, the neighborhood I grew up in? Let me think. When I was a child, I lived in an old neighborhood in a different part of Seoul. There were many small houses and narrow streets. There was a big traditional market, so it was always noisy. But the subway station was far away. My neighborhood now is quiet and clean. The subway station is only five minutes away. There's also a park and the Han River nearby. Yeah, I like my neighborhood now better.",
-        "IH": "Oh, the neighborhood I grew up in? Let me think. Until I was in elementary school, my family lived in an old neighborhood in a different part of Seoul. There were lots of small houses and narrow streets, and there was a big traditional market nearby. It was always busy and a little noisy, but everyone knew each other. The problem was that the subway station was about 20 minutes away on foot. About ten years ago, we moved to the neighborhood I live in now, and it's really different. It's a quiet residential area with lots of apartments and trees. Compared to my old neighborhood, it's much more convenient. The subway station is only five minutes away, and there are cafes, a park, and even the Han River nearby. I do miss the friendly market people sometimes. But overall, I like my neighborhood now much better. Yeah, that's the biggest difference.",
-        "AL": "Oh, the neighborhood I grew up in? Let me think. Until I was in elementary school, my family lived in an old neighborhood in a different part of Seoul, and it had a totally different vibe. It was full of small houses and narrow, winding streets, and right in the middle, there was a huge traditional market. From early in the morning, you could hear the shop owners calling out to customers, and the whole street smelled like fried snacks. It was noisy, but it had a really warm feeling, because everyone knew each other. My mom couldn't buy groceries without stopping to chat with three neighbors. The downside was that it wasn't very convenient. The nearest subway station was about a 20-minute walk away, and there weren't many parks. About ten years ago, we moved to the neighborhood I live in now, and the difference was huge. It's a quiet residential area with tall apartment buildings and tree-lined streets. Compared to my old neighborhood, it's way more convenient, with a subway station five minutes away, cozy cafes, a nice park, and the Han River just a short bike ride away. I'll admit it's a bit less lively, and I sometimes miss the market. But for a busy college student like me, I wouldn't trade it for anything. Yeah, that's how the two neighborhoods are different."
+        "IM3": "Oh, that's a good question. I grew up in Daejeon. My family lived in an old apartment complex there. It was a quiet area with a big playground. I knew all my neighbors. Now, I live alone in Seoul, near my office. My neighborhood now is more convenient. There's a subway station, a lot of cafes, and a park nearby. But I don't really know my neighbors. Yeah, that's the difference between my two neighborhoods.",
+        "IH": "Oh, that's a good question. I grew up in Daejeon, and my family lived in an old apartment complex there until I finished college. It was a quiet area with a big playground, a small market, and lots of trees. Everyone knew each other, so the neighbors used to say hi and give us fruit. My neighborhood in Seoul is pretty different. First, it's much more convenient. The subway station is a five-minute walk away, and there are tons of cafes and restaurants. In Daejeon, we had to take a bus to go almost anywhere. Second, people here are busier. Most people in my building live alone and work like me, so I don't really know my neighbors. Sometimes I miss that warm feeling. But for my life now, Seoul is a better fit. Yeah, that's how the two neighborhoods are different.",
+        "AL": "Oh, that's a good question. I grew up in Daejeon, and my family lived in the same old apartment complex until I finished college, so I have a lot of memories there. It was a quiet area with a big playground, a small traditional market, and tall trees everywhere. What I remember most is how close everyone was. The lady next door used to bring us fruit, and my brother Junho and I played outside with the neighborhood kids until dinner. My neighborhood in Seoul is a whole different story. First of all, it's way more convenient. The subway station is a five-minute walk away, there's a convenience store right next to my building, and I can find a nice cafe on almost every corner. Back in Daejeon, we had to take a bus just to get to a decent cafe. On the other hand, people here keep to themselves. Most people in my building are office workers who live alone, like me, so we just nod at each other in the elevator. To be honest, I sometimes miss that small-town warmth. But for this stage of my life, my neighborhood in Seoul is a much better fit. Yeah, that's how my two neighborhoods are different."
       }
     }
   ],
   "pronunciation": [
-    {"word": "neighborhood", "ipa": "/ˈneɪ.bər.hʊd/", "tip": "'네이버후드'. 첫 음절 '네이'에 강세, gh는 소리 없음"},
-    {"word": "residential", "ipa": "/ˌrez.ɪˈden.ʃəl/", "tip": "'덴'에 강세. '레지덴셜'처럼 끝은 '셜'로 짧게"},
-    {"word": "convenient", "ipa": "/kənˈviː.ni.ənt/", "tip": "'비'에 강세. '컨비니언트', 첫 음절은 '컨'으로 약하게"},
-    {"word": "convenience store", "ipa": "/kənˈviː.ni.əns stɔːr/", "tip": "'편의점'은 convenience store. '컨비니언스 스토얼'로 이어서"},
-    {"word": "renovated", "ipa": "/ˈren.ə.veɪ.tɪd/", "tip": "첫 음절 '레'에 강세. '레너베이티드', t는 부드럽게 굴려도 OK"}
+    {
+      "word": "neighborhood",
+      "ipa": "/ˈneɪ.bər.hʊd/",
+      "tip": "'네이버후드'. 첫 음절 '네이'에 강세, gh는 소리 나지 않아요"
+    },
+    {
+      "word": "residential",
+      "ipa": "/ˌrez.ɪˈden.ʃəl/",
+      "tip": "'레지덴셜'. 셋째 음절 '덴'에 강세"
+    },
+    {
+      "word": "convenient",
+      "ipa": "/kənˈviː.ni.ənt/",
+      "tip": "'컨비니언트'. v는 윗니로 아랫입술을 살짝 물고, '비'에 강세"
+    },
+    {
+      "word": "quiet",
+      "ipa": "/ˈkwaɪ.ət/",
+      "tip": "'콰이엇' 2음절. quite(콰잇)와 헷갈리지 않게 끝을 '엇'으로"
+    },
+    {
+      "word": "river",
+      "ipa": "/ˈrɪv.ər/",
+      "tip": "'리버'. r은 혀를 말고 시작, v는 윗니를 아랫입술에 대고 진동"
+    }
   ]
 }
