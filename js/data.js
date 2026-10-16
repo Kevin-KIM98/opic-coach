@@ -1,4 +1,5 @@
 // data/*.json 로더. 네트워크 우선, 실패 시 서비스워커 캐시가 응답합니다.
+import { store } from './store.js';
 const cache = new Map();
 
 async function getJSON(path) {
@@ -11,9 +12,12 @@ async function getJSON(path) {
   return p;
 }
 
+export const patternIds = (p) => (p.groups || []).flatMap(g => g.items.map((_, i) => `pat:${g.id}#${i}`));
+
 export const data = {
   index: () => getJSON('data/index.json'),
-  patterns: () => getJSON('data/patterns.json'),
+  // 불러올 때마다 지금 패턴에 없는 예전 패턴 기록을 정리한다 (idempotent)
+  patterns: () => getJSON('data/patterns.json').then(p => { store.prunePatterns(patternIds(p)); return p; }),
   pronunciation: () => getJSON('data/pronunciation.json'),
   plans: () => getJSON('data/plans.json'),
   mockSets: () => getJSON('data/mock-sets.json'),

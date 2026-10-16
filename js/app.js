@@ -69,6 +69,8 @@ document.addEventListener('click', (e) => {
 
 window.addEventListener('hashchange', render);
 window.addEventListener('DOMContentLoaded', render);
+// 만능 패턴이 바뀌었으면 예전 패턴 학습 기록을 먼저 정리한다 (홈의 복습 대기 수가 부풀지 않게)
+import('./data.js').then(({ data }) => data.patterns()).catch(() => {});
 
 // 서비스워커
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
