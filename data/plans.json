@@ -83,7 +83,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "like"
       },
       {
        "type": "pron",
@@ -111,7 +111,7 @@
       },
       {
        "type": "pattern",
-       "group": "describe"
+       "group": "place"
       },
       {
        "type": "pron",
@@ -139,7 +139,7 @@
       },
       {
        "type": "pattern",
-       "group": "routine"
+       "group": "people"
       },
       {
        "type": "pron",
@@ -167,7 +167,7 @@
       },
       {
        "type": "pattern",
-       "group": "experience"
+       "group": "routine"
       },
       {
        "type": "pron",
@@ -194,7 +194,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "reason"
       },
       {
        "type": "pron",
@@ -220,7 +220,7 @@
       },
       {
        "type": "pattern",
-       "group": "opinion"
+       "group": "start"
       },
       {
        "type": "pron",
@@ -242,7 +242,7 @@
       },
       {
        "type": "pattern",
-       "group": "closing"
+       "group": "describe"
       },
       {
        "type": "pron",
@@ -270,7 +270,7 @@
       },
       {
        "type": "pattern",
-       "group": "filler"
+       "group": "memory"
       },
       {
        "type": "pron",
@@ -298,7 +298,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "problem"
       },
       {
        "type": "pron",
@@ -326,7 +326,7 @@
       },
       {
        "type": "pattern",
-       "group": "describe"
+       "group": "change"
       },
       {
        "type": "pron",
@@ -354,7 +354,7 @@
       },
       {
        "type": "pattern",
-       "group": "routine"
+       "group": "opinion"
       },
       {
        "type": "pron",
@@ -381,7 +381,7 @@
       },
       {
        "type": "pattern",
-       "group": "experience"
+       "group": "roleplay"
       },
       {
        "type": "pron",
@@ -407,7 +407,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "like"
       },
       {
        "type": "pron",
@@ -429,7 +429,7 @@
       },
       {
        "type": "pattern",
-       "group": "opinion"
+       "group": "place"
       },
       {
        "type": "pron",
@@ -457,7 +457,7 @@
       },
       {
        "type": "pattern",
-       "group": "closing"
+       "group": "people"
       },
       {
        "type": "pron",
@@ -485,7 +485,7 @@
       },
       {
        "type": "pattern",
-       "group": "filler"
+       "group": "routine"
       },
       {
        "type": "pron",
@@ -513,7 +513,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "reason"
       },
       {
        "type": "pron",
@@ -541,7 +541,7 @@
       },
       {
        "type": "pattern",
-       "group": "describe"
+       "group": "start"
       },
       {
        "type": "pron",
@@ -568,7 +568,7 @@
       },
       {
        "type": "pattern",
-       "group": "routine"
+       "group": "describe"
       },
       {
        "type": "pron",
@@ -594,7 +594,7 @@
       },
       {
        "type": "pattern",
-       "group": "experience"
+       "group": "memory"
       },
       {
        "type": "pron",
@@ -616,7 +616,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "problem"
       },
       {
        "type": "pron",
@@ -659,7 +659,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "like"
       }
      ]
     },
@@ -678,7 +678,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "change"
       }
      ]
     },
@@ -806,7 +806,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "like"
       }
      ]
     },
@@ -850,7 +850,7 @@
       },
       {
        "type": "pattern",
-       "group": "routine"
+       "group": "people"
       }
      ]
     },
@@ -921,7 +921,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "like"
       },
       {
        "type": "pron",
@@ -949,7 +949,7 @@
       },
       {
        "type": "pattern",
-       "group": "filler"
+       "group": "memory"
       }
      ]
     },
@@ -993,7 +993,7 @@
       },
       {
        "type": "pattern",
-       "group": "describe"
+       "group": "change"
       }
      ]
     },
@@ -1064,7 +1064,7 @@
       },
       {
        "type": "pattern",
-       "group": "describe"
+       "group": "place"
       },
       {
        "type": "pron",
@@ -1092,7 +1092,7 @@
       },
       {
        "type": "pattern",
-       "group": "closing"
+       "group": "people"
       }
      ]
     },
@@ -1136,7 +1136,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "reason"
       }
      ]
     },
@@ -1207,7 +1207,7 @@
       },
       {
        "type": "pattern",
-       "group": "routine"
+       "group": "people"
       },
       {
        "type": "pron",
@@ -1235,7 +1235,7 @@
       },
       {
        "type": "pattern",
-       "group": "opinion"
+       "group": "change"
       }
      ]
     },
@@ -1279,7 +1279,7 @@
       },
       {
        "type": "pattern",
-       "group": "filler"
+       "group": "roleplay"
       }
      ]
     },
@@ -1350,7 +1350,7 @@
       },
       {
        "type": "pattern",
-       "group": "experience"
+       "group": "routine"
       },
       {
        "type": "pron",
@@ -1378,7 +1378,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "reason"
       }
      ]
     },
@@ -1422,7 +1422,7 @@
       },
       {
        "type": "pattern",
-       "group": "closing"
+       "group": "describe"
       }
      ]
     },
@@ -1493,7 +1493,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "reason"
       },
       {
        "type": "pron",
@@ -1521,7 +1521,7 @@
       },
       {
        "type": "pattern",
-       "group": "experience"
+       "group": "roleplay"
       }
      ]
     },
@@ -1565,7 +1565,7 @@
       },
       {
        "type": "pattern",
-       "group": "opinion"
+       "group": "place"
       }
      ]
     },
@@ -1636,7 +1636,7 @@
       },
       {
        "type": "pattern",
-       "group": "opinion"
+       "group": "start"
       },
       {
        "type": "pron",
@@ -1671,7 +1671,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "like"
       }
      ]
     },
@@ -1719,7 +1719,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "change"
       }
      ]
     },
@@ -1833,7 +1833,7 @@
       },
       {
        "type": "pattern",
-       "group": "closing"
+       "group": "problem"
       },
       {
        "type": "pron",
@@ -1956,7 +1956,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "like"
       },
       {
        "type": "pron",
@@ -2072,7 +2072,7 @@
       },
       {
        "type": "pattern",
-       "group": "describe"
+       "group": "place"
       },
       {
        "type": "pron",
@@ -2185,7 +2185,7 @@
       },
       {
        "type": "pattern",
-       "group": "routine"
+       "group": "people"
       },
       {
        "type": "pron",
@@ -2301,7 +2301,7 @@
       },
       {
        "type": "pattern",
-       "group": "experience"
+       "group": "routine"
       },
       {
        "type": "pron",
@@ -2414,7 +2414,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "reason"
       },
       {
        "type": "pron",
@@ -2530,7 +2530,7 @@
       },
       {
        "type": "pattern",
-       "group": "opinion"
+       "group": "start"
       },
       {
        "type": "pron",
@@ -2643,7 +2643,7 @@
       },
       {
        "type": "pattern",
-       "group": "closing"
+       "group": "describe"
       },
       {
        "type": "pron",
@@ -2759,7 +2759,7 @@
       },
       {
        "type": "pattern",
-       "group": "filler"
+       "group": "memory"
       },
       {
        "type": "pron",
@@ -2872,7 +2872,7 @@
       },
       {
        "type": "pattern",
-       "group": "opener"
+       "group": "problem"
       },
       {
        "type": "pron",
@@ -3045,7 +3045,7 @@
       },
       {
        "type": "pattern",
-       "group": "compare"
+       "group": "change"
       }
      ]
     },
@@ -3184,7 +3184,7 @@
       },
       {
        "type": "pattern",
-       "group": "closing"
+       "group": "problem"
       }
      ]
     },

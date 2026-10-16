@@ -82,7 +82,7 @@
       "minutesPerDay": 40,
       "summary": "모든 문항에서 끊기지 않고 60초 이상, 과거시제와 기본 연결어를 유지하면 IM3가 나옵니다. 주제를 늘리지 말고 6개만 확실히 만드세요.",
       "topics": ["self-intro", "housing", "park", "jogging", "movies", "roleplay"],
-      "patterns": ["opener", "describe", "routine", "closing"],
+      "patterns": ["like", "place", "routine", "reason", "describe", "memory"],
       "pron": ["sound-rl", "sound-fp"],
       "checklist": [
         "자기소개를 60초, 막힘 없이 말할 수 있다",
@@ -99,7 +99,7 @@
       "minutesPerDay": 50,
       "summary": "IM3의 조건에 더해 디테일(숫자·이름·느낌)과 비교(used to / compared to)가 필요합니다. 돌발과 고난도에서 무너지지 않는 게 핵심입니다.",
       "topics": ["self-intro", "housing", "neighborhood", "park", "jogging", "movies", "music", "travel-domestic", "roleplay", "unexpected"],
-      "patterns": ["opener", "describe", "routine", "experience", "compare", "closing"],
+      "patterns": ["like", "place", "people", "routine", "reason", "describe", "memory", "change", "roleplay"],
       "pron": ["sound-rl", "sound-fp", "linking", "intonation"],
       "checklist": [
         "모든 문항에서 90초 이상, 100단어 이상 말한다",
@@ -117,7 +117,7 @@
       "minutesPerDay": 60,
       "summary": "AL은 주제를 더 늘리는 게 아니라, 같은 주제를 더 길고 자연스럽게 말하는 싸움입니다. 고난도 의견 문항과 관용 표현에 시간을 몰아 쓰세요.",
       "topics": ["self-intro", "housing", "neighborhood", "park", "jogging", "movies", "music", "cafe", "travel-domestic", "vacation-home", "roleplay", "unexpected", "advanced"],
-      "patterns": ["opener", "describe", "routine", "experience", "compare", "opinion", "filler", "closing"],
+      "patterns": ["like", "place", "people", "routine", "reason", "start", "describe", "memory", "problem", "change", "opinion", "roleplay"],
       "pron": ["sound-rl", "sound-fp", "sound-th", "linking", "intonation", "twisters"],
       "checklist": [
         "모든 문항에서 2분 가까이, 끊김 없이 말한다",

@@ -12,7 +12,9 @@ SURVEY = [
 ]
 PRON = ["sound-rl", "sound-fp", "sound-vb", "sound-th", "sound-zj", "sound-vowel",
         "stress", "linking", "intonation", "twisters"]
-PATTERNS = ["opener", "describe", "routine", "experience", "compare", "opinion", "closing", "filler"]
+# data/patterns.json 의 12개 스토리 테마 (오픽 만능패턴 72문장)
+PATTERNS = ["like", "place", "people", "routine", "reason", "start",
+            "describe", "memory", "problem", "change", "opinion", "roleplay"]
 
 
 def t(type_, **kw):
@@ -61,8 +63,8 @@ def four_week():
     def final_phase(w, d, n):
         sched = [
             [t("learn", topic="roleplay"), t("shadow", topic="roleplay", level="IM3"), t("speak", topic="roleplay")],
-            [t("learn", topic="unexpected"), t("speak", topic="unexpected"), t("pattern", group="opener")],
-            [t("learn", topic="advanced"), t("speak", topic="advanced"), t("pattern", group="compare")],
+            [t("learn", topic="unexpected"), t("speak", topic="unexpected"), t("pattern", group="like")],
+            [t("learn", topic="advanced"), t("speak", topic="advanced"), t("pattern", group="change")],
             [t("mock", set="opic-full"), t("review")],
             [t("mock", set="opic-mini"), t("review")],
             [t("mock", set="opic-full"), t("speak", topic="roleplay")],
@@ -100,10 +102,10 @@ def eight_week():
         if w == 7:
             sched = [
                 [t("learn", topic="roleplay"), t("shadow", topic="roleplay", level="IM3")],
-                [t("speak", topic="roleplay"), t("pattern", group="opener")],
+                [t("speak", topic="roleplay"), t("pattern", group="like")],
                 [t("learn", topic="unexpected"), t("speak", topic="unexpected")],
                 [t("mock", set="opic-unexpected"), t("review")],
-                [t("learn", topic="advanced"), t("speak", topic="advanced"), t("pattern", group="compare")],
+                [t("learn", topic="advanced"), t("speak", topic="advanced"), t("pattern", group="change")],
                 [t("mock", set="opic-full")],
                 [t("review"), t("pron", set="intonation")],
             ]
@@ -114,7 +116,7 @@ def eight_week():
                 [t("speak", topic="roleplay"), t("speak", topic="unexpected"), t("review")],
                 [t("mock", set="opic-mini"), t("pron", set="linking")],
                 [t("mock", set="opic-full"), t("review")],
-                [t("review"), t("pattern", group="closing"), t("pron", set="twisters")],
+                [t("review"), t("pattern", group="problem"), t("pron", set="twisters")],
                 [t("mock", set="opic-mini"), t("review")],
             ]
         return sched[d]
@@ -151,14 +153,14 @@ def twelve_week():
                 [t("speak", topic="unexpected")], [t("mock", set="opic-unexpected")], [t("review")],
             ],
             11: [
-                [t("learn", topic="advanced")], [t("speak", topic="advanced"), t("pattern", group="compare")],
+                [t("learn", topic="advanced")], [t("speak", topic="advanced"), t("pattern", group="change")],
                 [t("speak", topic="unexpected"), t("review")], [t("mock", set="opic-mini"), t("pattern", group="opinion")],
                 [t("mock", set="opic-full")], [t("review"), t("speak", topic="roleplay")], [t("review")],
             ],
             12: [
                 [t("mock", set="opic-full")], [t("review"), t("pron", set="intonation")],
                 [t("mock", set="opic-mini")], [t("speak", topic="unexpected"), t("review")],
-                [t("mock", set="opic-full")], [t("review"), t("pattern", group="closing")],
+                [t("mock", set="opic-full")], [t("review"), t("pattern", group="problem")],
                 [t("mock", set="opic-mini"), t("review")],
             ],
         }

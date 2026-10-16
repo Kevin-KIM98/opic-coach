@@ -81,7 +81,10 @@
 
 ## 다른 파일
 
-- `data/patterns.json` – 만능 패턴. `groups[].items[]` 에 `{en, ko, level, note}` 추가.
+- `data/patterns.json` – 만능 패턴 72문장 (12 스토리 테마 × 6패턴). `groups[].items[]` 는 `{en, ko, level, pattern, examples}`.
+  `pattern` 은 빈칸(`___`)이 있는 패턴 틀, `en` + `examples`(2개)가 예문 3개입니다. 말하기 퀴즈는 `pattern` 에서 빈칸을 뺀 단어로 채점합니다.
+  그룹 id 를 바꾸면 `focus.json` 과 `tools/gen_plans.py` 의 `PATTERNS` 도 함께 바꾸고 `python tools/gen_plans.py` 를 다시 실행하세요.
+  지금 파일에 없는 패턴의 학습 기록(`pat:*`)은 앱이 자동으로 지웁니다.
 - `data/pronunciation.json` – 발음 세트. `kind` 가 `minimal-pairs` 면 `pairs`, 그 외는 `words`/`sentences`.
 - `data/mock-sets.json` – 모의고사 구성. `slots` 로 문항 조합, `levels` 로 등급 커트라인.
 - `data/plans.json` – 일정. 손으로 고쳐도 되고, `tools/gen_plans.py` 를 수정해 다시 생성해도 됩니다.

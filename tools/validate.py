@@ -123,6 +123,10 @@ def main():
                 for i, it in enumerate(g.get("items", [])):
                     if not it.get("en") or not it.get("ko"):
                         err(f"data/patterns.json: group '{g.get('id')}' items[{i}] en/ko 누락")
+                    if it.get("pattern") is not None and "___" not in it["pattern"]:
+                        err(f"data/patterns.json: group '{g.get('id')}' items[{i}] pattern 에 빈칸(___)이 없습니다")
+                    if not isinstance(it.get("examples", []), list):
+                        err(f"data/patterns.json: group '{g.get('id')}' items[{i}] examples 는 문장 목록이어야 합니다")
         if name == "plans.json":
             for p in d.get("plans", []):
                 for day in p.get("days", []):

@@ -74,6 +74,15 @@ export const store = {
     const now = Date.now();
     return Object.entries(state.expr).filter(([, v]) => v.due <= now && v.box < 5).map(([k]) => k);
   },
+  // 만능 패턴을 교체하면 예전 패턴(pat:*) 학습 기록은 더 이상 가리킬 문장이 없다.
+  // 현재 patterns.json 에 없는 pat:* 기록을 지워 복습 대기·학습 완료 수가 부풀지 않게 한다.
+  prunePatterns(validIds) {
+    const valid = new Set(validIds);
+    let n = 0;
+    for (const k of Object.keys(state.expr)) if (k.startsWith('pat:') && !valid.has(k)) { delete state.expr[k]; n++; }
+    if (n) save();
+    return n;
+  },
   learnedCount() { return Object.values(state.expr).filter(v => v.box >= 3).length; },
 
   // ---- 학습 일정 ----
