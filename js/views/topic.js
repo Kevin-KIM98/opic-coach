@@ -158,13 +158,13 @@ function renderPron(body, topic) {
 }
 
 // 단어/문장 발음 빠른 확인: 4초 녹음 → 인식 결과 비교
-export async function quickCheck(btn, text, $out) {
+export async function quickCheck(btn, text, $out, { listenText = text } = {}) {
   const { Recognizer, support, sttDiagnosis } = await import('../speech.js');
   if (!support.stt) { $out.textContent = '이 브라우저는 음성 인식을 지원하지 않아요.'; return null; }
   btn.classList.add('on'); btn.textContent = '■'; $out.textContent = '듣는 중… 말하세요';
   const rec = new Recognizer({ onUpdate: t => { $out.textContent = t; } });
   rec.start();
-  await new Promise(r => setTimeout(r, Math.min(8000, 2500 + text.split(' ').length * 500)));
+  await new Promise(r => setTimeout(r, Math.min(8000, 2500 + listenText.split(' ').length * 500)));
   const { transcript, error } = rec.stop();
   btn.classList.remove('on'); btn.textContent = '🎙️';
   // 인식 자체가 안 된 경우에는 "일치 0%" 대신 원인을 알려 준다

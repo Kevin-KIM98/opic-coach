@@ -34,7 +34,7 @@ const patLearned = (cards) => cards.filter(c => store.exprInfo(c.id).box >= 3).l
 
 async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
   const p = await data.patterns();
-  const all = p.groups.flatMap(g => g.items.map((it, i) => ({ ...it, id: `pat:${g.id}#${i}`, group: g.title, no: 0 })));
+  const all = p.groups.flatMap(g => g.items.map((it, i) => ({ ...it, note: it.note || (it.pattern ? `패턴: ${it.pattern}` : ''), id: `pat:${g.id}#${i}`, group: g.title, no: 0 })));
   all.forEach((c, i) => { c.no = i + 1; });
   const group = groupId === 'all' ? { id: 'all', title: `전체 ${all.length}문장`, desc: '처음부터 끝까지 순서대로' } : p.groups.find(g => g.id === groupId) || null;
 
@@ -46,7 +46,7 @@ async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
       <div class="card mb12"><div class="row between"><div class="h3">진행률</div><div class="small"><b>${learned}</b> / ${all.length} 문장</div></div>
         <div class="bar teal mt8"><i style="width:${all.length ? learned / all.length * 100 : 0}%"></i></div>
         <div class="btn-row mt12"><a class="btn dark" href="#/drill?tab=patterns&group=all">▶ ${all.length}문장 순서대로</a><a class="btn teal" href="#/drill?tab=patterns&group=all&mode=quiz">🎙️ 말하기 퀴즈</a></div>
-        <p class="xs muted mt8">퀴즈: 한국어 뜻을 보고 영어로 말하면 음성 인식으로 채점해 복습 상자에 반영해요.</p></div>
+        <p class="xs muted mt8">퀴즈: 한국어 패턴을 보고 빈칸에 내 주제를 넣어 영어로 말하면, 음성 인식으로 채점해 복습 상자에 반영해요.</p></div>
       <div class="list">${raw(p.groups.map((g, gi) => {
         const cards = g.items.map((_, i) => ({ id: `pat:${g.id}#${i}` }));
         return `<a class="list-row" href="#/drill?tab=patterns&group=${g.id}"><div class="emoji">${g.emoji || GROUP_EMOJI[gi % GROUP_EMOJI.length]}</div><div class="grow"><div class="t">${g.title} <span class="xs muted">${patLearned(cards)}/${g.items.length}</span></div><div class="s">${g.desc}</div><div class="bar teal mt8" style="height:5px"><i style="width:${patLearned(cards) / g.items.length * 100}%"></i></div></div><span class="chev">›</span></a>`;
@@ -74,13 +74,17 @@ async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
   else list();
 }
 
-// 패턴 행: 번호 + 문장 + 뜻 + 팁 + 활용 예문 (exprRow 와 같은 모양)
+// 패턴 행: 번호 · 패턴 틀(___) · 뜻 · 예문 3개 (예문마다 🔊 — 자동 재생은 예문을 순서대로 읽는다)
 function patRow(c) {
   const info = store.exprInfo(c.id);
   const dot = info.box >= 3 ? '✅' : info.box > 0 ? '🟡' : '';
-  return `<div class="expr"><button class="play" data-say="${encodeURIComponent(c.en)}">🔊</button>
-    <div class="grow"><div class="en"><span class="muted">${c.no}.</span> ${c.en} <span class="xs">${dot}</span></div><div class="ko">${c.ko}</div>${c.note ? `<div class="note">💡 ${c.note}</div>` : ''}${c.example ? `<div class="note">🗣️ ${c.example}</div>` : ''}</div>
-    <span class="badge ${c.level || 'IM'}">${c.level || 'IM'}</span></div>`;
+  const ex = [c.en, ...(c.examples || [])];
+  const head = c.pattern || c.en;
+  return `<div class="expr pat"><div class="grow">
+      <div class="en"><span class="muted">${c.no}.</span> ${head} <span class="xs">${dot}</span> <span class="badge ${c.level || 'IM'}">${c.level || 'IM'}</span></div>
+      <div class="ko">${c.ko}</div>
+      <div class="pat-ex mt8">${ex.map(e => `<div class="row" style="gap:8px;align-items:center"><button class="play sm" data-say="${encodeURIComponent(e)}">🔊</button><span class="small">${e}</span></div>`).join('')}</div>
+    </div></div>`;
 }
 
 // 말하기 퀴즈: 한국어 뜻 → 영어로 말하기 → 일치율 80% 이상이면 "알아요"
@@ -91,7 +95,9 @@ function speakQuiz(body, cards, onExit) {
   let i = 0, right = 0, tried = 0, busy = false;
   const draw = () => {
     const c = deck[i];
-    const hint = c.en.split(/\s+/).slice(0, 2).join(' ') + ' …';
+    const frame = c.pattern || c.en;
+    const target = frame.replace(/_{2,}/g, ' ').replace(/\s+/g, ' ').trim();   // 빈칸은 내 주제로 채우면 되므로 채점에서 뺀다
+    const hint = frame.split(/\s+/).slice(0, 2).join(' ') + ' …';
     body.innerHTML = html`
       <div class="flash">
         <span class="badge lvl ${c.level || 'IM'}">${c.level || 'IM'}</span>
@@ -99,7 +105,8 @@ function speakQuiz(body, cards, onExit) {
         <div class="xs muted">${c.no}번 · ${c.group}</div>
         <div class="en" style="font-size:19px">${c.ko}</div>
         <div class="ko hidden" data-hint>힌트: ${hint}</div>
-        <div class="ko hidden" data-ans><b>${c.en}</b></div>
+        ${c.pattern ? raw('<div class="xs muted">빈칸(___)은 아무 주제로나 채워서 말하세요</div>') : ''}
+        <div class="ko hidden" data-ans><b>${frame}</b><br>예) ${c.en}</div>
         <div class="xs" data-result></div>
       </div>
       <div class="btn-row mt12"><button class="btn primary" data-speak>🎙️ 영어로 말하기</button></div>
@@ -116,7 +123,7 @@ function speakQuiz(body, cards, onExit) {
     $sp.addEventListener('click', async () => {
       if (busy) return;
       busy = true; stopSpeaking();
-      const score = await quickCheck($sp, c.en, $res);
+      const score = await quickCheck($sp, target, $res, { listenText: c.en });
       busy = false; $sp.textContent = '🎙️ 다시 말하기';
       if (score == null) return;           // 인식 실패: 채점하지 않음
       tried++; if (score >= 80) right++;

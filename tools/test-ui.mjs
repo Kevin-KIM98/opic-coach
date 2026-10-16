@@ -161,7 +161,7 @@ async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
 
 // ---- 5. 만능 패턴 ----
 {
-  const { page, errs } = await open('http://localhost:8777/index.html#/drill?tab=patterns&group=opener');
+  const { page, errs } = await open('http://localhost:8777/index.html#/drill?tab=patterns&group=like');
   check('만능 패턴에 자동 재생 바가 있다', !!(await page.$('.autoplay')));
   await page.click('[data-toggle]');
   await page.waitForTimeout(900);
@@ -223,7 +223,7 @@ async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
 
 // ---- 9. 반복 설정은 화면끼리 공유된다 ----
 {
-  const { page } = await open('http://localhost:8777/index.html#/drill?tab=patterns&group=opener', { repeat: 5, gap: 0 });
+  const { page } = await open('http://localhost:8777/index.html#/drill?tab=patterns&group=like', { repeat: 5, gap: 0 });
   check('패턴 화면에도 같은 설정이 보인다', (await page.textContent('[data-repeat]')) === '반복 5회');
   await page.close();
 }
