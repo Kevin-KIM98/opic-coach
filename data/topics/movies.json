@@ -5,29 +5,29 @@
   "emoji": "🎬",
   "category": "survey",
   "priority": 3,
-  "intro": "설문에서 '영화 보기'를 고르면 좋아하는 장르·극장 묘사 → 영화 보는 루틴 → 최근 인상 깊은 영화 → 극장 vs 집 비교 순으로 거의 확정적으로 출제됩니다. 바쁜 대학생이 주말 밤에 가족과 집에서 넷플릭스로 코미디·액션을 보며 스트레스를 푼다는 한 가지 이야기로 모든 질문을 연결하세요. 극장은 지하철역 근처, 친구 Minji와 가끔 가는 곳으로 고정해 두면 롤플레이까지 재활용할 수 있습니다.",
+  "intro": "설문에서 '영화 보기'를 고르면 좋아하는 장르·보는 장소 묘사 → 영화 보는 루틴 → 최근 인상 깊은 영화 → 극장 vs 집 비교 순으로 거의 확정적으로 출제됩니다. 회의가 많은 바쁜 직장인이 재택근무하는 금요일 밤, 혼자 사는 아파트 소파에서 넷플릭스로 코미디·액션을 보며 스트레스를 푼다는 한 가지 이야기로 모든 질문을 연결하세요. 극장은 '회사 근처, 동료 Minji와 퇴근 후 가끔'으로 고정해 두면 롤플레이까지 재활용할 수 있습니다.",
   "strategy": [
-    "답변 흐름: 'Oh, movies? I love talking about that.' 같은 시작 문장 → 좋아하는 장르·보는 곳 → 언제·누구와·어떻게 보는지 → 왜 좋은지(스트레스 해소) → 'Yeah, that's why I love watching movies.' 마무리 문장.",
-    "장소는 '집(거실 소파, 넷플릭스)'이 기본, 극장은 '지하철역 옆, Minji와 가끔'으로 고정해 질문이 달라도 같은 배경을 재활용합니다.",
-    "경험 질문은 언제·누구와 → 줄거리 2문장 → 기억에 남는 장면 → 느낌 순서로, 최근 가족과 본 애니메이션 한 편을 미리 준비해 둡니다.",
-    "IH 이상은 비교(used to ~ / these days), 이유 2개, 'nothing beats ~' 같은 쉬운 관용 표현을 더하되 문장은 짧게 유지합니다."
+    "답변 흐름: 'Oh, movies? Sure, I'd love to talk about that.' 같은 시작 문장 → 좋아하는 장르·보는 곳 → 언제·누구와·어떻게 보는지 → 왜 좋은지(회사 스트레스 해소) → 'Yeah, that's why I love watching movies.' 마무리 문장.",
+    "장소는 '혼자 사는 아파트 거실 소파 + 넷플릭스'가 기본, 극장은 '회사 근처, Minji와 퇴근 후 가끔'으로 고정해 질문이 달라도 같은 배경을 재활용합니다.",
+    "경험 질문은 언제·누구와 → 줄거리 2문장 → 기억에 남는 장면 → 느낌 순서로, 지난달 Minji와 퇴근 후 본 액션 코미디 한 편을 미리 준비해 둡니다.",
+    "IH 이상은 비교(when I lived with my family ~ / these days), 이유 2개, 'nothing beats ~' 같은 쉬운 관용 표현을 더하되 문장은 짧게 유지합니다."
   ],
   "expressions": [
     {"en": "Oh, movies? Sure, I'd love to talk about that.", "ko": "아, 영화요? 네, 그 얘기라면 좋아요.", "level": "IM", "note": "시작 문장: 질문 키워드를 한 번 되받아 말하면 자연스럽게 시간을 벌 수 있어요."},
     {"en": "I usually watch movies at home on Netflix.", "ko": "저는 보통 집에서 넷플릭스로 영화를 봐요.", "level": "IM"},
     {"en": "My favorite genres are comedy and action.", "ko": "제가 제일 좋아하는 장르는 코미디랑 액션이에요.", "level": "IM"},
-    {"en": "Comedies help me relax after a busy week.", "ko": "코미디는 바쁜 한 주를 보낸 뒤에 긴장을 풀어 줘요.", "level": "IM"},
-    {"en": "On Saturday nights, I watch a movie with my family in the living room.", "ko": "토요일 밤에는 거실에서 가족이랑 영화를 봐요.", "level": "IM"},
-    {"en": "Sometimes I go to the theater with my friend Minji.", "ko": "가끔 친구 Minji랑 극장에 가요.", "level": "IM", "note": "go to the theater / go to the movies: 영화 보러 가다"},
-    {"en": "We always get popcorn and a Coke.", "ko": "저희는 항상 팝콘이랑 콜라를 사요.", "level": "IM"},
+    {"en": "Movies help me relax after a long day at work.", "ko": "영화는 회사에서 긴 하루를 보낸 뒤 긴장을 풀어 줘요.", "level": "IM"},
+    {"en": "Friday night is my movie night.", "ko": "금요일 밤은 제 영화의 밤이에요.", "level": "IM"},
+    {"en": "Sometimes I go to the theater near my office with my coworker Minji.", "ko": "가끔 회사 근처 극장에 동료 Minji랑 가요.", "level": "IM", "note": "go to the theater / go to the movies: 영화 보러 가다"},
     {"en": "It was really funny, and I laughed a lot.", "ko": "정말 웃겨서 많이 웃었어요.", "level": "IM"},
-    {"en": "Watching a movie is the best way for me to get rid of stress.", "ko": "영화 보는 게 제가 스트레스를 푸는 가장 좋은 방법이에요.", "level": "IH", "note": "get rid of stress = relieve stress"},
-    {"en": "I used to go to the theater a lot, but these days I mostly watch at home.", "ko": "예전엔 극장에 자주 갔는데, 요즘은 주로 집에서 봐요.", "level": "IH", "note": "used to + 동사원형: 예전엔 ~했다"},
-    {"en": "The best part is that I can pause it whenever I want.", "ko": "제일 좋은 점은 원할 때 언제든 멈출 수 있다는 거예요.", "level": "IH"},
-    {"en": "The ending was so touching that my mom actually cried.", "ko": "결말이 너무 감동적이어서 엄마가 진짜 우셨어요.", "level": "IH", "note": "so + 형용사 + that ~: 너무 ~해서 …하다"},
-    {"en": "Yeah, that's pretty much how I enjoy movies.", "ko": "네, 제가 영화를 즐기는 방법은 대충 그래요.", "level": "IH", "note": "마무리 문장: 'Yeah, that's ~'로 깔끔하게 끝내세요."},
-    {"en": "Nothing beats watching a big action movie on a huge screen.", "ko": "큰 화면으로 액션 영화 보는 것만 한 건 없어요.", "level": "AL", "note": "Nothing beats ~: ~만 한 게 없다"},
-    {"en": "It's not just a hobby for me; it's kind of my little reward for surviving the week.", "ko": "저한테 영화는 그냥 취미가 아니라, 한 주를 버틴 저에게 주는 작은 보상 같은 거예요.", "level": "AL"}
+    {"en": "I spend more time choosing a movie than actually watching it.", "ko": "실제로 영화 보는 시간보다 고르는 데 시간을 더 많이 써요.", "level": "IH", "note": "spend + 시간 + -ing: ~하는 데 시간을 쓰다"},
+    {"en": "Since I live alone, I can watch whatever I want.", "ko": "혼자 살아서 보고 싶은 건 뭐든 볼 수 있어요.", "level": "IH", "note": "Since ~: ~이기 때문에 (이유를 문장 앞에)"},
+    {"en": "I like to binge-watch movies on my days off.", "ko": "쉬는 날에는 영화를 몰아서 보는 걸 좋아해요.", "level": "IH"},
+    {"en": "The best part was when the two main characters finally teamed up.", "ko": "제일 좋았던 부분은 두 주인공이 마침내 힘을 합쳤을 때였어요.", "level": "IH", "note": "The best part was when ~: 경험 질문 하이라이트용"},
+    {"en": "When I lived with my family, we used to watch movies together on weekends.", "ko": "가족이랑 살 때는 주말마다 같이 영화를 보곤 했어요.", "level": "IH", "note": "used to + 동사원형: 과거 습관 (비교 질문 필수)"},
+    {"en": "Action movies keep me on the edge of my seat.", "ko": "액션 영화는 손에 땀을 쥐게 해요.", "level": "AL", "note": "on the edge of my seat: 긴장감에 몰입한 상태"},
+    {"en": "Honestly, nothing beats watching a big action movie on a giant screen.", "ko": "솔직히 큰 화면으로 액션 영화 보는 것만 한 게 없어요.", "level": "AL", "note": "nothing beats ~: ~만 한 게 없다"},
+    {"en": "Yeah, that's why I love watching movies.", "ko": "네, 그래서 제가 영화 보는 걸 좋아해요.", "level": "IM", "note": "마무리 문장: 주제 키워드를 넣어 깔끔하게 끝내세요."}
   ],
   "questions": [
     {
@@ -36,46 +36,46 @@
       "en": "You indicated in the survey that you like to watch movies. What kind of movies do you like, and why? Also, tell me about the place where you usually watch them.",
       "ko": "설문에서 영화 보는 것을 좋아한다고 하셨습니다. 어떤 영화를 좋아하고, 그 이유는 무엇인가요? 그리고 영화를 주로 보는 장소에 대해서도 말해 주세요.",
       "tips": [
-        "답변 흐름: 시작 문장 → 좋아하는 장르 2개 → 이유(스트레스 해소) → 보는 장소(집 거실 / 가끔 역 앞 극장) → 'Yeah, that's ~' 마무리.",
-        "장소 묘사는 거실 소파, TV, 넷플릭스처럼 눈에 보이는 것 2~3개만 말해도 충분합니다.",
-        "IH 이상은 극장과 집을 짧게 비교하는 한 문장을 추가하세요."
+        "답변 흐름: 시작 문장 → 좋아하는 장르 2개 → 이유(회사 스트레스 해소) → 보는 장소(혼자 사는 집 거실 / 가끔 회사 근처 극장) → 'Yeah, that's ~' 마무리.",
+        "장소 묘사는 소파, TV, 담요, 넷플릭스처럼 눈에 보이는 것 2~3개만 말해도 충분합니다.",
+        "IH 이상은 금요일 재택근무 → 금요일 밤 영화처럼 페르소나 디테일을 이유로 연결하세요."
       ],
       "answers": {
-        "IM3": "Oh, movies? Sure, I'd love to talk about that. I really like comedy and action movies. Comedies make me laugh, and action movies are just exciting. My weekdays are pretty busy because I have a lot of classes, so movies help me relax. I usually watch them at home on Netflix. We have a big TV and a comfy sofa in the living room. Sometimes I go to the theater near the subway station with my friend Minji. Yeah, that's the kind of movies I like.",
-        "IH": "Oh, movies? Sure, I'd love to talk about that. My favorite genres are comedy and action. I'm a college student, and my weekdays are pretty busy with classes and assignments. So on the weekend, I just want to watch something fun and not think too much. Comedies make me laugh out loud, and action movies are exciting, so they're perfect for getting rid of stress. Most of the time, I watch movies at home on Netflix. Our living room has a big TV and a soft sofa, and my family often joins me. Once or twice a month, I also go to a theater right next to the subway station with my friend Minji. It's not huge, but the seats are comfortable and the sound is great. Yeah, that's pretty much the kind of movies I like and where I watch them.",
-        "AL": "Oh, movies? Sure, I'd love to talk about that, because it's probably my favorite way to relax. I'm into comedy and action movies the most. As a business major, I have tons of classes and group projects, so by Friday I'm usually exhausted. Comedies are great because they make me laugh until my stomach hurts, and action movies keep me on the edge of my seat, so I completely forget about my assignments for a while. Most of the time, I watch movies at home. Our living room has a big TV and a really comfy sofa, and on Saturday nights my whole family, my mom, my dad, and my little brother Junho, sits together with snacks. I love that cozy feeling. Every now and then, though, I go to the theater near the subway station with my friend Minji. It's a small theater, but the screen is big and the sound is amazing, so that's where we watch big action movies. Honestly, nothing beats a huge explosion on a giant screen. Afterwards, we usually grab dinner nearby. So yeah, that's what kind of movies I like and where I usually watch them."
+        "IM3": "Oh, movies? Sure, I'd love to talk about that. I really like comedy and action movies. Comedies make me laugh, and action movies are just exciting. My weekdays are pretty busy because I have a lot of meetings at work, so movies help me relax. I usually watch them at home on Netflix. I live alone, so I just lie on my sofa in the living room with some snacks. Sometimes I go to a theater near my office with my coworker Minji. Yeah, that's the kind of movies I like.",
+        "IH": "Oh, movies? Sure, I'd love to talk about that. My favorite genres are comedy and action. I work on the marketing team at an IT company, and my days are pretty busy with meetings and reports. So after work, I just want to watch something fun and not think too much. Comedies make me laugh out loud, and action movies are exciting, so they're perfect for getting rid of stress. Most of the time, I watch movies at home on Netflix. I live alone in a one-bedroom apartment, and my living room has a TV and a really comfy sofa. Friday night is my movie night, because I work from home on Fridays. Once or twice a month, I also go to a theater near my office with my coworker Minji. The seats are comfortable, and the sound is great. Yeah, that's pretty much the kind of movies I like and where I watch them.",
+        "AL": "Oh, movies? Sure, I'd love to talk about that, because it's probably my favorite way to relax. I'm into comedy and action movies the most. I work in marketing at an IT company, and I have tons of meetings and reports, so by Friday I'm usually exhausted. Comedies are great because they make me laugh until my stomach hurts, and action movies keep me on the edge of my seat, so I completely forget about work for a while. Most of the time, I watch movies at home. I live alone in a one-bedroom apartment, and my living room is small but cozy. I've got a decent TV, a soft sofa, and a blanket that I basically live under on Friday nights. Since I work from home on Fridays, I don't have to commute, so I can start a movie right after I log off. Every now and then, though, I go to the theater near my office with my coworker Minji. The screen is huge and the sound is amazing, so that's where we watch big action movies. Honestly, nothing beats a huge explosion on a giant screen. So yeah, that's what kind of movies I like and where I usually watch them."
       }
     },
     {
       "id": "movies-routine",
       "type": "routine",
       "en": "Tell me about how you usually watch movies. When do you watch them, who do you watch them with, and what do you do before and after the movie?",
-      "ko": "평소에 영화를 어떻게 보는지 말해 주세요. 언제 보고, 누구와 함께 보며, 영화 보기 전과 후에는 무엇을 하나요?",
+      "ko": "보통 영화를 어떻게 보는지 말해 주세요. 언제 보고, 누구와 함께 보며, 영화 전후에는 무엇을 하나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제(토요일 밤) → 누구와(가족) → 보기 전(영화 고르기, 간식) → 보는 중 → 본 후(얘기, 잠) → 마무리.",
-        "first, then, after that, finally 같은 순서 표현으로 루틴을 정리하면 듣기 쉽습니다.",
-        "IH 이상은 극장에 갈 때의 루틴(Minji, 팝콘, 카페)을 짧게 대조해 주세요."
+        "답변 흐름: 시작 문장 → 언제(금요일 밤) → 누구와(주로 혼자, 가끔 친구·Minji) → 영화 전(고르기·간식) → 영화 후(후기 찾기·잠) → 마무리.",
+        "first / then / after that / finally 같은 순서 표현으로 루틴을 차례대로 말하면 구조가 분명해집니다.",
+        "IH 이상은 집 루틴과 극장 루틴(퇴근 후 Minji와 앱 예매 → 영화 → 카페 수다)을 둘 다 말해 보세요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about my movie routine. I usually watch movies on Saturday nights. I watch them at home with my family. Before the movie, we choose a movie on Netflix together. My brother Junho and I usually want different movies, so it takes a while. Then my mom makes popcorn, and we sit on the sofa. After the movie, we talk about it for a few minutes and go to bed. Yeah, that's my usual movie routine.",
-        "IH": "Okay, let me tell you about how I usually watch movies. During the week, I'm pretty busy with classes, so I usually watch movies on Saturday nights. Most of the time, I watch them at home with my family. First, we pick a movie on Netflix, which honestly takes forever, because my brother Junho always wants an action movie and my mom wants a comedy. Then we get some snacks, like popcorn and chips, and turn off the lights in the living room. During the movie, my dad sometimes falls asleep, which is really funny. After the movie, we talk about our favorite scenes. When I go to the theater with my friend Minji, it's a little different. We buy popcorn before the movie, and after that, we go to a cafe and talk about it. Yeah, that's pretty much my movie routine.",
-        "AL": "Okay, let me tell you about how I usually watch movies. Since my weekdays are packed with classes, Saturday night is my official movie night. I usually watch movies at home with my family, and we have a little routine. First, we spend way too long choosing a movie on Netflix. My brother Junho always votes for action, my mom wants a comedy, and my dad just says, 'Anything is fine,' so I usually end up making the final decision. Then my mom makes popcorn, I grab some drinks from the fridge, and we turn off the lights in the living room so it feels like a real theater. During the movie, nobody is allowed to check their phone. That's our only rule. My dad still falls asleep halfway through almost every time, which always makes us laugh. After the movie, we chat about the ending for a while before going to our rooms. When I go to the theater with Minji instead, we book seats online, grab popcorn, and afterwards we go to a cafe to talk about the story over iced americanos. So yeah, that's how I usually enjoy movies, and it's honestly the highlight of my week."
+        "IM3": "Okay, let me tell you about how I watch movies. I usually watch movies on Friday nights. I work from home on Fridays, so I'm not tired from the commute. After dinner, I pick a movie on Netflix. Before the movie starts, I make some popcorn and get a cold drink. I usually watch alone, but sometimes my friends come over. After the movie, I read some reviews on my phone. Then I go to bed pretty late. Yeah, that's my usual movie routine.",
+        "IH": "Okay, let me tell you about how I usually watch movies. Most of the time, I watch them at home on Friday nights. I work from home on Fridays, so I have more energy than on other weekdays. First, I order some fried chicken or make popcorn. Then I scroll through Netflix to pick a movie. Honestly, I sometimes spend more time choosing a movie than actually watching it. I usually watch alone, so I turn off the lights and put my phone on silent. After the movie, I read reviews online or text my friends about it. About twice a month, I go to the theater with my coworker Minji after work. We book tickets on an app during lunch, and after the movie, we chat about it over coffee. Yeah, that's pretty much how I watch movies.",
+        "AL": "Okay, let me tell you about how I usually watch movies, because I actually have a little routine. For me, Friday night is movie night. I work from home on Fridays, so I don't have to squeeze into a crowded subway, and I still have some energy left in the evening. Right after I log off, I order something like fried chicken, or if I'm trying to be healthy, I just make popcorn. Then comes the hardest part, choosing a movie. I scroll through Netflix forever, reading descriptions and watching trailers, and sometimes I spend more time choosing than watching. Since I live alone, I can watch whatever I want without arguing with anyone, which is one of the perks of living by myself. I turn off the lights, put my phone on silent, and wrap myself in a blanket. After the movie, I usually look up reviews or fan theories, and I end up staying up way too late. Once or twice a month, I also go to a theater near my office with my coworker Minji. We book seats on an app during our lunch break, and after the movie, we grab coffee and talk about our favorite scenes. So yeah, that's pretty much my movie routine."
       }
     },
     {
       "id": "movies-experience",
       "type": "experience",
       "en": "Tell me about the most memorable movie you've seen recently. When did you see it, who did you watch it with, and what was it about? How did you feel about it?",
-      "ko": "최근에 본 영화 중 가장 기억에 남는 영화에 대해 말해 주세요. 언제, 누구와 봤고, 어떤 내용이었나요? 보고 나서 어떤 느낌이었나요?",
+      "ko": "최근에 본 영화 중 가장 기억에 남는 영화에 대해 말해 주세요. 언제, 누구와 봤고, 어떤 내용이었나요? 어떤 느낌이 들었나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제·누구와(지난달, 가족) → 줄거리 2~3문장 → 기억에 남는 장면 → 느낌 → 마무리.",
-        "줄거리는 길게 말하지 말고 주인공·문제·결말만 짧게 말하세요.",
-        "IH 이상은 가족의 반응(엄마가 울었다 등)을 넣으면 생생해집니다."
+        "답변 흐름: 시작 문장 → 언제·누구와(지난달, 퇴근 후 Minji) → 줄거리 2문장 → 기억에 남는 장면 → 느낌 → 마무리.",
+        "줄거리는 길게 말하지 말고 'It was about ~' 한 문장 + 핵심 사건 한 문장이면 충분합니다. 과거시제를 끝까지 유지하세요.",
+        "IH 이상은 'The best part was when ~'으로 하이라이트 장면을 넣고, 직장인으로서 공감한 이유를 더하세요."
       ],
       "answers": {
-        "IM3": "Oh, let me think. The most memorable movie I saw recently was an animated movie, Inside Out 2. I watched it with my family last month. It's about a teenage girl and the feelings inside her head. She starts high school and feels a lot of new emotions, like anxiety. The movie was really funny, but it was also touching. My mom almost cried at the end. I think it was a great movie for the whole family. Yeah, that's the movie I remember the most.",
-        "IH": "Oh, let me think. The most memorable movie I've seen recently is Inside Out 2. It's an animated movie, and I watched it with my family on a Saturday night last month. To be honest, I didn't expect much because I thought it was a kids' movie. But I was totally wrong. The story is about a teenage girl named Riley and the emotions inside her head, like Joy and Sadness. When she goes to a hockey camp, a new emotion called Anxiety takes over, and everything gets messy. The movie was really funny, but the ending was so touching that my mom actually cried. Even my brother Junho, who only likes action movies, said it was good. After that, we talked about our own stress for a while. Yeah, that's the movie I remember the most these days.",
-        "AL": "Oh, let me think. The most memorable movie I've seen recently is definitely Inside Out 2. It's an animated movie, and I watched it with my family on one of our Saturday movie nights last month. Honestly, I had pretty low expectations. I thought it would just be a cute kids' movie, but it turned out to be way deeper than I expected. The story is about a teenage girl named Riley and the emotions living inside her head. When she goes to a hockey camp, a brand-new emotion called Anxiety shows up and basically takes control. She starts worrying about everything and trying too hard to fit in. As a college student with tons of assignments, I could really relate to that. There's a scene near the end where Anxiety is spinning out of control, and it was so real that I got goosebumps. My mom cried, and even my brother Junho, who usually only watches action movies, went quiet. After the movie, we had a really nice talk about how we deal with stress. It made me realize it's okay to feel anxious sometimes. So yeah, that's the movie that stuck with me the most."
+        "IM3": "Oh, a memorable movie? Let me think. Last month, I watched a Korean action comedy with my coworker Minji. We went to a theater near our office after work. It was about two office workers who accidentally got mixed up with a gang. They were not good at fighting, so a lot of funny things happened. We laughed so much during the movie. I liked it because the characters were just like us. Yeah, that's the most memorable movie I've seen recently.",
+        "IH": "Oh, a memorable movie? Let me think. The one I remember the most is a Korean action comedy I saw last month. It was a Thursday, and my coworker Minji and I had a really stressful day, so we decided to go to the theater near our office after work. The movie was about two office workers who accidentally got mixed up with a gang. They had no idea how to fight, so they used things like staplers and office chairs. The best part was when the two main characters finally teamed up and beat the bad guys in a copy room. Everyone in the theater was laughing really hard. I could relate to the characters because they complained about their boss and meetings, just like us. Yeah, that's the most memorable movie I've seen recently.",
+        "AL": "Oh, a memorable movie? Let me think. Actually, one movie pops into my head right away. It was a Korean action comedy I saw last month with my coworker Minji. That Thursday was a nightmare at work. We had back-to-back meetings, and our campaign report was due, so after work we both said, 'We need a movie, right now.' We went to the theater near our office and grabbed some popcorn. The movie was about two ordinary office workers who accidentally got mixed up with a gang. The funny thing was, they had zero fighting skills, so they used whatever they could find, like staplers, rolling chairs, and even a coffee machine. The best part was when they finally teamed up and defeated the bad guys in a tiny copy room. The whole theater burst out laughing, and Minji was laughing so hard that she almost dropped her drink. What made it special was that I could totally relate to the characters. They were always complaining about their boss and endless meetings, and I was like, 'That's literally my life.' I walked out of the theater feeling so much lighter. So yeah, that's the most memorable movie I've seen recently."
       }
     },
     {
@@ -84,22 +84,22 @@
       "en": "How is watching movies at the theater different from watching them at home? Which do you prefer, and why?",
       "ko": "극장에서 영화를 보는 것과 집에서 보는 것은 어떻게 다른가요? 어느 쪽을 더 좋아하고, 그 이유는 무엇인가요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 극장의 장점 → 집의 장점 → 내 선택 + 이유 2개 → 마무리.",
-        "'At the theater, ~. At home, ~.' 처럼 같은 구조를 반복하면 비교가 깔끔해집니다.",
-        "AL은 '상황에 따라 다르다'는 균형 잡힌 결론과 예시(액션은 극장, 코미디는 집)를 넣어 보세요."
+        "답변 흐름: 시작 문장 → 극장의 장점(큰 화면·소리) → 집의 장점(편함·저렴·일시정지) → 내 선택과 이유 2개 → 마무리.",
+        "비교 표현 bigger / more comfortable / cheaper than, while ~, on the other hand 를 꼭 넣으세요.",
+        "IH 이상은 'When I lived with my family in Daejeon, we used to ~' 로 과거와 지금을 비교하는 한 문장을 추가하면 좋습니다."
       ],
       "answers": {
-        "IM3": "Okay, let me compare the two. At the theater, the screen is really big and the sound is amazing. So action movies are much more exciting there. But tickets are expensive, and I have to take the subway. At home, I can watch movies on Netflix for free, and I can wear my pajamas. I can also pause the movie anytime. I prefer watching movies at home because it's comfortable and I can watch with my family. Yeah, that's why I like home better.",
-        "IH": "Okay, let me compare the two. First, watching movies at the theater feels special. The screen is huge, the sound is powerful, and there are no distractions. That's why I go to the theater with my friend Minji when a big action movie comes out. But it's not cheap. A ticket and popcorn cost almost thirty thousand won, and I have to take the subway. At home, it's totally different. I can lie on the sofa in my pajamas, and I can pause the movie whenever I want. Also, it's basically free because we already pay for Netflix. If I have to choose, I prefer watching at home. My weekdays are pretty busy, so on the weekend I just want to relax with my family. Yeah, that's why I usually watch movies at home.",
-        "AL": "Okay, let me compare the two, because they're actually pretty different experiences. Watching a movie at the theater feels like a little event. The screen is huge, the sound shakes your seat, and everyone is focused on the same story, so you really get into it. When a big action movie comes out, my friend Minji and I always go to the theater near the subway station, because nothing beats a huge explosion on a giant screen. The downside is the price. One ticket plus popcorn is almost thirty thousand won, which is a lot for a college student. Watching at home is the opposite. It's cheap, comfortable, and flexible. I can lie on the sofa in my pajamas, pause the movie to grab a snack, and even rewind a funny scene. Plus, I get to share it with my family. So which one do I prefer? Honestly, it depends on the movie, but most of the time I choose home. After a busy week of classes, I just want to relax without going anywhere. Being with my family is a big bonus, too. So yeah, the theater is for special movies, but home is my everyday favorite."
+        "IM3": "Oh, that's a good question. Let me think. Watching movies at the theater and at home are pretty different. At the theater, the screen is really big and the sound is great. But tickets are expensive these days. At home, I can wear my pajamas and lie on my sofa. I can also pause the movie anytime. So I prefer watching movies at home. But for big action movies, I go to the theater with Minji. Yeah, that's the difference for me.",
+        "IH": "Oh, that's a good question. Let me think. There are some big differences between watching movies at the theater and at home. First, the theater has a huge screen and amazing sound, so action movies feel much more exciting there. It also feels like a special event. On the other hand, watching at home is way more comfortable and cheaper. I live alone, so I can wear my pajamas, eat whatever I want, and pause the movie when I need a break. When I lived with my family in Daejeon, we used to fight over the remote, but now I can watch anything I want. So most of the time, I prefer watching at home, especially after a long week at work. But when a big action movie comes out, I still go to the theater with Minji. Yeah, that's how they're different for me.",
+        "AL": "Oh, that's a good question. Let me think. I'd say watching movies at the theater and at home are almost two different experiences. At the theater, everything is bigger and louder. The screen is huge, the sound shakes your seat, and you're surrounded by people reacting at the same time, so it feels like a real event. Honestly, nothing beats a big action movie on a giant screen. On the other hand, the theater can be a bit of a hassle. Tickets are pretty expensive these days, and you have to deal with crowds and people checking their phones. Watching at home is the total opposite. It's cheap, quiet, and super comfortable. Since I live alone, I can wear my pajamas, eat fried chicken on the sofa, and pause whenever I want. When I lived with my family in Daejeon, we used to argue about what to watch, but now I'm the boss of my own remote. So, overall, I prefer watching at home, mainly because I'm usually exhausted after a busy week at work, and I just want to relax. But when a big blockbuster comes out, Minji and I still go to the theater near our office. So yeah, that's the difference for me."
       }
     }
   ],
   "pronunciation": [
     {"word": "theater", "ipa": "/ˈθiːətər/", "tip": "th는 혀끝을 이 사이에 살짝 물고 바람을 내보내세요. '씨어러'처럼 t를 부드럽게 굴려 발음합니다."},
     {"word": "comedy", "ipa": "/ˈkɑːmədi/", "tip": "강세는 첫 음절 'ka'. '코메디'가 아니라 '카머디'에 가깝게 말하세요."},
-    {"word": "animated", "ipa": "/ˈænɪmeɪtɪd/", "tip": "첫 음절 'æ'를 입을 크게 벌려 강하게. 미국식은 t가 부드러워져 '애니메이릳'처럼 들립니다."},
+    {"word": "genre", "ipa": "/ˈʒɑːnrə/", "tip": "첫소리는 '장'이 아니라 입술을 내민 '쟈'(ʒ) 소리. '쟌러'처럼 짧게 말합니다."},
     {"word": "popcorn", "ipa": "/ˈpɑːpkɔːrn/", "tip": "앞 'pop'에 강세, 가운데 p는 거의 터뜨리지 않고 바로 corn으로 넘어가세요."},
-    {"word": "genre", "ipa": "/ˈʒɑːnrə/", "tip": "첫소리는 '장'이 아니라 입술을 내민 '쟈'(ʒ) 소리. '쟌러'처럼 짧게 말합니다."}
+    {"word": "comfortable", "ipa": "/ˈkʌmftərbəl/", "tip": "'컴포터블'이 아니라 '컴프터블'. 가운데 'for'는 거의 사라지고 첫 음절에 강세를 둡니다."}
   ]
 }

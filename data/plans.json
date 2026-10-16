@@ -500,16 +500,16 @@
      "tasks": [
       {
        "type": "learn",
-       "topic": "school"
+       "topic": "work"
       },
       {
        "type": "shadow",
-       "topic": "school",
+       "topic": "work",
        "level": "IM3"
       },
       {
        "type": "speak",
-       "topic": "school"
+       "topic": "work"
       },
       {
        "type": "pattern",
@@ -583,7 +583,7 @@
      "tasks": [
       {
        "type": "speak",
-       "topic": "school"
+       "topic": "work"
       },
       {
        "type": "speak",
@@ -1508,11 +1508,11 @@
      "tasks": [
       {
        "type": "learn",
-       "topic": "school"
+       "topic": "work"
       },
       {
        "type": "shadow",
-       "topic": "school",
+       "topic": "work",
        "level": "IM3"
       },
       {
@@ -1532,11 +1532,11 @@
      "tasks": [
       {
        "type": "speak",
-       "topic": "school"
+       "topic": "work"
       },
       {
        "type": "shadow",
-       "topic": "school",
+       "topic": "work",
        "level": "IH"
       },
       {
@@ -1596,7 +1596,7 @@
      "tasks": [
       {
        "type": "speak",
-       "topic": "school"
+       "topic": "work"
       },
       {
        "type": "speak",

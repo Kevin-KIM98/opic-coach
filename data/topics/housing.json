@@ -5,29 +5,102 @@
   "emoji": "🏠",
   "category": "survey",
   "priority": 1,
-  "intro": "OPIc 설문에서 거의 항상 출제되는 핵심 주제로, 집 묘사 → 집에서의 일상 → 집과 관련된 경험(고장·문제) → 예전 집과 비교 순서로 나옵니다. 모든 답변은 '서울에서 가족(엄마, 아빠, 남동생 Junho)과 사는 10층 아파트, 방 3개, 작은 발코니, 10년째 거주'라는 하나의 집으로 통일하세요. 자기소개에서 말한 '가족과 서울에 산다'가 그대로 이어집니다.",
+  "intro": "OPIc 설문에서 거의 항상 출제되는 핵심 주제로, 집 묘사 → 집에서의 일상 → 집과 관련된 경험(고장·문제) → 예전 집과 비교 순서로 나옵니다. 모든 답변은 '회사 근처 아파트 7층, 방 1개짜리(거실 겸 부엌, 침실), 화분이 있는 작은 발코니, 3년 전 취업하며 이사해 혼자 거주'라는 하나의 집으로 통일하세요. 비교 질문에는 대학 시절까지 가족과 살던 대전의 오래된 아파트를 쓰면 자기소개 내용과 그대로 이어집니다.",
   "strategy": [
-    "답변 흐름: 'Okay, let me tell you about my home.' → 기본 정보(아파트, 10층, 가족과, 10년째) → 공간 소개(거실·부엌·내 방) → 제일 좋아하는 공간과 이유 → 'Yeah, that's my home.' 마무리",
-    "묘사는 '들어가면 → 왼쪽/오른쪽 → 내 방' 순서처럼 길을 안내하듯 말하면 문장이 끊기지 않습니다.",
-    "경험 질문은 언제 → 무슨 일 → 어떻게 해결 → 느낀 점을 과거시제로 말하고, 'Yeah, that was ~'로 끝냅니다.",
-    "IH 이상은 비교(compared to, used to)와 감정·소리·빛 같은 생생한 디테일을 추가합니다."
+    "답변 흐름: 'Okay, let me tell you about my place.' → 집 기본 정보(아파트 7층, 방 1개, 혼자) → 공간 묘사(거실 겸 부엌 → 침실 → 발코니) → 좋아하는 공간과 이유 → 'Yeah, that's ~' 마무리",
+    "묘사는 현관에서 안쪽으로 공간 순서대로 이동하면 길을 잃지 않아요. 'When you walk in, ~' / 'Next to ~, there's ~'.",
+    "혼자 사는 직장인이라는 설정을 살려 '내 공간', '퇴근 후 쉬는 곳', '집안일을 혼자 다 한다' 같은 느낌과 이유를 붙이면 IH 이상이 됩니다.",
+    "비교 질문은 대전 본가(가족과 살던 넓고 오래된 아파트) vs 지금 집(작지만 새롭고 회사와 가까움)으로 차이 2가지와 느낌을 말합니다."
   ],
   "expressions": [
-    {"en": "Okay, let me tell you about my home.", "ko": "네, 우리 집에 대해 말씀드릴게요.", "level": "IM", "note": "집 묘사 시작 문장"},
-    {"en": "I live in an apartment in Seoul with my family.", "ko": "저는 서울에 있는 아파트에서 가족과 함께 살아요.", "level": "IM"},
-    {"en": "Our apartment is on the 10th floor.", "ko": "우리 아파트는 10층에 있어요.", "level": "IM", "note": "on the + 서수 + floor"},
-    {"en": "It has three bedrooms, a living room, a kitchen, and a small balcony.", "ko": "방 세 개, 거실, 부엌, 작은 발코니가 있어요.", "level": "IM"},
-    {"en": "We've been living here for about ten years.", "ko": "여기서 산 지 10년 정도 됐어요.", "level": "IM", "note": "현재완료진행: 지속 기간"},
-    {"en": "When you walk in, the first thing you see is the living room.", "ko": "들어가면 제일 먼저 보이는 게 거실이에요.", "level": "IM", "note": "묘사 시작 만능 문장"},
-    {"en": "In my room, there's a bed, a desk, and a small bookshelf.", "ko": "제 방에는 침대, 책상, 작은 책장이 있어요.", "level": "IM", "note": "There's a ~, a ~, and a ~"},
-    {"en": "My favorite place in my home is my room because it's quiet and cozy.", "ko": "집에서 제일 좋아하는 곳은 제 방이에요. 조용하고 아늑하거든요.", "level": "IM"},
-    {"en": "What I like most about our place is that the subway station is only five minutes away.", "ko": "우리 집에서 제일 좋은 건 지하철역이 5분 거리라는 거예요.", "level": "IH", "note": "What I like most about ~ is that ~"},
-    {"en": "Compared to our old place, this one is much bigger and brighter.", "ko": "예전 집에 비하면 여기가 훨씬 넓고 밝아요.", "level": "IH", "note": "Compared to ~, 비교급"},
-    {"en": "I used to share a room with my younger brother.", "ko": "예전엔 남동생이랑 방을 같이 썼어요.", "level": "IH", "note": "used to: 과거의 상태/습관"},
-    {"en": "The boiler suddenly stopped working in the middle of winter.", "ko": "한겨울에 보일러가 갑자기 고장 났어요.", "level": "IH", "note": "stop working: 고장 나다"},
-    {"en": "So yeah, that's pretty much what my home is like.", "ko": "네, 우리 집은 대충 이래요.", "level": "IH", "note": "마무리 문장"},
-    {"en": "It's nothing fancy, but it's where I feel the most like myself.", "ko": "화려하진 않지만, 제가 가장 저다워지는 곳이에요.", "level": "AL", "note": "nothing fancy: 별거 아닌, 소박한"},
-    {"en": "After living here for ten years, every corner of this place has a memory attached to it.", "ko": "여기서 10년을 살다 보니 구석구석마다 추억이 담겨 있어요.", "level": "AL", "note": "have a memory attached to it"}
+    {
+      "en": "Okay, let me tell you about my place.",
+      "ko": "네, 제 집에 대해 말해 볼게요.",
+      "level": "IM",
+      "note": "시작 문장. my place = 우리 집 (구어체)"
+    },
+    {
+      "en": "I live in an apartment near my office.",
+      "ko": "회사 근처 아파트에 살아요.",
+      "level": "IM"
+    },
+    {
+      "en": "I live alone, so it's just me.",
+      "ko": "혼자 살아서 저 하나뿐이에요.",
+      "level": "IM",
+      "note": "live alone = live by myself"
+    },
+    {
+      "en": "My apartment is on the seventh floor.",
+      "ko": "우리 집은 7층이에요.",
+      "level": "IM",
+      "note": "on the + 서수 + floor"
+    },
+    {
+      "en": "It's a one-bedroom apartment.",
+      "ko": "방 하나짜리 아파트예요.",
+      "level": "IM",
+      "note": "one-bedroom: 거실 외에 방이 1개"
+    },
+    {
+      "en": "The living room and the kitchen are in one space.",
+      "ko": "거실과 부엌이 한 공간이에요.",
+      "level": "IM"
+    },
+    {
+      "en": "There's a small balcony with some plants.",
+      "ko": "화분 몇 개가 있는 작은 발코니가 있어요.",
+      "level": "IM",
+      "note": "There's + 단수 / There are + 복수"
+    },
+    {
+      "en": "My favorite spot is the sofa in the living room.",
+      "ko": "제가 제일 좋아하는 곳은 거실 소파예요.",
+      "level": "IM",
+      "note": "spot = 장소, 자리 (구어체)"
+    },
+    {
+      "en": "I moved here about three years ago when I got my job.",
+      "ko": "3년 전쯤 취직하면서 여기로 이사 왔어요.",
+      "level": "IH",
+      "note": "when I got my job: 취직했을 때"
+    },
+    {
+      "en": "It's not very big, but it's really cozy.",
+      "ko": "별로 크진 않지만 정말 아늑해요.",
+      "level": "IH",
+      "note": "not ~, but ~: 단점 뒤에 장점으로 대조"
+    },
+    {
+      "en": "Since I live alone, I have to do all the housework myself.",
+      "ko": "혼자 살아서 집안일을 전부 직접 해야 해요.",
+      "level": "IH",
+      "note": "Since = ~이니까 (이유)"
+    },
+    {
+      "en": "The best thing about my place is that it's close to work.",
+      "ko": "우리 집의 제일 좋은 점은 회사와 가깝다는 거예요.",
+      "level": "IH",
+      "note": "The best thing about ~ is that ~"
+    },
+    {
+      "en": "Yeah, that's pretty much what my place looks like.",
+      "ko": "네, 우리 집은 대충 이렇게 생겼어요.",
+      "level": "IH",
+      "note": "마무리 문장"
+    },
+    {
+      "en": "It's a lot smaller than my parents' place, but it's all mine.",
+      "ko": "부모님 집보다 훨씬 작지만, 온전히 제 공간이에요.",
+      "level": "AL",
+      "note": "a lot + 비교급: 훨씬 ~"
+    },
+    {
+      "en": "After a long day at work, nothing beats coming home to my own little space.",
+      "ko": "회사에서 긴 하루를 보낸 뒤 나만의 작은 공간으로 돌아오는 것만큼 좋은 게 없어요.",
+      "level": "AL",
+      "note": "nothing beats ~: ~만 한 게 없다"
+    }
   ],
   "questions": [
     {
@@ -35,55 +108,91 @@
       "type": "describe",
       "en": "I'd like to know about where you live. Can you describe your home? What does it look like, and how many rooms does it have?",
       "ko": "어디에 사는지 알고 싶어요. 집을 묘사해 주시겠어요? 어떻게 생겼고, 방은 몇 개인가요?",
-      "tips": ["답변 흐름: 시작 문장 → 아파트·층·가족·거주 기간 → 거실·부엌·내 방 → 제일 좋아하는 공간과 이유 → 'Yeah, that's ~' 마무리", "'When you walk in, the first thing you see is ~'로 길 안내하듯 묘사하세요.", "IH 이상은 창밖 풍경, 햇빛, 소리 같은 감각 디테일을 하나 넣으세요."],
+      "tips": [
+        "답변 흐름: 시작 문장 → 집 기본 정보(아파트 7층, 방 1개, 혼자) → 거실 겸 부엌 → 침실 → 발코니 → 좋아하는 공간 → 'Yeah, that's ~' 마무리",
+        "공간 순서대로 이동하며 'When you walk in, ~', 'Next to ~' 표현을 쓰세요.",
+        "'It's not very big, but it's really cozy.'처럼 느낌 한 줄을 꼭 넣으세요."
+      ],
       "answers": {
-        "IM3": "Okay, let me tell you about my home. I live in an apartment in Seoul with my family. It's on the 10th floor. We've been living here for about ten years. It has three bedrooms, a living room, a kitchen, and a small balcony. The living room is pretty big, and we have a big TV there. In my room, there's a bed, a desk, a laptop, and a small bookshelf. My room is my favorite place because it's quiet and cozy. Yeah, that's my home.",
-        "IH": "Okay, let me tell you about my home. I live in an apartment in Seoul with my mom, my dad, and my younger brother Junho. It's on the 10th floor, and we've been living here for about ten years. It has three bedrooms, a living room, a kitchen, and a small balcony. When you walk in, the first thing you see is the living room. It has a big sofa and a TV, and that's where my family watches movies together on weekends. The kitchen is right next to it, so the space feels open. My room is at the end of the hallway. There's a bed, a desk with my laptop, and a small bookshelf. It's not very big, but it's really cozy. What I like most about our place is that the subway station is only five minutes away. So yeah, that's pretty much what my home is like.",
-        "AL": "Okay, let me tell you about my home. I live in an apartment in Seoul with my family, which is my mom, my dad, and my younger brother Junho. We're on the 10th floor, and we've been living here for about ten years, so it really feels like our place. It has three bedrooms, a living room, a kitchen, and a small balcony. As soon as you walk in, you see the living room, which is kind of the heart of our home. There's a big comfy sofa and a TV, and on weekend nights, the four of us usually end up there watching a movie together. The kitchen is right next to the living room, so you can smell whatever my mom is cooking from anywhere in the house. My room is at the end of the hallway. It's not huge, but it has everything I need, like a bed, a desk with my laptop, and a small bookshelf full of old books and photos. In the afternoon, the sun comes in through my window, and it's honestly the coziest spot in the whole apartment. It's nothing fancy, but it's where I feel the most like myself. Yeah, that's pretty much my home."
+        "IM3": "Okay, let me tell you about my place. I live in an apartment near my office. I live alone, so it's just me. My apartment is on the seventh floor. It's a one-bedroom apartment. The living room and the kitchen are in one space. My bedroom is small, but it's cozy. There's also a small balcony with some plants. My favorite spot is the sofa in the living room. Yeah, that's my home.",
+        "IH": "Okay, let me tell you about my place. I live alone in an apartment near my office. I moved here about three years ago when I got my job. It's on the seventh floor, and it's a one-bedroom apartment. When you walk in, there's the living room, and the kitchen is in the same space. I have a gray sofa, a TV, and a small table there. My bedroom is next to the living room. It has a bed, a desk, and a big closet. There's also a small balcony with some plants, and I water them every weekend. My place is not very big, but it's really cozy. My favorite spot is the sofa, because I watch movies there on Friday nights. The best thing about my place is that it's close to work. Yeah, that's pretty much what my place looks like.",
+        "AL": "Okay, let me tell you about my place. I live alone in a one-bedroom apartment on the seventh floor, just a short subway ride from my office. I moved in about three years ago when I got my job, so it's the first place that's really mine. When you walk in, the first thing you see is the living room, which also works as the kitchen. It's an open space with a gray sofa, a TV, and a small dining table by the window. I'll be honest, I don't cook anything fancy, but I love making a simple dinner and eating it there. Next to the living room is my bedroom. It's pretty simple, just a bed, a desk, and a closet that's way too full of clothes. And then there's my favorite little corner, the balcony. It's tiny, but I've filled it with plants, and on weekend mornings, I sit out there with a cup of coffee. My place isn't big at all, but it's bright and cozy, and it feels like me. After a long day at work, nothing beats coming home to my own little space. Yeah, that's pretty much what my place looks like."
       }
     },
     {
       "id": "housing-routine",
       "type": "routine",
       "en": "What do you usually do at home? Tell me about a typical day at your home from morning to night.",
-      "ko": "집에서 보통 무엇을 하나요? 아침부터 밤까지 집에서의 하루를 말해 주세요.",
-      "tips": ["답변 흐름: 'Sure, I'd love to talk about that.' → 아침(준비·아침 식사) → 저녁(가족과 식사) → 밤(과제·영화) → 주말 → 'Yeah, that's ~' 마무리", "평일과 주말을 나눠 말하면 자연스럽게 길이가 늘어납니다.", "'I usually ~', 'After that, ~', 'On weekends, ~'처럼 빈도·순서 표현을 쓰세요."],
+      "ko": "집에서 주로 무엇을 하나요? 아침부터 밤까지 집에서의 일상을 말해 주세요.",
+      "tips": [
+        "답변 흐름: 시작 문장 → 아침(출근 준비) → 퇴근 후 저녁 → 밤(영화·휴식) → 재택근무 날·주말 → 'Yeah, that's ~' 마무리",
+        "평일 기준으로 말하고, 금요일 재택근무나 주말 집안일을 덧붙이면 내용이 풍부해집니다.",
+        "혼자 살기 때문에 'I cook for myself', 'I do the laundry' 같은 집안일 표현을 쓰기 좋아요."
+      ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about that. On weekdays, I'm not home much because I have a lot of classes. In the morning, I get ready and have breakfast with my family. I come home around seven in the evening. Then we have dinner together in the kitchen. After dinner, I do my homework at my desk. Before bed, I watch Netflix on my laptop. On weekends, I sleep in and relax at home. Yeah, that's what I usually do at home.",
-        "IH": "Sure, I'd love to talk about that. On weekdays, I don't spend much time at home because I usually have a lot of classes. In the morning, I get up at seven, take a quick shower, and have breakfast with my family in the kitchen. Then I leave for school around eight. I usually get home around seven in the evening, and we have dinner together. My mom is a great cook, so dinner is my favorite part of the day. After dinner, I go to my room and do my assignments on my laptop. When I'm done, I listen to music or watch a short video in bed. Weekends are totally different. I sleep in until ten, clean my room a little, and then just relax. On Saturday nights, my family watches a movie together in the living room. Yeah, that's pretty much my day at home.",
-        "AL": "Sure, I'd love to talk about that. To be honest, on weekdays I'm barely home, because my schedule is packed with classes. My mornings are pretty rushed. I get up at seven, jump in the shower, and grab some breakfast with my family before heading out around eight. The real home time starts when I get back around seven in the evening. We almost always have dinner together, and it's kind of our time to catch up. My dad talks about work, Junho complains about school, and my mom makes sure we all eat enough. After dinner, I go to my room, sit at my desk, and work on my assignments on my laptop. Once I'm done, I usually lie in bed with my earphones in, listening to some ballads or watching a short video. Weekends are a whole different story. I sleep in until about ten, which feels amazing after a long week. I spend the afternoon tidying up my room or just lying around on the sofa. Then on Saturday nights, the four of us pick a movie and watch it together in the living room with some snacks. It's nothing special, but that's the part of the week I look forward to the most. Yeah, that's what my days at home look like."
+        "IM3": "Sure, I'd love to talk about my day at home. In the morning, I get up at seven thirty. I take a shower and eat some toast. Then I go to work. I come home around seven. I cook a simple dinner for myself. After dinner, I wash the dishes. Then I relax on the sofa and watch Netflix. On weekends, I clean my apartment and do the laundry. Yeah, that's what I usually do at home.",
+        "IH": "Sure, I'd love to talk about what I do at home. On weekdays, I get up at seven thirty and get ready for work. I usually have toast and coffee at my small table by the window. I come home around seven, and since I live alone, I cook dinner for myself. It's usually something easy, like pasta or kimchi fried rice. After I wash the dishes, I relax on the sofa and watch Netflix or listen to music. Fridays are a little different, because I work from home. I set up my laptop at the table, and I can work in comfortable clothes, which I love. On Friday nights, I always watch a movie. On weekends, I clean my apartment, do the laundry, and water the plants on my balcony. Yeah, that's pretty much what I do at home.",
+        "AL": "Sure, I'd love to talk about what I do at home. On weekdays, my mornings are pretty simple. I get up at seven thirty, take a quick shower, and have toast and coffee at the little table by the window. Since I live alone, it's always quiet, and I actually like starting the day that way. I get home from work around seven, and the first thing I do is change into comfortable clothes. Then I cook something easy for dinner, like pasta or kimchi fried rice. I'm not a great cook, but it's way cheaper than eating out every night. After I do the dishes, I finally get to relax. I usually lie on the sofa and watch an episode of a show, or I put on some IU songs and read a little. Fridays feel a bit special, because I work from home. I set up my laptop at the table, and I don't have to deal with the subway at all. Then on Friday night, I treat myself to a movie and some snacks. On weekends, I catch up on chores, like cleaning, doing the laundry, and watering the plants on my balcony. Yeah, that's pretty much what a day at my place looks like."
       }
     },
     {
       "id": "housing-experience",
       "type": "experience",
       "en": "Have you ever had a problem at your home, like something breaking? Tell me what happened and how you handled it.",
-      "ko": "집에서 뭔가 고장 나는 등 문제가 생긴 적이 있나요? 무슨 일이 있었고, 어떻게 해결했는지 말해 주세요.",
-      "tips": ["답변 흐름: 'Oh, a problem at home? Let me think.' → 언제·무슨 문제 → 그때 상황·느낌 → 해결 과정 → 결과와 배운 점 → 'Yeah, that was ~' 마무리", "과거시제를 일관되게 쓰고, 'suddenly', 'luckily', 'in the end'로 이야기를 연결하세요.", "IH 이상은 그때의 감정(cold, nervous, relieved)을 꼭 넣으세요."],
+      "ko": "집에서 뭔가 고장 나는 등 문제가 생긴 적이 있나요? 무슨 일이 있었고 어떻게 해결했는지 말해 주세요.",
+      "tips": [
+        "답변 흐름: 시작 문장 → 언제·무엇이 고장 났는지 → 처음 느낌·어려움 → 어떻게 해결했는지 → 배운 점·느낌 → 'Yeah, that's ~' 마무리",
+        "과거 경험이므로 과거 시제(broke, called, came)를 일관되게 쓰세요.",
+        "혼자 살아서 직접 해결해야 했다는 점을 강조하면 이야기에 감정이 생깁니다."
+      ],
       "answers": {
-        "IM3": "Oh, a problem at home? Let me think. Last winter, our boiler broke. It was a very cold night in January. We didn't have any hot water, and the house was really cold. My dad called a repairman, but he couldn't come until the next day. So we wore thick sweaters and used extra blankets. The next morning, the repairman fixed the boiler. It took about one hour. I was so happy. Yeah, that was a pretty cold night.",
-        "IH": "Oh, a problem at home? Let me think. Last winter, our boiler suddenly stopped working. It was a really cold night in January, and I was studying for my final exams in my room. All of a sudden, the floor got cold, and there was no hot water. My dad called the repair service right away, but they said they couldn't come until the next morning. So my family put on thick sweaters and used extra blankets. My brother Junho and I even slept in the living room with our parents to stay warm. It was kind of funny, like camping at home. The next morning, a repairman came and fixed it in about an hour. After that, my dad started checking the boiler every fall. Yeah, that was a cold but pretty memorable night.",
-        "AL": "Oh, a problem at home? Let me think. Actually, something happened last winter that I'll never forget. It was a freezing night in January, right in the middle of my final exams. I was sitting at my desk studying, and I slowly realized my feet were getting cold. At first, I thought it was just me, but then my mom shouted from the bathroom that there was no hot water. Our boiler had completely stopped working. My dad called the repair service right away, but since it was so late, nobody could come until the next morning. So we had to get creative. We all put on thick sweaters, pulled out every blanket we had, and the four of us ended up sleeping on the living room floor together. Junho kept joking that it felt like a family camping trip, and honestly, it kind of did. The next morning, a repairman came and fixed it in about an hour. It turned out one small part had worn out after years of use. Looking back, it was a stressful night, especially with my exams, but it's also one of the funniest memories I have with my family. Since then, my dad checks the boiler every fall. Yeah, that was a cold night I'll always remember."
+        "IM3": "Oh, a problem at home? Let me think. Yes, last winter, my boiler broke. It was a really cold night. There was no hot water, and my apartment was freezing. I live alone, so I didn't know what to do. I called the building manager. He gave me a repairman's number. The repairman came the next morning and fixed it. I had to wear two sweaters to bed that night. Yeah, that was a really tough night.",
+        "IH": "Oh, a problem at home? Let me think. Yes, I had one last winter. One night in January, I came home from work, and my apartment was really cold. I checked the boiler, and it wasn't working at all. There was no hot water, either. Since I live alone, I had to handle it by myself, and honestly, I was a little scared. First, I called the building manager. He told me it was too late for a repairman, so I had to wait until the next morning. That night, I wore two sweaters and slept under three blankets. In the morning, I asked my team leader if I could start work a little late. The repairman came at eight and fixed the boiler in about an hour. After that, I saved his number on my phone. Yeah, that's the story of my freezing night.",
+        "AL": "Oh, a problem at home? Let me think. Yeah, there's one I'll never forget. It was a freezing night last January. I got home from work around eight, and the second I opened the door, I could tell something was wrong. My apartment was ice cold. I checked the boiler, and it was completely dead. No heat, no hot water, nothing. When you live alone, there's nobody else to fix things, so I really had to figure it out myself. First, I called the building manager, but he said it was too late to get a repairman that night. So I put on two sweaters, made some hot tea, and slept under every blanket I owned. I even thought about calling my parents in Daejeon, but I didn't want them to worry. The next morning, I texted my team leader that I'd be a little late. Luckily, the repairman showed up at eight and fixed it in about an hour. It turned out one part was just old. Looking back, it was kind of funny, but it also taught me a lot. Now I keep the repairman's number on my fridge, just in case. Yeah, that's the story of my coldest night at home."
       }
     },
     {
       "id": "housing-compare",
       "type": "comparison",
       "en": "How is the home you live in now different from the home you lived in when you were a child?",
-      "ko": "지금 사는 집은 어렸을 때 살던 집과 어떻게 다른가요?",
-      "tips": ["답변 흐름: 'Oh, my old home? Let me think.' → 예전 집 소개 → 지금 집과 다른 점 2~3개 → 어느 쪽이 좋은지와 이유 → 'Yeah, that's ~' 마무리", "'used to', 'Compared to ~', 'much bigger / brighter'로 비교하세요.", "지금 집에 10년째 산다는 설정과 맞춰, 이사 온 시기를 '초등학생 때, 10년 전쯤'으로 통일하세요."],
+      "ko": "지금 사는 집은 어릴 때 살던 집과 어떻게 다른가요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 예전 집(대전, 가족과 살던 오래된 아파트) → 지금 집(서울, 혼자 사는 작은 아파트) → 차이점 2가지 → 어느 쪽이 좋은지와 이유 → 'Yeah, that's ~' 마무리",
+        "비교급(bigger, newer, quieter)과 'On the other hand, ~'로 대조하세요.",
+        "예전 집은 과거 시제(used to, had), 지금 집은 현재 시제로 구분하세요."
+      ],
       "answers": {
-        "IM3": "Oh, my old home? Let me think. When I was a child, we lived in a small apartment in a different part of Seoul. It had only two bedrooms, so I shared a room with my brother Junho. About ten years ago, we moved to our current apartment. It's much bigger and brighter. It has three bedrooms, so now I have my own room. It's also close to a subway station. I like my home now much better. Yeah, that's the difference.",
-        "IH": "Oh, my old home? Let me think. When I was in elementary school, my family lived in a small, old apartment in a different part of Seoul. It was on the second floor, and it only had two bedrooms. So I used to share a room with my younger brother Junho, and we fought all the time. About ten years ago, we moved to our current apartment. Compared to our old place, this one is much bigger and brighter. It has three bedrooms, so I finally got my own room. It's on the 10th floor, so we get a lot of sunlight, and we even have a small balcony. Also, the subway station is only five minutes away, which is great for me as a college student. I do miss the old place a little, but I like my home now much better. Yeah, that's the biggest difference.",
-        "AL": "Oh, my old home? Let me think. When I was little, my family lived in a small, old apartment in a different part of Seoul. It was on the second floor and only had two bedrooms, so my younger brother Junho and I had to share a room. Back then, we fought over everything, like who got the bigger side of the desk or when to turn off the lights. The place was also pretty dark, because there was another building right in front of our windows. About ten years ago, when I was in elementary school, we moved to the apartment we live in now, and it was a huge change. Compared to the old place, it's much bigger and so much brighter. We're on the 10th floor, so the sun pours in, and we even have a small balcony where my mom grows plants. Best of all, I finally got my own room, which felt like a dream at the time. The location is a lot more convenient too, since the subway station is just five minutes away. To be honest, I still miss the old place sometimes, because that's where I spent my early childhood. But if I had to choose, I'd definitely pick where I live now. Yeah, that's pretty much how they're different."
+        "IM3": "Oh, that's a good question. When I was a child, I lived with my family in Daejeon. It was an old apartment with three bedrooms. It was big, but everything was a little old. Now, I live alone in Seoul. My apartment is much smaller. It only has one bedroom. But it's newer and cleaner. Also, it's really close to my office. I miss my family sometimes, though. Yeah, that's the difference between my two homes.",
+        "IH": "Oh, that's a good question. When I was a child, I lived with my family in Daejeon. I lived there until I finished college. It was an old apartment with three bedrooms, so it was much bigger than my place now. I had my own room, but I always fought with my brother Junho over the bathroom. Now, I live alone in a one-bedroom apartment in Seoul. It's a lot smaller, but it's newer and cleaner, and it's only 15 minutes from my office. Another big difference is the atmosphere. My parents' home was always noisy and warm, because my mom was always cooking something. My place now is really quiet. Sometimes I feel a little lonely, but I love having my own space. Yeah, that's how my two homes are different.",
+        "AL": "Oh, that's a good question. When I was a child, I lived with my parents and my younger brother Junho in Daejeon. We lived in the same old apartment until I finished college, so most of my memories are from that place. It had three bedrooms and a big living room, but everything was kind of worn out, like the old wallpaper and the squeaky doors. The home I live in now is pretty much the opposite. It's a one-bedroom apartment in Seoul, so it's way smaller, but it's newer, brighter, and just 15 minutes from my office. The biggest difference, though, is the feeling. My parents' place was always loud and full of life. My mom was always cooking something, and Junho and I used to fight over the bathroom every morning. Now, when I come home, it's completely quiet. To be honest, it felt a little lonely when I first moved in. But over time, I've come to love the freedom. I can decorate the way I want, eat whenever I want, and watch movies as late as I like. I still miss my mom's cooking, though, so I go back to Daejeon during the holidays. Yeah, that's how my two homes are different."
       }
     }
   ],
   "pronunciation": [
-    {"word": "apartment", "ipa": "/əˈpɑːrt.mənt/", "tip": "'파'에 강세. '아파트먼트'가 아니라 '어파알(트)먼트', 가운데 t는 약하게"},
-    {"word": "balcony", "ipa": "/ˈbæl.kə.ni/", "tip": "첫 음절 '밸'에 강세. '발코니'가 아니라 '밸커니'"},
-    {"word": "bedroom", "ipa": "/ˈbed.ruːm/", "tip": "'베드룸'. d를 짧게 끊고 '룸'은 길게"},
-    {"word": "comfortable", "ipa": "/ˈkʌmf.tər.bəl/", "tip": "3음절 '컴프터블'. '컴포터블'처럼 4음절로 늘이지 마세요"},
-    {"word": "boiler", "ipa": "/ˈbɔɪ.lər/", "tip": "'보일러'가 아니라 '보이을러'. oi는 '오이'로 미끄러지듯"}
+    {
+      "word": "apartment",
+      "ipa": "/əˈpɑːrt.mənt/",
+      "tip": "'아파트먼트'가 아니라 '어파r(트)먼트'. 둘째 음절 '파'에 강세"
+    },
+    {
+      "word": "balcony",
+      "ipa": "/ˈbæl.kə.ni/",
+      "tip": "'발코니'가 아니라 '배얼커니'. 첫 음절에 강세"
+    },
+    {
+      "word": "cozy",
+      "ipa": "/ˈkoʊ.zi/",
+      "tip": "'코지'가 아니라 '코우지'. z는 성대를 울려서"
+    },
+    {
+      "word": "comfortable",
+      "ipa": "/ˈkʌm.fər.tə.bəl/",
+      "tip": "'컴포터블'이 아니라 '컴퍼r터블'. 첫 음절 '컴'에 강세"
+    },
+    {
+      "word": "laundry",
+      "ipa": "/ˈlɔːn.dri/",
+      "tip": "'런드리'가 아니라 '론드리'. 첫 음절을 길게"
+    }
   ]
 }

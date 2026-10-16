@@ -5,85 +5,101 @@
   "emoji": "☕",
   "category": "survey",
   "priority": 11,
-  "intro": "'카페 가기'를 선택하면 자주 가는 카페 묘사 → 카페에 가서 하는 일(루틴) → 카페에서 있었던 기억에 남는 경험 → 예전과 지금의 카페 이용 비교 순서로 출제됩니다. 페르소나는 집 근처 작은 카페에서 아이스 아메리카노를 마시며 과제와 공부를 하는 경영학과 대학생이고, 같은 과 친구 Minji와 자주 함께 갑니다. 카페 하나와 음료 하나만 정해 두면 묘사·루틴·경험·비교가 모두 같은 이야기로 이어집니다.",
+  "intro": "'카페'는 자주 가는 카페 묘사 → 카페에서 하는 일(루틴) → 기억에 남는 경험 → 예전과 지금의 카페 이용 비교 순서로 자주 출제됩니다. 페르소나는 혼자 사는 4년차 직장인으로, 주말이면 집에서 걸어서 5분 거리의 작은 동네 카페에서 아이스 아메리카노를 마시며 책을 읽고, 퇴근 후엔 친구나 동료 Minji와 카페에서 수다를 떱니다. '동네 카페 하나 + 주말 독서 + 대학 때는 시험공부 장소였다'는 설정 하나로 네 문제를 모두 연결하세요.",
   "strategy": [
-    "답변 흐름: 시작 문장(Oh, cafes? Sure, let me tell you about my favorite one.) → 기본 정보(어디·얼마나 자주) → 세부(분위기·메뉴·하는 일) → 느낌·이유 → 마무리 문장(So yeah, that's my favorite cafe.)",
-    "카페는 '집에서 걸어서 5분 거리의 작은 동네 카페' 하나로 고정하세요. 창가 자리, 조용한 음악, 커피 향 같은 쉬운 디테일 3개면 충분합니다.",
-    "루틴은 '수업 끝나고 노트북 들고 카페 → 아이스 아메리카노 주문 → 2~3시간 과제 → 가끔 Minji와 수다' 순서로 시간 흐름을 따라가세요.",
-    "비교 질문은 '고등학생 때는 친구들과 수다 떨러 갔다 → 대학생이 된 지금은 공부하러 간다'처럼 목적의 변화를 중심으로 답하면 쉽습니다."
+    "답변 흐름: 시작 문장(Oh, cafes? Sure, I'd love to talk about that.) → 기본 정보(어느 카페·어디·얼마나 자주) → 세부(인테리어·메뉴·하는 일) → 느낌·이유(바쁜 한 주 뒤의 휴식) → 마무리 문장(Yeah, that's my favorite cafe.)",
+    "카페는 항상 '아파트에서 걸어서 5분, 지하철역 근처의 작고 조용한 동네 카페' 하나로 고정하세요. 큰 창문, 나무 테이블, 잔잔한 음악, 커피 향 같은 쉬운 묘사 3~4개면 충분합니다.",
+    "루틴은 도착 → 주문(iced Americano) → 창가 자리 → 책 읽기·휴대폰 → 두세 시간 후 귀가 순서로 시간 흐름을 따라가면 막히지 않습니다.",
+    "비교 질문은 '대학 때는 친구들과 시험공부하러 밤늦게까지 → 지금은 주말에 혼자 쉬러, 가끔 금요일 재택근무 날 노트북 작업' 구도로 답하세요."
   ],
   "expressions": [
-    {"en": "Oh, cafes? Sure, let me tell you about my favorite one.", "ko": "아, 카페요? 네, 제가 제일 좋아하는 곳을 말씀드릴게요.", "level": "IM", "note": "주제 시작 문장"},
-    {"en": "There's a small cafe about five minutes from my apartment.", "ko": "우리 아파트에서 5분 정도 거리에 작은 카페가 있어요.", "level": "IM", "note": "There's + 장소 묘사로 시작"},
-    {"en": "I usually order an iced Americano.", "ko": "저는 보통 아이스 아메리카노를 시켜요.", "level": "IM"},
-    {"en": "I go there two or three times a week.", "ko": "일주일에 두세 번 거기 가요.", "level": "IM", "note": "빈도: ~ times a week"},
-    {"en": "I like to sit by the window.", "ko": "저는 창가에 앉는 걸 좋아해요.", "level": "IM"},
-    {"en": "I usually do my assignments there.", "ko": "저는 보통 거기서 과제를 해요.", "level": "IM", "note": "do my assignments / do my homework"},
-    {"en": "The music is soft, and it smells like coffee.", "ko": "음악이 잔잔하고 커피 향이 나요.", "level": "IM", "note": "smell like + 명사"},
-    {"en": "I often go there with my friend Minji.", "ko": "친구 Minji랑 자주 거기 가요.", "level": "IM"},
-    {"en": "It has a really cozy atmosphere.", "ko": "분위기가 정말 아늑해요.", "level": "IH", "note": "cozy = 아늑한"},
-    {"en": "I can focus better at a cafe than at home.", "ko": "집보다 카페에서 더 집중이 잘 돼요.", "level": "IH", "note": "비교급: better than"},
-    {"en": "I'm kind of a regular there, so the owner knows my order.", "ko": "제가 거기 단골이라서 사장님이 제 주문을 알아요.", "level": "IH", "note": "regular = 단골손님"},
-    {"en": "When I was in high school, I went to cafes just to hang out.", "ko": "고등학생 때는 그냥 놀려고 카페에 갔어요.", "level": "IH", "note": "hang out = 어울려 놀다"},
-    {"en": "I can't start my day without an iced Americano.", "ko": "아이스 아메리카노 없이는 하루를 시작할 수가 없어요.", "level": "IH", "note": "can't ~ without ...: ~ 없이는 못 해요"},
-    {"en": "It's become my second home, to be honest.", "ko": "솔직히 거긴 제 두 번째 집이 됐어요.", "level": "AL", "note": "It's become ~: 현재완료로 변화 강조"},
-    {"en": "So yeah, that's pretty much why I love that cafe.", "ko": "그러니까 네, 그게 제가 그 카페를 좋아하는 이유예요.", "level": "AL", "note": "마무리 문장: So yeah, that's pretty much ~"}
+    {"en": "Oh, cafes? Sure, I'd love to talk about that.", "ko": "아, 카페요? 네, 기꺼이 얘기할게요.", "level": "IM", "note": "주제 시작 문장: 질문 키워드를 한 번 되묻고 시작"},
+    {"en": "There's a small cafe about five minutes from my apartment.", "ko": "우리 아파트에서 5분 정도 거리에 작은 카페가 있어요.", "level": "IM", "note": "There's + 장소 + 거리: 기본 정보 문장"},
+    {"en": "I go there almost every weekend.", "ko": "거의 매주 주말에 거기 가요.", "level": "IM", "note": "빈도: almost every + 명사"},
+    {"en": "I always order an iced Americano.", "ko": "저는 항상 아이스 아메리카노를 주문해요.", "level": "IM", "note": "an iced Americano: 관사 an + iced"},
+    {"en": "It has big windows and wooden tables.", "ko": "큰 창문과 나무 테이블이 있어요.", "level": "IM"},
+    {"en": "I like to sit by the window.", "ko": "저는 창가에 앉는 걸 좋아해요.", "level": "IM", "note": "by the window: 창가에"},
+    {"en": "I usually read a book there for a couple of hours.", "ko": "보통 거기서 두어 시간 책을 읽어요.", "level": "IM", "note": "a couple of hours: 두세 시간"},
+    {"en": "It's a great place to relax after a busy week.", "ko": "바쁜 한 주를 보내고 쉬기에 좋은 곳이에요.", "level": "IM", "note": "a great place to + 동사"},
+    {"en": "The coffee smells amazing as soon as you walk in.", "ko": "들어가자마자 커피 향이 정말 좋아요.", "level": "IH", "note": "as soon as: ~하자마자 / 감각 묘사"},
+    {"en": "It's quiet enough to read, but it doesn't feel empty.", "ko": "책 읽기에 충분히 조용하지만 썰렁한 느낌은 아니에요.", "level": "IH", "note": "형용사 + enough to + 동사"},
+    {"en": "Back in college, I used to study there until late at night.", "ko": "대학 때는 거기서 밤늦게까지 공부하곤 했어요.", "level": "IH", "note": "used to + 동사: 과거의 습관 (비교 질문)"},
+    {"en": "These days, I go to cafes to rest, not to study.", "ko": "요즘은 공부하러가 아니라 쉬러 카페에 가요.", "level": "IH", "note": "to A, not to B: 목적 대비"},
+    {"en": "We ended up talking for three hours.", "ko": "결국 세 시간 동안 얘기했어요.", "level": "IH", "note": "end up + -ing: 결국 ~하게 되다 (경험 질문)"},
+    {"en": "The barista knows my order by heart, which makes me feel like a regular.", "ko": "바리스타가 제 주문을 외우고 있어서 단골이 된 기분이에요.", "level": "AL", "note": "by heart: 외워서 / , which: 앞 문장 전체 수식"},
+    {"en": "So yeah, that's pretty much why that little cafe means so much to me.", "ko": "그래서 네, 그게 그 작은 카페가 제게 그렇게 소중한 이유예요.", "level": "AL", "note": "마무리 문장: So yeah, that's pretty much why ~"}
   ],
   "questions": [
     {
       "id": "cafe-describe",
       "type": "describe",
       "en": "You indicated in the survey that you like going to cafes. Tell me about a cafe you often go to. Where is it, and what does it look like?",
-      "ko": "설문에서 카페 가는 것을 좋아한다고 하셨네요. 자주 가는 카페에 대해 말해 주세요. 어디에 있고, 어떻게 생겼나요?",
-      "tips": ["답변 흐름: 시작 문장 → 위치(집에서 걸어서 5분) → 내부 묘사(창가·조명·음악) → 메뉴 → 좋아하는 이유 → 마무리", "small, cozy, quiet, bright 같은 쉬운 형용사로 그림을 그리세요", "'I like to sit by the window.'처럼 내가 앉는 자리를 넣으면 생생해져요"],
+      "ko": "설문에서 카페 가는 걸 좋아한다고 하셨네요. 자주 가는 카페에 대해 말해 주세요. 어디에 있고, 어떻게 생겼나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 위치(아파트에서 걸어서 5분, 지하철역 근처) → 생김새(큰 창문, 나무 테이블, 식물) → 분위기·좋아하는 이유 → 'Yeah, that's ~' 마무리",
+        "입구 → 카운터 → 자리 순서로 '들어가는 길'을 따라 묘사하면 막히지 않아요",
+        "냄새·소리(coffee smell, soft music) 한 문장을 넣으면 IH 이상으로 들려요"
+      ],
       "answers": {
-        "IM3": "Oh, cafes? Sure, let me tell you about my favorite one. There's a small cafe about five minutes from my apartment. It's on a quiet street in my neighborhood. Inside, there are wooden tables and big windows. I like to sit by the window. The music is soft, and it always smells like coffee. I usually order an iced Americano. It's not expensive, and it tastes great. Yeah, that's my favorite cafe.",
-        "IH": "Oh, cafes? Sure, let me tell you about my favorite one. There's a small cafe about five minutes from my apartment. It's on a quiet street near the subway station, so I pass by it almost every day. It's not a big chain cafe. It's run by a young couple. Inside, there are about ten wooden tables, some plants, and big windows, so it's really bright during the day. My favorite seat is by the window, because I can watch people walking by. They play soft music, and it always smells like fresh coffee. I usually order an iced Americano, and sometimes I get a piece of cheesecake too. The prices are pretty reasonable for a student like me. It has a really cozy atmosphere. So yeah, that's my favorite cafe.",
-        "AL": "Oh, cafes? Sure, let me tell you about my favorite one, because I go there way too often. There's a small cafe about five minutes from my apartment, on a quiet little street near the subway station. It's not one of those big chain cafes. It's run by a young couple, and you can tell they really care about the place. When you walk in, the first thing you notice is the smell of fresh coffee. There are about ten wooden tables, lots of green plants, and huge windows, so it's bright and warm during the day. My favorite seat is a corner table by the window. I can plug in my laptop there, and I can watch people walking by when I need a break. They usually play soft acoustic music, so it's never too loud. I almost always order an iced Americano, even in winter, and if I've had a long day, I treat myself to their cheesecake. I'm kind of a regular there now, so the owner knows my order before I even say it. Honestly, it's become my second home. So yeah, that's pretty much why I love that cafe."
+        "IM3": "Oh, cafes? Sure, let me tell you about my favorite cafe. There's a small cafe about five minutes from my apartment. It's near the subway station. It's not very big, but it's really cozy. It has big windows and wooden tables. There are some plants by the windows, too. They usually play soft music, so it's quiet. I like to sit by the window and read a book. I go there almost every weekend. Yeah, that's my favorite cafe.",
+        "IH": "Oh, cafes? Sure, I'd love to talk about that. There's a small cafe I go to almost every weekend. It's only about a five-minute walk from my apartment, right next to the subway station. From the outside, it looks pretty simple, but inside it's really cozy. When you walk in, the coffee smells amazing. The counter is on the left, and there are about eight wooden tables. The best part is the big windows. A lot of sunlight comes in, and there are small green plants on the window sills. They always play soft jazz or acoustic music, so it's quiet enough to read, but it doesn't feel empty. My favorite seat is the one by the window, because I can watch people walking by. After a busy week at work, it's the perfect place to relax. Yeah, that's my favorite cafe in my neighborhood.",
+        "AL": "Oh, cafes? Sure, I'd love to talk about that, because I'm kind of a cafe person. There's a small cafe I go to almost every weekend, and it's only about a five-minute walk from my apartment, right by the subway station. Honestly, it's one of the reasons I like my neighborhood so much. From the outside, it doesn't look like much, just a white wall and a small wooden sign, but inside it's super cozy. As soon as you open the door, you can smell the coffee beans they roast themselves. The counter is on the left, and there are maybe eight or nine wooden tables with comfy chairs. What I love the most are the huge windows. On sunny afternoons, the whole place is filled with warm light, and there are little plants lined up on the window sills. They always play soft acoustic music, so it's calm enough to read, but there's still a nice buzz of people chatting. I've been going there for almost three years now, so the barista knows my order by heart, which makes me feel like a regular. So yeah, that's pretty much why that little cafe means so much to me."
       }
     },
     {
       "id": "cafe-routine",
       "type": "routine",
       "en": "Why do you go to cafes, and what do you usually do there? Tell me about what you typically do from the moment you arrive until you leave.",
-      "ko": "왜 카페에 가고, 거기서 보통 무엇을 하나요? 도착해서 나올 때까지 보통 무엇을 하는지 말해 주세요.",
-      "tips": ["답변 흐름: 시작 문장 → 언제·얼마나 자주 → 도착해서 주문 → 자리 잡고 과제·공부 → 친구와 수다 → 나올 때 → 마무리", "First / Then / After that / When I'm done 으로 순서를 잡으세요", "'집보다 카페에서 집중이 잘 된다'는 이유를 한 문장 넣으세요"],
+      "ko": "왜 카페에 가고, 거기서 주로 무엇을 하나요? 도착해서 나올 때까지 보통 하는 일을 말해 주세요.",
+      "tips": [
+        "답변 흐름: 시작 문장 → 왜(바쁜 한 주 뒤 혼자 쉬는 시간) → 도착·주문(아이스 아메리카노) → 자리·하는 일(책, 휴대폰) → 나오기 → 마무리 문장",
+        "When I get there, First, Then, After a couple of hours 같은 순서 표현을 쓰세요",
+        "혼자 갈 때(주말 독서)와 친구와 갈 때(퇴근 후 수다)를 짧게 나눠 말하면 IH 이상 답변이 돼요"
+      ],
       "answers": {
-        "IM3": "Okay, let me tell you about my cafe routine. I go to a cafe two or three times a week, usually after my classes. I go there to study and do my assignments. First, I order an iced Americano. Then I find a seat by the window and open my laptop. I usually study for about two hours. Sometimes my friend Minji comes, and we chat a little. Then I walk home. Yeah, that's my cafe routine.",
-        "IH": "Okay, let me tell you about my cafe routine. I'm a business student, and I have a lot of assignments, so I go to a cafe two or three times a week to study. I can focus better at a cafe than at home, because at home I just want to lie on my bed. I usually go in the late afternoon, after my classes. First, I order an iced Americano at the counter. Then I find a seat by the window and take out my laptop. I put on my earphones, listen to some ballads, and work on my assignments for about two or three hours. Sometimes my friend Minji joins me, because we're in the same major. We study together, and of course, we chat a lot too. When I'm done, I walk home, which only takes five minutes. So yeah, that's pretty much my cafe routine.",
-        "AL": "Okay, let me tell you about my cafe routine, because it's a pretty big part of my week. I'm a third-year business student, so I have tons of assignments and team projects, and I go to a cafe two or three times a week to get them done. To be honest, I just can't focus at home. My bed is right next to my desk, and it's way too tempting. So usually in the late afternoon, after my classes, I head to the small cafe near my apartment. First, I order my usual iced Americano. The owner knows me by now, so it's usually ready in a minute. Then I grab my favorite corner seat by the window, plug in my laptop, and put on my earphones. I listen to some soft ballads and work for about two or three hours. Once I get into it, the time just flies by. A lot of the time, my friend Minji joins me, since we're in the same major. We help each other with assignments, but honestly, we end up chatting about everything else too. When I'm finally done, I pack up and walk home, feeling pretty productive. So yeah, that's pretty much how I spend my time at cafes."
+        "IM3": "Sure, let me tell you about it. I go to cafes because I want to relax after a busy week. My weekdays are pretty busy because I have a lot of meetings. So on Saturday afternoon, I go to a small cafe near my apartment. When I get there, I order an iced Americano. Then I sit by the window. I usually read a book for a couple of hours. Sometimes I just look at my phone. After that, I walk back home. Yeah, that's what I usually do at cafes.",
+        "IH": "Sure, I'd love to talk about that. I mainly go to cafes to take a break from my busy life. I work at an IT company, and my weekdays are full of meetings and reports, so on weekends I really need some quiet time. Usually on Saturday afternoon, I walk to a small cafe near my apartment. When I get there, I order an iced Americano, even in winter, and sometimes a piece of cheesecake. Then I find a seat by the window. First, I check my phone for a few minutes, and then I put it away and read a book. These days, I'm reading a mystery novel. I usually stay for about two or three hours. Sometimes on weekday evenings, I go to cafes with my friends instead, and we just chat about work and life. After that, I walk home feeling really calm. So yeah, that's my usual cafe routine.",
+        "AL": "Sure, I'd love to talk about that. To be honest, cafes are kind of my escape from the busy office life. I work on the marketing team at an IT company, and my weekdays are packed with meetings, reports, and messages, so by the weekend, I really need some time just for myself. Most Saturday afternoons, I take a short walk to a little cafe near my apartment. The moment I walk in, the barista usually says, 'Iced Americano, right?' because I order the same thing every single time, even in the middle of winter. If I'm in a good mood, I treat myself to a slice of cheesecake, too. Then I grab my favorite seat by the window. For the first few minutes, I scroll through my phone, but then I make myself put it away and open a book. Right now I'm into mystery novels, and I can easily lose track of time. I usually end up staying for two or three hours. On some weekday evenings, though, it's a totally different vibe, because I meet my friends at a cafe and we chat about work and life until they close. Either way, I always leave feeling recharged. So yeah, that's pretty much my cafe routine."
       }
     },
     {
       "id": "cafe-experience",
       "type": "experience",
       "en": "Tell me about a memorable experience you had at a cafe. What happened, who were you with, and why was it so memorable?",
-      "ko": "카페에서 있었던 기억에 남는 경험을 말해 주세요. 무슨 일이 있었고, 누구와 함께였고, 왜 기억에 남나요?",
-      "tips": ["답변 흐름: 시작 문장 → 언제·누구와(작년 기말고사, Minji) → 무슨 일(커피를 노트북에 쏟음) → 어떻게 해결 → 느낌 → 마무리", "과거시제를 유지하세요: was, spilled, panicked, helped", "'I'll never forget that day.' 같은 감정 문장 하나가 점수를 올려 줘요"],
+      "ko": "카페에서 있었던 기억에 남는 경험을 말해 주세요. 무슨 일이 있었고, 누구와 함께였으며, 왜 그렇게 기억에 남나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 언제·누구와(작년 겨울, 동료 Minji) → 무슨 일(큰 캠페인 끝난 날 축하 → 갑자기 폭설) → 결과(세 시간 수다, 더 친해짐) → 느낌 → 마무리 문장",
+        "과거 시제를 끝까지 유지하고, 'Suddenly', 'In the end' 같은 연결어로 이야기의 전환점을 표시하세요",
+        "마지막에 '그 이후로 ~' 한 문장으로 지금과 연결하면 자연스럽게 마무리돼요"
+      ],
       "answers": {
-        "IM3": "Oh, let me think. Last year, I was studying for my final exams at my favorite cafe. My friend Minji was with me. Suddenly, I spilled my iced Americano on my laptop! I was so shocked. My notes were on that laptop. Minji and the owner gave me a lot of napkins. Luckily, my laptop was okay. After that, I always keep my drink far from my laptop. Yeah, that was a memorable day.",
-        "IH": "Oh, let me think. I have a pretty funny story. Last year, during final exams, I was studying at my favorite cafe with my friend Minji. We had a big exam the next day, so we were really stressed out. I was typing my notes on my laptop, and I reached for my iced Americano without looking. Then I knocked it over, right onto my keyboard! I totally panicked, because all my notes for the exam were on that laptop. Minji grabbed some napkins, and the owner ran over with a towel. We turned the laptop off and dried it as fast as we could. Luckily, the next morning, it worked perfectly. Then we did well on the exam too. Now we laugh about it all the time. So yeah, that's my most memorable cafe experience.",
-        "AL": "Oh, that's a good question. Let me think. Actually, I have a pretty funny story about this. It happened last year, during final exams. My friend Minji and I were studying at my favorite cafe, and we had a really important business exam the next morning. We'd been there for about four hours, so we were tired and totally stressed out. I was typing up my notes on my laptop, and without looking, I reached for my iced Americano. And of course, I knocked it over, right onto my keyboard. For a second, I just froze. All my notes for the exam were on that laptop, and I hadn't backed them up. Minji jumped up and grabbed a whole stack of napkins, and the owner ran over with a towel. We turned the laptop off, flipped it upside down, and tried to dry it as fast as we could. I was so worried that I could barely sleep that night. But luckily, the next morning, it turned on like nothing had happened. We both did pretty well on the exam too. Now Minji teases me about it every time we go there. So yeah, that's pretty much a day I'll never forget."
+        "IM3": "Oh, let me think. I remember one day last winter. I went to a cafe with my coworker Minji. We finished a big project that day, so we wanted to celebrate. We ordered hot chocolate and cake. Then suddenly, it started to snow a lot. We couldn't go home, so we stayed at the cafe. We talked about many things for three hours. It was really fun. After that day, we became much closer. Yeah, that's my most memorable cafe experience.",
+        "IH": "Oh, I have a good one. Let me think. It was last winter, on a Friday evening. That day, my team finally finished a big SNS campaign that we worked on for two months. My coworker Minji and I were so relieved, so we went to a cafe near our office to celebrate. We ordered hot chocolate and a big piece of strawberry cake. While we were eating, it suddenly started to snow really hard. Within thirty minutes, the streets were completely white, and the subway was super crowded. So we just decided to stay at the cafe. We ended up talking for three hours about our first year at work, our families, and our dreams. I realized we had so much in common. Since then, Minji has been one of my closest friends, not just a coworker. Yeah, that's why that cafe day is so memorable to me.",
+        "AL": "Oh, I actually have a really good one. Let me think for a second. It was last winter, on a Friday evening right before the holidays. That afternoon, my team had finally wrapped up a huge SNS campaign we'd been working on for almost two months, and honestly, we were all completely exhausted. My coworker Minji, who joined the company the same year as me, suggested we go to a cafe near the office to celebrate. So we ordered two hot chocolates and the biggest slice of strawberry cake they had. While we were laughing about all the crazy things that happened during the project, it suddenly started snowing like crazy. Within half an hour, the whole street was covered in white, and we heard the subway was packed and super slow. Instead of rushing home, we just looked at each other and said, 'Let's stay.' We ended up talking for three whole hours about everything, like our first year at work, our families, and where we want to be in five years. I found out we had way more in common than I'd thought. Ever since that night, Minji has been more like a close friend than a coworker. So yeah, that's pretty much why that snowy cafe night is so special to me."
       }
     },
     {
       "id": "cafe-compare",
       "type": "comparison",
       "en": "How has the way you use cafes changed over the years? Compare how you used cafes in the past with how you use them now.",
-      "ko": "카페를 이용하는 방식이 몇 년 사이 어떻게 달라졌나요? 예전과 지금의 카페 이용을 비교해 주세요.",
-      "tips": ["답변 흐름: 시작 문장 → 예전(고등학생 때) → 지금(대학생) → 가장 큰 차이와 이유 → 마무리", "목적(놀기 → 공부), 음료(달달한 음료 → 아이스 아메리카노), 시간(짧게 → 오래) 중 2~3개만 비교하세요", "used to + 동사원형 / These days ~ 로 과거와 현재를 또렷하게 나누세요"],
+      "ko": "카페를 이용하는 방식이 몇 년 사이 어떻게 변했나요? 예전과 지금의 카페 이용 방식을 비교해 주세요.",
+      "tips": [
+        "답변 흐름: 시작 문장 → 예전(대전에서 대학 다닐 때, 친구들과 시험공부, 밤늦게까지) → 지금(직장인, 주말에 혼자 쉬러, 가끔 재택근무 날 노트북) → 가장 큰 변화와 이유 → 마무리 문장",
+        "Back in college, I used to ~ / These days, I ~ 구조로 과거와 현재를 분명히 나누세요",
+        "변화의 이유(학생 → 직장인, 공부 → 휴식)를 한 문장으로 꼭 말해 주세요"
+      ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about it. When I was in high school, I didn't go to cafes very often. I went there just to hang out with my friends. I usually ordered sweet drinks, like milk tea. Now I'm a college student, and I go to cafes to study. I go two or three times a week. I order an iced Americano because it helps me stay awake. Yeah, that's how it has changed.",
-        "IH": "Sure, I'd love to talk about it. The way I use cafes has changed a lot. When I was in high school, I didn't go to cafes very often, because I was always busy studying at school or at an academy. When I did go, it was just to hang out with my friends on weekends. We used to order sweet drinks like milk tea or smoothies, and we chatted and took lots of pictures. Now I'm a college student, and cafes are basically my study room. I go two or three times a week, and I usually stay for two or three hours. I also drink iced Americanos now, because they help me stay awake. The biggest difference is the reason I go. Before, it was all about fun. Now it's more about getting work done. So yeah, that's how it has changed.",
-        "AL": "Sure, I'd love to talk about it, because it's changed a lot. Back in high school, I didn't really go to cafes that often. I was always busy studying, either at school or at an academy until late at night. So when I did go, it was usually on a weekend, just to hang out with my friends. We used to order super sweet drinks, like milk tea or strawberry smoothies, and we'd sit there chatting and taking a million pictures. We'd only stay for an hour or so. These days, it's a completely different story. Now that I'm a college student, cafes are basically my study room. I go two or three times a week, and I usually stay for two or three hours with my laptop. My taste has changed too. I hardly ever order sweet drinks anymore. I just get an iced Americano, because I need the caffeine to get through my assignments. I think the biggest change is the reason I go. In high school, it was all about having fun. Now it's more about having a quiet place to focus. But I still hang out with Minji there, so it's a bit of both. So yeah, that's pretty much how it's changed."
+        "IM3": "Oh, it has changed a lot. When I was a college student, I went to cafes to study. I studied with my friends for exams. We stayed there until late at night. I drank a lot of coffee to stay awake. Now I work at an IT company. These days, I go to cafes to relax, not to study. I go on weekends and read a book. I feel much more relaxed now. Yeah, that's how my cafe life has changed.",
+        "IH": "Oh, it has changed a lot over the years. Back in college, I used to go to cafes almost every day, but mostly to study. During exam periods, my friends and I would sit in a big franchise cafe for hours with our laptops and textbooks. We often stayed there until midnight, and I drank three or four cups of coffee a day just to stay awake. Honestly, it was more stressful than relaxing. These days, it's totally different. I work at an IT company now, so I spend all week at the office. That's why I go to cafes to rest, not to study. On weekends, I go to a small, quiet cafe near my apartment and read a book. Sometimes on Fridays, when I work from home, I take my laptop to a cafe for a change of scenery. I also drink just one coffee a day now. So yeah, that's how my cafe life has changed.",
+        "AL": "Oh, it has changed a lot, and it kind of shows how my life has changed, too. Back in college, cafes were basically my study room. During exam periods, my friends and I would camp out at a big, noisy franchise cafe with our laptops and piles of textbooks. We'd stay there until they kicked us out at midnight, and I used to drink three or four cups of coffee a day just to keep my eyes open. Looking back, it wasn't relaxing at all. It was more like a place where I felt pressure. These days, it's a completely different story. I've been working at an IT company for four years now, and since I'm stuck in meetings all week, cafes have become the place where I recharge. I much prefer small, quiet cafes now, like the one near my apartment, where I can sit by the window and read for a couple of hours. Every now and then, on Fridays when I work from home, I bring my laptop to a cafe just for a change of scenery, but it still feels pretty laid-back. I also cut down to one coffee a day, which my body definitely thanks me for. So yeah, that's pretty much how my cafe life has changed over the years."
       }
     }
   ],
   "pronunciation": [
-    {"word": "cafe", "ipa": "/kæˈfeɪ/", "tip": "두 번째 음절 '페이'에 강세. '카페'처럼 평평하게 말하지 말고 '캐페이'에 가깝게"},
-    {"word": "Americano", "ipa": "/əˌmer.ɪˈkɑː.noʊ/", "tip": "강세는 '카'. 첫 a는 약한 '어'로, '아메리카노'보다 '어메리카아노'"},
-    {"word": "atmosphere", "ipa": "/ˈæt.mə.sfɪr/", "tip": "첫 음절 '앳'에 강세. 3음절로 '앳머스피어', 끝을 '스페어'로 하지 않기"},
-    {"word": "latte", "ipa": "/ˈlɑː.teɪ/", "tip": "미국식은 t가 약해져 '라아레이'에 가깝게. '라떼'처럼 된소리로 하지 않기"},
-    {"word": "regular", "ipa": "/ˈreɡ.jə.lɚ/", "tip": "첫 음절 '레'에 강세. 가운데 '귤'은 약하게, 끝 r은 혀를 말아서"}
+    {"word": "cafe", "ipa": "/kæˈfeɪ/", "tip": "강세는 뒤 음절 '페이'. '카페'처럼 평평하게 읽지 말고 '캐-페이'로 끝을 올려서"},
+    {"word": "Americano", "ipa": "/əˌmer.ɪˈkɑː.noʊ/", "tip": "강세는 '카'에. '아메리카노'를 똑같은 박자로 읽지 말고 '어메리카-노우'처럼 카를 길고 세게"},
+    {"word": "barista", "ipa": "/bəˈriː.stə/", "tip": "강세는 '리'. 첫 음절은 '버'로 약하게, 마지막 '스타'도 짧게 '버리-스터'"},
+    {"word": "cozy", "ipa": "/ˈkoʊ.zi/", "tip": "'코지'가 아니라 이중모음 '코우'. z는 성대를 울리는 소리로 '코우-지'"},
+    {"word": "relaxed", "ipa": "/rɪˈlækst/", "tip": "-xed는 '-ㅋㅅ트'가 한 번에 붙는 소리. '릴렉스드'가 아니라 '릴랙스트'"}
   ]
 }

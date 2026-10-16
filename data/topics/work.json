@@ -1,0 +1,105 @@
+{
+  "id": "work",
+  "title": "직장 · 업무",
+  "titleEn": "Work & office",
+  "emoji": "💼",
+  "category": "survey",
+  "priority": 10,
+  "intro": "설문에서 '직장인'을 고르면 회사·사무실 묘사 → 하루 업무 일과 → 기억에 남는 프로젝트나 마감 경험 → 예전과 지금의 업무 비교(입사 1년 차 vs 지금, 사무실 vs 재택근무)가 자주 출제됩니다. 페르소나는 서울 성수동 근처 IT 회사 마케팅팀 4년차로, 팀원 6명, 9층 창가 자리, 9시 출근 6시 퇴근, 금요일 재택근무를 합니다. '회의가 많아 바쁘지만 팀 분위기가 좋다'는 한 줄과 동료 Minji를 모든 답변에 등장시키면 이야기가 자연스럽게 이어집니다.",
+  "strategy": [
+    "답변 흐름: 시작 문장(Sure, I'd love to talk about my job.) → 기본 정보(IT 회사, 마케팅팀, 4년차) → 세부(사무실 9층·창가 자리·팀원 6명·하는 일) → 느낌·이유(바쁘지만 팀 분위기가 좋음) → 마무리 문장(Yeah, that's pretty much my job.)",
+    "회사 묘사는 건물(9층) → 사무실 구조(open office, 회의실, 휴게실) → 내 자리(창가) → 팀(팀장님, Minji) 순서로 큰 것에서 작은 것으로 좁혀 가세요.",
+    "하루 일과는 지하철 15분 → 커피·이메일 확인 → 10시 팀 회의 → 동료들과 점심 → 오후 보고서·캠페인 기획 → 6시 퇴근 순서로 시간 흐름을 따라가면 막히지 않습니다.",
+    "비교 질문은 '입사 1년 차: 긴장, 실수 걱정, 야근 / 지금: 익숙, 프로젝트 주도' 또는 '사무실: 회의·동료 / 금요일 재택: 조용, 출퇴근 없음' 중 하나를 골라 장단점과 내 선호로 끝내세요."
+  ],
+  "expressions": [
+    {"en": "Sure, I'd love to talk about my job.", "ko": "네, 제 일에 대해 기꺼이 얘기할게요.", "level": "IM", "note": "주제 시작 문장"},
+    {"en": "I work at an IT company in Seoul.", "ko": "저는 서울에 있는 IT 회사에서 일해요.", "level": "IM", "note": "work at + 회사 / work for + 회사 둘 다 가능"},
+    {"en": "I'm on the marketing team.", "ko": "저는 마케팅팀이에요.", "level": "IM", "note": "be on the ~ team: ~팀 소속이다"},
+    {"en": "I've been working there for about four years.", "ko": "거기서 4년 정도 일하고 있어요.", "level": "IM", "note": "현재완료 진행: 과거부터 지금까지 계속"},
+    {"en": "Our office is on the ninth floor.", "ko": "저희 사무실은 9층에 있어요.", "level": "IM", "note": "on the + 서수 + floor"},
+    {"en": "My desk is right by the window.", "ko": "제 자리는 바로 창가예요.", "level": "IM"},
+    {"en": "I usually have a lot of meetings.", "ko": "저는 보통 회의가 많아요.", "level": "IM", "note": "have a meeting: 회의하다"},
+    {"en": "I have lunch with my coworkers near the office.", "ko": "회사 근처에서 동료들과 점심을 먹어요.", "level": "IM", "note": "coworker = colleague: 동료"},
+    {"en": "I'm in charge of planning SNS marketing campaigns.", "ko": "저는 SNS 마케팅 캠페인 기획을 맡고 있어요.", "level": "IH", "note": "be in charge of + 명사/-ing: ~을 담당하다"},
+    {"en": "My team leader is strict about deadlines, but she's really supportive.", "ko": "팀장님은 마감에는 엄격하지만 정말 많이 도와주세요.", "level": "IH", "note": "strict about: ~에 엄격한 / supportive: 힘이 되어 주는"},
+    {"en": "We were running out of time, so we had to stay late.", "ko": "시간이 얼마 없어서 늦게까지 남아야 했어요.", "level": "IH", "note": "run out of time: 시간이 다 떨어지다 (경험 질문)"},
+    {"en": "When I first started, I was nervous about making mistakes.", "ko": "처음 입사했을 때는 실수할까 봐 긴장했어요.", "level": "IH", "note": "be nervous about + -ing (비교 질문의 '그때' 문장)"},
+    {"en": "Working from home saves me a lot of time.", "ko": "재택근무를 하면 시간이 많이 절약돼요.", "level": "IH", "note": "save + 사람 + 시간: ~의 시간을 아껴 주다"},
+    {"en": "It was one of the most stressful weeks of my life, but it was totally worth it.", "ko": "제 인생에서 가장 스트레스 받은 한 주였지만, 완전히 그럴 만한 가치가 있었어요.", "level": "AL", "note": "one of the most + 형용사 + 복수명사 / worth it"},
+    {"en": "So yeah, that's pretty much what my work life looks like.", "ko": "그래서 네, 제 회사 생활은 대충 이런 모습이에요.", "level": "AL", "note": "마무리 문장: what ~ looks like"}
+  ],
+  "questions": [
+    {
+      "id": "work-describe",
+      "type": "describe",
+      "en": "You indicated in the survey that you work at a company. Tell me about your office. Where is it, what does it look like, and who do you work with?",
+      "ko": "설문에서 회사에 다닌다고 하셨네요. 사무실에 대해 말해 주세요. 어디에 있고, 어떻게 생겼으며, 누구와 함께 일하나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 회사 기본 정보(서울 IT 회사, 마케팅팀) → 사무실(9층, 창가 자리, 회의실·휴게실) → 팀(6명, 팀장님, Minji) → 좋아하는 점 → 'Yeah, that's ~' 마무리",
+        "건물 → 층 → 사무실 → 내 자리 순서로 '큰 것에서 작은 것'으로 좁혀 가며 묘사하세요",
+        "팀원 한 명(Minji)을 구체적으로 소개하면 다른 질문(경험·롤플레이)에서도 재활용할 수 있어요"
+      ],
+      "answers": {
+        "IM3": "Sure, I'd love to talk about my job. I work at an IT company in Seoul. I'm on the marketing team. Our office is on the ninth floor of a tall building. It's pretty big and bright. My desk is right by the window, so I can see the city. There are six people on my team. My team leader is very kind. My close coworker Minji sits next to me. We started at the company at the same time. Yeah, that's my office.",
+        "IH": "Sure, I'd love to talk about my job. I work at a mid-sized IT company in Seoul, near Seongsu-dong, and I've been on the marketing team for about four years. Our office is on the ninth floor of a modern glass building. It's an open office, so there are no walls between the desks, and there are a few meeting rooms and a small lounge with a coffee machine. My desk is right by the window, so I get a lot of sunlight and a nice view of the city. There are six people on my team. My team leader is strict about deadlines, but she's really supportive. My closest coworker is Minji. We joined the company at the same time, so we're really close, and she sits right next to me. The office is pretty busy, but the atmosphere is friendly. Yeah, that's my office and my team.",
+        "AL": "Sure, I'd love to talk about my job. I work at a mid-sized IT company in Seoul, not far from Seongsu-dong, and I've been on the marketing team for about four years now. Our office is on the ninth floor of a modern glass building, and the moment you step out of the elevator, it feels pretty lively. It's an open office, so there are no walls between the desks, which makes it easy to just turn around and ask someone a question. There are three meeting rooms, which are almost always booked, and a small lounge with a coffee machine and some snacks, where we chat during our breaks. I'm lucky because my desk is right by the window, so I get plenty of sunlight and a great view of the city, especially at sunset. There are six people on my team. My team leader is strict about deadlines, but she always has our back when things go wrong. And my closest coworker is Minji, who joined the company the same year as me and sits right next to me. Honestly, she's the reason I can survive busy weeks. So yeah, that's pretty much what my office and my team are like."
+      }
+    },
+    {
+      "id": "work-routine",
+      "type": "routine",
+      "en": "Tell me about a typical workday. What do you usually do from the time you get to work until you go home?",
+      "ko": "평소 하루 일과에 대해 말해 주세요. 출근해서 퇴근할 때까지 보통 무엇을 하나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 출근(지하철 15분, 8시 50분 도착) → 오전(커피, 이메일, 10시 팀 회의) → 점심(동료들과 회사 근처 식당) → 오후(보고서, 캠페인 기획) → 6시 퇴근 → 마무리 문장",
+        "First, After that, Around noon, In the afternoon, At six 같은 시간 표현으로 순서를 분명히 하세요",
+        "금요일 재택근무 한 문장을 덧붙이면 다른 날과의 차이로 디테일이 생겨요"
+      ],
+      "answers": {
+        "IM3": "Sure, let me tell you about my typical workday. I start work at nine. I take the subway to work, and it takes about fifteen minutes. When I get to the office, I get a coffee and check my emails. At ten, I have a team meeting. Around noon, I have lunch with my coworkers near the office. In the afternoon, I write reports and plan SNS campaigns. I usually have a lot of meetings, so I'm pretty busy. I leave work at six. Yeah, that's my typical workday.",
+        "IH": "Sure, I'd love to talk about my typical workday. I start work at nine, but I usually get to the office around ten to nine. My apartment is close to my office, so it only takes fifteen minutes by subway. First, I grab an iced Americano from the lounge and check my emails and messages. At ten, my team has a short meeting to talk about our plans for the day. After that, I work on my main job. I'm in charge of planning SNS marketing campaigns, so I come up with ideas, write reports, and talk with designers. Around noon, I have lunch with Minji and other coworkers at a restaurant near the office. In the afternoon, I usually have two or three more meetings, so time goes by really fast. I finish at six and go straight home. On Fridays, I work from home, so it's a little more relaxed. So yeah, that's my typical workday.",
+        "AL": "Sure, I'd love to talk about my typical workday. Officially, I start at nine, but I try to get to the office around ten to nine so I don't feel rushed. Luckily, I live pretty close to my office, so it's only a fifteen-minute subway ride, and I usually listen to music on the way. The first thing I do is grab an iced Americano from the lounge, because I honestly can't think without coffee. Then I go through my emails and messages and make a quick to-do list. At ten, my team has a meeting where we share what everyone's working on. After that, I focus on my main job, which is planning SNS marketing campaigns. That means coming up with ideas, checking how our posts are doing, writing reports, and going back and forth with the designers. Around noon, Minji and I usually grab lunch with the team at one of the little restaurants near the office, and that's when we finally get to relax and joke around. The afternoon is usually packed with meetings, so the time just flies by. I wrap up at six and head home. Fridays are different, though, because I work from home, so I can wear comfy clothes all day. So yeah, that's pretty much what my workday looks like."
+      }
+    },
+    {
+      "id": "work-experience",
+      "type": "experience",
+      "en": "Tell me about a memorable experience you had at work, such as a big project or a tight deadline. What happened, and why do you remember it so well?",
+      "ko": "직장에서 있었던 기억에 남는 경험, 예를 들어 큰 프로젝트나 촉박한 마감에 대해 말해 주세요. 무슨 일이 있었고, 왜 그렇게 잘 기억나나요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 언제·무슨 프로젝트(작년 겨울, 새 앱 출시 SNS 캠페인) → 문제(마감 이틀 전 영상 오류, 시간 부족) → 해결(Minji와 야근, 팀장님 도움) → 결과(반응 대박, 칭찬) → 느낌 → 마무리 문장",
+        "'Suddenly', 'Luckily', 'In the end' 같은 연결어로 문제 → 해결 → 결과의 전환점을 보여 주세요",
+        "과거 시제를 끝까지 유지하고, 마지막에 '그 경험으로 배운 것' 한 문장을 넣으면 IH 이상 답변이 돼요"
+      ],
+      "answers": {
+        "IM3": "Oh, let me think. I remember one big project last winter. My team had to make an SNS campaign for our new app. We had only one month, so we were really busy. Two days before the deadline, there was a big problem with our video. We had to fix everything. Minji and I stayed at the office until midnight. It was really hard. But in the end, we finished on time. A lot of people liked our campaign. Yeah, that's my most memorable experience at work.",
+        "IH": "Oh, I have a good one. Let me think. It was last winter, when my company launched a new app. My team was in charge of the SNS campaign, and we only had about a month to get everything ready. Everything was going well until two days before the launch. Suddenly, we found out that our main video had the wrong information in it. We were running out of time, so we had to stay late to fix it. Minji and I worked on the video and the posts until midnight, two nights in a row. My team leader even ordered pizza for us and stayed to help. Luckily, we finished just in time. In the end, the campaign got way more views than we expected, and my team leader said she was really proud of us. I was exhausted, but I learned how important teamwork is. Yeah, that's why I remember that project so well.",
+        "AL": "Oh, I actually have a really memorable one. Let me think for a second. It was last winter, when my company was getting ready to launch a new app. My team was in charge of the whole SNS campaign, and to be honest, the schedule was pretty crazy from the start, because we only had about a month. We planned the posts, made a short video, and worked with an influencer, and everything was going surprisingly smoothly. But then, just two days before the launch, we realized our main video had the wrong release date in it, and the influencer's posts had to be changed, too. I seriously panicked. We were running out of time, so Minji and I stayed at the office until midnight two nights in a row, fixing the video and rewriting every single post. My team leader, who's usually really strict, ordered pizza for us and stayed late to help, which honestly meant a lot. Somehow, we finished just a few hours before the deadline. In the end, the campaign got almost twice as many views as we'd hoped for. It was one of the most stressful weeks of my life, but it was totally worth it. So yeah, that's pretty much why that project is the one I'll never forget."
+      }
+    },
+    {
+      "id": "work-compare",
+      "type": "comparison",
+      "en": "How has your work changed since you first started your job? You can compare your first year with now, or working at the office with working from home. Which do you prefer, and why?",
+      "ko": "처음 일을 시작했을 때와 비교해 업무가 어떻게 바뀌었나요? 입사 첫해와 지금, 또는 사무실 근무와 재택근무를 비교해도 됩니다. 어느 쪽이 더 좋고, 그 이유는 무엇인가요?",
+      "tips": [
+        "답변 흐름: 시작 문장 → 그때(입사 1년 차: 긴장, 실수 걱정, 야근, 매일 출근) → 지금(4년차: 익숙함, 캠페인 주도, 금요일 재택) → 사무실 vs 재택 장단점 → 내 선호와 이유 → 마무리 문장",
+        "Back then, I used to ~ / These days, I ~ 구조로 과거와 현재를 분명히 나누세요",
+        "재택근무는 장점(출퇴근 없음, 조용함)과 단점(동료와 대화가 적음)을 하나씩 말한 뒤 '둘 다 섞인 지금이 제일 좋다'로 결론 내면 깔끔해요"
+      ],
+      "answers": {
+        "IM3": "Oh, my work has changed a lot. I started working at my company four years ago. In my first year, everything was new. I was nervous about making mistakes. I often stayed late at the office, and I went to the office every day. Now I know my job well, so I feel much more relaxed. I also work from home on Fridays. Working from home is quiet and comfortable. But I like the office, too, because I can talk with my coworkers. Yeah, that's how my work has changed.",
+        "IH": "Oh, my work has changed a lot since I first started. I joined my company about four years ago. Back then, everything was new, so I was always nervous about making mistakes. I spent a lot of time just learning how things worked, and I often stayed late to finish simple reports. I also had to go to the office every single day. These days, it's really different. I know my job well, and I'm in charge of planning SNS campaigns on my own. I feel much more confident, and I usually leave at six. Also, since last year, my team works from home on Fridays. Working from home saves me a lot of time, and it's quiet, so I can focus better. But I sometimes miss chatting with my coworkers. Honestly, I like having both, four days at the office and one day at home. So yeah, that's how my work has changed.",
+        "AL": "Oh, my work has changed a lot, probably more than any other part of my life. I joined my company about four years ago, right after college. Back then, everything was new, and I was constantly nervous about making mistakes. I used to double-check every email three times before sending it, and I often stayed late just to finish simple reports, because I didn't really know what I was doing yet. On top of that, I had to commute to the office every single day, so I was exhausted by Friday. These days, it's a completely different story. I know my job inside and out, and I'm now in charge of planning SNS campaigns from start to finish. I feel way more confident, and I can usually leave at six without feeling guilty. Another big change is that since last year, my team works from home on Fridays. Working from home saves me a lot of time, and since my apartment is quiet, I can really focus on writing reports. The downside is that I miss bumping into Minji at the coffee machine and chatting about random stuff. So for me, the perfect balance is what I have now, four days at the office and one day at home. So yeah, that's pretty much how my work life has changed over the years."
+      }
+    }
+  ],
+  "pronunciation": [
+    {"word": "company", "ipa": "/ˈkʌm.pə.ni/", "tip": "강세는 첫 음절 '컴'. '컴퍼니'를 같은 박자로 읽지 말고 '컴-퍼니'처럼 뒤를 약하게"},
+    {"word": "meeting", "ipa": "/ˈmiː.t̬ɪŋ/", "tip": "미국식은 t가 부드러운 'ㄹ'처럼 굴러 '미-링'에 가깝게. '미팅'처럼 딱딱하게 끊지 말 것"},
+    {"word": "coworker", "ipa": "/ˈkoʊˌwɝː.kɚ/", "tip": "co는 '코'가 아니라 '코우'. work의 or는 혀를 말아 '워r', '코우워r커r'"},
+    {"word": "deadline", "ipa": "/ˈded.laɪn/", "tip": "강세는 dead. d는 받침처럼 살짝 막고 바로 line으로 '데들라인'"},
+    {"word": "schedule", "ipa": "/ˈskedʒ.uːl/", "tip": "미국식은 '스케줄'이 아니라 '스께쥴'. sk는 된소리처럼, 끝의 l은 혀끝을 윗잇몸에 대고 마무리"}
+  ]
+}
