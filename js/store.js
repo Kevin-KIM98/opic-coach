@@ -83,6 +83,16 @@ export const store = {
     if (n) save();
     return n;
   },
+  // 주제별 학습 내용(data/index.json 의 contentVersion)이 바뀌면 예전 주제 표현 기록은 다른 문장을 가리킨다.
+  // 버전이 달라졌을 때 한 번만 주제 표현 기록(<topic>#eN)을 지운다. 패턴(pat:*) 기록은 prunePatterns 가 따로 관리.
+  syncTopicContent(version) {
+    if (!version || state.topicContentVersion === version) return 0;
+    let n = 0;
+    for (const k of Object.keys(state.expr)) if (!k.startsWith('pat:')) { delete state.expr[k]; n++; }
+    state.topicContentVersion = version;
+    save();
+    return n;
+  },
   learnedCount() { return Object.values(state.expr).filter(v => v.box >= 3).length; },
 
   // ---- 학습 일정 ----

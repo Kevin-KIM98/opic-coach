@@ -4,7 +4,7 @@
 // 편집자 모드가 꺼져 있으면 앱 어디에도 저장소 주소·계정이 드러나지 않는다.
 export const CONFIG = {
   appName: 'OPIc Coach',
-  version: '1.5.0',
+  version: '1.6.0',
   // 기본 설정값 (설정 화면에서 변경 가능)
   defaults: {
     target: 'IM3',          // IM3 | IH | AL

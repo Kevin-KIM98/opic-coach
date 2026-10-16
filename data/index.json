@@ -1,5 +1,19 @@
 {
   "version": 1,
+  "contentVersion": 2,
+  "source": {
+    "title": "OPIc 자기소개 모범답변 영상",
+    "url": "https://youtu.be/fG3VEfKBkgw",
+    "note": "모든 주제를 한 사람(서울에서 가족과 사는 경영학과 대학생)의 이야기로 연결하고, 답변은 '시작 문장 → 기본 정보 → 일상·세부 → 느낌 → 마무리 문장' 흐름으로 맞췄습니다."
+  },
+  "persona": "서울 대학교 3학년 · 경영학 전공 · 가족(부모님·남동생)과 아파트 거주 · 여가: 친구들과 어울리기, 집에서 영화 보기, 음악, 한강 조깅, 카페",
+  "flow": [
+    "Okay, let me tell you about ~.",
+    "기본 정보 (누가·어디·무엇)",
+    "일상·세부 (언제·누구와·어떻게)",
+    "느낌·이유",
+    "Yeah, that's ~."
+  ],
   "topics": [
     {
       "id": "self-intro",
@@ -42,8 +56,8 @@
       "file": "topics/cafe.json"
     },
     {
-      "id": "work",
-      "file": "topics/work.json"
+      "id": "school",
+      "file": "topics/school.json"
     },
     {
       "id": "vacation-home",
