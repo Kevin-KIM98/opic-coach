@@ -28,7 +28,7 @@ export async function render(root, route) {
 function personaCard(idx) {
   const src = idx.source;
   return `<div class="card mt12"><div class="xs muted">🧑‍🎓 모범답안 속 '나'</div><div class="small mt8">${idx.persona}</div>
-    ${idx.flow ? `<div class="xs muted mt12">답변 흐름</div><div class="chips mt8">${idx.flow.map((f, i) => `<span class="chip">${i + 1}. ${f}</span>`).join('')}</div>` : ''}
+    ${idx.flow ? `<div class="xs muted mt12">답변 흐름</div><div class="small mt8">${idx.flow.map((f, i) => `<b>${i + 1}</b> ${f}`).join(' → ')}</div>` : ''}
     ${src ? `<div class="xs ink2 mt12">${src.note || ''}</div><a class="btn sm mt12" href="${src.url}" target="_blank" rel="noopener">▶ ${src.title}</a>` : ''}</div>`;
 }
 

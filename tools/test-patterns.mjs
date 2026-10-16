@@ -80,7 +80,7 @@ async function open(hash, seed = null) {
 
 // ---- 예전 패턴 기록 정리 ----
 {
-  const seed = { expr: { 'pat:opener#0': { box: 3, due: 0, seen: 2 }, 'pat:filler#2': { box: 1, due: 0, seen: 1 }, 'pat:like#1': { box: 4, due: 0, seen: 3 }, 'housing#e0': { box: 2, due: 0, seen: 1 } } };
+  const seed = { expr: { 'pat:opener#0': { box: 3, due: 0, seen: 2 }, 'pat:filler#2': { box: 1, due: 0, seen: 1 }, 'pat:like#1': { box: 4, due: 0, seen: 3 }, 'housing#e0': { box: 2, due: 0, seen: 1 } }, topicContentVersion: 2 };
   const { page } = await open('#/home', seed);
   await page.waitForTimeout(500);
   const expr = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')).expr);
