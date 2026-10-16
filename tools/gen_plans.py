@@ -8,7 +8,7 @@ from pathlib import Path
 
 SURVEY = [
     "self-intro", "housing", "neighborhood", "movies", "music", "park",
-    "jogging", "travel-domestic", "travel-overseas", "cafe", "work", "vacation-home",
+    "jogging", "travel-domestic", "travel-overseas", "cafe", "school", "vacation-home",
 ]
 PRON = ["sound-rl", "sound-fp", "sound-vb", "sound-th", "sound-zj", "sound-vowel",
         "stress", "linking", "intonation", "twisters"]

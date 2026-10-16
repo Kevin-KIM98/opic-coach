@@ -15,12 +15,21 @@ export async function render(root, route) {
       <div class="grow"><div class="h3">⚡ 시간이 없다면</div>
         <div class="xs muted mt8">목표 등급까지 필요한 주제만 골라 둔 집중 학습 + 서베이 추천 조합</div></div>
       <span class="chev">›</span></a>
+    ${idx.persona ? raw(personaCard(idx)) : ''}
     <p class="small muted mt12">${idx.categories[cat]?.desc || '설문 주제는 OPIc 2~10번, 롤플레이 11~13번, 고난도 14~15번에 출제됩니다. 우선순위 순으로 정렬되어 있어요.'}</p>
     <div class="list mt12">
       ${raw(list.map(t => topicRow(t)).join(''))}
     </div>
     ${list.length < idx.topics.length && cat === 'all' ? raw(`<p class="xs muted mt12 center">일부 주제 파일을 불러오지 못했습니다 (${idx.topics.length - list.length}개).</p>`) : ''}
   `;
+}
+
+// 모든 모범답안이 공유하는 페르소나 · 답변 흐름 (출처 영상)
+function personaCard(idx) {
+  const src = idx.source;
+  return `<div class="card mt12"><div class="xs muted">🧑‍🎓 모범답안 속 '나'</div><div class="small mt8">${idx.persona}</div>
+    ${idx.flow ? `<div class="xs muted mt12">답변 흐름</div><div class="chips mt8">${idx.flow.map((f, i) => `<span class="chip">${i + 1}. ${f}</span>`).join('')}</div>` : ''}
+    ${src ? `<div class="xs ink2 mt12">${src.note || ''}</div><a class="btn sm mt12" href="${src.url}" target="_blank" rel="noopener">▶ ${src.title}</a>` : ''}</div>`;
 }
 
 function topicRow(t) {

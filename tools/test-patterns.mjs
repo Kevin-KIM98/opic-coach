@@ -1,4 +1,4 @@
-// 만능 패턴 72문장 화면 · 말하기 퀴즈 · 예전 패턴 기록 정리 (Chromium)
+// 만능 패턴 72문장 화면 · 말하기 퀴즈 · 예전 패턴/주제 기록 정리 · 주제 목록 페르소나 (Chromium)
 //
 // 돌려 보려면: npm i -D playwright && npx playwright install chromium
 //              python3 -m http.server 8777 &
@@ -87,6 +87,28 @@ async function open(hash, seed = null) {
   check('정리: 예전 패턴 기록 삭제', !expr['pat:opener#0'] && !expr['pat:filler#2'], JSON.stringify(expr));
   check('정리: 새 패턴 기록은 유지', expr['pat:like#1']?.box === 4);
   check('정리: 주제 표현 기록은 유지', expr['housing#e0']?.box === 2);
+  await page.close();
+}
+
+// ---- 주제 내용 교체: 예전 주제 표현 기록 한 번 정리 ----
+{
+  const seed = { expr: { 'housing#e0': { box: 3, due: 0, seen: 2 }, 'pat:like#1': { box: 4, due: 0, seen: 3 } } };
+  const { page, errs } = await open('#/topics', seed);
+  await page.waitForTimeout(500);
+  const st = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')));
+  check('주제 교체: 예전 주제 표현 기록 삭제', !st.expr['housing#e0'], JSON.stringify(st.expr));
+  check('주제 교체: 패턴 기록은 유지', st.expr['pat:like#1']?.box === 4);
+  check('주제 교체: 버전 기록', st.topicContentVersion === 2);
+  const txt = await page.innerText('#view');
+  check('주제 목록: 페르소나 카드', txt.includes('경영학') && txt.includes('답변 흐름'), txt.slice(0, 400));
+  check('주제 목록: 출처 영상 링크', await page.$('a[href="https://youtu.be/fG3VEfKBkgw"]') !== null);
+  check('주제 목록: 학교 주제', txt.includes('학교 · 수업'));
+  check('주제 목록: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
+  if (OUT) await page.screenshot({ path: `${OUT}/topics.png`, fullPage: true });
+  // 같은 버전에서 다시 학습한 기록은 지우지 않는다
+  await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('opic-coach:v1')); s.expr['housing#e1'] = { box: 2, due: 0, seen: 1 }; localStorage.setItem('opic-coach:v1', JSON.stringify(s)); });
+  await page.reload(); await page.waitForTimeout(800);
+  check('주제 교체: 새 기록은 다시 지우지 않음', await page.evaluate(() => !!JSON.parse(localStorage.getItem('opic-coach:v1')).expr['housing#e1']));
   await page.close();
 }
 

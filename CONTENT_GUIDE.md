@@ -81,6 +81,7 @@
 
 ## 다른 파일
 
+- 주제 모범답안은 `data/index.json` 의 `persona`(한 사람의 설정)와 `flow`(답변 흐름)를 따릅니다. 주제 내용을 크게 바꿨다면 `contentVersion` 을 1 올리세요 — 앱이 예전 주제 표현 학습 기록을 한 번 지웁니다.
 - `data/patterns.json` – 만능 패턴 72문장 (12 스토리 테마 × 6패턴). `groups[].items[]` 는 `{en, ko, level, pattern, examples}`.
   `pattern` 은 빈칸(`___`)이 있는 패턴 틀, `en` + `examples`(2개)가 예문 3개입니다. 말하기 퀴즈는 `pattern` 에서 빈칸을 뺀 단어로 채점합니다.
   그룹 id 를 바꾸면 `focus.json` 과 `tools/gen_plans.py` 의 `PATTERNS` 도 함께 바꾸고 `python tools/gen_plans.py` 를 다시 실행하세요.
