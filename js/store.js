@@ -80,6 +80,15 @@ export const store = {
     if (n) save();
     return n;
   },
+  // 학습 기록 일괄 초기화 (data/index.json 의 resetVersion 이 바뀌면 한 번만)
+  // 진도·연습·모의고사·학습일·이어서 학습을 지우고, 설정(목표 등급·시험일·음성)은 그대로 둔다.
+  syncReset(version) {
+    if (!version || state.resetVersion === version) return false;
+    const fresh = state.resetVersion === undefined && !Object.keys(state.expr).length && !state.practice.length && !state.mocks.length;
+    Object.assign(state, { expr: {}, practice: [], mocks: [], activity: {}, bookmarks: [], lastTopic: null, resetVersion: version });
+    save();
+    return !fresh;
+  },
   // 주제별 학습 내용(data/index.json 의 contentVersion)이 바뀌면 예전 주제 표현 기록은 다른 문장을 가리킨다.
   // 버전이 달라졌을 때 한 번만 주제 표현 기록(<topic>#eN)을 지운다. 패턴(pat:*) 기록은 prunePatterns 가 따로 관리.
   syncTopicContent(version) {

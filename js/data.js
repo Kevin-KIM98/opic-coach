@@ -15,10 +15,9 @@ async function getJSON(path) {
 export const patternIds = (p) => (p.groups || []).flatMap(g => g.items.map((_, i) => `pat:${g.id}#${i}`));
 
 export const data = {
-  index: () => getJSON('data/index.json').then(i => { store.syncTopicContent(i.contentVersion); return i; }),
+  index: () => getJSON('data/index.json').then(i => { store.syncReset(i.resetVersion); store.syncTopicContent(i.contentVersion); return i; }),
   // 불러올 때마다 지금 패턴에 없는 예전 패턴 기록을 정리한다 (idempotent)
   patterns: () => getJSON('data/patterns.json').then(p => { store.prunePatterns(patternIds(p)); return p; }),
-  pronunciation: () => getJSON('data/pronunciation.json'),
   mockSets: () => getJSON('data/mock-sets.json'),
   examSchedule: () => getJSON('data/exam-schedule.json'),
 

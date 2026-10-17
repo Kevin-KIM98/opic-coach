@@ -331,33 +331,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "developer",
-      "ipa": "/dɪˈvel.ə.pər/",
-      "tip": "'디벨로퍼'가 아니라 '디벨러퍼r'. 둘째 음절 '벨'에 강세"
-    },
-    {
-      "word": "company",
-      "ipa": "/ˈkʌm.pə.ni/",
-      "tip": "'컴퍼니'의 첫 음절 '컴'에 강세, 둘째 모음은 약하게 '퍼'"
-    },
-    {
-      "word": "software",
-      "ipa": "/ˈsɔːft.wer/",
-      "tip": "'소프트웨어'가 아니라 '쏘f트웨r'. f는 윗니를 아랫입술에 대고"
-    },
-    {
-      "word": "responsible",
-      "ipa": "/rɪˈspɑːn.sə.bəl/",
-      "tip": "'리스판서블'. 둘째 음절 '스판'에 강세, 끝 -ble은 '블'로 짧게"
-    },
-    {
-      "word": "family",
-      "ipa": "/ˈfæm.əl.i/",
-      "tip": "'패밀리'가 아니라 'f' 소리로 '퐤믈리'. 첫 음절에 강세"
-    }
-  ],
   "patterns": [
     {
       "pid": "start#1",

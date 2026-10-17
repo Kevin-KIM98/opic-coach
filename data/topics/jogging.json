@@ -339,33 +339,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "jogging",
-      "ipa": "/ˈdʒɑː.ɡɪŋ/",
-      "tip": "첫 음절에 강세. '조깅'처럼 '오'로 발음하지 말고 입을 크게 벌려 '좌-깅'에 가깝게"
-    },
-    {
-      "word": "trail",
-      "ipa": "/treɪl/",
-      "tip": "한 음절. tr은 '츄'처럼 붙여 말하고 끝의 l은 혀끝을 윗니 뒤에 대며 마무리 ('트레일'로 늘리지 않기)"
-    },
-    {
-      "word": "stretch",
-      "ipa": "/stretʃ/",
-      "tip": "한 음절. '스트레치'처럼 4음절로 늘리지 말고 str을 한 번에 붙여서"
-    },
-    {
-      "word": "breath",
-      "ipa": "/breθ/",
-      "tip": "명사 breath는 짧은 '에'와 무성 th. 동사 breathe /briːð/와 구분 (out of breath)"
-    },
-    {
-      "word": "healthier",
-      "ipa": "/ˈhel.θi.ɚ/",
-      "tip": "l 다음 무성 th를 혀끝을 이 사이에 살짝 물고. '헬시어'가 아니라 '헬-θi-어'"
-    }
-  ],
   "patterns": [
     {
       "pid": "like#0",

@@ -320,33 +320,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "neighborhood",
-      "ipa": "/ˈneɪ.bər.hʊd/",
-      "tip": "'네이버후드'. 첫 음절 '네이'에 강세, gh는 소리 나지 않아요"
-    },
-    {
-      "word": "convenient",
-      "ipa": "/kənˈviː.ni.ənt/",
-      "tip": "'컨비니언트'. 둘째 음절 '비'에 강세, v는 윗니를 아랫입술에"
-    },
-    {
-      "word": "residential",
-      "ipa": "/ˌrez.əˈden.ʃəl/",
-      "tip": "'레지덴셜'. 셋째 음절 '덴'에 강세, '레'는 r로 혀를 굴려서"
-    },
-    {
-      "word": "academy",
-      "ipa": "/əˈkæd.ə.mi/",
-      "tip": "'아카데미'가 아니라 '어캐더미'. 둘째 음절 '캐'에 강세"
-    },
-    {
-      "word": "trail",
-      "ipa": "/treɪl/",
-      "tip": "'트레일' 2음절이 아니라 한 음절로 'tr에이(을)'. 끝 l은 혀끝을 윗니 뒤에"
-    }
-  ],
   "patterns": [
     {
       "pid": "describe#0",

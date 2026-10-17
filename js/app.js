@@ -47,7 +47,11 @@ function parseHash() {
   return { name: parts[0] || 'home', parts: parts.slice(1), query };
 }
 
+// 학습 기록 초기화 · 바뀐 패턴/주제 기록 정리를 첫 화면보다 먼저 끝낸다 (화면이 지워질 기록을 읽지 않게)
+const ready = import('./data.js').then(({ data }) => Promise.all([data.index(), data.patterns()])).catch(() => {});
+
 async function render() {
+  await ready;
   const route = parseHash();
   stopSpeaking();
   if (currentCleanup) { try { currentCleanup(); } catch { /* ignore */ } currentCleanup = null; }
@@ -77,8 +81,6 @@ document.addEventListener('click', (e) => {
 
 window.addEventListener('hashchange', render);
 window.addEventListener('DOMContentLoaded', render);
-// 만능 패턴·주제 내용이 바뀌었으면 예전 학습 기록을 먼저 정리한다 (홈의 복습 대기 수가 부풀지 않게)
-import('./data.js').then(({ data }) => Promise.all([data.patterns(), data.index()])).catch(() => {});
 
 // 서비스워커
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {

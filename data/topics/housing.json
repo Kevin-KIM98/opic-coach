@@ -328,33 +328,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "apartment",
-      "ipa": "/əˈpɑːrt.mənt/",
-      "tip": "'아파트먼트'가 아니라 '어파r(트)먼트'. 둘째 음절 '파'에 강세"
-    },
-    {
-      "word": "veranda",
-      "ipa": "/vəˈræn.də/",
-      "tip": "'베란다'가 아니라 v 소리로 'v뤤더'. 둘째 음절에 강세"
-    },
-    {
-      "word": "bedroom",
-      "ipa": "/ˈbed.ruːm/",
-      "tip": "첫 음절 'bed'에 강세, d는 거의 들리지 않게 '베(드)룸'"
-    },
-    {
-      "word": "comfortable",
-      "ipa": "/ˈkʌmf.tə.bəl/",
-      "tip": "'컴포터블'이 아니라 3음절 '컴f터블'. 첫 음절에 강세"
-    },
-    {
-      "word": "kitchen",
-      "ipa": "/ˈkɪtʃ.ən/",
-      "tip": "'키친'보다 '킷쳔'에 가깝게, 둘째 음절은 약하게"
-    }
-  ],
   "patterns": [
     {
       "pid": "start#1",
