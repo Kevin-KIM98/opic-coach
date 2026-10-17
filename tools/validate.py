@@ -65,6 +65,10 @@ def check_topic(path, t):
         for lv in ("IM3", "IH", "AL"):
             if not ans.get(lv):
                 err(f"{rel}: questions[{i}] answers.{lv} 누락")
+        for lv in ("IM3", "IH", "AL"):
+            for piece in split_sentences(ans.get(lv, "")):
+                if len(piece) < 4:
+                    err(f"{rel}: questions[{i}] answers.{lv} 에 잘린 문장 조각 '{piece}' 이 있습니다 (a.m., Mr. 같은 약어 대신 'in the morning' 처럼 풀어 쓰세요)")
         ko = q.get("answersKo")
         if ko is not None:
             for lv in ("IM3", "IH", "AL"):
