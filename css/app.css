@@ -407,3 +407,10 @@ kbd { font-family: inherit; background: var(--surface-2); padding: 1px 6px; bord
 .topic-steps .s i { position: absolute; inset: 0 auto 0 0; background: var(--teal-soft); }
 .topic-steps .s span { position: relative; font-weight: 700; }
 .pat-frame { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+
+/* ---- 모범답안 한글 해석 ---- */
+.answer.with-ko .pair { margin-bottom: 10px; }
+.answer.with-ko .sent { display: inline; }
+.answer .sent-ko { font-size: 13px; color: var(--muted); line-height: 1.5; margin-top: 2px; }
+.answer.ko-off .sent-ko { display: none; }
+.ko-cue { font-size: 15px; color: var(--ink-2); line-height: 1.5; margin-bottom: 6px; }
