@@ -13,21 +13,90 @@
     "장단점 비교(여행 vs 집 휴가)는 입장 → 각각의 장점·단점 하나씩 → 내 경험 예시 → 결론 순서로 말하면 IH 이상 구조가 됩니다."
   ],
   "expressions": [
-    {"en": "Oh, my vacation at home? Let me think.", "ko": "아, 집에서 보내는 휴가요? 생각해 볼게요.", "level": "IM", "note": "집 휴가 질문의 시작 문장"},
-    {"en": "I take a few days off and just stay home.", "ko": "며칠 연차를 내고 그냥 집에 있어요.", "level": "IM", "note": "take ~ days off: 며칠 쉬다"},
-    {"en": "I sleep in until ten.", "ko": "열 시까지 늦잠을 자요.", "level": "IM", "note": "sleep in: 늦잠 자다"},
-    {"en": "I watch movies all day on the couch.", "ko": "소파에서 하루 종일 영화를 봐요.", "level": "IM"},
-    {"en": "I order delivery food.", "ko": "배달 음식을 시켜요.", "level": "IM"},
-    {"en": "I don't have to check my work email.", "ko": "회사 메일을 확인하지 않아도 돼요.", "level": "IM", "note": "don't have to: ~할 필요 없다"},
-    {"en": "I go jogging by the Han River.", "ko": "한강에서 조깅을 해요.", "level": "IM"},
-    {"en": "I visit my family in Daejeon.", "ko": "대전에 있는 가족을 보러 가요.", "level": "IM"},
-    {"en": "I binge-watch movies on Netflix.", "ko": "넷플릭스로 영화를 몰아 봐요.", "level": "IH", "note": "binge-watch: 몰아서 보다"},
-    {"en": "It's the only time I can really recharge.", "ko": "제가 진짜 재충전할 수 있는 유일한 시간이에요.", "level": "IH", "note": "recharge: 재충전하다"},
-    {"en": "I don't have to worry about packing or booking anything.", "ko": "짐 싸거나 뭘 예약할 걱정을 안 해도 돼요.", "level": "IH"},
-    {"en": "Traveling can be pretty tiring and expensive.", "ko": "여행은 꽤 피곤하고 돈이 많이 들 수 있어요.", "level": "IH", "note": "장단점 비교 질문에 사용"},
-    {"en": "I spent the whole day in my pajamas.", "ko": "하루 종일 잠옷 차림으로 지냈어요.", "level": "IH"},
-    {"en": "There's no place like home.", "ko": "집만 한 곳이 없어요.", "level": "AL", "note": "관용 표현, 결론 직전에 쓰면 좋아요"},
-    {"en": "Yeah, that's why I love spending my vacation at home.", "ko": "그래서 제가 집에서 휴가 보내는 걸 좋아해요.", "level": "AL", "note": "마무리 문장으로 사용"}
+    {
+      "en": "Oh, my vacation at home? Let me think.",
+      "ko": "아, 집에서 보내는 휴가요? 생각해 볼게요.",
+      "level": "IM",
+      "note": "집 휴가 질문의 시작 문장"
+    },
+    {
+      "en": "I take a few days off and just stay home.",
+      "ko": "며칠 연차를 내고 그냥 집에 있어요.",
+      "level": "IM",
+      "note": "take ~ days off: 며칠 쉬다"
+    },
+    {
+      "en": "I sleep in until ten.",
+      "ko": "열 시까지 늦잠을 자요.",
+      "level": "IM",
+      "note": "sleep in: 늦잠 자다"
+    },
+    {
+      "en": "I watch movies all day on the couch.",
+      "ko": "소파에서 하루 종일 영화를 봐요.",
+      "level": "IM"
+    },
+    {
+      "en": "I order delivery food.",
+      "ko": "배달 음식을 시켜요.",
+      "level": "IM"
+    },
+    {
+      "en": "I don't have to check my work email.",
+      "ko": "회사 메일을 확인하지 않아도 돼요.",
+      "level": "IM",
+      "note": "don't have to: ~할 필요 없다"
+    },
+    {
+      "en": "I go jogging by the Han River.",
+      "ko": "한강에서 조깅을 해요.",
+      "level": "IM"
+    },
+    {
+      "en": "I visit my family in Daejeon.",
+      "ko": "대전에 있는 가족을 보러 가요.",
+      "level": "IM"
+    },
+    {
+      "en": "I binge-watch movies on Netflix.",
+      "ko": "넷플릭스로 영화를 몰아 봐요.",
+      "level": "IH",
+      "note": "binge-watch: 몰아서 보다"
+    },
+    {
+      "en": "It's the only time I can really recharge.",
+      "ko": "제가 진짜 재충전할 수 있는 유일한 시간이에요.",
+      "level": "IH",
+      "note": "recharge: 재충전하다"
+    },
+    {
+      "en": "I don't have to worry about packing or booking anything.",
+      "ko": "짐 싸거나 뭘 예약할 걱정을 안 해도 돼요.",
+      "level": "IH"
+    },
+    {
+      "en": "Traveling can be pretty tiring and expensive.",
+      "ko": "여행은 꽤 피곤하고 돈이 많이 들 수 있어요.",
+      "level": "IH",
+      "note": "장단점 비교 질문에 사용"
+    },
+    {
+      "en": "I spent the whole day in my pajamas.",
+      "ko": "하루 종일 잠옷 차림으로 지냈어요.",
+      "level": "IH"
+    },
+    {
+      "en": "There's no place like home.",
+      "ko": "집만 한 곳이 없어요.",
+      "level": "AL",
+      "note": "관용 표현, 결론 직전에 쓰면 좋아요"
+    },
+    {
+      "en": "Yeah, that's why I love spending my vacation at home.",
+      "ko": "그래서 제가 집에서 휴가 보내는 걸 좋아해요.",
+      "level": "AL",
+      "note": "마무리 문장으로 사용"
+    }
   ],
   "questions": [
     {
@@ -96,10 +165,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "vacation", "ipa": "/veɪˈkeɪʃən/", "tip": "두 번째 음절 '케이'에 강세. v는 윗니로 아랫입술을 살짝 물고 소리 내요."},
-    {"word": "relaxed", "ipa": "/rɪˈlækst/", "tip": "끝의 -xed 는 '렉스트'처럼 [kst] 로 짧게 끝내요. '릴랙스드'가 아닙니다."},
-    {"word": "pajamas", "ipa": "/pəˈdʒɑːməz/", "tip": "두 번째 음절 '자-'에 강세. '퍼자-머즈'처럼 말해요."},
-    {"word": "exhausted", "ipa": "/ɪɡˈzɔːstɪd/", "tip": "h는 소리 내지 않아요. '이그저스티드', x는 [gz] 소리예요."},
-    {"word": "recharge", "ipa": "/riːˈtʃɑːrdʒ/", "tip": "두 번째 음절 '차-'에 강세. 끝 ge는 '지'를 약하게, '리차지'처럼 말해요."}
+    {
+      "word": "vacation",
+      "ipa": "/veɪˈkeɪʃən/",
+      "tip": "두 번째 음절 '케이'에 강세. v는 윗니로 아랫입술을 살짝 물고 소리 내요."
+    },
+    {
+      "word": "relaxed",
+      "ipa": "/rɪˈlækst/",
+      "tip": "끝의 -xed 는 '렉스트'처럼 [kst] 로 짧게 끝내요. '릴랙스드'가 아닙니다."
+    },
+    {
+      "word": "pajamas",
+      "ipa": "/pəˈdʒɑːməz/",
+      "tip": "두 번째 음절 '자-'에 강세. '퍼자-머즈'처럼 말해요."
+    },
+    {
+      "word": "exhausted",
+      "ipa": "/ɪɡˈzɔːstɪd/",
+      "tip": "h는 소리 내지 않아요. '이그저스티드', x는 [gz] 소리예요."
+    },
+    {
+      "word": "recharge",
+      "ipa": "/riːˈtʃɑːrdʒ/",
+      "tip": "두 번째 음절 '차-'에 강세. 끝 ge는 '지'를 약하게, '리차지'처럼 말해요."
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "like#4",
+      "en": "I'm the kind of person who loves staying home on vacation.",
+      "ko": "저는 휴가 때 집에 있는 걸 정말 좋아하는 사람이에요.",
+      "q": "vacation-home-describe"
+    },
+    {
+      "pid": "place#1",
+      "en": "There's a cozy cafe near my place.",
+      "ko": "우리 집 근처에 아늑한 카페가 하나 있어요.",
+      "q": "vacation-home-routine"
+    },
+    {
+      "pid": "people#1",
+      "en": "Sometimes I spend the whole day alone because I need some quiet time after a busy week.",
+      "ko": "바쁜 한 주를 보내고 나면 조용한 시간이 필요해서 가끔은 하루 종일 혼자 보내요.",
+      "q": "vacation-home-routine"
+    },
+    {
+      "pid": "routine#4",
+      "en": "After that, I usually watch a movie on the couch to finish my day.",
+      "ko": "그다음엔 보통 소파에서 영화를 보면서 하루를 마무리해요.",
+      "q": "vacation-home-routine"
+    },
+    {
+      "pid": "reason#1",
+      "en": "The main reason is that I don't have to plan or pack anything.",
+      "ko": "가장 큰 이유는 아무것도 계획하거나 짐을 쌀 필요가 없다는 거예요.",
+      "q": "vacation-home-describe"
+    },
+    {
+      "pid": "memory#3",
+      "en": "To my surprise, my younger brother Junho came up from Daejeon to visit me.",
+      "ko": "놀랍게도 남동생 준호가 저를 보러 대전에서 올라왔어요.",
+      "q": "vacation-home-experience"
+    },
+    {
+      "pid": "opinion#3",
+      "en": "On the other hand, staying home is cheap and super relaxing.",
+      "ko": "반면에 집에 있는 건 돈도 안 들고 정말 편안해요.",
+      "q": "vacation-home-compare"
+    },
+    {
+      "pid": "opinion#5",
+      "en": "All things considered, I think staying home is the best way for me to recharge.",
+      "ko": "모든 걸 고려해 보면, 집에 있는 게 저에게는 재충전하는 가장 좋은 방법인 것 같아요.",
+      "q": "vacation-home-compare"
+    }
   ]
 }

@@ -19,10 +19,8 @@ export const data = {
   // 불러올 때마다 지금 패턴에 없는 예전 패턴 기록을 정리한다 (idempotent)
   patterns: () => getJSON('data/patterns.json').then(p => { store.prunePatterns(patternIds(p)); return p; }),
   pronunciation: () => getJSON('data/pronunciation.json'),
-  plans: () => getJSON('data/plans.json'),
   mockSets: () => getJSON('data/mock-sets.json'),
   examSchedule: () => getJSON('data/exam-schedule.json'),
-  focus: () => getJSON('data/focus.json'),
 
   async topic(id) {
     const idx = await this.index();
@@ -45,6 +43,7 @@ export const data = {
     const [topics, patterns] = await Promise.all([this.topics(), this.patterns()]);
     const out = [];
     topics.forEach(t => (t.expressions || []).forEach((e, i) => out.push({ ...e, id: `${t.id}#e${i}`, source: t.title, topicId: t.id })));
+    topics.forEach(t => (t.patterns || []).forEach((p, i) => out.push({ en: p.en, ko: p.ko, id: `${t.id}#p${i}`, source: `${t.title} · 패턴`, topicId: t.id })));
     patterns.groups.forEach(g => g.items.forEach((e, i) => out.push({ ...e, id: `pat:${g.id}#${i}`, source: `패턴 · ${g.title}`, groupId: g.id })));
     return out;
   },

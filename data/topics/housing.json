@@ -194,5 +194,55 @@
       "ipa": "/ˈlɔːn.dri/",
       "tip": "'런드리'가 아니라 '론드리'. 첫 음절을 길게"
     }
+  ],
+  "patterns": [
+    {
+      "pid": "start#1",
+      "en": "I started living alone about three years ago.",
+      "ko": "저는 약 3년 전에 혼자 살기 시작했어요.",
+      "q": "housing-describe"
+    },
+    {
+      "pid": "describe#1",
+      "en": "When you walk in, the first thing you notice is the open living room with a gray sofa.",
+      "ko": "들어가면 가장 먼저 눈에 띄는 건 회색 소파가 있는 탁 트인 거실이에요.",
+      "q": "housing-describe"
+    },
+    {
+      "pid": "place#3",
+      "en": "My favorite place to watch movies is the sofa in my living room.",
+      "ko": "제가 영화 보기 가장 좋아하는 곳은 거실 소파예요.",
+      "q": "housing-describe"
+    },
+    {
+      "pid": "routine#3",
+      "en": "First, I change into comfortable clothes. Then, I cook a simple dinner for myself.",
+      "ko": "먼저 편한 옷으로 갈아입어요. 그다음 저를 위해 간단한 저녁을 만들어요.",
+      "q": "housing-routine"
+    },
+    {
+      "pid": "reason#0",
+      "en": "I like my place because it's only 15 minutes from my office.",
+      "ko": "저는 회사에서 15분밖에 안 걸려서 제 집이 좋아요.",
+      "q": "housing-describe"
+    },
+    {
+      "pid": "memory#0",
+      "en": "I remember one time when my boiler broke on a freezing night in January.",
+      "ko": "1월의 몹시 추운 밤에 보일러가 고장 났던 때가 기억나요.",
+      "q": "housing-experience"
+    },
+    {
+      "pid": "problem#2",
+      "en": "I didn't know what to do, so I called the building manager.",
+      "ko": "어떻게 해야 할지 몰라서 건물 관리인에게 전화했어요.",
+      "q": "housing-experience"
+    },
+    {
+      "pid": "change#1",
+      "en": "Compared to my parents' home in Daejeon, my place now is much smaller.",
+      "ko": "대전에 있는 부모님 집에 비하면 지금 제 집은 훨씬 작아요.",
+      "q": "housing-compare"
+    }
   ]
 }

@@ -77,18 +77,17 @@
 
 1. `data/topics/새주제.json` 파일을 위 형식으로 만듭니다 (`id` = 파일명).
 2. `data/index.json` 의 `topics` 배열에 `{"id": "새주제", "file": "topics/새주제.json"}` 을 추가합니다.
-3. 학습 일정에 넣고 싶으면 `data/plans.json` 의 원하는 날 `tasks` 에 `{"type": "learn", "topic": "새주제"}` 를 추가합니다.
 
 ## 다른 파일
 
 - 주제 모범답안은 `data/index.json` 의 `persona`(한 사람의 설정)와 `flow`(답변 흐름)를 따릅니다. 주제 내용을 크게 바꿨다면 `contentVersion` 을 1 올리세요 — 앱이 예전 주제 표현 학습 기록을 한 번 지웁니다.
 - `data/patterns.json` – 만능 패턴 72문장 (12 스토리 테마 × 6패턴). `groups[].items[]` 는 `{en, ko, level, pattern, examples}`.
   `pattern` 은 빈칸(`___`)이 있는 패턴 틀, `en` + `examples`(2개)가 예문 3개입니다. 말하기 퀴즈는 `pattern` 에서 빈칸을 뺀 단어로 채점합니다.
-  그룹 id 를 바꾸면 `focus.json` 과 `tools/gen_plans.py` 의 `PATTERNS` 도 함께 바꾸고 `python tools/gen_plans.py` 를 다시 실행하세요.
+  그룹 id·순서를 바꾸면 주제 파일의 `patterns[].pid` 도 함께 바꾸세요.
   지금 파일에 없는 패턴의 학습 기록(`pat:*`)은 앱이 자동으로 지웁니다.
 - `data/pronunciation.json` – 발음 세트. `kind` 가 `minimal-pairs` 면 `pairs`, 그 외는 `words`/`sentences`.
 - `data/mock-sets.json` – 모의고사 구성. `slots` 로 문항 조합, `levels` 로 등급 커트라인.
-- `data/plans.json` – 일정. 손으로 고쳐도 되고, `tools/gen_plans.py` 를 수정해 다시 생성해도 됩니다.
+- 주제 파일의 `patterns` – 만능 패턴을 이 주제에 맞춰 채운 문장 8개. `{pid, en, ko, q}`: `pid` 는 `<그룹 id>#<번호>`(예: `like#0`), `en` 은 패턴 틀의 단어를 그대로 두고 빈칸만 채운 문장, `q` 는 이 문장을 쓰는 질문 id. `validate.py` 가 셋 다 검사합니다.
   과제 `type`: `learn` `shadow` `speak` `pattern` `pron` `mock` `review`.
 
 ## 로컬에서 검증
@@ -97,12 +96,3 @@
 python tools/validate.py
 ```
 
-## data/focus.json — 집중 학습 구성
-
-목표 등급별 최단 코스와 서베이 추천 조합입니다.
-
-- `survey[].pick[]` — 고를 항목. `topic` 을 넣으면 해당 주제로 가는 링크가 붙습니다
-- `survey[].avoid[]` — 피할 항목과 이유
-- `tracks[]` — `level`(IM3/IH/AL) 별 `topics` · `patterns` · `pron` · `checklist`
-
-여기 적은 id 는 실제 데이터에 있어야 합니다. `python tools/validate.py` 가 대조해 검사합니다.

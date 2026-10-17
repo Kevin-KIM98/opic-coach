@@ -195,5 +195,55 @@
       "ipa": "/ˈjuː.ʒu.ə.li/",
       "tip": "'유주얼리'. s는 '스'가 아니라 '쥬' 소리"
     }
+  ],
+  "patterns": [
+    {
+      "pid": "like#4",
+      "en": "I'm the kind of person who loves being around people.",
+      "ko": "저는 사람들과 함께 있는 걸 정말 좋아하는 사람이에요.",
+      "q": "self-intro-personality"
+    },
+    {
+      "pid": "place#0",
+      "en": "I usually work from home at my small table by the window on Fridays.",
+      "ko": "저는 금요일에는 보통 창가에 있는 작은 테이블에서 재택근무를 해요.",
+      "q": "self-intro-weekday"
+    },
+    {
+      "pid": "describe#3",
+      "en": "It's not very relaxing, but it's really rewarding.",
+      "ko": "아주 여유롭진 않지만, 정말 보람 있어요.",
+      "q": "self-intro-job"
+    },
+    {
+      "pid": "people#3",
+      "en": "I have a friend named Minji at work, and we have lunch together almost every day.",
+      "ko": "회사에 민지라는 친구가 있는데, 저희는 거의 매일 같이 점심을 먹어요.",
+      "q": "self-intro-personality"
+    },
+    {
+      "pid": "routine#0",
+      "en": "I go jogging along the Han River about three times a week.",
+      "ko": "저는 일주일에 세 번 정도 한강을 따라 조깅을 해요.",
+      "q": "self-intro-personality"
+    },
+    {
+      "pid": "reason#2",
+      "en": "It helps me relieve stress after a week full of meetings.",
+      "ko": "회의로 가득한 한 주를 보낸 뒤 스트레스를 푸는 데 도움이 돼요.",
+      "q": "self-intro-personality"
+    },
+    {
+      "pid": "start#1",
+      "en": "I started working at my company about three years ago.",
+      "ko": "저는 약 3년 전에 지금 회사에서 일하기 시작했어요.",
+      "q": "self-intro-job"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to live with my family in Daejeon, but now I live alone in Seoul.",
+      "ko": "예전에는 대전에서 가족과 함께 살았지만, 지금은 서울에서 혼자 살아요.",
+      "q": "self-intro-general"
+    }
   ]
 }

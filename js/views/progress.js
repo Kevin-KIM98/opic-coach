@@ -2,12 +2,10 @@ import { html, raw, levelColor, todayKey, fmtDate } from '../util.js';
 import { store } from '../store.js';
 import { data, TYPE_LABEL } from '../data.js';
 import { LEVELS, levelIndex } from '../scoring.js';
-import { currentPlan, planProgress } from '../plan.js';
 
 export async function render(root) {
-  const [{ plan }, topics] = await Promise.all([currentPlan(), data.topics()]);
+  const topics = await data.topics();
   const st = store.state;
-  const prog = planProgress(plan);
   const mocks = st.mocks.slice().reverse(); // 오래된 → 최근
   const practice = st.practice;
   const learned = store.learnedCount();
@@ -51,10 +49,7 @@ export async function render(root) {
     ${typeRows.length ? raw(`<div class="section-title">유형별 평균 (낮은 순)</div><div class="card parts">${typeRows.map(([k, v, n]) => `<div class="p"><span class="muted xs">${TYPE_LABEL[k] || k}</span><div class="bar"><i style="width:${v}%;background:${v >= 63 ? 'var(--teal)' : 'var(--accent)'}"></i></div><b>${v}</b></div>`).join('')}</div>`) : ''}
 
     <div class="section-title">주제별 현황</div>
-    <div class="list">${raw(topicRows.map(({ t, avg, n, lv }) => `<a class="list-row" href="#/topic/${t.id}"><div class="emoji">${t.emoji}</div><div class="grow"><div class="t">${t.title}</div><div class="s">표현 ${lv}/${(t.expressions || []).length} · 답변 연습 ${n}회${avg != null ? ` · 평균 ${avg}점` : ''}</div></div>${avg != null ? `<b style="color:${avg >= 63 ? 'var(--teal)' : 'var(--accent)'}">${avg}</b>` : '<span class="chev">›</span>'}</a>`).join(''))}</div>
-
-    <div class="section-title">과정 진행</div>
-    <div class="card"><div class="row between small"><span>${plan.title}</span><b>${prog.done}/${prog.total} 과제</b></div><div class="bar mt8"><i style="width:${prog.pct}%"></i></div><a class="btn ghost block mt12" href="#/plan">전체 일정 보기</a></div>`;
+    <div class="list">${raw(topicRows.map(({ t, avg, n, lv }) => `<a class="list-row" href="#/topic/${t.id}"><div class="emoji">${t.emoji}</div><div class="grow"><div class="t">${t.title}</div><div class="s">표현 ${lv}/${(t.expressions || []).length} · 답변 연습 ${n}회${avg != null ? ` · 평균 ${avg}점` : ''}</div></div>${avg != null ? `<b style="color:${avg >= 63 ? 'var(--teal)' : 'var(--accent)'}">${avg}</b>` : '<span class="chev">›</span>'}</a>`).join(''))}</div>`;
 }
 
 // 모의고사 점수 추이 카드: 등급색 막대 + 목표선 + 직전 대비 증감

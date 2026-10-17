@@ -61,44 +61,33 @@ def check_topic(path, t):
                 err(f"{rel}: questions[{i}] answers.{lv} 누락")
 
 
-def check_focus(index):
-    """집중 학습 구성이 가리키는 주제·패턴·발음 id 가 실제로 존재하는지."""
-    focus = load(DATA / "focus.json")
-    if not focus or not index:
-        return
-    topic_ids = {e["id"] for e in index.get("topics", [])}
-    pats = load(DATA / "patterns.json") or {}
-    prons = load(DATA / "pronunciation.json") or {}
-    pattern_ids = {g.get("id") for g in pats.get("groups", [])}
-    pron_ids = {s.get("id") for s in prons.get("sets", [])}
-    targets = {t.get("level") for t in focus.get("tracks", [])}
-    for want in ("IM3", "IH", "AL"):
-        if want not in targets:
-            err(f"data/focus.json: '{want}' 코스가 없습니다 (설정의 목표 등급과 짝이 맞아야 합니다)")
-    for g in focus.get("survey", []):
-        for pick in g.get("pick", []):
-            tid = pick.get("topic")
-            if tid and tid not in topic_ids:
-                err(f"data/focus.json: survey '{g.get('id')}' 의 topic '{tid}' 가 없습니다")
-    for tid in focus.get("always", {}).get("topics", []):
-        if tid not in topic_ids:
-            err(f"data/focus.json: always.topics 의 '{tid}' 가 없습니다")
-    for tr in focus.get("tracks", []):
-        lv = tr.get("level")
-        if not tr.get("checklist"):
-            err(f"data/focus.json: '{lv}' 코스에 checklist 가 없습니다")
-        for tid in tr.get("topics", []):
-            if tid not in topic_ids:
-                err(f"data/focus.json: '{lv}' 코스의 topic '{tid}' 가 없습니다")
-        for pid in tr.get("patterns", []):
-            if pid not in pattern_ids:
-                err(f"data/focus.json: '{lv}' 코스의 pattern '{pid}' 가 없습니다")
-        for sid in tr.get("pron", []):
-            if sid not in pron_ids:
-                err(f"data/focus.json: '{lv}' 코스의 pron '{sid}' 가 없습니다")
+def check_topic_patterns(path, t, frames):
+    """주제 패턴: pid 가 patterns.json 에 있고, 패턴 틀의 단어가 문장에 순서대로 들어 있는지."""
+    rel = path.relative_to(ROOT)
+    qids = {q.get("id") for q in t.get("questions", [])}
+    norm = lambda x: [w for w in "".join(c.lower() if c.isalnum() or c in " '" else " " for c in x).split() if w]
+    for i, p in enumerate(t.get("patterns", [])):
+        if not p.get("en") or not p.get("ko"):
+            err(f"{rel}: patterns[{i}] en/ko 누락")
+        frame = frames.get(p.get("pid"))
+        if frame is None:
+            err(f"{rel}: patterns[{i}] pid '{p.get('pid')}' 가 data/patterns.json 에 없습니다")
+            continue
+        if p.get("q") and p["q"] not in qids:
+            err(f"{rel}: patterns[{i}] q '{p['q']}' 가 이 주제의 질문 id 가 아닙니다")
+        words, it = norm(p.get("en", "")), 0
+        for w in norm(frame.replace("___", " ")):
+            while it < len(words) and words[it] != w:
+                it += 1
+            if it >= len(words):
+                err(f"{rel}: patterns[{i}] 문장에 패턴 틀 '{frame}' 의 단어 '{w}' 가 없습니다")
+                break
+            it += 1
 
 
 def main():
+    pats = load(DATA / "patterns.json") or {}
+    frames = {f"{g.get('id')}#{i}": it.get("pattern") or it.get("en", "") for g in pats.get("groups", []) for i, it in enumerate(g.get("items", []))}
     index = load(DATA / "index.json")
     if index:
         for entry in index.get("topics", []):
@@ -109,12 +98,12 @@ def main():
             t = load(p)
             if t:
                 check_topic(p, t)
+                check_topic_patterns(p, t, frames)
         listed = {e["file"] for e in index.get("topics", [])}
         for p in (DATA / "topics").glob("*.json"):
             if f"topics/{p.name}" not in listed:
                 err(f"{p.relative_to(ROOT)}: index.json 에 등록되지 않았습니다")
-    check_focus(index)
-    for name in ("patterns.json", "pronunciation.json", "plans.json", "mock-sets.json"):
+    for name in ("patterns.json", "pronunciation.json", "mock-sets.json"):
         d = load(DATA / name)
         if d is None:
             continue
@@ -127,12 +116,6 @@ def main():
                         err(f"data/patterns.json: group '{g.get('id')}' items[{i}] pattern 에 빈칸(___)이 없습니다")
                     if not isinstance(it.get("examples", []), list):
                         err(f"data/patterns.json: group '{g.get('id')}' items[{i}] examples 는 문장 목록이어야 합니다")
-        if name == "plans.json":
-            for p in d.get("plans", []):
-                for day in p.get("days", []):
-                    for task in day.get("tasks", []):
-                        if task.get("type") not in d.get("taskTypes", {}):
-                            err(f"data/plans.json: plan '{p.get('id')}' day {day.get('day')} 알 수 없는 task type '{task.get('type')}'")
     if errors:
         print("❌ 검증 실패:")
         for e in errors:

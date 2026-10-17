@@ -13,21 +13,95 @@
     "비교 질문은 '대학 때는 친구들과 시험공부하러 밤늦게까지 → 지금은 주말에 혼자 쉬러, 가끔 금요일 재택근무 날 노트북 작업' 구도로 답하세요."
   ],
   "expressions": [
-    {"en": "Oh, cafes? Sure, I'd love to talk about that.", "ko": "아, 카페요? 네, 기꺼이 얘기할게요.", "level": "IM", "note": "주제 시작 문장: 질문 키워드를 한 번 되묻고 시작"},
-    {"en": "There's a small cafe about five minutes from my apartment.", "ko": "우리 아파트에서 5분 정도 거리에 작은 카페가 있어요.", "level": "IM", "note": "There's + 장소 + 거리: 기본 정보 문장"},
-    {"en": "I go there almost every weekend.", "ko": "거의 매주 주말에 거기 가요.", "level": "IM", "note": "빈도: almost every + 명사"},
-    {"en": "I always order an iced Americano.", "ko": "저는 항상 아이스 아메리카노를 주문해요.", "level": "IM", "note": "an iced Americano: 관사 an + iced"},
-    {"en": "It has big windows and wooden tables.", "ko": "큰 창문과 나무 테이블이 있어요.", "level": "IM"},
-    {"en": "I like to sit by the window.", "ko": "저는 창가에 앉는 걸 좋아해요.", "level": "IM", "note": "by the window: 창가에"},
-    {"en": "I usually read a book there for a couple of hours.", "ko": "보통 거기서 두어 시간 책을 읽어요.", "level": "IM", "note": "a couple of hours: 두세 시간"},
-    {"en": "It's a great place to relax after a busy week.", "ko": "바쁜 한 주를 보내고 쉬기에 좋은 곳이에요.", "level": "IM", "note": "a great place to + 동사"},
-    {"en": "The coffee smells amazing as soon as you walk in.", "ko": "들어가자마자 커피 향이 정말 좋아요.", "level": "IH", "note": "as soon as: ~하자마자 / 감각 묘사"},
-    {"en": "It's quiet enough to read, but it doesn't feel empty.", "ko": "책 읽기에 충분히 조용하지만 썰렁한 느낌은 아니에요.", "level": "IH", "note": "형용사 + enough to + 동사"},
-    {"en": "Back in college, I used to study there until late at night.", "ko": "대학 때는 거기서 밤늦게까지 공부하곤 했어요.", "level": "IH", "note": "used to + 동사: 과거의 습관 (비교 질문)"},
-    {"en": "These days, I go to cafes to rest, not to study.", "ko": "요즘은 공부하러가 아니라 쉬러 카페에 가요.", "level": "IH", "note": "to A, not to B: 목적 대비"},
-    {"en": "We ended up talking for three hours.", "ko": "결국 세 시간 동안 얘기했어요.", "level": "IH", "note": "end up + -ing: 결국 ~하게 되다 (경험 질문)"},
-    {"en": "The barista knows my order by heart, which makes me feel like a regular.", "ko": "바리스타가 제 주문을 외우고 있어서 단골이 된 기분이에요.", "level": "AL", "note": "by heart: 외워서 / , which: 앞 문장 전체 수식"},
-    {"en": "So yeah, that's pretty much why that little cafe means so much to me.", "ko": "그래서 네, 그게 그 작은 카페가 제게 그렇게 소중한 이유예요.", "level": "AL", "note": "마무리 문장: So yeah, that's pretty much why ~"}
+    {
+      "en": "Oh, cafes? Sure, I'd love to talk about that.",
+      "ko": "아, 카페요? 네, 기꺼이 얘기할게요.",
+      "level": "IM",
+      "note": "주제 시작 문장: 질문 키워드를 한 번 되묻고 시작"
+    },
+    {
+      "en": "There's a small cafe about five minutes from my apartment.",
+      "ko": "우리 아파트에서 5분 정도 거리에 작은 카페가 있어요.",
+      "level": "IM",
+      "note": "There's + 장소 + 거리: 기본 정보 문장"
+    },
+    {
+      "en": "I go there almost every weekend.",
+      "ko": "거의 매주 주말에 거기 가요.",
+      "level": "IM",
+      "note": "빈도: almost every + 명사"
+    },
+    {
+      "en": "I always order an iced Americano.",
+      "ko": "저는 항상 아이스 아메리카노를 주문해요.",
+      "level": "IM",
+      "note": "an iced Americano: 관사 an + iced"
+    },
+    {
+      "en": "It has big windows and wooden tables.",
+      "ko": "큰 창문과 나무 테이블이 있어요.",
+      "level": "IM"
+    },
+    {
+      "en": "I like to sit by the window.",
+      "ko": "저는 창가에 앉는 걸 좋아해요.",
+      "level": "IM",
+      "note": "by the window: 창가에"
+    },
+    {
+      "en": "I usually read a book there for a couple of hours.",
+      "ko": "보통 거기서 두어 시간 책을 읽어요.",
+      "level": "IM",
+      "note": "a couple of hours: 두세 시간"
+    },
+    {
+      "en": "It's a great place to relax after a busy week.",
+      "ko": "바쁜 한 주를 보내고 쉬기에 좋은 곳이에요.",
+      "level": "IM",
+      "note": "a great place to + 동사"
+    },
+    {
+      "en": "The coffee smells amazing as soon as you walk in.",
+      "ko": "들어가자마자 커피 향이 정말 좋아요.",
+      "level": "IH",
+      "note": "as soon as: ~하자마자 / 감각 묘사"
+    },
+    {
+      "en": "It's quiet enough to read, but it doesn't feel empty.",
+      "ko": "책 읽기에 충분히 조용하지만 썰렁한 느낌은 아니에요.",
+      "level": "IH",
+      "note": "형용사 + enough to + 동사"
+    },
+    {
+      "en": "Back in college, I used to study there until late at night.",
+      "ko": "대학 때는 거기서 밤늦게까지 공부하곤 했어요.",
+      "level": "IH",
+      "note": "used to + 동사: 과거의 습관 (비교 질문)"
+    },
+    {
+      "en": "These days, I go to cafes to rest, not to study.",
+      "ko": "요즘은 공부하러가 아니라 쉬러 카페에 가요.",
+      "level": "IH",
+      "note": "to A, not to B: 목적 대비"
+    },
+    {
+      "en": "We ended up talking for three hours.",
+      "ko": "결국 세 시간 동안 얘기했어요.",
+      "level": "IH",
+      "note": "end up + -ing: 결국 ~하게 되다 (경험 질문)"
+    },
+    {
+      "en": "The barista knows my order by heart, which makes me feel like a regular.",
+      "ko": "바리스타가 제 주문을 외우고 있어서 단골이 된 기분이에요.",
+      "level": "AL",
+      "note": "by heart: 외워서 / , which: 앞 문장 전체 수식"
+    },
+    {
+      "en": "So yeah, that's pretty much why that little cafe means so much to me.",
+      "ko": "그래서 네, 그게 그 작은 카페가 제게 그렇게 소중한 이유예요.",
+      "level": "AL",
+      "note": "마무리 문장: So yeah, that's pretty much why ~"
+    }
   ],
   "questions": [
     {
@@ -96,10 +170,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "cafe", "ipa": "/kæˈfeɪ/", "tip": "강세는 뒤 음절 '페이'. '카페'처럼 평평하게 읽지 말고 '캐-페이'로 끝을 올려서"},
-    {"word": "Americano", "ipa": "/əˌmer.ɪˈkɑː.noʊ/", "tip": "강세는 '카'에. '아메리카노'를 똑같은 박자로 읽지 말고 '어메리카-노우'처럼 카를 길고 세게"},
-    {"word": "barista", "ipa": "/bəˈriː.stə/", "tip": "강세는 '리'. 첫 음절은 '버'로 약하게, 마지막 '스타'도 짧게 '버리-스터'"},
-    {"word": "cozy", "ipa": "/ˈkoʊ.zi/", "tip": "'코지'가 아니라 이중모음 '코우'. z는 성대를 울리는 소리로 '코우-지'"},
-    {"word": "relaxed", "ipa": "/rɪˈlækst/", "tip": "-xed는 '-ㅋㅅ트'가 한 번에 붙는 소리. '릴렉스드'가 아니라 '릴랙스트'"}
+    {
+      "word": "cafe",
+      "ipa": "/kæˈfeɪ/",
+      "tip": "강세는 뒤 음절 '페이'. '카페'처럼 평평하게 읽지 말고 '캐-페이'로 끝을 올려서"
+    },
+    {
+      "word": "Americano",
+      "ipa": "/əˌmer.ɪˈkɑː.noʊ/",
+      "tip": "강세는 '카'에. '아메리카노'를 똑같은 박자로 읽지 말고 '어메리카-노우'처럼 카를 길고 세게"
+    },
+    {
+      "word": "barista",
+      "ipa": "/bəˈriː.stə/",
+      "tip": "강세는 '리'. 첫 음절은 '버'로 약하게, 마지막 '스타'도 짧게 '버리-스터'"
+    },
+    {
+      "word": "cozy",
+      "ipa": "/ˈkoʊ.zi/",
+      "tip": "'코지'가 아니라 이중모음 '코우'. z는 성대를 울리는 소리로 '코우-지'"
+    },
+    {
+      "word": "relaxed",
+      "ipa": "/rɪˈlækst/",
+      "tip": "-xed는 '-ㅋㅅ트'가 한 번에 붙는 소리. '릴렉스드'가 아니라 '릴랙스트'"
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "like#4",
+      "en": "I'm the kind of person who loves spending quiet weekend afternoons at cafes.",
+      "ko": "저는 카페에서 조용한 주말 오후를 보내는 걸 좋아하는 사람이에요.",
+      "q": "cafe-describe"
+    },
+    {
+      "pid": "place#2",
+      "en": "It's only a five-minute walk from my house.",
+      "ko": "저희 집에서 걸어서 5분밖에 안 걸려요.",
+      "q": "cafe-describe"
+    },
+    {
+      "pid": "describe#1",
+      "en": "When you walk in, the first thing you notice is the smell of the coffee beans they roast themselves.",
+      "ko": "안에 들어가면 가장 먼저 느껴지는 건 직접 볶은 원두 향이에요.",
+      "q": "cafe-describe"
+    },
+    {
+      "pid": "people#1",
+      "en": "Sometimes I go to cafes alone because I need some time just for myself.",
+      "ko": "가끔은 저만의 시간이 필요해서 혼자 카페에 가요.",
+      "q": "cafe-routine"
+    },
+    {
+      "pid": "routine#3",
+      "en": "First, I order an iced Americano. Then, I sit by the window and read a book.",
+      "ko": "먼저 아이스 아메리카노를 주문해요. 그다음 창가에 앉아서 책을 읽어요.",
+      "q": "cafe-routine"
+    },
+    {
+      "pid": "reason#0",
+      "en": "I like going to cafes on weekends because I really need some quiet time after a busy week.",
+      "ko": "바쁜 한 주를 보내고 나면 조용한 시간이 꼭 필요해서 주말에 카페 가는 걸 좋아해요.",
+      "q": "cafe-routine"
+    },
+    {
+      "pid": "memory#0",
+      "en": "I remember one time when it suddenly started snowing while Minji and I were celebrating at a cafe.",
+      "ko": "Minji랑 카페에서 축하하고 있는데 갑자기 눈이 펑펑 내리기 시작했던 때가 기억나요.",
+      "q": "cafe-experience"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to go to cafes to study for exams, but now I go there to relax.",
+      "ko": "예전에는 시험공부를 하러 카페에 갔는데, 지금은 쉬러 가요.",
+      "q": "cafe-compare"
+    }
   ]
 }

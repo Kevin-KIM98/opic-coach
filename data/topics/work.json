@@ -13,21 +13,95 @@
     "비교 질문은 '입사 1년 차: 긴장, 실수 걱정, 야근 / 지금: 익숙, 프로젝트 주도' 또는 '사무실: 회의·동료 / 금요일 재택: 조용, 출퇴근 없음' 중 하나를 골라 장단점과 내 선호로 끝내세요."
   ],
   "expressions": [
-    {"en": "Sure, I'd love to talk about my job.", "ko": "네, 제 일에 대해 기꺼이 얘기할게요.", "level": "IM", "note": "주제 시작 문장"},
-    {"en": "I work at an IT company in Seoul.", "ko": "저는 서울에 있는 IT 회사에서 일해요.", "level": "IM", "note": "work at + 회사 / work for + 회사 둘 다 가능"},
-    {"en": "I'm on the marketing team.", "ko": "저는 마케팅팀이에요.", "level": "IM", "note": "be on the ~ team: ~팀 소속이다"},
-    {"en": "I've been working there for about four years.", "ko": "거기서 4년 정도 일하고 있어요.", "level": "IM", "note": "현재완료 진행: 과거부터 지금까지 계속"},
-    {"en": "Our office is on the ninth floor.", "ko": "저희 사무실은 9층에 있어요.", "level": "IM", "note": "on the + 서수 + floor"},
-    {"en": "My desk is right by the window.", "ko": "제 자리는 바로 창가예요.", "level": "IM"},
-    {"en": "I usually have a lot of meetings.", "ko": "저는 보통 회의가 많아요.", "level": "IM", "note": "have a meeting: 회의하다"},
-    {"en": "I have lunch with my coworkers near the office.", "ko": "회사 근처에서 동료들과 점심을 먹어요.", "level": "IM", "note": "coworker = colleague: 동료"},
-    {"en": "I'm in charge of planning SNS marketing campaigns.", "ko": "저는 SNS 마케팅 캠페인 기획을 맡고 있어요.", "level": "IH", "note": "be in charge of + 명사/-ing: ~을 담당하다"},
-    {"en": "My team leader is strict about deadlines, but she's really supportive.", "ko": "팀장님은 마감에는 엄격하지만 정말 많이 도와주세요.", "level": "IH", "note": "strict about: ~에 엄격한 / supportive: 힘이 되어 주는"},
-    {"en": "We were running out of time, so we had to stay late.", "ko": "시간이 얼마 없어서 늦게까지 남아야 했어요.", "level": "IH", "note": "run out of time: 시간이 다 떨어지다 (경험 질문)"},
-    {"en": "When I first started, I was nervous about making mistakes.", "ko": "처음 입사했을 때는 실수할까 봐 긴장했어요.", "level": "IH", "note": "be nervous about + -ing (비교 질문의 '그때' 문장)"},
-    {"en": "Working from home saves me a lot of time.", "ko": "재택근무를 하면 시간이 많이 절약돼요.", "level": "IH", "note": "save + 사람 + 시간: ~의 시간을 아껴 주다"},
-    {"en": "It was one of the most stressful weeks of my life, but it was totally worth it.", "ko": "제 인생에서 가장 스트레스 받은 한 주였지만, 완전히 그럴 만한 가치가 있었어요.", "level": "AL", "note": "one of the most + 형용사 + 복수명사 / worth it"},
-    {"en": "So yeah, that's pretty much what my work life looks like.", "ko": "그래서 네, 제 회사 생활은 대충 이런 모습이에요.", "level": "AL", "note": "마무리 문장: what ~ looks like"}
+    {
+      "en": "Sure, I'd love to talk about my job.",
+      "ko": "네, 제 일에 대해 기꺼이 얘기할게요.",
+      "level": "IM",
+      "note": "주제 시작 문장"
+    },
+    {
+      "en": "I work at an IT company in Seoul.",
+      "ko": "저는 서울에 있는 IT 회사에서 일해요.",
+      "level": "IM",
+      "note": "work at + 회사 / work for + 회사 둘 다 가능"
+    },
+    {
+      "en": "I'm on the marketing team.",
+      "ko": "저는 마케팅팀이에요.",
+      "level": "IM",
+      "note": "be on the ~ team: ~팀 소속이다"
+    },
+    {
+      "en": "I've been working there for about four years.",
+      "ko": "거기서 4년 정도 일하고 있어요.",
+      "level": "IM",
+      "note": "현재완료 진행: 과거부터 지금까지 계속"
+    },
+    {
+      "en": "Our office is on the ninth floor.",
+      "ko": "저희 사무실은 9층에 있어요.",
+      "level": "IM",
+      "note": "on the + 서수 + floor"
+    },
+    {
+      "en": "My desk is right by the window.",
+      "ko": "제 자리는 바로 창가예요.",
+      "level": "IM"
+    },
+    {
+      "en": "I usually have a lot of meetings.",
+      "ko": "저는 보통 회의가 많아요.",
+      "level": "IM",
+      "note": "have a meeting: 회의하다"
+    },
+    {
+      "en": "I have lunch with my coworkers near the office.",
+      "ko": "회사 근처에서 동료들과 점심을 먹어요.",
+      "level": "IM",
+      "note": "coworker = colleague: 동료"
+    },
+    {
+      "en": "I'm in charge of planning SNS marketing campaigns.",
+      "ko": "저는 SNS 마케팅 캠페인 기획을 맡고 있어요.",
+      "level": "IH",
+      "note": "be in charge of + 명사/-ing: ~을 담당하다"
+    },
+    {
+      "en": "My team leader is strict about deadlines, but she's really supportive.",
+      "ko": "팀장님은 마감에는 엄격하지만 정말 많이 도와주세요.",
+      "level": "IH",
+      "note": "strict about: ~에 엄격한 / supportive: 힘이 되어 주는"
+    },
+    {
+      "en": "We were running out of time, so we had to stay late.",
+      "ko": "시간이 얼마 없어서 늦게까지 남아야 했어요.",
+      "level": "IH",
+      "note": "run out of time: 시간이 다 떨어지다 (경험 질문)"
+    },
+    {
+      "en": "When I first started, I was nervous about making mistakes.",
+      "ko": "처음 입사했을 때는 실수할까 봐 긴장했어요.",
+      "level": "IH",
+      "note": "be nervous about + -ing (비교 질문의 '그때' 문장)"
+    },
+    {
+      "en": "Working from home saves me a lot of time.",
+      "ko": "재택근무를 하면 시간이 많이 절약돼요.",
+      "level": "IH",
+      "note": "save + 사람 + 시간: ~의 시간을 아껴 주다"
+    },
+    {
+      "en": "It was one of the most stressful weeks of my life, but it was totally worth it.",
+      "ko": "제 인생에서 가장 스트레스 받은 한 주였지만, 완전히 그럴 만한 가치가 있었어요.",
+      "level": "AL",
+      "note": "one of the most + 형용사 + 복수명사 / worth it"
+    },
+    {
+      "en": "So yeah, that's pretty much what my work life looks like.",
+      "ko": "그래서 네, 제 회사 생활은 대충 이런 모습이에요.",
+      "level": "AL",
+      "note": "마무리 문장: what ~ looks like"
+    }
   ],
   "questions": [
     {
@@ -96,10 +170,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "company", "ipa": "/ˈkʌm.pə.ni/", "tip": "강세는 첫 음절 '컴'. '컴퍼니'를 같은 박자로 읽지 말고 '컴-퍼니'처럼 뒤를 약하게"},
-    {"word": "meeting", "ipa": "/ˈmiː.t̬ɪŋ/", "tip": "미국식은 t가 부드러운 'ㄹ'처럼 굴러 '미-링'에 가깝게. '미팅'처럼 딱딱하게 끊지 말 것"},
-    {"word": "coworker", "ipa": "/ˈkoʊˌwɝː.kɚ/", "tip": "co는 '코'가 아니라 '코우'. work의 or는 혀를 말아 '워r', '코우워r커r'"},
-    {"word": "deadline", "ipa": "/ˈded.laɪn/", "tip": "강세는 dead. d는 받침처럼 살짝 막고 바로 line으로 '데들라인'"},
-    {"word": "schedule", "ipa": "/ˈskedʒ.uːl/", "tip": "미국식은 '스케줄'이 아니라 '스께쥴'. sk는 된소리처럼, 끝의 l은 혀끝을 윗잇몸에 대고 마무리"}
+    {
+      "word": "company",
+      "ipa": "/ˈkʌm.pə.ni/",
+      "tip": "강세는 첫 음절 '컴'. '컴퍼니'를 같은 박자로 읽지 말고 '컴-퍼니'처럼 뒤를 약하게"
+    },
+    {
+      "word": "meeting",
+      "ipa": "/ˈmiː.t̬ɪŋ/",
+      "tip": "미국식은 t가 부드러운 'ㄹ'처럼 굴러 '미-링'에 가깝게. '미팅'처럼 딱딱하게 끊지 말 것"
+    },
+    {
+      "word": "coworker",
+      "ipa": "/ˈkoʊˌwɝː.kɚ/",
+      "tip": "co는 '코'가 아니라 '코우'. work의 or는 혀를 말아 '워r', '코우워r커r'"
+    },
+    {
+      "word": "deadline",
+      "ipa": "/ˈded.laɪn/",
+      "tip": "강세는 dead. d는 받침처럼 살짝 막고 바로 line으로 '데들라인'"
+    },
+    {
+      "word": "schedule",
+      "ipa": "/ˈskedʒ.uːl/",
+      "tip": "미국식은 '스케줄'이 아니라 '스께쥴'. sk는 된소리처럼, 끝의 l은 혀끝을 윗잇몸에 대고 마무리"
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "place#4",
+      "en": "It's located near Seongsu-dong, so it's easy to get to.",
+      "ko": "성수동 근처에 있어서 가기 편해요.",
+      "q": "work-describe"
+    },
+    {
+      "pid": "describe#0",
+      "en": "It's a bright and lively place with big windows and a great view of the city.",
+      "ko": "큰 창문이 있고 도시 전망이 멋진, 밝고 활기찬 곳이에요.",
+      "q": "work-describe"
+    },
+    {
+      "pid": "people#2",
+      "en": "My coworker Minji and I have a lot in common.",
+      "ko": "제 동료 Minji와 저는 공통점이 많아요.",
+      "q": "work-describe"
+    },
+    {
+      "pid": "routine#3",
+      "en": "First, I grab an iced Americano from the lounge. Then, I check my emails and messages.",
+      "ko": "먼저 휴게실에서 아이스 아메리카노를 하나 챙겨요. 그다음 이메일과 메시지를 확인해요.",
+      "q": "work-routine"
+    },
+    {
+      "pid": "problem#0",
+      "en": "Something unexpected happened when we were getting ready to launch a new app.",
+      "ko": "새 앱 출시를 준비하고 있을 때 예상치 못한 일이 생겼어요.",
+      "q": "work-experience"
+    },
+    {
+      "pid": "memory#5",
+      "en": "I'll never forget that project because Minji and I stayed at the office until midnight two nights in a row.",
+      "ko": "Minji와 이틀 연속 자정까지 사무실에 남아 있었기 때문에 그 프로젝트는 절대 잊지 못할 거예요.",
+      "q": "work-experience"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to double-check every email three times, but now I feel much more confident.",
+      "ko": "예전에는 이메일마다 세 번씩 확인했는데, 지금은 훨씬 자신감이 생겼어요.",
+      "q": "work-compare"
+    },
+    {
+      "pid": "opinion#5",
+      "en": "All things considered, I think four days at the office and one day at home is the perfect balance.",
+      "ko": "여러 가지를 고려해 보면, 사무실 4일에 재택 1일이 가장 완벽한 균형인 것 같아요.",
+      "q": "work-compare"
+    }
   ]
 }

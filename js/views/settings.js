@@ -6,7 +6,6 @@ import { header, promptInstall } from '../app.js';
 import { CONFIG, githubUrl, isEditor, setEditor, contentBranch } from '../config.js';
 
 export async function render(root) {
-  const plans = await data.plans();
   const s = store.settings;
   const voices = englishVoices();
   const draw = () => {
@@ -19,14 +18,6 @@ export async function render(root) {
           <div class="xs muted">IM3 = 일관된 문장 + 연결어 + 과거시제 · IH = 디테일·비교 · AL = 풍부한 어휘와 긴 발화</div></div>
         <div class="field"><label>시험일</label><input type="date" id="exam" value="${s.examDate || ''}"><div class="xs muted" id="examhint">${examHint(s)}</div></div>
         <div class="xs muted">비워 두면 홈에서 <b>가장 빠른 응시 가능일</b>(일요일·공휴일 제외)로 D-day를 셉니다. 등록한 시험일이 지나도 자동으로 다음 날짜로 넘어갑니다.</div>
-      </div>
-
-      <div class="section-title">학습 과정</div>
-      <div class="card stack">
-        <div class="seg" id="plan">${raw(plans.plans.map(p => `<button data-v="${p.id}" class="${s.plan === p.id ? 'active' : ''}">${p.title.replace(' 과정', '')}</button>`).join(''))}</div>
-        <div class="xs ink2" id="plandesc">${plans.plans.find(p => p.id === s.plan)?.desc || ''}</div>
-        <div class="field"><label>과정 시작일</label><input type="date" id="planStart" value="${s.planStart || todayKey()}"><div class="xs muted">시험일을 입력하면 남은 기간에 맞는 과정을 추천합니다.</div></div>
-        <button class="btn sm" id="autoPlan">시험일에 맞춰 자동 설정</button>
       </div>
 
       <div class="section-title">음성</div>
@@ -60,19 +51,6 @@ export async function render(root) {
     root.querySelector('#name').addEventListener('change', e => store.setSetting('name', e.target.value.trim()));
     root.querySelectorAll('#target button').forEach(b => b.addEventListener('click', () => { store.setSetting('target', b.dataset.v); draw(); }));
     root.querySelector('#exam').addEventListener('change', e => { store.setSetting('examDate', e.target.value); root.querySelector('#examhint').textContent = examHint(store.settings); });
-    root.querySelectorAll('#plan button').forEach(b => b.addEventListener('click', () => { store.setSetting('plan', b.dataset.v); draw(); }));
-    root.querySelector('#planStart').addEventListener('change', e => store.setSetting('planStart', e.target.value));
-    root.querySelector('#autoPlan').addEventListener('click', () => {
-      const ex = store.settings.examDate; if (!ex) return toast('먼저 시험일을 입력하세요');
-      const left = daysBetween(todayKey(), ex);
-      const plan = left <= 35 ? '4w' : left <= 63 ? '8w' : '12w';
-      const weeks = { '4w': 28, '8w': 56, '12w': 84 }[plan];
-      const start = new Date(); const startKey = todayKey(start);
-      // 시험 직전에 과정이 끝나도록 시작일 조정 (오늘 이전이면 오늘)
-      const idealStart = new Date(ex); idealStart.setDate(idealStart.getDate() - weeks);
-      store.setSetting('plan', plan); store.setSetting('planStart', idealStart > start ? todayKey(idealStart) : startKey);
-      toast(`${plan === '4w' ? '4주' : plan === '8w' ? '8주' : '12주'} 과정으로 설정했어요 (D-${left})`); draw();
-    });
     root.querySelector('#voice').addEventListener('change', e => store.setSetting('ttsVoice', e.target.value));
     root.querySelector('#rate').addEventListener('input', e => { store.setSetting('ttsRate', Number(e.target.value)); root.querySelector('#rateval').textContent = e.target.value; });
     root.querySelector('#test').addEventListener('click', () => speak("Hi, I'm your OPIc coach. Let's start the interview now. Tell me a little about yourself."));

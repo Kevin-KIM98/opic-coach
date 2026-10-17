@@ -13,21 +13,92 @@
     "비교 질문은 '대학생 때는 돈이 없어 버스·찜질방 → 지금은 월급으로 KTX·좋은 호텔, 대신 시간이 부족'처럼 과거/현재 시제를 분명히 나눠 말하세요."
   ],
   "expressions": [
-    {"en": "Sure, I'd love to talk about my favorite place in Korea.", "ko": "네, 제가 한국에서 제일 좋아하는 곳에 대해 말해 볼게요.", "level": "IM", "note": "국내 여행 질문의 시작 문장으로 그대로 사용"},
-    {"en": "It takes about two and a half hours by KTX.", "ko": "KTX로 두 시간 반 정도 걸려요.", "level": "IM", "note": "It takes + 시간 + by 교통수단"},
-    {"en": "I usually go there with my friends.", "ko": "저는 보통 친구들이랑 거기에 가요.", "level": "IM"},
-    {"en": "I took a day off on Friday.", "ko": "금요일에 연차를 하루 썼어요.", "level": "IM", "note": "take a day off: 하루 쉬다(연차 쓰다)"},
-    {"en": "We walked along the beach.", "ko": "우리는 해변을 따라 걸었어요.", "level": "IM", "note": "walk along ~ : ~을 따라 걷다"},
-    {"en": "The food was really cheap and delicious.", "ko": "음식이 정말 싸고 맛있었어요.", "level": "IM"},
-    {"en": "I pack light, just a small backpack.", "ko": "저는 짐을 가볍게 싸요, 작은 배낭 하나만요.", "level": "IM", "note": "pack light: 짐을 가볍게 싸다"},
-    {"en": "It was a nice break from work.", "ko": "일에서 벗어난 좋은 휴식이었어요.", "level": "IM", "note": "a break from ~ : ~로부터의 휴식"},
-    {"en": "It's pretty easy to get there from Seoul.", "ko": "서울에서 거기 가는 건 꽤 쉬워요.", "level": "IH"},
-    {"en": "We booked everything on our phones.", "ko": "우리는 모든 걸 휴대폰으로 예약했어요.", "level": "IH"},
-    {"en": "Being near the ocean really helps me relax.", "ko": "바다 근처에 있으면 정말 마음이 편해져요.", "level": "IH", "note": "동명사 주어 Being ~ 으로 문장을 시작하면 IH 느낌"},
-    {"en": "Back in college, I couldn't afford nice hotels.", "ko": "대학 때는 좋은 호텔에 묵을 여유가 없었어요.", "level": "IH", "note": "Back in ~ : 예전 ~ 때는 (비교 질문 필수)"},
-    {"en": "The best part was eating pork soup by the sea.", "ko": "제일 좋았던 건 바닷가에서 돼지국밥을 먹은 거예요.", "level": "IH", "note": "The best part was ~ing"},
-    {"en": "It was one of those trips I'll never forget.", "ko": "절대 잊지 못할 그런 여행 중 하나였어요.", "level": "AL", "note": "one of those + 복수명사 + 관계절"},
-    {"en": "So yeah, that's why I really like traveling in Korea.", "ko": "그래서 제가 국내 여행을 정말 좋아하는 거예요.", "level": "AL", "note": "마무리 문장으로 사용"}
+    {
+      "en": "Sure, I'd love to talk about my favorite place in Korea.",
+      "ko": "네, 제가 한국에서 제일 좋아하는 곳에 대해 말해 볼게요.",
+      "level": "IM",
+      "note": "국내 여행 질문의 시작 문장으로 그대로 사용"
+    },
+    {
+      "en": "It takes about two and a half hours by KTX.",
+      "ko": "KTX로 두 시간 반 정도 걸려요.",
+      "level": "IM",
+      "note": "It takes + 시간 + by 교통수단"
+    },
+    {
+      "en": "I usually go there with my friends.",
+      "ko": "저는 보통 친구들이랑 거기에 가요.",
+      "level": "IM"
+    },
+    {
+      "en": "I took a day off on Friday.",
+      "ko": "금요일에 연차를 하루 썼어요.",
+      "level": "IM",
+      "note": "take a day off: 하루 쉬다(연차 쓰다)"
+    },
+    {
+      "en": "We walked along the beach.",
+      "ko": "우리는 해변을 따라 걸었어요.",
+      "level": "IM",
+      "note": "walk along ~ : ~을 따라 걷다"
+    },
+    {
+      "en": "The food was really cheap and delicious.",
+      "ko": "음식이 정말 싸고 맛있었어요.",
+      "level": "IM"
+    },
+    {
+      "en": "I pack light, just a small backpack.",
+      "ko": "저는 짐을 가볍게 싸요, 작은 배낭 하나만요.",
+      "level": "IM",
+      "note": "pack light: 짐을 가볍게 싸다"
+    },
+    {
+      "en": "It was a nice break from work.",
+      "ko": "일에서 벗어난 좋은 휴식이었어요.",
+      "level": "IM",
+      "note": "a break from ~ : ~로부터의 휴식"
+    },
+    {
+      "en": "It's pretty easy to get there from Seoul.",
+      "ko": "서울에서 거기 가는 건 꽤 쉬워요.",
+      "level": "IH"
+    },
+    {
+      "en": "We booked everything on our phones.",
+      "ko": "우리는 모든 걸 휴대폰으로 예약했어요.",
+      "level": "IH"
+    },
+    {
+      "en": "Being near the ocean really helps me relax.",
+      "ko": "바다 근처에 있으면 정말 마음이 편해져요.",
+      "level": "IH",
+      "note": "동명사 주어 Being ~ 으로 문장을 시작하면 IH 느낌"
+    },
+    {
+      "en": "Back in college, I couldn't afford nice hotels.",
+      "ko": "대학 때는 좋은 호텔에 묵을 여유가 없었어요.",
+      "level": "IH",
+      "note": "Back in ~ : 예전 ~ 때는 (비교 질문 필수)"
+    },
+    {
+      "en": "The best part was eating pork soup by the sea.",
+      "ko": "제일 좋았던 건 바닷가에서 돼지국밥을 먹은 거예요.",
+      "level": "IH",
+      "note": "The best part was ~ing"
+    },
+    {
+      "en": "It was one of those trips I'll never forget.",
+      "ko": "절대 잊지 못할 그런 여행 중 하나였어요.",
+      "level": "AL",
+      "note": "one of those + 복수명사 + 관계절"
+    },
+    {
+      "en": "So yeah, that's why I really like traveling in Korea.",
+      "ko": "그래서 제가 국내 여행을 정말 좋아하는 거예요.",
+      "level": "AL",
+      "note": "마무리 문장으로 사용"
+    }
   ],
   "questions": [
     {
@@ -96,10 +167,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "beach", "ipa": "/biːtʃ/", "tip": "'비-치'처럼 '이' 소리를 길게 늘이세요. 짧게 말하면 전혀 다른 단어로 들릴 수 있어요."},
-    {"word": "island", "ipa": "/ˈaɪlənd/", "tip": "s는 소리 내지 않아요. '아일런드'로 발음하세요."},
-    {"word": "memorable", "ipa": "/ˈmemərəbəl/", "tip": "첫 음절 '메'에 강세. '메머러블'처럼 뒤는 약하게 흘려요."},
-    {"word": "comfortable", "ipa": "/ˈkʌmftərbəl/", "tip": "'컴프터블' 세 음절처럼 말해요. 'com-for-ta-ble'로 또박또박 끊지 마세요."},
-    {"word": "ocean", "ipa": "/ˈoʊʃən/", "tip": "'오-션'. c가 '쉬' 소리가 나요. '오시안'이 아닙니다."}
+    {
+      "word": "beach",
+      "ipa": "/biːtʃ/",
+      "tip": "'비-치'처럼 '이' 소리를 길게 늘이세요. 짧게 말하면 전혀 다른 단어로 들릴 수 있어요."
+    },
+    {
+      "word": "island",
+      "ipa": "/ˈaɪlənd/",
+      "tip": "s는 소리 내지 않아요. '아일런드'로 발음하세요."
+    },
+    {
+      "word": "memorable",
+      "ipa": "/ˈmemərəbəl/",
+      "tip": "첫 음절 '메'에 강세. '메머러블'처럼 뒤는 약하게 흘려요."
+    },
+    {
+      "word": "comfortable",
+      "ipa": "/ˈkʌmftərbəl/",
+      "tip": "'컴프터블' 세 음절처럼 말해요. 'com-for-ta-ble'로 또박또박 끊지 마세요."
+    },
+    {
+      "word": "ocean",
+      "ipa": "/ˈoʊʃən/",
+      "tip": "'오-션'. c가 '쉬' 소리가 나요. '오시안'이 아닙니다."
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "place#3",
+      "en": "My favorite place to visit in Korea is Busan.",
+      "ko": "제가 한국에서 가장 좋아하는 여행지는 부산이에요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "place#4",
+      "en": "It's located about two and a half hours from Seoul by KTX, so it's easy to get to.",
+      "ko": "서울에서 KTX로 두 시간 반 정도 거리에 있어서 가기 쉬워요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "describe#4",
+      "en": "It's famous for its beautiful beaches and dwaeji gukbap, a hot pork soup.",
+      "ko": "아름다운 해변과 뜨끈한 돼지국밥으로 유명해요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "people#0",
+      "en": "I usually travel with a few close friends from college.",
+      "ko": "저는 보통 친한 대학 친구 몇 명과 여행해요.",
+      "q": "travel-domestic-routine"
+    },
+    {
+      "pid": "routine#2",
+      "en": "Before I leave on a trip, I always ask my team leader for a day off.",
+      "ko": "여행을 떠나기 전에 저는 항상 팀장님께 연차를 신청해요.",
+      "q": "travel-domestic-routine"
+    },
+    {
+      "pid": "reason#4",
+      "en": "Whenever I walk along Haeundae Beach, I feel free and relaxed.",
+      "ko": "해운대 해변을 따라 걸을 때마다 자유롭고 편안한 기분이 들어요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "memory#5",
+      "en": "I'll never forget our family trip to Jeju because my dad said he was proud of me.",
+      "ko": "아빠가 제가 자랑스럽다고 말씀해 주셔서 제주 가족 여행을 절대 잊지 못할 거예요.",
+      "q": "travel-domestic-experience"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to take the cheapest night bus, but now I take the KTX and stay in nice hotels.",
+      "ko": "예전에는 가장 싼 심야버스를 탔지만, 지금은 KTX를 타고 좋은 호텔에 묵어요.",
+      "q": "travel-domestic-compare"
+    }
   ]
 }

@@ -120,7 +120,7 @@ async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
   const { page } = await open('http://localhost:8777/index.html#/topic/self-intro?tab=expr');
   await page.click('[data-toggle]');
   await page.waitForTimeout(200);
-  await page.click('#tabs button[data-tab="guide"]');
+  await page.click('#tabs button[data-tab="q"]');
   await page.waitForTimeout(400);
   const n = await page.evaluate(() => window.__spoken.length);
   await page.waitForTimeout(600);
