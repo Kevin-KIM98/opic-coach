@@ -462,5 +462,169 @@
       "ko": "제가 멘토링해 온 주니어 개발자가 어려운 문제를 혼자 해결하는 걸 볼 때마다 정말 뿌듯해요.",
       "q": "self-intro-job"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "self-intro-weekday",
+      "title": "평일 아침 루틴",
+      "parts": [
+        {
+          "pid": "im3-routine#3",
+          "en": "On weekdays, I always get up at six in the morning.",
+          "ko": "평일에는 항상 아침 6시에 일어나요."
+        },
+        {
+          "pid": "routine#0",
+          "en": "I go jogging along the Tancheon trail about three times a week.",
+          "ko": "일주일에 세 번 정도 탄천 산책로를 따라 조깅을 해요."
+        },
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes about 20 minutes to drive to my office.",
+          "ko": "회사까지 차로 20분 정도 걸려요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I start my day with a team meeting at nine.",
+          "ko": "그러고 나서 9시에 팀 회의로 하루를 시작해요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "self-intro-personality",
+      "title": "나의 여가 시간",
+      "parts": [
+        {
+          "pid": "like#0",
+          "en": "I really enjoy reading books in my free time.",
+          "ko": "저는 여가 시간에 책 읽는 것을 정말 좋아해요."
+        },
+        {
+          "pid": "im3-routine#0",
+          "en": "On weekend mornings, I usually go to a quiet cafe near my place.",
+          "ko": "주말 아침에는 보통 집 근처의 조용한 카페에 가요."
+        },
+        {
+          "pid": "reason#2",
+          "en": "It helps me relax after a busy week.",
+          "ko": "바쁜 한 주를 보낸 뒤 긴장을 푸는 데 도움이 돼요."
+        },
+        {
+          "pid": "people#0",
+          "en": "On Friday nights, I usually watch movies with my family at home.",
+          "ko": "금요일 밤에는 보통 집에서 가족과 영화를 봐요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "self-intro-general",
+      "title": "직장과 가족 소개",
+      "parts": [
+        {
+          "pid": "start#1",
+          "en": "I started working as a software developer at an IT company in Bundang about 20 years ago.",
+          "ko": "저는 약 20년 전에 분당의 IT 회사에서 소프트웨어 개발자로 일하기 시작했어요."
+        },
+        {
+          "pid": "im3-describe#2",
+          "en": "I have a son in middle school and a daughter in elementary school.",
+          "ko": "중학생 아들과 초등학생 딸이 있어요."
+        },
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes only 20 minutes to drive from our apartment to my office.",
+          "ko": "우리 아파트에서 회사까지 차로 20분밖에 안 걸려요."
+        },
+        {
+          "pid": "like#3",
+          "en": "Our family movie night on Fridays is a big part of my life.",
+          "ko": "금요일마다 하는 가족 영화의 밤은 제 삶에서 큰 부분을 차지해요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "self-intro-job",
+      "title": "팀장으로서의 하루",
+      "parts": [
+        {
+          "pid": "start#3",
+          "en": "At first, I just wrote code all day, but now I lead a development team of ten people.",
+          "ko": "처음에는 하루 종일 코드만 짰지만, 지금은 10명으로 된 개발팀을 이끌고 있어요."
+        },
+        {
+          "pid": "im3-routine#3",
+          "en": "I always start my day with a short team meeting at nine.",
+          "ko": "저는 항상 9시에 짧은 팀 회의로 하루를 시작해요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I spend most of the day reviewing code and helping my team members.",
+          "ko": "그러고 나서 하루 대부분을 코드 리뷰와 팀원들을 돕는 데 써요."
+        },
+        {
+          "pid": "people#0",
+          "en": "I usually have lunch with my coworker Minho.",
+          "ko": "점심은 보통 동료 민호와 함께 먹어요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "self-intro-job",
+      "title": "개발자 20년의 보람",
+      "parts": [
+        {
+          "pid": "start#0",
+          "en": "I first got into programming when I was an electronic engineering student in college.",
+          "ko": "저는 대학에서 전자공학을 전공하던 학생 시절에 처음 프로그래밍에 빠졌어요."
+        },
+        {
+          "pid": "start#5",
+          "en": "Ever since then, I've been working at the same IT company in Bundang, which is pretty rare in this industry.",
+          "ko": "그때부터 쭉 분당의 같은 IT 회사에서 일하고 있는데, 이 업계에서는 꽤 드문 일이에요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's pretty busy because I have back-to-back meetings and code reviews, but I honestly enjoy it.",
+          "ko": "회의와 코드 리뷰가 줄줄이 이어져서 꽤 바쁘지만, 솔직히 즐기고 있어요."
+        },
+        {
+          "pid": "like#4",
+          "en": "I'm the kind of person who loves helping people grow, so mentoring our new developers is the best part of my job.",
+          "ko": "저는 사람들이 성장하도록 돕는 걸 좋아하는 사람이라서, 신입 개발자들을 멘토링하는 게 제 일에서 가장 좋은 부분이에요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "self-intro-personality",
+      "title": "차분한 성격과 해소법",
+      "parts": [
+        {
+          "pid": "im3-routine#3",
+          "en": "I always try to stay calm and listen first, even when something goes wrong at work.",
+          "ko": "저는 회사에서 일이 잘못될 때에도 항상 침착하게 먼저 들으려고 해요."
+        },
+        {
+          "pid": "im3-describe#6",
+          "en": "But I get stressed like anybody else when a big deadline is coming.",
+          "ko": "하지만 큰 마감이 다가오면 저도 다른 사람들처럼 스트레스를 받아요."
+        },
+        {
+          "pid": "reason#5",
+          "en": "Honestly, there's nothing better than a 30-minute run along the Tancheon trail early in the morning to clear my head.",
+          "ko": "솔직히 머리를 맑게 하는 데는 이른 아침 탄천 산책로를 30분 달리는 것만 한 게 없어요."
+        },
+        {
+          "pid": "reason#4",
+          "en": "Whenever I sit down with my family for our Friday movie night, I feel completely relaxed and recharged.",
+          "ko": "금요일 영화의 밤에 가족과 함께 앉아 있을 때면 완전히 편안해지고 재충전되는 느낌이에요."
+        }
+      ]
+    }
   ]
 }

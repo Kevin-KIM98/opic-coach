@@ -81,7 +81,7 @@ function comboSection(topic, patterns, level, qById) {
       const text = c.parts.map(p => p.en).join(' ');
       return `<div class="combo">
         <div class="row between"><div class="h3">${c.title}</div><button class="play" data-say="${encodeURIComponent(text)}" aria-label="조합 듣기">▶</button></div>
-        <div class="combo-chain mt8">${c.parts.map((p, k) => `${k ? '<span class="plus">+</span>' : ''}<span class="link ${frames[p.pid]?.set || ''}" title="${setName[frames[p.pid]?.set] || ''}">${(frames[p.pid]?.pattern || '').replace(/_{2,}/g, '…')}</span>`).join('')}</div>
+        <div class="combo-chain mt8">${c.parts.map((p, k) => `${k ? '<span class="plus">+</span>' : ''}<span class="link ${frames[p.pid]?.set || ''}" title="${setName[frames[p.pid]?.set] || ''}">${(frames[p.pid]?.pattern || '').replace(/_{2,}\.?/g, '…')}</span>`).join('')}</div>
         <div class="combo-body mt12">${c.parts.map(p => `<div class="combo-line"><div class="en">${p.en}</div><div class="ko">${p.ko}</div></div>`).join('')}</div>
         ${q ? `<a class="note mt8" href="#/practice/${topic.id}/${q.id}?level=${c.level}">💬 ${TYPE_LABEL[q.type] || q.type} ${c.level} 답안으로 ›</a>` : ''}
       </div>`;
@@ -124,7 +124,7 @@ function renderTopicPatterns(body, topic, patterns, onChange, mode = '', level =
       }).join(''))}</div>
       ${cards.length ? '' : raw('<div class="empty">이 주제에는 아직 패턴이 없어요.</div>')}
       ${raw(comboSection(topic, patterns, leveled ? level : null, qById))}
-      <a class="btn ghost block mt12" href="#/drill?tab=patterns">🧩 만능 패턴 72문장 전체 보기</a>`;
+      <a class="btn ghost block mt12" href="#/drill?tab=patterns">🧩 만능 패턴 전체 보기 (72 · IM3 25)</a>`;
     bindPlay(body);
     const player = createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]'));
     handle.stop = () => player.stop(); handle.destroy = () => player.destroy();

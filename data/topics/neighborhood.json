@@ -451,5 +451,169 @@
       "ko": "모든 걸 고려하면 여기 사는 게 더 낫다고 생각하지만, 가끔은 옛 동네의 따뜻한 느낌이 그리워요.",
       "q": "neighborhood-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "neighborhood-describe",
+      "title": "조용한 분당 동네",
+      "parts": [
+        {
+          "pid": "describe#0",
+          "en": "It's a quiet residential place with a lot of apartment buildings and trees.",
+          "ko": "아파트 단지와 나무가 많은 조용한 주거 지역이에요."
+        },
+        {
+          "pid": "im3-describe#1",
+          "en": "There's a subway station on the Bundang Line near my place.",
+          "ko": "집 근처에 분당선 지하철역이 있어요."
+        },
+        {
+          "pid": "place#2",
+          "en": "It's only a 10-minute walk from my house.",
+          "ko": "우리 집에서 걸어서 10분밖에 안 걸려요."
+        },
+        {
+          "pid": "im3-routine#1",
+          "en": "I often take walks along the Tancheon trail and in Central Park.",
+          "ko": "저는 탄천 산책로와 중앙공원을 자주 산책해요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "neighborhood-routine",
+      "title": "토요일 카페와 공원",
+      "parts": [
+        {
+          "pid": "im3-routine#0",
+          "en": "On Saturday mornings, I usually go to a small cafe near my apartment to read a book.",
+          "ko": "토요일 아침에는 보통 책을 읽으러 아파트 근처 작은 카페에 가요."
+        },
+        {
+          "pid": "reason#2",
+          "en": "It helps me relax after a busy week.",
+          "ko": "바쁜 한 주를 보낸 뒤 긴장을 푸는 데 도움이 돼요."
+        },
+        {
+          "pid": "people#0",
+          "en": "In the afternoon, I usually take a walk in Central Park with my family.",
+          "ko": "오후에는 보통 가족과 함께 중앙공원을 산책해요."
+        },
+        {
+          "pid": "im3-routine#2",
+          "en": "I sometimes ride bikes along the Tancheon trail with my kids.",
+          "ko": "가끔은 아이들과 함께 탄천 산책로를 따라 자전거를 타요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "neighborhood-experience",
+      "title": "탄천길이 달라진 일",
+      "parts": [
+        {
+          "pid": "im3-past#5",
+          "en": "When we first moved here, I didn't go to the Tancheon trail much because it was old and dark.",
+          "ko": "처음 이사 왔을 때는 탄천 산책로가 낡고 어두워서 잘 가지 않았어요."
+        },
+        {
+          "pid": "start#2",
+          "en": "It all started when the city renovated the whole trail about four years ago.",
+          "ko": "모든 건 약 4년 전에 시에서 산책로 전체를 새로 단장하면서 시작됐어요."
+        },
+        {
+          "pid": "change#1",
+          "en": "Compared to before, the trail is much brighter and safer now.",
+          "ko": "예전에 비하면 지금 산책로는 훨씬 밝고 안전해요."
+        },
+        {
+          "pid": "start#3",
+          "en": "At first, I rarely went there, but now I jog there three times a week.",
+          "ko": "처음에는 거의 가지 않았지만, 지금은 일주일에 세 번 그곳에서 조깅해요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "neighborhood-compare",
+      "title": "대전 옛 동네와 비교",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "As a kid in Daejeon, I went to the traditional market with my mom every weekend.",
+          "ko": "대전에 살던 어린 시절에는 주말마다 엄마와 함께 전통시장에 갔어요."
+        },
+        {
+          "pid": "memory#2",
+          "en": "The most memorable thing was that everyone in the neighborhood knew each other.",
+          "ko": "가장 기억에 남는 건 동네 사람들이 모두 서로 알고 지냈다는 거예요."
+        },
+        {
+          "pid": "change#3",
+          "en": "The biggest difference is that everything is within walking distance here in Bundang.",
+          "ko": "가장 큰 차이는 이곳 분당에서는 모든 게 걸어갈 수 있는 거리에 있다는 거예요."
+        },
+        {
+          "pid": "opinion#3",
+          "en": "On the other hand, people here are busier, so I don't really know my neighbors well.",
+          "ko": "반면에 이곳 사람들은 더 바빠서 이웃들을 잘 알지 못해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "neighborhood-routine",
+      "title": "나만의 토요일 아침",
+      "parts": [
+        {
+          "pid": "like#5",
+          "en": "When it comes to weekends, I'm a huge fan of slowing down and staying in my own neighborhood.",
+          "ko": "주말에 관해서라면, 저는 속도를 늦추고 우리 동네에 머무르는 걸 정말 좋아해요."
+        },
+        {
+          "pid": "im3-routine#3",
+          "en": "On Saturday mornings, I always walk to a little cafe around the corner and read a book for an hour or so over an Americano.",
+          "ko": "토요일 아침에는 항상 길모퉁이의 작은 카페로 걸어가서 아메리카노를 마시며 한 시간쯤 책을 읽어요."
+        },
+        {
+          "pid": "reason#4",
+          "en": "Whenever I sit there with my book, I feel totally relaxed, because it's the only time all week that nobody needs anything from me.",
+          "ko": "책을 들고 거기 앉아 있을 때면 완전히 편안해져요, 일주일 중 아무도 저에게 뭔가를 요구하지 않는 유일한 시간이거든요."
+        },
+        {
+          "pid": "people#5",
+          "en": "Spending time with my family at Central Park in the afternoon helps me forget about all the stress from work.",
+          "ko": "오후에 중앙공원에서 가족과 시간을 보내면 회사 스트레스를 모두 잊는 데 도움이 돼요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "neighborhood-experience",
+      "title": "산책로 리모델링 이후",
+      "parts": [
+        {
+          "pid": "im3-past#4",
+          "en": "When we first moved here, I was a little disappointed because the Tancheon trail behind our apartment was cracked, bumpy, and dark.",
+          "ko": "처음 이사 왔을 때는 아파트 뒤 탄천 산책로가 갈라지고 울퉁불퉁하고 어두워서 조금 실망했어요."
+        },
+        {
+          "pid": "change#4",
+          "en": "The trail has changed a lot over the years, especially since the city renovated it about four years ago.",
+          "ko": "산책로는 몇 년 사이에 많이 바뀌었는데, 특히 약 4년 전 시에서 새로 단장한 이후로 그래요."
+        },
+        {
+          "pid": "memory#4",
+          "en": "It turned out to be worth it, even though the construction noise drove us a little crazy for a few months.",
+          "ko": "몇 달 동안 공사 소음 때문에 좀 괴로웠지만, 결과적으로 그만한 가치가 있었어요."
+        },
+        {
+          "pid": "start#5",
+          "en": "Ever since then, I've been jogging there three mornings a week, which has made me much healthier.",
+          "ko": "그 이후로 일주일에 세 번 아침마다 그곳에서 조깅하고 있는데, 덕분에 훨씬 건강해졌어요."
+        }
+      ]
+    }
   ]
 }

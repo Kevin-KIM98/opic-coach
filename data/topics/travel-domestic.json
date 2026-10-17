@@ -481,5 +481,169 @@
       "ko": "가장 큰 차이는 이제 즉흥적으로 떠날 수 없다는 거예요.",
       "q": "travel-domestic-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "travel-domestic-describe",
+      "title": "강릉 바다 여행지 소개",
+      "parts": [
+        {
+          "pid": "im3-routine#0",
+          "en": "I usually go to Gangneung with my family.",
+          "ko": "저는 보통 가족과 강릉에 가요."
+        },
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes about two and a half hours to get there by car.",
+          "ko": "차로 가면 두 시간 반쯤 걸려요."
+        },
+        {
+          "pid": "describe#0",
+          "en": "It's a beautiful place with great coffee and an amazing ocean view.",
+          "ko": "맛있는 커피와 멋진 바다 전망이 있는 아름다운 곳이에요."
+        },
+        {
+          "pid": "reason#2",
+          "en": "It helps me take a break from my busy job.",
+          "ko": "바쁜 회사 일에서 벗어나 쉬는 데 도움이 돼요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "travel-domestic-experience",
+      "title": "제주 일출 여행 경험",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "About three years ago, I went to Jeju Island with my family.",
+          "ko": "3년 전쯤 가족과 제주도에 갔어요."
+        },
+        {
+          "pid": "memory#0",
+          "en": "I remember one time when we woke up at five to see the sunrise at Seongsan Ilchulbong.",
+          "ko": "성산일출봉에서 해돋이를 보려고 새벽 다섯 시에 일어났던 때가 기억나요."
+        },
+        {
+          "pid": "im3-past#1",
+          "en": "It was dark and windy on the way up.",
+          "ko": "올라가는 길은 어둡고 바람이 많이 불었어요."
+        },
+        {
+          "pid": "memory#1",
+          "en": "It was such a happy moment when I saw my kids smiling at the sunrise.",
+          "ko": "아이들이 해돋이를 보며 웃는 모습을 봤을 때 정말 행복한 순간이었어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "travel-domestic-routine",
+      "title": "가족 여행 준비 루틴",
+      "parts": [
+        {
+          "pid": "people#0",
+          "en": "I usually plan our trips with my family about a month before.",
+          "ko": "저는 보통 한 달쯤 전에 가족과 함께 여행 계획을 세워요."
+        },
+        {
+          "pid": "im3-routine#3",
+          "en": "I always check the weather forecast because rain can ruin a beach trip.",
+          "ko": "비가 오면 바다 여행을 망칠 수 있어서 항상 일기예보를 확인해요."
+        },
+        {
+          "pid": "start#3",
+          "en": "At first, I packed my kids' bags for them, but now I let them pack their own bags.",
+          "ko": "처음에는 제가 아이들 가방을 싸 줬지만, 지금은 아이들이 직접 싸게 해요."
+        },
+        {
+          "pid": "routine#2",
+          "en": "Before I hit the road, I always double-check their bags.",
+          "ko": "출발하기 전에는 항상 아이들 가방을 한 번 더 확인해요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "travel-domestic-compare",
+      "title": "대학 때와 지금 여행 비교",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "When I was in college, I went to Busan by night bus with my friends.",
+          "ko": "대학생 때는 친구들과 야간 버스를 타고 부산에 갔어요."
+        },
+        {
+          "pid": "change#0",
+          "en": "I used to take a night bus with my friends, but now I drive my family in our car.",
+          "ko": "예전에는 친구들과 야간 버스를 탔지만, 지금은 가족을 차에 태우고 직접 운전해요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's more comfortable, but it's a lot more work.",
+          "ko": "더 편하긴 하지만 손이 훨씬 많이 가요."
+        },
+        {
+          "pid": "change#3",
+          "en": "The biggest difference is that I need to plan everything around my kids these days.",
+          "ko": "가장 큰 차이는 요즘은 모든 걸 아이들에게 맞춰 계획해야 한다는 거예요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "travel-domestic-describe",
+      "title": "안목 커피거리의 여유",
+      "parts": [
+        {
+          "pid": "im3-routine#5",
+          "en": "On every trip, I visit Anmok coffee street, which is famous for its seaside cafes.",
+          "ko": "여행 갈 때마다 바닷가 카페로 유명한 안목 커피거리에 들러요."
+        },
+        {
+          "pid": "place#5",
+          "en": "What I like most about the place is that I can sit by the window and watch the waves for as long as I want.",
+          "ko": "그곳에서 제일 좋은 점은 창가에 앉아 원하는 만큼 파도를 바라볼 수 있다는 거예요."
+        },
+        {
+          "pid": "describe#5",
+          "en": "It has a peaceful atmosphere that makes me feel completely relaxed, even after a stressful week full of meetings.",
+          "ko": "회의로 가득한 스트레스 많은 한 주를 보낸 뒤에도 완전히 편안해지게 해 주는 평화로운 분위기가 있어요."
+        },
+        {
+          "pid": "reason#5",
+          "en": "Honestly, there's nothing better than a cup of coffee with an ocean view after a long drive from Bundang.",
+          "ko": "솔직히 분당에서 오래 운전해 온 뒤 바다를 보며 마시는 커피 한 잔보다 좋은 건 없어요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "travel-domestic-experience",
+      "title": "잊지 못할 제주 일출",
+      "parts": [
+        {
+          "pid": "im3-past#2",
+          "en": "On the last morning, I had to drag everyone out of bed at five to see the sunrise from Seongsan Ilchulbong.",
+          "ko": "마지막 날 아침, 성산일출봉에서 해돋이를 보려고 새벽 다섯 시에 가족을 모두 깨워 끌고 나가야 했어요."
+        },
+        {
+          "pid": "im3-past#1",
+          "en": "It was dark and windy, and my daughter kept saying her legs hurt.",
+          "ko": "어둡고 바람이 불었고, 딸은 다리가 아프다고 계속 말했어요."
+        },
+        {
+          "pid": "memory#3",
+          "en": "To my surprise, both kids went completely quiet when the sun came up over the ocean and the whole sky turned orange.",
+          "ko": "놀랍게도 바다 위로 해가 떠오르고 하늘 전체가 주황빛으로 물들자 두 아이 모두 완전히 조용해졌어요."
+        },
+        {
+          "pid": "memory#5",
+          "en": "I'll never forget that trip because it was such a simple moment, but we all shared it together as a family.",
+          "ko": "정말 단순한 순간이었지만 온 가족이 함께 나눴기 때문에 그 여행은 절대 잊지 못할 거예요."
+        }
+      ]
+    }
   ]
 }

@@ -40,8 +40,8 @@ async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
     out.forEach((c, i) => { c.no = i + 1; });
     return out;
   };
-  // group: 그룹 id · 'all:<세트>' (세트 전체 순서대로) · 예전 'all' (첫 세트 전체)
-  const allKey = groupId === 'all' ? `all:${sets[0].id}` : groupId;
+  // group: 그룹 id · 'all:<세트>' (세트 전체 순서대로) · 예전 'all' (만능패턴 72 전체)
+  const allKey = groupId === 'all' ? `all:${(sets.find(st => st.id === 'kang') || sets[0]).id}` : groupId;
   const setOfAll = allKey?.startsWith('all:') ? sets.find(st => `all:${st.id}` === allKey) : null;
   const group = setOfAll ? { id: allKey, title: `${setOfAll.title} · 전체`, desc: '처음부터 끝까지 순서대로', set: setOfAll }
     : (() => { const g = p.groups.find(x => x.id === groupId); return g ? { ...g, set: sets.find(st => st.id === (g.set || 'kang')) } : null; })();

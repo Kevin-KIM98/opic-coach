@@ -456,5 +456,169 @@
       "ko": "예전에 비하면 지금은 음악 듣기가 훨씬 편하지만, 새 앨범 포장을 뜯던 설렘이 좀 그리워요.",
       "q": "music-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "music-routine",
+      "title": "출퇴근길 음악 루틴",
+      "parts": [
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes about 20 minutes to drive to my office in Pangyo.",
+          "ko": "판교에 있는 회사까지 차로 20분 정도 걸려요."
+        },
+        {
+          "pid": "im3-routine#3",
+          "en": "I always connect my phone to the car with Bluetooth.",
+          "ko": "저는 항상 휴대폰을 블루투스로 차에 연결해요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I play my 90s playlist on a streaming app.",
+          "ko": "그다음에 스트리밍 앱에서 90년대 플레이리스트를 틀어요."
+        },
+        {
+          "pid": "reason#2",
+          "en": "It helps me relax before a busy day.",
+          "ko": "바쁜 하루를 시작하기 전에 마음을 편하게 해 줘요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "music-describe",
+      "title": "좋아하는 가수 신승훈",
+      "parts": [
+        {
+          "pid": "like#1",
+          "en": "One of my favorite things to do is listening to ballads from the 90s.",
+          "ko": "제가 가장 좋아하는 일 중 하나는 90년대 발라드를 듣는 거예요."
+        },
+        {
+          "pid": "start#0",
+          "en": "I first got into Shin Seung-hun's music when I was in high school.",
+          "ko": "고등학생 때 처음 신승훈의 음악에 빠졌어요."
+        },
+        {
+          "pid": "im3-routine#1",
+          "en": "I often sing his songs in the car on my way to work.",
+          "ko": "출근길 차 안에서 그의 노래를 자주 따라 불러요."
+        },
+        {
+          "pid": "im3-describe#6",
+          "en": "I get a warm feeling whenever I hear his soft voice.",
+          "ko": "그의 부드러운 목소리를 들을 때마다 마음이 따뜻해져요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "music-experience",
+      "title": "연말 콘서트 경험",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "Last December, I went to Shin Seung-hun's year-end concert in Seoul with my family.",
+          "ko": "작년 12월에 가족과 서울에서 열린 신승훈 연말 콘서트에 갔어요."
+        },
+        {
+          "pid": "im3-past#1",
+          "en": "It was my first concert in more than ten years.",
+          "ko": "10년도 넘어서 처음 가 본 콘서트였어요."
+        },
+        {
+          "pid": "memory#3",
+          "en": "To my surprise, my son and daughter sang along to his old hits.",
+          "ko": "놀랍게도 아들과 딸이 그의 옛 히트곡을 따라 불렀어요."
+        },
+        {
+          "pid": "memory#4",
+          "en": "It turned out to be the best birthday present I have ever gotten.",
+          "ko": "알고 보니 지금까지 받은 생일 선물 중 최고였어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "music-compare",
+      "title": "음악 듣는 방식 변화",
+      "parts": [
+        {
+          "pid": "change#0",
+          "en": "I used to buy cassette tapes, but now I just use a streaming app on my phone.",
+          "ko": "예전에는 카세트테이프를 샀지만, 지금은 휴대폰 스트리밍 앱만 써요."
+        },
+        {
+          "pid": "change#3",
+          "en": "The biggest difference is that people find new music in different ways.",
+          "ko": "가장 큰 차이는 사람들이 새 음악을 찾는 방식이 달라졌다는 거예요."
+        },
+        {
+          "pid": "change#2",
+          "en": "These days, people tend to find new songs through short videos on social media.",
+          "ko": "요즘 사람들은 SNS의 짧은 영상으로 새 노래를 찾는 편이에요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's much more convenient now, but I kind of miss waiting for a new album.",
+          "ko": "지금이 훨씬 편하긴 하지만, 새 앨범을 기다리던 때가 조금 그리워요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "music-routine",
+      "title": "운전길 나만의 콘서트",
+      "parts": [
+        {
+          "pid": "routine#5",
+          "en": "It has become part of my daily routine to connect my phone to the car's Bluetooth the second I start the engine.",
+          "ko": "시동을 걸자마자 휴대폰을 차 블루투스에 연결하는 게 제 일상이 됐어요."
+        },
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes only about 20 minutes to drive to my office in Pangyo, but that short drive is basically my personal concert hall.",
+          "ko": "판교 회사까지 차로 20분 정도밖에 안 걸리지만, 그 짧은 운전 시간이 사실상 저만의 콘서트장이에요."
+        },
+        {
+          "pid": "reason#4",
+          "en": "Whenever I play 90s rock in the morning, I feel pumped up for a day full of meetings.",
+          "ko": "아침에 90년대 록을 틀 때마다 회의로 가득한 하루를 앞두고 힘이 솟아요."
+        },
+        {
+          "pid": "im3-routine#2",
+          "en": "I sometimes even sing along at a red light, which is a little embarrassing.",
+          "ko": "가끔은 빨간불에서 따라 부르기도 하는데, 조금 민망하죠."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "music-describe",
+      "title": "신승훈 오랜 팬",
+      "parts": [
+        {
+          "pid": "like#3",
+          "en": "Listening to 90s ballads and rock is a big part of my life, even after all these years.",
+          "ko": "이렇게 오랜 세월이 지나도 90년대 발라드와 록을 듣는 건 제 삶의 큰 부분이에요."
+        },
+        {
+          "pid": "start#0",
+          "en": "I first got into Shin Seung-hun's music when I was in high school in Daejeon, listening to his cassette tapes every night while I studied.",
+          "ko": "대전에서 고등학교에 다닐 때 매일 밤 공부하면서 그의 카세트테이프를 듣다가 처음 신승훈 음악에 빠졌어요."
+        },
+        {
+          "pid": "start#5",
+          "en": "Ever since then, I've been a loyal fan who knows almost all of his songs by heart.",
+          "ko": "그때부터 저는 그의 노래를 거의 다 외우는 충성스러운 팬이에요."
+        },
+        {
+          "pid": "im3-describe#6",
+          "en": "I get goosebumps whenever I hear his warm, gentle voice, because it takes me right back to my school days.",
+          "ko": "그의 따뜻하고 부드러운 목소리를 들으면 학창 시절로 바로 돌아가는 것 같아서 소름이 돋아요."
+        }
+      ]
+    }
   ]
 }

@@ -481,5 +481,169 @@
       "ko": "이런 변화는 스마트폰 덕분인 것 같아요.",
       "q": "travel-overseas-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "travel-overseas-describe",
+      "title": "오사카 가족 여행 소개",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "Last summer, I went to Osaka with my family.",
+          "ko": "작년 여름에 가족과 오사카에 갔어요."
+        },
+        {
+          "pid": "describe#0",
+          "en": "It's a big and lively place with lots of street food.",
+          "ko": "길거리 음식이 많은 크고 활기찬 곳이에요."
+        },
+        {
+          "pid": "memory#2",
+          "en": "The most memorable place was Universal Studios because my kids loved it.",
+          "ko": "가장 기억에 남는 곳은 아이들이 정말 좋아했던 유니버설 스튜디오였어요."
+        },
+        {
+          "pid": "im3-past#6",
+          "en": "I enjoyed walking around Dotonbori and eating takoyaki at night.",
+          "ko": "밤에는 도톤보리를 걸어 다니며 타코야키를 먹는 게 즐거웠어요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "travel-overseas-routine",
+      "title": "해외여행 준비 루틴",
+      "parts": [
+        {
+          "pid": "people#0",
+          "en": "I usually travel abroad with my family, so I plan early.",
+          "ko": "저는 보통 가족과 해외여행을 가서 일찍 계획을 세워요."
+        },
+        {
+          "pid": "im3-routine#3",
+          "en": "I always book the flights and the hotel online first.",
+          "ko": "항상 먼저 항공권과 호텔을 온라인으로 예약해요."
+        },
+        {
+          "pid": "routine#2",
+          "en": "Before I pack anything else, I always put our passports in my bag.",
+          "ko": "다른 짐을 싸기 전에 항상 여권부터 제 가방에 넣어요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I pack the rest of our bags with my kids the night before.",
+          "ko": "그다음 전날 밤에 아이들과 함께 나머지 짐을 싸요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "travel-overseas-experience",
+      "title": "오사카 지하철 분실 사건",
+      "parts": [
+        {
+          "pid": "problem#0",
+          "en": "Something unexpected happened when we were taking the subway in Osaka last summer.",
+          "ko": "작년 여름 오사카에서 지하철을 탈 때 예상치 못한 일이 생겼어요."
+        },
+        {
+          "pid": "im3-past#4",
+          "en": "I was really worried because my son left his backpack on the train.",
+          "ko": "아들이 배낭을 지하철에 두고 내려서 정말 걱정됐어요."
+        },
+        {
+          "pid": "problem#2",
+          "en": "I didn't know what to do, so I went to the station office.",
+          "ko": "어떻게 해야 할지 몰라서 역무실로 갔어요."
+        },
+        {
+          "pid": "problem#3",
+          "en": "Luckily, the staff called the next station, and someone found the bag there.",
+          "ko": "다행히 직원이 다음 역에 전화를 해 줬고, 거기서 가방을 찾았어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "travel-overseas-compare",
+      "title": "첫 출장과 지금 해외여행",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "About twenty years ago, I went to San Francisco on a business trip as a new developer.",
+          "ko": "20년쯤 전에 신입 개발자로 샌프란시스코에 출장을 갔어요."
+        },
+        {
+          "pid": "im3-past#5",
+          "en": "I didn't have a smartphone, so I printed out maps before I left.",
+          "ko": "스마트폰이 없어서 떠나기 전에 지도를 출력했어요."
+        },
+        {
+          "pid": "change#1",
+          "en": "Compared to my first trip, traveling abroad now is much easier.",
+          "ko": "첫 여행에 비하면 지금 해외여행은 훨씬 쉬워요."
+        },
+        {
+          "pid": "change#3",
+          "en": "The biggest difference is that I can do almost everything on my phone.",
+          "ko": "가장 큰 차이는 휴대폰으로 거의 모든 걸 할 수 있다는 거예요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "travel-overseas-describe",
+      "title": "활기찬 오사카의 매력",
+      "parts": [
+        {
+          "pid": "place#5",
+          "en": "What I like most about the place is that the streets are full of bright signs, food stalls, and really friendly people.",
+          "ko": "그곳에서 제일 좋은 점은 거리가 화려한 간판과 음식 노점, 그리고 정말 친절한 사람들로 가득하다는 거예요."
+        },
+        {
+          "pid": "describe#5",
+          "en": "It has a fun and lively atmosphere that makes me feel like a kid again.",
+          "ko": "다시 아이가 된 것 같은 기분이 들게 하는 즐겁고 활기찬 분위기가 있어요."
+        },
+        {
+          "pid": "im3-past#6",
+          "en": "I enjoyed wandering around Dotonbori in the evenings, grabbing takoyaki and bowls of ramen with my kids.",
+          "ko": "저녁마다 아이들과 도톤보리를 돌아다니며 타코야키와 라멘을 사 먹는 게 즐거웠어요."
+        },
+        {
+          "pid": "people#5",
+          "en": "Spending time with my family helps me forget about all the meetings and projects waiting for me at work.",
+          "ko": "가족과 시간을 보내면 회사에서 저를 기다리는 회의와 프로젝트를 다 잊을 수 있어요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "travel-overseas-experience",
+      "title": "두고 내린 배낭 소동",
+      "parts": [
+        {
+          "pid": "problem#0",
+          "en": "Something unexpected happened when we were taking the subway back to our hotel after a long day at Universal Studios.",
+          "ko": "유니버설 스튜디오에서 긴 하루를 보내고 호텔로 돌아가는 지하철에서 예상치 못한 일이 생겼어요."
+        },
+        {
+          "pid": "im3-past#4",
+          "en": "I was shocked when my son realized he'd left his backpack, with his phone and wallet inside, on the train.",
+          "ko": "아들이 휴대폰과 지갑이 든 배낭을 지하철에 두고 내린 걸 알았을 때 정말 깜짝 놀랐어요."
+        },
+        {
+          "pid": "problem#4",
+          "en": "I ended up typing everything into a translation app, and the kind staff called the next station, where they found the bag within minutes.",
+          "ko": "결국 번역 앱에 모든 걸 입력해서 보여 줬고, 친절한 직원이 다음 역에 전화해 몇 분 만에 가방을 찾았어요."
+        },
+        {
+          "pid": "problem#5",
+          "en": "Since then, I always make sure to check our seats before we get off, no matter how tired we are.",
+          "ko": "그 뒤로는 아무리 피곤해도 내리기 전에 꼭 자리를 확인해요."
+        }
+      ]
+    }
   ]
 }

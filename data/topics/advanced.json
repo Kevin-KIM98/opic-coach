@@ -591,5 +591,169 @@
       "ko": "저는 두 가지 이유로 젊은 사람들에게는 대도시가 더 낫다고 생각해요.",
       "q": "advanced-city-life"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "advanced-music-tech",
+      "title": "음악 듣는 방식 변화",
+      "parts": [
+        {
+          "pid": "change#4",
+          "en": "The way I listen to music has changed a lot over the years.",
+          "ko": "제가 음악을 듣는 방식은 세월이 흐르면서 많이 바뀌었어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "In college, I had to download every song and move it to my MP3 player.",
+          "ko": "대학 때는 노래를 하나하나 내려받아서 MP3 플레이어에 옮겨야 했어요."
+        },
+        {
+          "pid": "change#0",
+          "en": "I used to listen to CDs, but now I stream music in my car.",
+          "ko": "예전에는 CD를 들었는데, 지금은 차에서 음악을 스트리밍해요."
+        },
+        {
+          "pid": "im3-routine#3",
+          "en": "I always connect my phone and play my 90s ballad playlist on my way to work.",
+          "ko": "출근길에는 항상 휴대폰을 연결해서 90년대 발라드 플레이리스트를 틀어요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "advanced-work-remote",
+      "title": "재택과 출근 병행 의견",
+      "parts": [
+        {
+          "pid": "im3-routine#3",
+          "en": "I always work from home on Fridays, so I know both sides.",
+          "ko": "저는 금요일마다 늘 재택근무를 해서 양쪽을 다 알아요."
+        },
+        {
+          "pid": "im3-plan#2",
+          "en": "I need to meet my team members a lot because I'm a team leader.",
+          "ko": "팀장이라서 팀원들을 자주 만나야 해요."
+        },
+        {
+          "pid": "opinion#0",
+          "en": "In my opinion, a mix of home and office work is best.",
+          "ko": "제 생각에는 재택과 사무실 근무를 섞는 게 가장 좋아요."
+        },
+        {
+          "pid": "opinion#2",
+          "en": "For example, I can focus at home on Fridays and talk with my team at the office on other days.",
+          "ko": "예를 들어 금요일에는 집에서 집중하고, 다른 날에는 사무실에서 팀원들과 이야기할 수 있어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "advanced-movie-industry",
+      "title": "영화 관람 방식 변화",
+      "parts": [
+        {
+          "pid": "change#2",
+          "en": "These days, people tend to watch movies at home on streaming services like Netflix.",
+          "ko": "요즘 사람들은 넷플릭스 같은 스트리밍 서비스로 집에서 영화를 보는 경향이 있어요."
+        },
+        {
+          "pid": "change#1",
+          "en": "Compared to the past, watching movies at home is much cheaper and more convenient.",
+          "ko": "예전에 비해 집에서 영화를 보는 게 훨씬 싸고 편해요."
+        },
+        {
+          "pid": "im3-routine#1",
+          "en": "I often watch movies at home with my family on Friday nights.",
+          "ko": "저도 금요일 밤이면 가족과 집에서 영화를 자주 봐요."
+        },
+        {
+          "pid": "opinion#3",
+          "en": "On the other hand, I still take my family to the theater for big sci-fi movies.",
+          "ko": "반면에 대작 SF 영화는 여전히 가족을 데리고 극장에 가요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "advanced-city-life",
+      "title": "대도시와 소도시 비교",
+      "parts": [
+        {
+          "pid": "opinion#1",
+          "en": "I believe that big cities are better for young people for two reasons.",
+          "ko": "저는 두 가지 이유로 젊은 사람들에게는 대도시가 더 낫다고 생각해요."
+        },
+        {
+          "pid": "reason#1",
+          "en": "The main reason is that there are many more job opportunities in big cities.",
+          "ko": "가장 큰 이유는 대도시에 일자리 기회가 훨씬 많다는 거예요."
+        },
+        {
+          "pid": "im3-past#0",
+          "en": "After college, I went to Seoul for my first job and learned so much there.",
+          "ko": "저도 대학 졸업 후 첫 직장 때문에 서울에 가서 정말 많이 배웠어요."
+        },
+        {
+          "pid": "im3-describe#5",
+          "en": "I prefer a calmer place like Bundang now that I have a family.",
+          "ko": "가정이 생긴 지금은 분당처럼 좀 더 조용한 곳이 좋아요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "advanced-housing-change",
+      "title": "한국 주거 환경 변화",
+      "parts": [
+        {
+          "pid": "change#4",
+          "en": "Housing in Korea has changed a lot over the years.",
+          "ko": "한국의 주거 환경은 세월이 흐르면서 많이 바뀌었어요."
+        },
+        {
+          "pid": "change#5",
+          "en": "I think this change is because of so many people moving to big cities for work, which made apartments take over almost everywhere.",
+          "ko": "이런 변화는 많은 사람들이 일자리를 찾아 대도시로 몰려들었기 때문이라고 생각하는데, 그래서 거의 모든 곳이 아파트로 바뀌었어요."
+        },
+        {
+          "pid": "change#3",
+          "en": "The biggest difference is that apartments are much more expensive now, so a lot of young people feel like owning a home is just a dream.",
+          "ko": "가장 큰 차이는 지금 아파트가 훨씬 비싸졌다는 건데, 그래서 많은 젊은이들이 내 집 마련을 꿈같은 일로 느껴요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "I had to rent a tiny apartment in Seoul when I started working, and I saved for years before we could move to Bundang.",
+          "ko": "저도 처음 일을 시작했을 때 서울에 아주 작은 아파트를 빌려야 했고, 몇 년 동안 돈을 모은 뒤에야 분당으로 이사할 수 있었어요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "advanced-travel-issue",
+      "title": "요즘 여행 문제 의견",
+      "parts": [
+        {
+          "pid": "opinion#4",
+          "en": "Many people are concerned about rising travel costs, since flights and hotels cost way more than they did a few years ago.",
+          "ko": "항공권과 호텔이 몇 년 전보다 훨씬 비싸져서 많은 사람들이 오르는 여행 경비를 걱정해요."
+        },
+        {
+          "pid": "im3-past#0",
+          "en": "Last summer, I went to Osaka with my family, and there were tourists literally everywhere.",
+          "ko": "작년 여름에 가족과 오사카에 갔는데, 말 그대로 어디에나 관광객이 있었어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "I had to carry my daughter on my back because she got so exhausted after waiting almost two hours for one ride at Universal Studios.",
+          "ko": "유니버설 스튜디오에서 놀이기구 하나에 거의 두 시간을 기다리고 나니 딸이 너무 지쳐서 업어 줘야 했어요."
+        },
+        {
+          "pid": "opinion#5",
+          "en": "All things considered, I think travel is still worth it, but we need to travel smarter, like going in the off-season.",
+          "ko": "모든 걸 고려하면 여행은 여전히 가치가 있지만, 비수기에 가는 것처럼 더 현명하게 여행해야 한다고 생각해요."
+        }
+      ]
+    }
   ]
 }

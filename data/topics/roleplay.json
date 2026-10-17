@@ -614,5 +614,169 @@
       "ko": "그 뒤로는 결제하기 전에 항상 날짜를 다시 확인해요.",
       "q": "roleplay-exp-ticket"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "roleplay-ask-movie",
+      "title": "영화관 상영 시간 문의",
+      "parts": [
+        {
+          "pid": "roleplay#0",
+          "en": "Hi, I'm calling to ask about the new sci-fi movie this Saturday.",
+          "ko": "안녕하세요, 이번 주 토요일에 하는 새 SF 영화에 대해 여쭤보려고 전화했어요."
+        },
+        {
+          "pid": "im3-plan#0",
+          "en": "I want to see it with my coworker Minho.",
+          "ko": "회사 동료 민호랑 같이 보고 싶어요."
+        },
+        {
+          "pid": "roleplay#1",
+          "en": "I'd like to know what time the evening shows start.",
+          "ko": "저녁 상영이 몇 시에 시작하는지 알고 싶어요."
+        },
+        {
+          "pid": "im3-plan#2",
+          "en": "I need to book two tickets for adults.",
+          "ko": "성인 두 장을 예매해야 하거든요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "roleplay-exp-ticket",
+      "title": "오사카 티켓 날짜 실수",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "Last summer, I went to Osaka with my family.",
+          "ko": "작년 여름에 가족과 오사카에 갔어요."
+        },
+        {
+          "pid": "problem#1",
+          "en": "I had a problem with our Universal Studios tickets at the gate.",
+          "ko": "입구에서 유니버설 스튜디오 티켓에 문제가 생겼어요."
+        },
+        {
+          "pid": "im3-past#4",
+          "en": "I was really embarrassed because I chose the wrong date.",
+          "ko": "제가 날짜를 잘못 골라서 정말 당황했어요."
+        },
+        {
+          "pid": "problem#2",
+          "en": "I didn't know what to do, so I went to the ticket office.",
+          "ko": "어떻게 해야 할지 몰라서 매표소로 갔어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "roleplay-ask-travel",
+      "title": "제주 패키지 여행 문의",
+      "parts": [
+        {
+          "pid": "roleplay#0",
+          "en": "Hi, I'm calling to ask about your Jeju Island package for my family.",
+          "ko": "안녕하세요, 가족과 갈 제주도 패키지에 대해 여쭤보려고 전화했어요."
+        },
+        {
+          "pid": "im3-plan#1",
+          "en": "I'm planning to go there during my summer vacation in August.",
+          "ko": "8월 여름휴가 때 갈 계획이에요."
+        },
+        {
+          "pid": "roleplay#2",
+          "en": "Is it possible to get a room with an ocean view?",
+          "ko": "바다 전망 방으로 받을 수 있을까요?"
+        },
+        {
+          "pid": "reason#4",
+          "en": "Whenever I wake up to an ocean view, I feel really relaxed.",
+          "ko": "아침에 일어나 바다가 보이면 언제나 마음이 정말 편해지거든요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "roleplay-solve-movie",
+      "title": "영화표 변경 요청",
+      "parts": [
+        {
+          "pid": "roleplay#3",
+          "en": "I'm afraid there's a problem with the two tickets I booked for Saturday.",
+          "ko": "죄송하지만 토요일로 예매한 표 두 장에 문제가 생겼어요."
+        },
+        {
+          "pid": "im3-plan#2",
+          "en": "I need to change my tickets because Minho can't come.",
+          "ko": "민호가 못 오게 돼서 표를 바꿔야 해요."
+        },
+        {
+          "pid": "roleplay#4",
+          "en": "How about moving both tickets to Sunday evening instead?",
+          "ko": "대신 두 장 모두 일요일 저녁으로 옮기는 건 어떨까요?"
+        },
+        {
+          "pid": "roleplay#2",
+          "en": "Is it possible to change the second ticket to a youth ticket?",
+          "ko": "아니면 두 번째 표를 청소년 표로 바꿀 수 있을까요?"
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "roleplay-solve-travel",
+      "title": "제주 항공편 결항 대처",
+      "parts": [
+        {
+          "pid": "roleplay#3",
+          "en": "I'm afraid there's a problem with our flight to Jeju tomorrow morning, because the airline just canceled it.",
+          "ko": "죄송하지만 내일 아침 제주행 항공편에 문제가 생겼어요. 항공사에서 방금 결항시켰거든요."
+        },
+        {
+          "pid": "im3-plan#3",
+          "en": "I'd like to leave tomorrow if possible, since I only have five days off from work.",
+          "ko": "휴가가 5일밖에 없어서 가능하면 내일 출발하고 싶어요."
+        },
+        {
+          "pid": "roleplay#2",
+          "en": "Is it possible to put us on a later flight tomorrow, even in the evening?",
+          "ko": "내일 늦은 비행기, 저녁 편이라도 태워 주실 수 있을까요?"
+        },
+        {
+          "pid": "roleplay#5",
+          "en": "I'd really appreciate it if you could find us another flight to Jeju as soon as possible.",
+          "ko": "가능한 한 빨리 다른 제주행 항공편을 찾아 주시면 정말 감사하겠어요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "roleplay-exp-plan",
+      "title": "아버지 생신 계획 변경",
+      "parts": [
+        {
+          "pid": "problem#0",
+          "en": "Last spring, something unexpected happened when we were about to leave for my dad's 70th birthday party in Daejeon.",
+          "ko": "작년 봄, 대전에서 열리는 아버지 칠순 잔치에 막 출발하려던 참에 예상치 못한 일이 생겼어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "I had to go to the office because our main service had crashed and thousands of users couldn't log in.",
+          "ko": "메인 서비스가 다운돼서 수천 명이 로그인을 못 하는 바람에 저는 사무실로 가야 했어요."
+        },
+        {
+          "pid": "problem#4",
+          "en": "I ended up fixing the problem with my team at around ten at night, while my family took the KTX train to Daejeon.",
+          "ko": "가족은 KTX를 타고 대전에 갔고, 저는 결국 밤 10시쯤 팀원들과 문제를 해결했어요."
+        },
+        {
+          "pid": "memory#5",
+          "en": "I'll never forget that day because my dad just laughed and said he was proud of me.",
+          "ko": "아버지가 그냥 웃으시면서 제가 자랑스럽다고 하셔서 그날을 절대 잊지 못할 거예요."
+        }
+      ]
+    }
   ]
 }

@@ -473,5 +473,164 @@
       "ko": "이것저것 다 따져 보면, 사무실 근무랑 재택근무를 섞는 게 제일 좋다고 생각해요.",
       "q": "work-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "work-describe",
+      "title": "판교 사무실 소개",
+      "parts": [
+        {
+          "pid": "place#0",
+          "en": "I usually work at an IT company in the Pangyo area.",
+          "ko": "저는 판교에 있는 IT 회사에서 일해요."
+        },
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes about twenty minutes to get to my office from my apartment by car.",
+          "ko": "아파트에서 사무실까지 차로 20분 정도 걸려요."
+        },
+        {
+          "pid": "describe#0",
+          "en": "It's a bright, open place with big windows and long desks.",
+          "ko": "큰 창문과 긴 책상이 있는 밝고 탁 트인 곳이에요."
+        },
+        {
+          "pid": "people#2",
+          "en": "My coworker Minho and I have a lot in common.",
+          "ko": "동료 민호와 저는 공통점이 많아요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "work-routine",
+      "title": "평범한 회사 하루",
+      "parts": [
+        {
+          "pid": "im3-routine#0",
+          "en": "I usually go to the office at nine.",
+          "ko": "저는 보통 9시에 출근해요."
+        },
+        {
+          "pid": "im3-routine#1",
+          "en": "I often review my team's code in the morning.",
+          "ko": "오전에는 팀원들의 코드를 자주 검토해요."
+        },
+        {
+          "pid": "people#0",
+          "en": "I usually have lunch with my coworkers around noon.",
+          "ko": "정오쯤 보통 동료들과 점심을 먹어요."
+        },
+        {
+          "pid": "routine#2",
+          "en": "Before I leave, I always write a short to-do list for tomorrow.",
+          "ko": "퇴근하기 전에 항상 내일 할 일 목록을 짧게 적어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "work-experience",
+      "title": "앱 출시날 서버 장애",
+      "parts": [
+        {
+          "pid": "problem#0",
+          "en": "Something unexpected happened when we launched our new shopping app about five years ago.",
+          "ko": "5년 전쯤 새 쇼핑 앱을 출시했을 때 예상치 못한 일이 일어났어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "When the server crashed, I had to call my whole team back to the office.",
+          "ko": "서버가 다운되자 팀원 전체를 사무실로 다시 불러야 했어요."
+        },
+        {
+          "pid": "problem#3",
+          "en": "Luckily, Minho found the problem in the database settings around two in the morning.",
+          "ko": "다행히 새벽 2시쯤 민호가 데이터베이스 설정에서 문제를 찾아냈어요."
+        },
+        {
+          "pid": "memory#4",
+          "en": "It turned out to be a great lesson for the whole team.",
+          "ko": "결국 팀 전체에게 큰 교훈이 됐어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "work-compare",
+      "title": "20년간 일의 변화",
+      "parts": [
+        {
+          "pid": "change#0",
+          "en": "I used to write code alone at my desk, but now I spend most of my time helping my team.",
+          "ko": "예전에는 책상에서 혼자 코드를 짰는데, 지금은 대부분의 시간을 팀을 돕는 데 써요."
+        },
+        {
+          "pid": "change#1",
+          "en": "Compared to twenty years ago, technology is much more advanced now.",
+          "ko": "20년 전과 비교하면 지금은 기술이 훨씬 발전했어요."
+        },
+        {
+          "pid": "im3-describe#5",
+          "en": "These days, I prefer a mix of office work and working from home.",
+          "ko": "요즘은 사무실 근무와 재택근무를 섞어서 하는 게 더 좋아요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "work-routine",
+      "title": "팀장의 바쁜 하루",
+      "parts": [
+        {
+          "pid": "im3-routine#0",
+          "en": "In the morning, I usually go to the break room first to grab a coffee and go through the messages that came in overnight.",
+          "ko": "아침에는 보통 먼저 휴게실에 가서 커피를 챙기고 밤사이 들어온 메시지를 확인해요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I have a quick stand-up meeting with my team, where each person shares what they're working on.",
+          "ko": "그러고 나서 팀원 각자가 하고 있는 일을 공유하는 짧은 스탠드업 회의를 팀과 함께 해요."
+        },
+        {
+          "pid": "like#5",
+          "en": "When it comes to my daily tasks, I'm a huge fan of code reviews, because I still love reading good code.",
+          "ko": "제 일과 중에서는 코드 리뷰를 정말 좋아하는데, 아직도 좋은 코드를 읽는 게 즐겁기 때문이에요."
+        },
+        {
+          "pid": "routine#4",
+          "en": "After that, I usually spend some time mentoring the new developers and write a short to-do list for tomorrow to finish my day.",
+          "ko": "그 후에는 보통 신입 개발자들을 멘토링하고 내일 할 일 목록을 짧게 적으며 하루를 마무리해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "work-experience",
+      "title": "잊지 못할 출시날 밤",
+      "parts": [
+        {
+          "pid": "memory#5",
+          "en": "I'll never forget the night we launched our new shopping app about five years ago because the server crashed just ten minutes after we opened the service.",
+          "ko": "서비스를 연 지 겨우 10분 만에 서버가 다운돼서, 5년 전쯤 새 쇼핑 앱을 출시한 그날 밤을 절대 잊지 못할 거예요."
+        },
+        {
+          "pid": "im3-past#4",
+          "en": "I was so nervous that my heart sank, and my boss kept calling me every five minutes.",
+          "ko": "너무 긴장해서 가슴이 철렁했고, 상사는 5분마다 계속 전화를 했어요."
+        },
+        {
+          "pid": "problem#2",
+          "en": "I didn't know what to do, so I called my whole team back to the office to check everything together.",
+          "ko": "어떻게 해야 할지 몰라서 팀원 전체를 사무실로 다시 불러 모든 걸 함께 점검했어요."
+        },
+        {
+          "pid": "problem#5",
+          "en": "Since then, I always make sure to test our servers with far more users than we expect before any big launch.",
+          "ko": "그 이후로는 큰 출시를 앞두고 항상 예상보다 훨씬 많은 사용자로 서버를 테스트해요."
+        }
+      ]
+    }
   ]
 }

@@ -452,5 +452,169 @@
       "ko": "이것저것 따져 보면, 더 저렴하고 편하니까 집에서 보는 게 낫다고 생각하지만, 정말 큰 영화는 큰 스크린을 따라올 게 없어요.",
       "q": "movies-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "movies-routine",
+      "title": "금요일 밤 영화 루틴",
+      "parts": [
+        {
+          "pid": "im3-routine#1",
+          "en": "On Friday nights, I often watch movies with my family in the living room.",
+          "ko": "금요일 밤에는 거실에서 가족과 자주 영화를 봐요."
+        },
+        {
+          "pid": "routine#2",
+          "en": "Before I press play, I always order some fried chicken for everyone.",
+          "ko": "재생 버튼을 누르기 전에 항상 다 같이 먹을 치킨을 시켜요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I pick a movie on Netflix with my kids.",
+          "ko": "그다음에 아이들과 넷플릭스에서 영화를 골라요."
+        },
+        {
+          "pid": "reason#2",
+          "en": "It helps me forget about work for a while.",
+          "ko": "덕분에 잠시 일을 잊을 수 있어요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "movies-describe",
+      "title": "좋아하는 영화와 장소",
+      "parts": [
+        {
+          "pid": "like#0",
+          "en": "I really enjoy watching action and sci-fi movies in my free time.",
+          "ko": "저는 여가 시간에 액션 영화와 SF 영화 보는 걸 정말 좋아해요."
+        },
+        {
+          "pid": "im3-describe#5",
+          "en": "I prefer watching movies at home with my family.",
+          "ko": "저는 가족과 집에서 영화 보는 걸 더 좋아해요."
+        },
+        {
+          "pid": "im3-describe#2",
+          "en": "I have a big TV and a comfy sofa in the living room.",
+          "ko": "거실에 큰 TV와 편안한 소파가 있어요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's the perfect place to relax after a busy week.",
+          "ko": "바쁜 한 주를 보낸 뒤 쉬기에 딱 좋은 곳이에요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "movies-experience",
+      "title": "기억에 남는 우주 영화",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "Last winter break, I went to the theater near the subway station with my family.",
+          "ko": "지난 겨울방학에 가족과 지하철역 근처 극장에 갔어요."
+        },
+        {
+          "pid": "memory#2",
+          "en": "The most memorable part of the movie was the ending, when the dad finally saw his kids again.",
+          "ko": "영화에서 가장 기억에 남는 부분은 아빠가 마침내 아이들을 다시 만나는 결말이었어요."
+        },
+        {
+          "pid": "memory#3",
+          "en": "To my surprise, my son was wiping his eyes too.",
+          "ko": "놀랍게도 아들도 눈물을 닦고 있었어요."
+        },
+        {
+          "pid": "im3-past#6",
+          "en": "I enjoyed talking about the movie with my kids all the way home.",
+          "ko": "집에 오는 내내 아이들과 영화 이야기를 하며 즐거웠어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "movies-compare",
+      "title": "극장과 집 비교",
+      "parts": [
+        {
+          "pid": "change#0",
+          "en": "I used to go to the theater a lot, but now I mostly watch movies at home.",
+          "ko": "예전에는 극장에 자주 갔지만, 지금은 주로 집에서 영화를 봐요."
+        },
+        {
+          "pid": "change#1",
+          "en": "Compared to the theater, watching at home is much more relaxing.",
+          "ko": "극장에 비해 집에서 보는 게 훨씬 편해요."
+        },
+        {
+          "pid": "opinion#2",
+          "en": "For example, we can pause the movie and eat fried chicken on the sofa in our pajamas.",
+          "ko": "예를 들어 영화를 잠깐 멈추고 잠옷 차림으로 소파에서 치킨을 먹을 수 있어요."
+        },
+        {
+          "pid": "im3-describe#5",
+          "en": "I prefer watching movies at home because it's cheaper and more comfortable.",
+          "ko": "더 저렴하고 편해서 저는 집에서 영화 보는 걸 더 좋아해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "movies-describe",
+      "title": "액션과 SF 영화 사랑",
+      "parts": [
+        {
+          "pid": "like#5",
+          "en": "When it comes to movies, I'm a huge fan of action and sci-fi, especially the ones with amazing special effects.",
+          "ko": "영화라면 저는 액션과 SF, 특히 특수효과가 멋진 영화의 열렬한 팬이에요."
+        },
+        {
+          "pid": "reason#0",
+          "en": "I like sci-fi movies because I love imagining what technology will look like in the future, which is natural for a developer like me.",
+          "ko": "미래의 기술이 어떤 모습일지 상상하는 게 즐거워서 SF 영화를 좋아하는데, 저 같은 개발자에겐 당연한 일이죠."
+        },
+        {
+          "pid": "reason#3",
+          "en": "Another reason is that action movies keep me on the edge of my seat, so I can totally forget about a week full of meetings and code reviews.",
+          "ko": "또 다른 이유는 액션 영화가 손에 땀을 쥐게 해서 회의와 코드 리뷰로 가득한 한 주를 완전히 잊게 해 주기 때문이에요."
+        },
+        {
+          "pid": "im3-describe#5",
+          "en": "I prefer watching them at home on our big TV, because the long sofa in our living room fits all four of us.",
+          "ko": "거실의 긴 소파에 네 식구가 다 앉을 수 있어서 저는 집에서 큰 TV로 보는 걸 더 좋아해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "movies-experience",
+      "title": "잊지 못할 가족 영화",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "Last winter break, I went to the theater near the subway station with my whole family to see a sci-fi movie about an astronaut who gets lost in space.",
+          "ko": "지난 겨울방학에 온 가족과 지하철역 근처 극장에 가서 우주에서 길을 잃은 우주비행사에 관한 SF 영화를 봤어요."
+        },
+        {
+          "pid": "memory#4",
+          "en": "It turned out to be much better than I expected, even though I had already heard great things about it.",
+          "ko": "이미 좋다는 얘기를 많이 들었는데도, 기대보다 훨씬 좋은 영화였어요."
+        },
+        {
+          "pid": "memory#5",
+          "en": "I'll never forget the ending because the dad finally makes it home and hugs his kids, which really touched me as a parent who works long hours.",
+          "ko": "아빠가 마침내 집에 돌아와 아이들을 안아 주는 결말을 잊지 못할 거예요, 오래 일하는 부모로서 정말 가슴이 뭉클했거든요."
+        },
+        {
+          "pid": "im3-past#1",
+          "en": "It was one of the most meaningful nights our family had shared in a long time.",
+          "ko": "오랜만에 우리 가족이 함께한 가장 의미 있는 밤 중 하나였어요."
+        }
+      ]
+    }
   ]
 }

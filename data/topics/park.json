@@ -460,5 +460,169 @@
       "ko": "이런 변화는 건강과 삶의 질에 대한 사람들의 관심이 커졌기 때문이라고 생각해요.",
       "q": "park-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "park-describe",
+      "title": "자주 가는 중앙공원",
+      "parts": [
+        {
+          "pid": "im3-routine#0",
+          "en": "On weekends, I usually go to Jungang Park in Bundang.",
+          "ko": "주말에는 보통 분당에 있는 중앙공원에 가요."
+        },
+        {
+          "pid": "place#2",
+          "en": "It's only a 15-minute walk from my house.",
+          "ko": "집에서 걸어서 15분밖에 안 걸려요."
+        },
+        {
+          "pid": "describe#0",
+          "en": "It's a big, green place with a pond and a lot of trees.",
+          "ko": "연못과 나무가 많은 넓고 푸른 곳이에요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's always clean and quiet.",
+          "ko": "항상 깨끗하고 조용해요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "park-routine",
+      "title": "주말 공원 루틴",
+      "parts": [
+        {
+          "pid": "routine#0",
+          "en": "I go to the park about two times a week.",
+          "ko": "저는 일주일에 두 번 정도 공원에 가요."
+        },
+        {
+          "pid": "people#0",
+          "en": "I usually go there with my family on weekend afternoons.",
+          "ko": "주말 오후에는 보통 가족과 함께 가요."
+        },
+        {
+          "pid": "im3-routine#4",
+          "en": "I take a walk around the pond while my kids ride their bikes.",
+          "ko": "아이들이 자전거를 타는 동안 저는 연못 주변을 산책해요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I sit on a bench and eat some snacks with my family.",
+          "ko": "그다음에 가족과 벤치에 앉아 간식을 먹어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "park-experience",
+      "title": "딸의 자전거 도전",
+      "parts": [
+        {
+          "pid": "memory#0",
+          "en": "I remember one time when my daughter learned to ride a bike at Jungang Park.",
+          "ko": "딸이 중앙공원에서 자전거 타는 법을 배웠던 때가 기억나요."
+        },
+        {
+          "pid": "im3-past#1",
+          "en": "It was two years ago in spring, and the cherry blossoms were everywhere.",
+          "ko": "2년 전 봄이었고, 사방에 벚꽃이 피어 있었어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "I had to hold the back of her seat and run along with her.",
+          "ko": "저는 딸의 안장 뒤를 잡고 같이 뛰어야 했어요."
+        },
+        {
+          "pid": "memory#3",
+          "en": "To my surprise, she rode all the way down the trail by herself after I let go.",
+          "ko": "놀랍게도 제가 손을 놓자 딸이 혼자서 산책로 끝까지 달렸어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "park-compare",
+      "title": "어린 시절 공원과 비교",
+      "parts": [
+        {
+          "pid": "change#0",
+          "en": "I used to play in a tiny park with a sandbox in Daejeon, but now I take my kids to Jungang Park.",
+          "ko": "예전에는 대전의 모래밭 있는 작은 공원에서 놀았는데, 지금은 아이들을 데리고 중앙공원에 가요."
+        },
+        {
+          "pid": "change#1",
+          "en": "Compared to that old park, Jungang Park is much bigger and cleaner.",
+          "ko": "그 옛날 공원에 비하면 중앙공원은 훨씬 크고 깨끗해요."
+        },
+        {
+          "pid": "change#2",
+          "en": "These days, people tend to visit parks no matter how old they are.",
+          "ko": "요즘은 나이에 상관없이 사람들이 공원을 찾는 편이에요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's because people care more about their health now.",
+          "ko": "이제 사람들이 건강에 더 신경을 쓰기 때문이에요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "park-routine",
+      "title": "주말 가족 공원 나들이",
+      "parts": [
+        {
+          "pid": "people#5",
+          "en": "Spending time with my family at Jungang Park on weekend afternoons helps me recharge after a long week of meetings.",
+          "ko": "주말 오후에 중앙공원에서 가족과 시간을 보내면 회의로 가득했던 긴 한 주의 피로가 풀려요."
+        },
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes about 15 minutes to walk there, and by the time we arrive, the kids are already racing ahead on their bikes.",
+          "ko": "걸어서 15분 정도 걸리는데, 도착할 즈음이면 아이들은 벌써 자전거를 타고 앞서 달려가요."
+        },
+        {
+          "pid": "im3-routine#4",
+          "en": "I take a slow walk around the pond while they ride, and we catch up on the week.",
+          "ko": "아이들이 자전거를 타는 동안 저는 연못 주변을 천천히 걸으며 한 주 동안의 이야기를 나눠요."
+        },
+        {
+          "pid": "routine#4",
+          "en": "After that, I usually grab some ice cream with the kids and sit on our favorite bench by the water to finish my day.",
+          "ko": "그 후에는 보통 아이들과 아이스크림을 사서 물가의 단골 벤치에 앉아 하루를 마무리해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "park-describe",
+      "title": "사계절 중앙공원 풍경",
+      "parts": [
+        {
+          "pid": "place#4",
+          "en": "It's located right in the middle of Bundang, about a 15-minute walk from our apartment, so it's easy to get to.",
+          "ko": "분당 한가운데, 우리 아파트에서 걸어서 15분 정도 거리에 있어서 가기 쉬워요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's really green, with tall trees everywhere and a big pond surrounded by walking trails.",
+          "ko": "키 큰 나무가 곳곳에 있고 산책로로 둘러싸인 큰 연못이 있어서 정말 푸르러요."
+        },
+        {
+          "pid": "describe#4",
+          "en": "It's famous for its cherry blossoms in spring, and in fall, the leaves turn red and yellow.",
+          "ko": "봄에는 벚꽃으로 유명하고, 가을에는 나뭇잎이 빨갛고 노랗게 물들어요."
+        },
+        {
+          "pid": "place#5",
+          "en": "What I like most about the place is that it feels so peaceful, even though it is right in the city.",
+          "ko": "그곳에서 제가 가장 좋아하는 점은 도심 한가운데 있는데도 아주 평화롭게 느껴진다는 거예요."
+        }
+      ]
+    }
   ]
 }

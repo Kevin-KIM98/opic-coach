@@ -83,6 +83,11 @@ async function open(hash, seed = null) {
   const al = await page.$$eval('[data-list] .en', xs => xs.map(x => x.textContent));
   check('레벨 전환: AL 패턴 6개, IM3 와 다른 문장', al.length === 6 && al[0] !== im[0]);
   check('레벨 전환: 주소에 레벨', page.url().includes('level=AL'));
+  const combos = await page.$$('.combo');
+  check('패턴 조합: AL 조합 2개', combos.length === 2, String(combos.length));
+  check('패턴 조합: 두 패턴 세트 체인', (await page.$$('.combo .combo-chain .link.im3')).length >= 2 && (await page.$$('.combo .combo-chain .link.kang')).length >= 2);
+  check('패턴 조합: 문장마다 한글', (await page.$$('.combo .combo-line .ko')).length === (await page.$$('.combo .combo-line .en')).length);
+  if (OUT) await page.screenshot({ path: `${OUT}/combo.png`, fullPage: true });
   check('AL 은 IH·AL 패턴 틀만', (await page.$$eval('[data-list] .badge', xs => xs.map(x => x.textContent))).every(t => t === 'IH' || t === 'AL'));
   await page.click('[data-list] a.note'); await page.waitForTimeout(900);
   check('패턴 → AL 답안으로 이동', page.url().includes('level=AL'));

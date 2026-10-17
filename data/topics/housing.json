@@ -458,5 +458,169 @@
       "ko": "반면에 마당이 있던 건 정말 그리워요.",
       "q": "housing-compare"
     }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "housing-describe",
+      "title": "15층 아파트 소개",
+      "parts": [
+        {
+          "pid": "start#1",
+          "en": "I started living in this apartment in Bundang about eight years ago.",
+          "ko": "저는 약 8년 전부터 분당의 이 아파트에 살기 시작했어요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's on the 15th floor, and it has three bedrooms, a living room, and a kitchen.",
+          "ko": "15층에 있고, 침실 세 개와 거실, 주방이 있어요."
+        },
+        {
+          "pid": "describe#1",
+          "en": "When you walk in, the first thing you notice is the big gray sofa in the living room.",
+          "ko": "들어서면 가장 먼저 눈에 띄는 건 거실의 큰 회색 소파예요."
+        },
+        {
+          "pid": "like#1",
+          "en": "One of my favorite things to do is relaxing on that sofa after work.",
+          "ko": "제가 가장 좋아하는 일 중 하나는 퇴근 후 그 소파에서 쉬는 거예요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "housing-experience",
+      "title": "주방 누수 사건",
+      "parts": [
+        {
+          "pid": "problem#1",
+          "en": "Last winter, I had a problem with a water leak in my kitchen.",
+          "ko": "지난겨울에 주방에 물이 새는 문제가 있었어요."
+        },
+        {
+          "pid": "memory#1",
+          "en": "It was late on a Sunday night when I noticed the kitchen floor was all wet.",
+          "ko": "주방 바닥이 흥건히 젖은 걸 알아챈 건 일요일 밤늦은 시간이었어요."
+        },
+        {
+          "pid": "problem#2",
+          "en": "I didn't know what to do, so I turned off the main water valve right away.",
+          "ko": "어떻게 해야 할지 몰라서 바로 메인 수도 밸브를 잠갔어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "The next day, I had to take the morning off because a repairman was coming.",
+          "ko": "다음 날 수리 기사님이 오셔서 오전 반차를 내야 했어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "housing-routine",
+      "title": "평일 저녁 집에서",
+      "parts": [
+        {
+          "pid": "im3-describe#6",
+          "en": "On weekdays, I get home at around seven thirty in the evening.",
+          "ko": "평일에는 저녁 7시 반쯤 집에 도착해요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I have dinner with my family at the kitchen table.",
+          "ko": "그러고 나서 주방 식탁에서 가족과 저녁을 먹어요."
+        },
+        {
+          "pid": "place#3",
+          "en": "My favorite place to relax is the big sofa in the living room.",
+          "ko": "제가 쉬기 가장 좋아하는 곳은 거실의 큰 소파예요."
+        },
+        {
+          "pid": "routine#4",
+          "en": "After that, I usually check my kids' homework and watch the news to finish my day.",
+          "ko": "그다음에는 보통 아이들 숙제를 봐주고 뉴스를 보며 하루를 마무리해요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "housing-compare",
+      "title": "어린 시절 집과 비교",
+      "parts": [
+        {
+          "pid": "change#0",
+          "en": "I used to live in an old two-story house in Daejeon, but now I live in an apartment on the 15th floor in Bundang.",
+          "ko": "예전에는 대전의 오래된 2층 주택에 살았지만, 지금은 분당의 아파트 15층에 살아요."
+        },
+        {
+          "pid": "im3-past#1",
+          "en": "It was really cold in winter, and we had to walk a long way to the market.",
+          "ko": "그 집은 겨울에 정말 추웠고, 시장까지 한참을 걸어가야 했어요."
+        },
+        {
+          "pid": "change#3",
+          "en": "The biggest difference is that life here is much more convenient.",
+          "ko": "가장 큰 차이는 이곳 생활이 훨씬 편리하다는 거예요."
+        },
+        {
+          "pid": "opinion#3",
+          "en": "On the other hand, my kids don't have a yard, so they play on their phones more than outside.",
+          "ko": "반면에 우리 아이들은 마당이 없어서 밖에서 노는 것보다 휴대폰을 더 많이 해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "housing-experience",
+      "title": "한겨울 밤 누수 소동",
+      "parts": [
+        {
+          "pid": "memory#0",
+          "en": "I remember one time when we had a pretty stressful water leak on a freezing Sunday night last winter.",
+          "ko": "지난겨울 몹시 추운 일요일 밤에 꽤 골치 아픈 누수가 있었던 적이 기억나요."
+        },
+        {
+          "pid": "memory#3",
+          "en": "To my surprise, there was water all over the kitchen floor, and it was coming from an old pipe under the sink.",
+          "ko": "놀랍게도 주방 바닥 전체가 물바다였는데, 싱크대 아래 낡은 배관에서 새고 있었어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "I had to turn off the main water valve right away while my family grabbed every towel in the house.",
+          "ko": "가족들이 집에 있는 수건을 모두 가져오는 동안 저는 바로 메인 수도 밸브를 잠가야 했어요."
+        },
+        {
+          "pid": "problem#5",
+          "en": "Since then, I always make sure to check under the sink once in a while, because a small leak can turn into a big problem.",
+          "ko": "그 이후로는 작은 누수가 큰 문제로 번질 수 있으니 가끔씩 싱크대 아래를 꼭 확인해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "housing-compare",
+      "title": "편리함과 그리운 마당",
+      "parts": [
+        {
+          "pid": "memory#5",
+          "en": "I'll never forget the old two-story house in Daejeon where I grew up because it had a small yard with a big persimmon tree.",
+          "ko": "제가 자란 대전의 오래된 2층집은 큰 감나무가 있는 작은 마당이 있어서 절대 잊지 못할 거예요."
+        },
+        {
+          "pid": "im3-past#6",
+          "en": "I enjoyed picking persimmons with my dad every fall.",
+          "ko": "매년 가을 아버지와 함께 감을 따는 게 즐거웠어요."
+        },
+        {
+          "pid": "change#1",
+          "en": "Compared to my childhood home, my apartment in Bundang is much warmer and more convenient.",
+          "ko": "어린 시절 집에 비하면 분당 아파트가 훨씬 따뜻하고 편리해요."
+        },
+        {
+          "pid": "opinion#5",
+          "en": "All things considered, I think my kids are missing out on something special, since they don't have a yard to play in.",
+          "ko": "모든 걸 고려하면, 우리 아이들은 뛰어놀 마당이 없어서 특별한 무언가를 놓치고 있다고 생각해요."
+        }
+      ]
+    }
   ]
 }
