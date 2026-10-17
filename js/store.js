@@ -104,9 +104,13 @@ export const store = {
   // 주제 진행률: 표현 · 주제 패턴 익힘(상자 3 이상) + 질문별 답변 연습 여부
   topicProgress(t) {
     const learned = (prefix, n) => Array.from({ length: n }, (_, i) => this.exprInfo(`${t.id}#${prefix}${i}`).box >= 3).filter(Boolean).length;
-    const ex = (t.expressions || []).length, pt = (t.patterns || []).length, qs = (t.questions || []).length;
+    // 패턴은 목표 등급(IM3·IH·AL)에 맞는 것만 센다 — 레벨이 없는 예전 데이터는 전부
+    const lv = state.settings.target || 'IM3';
+    const pats = (t.patterns || []).map((p, i) => ({ p, i })).filter(({ p }) => !p.level || p.level === lv);
+    const ex = (t.expressions || []).length, pt = pats.length, qs = (t.questions || []).length;
     const practiced = new Set(state.practice.filter(p => p.topicId === t.id).map(p => p.qid));
-    const p = { expr: [learned('e', ex), ex], pat: [learned('p', pt), pt], ans: [(t.questions || []).filter(q => practiced.has(q.id)).length, qs] };
+    const patLearned = pats.filter(({ i }) => this.exprInfo(`${t.id}#p${i}`).box >= 3).length;
+    const p = { expr: [learned('e', ex), ex], pat: [patLearned, pt], ans: [(t.questions || []).filter(q => practiced.has(q.id)).length, qs] };
     const done = p.expr[0] + p.pat[0] + p.ans[0], total = ex + pt + qs;
     p.pct = total ? Math.round(done / total * 100) : 0;
     return p;

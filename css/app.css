@@ -414,3 +414,5 @@ kbd { font-family: inherit; background: var(--surface-2); padding: 1px 6px; bord
 .answer .sent-ko { font-size: 13px; color: var(--muted); line-height: 1.5; margin-top: 2px; }
 .answer.ko-off .sent-ko { display: none; }
 .ko-cue { font-size: 15px; color: var(--ink-2); line-height: 1.5; margin-bottom: 6px; }
+.answer .sent.pat { text-decoration: underline; text-decoration-color: var(--teal); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.answer .sent-pat { font-size: 12px; color: var(--teal); margin-top: 2px; }

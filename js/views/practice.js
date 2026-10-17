@@ -6,7 +6,7 @@ import { createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap, rep
 import { header } from '../app.js';
 import { createRecorderUI, sttHelpHtml } from '../recorder-ui.js';
 import { analyze } from '../scoring.js';
-import { bindPlay, flashcards, quickCheck } from './topic.js';
+import { bindPlay, flashcards, quickCheck, patternSentenceMap } from './topic.js';
 import { ring } from './home.js';
 
 let recUI = null;
@@ -39,7 +39,7 @@ export async function render(root, route) {
   // 레벨(IM3·IH·AL)은 몇 번이든 바꿀 수 있어야 한다 — 바꿀 때마다 같은 콜백으로 다시 그린다
   const showModel = () => {
     stopSpeaking(); shadowPlayer?.stop(); shadowPlayer = null;
-    level = renderModel(body, q, level, (lv) => { if (lv !== level) { level = lv; showModel(); } });
+    level = renderModel(body, q, level, (lv) => { if (lv !== level) { level = lv; showModel(); } }, (lv) => patternSentenceMap(topic, patterns, lv));
   };
   const show = (m) => {
     root.querySelectorAll('#ptabs button').forEach(b => b.classList.toggle('active', b.dataset.m === m));
@@ -54,7 +54,7 @@ export async function render(root, route) {
 
 // ---------- 모범답안 섀도잉 ----------
 // 선택된 레벨로 섀도잉 화면을 그리고, 실제로 사용한 레벨을 돌려준다
-function renderModel(body, q, level, setLevel) {
+function renderModel(body, q, level, setLevel, patternMap = () => ({})) {
   const answers = q.answers || {};
   const levels = ['IM3', 'IH', 'AL'].filter(l => answers[l]);
   if (!answers[level]) level = levels[0];
@@ -65,16 +65,19 @@ function renderModel(body, q, level, setLevel) {
   const ko = Array.isArray(koArr) && koArr.length === sents.length ? koArr : null;
   let showKo = store.settings.showAnswerKo !== false;   // 해석 보이기 (기본 켬)
   let koFirst = !!store.settings.koFirst;               // 한→영: 한글만 보고 영어로 말하기
+  // 이 레벨 답안에 들어간 만능 패턴 문장 → 강조 표시
+  const pats = patternMap(level);
+  const patCount = sents.filter(s => pats[s.trim()]).length;
   body.innerHTML = html`
     <div class="seg">${raw(levels.map(l => `<button data-lv="${l}" class="${l === level ? 'active' : ''}" style="${l === level ? `color:${levelColor(l)}` : ''}">${l}</button>`).join(''))}</div>
     <div class="card mt12">
-      <div class="xs muted mb8">${words}단어 · ${sents.length}문장 · 문장을 탭하면 재생</div>
+      <div class="xs muted mb8">${words}단어 · ${sents.length}문장${patCount ? ` · 🧩 만능 패턴 ${patCount}문장` : ''} · 문장을 탭하면 재생</div>
       <div class="row mb12 wrap" style="gap:6px"><button class="btn sm" data-all>▶ 전체 듣기</button><button class="btn sm" data-slow>🐢 느리게</button><button class="btn sm ghost" data-hide>🙈 가리기</button>${ko ? raw(`<button class="btn sm ghost" data-ko-toggle>${showKo ? '🇰🇷 해석 숨기기' : '🇰🇷 해석 보기'}</button>`) : ''}</div>
       <div class="row between wrap mb12"><span class="xs muted" data-loop-hint>${repeatLoop() ? '전체 듣기는 멈출 때까지 계속 반복돼요' : '전체 듣기는 한 바퀴만 읽고 멈춰요'}</span>
         <span class="row" style="gap:6px"><button class="chip ${repeatLoop() ? 'active' : ''}" data-loop title="멈출 때까지 계속 반복">${loopLabel()}</button><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
       <div class="answer ${ko ? 'with-ko' : ''} ${showKo ? '' : 'ko-off'}" data-answer>${raw(sents.map((s, i) => ko
-        ? `<div class="ans-pair"><span class="sent" data-i="${i}">${s}</span><div class="sent-ko">${ko[i]}</div></div>`
-        : `<span class="sent" data-i="${i}">${s}</span> `).join(''))}</div>
+        ? `<div class="ans-pair"><span class="sent ${pats[s.trim()] ? 'pat' : ''}" data-i="${i}">${s}</span><div class="sent-ko">${ko[i]}</div>${pats[s.trim()] ? `<div class="sent-pat">🧩 ${pats[s.trim()]}</div>` : ''}</div>`
+        : `<span class="sent ${pats[s.trim()] ? 'pat' : ''}" data-i="${i}">${s}</span> `).join(''))}</div>
     </div>
     <div class="card soft mt12">
       <div class="h3 mb8">섀도잉 체크</div>
