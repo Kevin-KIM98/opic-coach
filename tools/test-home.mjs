@@ -49,16 +49,16 @@ async function open(hash, seed = null) {
   const { page, errs } = await open('#/topic/park');
   const tabs = await page.$$eval('#tabs button', bs => bs.map(x => x.textContent));
   check('주제: 4단계 탭', JSON.stringify(tabs) === JSON.stringify(['① 표현', '② 패턴', '③ 답안', '④ 팁']), JSON.stringify(tabs));
-  check('주제: 진행 단계 표시', (await page.innerText('[data-steps]')).includes('패턴 0/8'));
+  check('주제: 진행 단계 표시', (await page.innerText('[data-steps]')).includes('패턴 0/6'));
   await page.click('#tabs button[data-tab="pat"]');
   await page.waitForTimeout(300);
-  check('패턴: 8개 문장', (await page.$$('[data-list] .expr')).length === 8);
-  check('패턴: 패턴 틀 표시', (await page.$$('.pat-frame')).length === 8);
-  check('패턴: 답변 질문으로 연결', (await page.$$('[data-list] a.note[href^="#/practice/park/"]')).length === 8);
+  check('패턴: 목표 레벨 6개 문장', (await page.$$('[data-list] .expr')).length === 6);
+  check('패턴: 패턴 틀 표시', (await page.$$('.pat-frame')).length === 6);
+  check('패턴: 같은 레벨 답안으로 연결', (await page.$$('[data-list] a.note[href*="level=IM3"]')).length === 6);
   if (OUT) await page.screenshot({ path: `${OUT}/topic-pat.png`, fullPage: true });
   await page.click('[data-quiz]');
   await page.waitForTimeout(300);
-  check('패턴: 퀴즈 1 / 8', (await page.innerText('#view')).includes('1 / 8'));
+  check('패턴: 퀴즈 1 / 8', (await page.innerText('#view')).includes('1 / 6'));
   await page.click('[data-show]');
   const expr = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')).expr);
   check('패턴: 퀴즈 결과가 주제 패턴 id 로 기록', Object.keys(expr).some(k => /^park#p\d$/.test(k)), JSON.stringify(expr));
@@ -72,6 +72,25 @@ async function open(hash, seed = null) {
   const home = await page.innerText('#view');
   check('홈: 이어서 학습에 마지막 주제', home.includes('이어서 학습') && home.includes('공원'), home.slice(0, 300));
   if (OUT) await page.screenshot({ path: `${OUT}/home-continue.png` });
+  await page.close();
+}
+
+// ---- 레벨별 패턴 · 답안 속 패턴 강조 ----
+{
+  const { page, errs } = await open('#/topic/park?tab=pat');
+  const im = await page.$$eval('[data-list] .en', xs => xs.map(x => x.textContent));
+  await page.click('[data-lv="AL"]'); await page.waitForTimeout(400);
+  const al = await page.$$eval('[data-list] .en', xs => xs.map(x => x.textContent));
+  check('레벨 전환: AL 패턴 6개, IM3 와 다른 문장', al.length === 6 && al[0] !== im[0]);
+  check('레벨 전환: 주소에 레벨', page.url().includes('level=AL'));
+  check('AL 은 IH·AL 패턴 틀만', (await page.$$eval('[data-list] .badge', xs => xs.map(x => x.textContent))).every(t => t === 'IH' || t === 'AL'));
+  await page.click('[data-list] a.note'); await page.waitForTimeout(900);
+  check('패턴 → AL 답안으로 이동', page.url().includes('level=AL'));
+  const n = await page.$$eval('.answer .sent.pat', xs => xs.length);
+  check('답안에 패턴 문장 강조', n >= 1, String(n));
+  check('강조 문장 아래 패턴 틀', (await page.$$('.answer .sent-pat')).length === n);
+  check('레벨 패턴 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
+  if (OUT) await page.screenshot({ path: `${OUT}/answer-pat.png`, fullPage: true });
   await page.close();
 }
 

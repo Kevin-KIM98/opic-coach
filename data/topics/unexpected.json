@@ -109,8 +109,8 @@
         "IH 이상은 여름 장마·겨울 미세먼지 같은 단점과 내 생활(조깅, 가족 나들이)을 연결하세요."
       ],
       "answers": {
-        "IM3": "Oh, the weather in Korea? Let me think. We have four seasons in Korea. Spring is warm, and there are a lot of flowers. Summer is really hot and humid, and it rains a lot. Fall is cool and sunny. Winter is very cold and dry. When it comes to seasons, I'm a huge fan of fall. I go jogging by the Tancheon stream three times a week, and running in the cool air feels great. Yeah, that's why I really like fall.",
-        "IH": "Oh, the weather in Korea? Let me think. We have four clear seasons here. Spring is warm and beautiful, but there's a lot of fine dust, so I sometimes wear a mask. Summer is really hot and humid, and we have a rainy season in July. Fall is cool, sunny, and dry. Winter is freezing, and it sometimes snows. When it comes to seasons, I'm a huge fan of fall. I go jogging by the Tancheon stream three times a week at 6:30 in the morning, and in fall, the air is so fresh. The leaves in Central Park turn red and yellow, so my family often takes walks there on weekends. In summer, I can barely run because it's so hot, even early in the morning. So yeah, that's why fall is my favorite season.",
+        "IM3": "Oh, the weather in Korea? Let me think. We have four seasons in Korea. Spring is warm, and there are a lot of flowers. Summer is really hot and humid, and it rains a lot. Fall is cool and sunny. Winter is very cold and dry. When it comes to seasons, I'm a huge fan of fall. I go jogging by the Tancheon stream about three times a week. Running in the cool air feels great. Yeah, that's why I really like fall.",
+        "IH": "Oh, the weather in Korea? Let me think. We have four clear seasons here. Spring is warm and beautiful, but there's a lot of fine dust, so I sometimes wear a mask. Summer is really hot and humid, and we have a rainy season in July. Fall is cool, sunny, and dry. Winter is freezing, and it sometimes snows. When it comes to seasons, I'm a huge fan of fall. I'm the kind of person who loves running in cool weather. I go jogging by the Tancheon stream three times a week at 6:30 in the morning, and in fall, the air is so fresh. The leaves in Central Park turn red and yellow, so my family often takes walks there on weekends. In summer, I can barely run because it's so hot, even early in the morning. So yeah, that's why fall is my favorite season.",
         "AL": "Oh, the weather in Korea? That's an interesting question. Let me think. We have four distinct seasons here, and each one has its own charm. Spring is mild and lovely, with cherry blossoms everywhere, but the fine dust can be pretty bad, so I check the air quality app every morning. Summer is brutally hot and humid, and there's a rainy season in July when it pours for days. Fall is cool, sunny, and crisp. And winter is freezing, especially in January, when the wind cuts right through your coat. When it comes to seasons, I'm a huge fan of fall, hands down. I go jogging by the Tancheon stream three times a week at 6:30 in the morning, and in fall, the air is so fresh that I feel like I could run forever. On weekends, my family walks around Central Park, and the kids love kicking through piles of red and yellow leaves. In summer, on the other hand, I'm soaked in sweat after just ten minutes, even at dawn. Honestly, after a long week of meetings, a cool fall morning is the best way to clear my head. So yeah, that's why fall is my favorite season."
       },
       "answersKo": {
@@ -123,7 +123,8 @@
           "가을은 선선하고 화창해요.",
           "겨울은 아주 춥고 건조해요.",
           "계절 얘기라면, 저는 가을을 정말 좋아해요.",
-          "일주일에 세 번 탄천에서 조깅을 하는데, 선선한 공기 속에서 뛰면 기분이 정말 좋아요.",
+          "탄천에서 일주일에 세 번 정도 조깅을 해요.",
+          "선선한 공기 속에서 달리면 기분이 정말 좋아요.",
           "네, 그래서 저는 가을을 정말 좋아해요."
         ],
         "IH": [
@@ -135,6 +136,7 @@
           "가을은 선선하고 화창하고 건조해요.",
           "겨울은 엄청 춥고 가끔 눈이 와요.",
           "계절 얘기라면, 저는 가을을 정말 좋아해요.",
+          "저는 선선한 날씨에 달리는 걸 정말 좋아하는 사람이에요.",
           "일주일에 세 번 아침 6시 반에 탄천에서 조깅을 하는데, 가을엔 공기가 정말 상쾌해요.",
           "중앙공원 나뭇잎이 빨갛고 노랗게 물들어서 주말엔 가족들이랑 자주 거기로 산책을 가요.",
           "여름엔 이른 아침에도 너무 더워서 거의 못 뛰어요.",
@@ -170,7 +172,7 @@
       ],
       "answers": {
         "IM3": "Sure, let me tell you about how I get around. I usually drive to work. My office is only 20 minutes away by car. But when I go to Seoul, I take the subway. There's a Bundang Line station near my apartment. It's only a 10-minute walk from my house. The subway is clean and fast, and it comes every few minutes. I listen to music or read the news on the way. Yeah, that's how I usually get around.",
-        "IH": "Sure, let me tell you about how I get around. On weekdays, I usually drive to work because my office is only 20 minutes away by car. But when I go to Seoul for meetings or to see friends, I always take the subway, because traffic and parking in Seoul are terrible. There's a Bundang Line station near my apartment. It's only a 10-minute walk from my house. First, I tap my card at the gate. Then, I transfer to Line 2 at Seolleung Station. The whole trip takes about 40 minutes. During rush hour, the trains are really crowded, so I try to avoid that time. My kids take the bus to their academies, and the bus stop is right in front of our complex. Yeah, public transportation in my area is really convenient.",
+        "IH": "Sure, let me tell you about how I get around. On weekdays, I usually drive to work because my office is only 20 minutes away by car. But when I go to Seoul for meetings or to see friends, I always take the subway, because traffic and parking in Seoul are terrible. There's a Bundang Line station near my apartment. It's located just a 10-minute walk from my house, so it's easy to get to. First, I tap my card at the gate. Then, I transfer to Line 2 at Seolleung Station. The whole trip takes about 40 minutes. During rush hour, the trains are really crowded, so I try to avoid that time. My kids take the bus to their academies, and the bus stop is right in front of our complex. Yeah, public transportation in my area is really convenient.",
         "AL": "Sure, let me tell you about how I get around. On weekdays, I mostly drive, since my office is only about 20 minutes away by car, and I love having that quiet time to listen to 90s ballads. But whenever I head into Seoul, for a meeting or to catch up with old friends, I leave the car at home, because traffic in Seoul is a nightmare and parking costs a fortune. Luckily, there's a Bundang Line station near my apartment. It's only a 10-minute walk from my house. First, I tap my transit card at the gate. Then, I ride a few stops and transfer to Line 2 at Seolleung Station. The whole trip usually takes about 40 minutes, and I spend it reading the news or catching up on emails. If I'm unlucky enough to hit rush hour, the trains are packed like sardines, so I try to avoid that. My kids, on the other hand, take the bus to their academies, and the stop is right in front of our complex, which is a huge relief for us as parents. Honestly, public transportation in Korea is so cheap and reliable that I sometimes feel spoiled. Yeah, that's pretty much how I get around."
       },
       "answersKo": {
@@ -190,7 +192,7 @@
           "평일에는 회사가 차로 20분밖에 안 걸려서 보통 차로 출근해요.",
           "그런데 회의나 친구를 만나러 서울에 갈 때는 서울 교통이랑 주차가 너무 안 좋아서 항상 지하철을 타요.",
           "저희 아파트 근처에 분당선 역이 있어요.",
-          "집에서 걸어서 10분밖에 안 걸려요.",
+          "집에서 걸어서 10분 거리에 있어서 가기 편해요.",
           "먼저 개찰구에서 카드를 찍어요.",
           "그다음 선릉역에서 2호선으로 갈아타요.",
           "전체 이동 시간은 40분 정도 걸려요.",
@@ -341,7 +343,7 @@
       ],
       "answers": {
         "IM3": "Sure, I'd love to talk about that. I'm a software developer, so I use the internet all day. First, I check the news on my phone. Then, I open our team chat. At work, I search for information and read tech blogs. In the evening, I watch YouTube videos or shop online for my family. On Friday nights, we watch movies on Netflix. Yeah, that's what I usually do on the internet.",
-        "IH": "Sure, I'd love to talk about that. I'm a software developer, so honestly, I'm on the internet almost all day. Every morning, I follow the same routine. First, I check the news on my phone. Then, I open our team chat to see if anything happened overnight. At work, I use a lot of websites to search for solutions and read tech blogs, because technology changes so fast. In the evening, I relax by watching YouTube videos, usually about new gadgets or travel. I also do most of our shopping online, from groceries to the kids' school supplies, since it saves a lot of time. On weekends, I look up nice restaurants or places for family outings. And every Friday night, my family watches a movie on Netflix together. Yeah, that's how I use the internet.",
+        "IH": "Sure, I'd love to talk about that. I'm a software developer, so honestly, I'm on the internet almost all day. Every morning, I follow the same routine. First, I check the news on my phone. Then, I open our team chat to see if anything happened overnight. At work, I use a lot of websites to search for solutions and read tech blogs, because technology changes so fast. I really enjoy watching YouTube videos about new gadgets or travel in my free time. I also do most of our shopping online, from groceries to the kids' school supplies, since it saves a lot of time. On weekends, I look up nice restaurants or places for family outings. And every Friday night, my family watches a movie on Netflix together. Yeah, that's how I use the internet.",
         "AL": "Sure, I'd love to talk about that. As a software developer, I pretty much live on the internet, so it's hard to imagine my life without it. My day starts the same way every morning. First, I check the news on my phone. Then, I open our team chat to see if anything blew up overnight, which happens more often than I'd like. At work, I'm constantly searching for answers to tricky problems and reading tech blogs, because if you stop learning in this field, you fall behind really quickly. During my lunch break, I sometimes watch short YouTube videos about new gadgets, just to give my brain a rest. In the evening, I handle a lot of family stuff online. I order groceries, pay the kids' academy fees, and book things for our weekend trips. It's so much faster than doing it in person. And every Friday night, the four of us pile onto the sofa and pick a movie on Netflix, which usually takes longer than the movie itself. I'd say that's my favorite way to use the internet, because it brings us all together. Yeah, that's pretty much what I do online."
       },
       "answersKo": {
@@ -362,7 +364,7 @@
           "먼저 휴대폰으로 뉴스를 확인해요.",
           "그다음 밤사이에 무슨 일이 있었는지 보려고 팀 채팅을 열어요.",
           "회사에서는 기술이 너무 빨리 바뀌어서 해결 방법을 검색하고 기술 블로그를 읽느라 여러 웹사이트를 많이 써요.",
-          "저녁에는 보통 새로운 전자기기나 여행에 관한 유튜브 영상을 보면서 쉬어요.",
+          "저는 여가 시간에 새 전자기기나 여행에 관한 유튜브 영상을 보는 걸 정말 즐겨요.",
           "시간이 많이 절약돼서 장보기부터 아이들 학용품까지 쇼핑도 대부분 온라인으로 해요.",
           "주말에는 괜찮은 식당이나 가족 나들이 장소를 찾아봐요.",
           "그리고 매주 금요일 밤엔 가족이 다 같이 넷플릭스로 영화를 봐요.",
@@ -396,7 +398,7 @@
         "IH 이상은 꽉 막힌 고속도로, 아이들과 할아버지의 모습처럼 장면 디테일을 넣으세요."
       ],
       "answers": {
-        "IM3": "Oh, a memorable holiday? Let me think. Last Chuseok, my family drove to my parents' house in Daejeon. The traffic was terrible, so it took almost four hours. Some of our relatives came too. We made songpyeon together and played yut. My kids had so much fun with their cousins. I'll never forget that Chuseok because my whole family was together for the first time in years. Yeah, that's my most memorable holiday.",
+        "IM3": "Oh, a memorable holiday? Let me think. Last Chuseok, my family drove to my parents' house in Daejeon. The traffic was terrible, so it took almost four hours. Some of our relatives came too. We made songpyeon together and played yut. The most memorable part was watching my kids play with their cousins. I'll never forget that Chuseok because my whole family was together for the first time in years. Yeah, that's my most memorable holiday.",
         "IH": "Oh, a memorable holiday? Let me think. Last Chuseok was really special for me. My family drove down to my parents' house in Daejeon, where I grew up. The traffic was terrible, so a two-hour drive took almost four hours. My uncle's family also came from Busan, which doesn't happen often. On the first night, we all sat on the floor and made songpyeon together. My daughter's rice cakes looked really funny, and everyone laughed. The next morning, we visited my grandparents' graves, and in the afternoon, we played yut in the yard. My dad was so happy to see all his grandkids in one place, and we stayed up late talking. I'll never forget that Chuseok because my whole family was together for the first time in years. Yeah, that's my most memorable holiday.",
         "AL": "Oh, a memorable holiday? Let me think. I'd have to say last Chuseok, because it was really special for our family. We drove down to my parents' house in Daejeon, where I grew up. The highway was a total parking lot, so a two-hour drive turned into almost four hours, and the kids kept asking, 'Are we there yet?' But it was totally worth it, because my uncle's family also came up from Busan, which almost never happens. On the first night, we all sat around a big table and made songpyeon together. My daughter's rice cakes came out in all kinds of weird shapes, and my mom said she'd have pretty kids someday, which is an old saying for people who make nice songpyeon, so everyone burst out laughing. The next morning, we visited my grandparents' graves, and in the afternoon, we played yut in the yard. The kids got so competitive that my dad had to be the referee. Seeing him surrounded by all his grandkids, smiling from ear to ear, really touched me. I'll never forget that Chuseok because my whole family was together for the first time in years. Yeah, that's my most memorable holiday."
       },
@@ -408,7 +410,7 @@
           "차가 엄청 막혀서 거의 4시간이 걸렸어요.",
           "친척들도 몇 분 오셨어요.",
           "다 같이 송편을 빚고 윷놀이를 했어요.",
-          "아이들은 사촌들이랑 정말 재미있게 놀았어요.",
+          "가장 기억에 남는 건 아이들이 사촌들과 노는 모습을 본 거였어요.",
           "몇 년 만에 처음으로 온 가족이 다 모였기 때문에 그 추석은 절대 못 잊을 거예요.",
           "네, 그게 제 가장 기억에 남는 명절이에요."
         ],
@@ -454,9 +456,9 @@
         "IH 이상은 산 시기(8년 전 이사 올 때), 얽힌 가족 추억을 넣으세요."
       ],
       "answers": {
-        "IM3": "Oh, my favorite furniture? That's easy. It's the big gray sofa in our living room. It faces the TV, and there's a window behind it. We bought it when we moved into this apartment eight years ago. It's not very new, but it's super comfortable. Every Friday night, my family sits on it and watches a movie together. Sometimes I take a nap on it on weekends. Yeah, that's why I love our sofa.",
+        "IM3": "Oh, my favorite furniture? That's easy. It's the big gray sofa in our living room. It faces the TV, and there's a window behind it. There's a tall lamp on the left and a small side table on the right. We bought it when we moved into this apartment eight years ago. It's not very new, but it's super comfortable. Every Friday night, my family sits on it and watches a movie together. Sometimes I take a nap on it on weekends. Yeah, that's why I love our sofa.",
         "IH": "Oh, my favorite furniture? That's easy. It's the big gray sofa in our living room. It's an L-shaped sofa, so all four of us can sit on it at the same time. It faces the TV, and behind it, there's a big window that looks out on the park. We bought it when we moved into this apartment eight years ago. It's not very new, but it's super comfortable, and the cushions are really soft. Every Friday night, we have a family movie night, and everyone grabs their favorite spot on the sofa. On weekends, I sometimes take a nap there after jogging. My kids have spilled juice on it a few times, but luckily, the cover is washable. Yeah, that's why our sofa is my favorite piece of furniture.",
-        "AL": "Oh, my favorite piece of furniture? That's an easy one. It's definitely the big gray sofa in our living room. It's an L-shaped sofa, so all four of us can stretch out on it at the same time without fighting over space, well, most of the time. It faces the TV, and right behind it, there's a big window, so on sunny afternoons the whole living room fills with light. We bought it when we moved into this apartment eight years ago, and I remember spending a whole weekend at the furniture store testing every sofa they had. It's not very new, but it's super comfortable, and it's kind of shaped itself to our bodies over the years. Every Friday night, we have our family movie night, and each of us has our own spot. My son always takes the corner, and my daughter curls up next to me with a blanket. On lazy weekend afternoons, I sometimes doze off there after my morning jog. The cover has survived juice, popcorn, and even crayons, so thank goodness it's washable. Honestly, that sofa holds so many family memories that I can't imagine replacing it. Yeah, that's why it's my favorite piece of furniture."
+        "AL": "Oh, my favorite piece of furniture? That's an easy one. It's definitely the big gray sofa in our living room. It's an L-shaped sofa, so all four of us can stretch out on it at the same time without fighting over space, well, most of the time. It faces the TV, and right behind it, there's a big window, so on sunny afternoons the whole living room fills with light. We bought it when we moved into this apartment eight years ago, and I remember spending a whole weekend at the furniture store testing every sofa they had. It's not very new, but it's super comfortable, and it's kind of shaped itself to our bodies over the years. Every Friday night, we have our family movie night, and each of us has our own spot. My son always takes the corner, and my daughter curls up next to me with a blanket. Honestly, there's nothing better than dozing off there after my morning jog on a lazy weekend afternoon. The cover has survived juice, popcorn, and even crayons, so thank goodness it's washable. Honestly, that sofa holds so many family memories that I can't imagine replacing it. Yeah, that's why it's my favorite piece of furniture."
       },
       "answersKo": {
         "IM3": [
@@ -464,6 +466,7 @@
           "그건 쉽죠.",
           "거실에 있는 큰 회색 소파예요.",
           "TV를 마주 보고 있고, 뒤에는 창문이 있어요.",
+          "왼쪽에는 키 큰 스탠드가 있고 오른쪽에는 작은 사이드 테이블이 있어요.",
           "8년 전에 이 아파트로 이사 올 때 샀어요.",
           "아주 새것은 아니지만, 정말 편해요.",
           "매주 금요일 밤에 가족이 거기 앉아서 다 같이 영화를 봐요.",
@@ -493,7 +496,7 @@
           "아주 새것은 아니지만 정말 편하고, 몇 년 지나면서 저희 몸에 맞게 모양이 잡힌 것 같아요.",
           "매주 금요일 밤엔 가족 영화의 밤을 하는데, 각자 자기 자리가 있어요.",
           "아들은 항상 구석 자리를 차지하고, 딸은 담요를 덮고 제 옆에 웅크리고 앉아요.",
-          "느긋한 주말 오후엔 아침 조깅을 하고 나서 가끔 거기서 꾸벅꾸벅 졸아요.",
+          "솔직히 느긋한 주말 오후에 아침 조깅을 하고 나서 거기서 꾸벅꾸벅 조는 것만큼 좋은 건 없어요.",
           "커버가 주스, 팝콘, 심지어 크레용까지 견뎌냈는데, 빨 수 있어서 정말 다행이에요.",
           "솔직히 그 소파엔 가족 추억이 너무 많아서 바꾸는 건 상상도 못 하겠어요.",
           "네, 그래서 그게 제가 제일 좋아하는 가구예요."
@@ -511,15 +514,15 @@
         "개발자인데 앱 문제로 고생했다는 아이러니를 AL에서 살짝 넣으면 재밌는 답이 됩니다."
       ],
       "answers": {
-        "IM3": "Oh, yes, I had a problem like that once. Last year, I wanted to pay my son's academy fee. But I had a problem with my banking app. I typed the wrong password five times, and my account got locked. The fee was due that day, so I was really worried. So I went to the bank near my office during lunch. The staff helped me unlock it in ten minutes. Yeah, that's how I solved it.",
-        "IH": "Oh, yes, I had a problem like that once. Last year, I was trying to pay my son's academy fee on the due date. But I had a problem with my banking app. The app had just updated, and it asked me to log in again. I couldn't remember my password, and after five wrong tries, my account got locked. I tried to reset it online, but it needed a code from my old phone number. I didn't know what to do, so I went to the bank near my office during my lunch break. I had to wait about 30 minutes, but luckily, the staff member was really helpful. She checked my ID and unlocked my account. I paid the fee right there. Yeah, that's how I solved it.",
-        "AL": "Oh, yes, I had a problem like that once, and it was kind of embarrassing for a software developer. Last year, I was trying to pay my son's academy fee, and it was due that same day. But I had a problem with my banking app. It had just updated overnight, and it suddenly asked me to log in again. For some reason, my mind went completely blank, and after five wrong tries, my account got locked. I tried to reset the password online, but it wanted a verification code sent to my old phone number, which I hadn't used in years. I didn't know what to do, so I rushed to the bank branch near my office during my lunch break. The waiting room was packed, and I ended up waiting about 30 minutes, checking the clock the whole time. Luckily, the staff member was really patient. She checked my ID, updated my phone number, and unlocked my account in just a few minutes. I paid the fee right there and made it back just in time for my afternoon meeting. Since then, I always use a password manager, and I make sure my contact info is up to date. Yeah, that's how I solved it."
+        "IM3": "Oh, yes, I had a problem like that once. Last year, I wanted to pay my son's academy fee. I had a problem with my banking app. I typed the wrong password five times, and my account got locked. The fee was due that day, so I was really worried. So I went to the bank near my office during lunch. The staff helped me unlock it in ten minutes. Yeah, that's how I solved it.",
+        "IH": "Oh, yes, I had a problem like that once. Last year, I was trying to pay my son's academy fee on the due date. But I had a problem with my banking app. The app had just updated, and it asked me to log in again. I couldn't remember my password, and after five wrong tries, my account got locked. I tried to reset it online, but it needed a code from my old phone number. I didn't know what to do, so I went to the bank near my office during my lunch break. I had to wait in line for about 30 minutes. Luckily, the staff member was really helpful. She checked my ID and unlocked my account. I paid the fee right there. Yeah, that's how I solved it.",
+        "AL": "Oh, yes, I had a problem like that once, and it was kind of embarrassing for a software developer. Last year, I was trying to pay my son's academy fee, and it was due that same day. But I had a problem with my banking app. It had just updated overnight, and it suddenly asked me to log in again. For some reason, my mind went completely blank, and after five wrong tries, my account got locked. I tried to reset the password online, but it wanted a verification code sent to my old phone number, which I hadn't used in years. I didn't know what to do, so I rushed to the bank branch near my office during my lunch break. The waiting room was packed, and I ended up waiting about 30 minutes, checking the clock the whole time. Luckily, the staff member was really patient. She checked my ID, updated my phone number, and unlocked my account in just a few minutes. I paid the fee right there and made it back just in time for my afternoon meeting. Since then, I always make sure to keep my contact info up to date and use a password manager. Yeah, that's how I solved it."
       },
       "answersKo": {
         "IM3": [
           "아, 네, 그런 문제가 한 번 있었어요.",
           "작년에 아들 학원비를 내려고 했어요.",
-          "그런데 은행 앱에 문제가 생겼어요.",
+          "은행 앱에 문제가 생겼어요.",
           "비밀번호를 다섯 번 잘못 입력해서 계정이 잠겼어요.",
           "학원비가 그날까지 내야 하는 거라 정말 걱정됐어요.",
           "그래서 점심시간에 회사 근처 은행에 갔어요.",
@@ -534,7 +537,8 @@
           "비밀번호가 기억이 안 났고, 다섯 번 틀리고 나니 계정이 잠겼어요.",
           "온라인으로 재설정하려고 했는데, 예전 휴대폰 번호로 오는 인증번호가 필요했어요.",
           "어떻게 해야 할지 몰라서 점심시간에 회사 근처 은행에 갔어요.",
-          "30분 정도 기다려야 했지만, 다행히 직원분이 정말 많이 도와줬어요.",
+          "30분 정도 줄을 서서 기다려야 했어요.",
+          "다행히 직원분이 정말 많이 도와주셨어요.",
           "그분이 제 신분증을 확인하고 계정 잠금을 풀어줬어요.",
           "저는 그 자리에서 학원비를 냈어요.",
           "네, 그렇게 해결했어요."
@@ -551,7 +555,7 @@
           "다행히 직원분이 정말 참을성 있게 도와줬어요.",
           "그분이 제 신분증을 확인하고 휴대폰 번호를 업데이트해서 몇 분 만에 계정 잠금을 풀어줬어요.",
           "저는 그 자리에서 학원비를 내고 오후 회의에 딱 맞춰 돌아왔어요.",
-          "그 뒤로는 항상 비밀번호 관리 앱을 쓰고, 연락처 정보가 최신인지 꼭 확인해요.",
+          "그 뒤로는 항상 연락처 정보를 최신으로 유지하고 비밀번호 관리 앱을 쓰도록 신경 써요.",
           "네, 그렇게 해결했어요."
         ]
       }
@@ -559,51 +563,129 @@
   ],
   "patterns": [
     {
-      "pid": "like#5",
-      "en": "When it comes to seasons, I'm a huge fan of fall.",
-      "ko": "계절로 말하자면, 저는 가을을 정말 좋아해요.",
+      "level": "IM3",
+      "pid": "routine#0",
+      "en": "I go jogging by the Tancheon stream about three times a week.",
+      "ko": "탄천에서 일주일에 세 번 정도 조깅을 해요.",
       "q": "unexpected-weather"
     },
     {
+      "level": "IM3",
       "pid": "place#2",
       "en": "It's only a 10-minute walk from my house.",
       "ko": "우리 집에서 걸어서 10분밖에 안 걸려요.",
       "q": "unexpected-transport"
     },
     {
-      "pid": "reason#4",
-      "en": "Whenever I sort the recycling with my kids, I feel like we're doing something good.",
-      "ko": "아이들과 분리수거를 할 때마다 좋은 일을 하고 있는 기분이 들어요.",
-      "q": "unexpected-recycling"
-    },
-    {
+      "level": "IM3",
       "pid": "change#0",
       "en": "I used to carry a flip phone, but now I do almost everything on my smartphone.",
       "ko": "예전엔 폴더폰을 들고 다녔는데, 지금은 거의 모든 걸 스마트폰으로 해요.",
       "q": "unexpected-phone"
     },
     {
-      "pid": "routine#3",
-      "en": "First, I check the news on my phone. Then, I open our team chat.",
-      "ko": "먼저 휴대폰으로 뉴스를 확인해요. 그다음 팀 채팅방을 열어요.",
+      "level": "IM3",
+      "pid": "memory#2",
+      "en": "The most memorable part was watching my kids play with their cousins.",
+      "ko": "가장 기억에 남는 건 아이들이 사촌들과 노는 모습을 본 거였어요.",
+      "q": "unexpected-holiday"
+    },
+    {
+      "level": "IM3",
+      "pid": "describe#2",
+      "en": "There's a tall lamp on the left and a small side table on the right.",
+      "ko": "왼쪽에는 키 큰 스탠드가 있고 오른쪽에는 작은 사이드 테이블이 있어요.",
+      "q": "unexpected-furniture"
+    },
+    {
+      "level": "IM3",
+      "pid": "problem#1",
+      "en": "I had a problem with my banking app.",
+      "ko": "은행 앱에 문제가 생겼어요.",
+      "q": "unexpected-bank"
+    },
+    {
+      "level": "IH",
+      "pid": "like#4",
+      "en": "I'm the kind of person who loves running in cool weather.",
+      "ko": "저는 선선한 날씨에 달리는 걸 정말 좋아하는 사람이에요.",
+      "q": "unexpected-weather"
+    },
+    {
+      "level": "IH",
+      "pid": "place#4",
+      "en": "It's located just a 10-minute walk from my house, so it's easy to get to.",
+      "ko": "집에서 걸어서 10분 거리에 있어서 가기 편해요.",
+      "q": "unexpected-transport"
+    },
+    {
+      "level": "IH",
+      "pid": "reason#4",
+      "en": "Whenever I sort the recycling with my kids, I feel like we're doing something good for the planet.",
+      "ko": "아이들과 분리수거를 할 때마다 지구를 위해 좋은 일을 하고 있는 기분이 들어요.",
+      "q": "unexpected-recycling"
+    },
+    {
+      "level": "IH",
+      "pid": "change#3",
+      "en": "The biggest difference is that we're always connected now.",
+      "ko": "가장 큰 차이는 이제 우리가 항상 연결되어 있다는 거예요.",
+      "q": "unexpected-phone"
+    },
+    {
+      "level": "IH",
+      "pid": "like#0",
+      "en": "I really enjoy watching YouTube videos about new gadgets or travel in my free time.",
+      "ko": "저는 여가 시간에 새 전자기기나 여행에 관한 유튜브 영상을 보는 걸 정말 즐겨요.",
       "q": "unexpected-internet"
     },
     {
+      "level": "IH",
+      "pid": "problem#3",
+      "en": "Luckily, the staff member was really helpful.",
+      "ko": "다행히 직원분이 정말 많이 도와주셨어요.",
+      "q": "unexpected-bank"
+    },
+    {
+      "level": "AL",
+      "pid": "like#5",
+      "en": "When it comes to seasons, I'm a huge fan of fall, hands down.",
+      "ko": "계절로 말하자면, 저는 단연 가을을 정말 좋아해요.",
+      "q": "unexpected-weather"
+    },
+    {
+      "level": "AL",
+      "pid": "reason#4",
+      "en": "Whenever I sort the recycling with my kids, I feel like we're doing something small but meaningful for the planet.",
+      "ko": "아이들과 분리수거를 할 때마다 지구를 위해 작지만 의미 있는 일을 하고 있는 기분이 들어요.",
+      "q": "unexpected-recycling"
+    },
+    {
+      "level": "AL",
+      "pid": "change#3",
+      "en": "The biggest difference is that we're connected 24 hours a day now.",
+      "ko": "가장 큰 차이는 이제 우리가 하루 24시간 연결되어 있다는 거예요.",
+      "q": "unexpected-phone"
+    },
+    {
+      "level": "AL",
       "pid": "memory#5",
       "en": "I'll never forget that Chuseok because my whole family was together for the first time in years.",
       "ko": "몇 년 만에 온 가족이 다 모였기 때문에 그 추석을 절대 잊지 못할 거예요.",
       "q": "unexpected-holiday"
     },
     {
-      "pid": "describe#3",
-      "en": "It's not very new, but it's super comfortable.",
-      "ko": "아주 새것은 아니지만 정말 편해요.",
+      "level": "AL",
+      "pid": "reason#5",
+      "en": "Honestly, there's nothing better than dozing off there after my morning jog on a lazy weekend afternoon.",
+      "ko": "솔직히 느긋한 주말 오후에 아침 조깅을 하고 나서 거기서 꾸벅꾸벅 조는 것만큼 좋은 건 없어요.",
       "q": "unexpected-furniture"
     },
     {
-      "pid": "problem#1",
-      "en": "I had a problem with my banking app.",
-      "ko": "은행 앱에 문제가 생겼어요.",
+      "level": "AL",
+      "pid": "problem#5",
+      "en": "Since then, I always make sure to keep my contact info up to date and use a password manager.",
+      "ko": "그 뒤로는 항상 연락처 정보를 최신으로 유지하고 비밀번호 관리 앱을 쓰도록 신경 써요.",
       "q": "unexpected-bank"
     }
   ]

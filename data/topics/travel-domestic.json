@@ -112,9 +112,9 @@
         "'회의와 코드 리뷰에서 벗어나 바다를 본다'는 이유를 넣으면 자연스럽게 감정이 들어갑니다."
       ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about my favorite place in Korea. It's Gangneung. Gangneung is a city on the east coast. It takes about two and a half hours by car from my apartment in Bundang. I usually go there with my family. We walk along the beach and visit the coffee street. The coffee is really good there, and the ocean view is amazing. My kids love playing in the sand. My job is pretty busy, so it's a nice break from work. So yeah, that's why I really like Gangneung.",
+        "IM3": "Sure, I'd love to talk about my favorite place in Korea. It's Gangneung. Gangneung is a city on the east coast. It takes about two and a half hours by car from my apartment in Bundang. I usually go there with my family. We walk along the beach and visit the coffee street. It's a beautiful place with great coffee and an amazing ocean view. My kids love playing in the sand. It helps me take a break from my busy job. So yeah, that's why I really like Gangneung.",
         "IH": "Sure, I'd love to talk about my favorite place in Korea. It's definitely Gangneung. Gangneung is a city on the east coast, and it's right next to the ocean. It's located about two and a half hours from Bundang by car, so it's easy to get to. I usually go there with my family, maybe twice a year. We leave early on Saturday morning to avoid traffic and stay for two nights. When we get there, we walk along Gyeongpo Beach, and the kids run around in the sand. Then we go to Anmok coffee street. It's famous for its cafes with ocean views. I always order an Americano and just look at the waves. Whenever I see the ocean, I feel so relaxed. At work, I'm always in meetings or reviewing code, so the sea feels really fresh to me. So yeah, that's why I really like Gangneung.",
-        "AL": "Oh, a place in Korea? Let me think. I'd have to say Gangneung, hands down. It's a city on the east coast, so you can see the ocean almost everywhere you go. It's located about two and a half hours from Bundang by car, so it's easy to get to. I usually go with my family, the four of us packed into our car with way too many snacks. Our routine is pretty much the same every time. We check into a hotel near Gyeongpo Beach, and the kids head straight for the water. My son likes to jump over the waves, and my daughter collects shells. Later, we go to Anmok coffee street, which is famous for its seaside cafes. I grab an Americano, sit by the window, and just watch the waves for a while. Honestly, it's the best coffee I've ever had, maybe because of the view. What I love most is how calm I feel there. My life in Bundang is pretty busy because I usually have a lot of meetings and projects, and my phone never stops buzzing. But in Gangneung, I can finally slow down. It's like hitting a reset button. So yeah, that's why Gangneung is my favorite place in Korea."
+        "AL": "Oh, a place in Korea? Let me think. I'd have to say Gangneung, hands down. It's a city on the east coast, so you can see the ocean almost everywhere you go. It's located about two and a half hours from Bundang by car, so it's easy to get to. I usually go with my family, the four of us packed into our car with way too many snacks. Our routine is pretty much the same every time. We check into a hotel near Gyeongpo Beach, and the kids head straight for the water. My son likes to jump over the waves, and my daughter collects shells. Later, we go to Anmok coffee street, which is famous for its seaside cafes. I grab an Americano, sit by the window, and just watch the waves for a while. Honestly, there's nothing better than a cup of coffee with an ocean view. It has a peaceful atmosphere that makes me feel completely relaxed. My life in Bundang is pretty busy because I usually have a lot of meetings and projects, and my phone never stops buzzing. But in Gangneung, I can finally slow down. It's like hitting a reset button. So yeah, that's why Gangneung is my favorite place in Korea."
       },
       "answersKo": {
         "IM3": [
@@ -124,9 +124,9 @@
           "분당에 있는 저희 아파트에서 차로 두 시간 반 정도 걸려요.",
           "저는 보통 가족이랑 같이 가요.",
           "해변을 따라 걷고 커피 거리에도 가요.",
-          "거기 커피가 정말 맛있고, 바다 경치도 끝내줘요.",
+          "맛있는 커피와 멋진 바다 전망이 있는 아름다운 곳이에요.",
           "아이들은 모래에서 노는 걸 정말 좋아해요.",
-          "제 일이 꽤 바빠서, 일에서 벗어나 잠깐 쉬기에 딱 좋아요.",
+          "바쁜 일상에서 벗어나 쉬는 데 도움이 돼요.",
           "네, 그래서 제가 강릉을 정말 좋아해요."
         ],
         "IH": [
@@ -156,8 +156,8 @@
           "아들은 파도 뛰어넘는 걸 좋아하고, 딸은 조개껍데기를 모아요.",
           "나중에는 바닷가 카페로 유명한 안목 커피 거리에 가요.",
           "아메리카노를 하나 사서 창가에 앉아, 한동안 그냥 파도를 바라봐요.",
-          "솔직히 제가 마셔 본 커피 중에 최고예요, 아마 경치 때문인 것 같기도 하고요.",
-          "제가 제일 좋아하는 건 거기서 느끼는 그 평온함이에요.",
+          "솔직히 바다를 보며 마시는 커피 한 잔보다 좋은 건 없어요.",
+          "그곳은 저를 완전히 편안하게 해주는 평화로운 분위기가 있어요.",
           "분당에서의 제 생활은 보통 회의랑 프로젝트가 많아서 꽤 바쁘고, 휴대폰은 쉴 새 없이 울려요.",
           "그런데 강릉에서는 드디어 여유를 가질 수 있어요.",
           "마치 리셋 버튼을 누르는 것 같아요.",
@@ -178,7 +178,7 @@
       "answers": {
         "IM3": "Okay, let me tell you about how I prepare for a trip. I usually travel with my family. First, we choose a place together. My kids usually want to go to the beach. Then I book a hotel on my phone. Before I go on a trip, I always check the weather forecast. The night before, I pack clothes, chargers, and snacks for the car. My kids pack their own bags, too. On the day of the trip, we leave early in the morning to avoid traffic. Yeah, that's how I usually get ready for a trip.",
         "IH": "Sure, I'd love to talk about how I get ready for a trip. These days, I usually travel with my family, so planning is a bit of a team project. About a month before, we choose a place together at the dinner table. My kids almost always vote for the beach. Then I book a hotel on my phone. I always look for a family room, because the four of us need a lot of space. Before I go on a trip, I always check the weather forecast, because rain can ruin a beach trip. The night before, we all pack. I pack light clothes, chargers, and some snacks for the car. My kids pack their own bags, but I always double-check them, because my son once forgot his shoes. On the day, we leave around six in the morning to avoid traffic. So yeah, that's pretty much how I prepare for a trip.",
-        "AL": "Oh, preparing for a trip? Let me think. Well, I usually travel with my family, so it takes a little more planning than it used to. It usually starts at the dinner table about a month before. We throw out a few ideas, and the kids almost always vote for the beach, so Gangneung wins most of the time. After that, I book a hotel on an app. I'm a developer, so I kind of can't help myself. I compare prices, read reviews, and even make a little checklist on my phone. Before I go on a trip, I always check the weather forecast, because rain can ruin a beach trip. The night before we leave, the whole family packs together. I pack light clothes, chargers, and a big bag of snacks for the car, and my kids pack their own backpacks. Of course, I double-check them, because my son once showed up with three game controllers and no socks. I also make a playlist for the drive, with some 90s ballads for me and K-pop for the kids. On the day, we hit the road around six to beat the traffic. So yeah, that's pretty much how I get ready for a trip."
+        "AL": "Oh, preparing for a trip? Let me think. Well, I usually travel with my family, so it takes a little more planning than it used to. It usually starts at the dinner table about a month before. We throw out a few ideas, and the kids almost always vote for the beach, so Gangneung wins most of the time. After that, I book a hotel on an app. I'm a developer, and I'm the kind of person who loves planning every little detail. I compare prices, read reviews, and even make a little checklist on my phone. Before I go on a trip, I always check the weather forecast, because rain can ruin a beach trip. The night before we leave, the whole family packs together. I pack light clothes, chargers, and a big bag of snacks for the car, and my kids pack their own backpacks. Of course, I double-check them, because my son once showed up with three game controllers and no socks. I also make a playlist for the drive, with some 90s ballads for me and K-pop for the kids. On the day, we hit the road around six to beat the traffic. So yeah, that's pretty much how I get ready for a trip."
       },
       "answersKo": {
         "IM3": [
@@ -214,7 +214,7 @@
           "보통 한 달쯤 전에 저녁 식탁에서 시작돼요.",
           "몇 가지 아이디어를 던져 보는데, 아이들이 거의 항상 바닷가에 표를 던져서 대부분 강릉이 뽑혀요.",
           "그다음엔 앱으로 호텔을 예약해요.",
-          "제가 개발자라서 어쩔 수가 없더라고요.",
+          "저는 개발자이고, 사소한 것 하나까지 계획하는 걸 좋아하는 사람이에요.",
           "가격을 비교하고, 리뷰를 읽고, 휴대폰에 작은 체크리스트까지 만들어요.",
           "여행 가기 전에는 항상 일기예보를 확인해요, 비가 오면 바닷가 여행을 망칠 수 있거든요.",
           "출발 전날 밤에는 온 가족이 같이 짐을 싸요.",
@@ -237,8 +237,8 @@
         "'아이들이 투덜대다가 해가 뜨자 신이 났다'처럼 반전 장면을 하나 넣으면 이야기가 살아나요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about a memorable trip. About three years ago, I went to Jeju Island with my family. We took a plane from Gimpo, and it only took an hour. We rented a car and drove around the island. One morning, we woke up at five and climbed Seongsan Ilchulbong to see the sunrise. My kids were really tired and grumpy. But when the sun came up, they were so excited. I'll never forget that trip because we watched the sunrise together. Yeah, that's my most memorable trip in Korea.",
-        "IH": "Sure, I'd love to talk about a memorable trip. About three years ago, I went to Jeju Island with my family for four days. We flew from Gimpo, rented a car, and drove around the whole island. We ate black pork, visited some beaches, and the kids even rode horses. But the best part was the last morning. We woke up at five and climbed Seongsan Ilchulbong, a famous hill, to see the sunrise. It was dark and windy, and my kids complained the whole way up. My daughter said her legs hurt, and my son wanted to go back to bed. But when the sun came up over the ocean, they both went quiet. Then they started taking pictures like crazy. I'll never forget that trip because it was the first time we watched the sunrise as a family. Yeah, that's my most memorable trip in Korea.",
+        "IM3": "Okay, let me tell you about a memorable trip. About three years ago, I went to Jeju Island with my family. We took a plane from Gimpo, and it only took an hour. We rented a car and drove around the island. I remember one time when we woke up at five and climbed Seongsan Ilchulbong to see the sunrise. My kids were really tired and grumpy. But when the sun came up, they were so excited. I'll never forget that trip because we watched the sunrise together. Yeah, that's my most memorable trip in Korea.",
+        "IH": "Sure, I'd love to talk about a memorable trip. About three years ago, I went to Jeju Island with my family for four days. We flew from Gimpo, rented a car, and drove around the whole island. We ate black pork, visited some beaches, and the kids even rode horses. But the best part was the last morning. We woke up at five and climbed Seongsan Ilchulbong, a famous hill, to see the sunrise. It was dark and windy, and my kids complained the whole way up. My daughter said her legs hurt, and my son wanted to go back to bed. To my surprise, they both went quiet when the sun came up over the ocean. Then they started taking pictures like crazy. I'll never forget that trip because it was the first time we watched the sunrise as a family. Yeah, that's my most memorable trip in Korea.",
         "AL": "Oh, a memorable trip? Let me think. There have been a few, but the one that really stands out is our family trip to Jeju about three years ago. It was early fall, so the weather was perfect. We flew from Gimpo, picked up a rental car, and spent four days driving around the island. We had grilled black pork, played on the beaches, and the kids even rode little Jeju horses. But the real highlight came on the last morning. I had this big idea to watch the sunrise from Seongsan Ilchulbong, so I dragged everyone out of bed at five. Honestly, nobody was happy with me. It was dark and windy, my daughter kept saying her legs hurt, and my son was half asleep the whole way up. I was starting to think it was a terrible idea. But then the sun slowly came up over the ocean, and the whole sky turned orange. Both kids went completely quiet, and then they started taking pictures like crazy. My son even said, 'Okay, Dad, this was worth it.' I'll never forget that trip because it was such a simple moment, but we all shared it together. Yeah, that's my most memorable trip in Korea."
       },
       "answersKo": {
@@ -247,7 +247,7 @@
           "3년 전쯤에 가족이랑 제주도에 갔어요.",
           "김포에서 비행기를 탔는데, 한 시간밖에 안 걸렸어요.",
           "차를 빌려서 섬을 돌아다녔어요.",
-          "어느 날 아침에는 5시에 일어나서 일출을 보러 성산일출봉에 올라갔어요.",
+          "한번은 새벽 다섯 시에 일어나서 일출을 보려고 성산일출봉에 올라갔던 기억이 나요.",
           "아이들은 정말 피곤해서 투덜거렸어요.",
           "그런데 해가 뜨니까 정말 신나 했어요.",
           "다 같이 일출을 봤기 때문에 그 여행은 절대 잊지 못할 거예요.",
@@ -262,7 +262,7 @@
           "5시에 일어나서 일출을 보려고 유명한 언덕인 성산일출봉에 올라갔어요.",
           "어둡고 바람도 많이 불어서, 아이들이 올라가는 내내 불평했어요.",
           "딸은 다리가 아프다고 하고, 아들은 다시 자러 가고 싶어 했어요.",
-          "그런데 바다 위로 해가 뜨니까 둘 다 조용해졌어요.",
+          "놀랍게도, 바다 위로 해가 떠오르자 둘 다 조용해졌어요.",
           "그러더니 미친 듯이 사진을 찍기 시작했어요.",
           "가족이 다 같이 일출을 본 게 처음이라서 그 여행은 절대 잊지 못할 거예요.",
           "네, 그게 한국에서 제일 기억에 남는 여행이에요."
@@ -299,8 +299,8 @@
       ],
       "answers": {
         "IM3": "Oh, how my trips have changed? Let me think. When I was in college, I traveled with my friends. We went to Busan by night bus because it was cheap. We stayed in a small guesthouse and ate cheap food. Now I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car. We stay in nice hotels, and I book everything on my phone. It's more comfortable, but I need to plan a lot more. Yeah, that's how my trips have changed.",
-        "IH": "Sure, I'd love to talk about that. My trips have changed a lot over the years. Back in college, I traveled with my friends, and we didn't have much money. Once, we took a night bus to Busan, slept in a cheap guesthouse, and ate street food on Haeundae Beach. We didn't plan anything. We just went. Now I'm in my mid-forties, and I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car. We stay in a comfortable hotel, and I book everything on my phone. These days, the trip is all about the kids, so we choose places with beaches or parks. The biggest difference is freedom. In the past, I could go anywhere, anytime. Now I need a plan. But honestly, seeing my kids have fun is even better. Yeah, that's how my trips have changed.",
-        "AL": "Oh, that's a good question. Let me think. My trips have changed a lot, mostly because my life has changed. Back in college, my friends and I had a lot of time but almost no money. I remember one summer we took a night bus to Busan, slept in a tiny guesthouse with six beds in one room, and lived on street food for three days. We didn't have smartphones, so we just asked people for directions. It was messy, but it was so much fun. Fast forward about twenty-five years, and now I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car, usually to Gangneung or somewhere with a beach. I book a family room on an app, check reviews, and plan the whole schedule around the kids. So it's way more comfortable, but it's also a lot more work. The biggest difference is the spontaneity. Back then, we could just pack a bag and go. Now there's a checklist for everything. But you know what? Watching my kids get excited about the ocean is worth all the planning. Yeah, that's how my trips have changed over the years."
+        "IH": "Sure, I'd love to talk about that. My trips have changed a lot over the years. Back in college, I traveled with my friends, and we didn't have much money. Once, we took a night bus to Busan, slept in a cheap guesthouse, and ate street food on Haeundae Beach. We didn't plan anything. We just went. Now I'm in my mid-forties, and I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car. We stay in a comfortable hotel, and I book everything on my phone. These days, the trip is all about the kids, so we choose places with beaches or parks. The biggest difference is that I don't have as much freedom. In the past, I could go anywhere, anytime. Now I need a plan. But honestly, seeing my kids have fun is even better. Yeah, that's how my trips have changed.",
+        "AL": "Oh, that's a good question. Let me think. My trips have changed a lot, mostly because my life has changed. Back in college, my friends and I had a lot of time but almost no money. I remember one summer we took a night bus to Busan, slept in a tiny guesthouse with six beds in one room, and lived on street food for three days. We didn't have smartphones, so we just asked people for directions. It was messy, but it was so much fun. Fast forward about twenty-five years, and now I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car, usually to Gangneung or somewhere with a beach. I book a family room on an app, check reviews, and plan the whole schedule around the kids. So it's way more comfortable, but it's also a lot more work. The biggest difference is that we can't be spontaneous anymore. Back then, we could just pack a bag and go. Now there's a checklist for everything. But you know what? Watching my kids get excited about the ocean is worth all the planning. Yeah, that's how my trips have changed over the years."
       },
       "answersKo": {
         "IM3": [
@@ -326,7 +326,7 @@
           "예전에는 친구들이랑 야간 버스를 탔는데, 지금은 제가 차로 가족을 태우고 가요.",
           "편한 호텔에 묵고, 모든 걸 휴대폰으로 예약해요.",
           "요즘은 여행이 전부 아이들 중심이라서, 해변이나 공원이 있는 곳을 골라요.",
-          "가장 큰 차이는 자유예요.",
+          "가장 큰 차이는 예전만큼 자유롭지 않다는 거예요.",
           "예전에는 언제든 어디든 갈 수 있었어요.",
           "지금은 계획이 필요해요.",
           "그래도 솔직히 아이들이 즐거워하는 걸 보는 게 훨씬 더 좋아요.",
@@ -344,7 +344,7 @@
           "예전에는 친구들이랑 야간 버스를 탔는데, 지금은 제가 차로 가족을 태우고, 보통 강릉이나 해변이 있는 곳으로 가요.",
           "앱으로 패밀리룸을 예약하고, 리뷰를 확인하고, 전체 일정을 아이들에 맞춰 짜요.",
           "그래서 훨씬 편하긴 하지만, 일도 훨씬 많아요.",
-          "가장 큰 차이는 즉흥성이에요.",
+          "가장 큰 차이는 이제 즉흥적으로 떠날 수 없다는 거예요.",
           "그때는 그냥 가방 하나 싸서 떠날 수 있었어요.",
           "지금은 모든 것에 체크리스트가 있어요.",
           "그런데 있잖아요?",
@@ -356,51 +356,129 @@
   ],
   "patterns": [
     {
-      "pid": "place#3",
-      "en": "My favorite place to visit in Korea is Gangneung.",
-      "ko": "제가 한국에서 가장 좋아하는 여행지는 강릉이에요.",
+      "level": "IM3",
+      "pid": "describe#0",
+      "en": "It's a beautiful place with great coffee and an amazing ocean view.",
+      "ko": "맛있는 커피와 멋진 바다 전망이 있는 아름다운 곳이에요.",
       "q": "travel-domestic-describe"
     },
     {
+      "level": "IM3",
+      "pid": "reason#2",
+      "en": "It helps me take a break from my busy job.",
+      "ko": "바쁜 일상에서 벗어나 쉬는 데 도움이 돼요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "level": "IM3",
+      "pid": "people#0",
+      "en": "I usually travel with my family.",
+      "ko": "저는 보통 가족이랑 여행을 가요.",
+      "q": "travel-domestic-routine"
+    },
+    {
+      "level": "IM3",
+      "pid": "routine#2",
+      "en": "Before I go on a trip, I always check the weather forecast.",
+      "ko": "여행 가기 전에는 항상 일기예보를 확인해요.",
+      "q": "travel-domestic-routine"
+    },
+    {
+      "level": "IM3",
+      "pid": "memory#0",
+      "en": "I remember one time when we woke up at five and climbed Seongsan Ilchulbong to see the sunrise.",
+      "ko": "한번은 새벽 다섯 시에 일어나서 일출을 보려고 성산일출봉에 올라갔던 기억이 나요.",
+      "q": "travel-domestic-experience"
+    },
+    {
+      "level": "IM3",
+      "pid": "change#0",
+      "en": "I used to take a night bus with my friends, but now I drive my family in our car.",
+      "ko": "예전에는 친구들이랑 야간 버스를 탔는데, 지금은 제가 차로 가족을 태우고 가요.",
+      "q": "travel-domestic-compare"
+    },
+    {
+      "level": "IH",
       "pid": "place#4",
       "en": "It's located about two and a half hours from Bundang by car, so it's easy to get to.",
-      "ko": "분당에서 차로 두 시간 반 정도 거리에 있어서 가기 쉬워요.",
+      "ko": "분당에서 차로 두 시간 반 정도 거리라서 가기도 쉬워요.",
       "q": "travel-domestic-describe"
     },
     {
+      "level": "IH",
       "pid": "describe#4",
       "en": "It's famous for its cafes with ocean views.",
       "ko": "거기는 바다가 보이는 카페들로 유명해요.",
       "q": "travel-domestic-describe"
     },
     {
+      "level": "IH",
       "pid": "reason#4",
       "en": "Whenever I see the ocean, I feel so relaxed.",
-      "ko": "바다를 볼 때마다 정말 마음이 편해져요.",
+      "ko": "바다를 볼 때마다 마음이 정말 편안해져요.",
       "q": "travel-domestic-describe"
     },
     {
-      "pid": "people#0",
-      "en": "I usually travel with my family.",
-      "ko": "저는 보통 가족과 함께 여행해요.",
-      "q": "travel-domestic-routine"
-    },
-    {
+      "level": "IH",
       "pid": "routine#2",
-      "en": "Before I go on a trip, I always check the weather forecast.",
-      "ko": "여행을 떠나기 전에 저는 항상 일기예보를 확인해요.",
+      "en": "Before I go on a trip, I always check the weather forecast, because rain can ruin a beach trip.",
+      "ko": "여행 가기 전에는 항상 일기예보를 확인해요, 비가 오면 바닷가 여행을 망칠 수 있거든요.",
       "q": "travel-domestic-routine"
     },
     {
-      "pid": "memory#5",
-      "en": "I'll never forget that trip because we watched the sunrise together.",
-      "ko": "다 같이 일출을 봤기 때문에 그 여행은 절대 잊지 못할 거예요.",
+      "level": "IH",
+      "pid": "memory#3",
+      "en": "To my surprise, they both went quiet when the sun came up over the ocean.",
+      "ko": "놀랍게도, 바다 위로 해가 떠오르자 둘 다 조용해졌어요.",
       "q": "travel-domestic-experience"
     },
     {
-      "pid": "change#0",
-      "en": "I used to take a night bus with my friends, but now I drive my family in our car.",
-      "ko": "예전에는 친구들과 야간버스를 탔지만, 지금은 가족을 태우고 제 차로 다녀요.",
+      "level": "IH",
+      "pid": "change#3",
+      "en": "The biggest difference is that I don't have as much freedom.",
+      "ko": "가장 큰 차이는 예전만큼 자유롭지 않다는 거예요.",
+      "q": "travel-domestic-compare"
+    },
+    {
+      "level": "AL",
+      "pid": "place#4",
+      "en": "It's located about two and a half hours from Bundang by car, so it's easy to get to.",
+      "ko": "분당에서 차로 두 시간 반 정도 거리라서 가기도 쉬워요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "level": "AL",
+      "pid": "reason#5",
+      "en": "Honestly, there's nothing better than a cup of coffee with an ocean view.",
+      "ko": "솔직히 바다를 보며 마시는 커피 한 잔보다 좋은 건 없어요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "level": "AL",
+      "pid": "describe#5",
+      "en": "It has a peaceful atmosphere that makes me feel completely relaxed.",
+      "ko": "그곳은 저를 완전히 편안하게 해주는 평화로운 분위기가 있어요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "level": "AL",
+      "pid": "like#4",
+      "en": "I'm a developer, and I'm the kind of person who loves planning every little detail.",
+      "ko": "저는 개발자이고, 사소한 것 하나까지 계획하는 걸 좋아하는 사람이에요.",
+      "q": "travel-domestic-routine"
+    },
+    {
+      "level": "AL",
+      "pid": "memory#5",
+      "en": "I'll never forget that trip because it was such a simple moment, but we all shared it together.",
+      "ko": "정말 소박한 순간이었지만 다 같이 함께했기 때문에 그 여행은 절대 잊지 못할 거예요.",
+      "q": "travel-domestic-experience"
+    },
+    {
+      "level": "AL",
+      "pid": "change#3",
+      "en": "The biggest difference is that we can't be spontaneous anymore.",
+      "ko": "가장 큰 차이는 이제 즉흥적으로 떠날 수 없다는 거예요.",
       "q": "travel-domestic-compare"
     }
   ]
