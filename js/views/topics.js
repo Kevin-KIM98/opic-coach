@@ -11,10 +11,6 @@ export async function render(root, route) {
   root.innerHTML = html`
     <header class="topbar"><div class="title">주제별 학습</div><a class="icon-btn" href="#/settings">⚙️</a></header>
     <div class="chips">${raw(cats.map(([k, v]) => `<a class="chip ${k === cat ? 'active' : ''}" href="#/topics?cat=${k}">${v}</a>`).join(''))}</div>
-    <a class="card soft mt12 row between" href="#/focus">
-      <div class="grow"><div class="h3">⚡ 시간이 없다면</div>
-        <div class="xs muted mt8">목표 등급까지 필요한 주제만 골라 둔 집중 학습 + 서베이 추천 조합</div></div>
-      <span class="chev">›</span></a>
     ${idx.persona ? raw(personaCard(idx)) : ''}
     <p class="small muted mt12">${idx.categories[cat]?.desc || '설문 주제는 OPIc 2~10번, 롤플레이 11~13번, 고난도 14~15번에 출제됩니다. 우선순위 순으로 정렬되어 있어요.'}</p>
     <div class="list mt12">
@@ -33,13 +29,11 @@ function personaCard(idx) {
 }
 
 function topicRow(t) {
-  const learned = (t.expressions || []).filter((e, i) => store.exprInfo(`${t.id}#e${i}`).box >= 3).length;
-  const total = (t.expressions || []).length;
-  const practiced = store.state.practice.filter(p => p.topicId === t.id).length;
+  const p = store.topicProgress(t);
   return `<a class="list-row" href="#/topic/${t.id}">
     <div class="emoji">${t.emoji || '📘'}</div>
     <div class="grow"><div class="t">${t.title} <span class="xs muted" style="font-weight:500">${t.titleEn}</span></div>
-      <div class="s">표현 ${learned}/${total} 익힘 · 질문 ${(t.questions || []).length}개 · 답변 연습 ${practiced}회</div>
-      <div class="bar teal mt8" style="height:5px"><i style="width:${total ? learned / total * 100 : 0}%"></i></div></div>
+      <div class="s">표현 ${p.expr[0]}/${p.expr[1]} · 패턴 ${p.pat[0]}/${p.pat[1]} · 답안 연습 ${p.ans[0]}/${p.ans[1]}</div>
+      <div class="bar teal mt8" style="height:5px"><i style="width:${p.pct}%"></i></div></div>
     <span class="chev">›</span></a>`;
 }

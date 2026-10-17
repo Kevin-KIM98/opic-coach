@@ -4,11 +4,10 @@
 // 편집자 모드가 꺼져 있으면 앱 어디에도 저장소 주소·계정이 드러나지 않는다.
 export const CONFIG = {
   appName: 'OPIc Coach',
-  version: '1.7.0',
+  version: '2.0.0',
   // 기본 설정값 (설정 화면에서 변경 가능)
   defaults: {
     target: 'IM3',          // IM3 | IH | AL
-    plan: '8w',             // 4w | 8w | 12w
     ttsRate: 0.95,
     ttsVoice: '',
     recordAudio: true,      // 답변 오디오 녹음 (끄면 마이크를 음성 인식에만 쓴다)

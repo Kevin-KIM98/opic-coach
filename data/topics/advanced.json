@@ -13,21 +13,92 @@
     "AL을 노린다면 장점만 말하지 말고 'That said, ~ / On the other hand, ~' 로 반대 측면을 한 번 짚은 뒤 결론을 내리세요."
   ],
   "expressions": [
-    {"en": "Oh, that's a really interesting question.", "ko": "아, 정말 흥미로운 질문이네요.", "level": "IM", "note": "14~15번 만능 시작 문장"},
-    {"en": "Things have changed a lot.", "ko": "많은 게 바뀌었어요.", "level": "IM", "note": "비교 질문의 첫 문장"},
-    {"en": "In the past, people used to ~.", "ko": "예전에는 사람들이 ~하곤 했어요.", "level": "IM", "note": "used to + 동사원형 = 과거의 습관"},
-    {"en": "These days, most people ~.", "ko": "요즘은 대부분의 사람들이 ~해요.", "level": "IM", "note": "현재와 대비시킬 때"},
-    {"en": "I think it's a good change.", "ko": "좋은 변화라고 생각해요.", "level": "IM"},
-    {"en": "There are two main reasons.", "ko": "주된 이유가 두 가지 있어요.", "level": "IM", "note": "의견 문제에서 이유 2개를 예고하는 문장"},
-    {"en": "For example, in my case, ~.", "ko": "예를 들어 제 경우에는 ~.", "level": "IM", "note": "내 경험 예시로 넘어가는 연결 문장"},
-    {"en": "It's much more convenient than before.", "ko": "예전보다 훨씬 편리해요.", "level": "IM"},
-    {"en": "On the other hand, ~.", "ko": "반면에 ~.", "level": "IH", "note": "반대 측면을 넣을 때"},
-    {"en": "I'd say the biggest difference is ~.", "ko": "가장 큰 차이는 ~라고 할 수 있어요.", "level": "IH"},
-    {"en": "Compared to when I was growing up, ~.", "ko": "제가 자랄 때와 비교하면 ~.", "level": "IH", "note": "대전 본가 시절과 비교할 때"},
-    {"en": "That's a big part of the reason why ~.", "ko": "그게 ~인 이유의 큰 부분이에요.", "level": "IH"},
-    {"en": "So yeah, that's what I think about ~.", "ko": "네, 그게 ~에 대한 제 생각이에요.", "level": "IH", "note": "의견 문제 공통 마무리 문장"},
-    {"en": "It's a double-edged sword.", "ko": "양날의 검이에요.", "level": "AL", "note": "장점과 단점이 공존하는 변화를 말할 때"},
-    {"en": "At the end of the day, it comes down to ~.", "ko": "결국 중요한 건 ~예요.", "level": "AL", "note": "결론을 정리할 때 쓰는 관용 표현"}
+    {
+      "en": "Oh, that's a really interesting question.",
+      "ko": "아, 정말 흥미로운 질문이네요.",
+      "level": "IM",
+      "note": "14~15번 만능 시작 문장"
+    },
+    {
+      "en": "Things have changed a lot.",
+      "ko": "많은 게 바뀌었어요.",
+      "level": "IM",
+      "note": "비교 질문의 첫 문장"
+    },
+    {
+      "en": "In the past, people used to ~.",
+      "ko": "예전에는 사람들이 ~하곤 했어요.",
+      "level": "IM",
+      "note": "used to + 동사원형 = 과거의 습관"
+    },
+    {
+      "en": "These days, most people ~.",
+      "ko": "요즘은 대부분의 사람들이 ~해요.",
+      "level": "IM",
+      "note": "현재와 대비시킬 때"
+    },
+    {
+      "en": "I think it's a good change.",
+      "ko": "좋은 변화라고 생각해요.",
+      "level": "IM"
+    },
+    {
+      "en": "There are two main reasons.",
+      "ko": "주된 이유가 두 가지 있어요.",
+      "level": "IM",
+      "note": "의견 문제에서 이유 2개를 예고하는 문장"
+    },
+    {
+      "en": "For example, in my case, ~.",
+      "ko": "예를 들어 제 경우에는 ~.",
+      "level": "IM",
+      "note": "내 경험 예시로 넘어가는 연결 문장"
+    },
+    {
+      "en": "It's much more convenient than before.",
+      "ko": "예전보다 훨씬 편리해요.",
+      "level": "IM"
+    },
+    {
+      "en": "On the other hand, ~.",
+      "ko": "반면에 ~.",
+      "level": "IH",
+      "note": "반대 측면을 넣을 때"
+    },
+    {
+      "en": "I'd say the biggest difference is ~.",
+      "ko": "가장 큰 차이는 ~라고 할 수 있어요.",
+      "level": "IH"
+    },
+    {
+      "en": "Compared to when I was growing up, ~.",
+      "ko": "제가 자랄 때와 비교하면 ~.",
+      "level": "IH",
+      "note": "대전 본가 시절과 비교할 때"
+    },
+    {
+      "en": "That's a big part of the reason why ~.",
+      "ko": "그게 ~인 이유의 큰 부분이에요.",
+      "level": "IH"
+    },
+    {
+      "en": "So yeah, that's what I think about ~.",
+      "ko": "네, 그게 ~에 대한 제 생각이에요.",
+      "level": "IH",
+      "note": "의견 문제 공통 마무리 문장"
+    },
+    {
+      "en": "It's a double-edged sword.",
+      "ko": "양날의 검이에요.",
+      "level": "AL",
+      "note": "장점과 단점이 공존하는 변화를 말할 때"
+    },
+    {
+      "en": "At the end of the day, it comes down to ~.",
+      "ko": "결국 중요한 건 ~예요.",
+      "level": "AL",
+      "note": "결론을 정리할 때 쓰는 관용 표현"
+    }
   ],
   "questions": [
     {
@@ -128,10 +199,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "technology", "ipa": "/tekˈnɑː.lə.dʒi/", "tip": "'나'에 강세. '테크놀로지'가 아니라 '텍나-러지'"},
-    {"word": "advantage", "ipa": "/ədˈvæn.tɪdʒ/", "tip": "'밴'에 강세. 앞의 ad는 '어드'로 약하게"},
-    {"word": "opportunity", "ipa": "/ˌɑː.pərˈtuː.nə.ti/", "tip": "'투'에 강세. 미국식은 t가 '루'처럼 부드럽게 '아퍼r투-너리'"},
-    {"word": "expensive", "ipa": "/ɪkˈspen.sɪv/", "tip": "'스펜'에 강세. 끝 v는 윗니를 아랫입술에 대고"},
-    {"word": "comfortable", "ipa": "/ˈkʌmf.tə.bəl/", "tip": "'컴'에 강세, 3음절로 '컴프터블'. for를 따로 읽지 않기"}
+    {
+      "word": "technology",
+      "ipa": "/tekˈnɑː.lə.dʒi/",
+      "tip": "'나'에 강세. '테크놀로지'가 아니라 '텍나-러지'"
+    },
+    {
+      "word": "advantage",
+      "ipa": "/ədˈvæn.tɪdʒ/",
+      "tip": "'밴'에 강세. 앞의 ad는 '어드'로 약하게"
+    },
+    {
+      "word": "opportunity",
+      "ipa": "/ˌɑː.pərˈtuː.nə.ti/",
+      "tip": "'투'에 강세. 미국식은 t가 '루'처럼 부드럽게 '아퍼r투-너리'"
+    },
+    {
+      "word": "expensive",
+      "ipa": "/ɪkˈspen.sɪv/",
+      "tip": "'스펜'에 강세. 끝 v는 윗니를 아랫입술에 대고"
+    },
+    {
+      "word": "comfortable",
+      "ipa": "/ˈkʌmf.tə.bəl/",
+      "tip": "'컴'에 강세, 3음절로 '컴프터블'. for를 따로 읽지 않기"
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "change#4",
+      "en": "Housing in Korea has changed a lot over the years.",
+      "ko": "한국의 주거 형태는 지난 세월 동안 많이 변했어요.",
+      "q": "advanced-housing-change"
+    },
+    {
+      "pid": "change#3",
+      "en": "The biggest difference is that more and more people live alone in small apartments.",
+      "ko": "가장 큰 차이는 작은 아파트에서 혼자 사는 사람이 점점 늘고 있다는 거예요.",
+      "q": "advanced-housing-change"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to download songs to my MP3 player, but now I stream music on my phone.",
+      "ko": "예전에는 MP3 플레이어에 노래를 내려받았지만, 지금은 휴대폰으로 음악을 스트리밍해요.",
+      "q": "advanced-music-tech"
+    },
+    {
+      "pid": "change#2",
+      "en": "These days, people tend to watch movies on streaming services like Netflix.",
+      "ko": "요즘 사람들은 넷플릭스 같은 스트리밍 서비스로 영화를 보는 경향이 있어요.",
+      "q": "advanced-movie-industry"
+    },
+    {
+      "pid": "change#1",
+      "en": "Compared to going to the theater, watching movies at home is much cheaper.",
+      "ko": "극장에 가는 것에 비해 집에서 영화를 보는 게 훨씬 저렴해요.",
+      "q": "advanced-movie-industry"
+    },
+    {
+      "pid": "opinion#4",
+      "en": "Many people are concerned about expensive flights and crowded tourist spots.",
+      "ko": "많은 사람이 비싼 항공권과 붐비는 관광지를 걱정해요.",
+      "q": "advanced-travel-issue"
+    },
+    {
+      "pid": "opinion#1",
+      "en": "I believe that big cities are better for young people for two reasons.",
+      "ko": "저는 두 가지 이유로 젊은 사람들에게는 대도시가 더 좋다고 생각해요.",
+      "q": "advanced-city-life"
+    },
+    {
+      "pid": "opinion#5",
+      "en": "All things considered, I think a mix of working from home and at the office is the best.",
+      "ko": "모든 걸 고려해 보면, 재택근무와 사무실 근무를 섞는 게 가장 좋다고 생각해요.",
+      "q": "advanced-work-remote"
+    }
   ]
 }

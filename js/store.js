@@ -4,11 +4,9 @@ import { todayKey } from './util.js';
 const KEY = 'opic-coach:v1';
 
 const defaultState = () => ({
-  settings: { ...CONFIG.defaults, planStart: todayKey(), name: '' },
+  settings: { ...CONFIG.defaults, name: '' },
   // 표현 학습 (간격 반복): id -> {box, due, seen}
   expr: {},
-  // 학습 일정 완료: "planId:day" -> [taskIndex...]
-  tasks: {},
   // 연습 답변 기록
   practice: [],
   // 모의고사 결과
@@ -16,9 +14,8 @@ const defaultState = () => ({
   // 학습 활동 일자: {date: minutes}
   activity: {},
   bookmarks: [],
-  // 집중 학습: 서베이에서 고르기로 한 항목 · 등급별 달성 체크
-  surveyPicks: [],
-  focusChecks: [],
+  // 마지막으로 공부한 주제 (홈의 '이어서 학습')
+  lastTopic: null,
 });
 
 let state = load();
@@ -93,27 +90,19 @@ export const store = {
     save();
     return n;
   },
+  // ---- 주제별 집중 학습 ----
+  setLastTopic(id) { if (state.lastTopic !== id) { state.lastTopic = id; save(); } },
+  // 주제 진행률: 표현 · 주제 패턴 익힘(상자 3 이상) + 질문별 답변 연습 여부
+  topicProgress(t) {
+    const learned = (prefix, n) => Array.from({ length: n }, (_, i) => this.exprInfo(`${t.id}#${prefix}${i}`).box >= 3).filter(Boolean).length;
+    const ex = (t.expressions || []).length, pt = (t.patterns || []).length, qs = (t.questions || []).length;
+    const practiced = new Set(state.practice.filter(p => p.topicId === t.id).map(p => p.qid));
+    const p = { expr: [learned('e', ex), ex], pat: [learned('p', pt), pt], ans: [(t.questions || []).filter(q => practiced.has(q.id)).length, qs] };
+    const done = p.expr[0] + p.pat[0] + p.ans[0], total = ex + pt + qs;
+    p.pct = total ? Math.round(done / total * 100) : 0;
+    return p;
+  },
   learnedCount() { return Object.values(state.expr).filter(v => v.box >= 3).length; },
-
-  // ---- 학습 일정 ----
-  taskKey(planId, day) { return `${planId}:${day}`; },
-  doneTasks(planId, day) { return state.tasks[this.taskKey(planId, day)] || []; },
-  toggleTask(planId, day, idx, minutes = 10) {
-    const k = this.taskKey(planId, day);
-    const arr = state.tasks[k] || [];
-    const i = arr.indexOf(idx);
-    if (i >= 0) arr.splice(i, 1); else { arr.push(idx); this.logActivity(minutes); }
-    state.tasks[k] = arr;
-    save();
-    return i < 0;
-  },
-  markTask(planId, day, idx, minutes = 10) {
-    const k = this.taskKey(planId, day);
-    const arr = state.tasks[k] || [];
-    if (!arr.includes(idx)) { arr.push(idx); this.logActivity(minutes); }
-    state.tasks[k] = arr;
-    save();
-  },
 
   // ---- 연습 / 모의고사 ----
   addPractice(rec) {
@@ -129,21 +118,6 @@ export const store = {
     this.logActivity(Math.round((rec.durationSec || 600) / 60));
     save();
     return r;
-  },
-  isSurveyPicked(label) { return state.surveyPicks.includes(label); },
-  toggleSurveyPick(encoded) {
-    const label = decodeURIComponent(encoded);
-    const i = state.surveyPicks.indexOf(label);
-    if (i >= 0) state.surveyPicks.splice(i, 1); else state.surveyPicks.push(label);
-    save();
-    return i < 0;
-  },
-  isFocusChecked(key) { return state.focusChecks.includes(key); },
-  toggleFocusCheck(key) {
-    const i = state.focusChecks.indexOf(key);
-    if (i >= 0) state.focusChecks.splice(i, 1); else state.focusChecks.push(key);
-    save();
-    return i < 0;
   },
   toggleBookmark(id) {
     const i = state.bookmarks.indexOf(id);

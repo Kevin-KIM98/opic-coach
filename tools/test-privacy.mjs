@@ -32,7 +32,7 @@ async function go(route) {
 }
 
 // 1. 기본 상태: 어느 화면에도 저장소 흔적이 없다
-const routes = ['#/home', '#/settings', '#/topics', '#/drill?tab=patterns', '#/drill?tab=pron', '#/plan', '#/progress'];
+const routes = ['#/home', '#/settings', '#/topics', '#/drill?tab=patterns', '#/drill?tab=pron', '#/progress'];
 for (const r of routes) {
   const { hrefs, text } = await go(r);
   const leaked = hrefs.filter(h => /github\.com/i.test(h));

@@ -195,5 +195,55 @@
       "ipa": "/ˈrɪv.ər/",
       "tip": "'리버'. r은 혀를 말고 시작, v는 윗니를 아랫입술에 대고 진동"
     }
+  ],
+  "patterns": [
+    {
+      "pid": "describe#0",
+      "en": "It's a quiet place with a lot of nice cafes.",
+      "ko": "멋진 카페가 많은 조용한 곳이에요.",
+      "q": "neighborhood-describe"
+    },
+    {
+      "pid": "place#1",
+      "en": "There's a small park with a new walking path near my place.",
+      "ko": "저희 집 근처에 새 산책로가 있는 작은 공원이 있어요.",
+      "q": "neighborhood-describe"
+    },
+    {
+      "pid": "people#0",
+      "en": "I usually try new restaurants with my friends on Saturday evenings.",
+      "ko": "저는 토요일 저녁에 보통 친구들과 새로 생긴 식당에 가 봐요.",
+      "q": "neighborhood-routine"
+    },
+    {
+      "pid": "routine#1",
+      "en": "I try to take a walk in the park whenever I have free time.",
+      "ko": "저는 시간이 날 때마다 공원에서 산책하려고 해요.",
+      "q": "neighborhood-routine"
+    },
+    {
+      "pid": "reason#1",
+      "en": "The main reason is that it's close to work, but it doesn't feel busy at all.",
+      "ko": "가장 큰 이유는 회사와 가깝지만 전혀 북적이는 느낌이 없다는 거예요.",
+      "q": "neighborhood-describe"
+    },
+    {
+      "pid": "memory#4",
+      "en": "It turned out to be a great place to cool down after jogging.",
+      "ko": "알고 보니 조깅 후에 열을 식히기 좋은 곳이었어요.",
+      "q": "neighborhood-experience"
+    },
+    {
+      "pid": "change#4",
+      "en": "The small park near my apartment has changed a lot over the years.",
+      "ko": "저희 아파트 근처 작은 공원은 몇 년 사이에 많이 바뀌었어요.",
+      "q": "neighborhood-experience"
+    },
+    {
+      "pid": "opinion#3",
+      "en": "On the other hand, people here are busier, so I don't really know my neighbors.",
+      "ko": "반면에 여기 사람들은 더 바빠서 저는 이웃을 잘 몰라요.",
+      "q": "neighborhood-compare"
+    }
   ]
 }

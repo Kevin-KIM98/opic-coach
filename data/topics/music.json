@@ -13,21 +13,91 @@
     "IH 이상은 과거(대전 본가에서 MP3 플레이어·CD) vs 현재(스트리밍·알고리즘 추천) 비교와 'gives me goosebumps' 같은 쉬운 관용 표현을 더합니다."
   ],
   "expressions": [
-    {"en": "Oh, music? I listen to music all the time.", "ko": "아, 음악이요? 저는 항상 음악을 들어요.", "level": "IM", "note": "시작 문장: 주제 키워드를 되받아 말하며 자연스럽게 시작하세요."},
-    {"en": "I'm really into K-pop and ballads.", "ko": "저는 K-pop이랑 발라드에 푹 빠져 있어요.", "level": "IM", "note": "be into ~: ~을 아주 좋아하다"},
-    {"en": "My favorite singer is IU.", "ko": "제가 제일 좋아하는 가수는 아이유예요.", "level": "IM"},
-    {"en": "Her voice is so sweet and calming.", "ko": "그녀의 목소리는 정말 달콤하고 마음을 편하게 해 줘요.", "level": "IM"},
-    {"en": "I listen to music on the subway on my way to work.", "ko": "출근길 지하철에서 음악을 들어요.", "level": "IM", "note": "on my way to work / home: 출근길에 / 퇴근길에"},
-    {"en": "I use a music streaming app on my phone.", "ko": "휴대폰으로 음악 스트리밍 앱을 써요.", "level": "IM"},
-    {"en": "Music helps me forget about stress at work.", "ko": "음악은 회사 스트레스를 잊게 해 줘요.", "level": "IM"},
-    {"en": "I made a playlist just for jogging.", "ko": "조깅용 플레이리스트를 따로 만들었어요.", "level": "IH"},
-    {"en": "When I'm cooking or cleaning, I play music on my Bluetooth speaker.", "ko": "요리나 청소를 할 때는 블루투스 스피커로 음악을 틀어요.", "level": "IH", "note": "When I'm -ing, ~: 상황별 루틴 말하기"},
-    {"en": "The tickets sold out in just a few minutes.", "ko": "표가 단 몇 분 만에 매진됐어요.", "level": "IH", "note": "sell out: 매진되다 (과거형 sold out)"},
-    {"en": "The whole crowd sang along to her songs.", "ko": "관객 전체가 그녀의 노래를 따라 불렀어요.", "level": "IH", "note": "sing along (to ~): (~을) 따라 부르다"},
-    {"en": "Back when I was in middle school, I used to listen to music on an MP3 player.", "ko": "중학생 때는 MP3 플레이어로 음악을 듣곤 했어요.", "level": "IH", "note": "Back when ~ / used to: 과거와 현재 비교의 기본 틀"},
-    {"en": "Her live voice gave me goosebumps.", "ko": "그녀의 라이브 목소리에 소름이 돋았어요.", "level": "AL", "note": "give someone goosebumps: 감동·전율로 소름 돋게 하다"},
-    {"en": "These days, the app knows my taste better than I do.", "ko": "요즘은 앱이 저보다 제 취향을 더 잘 알아요.", "level": "AL", "note": "비교급 + than I do: 재치 있는 비교 표현"},
-    {"en": "Yeah, that's why music is a big part of my life.", "ko": "네, 그래서 음악은 제 삶에서 큰 부분이에요.", "level": "IM", "note": "마무리 문장: 'Yeah, that's why ~'로 이유를 정리하며 끝내세요."}
+    {
+      "en": "Oh, music? I listen to music all the time.",
+      "ko": "아, 음악이요? 저는 항상 음악을 들어요.",
+      "level": "IM",
+      "note": "시작 문장: 주제 키워드를 되받아 말하며 자연스럽게 시작하세요."
+    },
+    {
+      "en": "I'm really into K-pop and ballads.",
+      "ko": "저는 K-pop이랑 발라드에 푹 빠져 있어요.",
+      "level": "IM",
+      "note": "be into ~: ~을 아주 좋아하다"
+    },
+    {
+      "en": "My favorite singer is IU.",
+      "ko": "제가 제일 좋아하는 가수는 아이유예요.",
+      "level": "IM"
+    },
+    {
+      "en": "Her voice is so sweet and calming.",
+      "ko": "그녀의 목소리는 정말 달콤하고 마음을 편하게 해 줘요.",
+      "level": "IM"
+    },
+    {
+      "en": "I listen to music on the subway on my way to work.",
+      "ko": "출근길 지하철에서 음악을 들어요.",
+      "level": "IM",
+      "note": "on my way to work / home: 출근길에 / 퇴근길에"
+    },
+    {
+      "en": "I use a music streaming app on my phone.",
+      "ko": "휴대폰으로 음악 스트리밍 앱을 써요.",
+      "level": "IM"
+    },
+    {
+      "en": "Music helps me forget about stress at work.",
+      "ko": "음악은 회사 스트레스를 잊게 해 줘요.",
+      "level": "IM"
+    },
+    {
+      "en": "I made a playlist just for jogging.",
+      "ko": "조깅용 플레이리스트를 따로 만들었어요.",
+      "level": "IH"
+    },
+    {
+      "en": "When I'm cooking or cleaning, I play music on my Bluetooth speaker.",
+      "ko": "요리나 청소를 할 때는 블루투스 스피커로 음악을 틀어요.",
+      "level": "IH",
+      "note": "When I'm -ing, ~: 상황별 루틴 말하기"
+    },
+    {
+      "en": "The tickets sold out in just a few minutes.",
+      "ko": "표가 단 몇 분 만에 매진됐어요.",
+      "level": "IH",
+      "note": "sell out: 매진되다 (과거형 sold out)"
+    },
+    {
+      "en": "The whole crowd sang along to her songs.",
+      "ko": "관객 전체가 그녀의 노래를 따라 불렀어요.",
+      "level": "IH",
+      "note": "sing along (to ~): (~을) 따라 부르다"
+    },
+    {
+      "en": "Back when I was in middle school, I used to listen to music on an MP3 player.",
+      "ko": "중학생 때는 MP3 플레이어로 음악을 듣곤 했어요.",
+      "level": "IH",
+      "note": "Back when ~ / used to: 과거와 현재 비교의 기본 틀"
+    },
+    {
+      "en": "Her live voice gave me goosebumps.",
+      "ko": "그녀의 라이브 목소리에 소름이 돋았어요.",
+      "level": "AL",
+      "note": "give someone goosebumps: 감동·전율로 소름 돋게 하다"
+    },
+    {
+      "en": "These days, the app knows my taste better than I do.",
+      "ko": "요즘은 앱이 저보다 제 취향을 더 잘 알아요.",
+      "level": "AL",
+      "note": "비교급 + than I do: 재치 있는 비교 표현"
+    },
+    {
+      "en": "Yeah, that's why music is a big part of my life.",
+      "ko": "네, 그래서 음악은 제 삶에서 큰 부분이에요.",
+      "level": "IM",
+      "note": "마무리 문장: 'Yeah, that's why ~'로 이유를 정리하며 끝내세요."
+    }
   ],
   "questions": [
     {
@@ -96,10 +166,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "ballad", "ipa": "/ˈbæləd/", "tip": "'발라드'가 아니라 '밸럳'. 첫 음절 'æ'를 입을 크게 벌려 강하게, 끝 d는 살짝 멈추듯 끝냅니다."},
-    {"word": "playlist", "ipa": "/ˈpleɪlɪst/", "tip": "강세는 'play'. '플레이리스트'처럼 모음을 넣지 말고 끝 'st'를 짧게 붙여 '플레일리스트'로 말하세요."},
-    {"word": "lyrics", "ipa": "/ˈlɪrɪks/", "tip": "l과 r이 연달아 나옵니다. l은 혀끝을 윗잇몸에 대고, r은 혀를 말아 어디에도 닿지 않게 하세요."},
-    {"word": "concert", "ipa": "/ˈkɑːnsərt/", "tip": "강세는 첫 음절 'kan'. '콘서트'보다 '칸서r트'에 가깝고, 끝 t는 약하게 처리합니다."},
-    {"word": "earbuds", "ipa": "/ˈɪrbʌdz/", "tip": "'이어버즈'처럼 'ear'에 r 소리를 넣고, 끝은 '즈'(dz)로 짧게 울리게 끝내세요."}
+    {
+      "word": "ballad",
+      "ipa": "/ˈbæləd/",
+      "tip": "'발라드'가 아니라 '밸럳'. 첫 음절 'æ'를 입을 크게 벌려 강하게, 끝 d는 살짝 멈추듯 끝냅니다."
+    },
+    {
+      "word": "playlist",
+      "ipa": "/ˈpleɪlɪst/",
+      "tip": "강세는 'play'. '플레이리스트'처럼 모음을 넣지 말고 끝 'st'를 짧게 붙여 '플레일리스트'로 말하세요."
+    },
+    {
+      "word": "lyrics",
+      "ipa": "/ˈlɪrɪks/",
+      "tip": "l과 r이 연달아 나옵니다. l은 혀끝을 윗잇몸에 대고, r은 혀를 말아 어디에도 닿지 않게 하세요."
+    },
+    {
+      "word": "concert",
+      "ipa": "/ˈkɑːnsərt/",
+      "tip": "강세는 첫 음절 'kan'. '콘서트'보다 '칸서r트'에 가깝고, 끝 t는 약하게 처리합니다."
+    },
+    {
+      "word": "earbuds",
+      "ipa": "/ˈɪrbʌdz/",
+      "tip": "'이어버즈'처럼 'ear'에 r 소리를 넣고, 끝은 '즈'(dz)로 짧게 울리게 끝내세요."
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "like#2",
+      "en": "I'm really into K-pop and ballads these days.",
+      "ko": "저는 요즘 K-pop과 발라드에 푹 빠져 있어요.",
+      "q": "music-describe"
+    },
+    {
+      "pid": "start#0",
+      "en": "I first got into IU's music when I was in high school.",
+      "ko": "저는 고등학교 때 처음 아이유 음악에 빠졌어요.",
+      "q": "music-describe"
+    },
+    {
+      "pid": "reason#0",
+      "en": "I like IU because her voice is so sweet and her lyrics are really touching.",
+      "ko": "저는 아이유의 목소리가 정말 달콤하고 가사가 정말 감동적이라서 좋아해요.",
+      "q": "music-describe"
+    },
+    {
+      "pid": "place#0",
+      "en": "I usually play music on my Bluetooth speaker at home while I'm cooking or cleaning.",
+      "ko": "저는 보통 집에서 요리하거나 청소할 때 블루투스 스피커로 음악을 틀어요.",
+      "q": "music-routine"
+    },
+    {
+      "pid": "routine#5",
+      "en": "It has become part of my daily routine to listen to upbeat K-pop on the subway to work.",
+      "ko": "출근길 지하철에서 신나는 K-pop을 듣는 게 제 일상 루틴이 됐어요.",
+      "q": "music-routine"
+    },
+    {
+      "pid": "memory#5",
+      "en": "I'll never forget the IU concert last fall because her live voice gave me goosebumps.",
+      "ko": "작년 가을 아이유 콘서트는 절대 못 잊을 거예요. 라이브 목소리에 소름이 돋았거든요.",
+      "q": "music-experience"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to listen to music on an MP3 player, but now I just use a streaming app on my phone.",
+      "ko": "예전에는 MP3 플레이어로 음악을 들었는데, 지금은 그냥 휴대폰 스트리밍 앱을 써요.",
+      "q": "music-compare"
+    },
+    {
+      "pid": "change#3",
+      "en": "The biggest difference is that people find new music through short videos on social media.",
+      "ko": "가장 큰 차이는 사람들이 SNS의 짧은 영상으로 새로운 음악을 찾는다는 거예요.",
+      "q": "music-compare"
+    }
   ]
 }

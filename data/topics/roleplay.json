@@ -13,21 +13,94 @@
     "13번(경험)은 일반 경험 문제와 같습니다. 언제 → 무슨 일 → 내가 한 행동 → 결과·느낀 점을 과거시제로 말하고, 12번과 비슷한 소재(친구와의 약속, 여행 예약)를 고르면 준비가 쉽습니다."
   ],
   "expressions": [
-    {"en": "Hi, I'm calling to ask about the movie this weekend.", "ko": "안녕하세요, 이번 주말 영화 때문에 전화드렸어요.", "level": "IM", "note": "11번 만능 시작 문장. about 뒤만 바꾸기"},
-    {"en": "I have a few questions.", "ko": "몇 가지 여쭤볼 게 있어요.", "level": "IM", "note": "이제 질문을 시작한다는 신호"},
-    {"en": "What time does it start?", "ko": "몇 시에 시작해요?", "level": "IM"},
-    {"en": "How much is it per person?", "ko": "1인당 얼마예요?", "level": "IM", "note": "per person / for two people 로 바꿔 쓰기"},
-    {"en": "Is breakfast included?", "ko": "조식이 포함돼 있나요?", "level": "IM", "note": "Is ~ included? 로 포함 사항 묻기"},
-    {"en": "I'm afraid there's a problem.", "ko": "죄송한데 문제가 생겼어요.", "level": "IM", "note": "12번 만능 시작 문장"},
-    {"en": "Is it possible to change the date?", "ko": "날짜를 바꿀 수 있을까요?", "level": "IM", "note": "Is it possible to + 동사원형 = 대안 제시"},
-    {"en": "Could you call me back at this number?", "ko": "이 번호로 다시 전화해 주시겠어요?", "level": "IM", "note": "12번 마무리에 자주 쓰는 문장"},
-    {"en": "My coworker just told me she can't make it.", "ko": "회사 동료가 방금 못 온다고 했어요.", "level": "IH", "note": "make it = (약속에) 가다, 시간 맞춰 오다"},
-    {"en": "I was wondering if you have any discounts.", "ko": "혹시 할인이 있는지 궁금해서요.", "level": "IH", "note": "I was wondering if ~ = 공손하게 묻기"},
-    {"en": "If that's not possible, could I get a refund instead?", "ko": "그게 안 되면 대신 환불받을 수 있을까요?", "level": "IH", "note": "두 번째 대안을 붙이는 연결 문장"},
-    {"en": "I'd really appreciate it if you could help me out.", "ko": "도와주시면 정말 감사하겠어요.", "level": "IH"},
-    {"en": "Yeah, that's all I wanted to ask. Thanks!", "ko": "네, 여쭤보고 싶은 건 그게 다예요. 감사합니다!", "level": "IH", "note": "11·12번 공통 마무리 문장"},
-    {"en": "Something came up at work at the last minute.", "ko": "막판에 회사에 일이 생겼어요.", "level": "AL", "note": "직장인 롤플레이 단골 이유. come up = (일이) 생기다"},
-    {"en": "It turned out to be a blessing in disguise.", "ko": "알고 보니 전화위복이었어요.", "level": "AL", "note": "13번 경험 답의 반전 마무리에 좋은 관용 표현"}
+    {
+      "en": "Hi, I'm calling to ask about the movie this weekend.",
+      "ko": "안녕하세요, 이번 주말 영화 때문에 전화드렸어요.",
+      "level": "IM",
+      "note": "11번 만능 시작 문장. about 뒤만 바꾸기"
+    },
+    {
+      "en": "I have a few questions.",
+      "ko": "몇 가지 여쭤볼 게 있어요.",
+      "level": "IM",
+      "note": "이제 질문을 시작한다는 신호"
+    },
+    {
+      "en": "What time does it start?",
+      "ko": "몇 시에 시작해요?",
+      "level": "IM"
+    },
+    {
+      "en": "How much is it per person?",
+      "ko": "1인당 얼마예요?",
+      "level": "IM",
+      "note": "per person / for two people 로 바꿔 쓰기"
+    },
+    {
+      "en": "Is breakfast included?",
+      "ko": "조식이 포함돼 있나요?",
+      "level": "IM",
+      "note": "Is ~ included? 로 포함 사항 묻기"
+    },
+    {
+      "en": "I'm afraid there's a problem.",
+      "ko": "죄송한데 문제가 생겼어요.",
+      "level": "IM",
+      "note": "12번 만능 시작 문장"
+    },
+    {
+      "en": "Is it possible to change the date?",
+      "ko": "날짜를 바꿀 수 있을까요?",
+      "level": "IM",
+      "note": "Is it possible to + 동사원형 = 대안 제시"
+    },
+    {
+      "en": "Could you call me back at this number?",
+      "ko": "이 번호로 다시 전화해 주시겠어요?",
+      "level": "IM",
+      "note": "12번 마무리에 자주 쓰는 문장"
+    },
+    {
+      "en": "My coworker just told me she can't make it.",
+      "ko": "회사 동료가 방금 못 온다고 했어요.",
+      "level": "IH",
+      "note": "make it = (약속에) 가다, 시간 맞춰 오다"
+    },
+    {
+      "en": "I was wondering if you have any discounts.",
+      "ko": "혹시 할인이 있는지 궁금해서요.",
+      "level": "IH",
+      "note": "I was wondering if ~ = 공손하게 묻기"
+    },
+    {
+      "en": "If that's not possible, could I get a refund instead?",
+      "ko": "그게 안 되면 대신 환불받을 수 있을까요?",
+      "level": "IH",
+      "note": "두 번째 대안을 붙이는 연결 문장"
+    },
+    {
+      "en": "I'd really appreciate it if you could help me out.",
+      "ko": "도와주시면 정말 감사하겠어요.",
+      "level": "IH"
+    },
+    {
+      "en": "Yeah, that's all I wanted to ask. Thanks!",
+      "ko": "네, 여쭤보고 싶은 건 그게 다예요. 감사합니다!",
+      "level": "IH",
+      "note": "11·12번 공통 마무리 문장"
+    },
+    {
+      "en": "Something came up at work at the last minute.",
+      "ko": "막판에 회사에 일이 생겼어요.",
+      "level": "AL",
+      "note": "직장인 롤플레이 단골 이유. come up = (일이) 생기다"
+    },
+    {
+      "en": "It turned out to be a blessing in disguise.",
+      "ko": "알고 보니 전화위복이었어요.",
+      "level": "AL",
+      "note": "13번 경험 답의 반전 마무리에 좋은 관용 표현"
+    }
   ],
   "questions": [
     {
@@ -128,10 +201,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "reservation", "ipa": "/ˌrez.ərˈveɪ.ʃən/", "tip": "'베이'에 강세. 앞의 re는 약하게 '레저'"},
-    {"word": "available", "ipa": "/əˈveɪ.lə.bəl/", "tip": "'베이'에 강세, 끝은 '어블'로 짧게"},
-    {"word": "refund", "ipa": "/ˈriː.fʌnd/", "tip": "명사는 앞 '리'에 강세. f는 윗니를 아랫입술에 대고"},
-    {"word": "canceled", "ipa": "/ˈkæn.səld/", "tip": "'캔슬드'처럼 두 음절. ed를 '에드'로 따로 읽지 않기"},
-    {"word": "confirmation", "ipa": "/ˌkɑːn.fərˈmeɪ.ʃən/", "tip": "'메이'에 강세. f 발음을 p로 바꾸지 않기"}
+    {
+      "word": "reservation",
+      "ipa": "/ˌrez.ərˈveɪ.ʃən/",
+      "tip": "'베이'에 강세. 앞의 re는 약하게 '레저'"
+    },
+    {
+      "word": "available",
+      "ipa": "/əˈveɪ.lə.bəl/",
+      "tip": "'베이'에 강세, 끝은 '어블'로 짧게"
+    },
+    {
+      "word": "refund",
+      "ipa": "/ˈriː.fʌnd/",
+      "tip": "명사는 앞 '리'에 강세. f는 윗니를 아랫입술에 대고"
+    },
+    {
+      "word": "canceled",
+      "ipa": "/ˈkæn.səld/",
+      "tip": "'캔슬드'처럼 두 음절. ed를 '에드'로 따로 읽지 않기"
+    },
+    {
+      "word": "confirmation",
+      "ipa": "/ˌkɑːn.fərˈmeɪ.ʃən/",
+      "tip": "'메이'에 강세. f 발음을 p로 바꾸지 않기"
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "roleplay#0",
+      "en": "Hi, I'm calling to ask about the new action movie this Saturday.",
+      "ko": "안녕하세요, 이번 주 토요일에 하는 새 액션 영화 때문에 전화드렸어요.",
+      "q": "roleplay-ask-movie"
+    },
+    {
+      "pid": "roleplay#1",
+      "en": "I'd like to know how much the tickets are for two people.",
+      "ko": "두 명이면 표가 얼마인지 알고 싶어요.",
+      "q": "roleplay-ask-movie"
+    },
+    {
+      "pid": "roleplay#2",
+      "en": "Is it possible to cancel the trip if something comes up at work?",
+      "ko": "회사에 일이 생기면 여행을 취소할 수 있나요?",
+      "q": "roleplay-ask-travel"
+    },
+    {
+      "pid": "roleplay#3",
+      "en": "I'm afraid there's a problem with my movie tickets for this Saturday.",
+      "ko": "죄송하지만 이번 주 토요일 영화표에 문제가 생겼어요.",
+      "q": "roleplay-solve-movie"
+    },
+    {
+      "pid": "roleplay#4",
+      "en": "How about changing both tickets to Sunday evening instead?",
+      "ko": "대신 두 장 다 일요일 저녁으로 바꾸는 건 어떨까요?",
+      "q": "roleplay-solve-movie"
+    },
+    {
+      "pid": "roleplay#5",
+      "en": "I'd really appreciate it if you could put us on a later flight on the same day.",
+      "ko": "같은 날 더 늦은 항공편으로 바꿔 주시면 정말 감사하겠어요.",
+      "q": "roleplay-solve-travel"
+    },
+    {
+      "pid": "problem#0",
+      "en": "Something unexpected happened when my college friends and I were about to leave for Busan.",
+      "ko": "대학 친구들과 부산으로 막 떠나려던 참에 예상치 못한 일이 생겼어요.",
+      "q": "roleplay-exp-plan"
+    },
+    {
+      "pid": "problem#5",
+      "en": "Since then, I always make sure to save my booking emails before I travel.",
+      "ko": "그 뒤로는 여행 전에 꼭 예약 확인 메일을 저장해 둬요.",
+      "q": "roleplay-exp-ticket"
+    }
   ]
 }

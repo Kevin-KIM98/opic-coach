@@ -13,21 +13,91 @@
     "비교 질문은 대학 때 첫 해외여행(과거: 종이 지도·현금·싼 호스텔) vs 지금(직장인: 앱·카드·짧은 휴가)으로 나누고 used to / these days 를 쓰세요."
   ],
   "expressions": [
-    {"en": "Okay, let me tell you about my trip to Osaka.", "ko": "좋아요, 제 오사카 여행에 대해 말해 볼게요.", "level": "IM", "note": "해외 여행 질문의 시작 문장"},
-    {"en": "I went there last summer with my coworker Minji.", "ko": "작년 여름에 회사 동료 Minji랑 거기 갔어요.", "level": "IM", "note": "coworker: 회사 동료"},
-    {"en": "The flight was only about an hour and a half.", "ko": "비행시간이 한 시간 반 정도밖에 안 됐어요.", "level": "IM"},
-    {"en": "I used my summer vacation days.", "ko": "여름휴가(연차)를 썼어요.", "level": "IM", "note": "vacation days: 휴가 일수"},
-    {"en": "We tried a lot of street food.", "ko": "길거리 음식을 정말 많이 먹어 봤어요.", "level": "IM"},
-    {"en": "The lines were really long.", "ko": "줄이 정말 길었어요.", "level": "IM"},
-    {"en": "I always double-check my passport.", "ko": "저는 항상 여권을 다시 확인해요.", "level": "IM", "note": "double-check: 재확인하다"},
-    {"en": "We got on the wrong train.", "ko": "우리는 지하철을 잘못 탔어요.", "level": "IM", "note": "get on the wrong ~ : ~을 잘못 타다"},
-    {"en": "We booked the flight two months early.", "ko": "우리는 두 달 일찍 비행기를 예약했어요.", "level": "IH"},
-    {"en": "My phone battery was almost dead.", "ko": "휴대폰 배터리가 거의 다 됐었어요.", "level": "IH"},
-    {"en": "I tried to stay calm.", "ko": "침착하려고 노력했어요.", "level": "IH", "note": "문제 상황 경험 답변 필수 표현"},
-    {"en": "Back then, I used to carry a paper map.", "ko": "그때는 종이 지도를 들고 다녔어요.", "level": "IH", "note": "used to + 동사원형: 과거의 습관"},
-    {"en": "The food alone was worth the trip.", "ko": "음식만으로도 여행 갈 가치가 있었어요.", "level": "IH", "note": "be worth + 명사: ~할 가치가 있다"},
-    {"en": "It turned out to be a blessing in disguise.", "ko": "결과적으로 전화위복이 됐어요.", "level": "AL", "note": "turn out to be ~ : 결국 ~로 밝혀지다"},
-    {"en": "So yeah, that's why Osaka is my favorite city so far.", "ko": "그래서 오사카가 지금까지 제일 좋아하는 도시예요.", "level": "AL", "note": "마무리 문장으로 사용"}
+    {
+      "en": "Okay, let me tell you about my trip to Osaka.",
+      "ko": "좋아요, 제 오사카 여행에 대해 말해 볼게요.",
+      "level": "IM",
+      "note": "해외 여행 질문의 시작 문장"
+    },
+    {
+      "en": "I went there last summer with my coworker Minji.",
+      "ko": "작년 여름에 회사 동료 Minji랑 거기 갔어요.",
+      "level": "IM",
+      "note": "coworker: 회사 동료"
+    },
+    {
+      "en": "The flight was only about an hour and a half.",
+      "ko": "비행시간이 한 시간 반 정도밖에 안 됐어요.",
+      "level": "IM"
+    },
+    {
+      "en": "I used my summer vacation days.",
+      "ko": "여름휴가(연차)를 썼어요.",
+      "level": "IM",
+      "note": "vacation days: 휴가 일수"
+    },
+    {
+      "en": "We tried a lot of street food.",
+      "ko": "길거리 음식을 정말 많이 먹어 봤어요.",
+      "level": "IM"
+    },
+    {
+      "en": "The lines were really long.",
+      "ko": "줄이 정말 길었어요.",
+      "level": "IM"
+    },
+    {
+      "en": "I always double-check my passport.",
+      "ko": "저는 항상 여권을 다시 확인해요.",
+      "level": "IM",
+      "note": "double-check: 재확인하다"
+    },
+    {
+      "en": "We got on the wrong train.",
+      "ko": "우리는 지하철을 잘못 탔어요.",
+      "level": "IM",
+      "note": "get on the wrong ~ : ~을 잘못 타다"
+    },
+    {
+      "en": "We booked the flight two months early.",
+      "ko": "우리는 두 달 일찍 비행기를 예약했어요.",
+      "level": "IH"
+    },
+    {
+      "en": "My phone battery was almost dead.",
+      "ko": "휴대폰 배터리가 거의 다 됐었어요.",
+      "level": "IH"
+    },
+    {
+      "en": "I tried to stay calm.",
+      "ko": "침착하려고 노력했어요.",
+      "level": "IH",
+      "note": "문제 상황 경험 답변 필수 표현"
+    },
+    {
+      "en": "Back then, I used to carry a paper map.",
+      "ko": "그때는 종이 지도를 들고 다녔어요.",
+      "level": "IH",
+      "note": "used to + 동사원형: 과거의 습관"
+    },
+    {
+      "en": "The food alone was worth the trip.",
+      "ko": "음식만으로도 여행 갈 가치가 있었어요.",
+      "level": "IH",
+      "note": "be worth + 명사: ~할 가치가 있다"
+    },
+    {
+      "en": "It turned out to be a blessing in disguise.",
+      "ko": "결과적으로 전화위복이 됐어요.",
+      "level": "AL",
+      "note": "turn out to be ~ : 결국 ~로 밝혀지다"
+    },
+    {
+      "en": "So yeah, that's why Osaka is my favorite city so far.",
+      "ko": "그래서 오사카가 지금까지 제일 좋아하는 도시예요.",
+      "level": "AL",
+      "note": "마무리 문장으로 사용"
+    }
   ],
   "questions": [
     {
@@ -96,10 +166,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "abroad", "ipa": "/əˈbrɔːd/", "tip": "두 번째 음절 '브로-'에 강세. 첫 a는 약하게 '어'로 흘려요."},
-    {"word": "passport", "ipa": "/ˈpæspɔːrt/", "tip": "첫 음절 '패'에 강세. 끝 t는 살짝 끊듯이 약하게."},
-    {"word": "suitcase", "ipa": "/ˈsuːtkeɪs/", "tip": "'수트케이스'. suit의 t는 거의 들리지 않게 멈추듯 발음해요."},
-    {"word": "vacation", "ipa": "/veɪˈkeɪʃən/", "tip": "두 번째 음절 '케이'에 강세. v는 윗니를 아랫입술에 대고 '브'가 아닌 진동 소리로."},
-    {"word": "schedule", "ipa": "/ˈskedʒuːl/", "tip": "미국식은 '스케줄', s 다음에 k 소리를 분명히 내세요."}
+    {
+      "word": "abroad",
+      "ipa": "/əˈbrɔːd/",
+      "tip": "두 번째 음절 '브로-'에 강세. 첫 a는 약하게 '어'로 흘려요."
+    },
+    {
+      "word": "passport",
+      "ipa": "/ˈpæspɔːrt/",
+      "tip": "첫 음절 '패'에 강세. 끝 t는 살짝 끊듯이 약하게."
+    },
+    {
+      "word": "suitcase",
+      "ipa": "/ˈsuːtkeɪs/",
+      "tip": "'수트케이스'. suit의 t는 거의 들리지 않게 멈추듯 발음해요."
+    },
+    {
+      "word": "vacation",
+      "ipa": "/veɪˈkeɪʃən/",
+      "tip": "두 번째 음절 '케이'에 강세. v는 윗니를 아랫입술에 대고 '브'가 아닌 진동 소리로."
+    },
+    {
+      "word": "schedule",
+      "ipa": "/ˈskedʒuːl/",
+      "tip": "미국식은 '스케줄', s 다음에 k 소리를 분명히 내세요."
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "like#1",
+      "en": "One of my favorite things to do is trying street food in a new city.",
+      "ko": "제가 가장 좋아하는 일 중 하나는 새로운 도시에서 길거리 음식을 먹어 보는 거예요.",
+      "q": "travel-overseas-describe"
+    },
+    {
+      "pid": "describe#5",
+      "en": "It has a lively atmosphere that makes me feel excited.",
+      "ko": "그곳은 활기찬 분위기가 있어서 저를 신나게 해요.",
+      "q": "travel-overseas-describe"
+    },
+    {
+      "pid": "people#3",
+      "en": "I have a friend named Minji, and we went to Osaka together last summer.",
+      "ko": "저에게는 민지라는 친구가 있는데, 작년 여름에 같이 오사카에 갔어요.",
+      "q": "travel-overseas-describe"
+    },
+    {
+      "pid": "routine#3",
+      "en": "First, I ask my team leader for the days off. Then, I book the flight and the hotel.",
+      "ko": "먼저 팀장님께 휴가를 신청해요. 그다음 항공권과 호텔을 예약해요.",
+      "q": "travel-overseas-routine"
+    },
+    {
+      "pid": "problem#0",
+      "en": "Something unexpected happened when Minji and I got on the wrong train in Osaka.",
+      "ko": "민지와 제가 오사카에서 지하철을 잘못 탔을 때 예상치 못한 일이 일어났어요.",
+      "q": "travel-overseas-experience"
+    },
+    {
+      "pid": "memory#4",
+      "en": "It turned out to be a blessing in disguise.",
+      "ko": "결과적으로 오히려 전화위복이 되었어요.",
+      "q": "travel-overseas-experience"
+    },
+    {
+      "pid": "problem#5",
+      "en": "Since then, I always make sure to bring a portable charger.",
+      "ko": "그 이후로 저는 항상 보조배터리를 꼭 챙겨요.",
+      "q": "travel-overseas-experience"
+    },
+    {
+      "pid": "change#1",
+      "en": "Compared to my first trip abroad, traveling now is much more comfortable.",
+      "ko": "처음 해외여행을 갔을 때와 비교하면, 지금 여행하는 게 훨씬 더 편해요.",
+      "q": "travel-overseas-compare"
+    }
   ]
 }

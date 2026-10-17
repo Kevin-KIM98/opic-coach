@@ -13,21 +13,92 @@
     "IH 이상은 대전 어린 시절 공원(모래 놀이터, 남동생 Junho) vs 지금 공원(산책로·운동기구·야간 조명·푸드트럭) 비교와 'clear my head' 같은 쉬운 관용 표현을 더합니다."
   ],
   "expressions": [
-    {"en": "Oh, parks? Sure, I go to the park near my place all the time.", "ko": "아, 공원이요? 네, 저는 집 근처 공원에 자주 가요.", "level": "IM", "note": "시작 문장: my place = 우리 집 (구어체로 자주 써요)"},
-    {"en": "There's a small park about five minutes from my apartment.", "ko": "제 아파트에서 5분 정도 거리에 작은 공원이 있어요.", "level": "IM", "note": "There's ~ + 거리: 장소 묘사 첫 문장으로 최고"},
-    {"en": "There's a walking path that goes around the park.", "ko": "공원을 한 바퀴 도는 산책로가 있어요.", "level": "IM"},
-    {"en": "There are a lot of tall trees and benches.", "ko": "키 큰 나무와 벤치가 많아요.", "level": "IM"},
-    {"en": "Many people walk their dogs there in the evening.", "ko": "저녁에는 많은 사람들이 거기서 강아지를 산책시켜요.", "level": "IM", "note": "walk one's dog: 개를 산책시키다"},
-    {"en": "I usually take a walk in the park after work.", "ko": "저는 보통 퇴근 후 공원에서 산책을 해요.", "level": "IM", "note": "take a walk: 산책하다"},
-    {"en": "It's quiet and peaceful, so I can relax there.", "ko": "조용하고 평화로워서 거기서 쉴 수 있어요.", "level": "IM"},
-    {"en": "On weekends, I sit on a bench with an iced Americano and read a book.", "ko": "주말에는 아이스 아메리카노를 들고 벤치에 앉아 책을 읽어요.", "level": "IH"},
-    {"en": "Walking in the park helps me clear my head after a long day.", "ko": "공원 산책은 긴 하루 뒤에 머리를 맑게 해 줘요.", "level": "IH", "note": "clear my head: 머리를 식히다, 생각을 정리하다"},
-    {"en": "The Han River park is only ten minutes away by bike.", "ko": "한강공원은 자전거로 10분밖에 안 걸려요.", "level": "IH", "note": "~ minutes away by bike / subway: 교통수단별 거리"},
-    {"en": "All of a sudden, it started pouring, so we ran under the bridge.", "ko": "갑자기 비가 쏟아져서 저희는 다리 밑으로 뛰어갔어요.", "level": "IH", "note": "All of a sudden: 경험 답변에서 반전 시작 신호"},
-    {"en": "When I was a kid, the park near our apartment only had a sandbox and some swings.", "ko": "어렸을 때 우리 아파트 근처 공원에는 모래 놀이터와 그네 몇 개뿐이었어요.", "level": "IH", "note": "When I was a kid ~: 비교 질문의 과거 장면 시작"},
-    {"en": "It's my little escape from the busy city.", "ko": "그곳은 바쁜 도시에서 벗어나는 저만의 작은 탈출구예요.", "level": "AL", "note": "escape를 명사로 써서 감정을 담은 묘사"},
-    {"en": "These days, parks are not just places for kids anymore.", "ko": "요즘 공원은 더 이상 아이들만을 위한 곳이 아니에요.", "level": "AL", "note": "not just ~ anymore: 변화를 강조하는 비교 표현"},
-    {"en": "Yeah, that's why I love going to the park.", "ko": "네, 그래서 저는 공원 가는 걸 좋아해요.", "level": "IM", "note": "마무리 문장: 주제 키워드를 넣어 깔끔하게 끝내세요."}
+    {
+      "en": "Oh, parks? Sure, I go to the park near my place all the time.",
+      "ko": "아, 공원이요? 네, 저는 집 근처 공원에 자주 가요.",
+      "level": "IM",
+      "note": "시작 문장: my place = 우리 집 (구어체로 자주 써요)"
+    },
+    {
+      "en": "There's a small park about five minutes from my apartment.",
+      "ko": "제 아파트에서 5분 정도 거리에 작은 공원이 있어요.",
+      "level": "IM",
+      "note": "There's ~ + 거리: 장소 묘사 첫 문장으로 최고"
+    },
+    {
+      "en": "There's a walking path that goes around the park.",
+      "ko": "공원을 한 바퀴 도는 산책로가 있어요.",
+      "level": "IM"
+    },
+    {
+      "en": "There are a lot of tall trees and benches.",
+      "ko": "키 큰 나무와 벤치가 많아요.",
+      "level": "IM"
+    },
+    {
+      "en": "Many people walk their dogs there in the evening.",
+      "ko": "저녁에는 많은 사람들이 거기서 강아지를 산책시켜요.",
+      "level": "IM",
+      "note": "walk one's dog: 개를 산책시키다"
+    },
+    {
+      "en": "I usually take a walk in the park after work.",
+      "ko": "저는 보통 퇴근 후 공원에서 산책을 해요.",
+      "level": "IM",
+      "note": "take a walk: 산책하다"
+    },
+    {
+      "en": "It's quiet and peaceful, so I can relax there.",
+      "ko": "조용하고 평화로워서 거기서 쉴 수 있어요.",
+      "level": "IM"
+    },
+    {
+      "en": "On weekends, I sit on a bench with an iced Americano and read a book.",
+      "ko": "주말에는 아이스 아메리카노를 들고 벤치에 앉아 책을 읽어요.",
+      "level": "IH"
+    },
+    {
+      "en": "Walking in the park helps me clear my head after a long day.",
+      "ko": "공원 산책은 긴 하루 뒤에 머리를 맑게 해 줘요.",
+      "level": "IH",
+      "note": "clear my head: 머리를 식히다, 생각을 정리하다"
+    },
+    {
+      "en": "The Han River park is only ten minutes away by bike.",
+      "ko": "한강공원은 자전거로 10분밖에 안 걸려요.",
+      "level": "IH",
+      "note": "~ minutes away by bike / subway: 교통수단별 거리"
+    },
+    {
+      "en": "All of a sudden, it started pouring, so we ran under the bridge.",
+      "ko": "갑자기 비가 쏟아져서 저희는 다리 밑으로 뛰어갔어요.",
+      "level": "IH",
+      "note": "All of a sudden: 경험 답변에서 반전 시작 신호"
+    },
+    {
+      "en": "When I was a kid, the park near our apartment only had a sandbox and some swings.",
+      "ko": "어렸을 때 우리 아파트 근처 공원에는 모래 놀이터와 그네 몇 개뿐이었어요.",
+      "level": "IH",
+      "note": "When I was a kid ~: 비교 질문의 과거 장면 시작"
+    },
+    {
+      "en": "It's my little escape from the busy city.",
+      "ko": "그곳은 바쁜 도시에서 벗어나는 저만의 작은 탈출구예요.",
+      "level": "AL",
+      "note": "escape를 명사로 써서 감정을 담은 묘사"
+    },
+    {
+      "en": "These days, parks are not just places for kids anymore.",
+      "ko": "요즘 공원은 더 이상 아이들만을 위한 곳이 아니에요.",
+      "level": "AL",
+      "note": "not just ~ anymore: 변화를 강조하는 비교 표현"
+    },
+    {
+      "en": "Yeah, that's why I love going to the park.",
+      "ko": "네, 그래서 저는 공원 가는 걸 좋아해요.",
+      "level": "IM",
+      "note": "마무리 문장: 주제 키워드를 넣어 깔끔하게 끝내세요."
+    }
   ],
   "questions": [
     {
@@ -96,10 +167,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "park", "ipa": "/pɑːrk/", "tip": "'파크'가 아니라 입을 크게 벌린 '파-r크'. 모음 뒤에 혀를 살짝 말아 r을 넣고, 끝 k는 짧게 끊으세요."},
-    {"word": "bench", "ipa": "/bentʃ/", "tip": "'벤치'의 '치'를 길게 끌지 말고 '벤ㅊ'처럼 짧게 끝냅니다."},
-    {"word": "path", "ipa": "/pæθ/", "tip": "'패스'가 아니라 끝에 th(θ). 혀끝을 이 사이에 살짝 물고 바람만 내보내세요."},
-    {"word": "playground", "ipa": "/ˈpleɪɡraʊnd/", "tip": "강세는 'play'. 'ground'의 gr은 모음 없이 바로 붙여서 '플레이그롸운드'처럼 말합니다."},
-    {"word": "stroll", "ipa": "/stroʊl/", "tip": "'스트롤'처럼 모음을 넣지 말고 s-t-r을 한 번에. 끝 l은 혀를 윗잇몸에 대며 '오울'로 마무리하세요."}
+    {
+      "word": "park",
+      "ipa": "/pɑːrk/",
+      "tip": "'파크'가 아니라 입을 크게 벌린 '파-r크'. 모음 뒤에 혀를 살짝 말아 r을 넣고, 끝 k는 짧게 끊으세요."
+    },
+    {
+      "word": "bench",
+      "ipa": "/bentʃ/",
+      "tip": "'벤치'의 '치'를 길게 끌지 말고 '벤ㅊ'처럼 짧게 끝냅니다."
+    },
+    {
+      "word": "path",
+      "ipa": "/pæθ/",
+      "tip": "'패스'가 아니라 끝에 th(θ). 혀끝을 이 사이에 살짝 물고 바람만 내보내세요."
+    },
+    {
+      "word": "playground",
+      "ipa": "/ˈpleɪɡraʊnd/",
+      "tip": "강세는 'play'. 'ground'의 gr은 모음 없이 바로 붙여서 '플레이그롸운드'처럼 말합니다."
+    },
+    {
+      "word": "stroll",
+      "ipa": "/stroʊl/",
+      "tip": "'스트롤'처럼 모음을 넣지 말고 s-t-r을 한 번에. 끝 l은 혀를 윗잇몸에 대며 '오울'로 마무리하세요."
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "place#1",
+      "en": "There's a small neighborhood park near my place.",
+      "ko": "저희 집 근처에 작은 동네 공원이 있어요.",
+      "q": "park-describe"
+    },
+    {
+      "pid": "place#2",
+      "en": "It's only a five-minute walk from my house.",
+      "ko": "집에서 걸어서 5분밖에 안 걸려요.",
+      "q": "park-describe"
+    },
+    {
+      "pid": "describe#0",
+      "en": "It's a quiet place with a walking path, tall trees, and lots of benches.",
+      "ko": "산책로와 키 큰 나무들, 벤치가 많은 조용한 곳이에요.",
+      "q": "park-describe"
+    },
+    {
+      "pid": "routine#0",
+      "en": "I walk around the park after work about two or three times a week.",
+      "ko": "저는 일주일에 두세 번 정도 퇴근 후에 공원을 걸어요.",
+      "q": "park-routine"
+    },
+    {
+      "pid": "reason#2",
+      "en": "It helps me clear my head after a long day of meetings.",
+      "ko": "하루 종일 회의를 하고 나서 머리를 식히는 데 도움이 돼요.",
+      "q": "park-routine"
+    },
+    {
+      "pid": "memory#0",
+      "en": "I remember one time when it suddenly started pouring during our picnic at the Han River park.",
+      "ko": "한강공원에서 피크닉을 하던 중에 갑자기 비가 쏟아졌던 때가 기억나요.",
+      "q": "park-experience"
+    },
+    {
+      "pid": "change#1",
+      "en": "Compared to the tiny park in Daejeon, the park near my apartment is much bigger and nicer.",
+      "ko": "대전의 작은 공원에 비해, 우리 아파트 근처 공원은 훨씬 크고 좋아요.",
+      "q": "park-compare"
+    },
+    {
+      "pid": "change#2",
+      "en": "These days, people tend to use parks to exercise and relax, not just to let kids play.",
+      "ko": "요즘 사람들은 아이들 놀이뿐 아니라 운동하고 쉬려고 공원을 이용하는 경향이 있어요.",
+      "q": "park-compare"
+    }
   ]
 }

@@ -7,22 +7,31 @@ import { header } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
 import { createAutoPlay, createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap, repeatLoop, toggleLoop, loopLabel } from '../autoplay.js';
 import { compareToText } from '../scoring.js';
+import { speakQuiz } from './quiz.js';
+
+// 주제 화면: ① 표현 → ② 이 주제에 쓰는 패턴 → ③ 모범답안·직접 말하기 → ④ 팁(전략·발음)
+const TABS = [['expr', '① 표현'], ['pat', '② 패턴'], ['q', '③ 답안'], ['tips', '④ 팁']];
 
 export async function render(root, route) {
   const id = route.parts[0];
-  const topic = await data.topic(id);
-  const tab = route.query.tab || 'expr';
+  const [topic, patterns] = await Promise.all([data.topic(id), data.patterns()]);
+  let tab = route.query.tab || 'expr';
+  if (tab === 'pron' || tab === 'guide') tab = 'tips';   // 예전 링크 호환
   const level = route.query.level || store.settings.target || 'IM3';
+  store.setLastTopic(topic.id);
 
   root.innerHTML = html`
     ${raw(header(`${topic.emoji} ${topic.title}`, { right: editLinkHtml(topic.file, '✏️', 'icon-btn') }))}
-    <div class="tabs" id="tabs">
-      <button data-tab="expr" class="${tab === 'expr' ? 'active' : ''}">표현 ${topic.expressions?.length || 0}</button>
-      <button data-tab="q" class="${tab === 'q' ? 'active' : ''}">질문·답안 ${topic.questions?.length || 0}</button>
-      <button data-tab="pron" class="${tab === 'pron' ? 'active' : ''}">발음</button>
-      <button data-tab="guide" class="${tab === 'guide' ? 'active' : ''}">전략</button>
-    </div>
+    <div class="topic-steps" data-steps></div>
+    <div class="tabs mt12" id="tabs">${raw(TABS.map(([k, t]) => `<button data-tab="${k}" class="${tab === k ? 'active' : ''}">${t}</button>`).join(''))}</div>
     <div id="tabbody" class="mt12"></div>`;
+
+  const drawSteps = () => {
+    const p = store.topicProgress(topic);
+    root.querySelector('[data-steps]').innerHTML = [['expr', '표현'], ['pat', '패턴'], ['ans', '답안 연습']]
+      .map(([k, l]) => `<div class="s"><i style="width:${p[k][1] ? p[k][0] / p[k][1] * 100 : 0}%"></i><span>${l} ${p[k][0]}/${p[k][1]}</span></div>`).join('');
+  };
+  drawSteps();
 
   const body = root.querySelector('#tabbody');
   let player = null;
@@ -30,14 +39,57 @@ export async function render(root, route) {
     root.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === t));
     player?.destroy(); player = null;
     stopSpeaking();
+    drawSteps();
     if (t === 'expr') player = renderExpr(body, topic);
+    else if (t === 'pat') player = renderTopicPatterns(body, topic, patterns, drawSteps);
     else if (t === 'q') renderQuestions(body, topic, level, route.query);
-    else if (t === 'pron') player = renderPron(body, topic);
-    else renderGuide(body, topic);
+    else player = renderTips(body, topic);
   };
   root.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => renderTab(b.dataset.tab)));
   renderTab(tab);
   return () => { player?.destroy(); stopSpeaking(); };
+}
+
+// ---------- 주제 패턴: 만능 패턴 72문장을 이 주제 내용으로 채운 문장 ----------
+export function topicPatternCards(topic, patterns) {
+  const frames = {};
+  (patterns.groups || []).forEach(g => g.items.forEach((it, i) => { frames[`${g.id}#${i}`] = { pattern: it.pattern, level: it.level, group: g.title }; }));
+  return (topic.patterns || []).map((p, i) => {
+    const f = frames[p.pid] || {};
+    return { ...p, id: `${topic.id}#p${i}`, no: i + 1, pattern: f.pattern, level: f.level || 'IM', group: f.group || '', note: f.pattern ? `패턴: ${f.pattern}` : '' };
+  });
+}
+
+function renderTopicPatterns(body, topic, patterns, onChange) {
+  const cards = topicPatternCards(topic, patterns);
+  const qById = Object.fromEntries((topic.questions || []).map(q => [q.id, q]));
+  const handle = { stop() {}, destroy() {} };
+  const list = () => {
+    onChange();
+    body.innerHTML = html`
+      <div class="row between mb12"><div class="small muted">만능 패턴을 ${topic.title} 답변에 맞춰 채웠어요. 빈칸(___)만 바꾸면 내 이야기가 됩니다.</div>
+        <span class="row" style="gap:6px"><button class="btn sm" data-quiz>🎙️ 퀴즈</button><button class="btn sm dark" data-flash>카드</button></span></div>
+      <div data-autoplay></div>
+      <div class="list mt12" data-list>${raw(cards.map(c => {
+        const info = store.exprInfo(c.id);
+        const dot = info.box >= 3 ? '✅' : info.box > 0 ? '🟡' : '';
+        const q = qById[c.q];
+        return `<div class="expr"><button class="play" data-say="${encodeURIComponent(c.en)}">🔊</button>
+          <div class="grow">${c.pattern ? `<div class="pat-frame">${c.no}. ${c.pattern}</div>` : ''}<div class="en">${c.en} <span class="xs">${dot}</span></div><div class="ko">${c.ko}</div>
+          ${q ? `<a class="note" href="#/practice/${topic.id}/${q.id}">💬 ${TYPE_LABEL[q.type] || q.type} 답변에 쓰기 ›</a>` : ''}</div>
+          <span class="badge ${c.level}">${c.level}</span></div>`;
+      }).join(''))}</div>
+      ${cards.length ? '' : raw('<div class="empty">이 주제에는 아직 패턴이 없어요.</div>')}
+      <a class="btn ghost block mt12" href="#/drill?tab=patterns">🧩 만능 패턴 72문장 전체 보기</a>`;
+    bindPlay(body);
+    const player = createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]'));
+    handle.stop = () => player.stop(); handle.destroy = () => player.destroy();
+    const swap = (p) => { handle.stop = p.stop; handle.destroy = p.destroy; };
+    body.querySelector('[data-flash]')?.addEventListener('click', () => { player.destroy(); swap(flashcards(body, cards, list)); });
+    body.querySelector('[data-quiz]')?.addEventListener('click', () => { player.destroy(); swap(speakQuiz(body, cards, list)); });
+  };
+  list();
+  return handle;
 }
 
 // ---------- 표현: 리스트 + 플래시카드 ----------
@@ -148,7 +200,8 @@ export function iconFor(type) {
 // ---------- 발음 ----------
 function renderPron(body, topic) {
   const items = topic.pronunciation || [];
-  body.innerHTML = html`
+  body.innerHTML += html`
+    <div class="section-title">발음 체크</div>
     <p class="small muted mb12">이 주제에서 한국인이 자주 틀리는 단어. 🔊 듣고 🎙️ 녹음하면 인식 결과로 발음을 확인합니다.</p>
     <div data-autoplay></div>
     <div class="list mt12" data-list>${raw(items.map((p, i) => `<div class="expr" data-pron="${i}"><button class="play" data-say="${encodeURIComponent(p.word)}">🔊</button><div class="grow"><div class="en">${p.word} <span class="small muted" style="font-weight:500">${p.ipa || ''}</span></div><div class="ko">${p.tip || ''}</div><div class="xs mt8" data-result></div></div><button class="play" data-check="${i}">🎙️</button></div>`).join(''))}</div>`;
@@ -176,16 +229,23 @@ export async function quickCheck(btn, text, $out, { listenText = text } = {}) {
   return cmp.score;   // 인식 실패 시 null — 말하기 퀴즈가 채점 불가로 처리한다
 }
 
-// ---------- 전략 ----------
+// ---------- 팁: 전략 + 발음 ----------
+function renderTips(body, topic) {
+  renderGuide(body, topic);
+  const pron = document.createElement('div');
+  body.appendChild(pron);
+  return renderPron(pron, topic);
+}
+
 function renderGuide(body, topic) {
   body.innerHTML = html`
     <div class="card"><div class="h3 mb8">출제 경향 & 전략</div><p class="small ink2">${topic.intro}</p>
     <ul class="small ink2" style="padding-left:18px;margin:10px 0 0">${raw((topic.strategy || []).map(s => `<li>${s}</li>`).join(''))}</ul></div>
-    <div class="card soft mt12"><div class="h3 mb8">이 주제 학습 루틴 (15분)</div>
+    <div class="card soft mt12"><div class="h3 mb8">이 주제 학습 루틴 (20분)</div>
       <ol class="small ink2" style="padding-left:18px;margin:0">
-        <li>표현 탭 → 카드 모드로 15개 듣고 따라 말하기 (5분)</li>
-        <li>질문 탭 → 목표 레벨 모범답안 문장별 섀도잉 (5분)</li>
-        <li>같은 질문에 직접 녹음 답변 → 채점 → 피드백 반영해 한 번 더 (5분)</li>
+        <li>① 표현 → 카드 모드로 15개 듣고 따라 말하기 (5분)</li>
+        <li>② 패턴 → 이 주제용 패턴 문장을 퀴즈로 입에 붙이기 (5분)</li>
+        <li>③ 답안 → 목표 레벨 모범답안 섀도잉 후 직접 녹음 · 채점 (10분)</li>
       </ol></div>
     ${raw(editLinkHtml(topic.file, '✏️ GitHub에서 이 주제 내용 수정', 'btn ghost block mt12'))}`;
 }

@@ -13,21 +13,94 @@
     "경험·비교 질문은 '입사 1년 차, 하루 종일 앉아 있어서 몸이 무겁고 스트레스가 쌓여 시작 → 처음엔 10분도 힘들었음 → 지금은 30분 거뜬' 이야기 하나로 둘 다 답할 수 있습니다."
   ],
   "expressions": [
-    {"en": "Oh, jogging? Sure, I'd love to talk about it.", "ko": "아, 조깅이요? 네, 기꺼이 얘기할게요.", "level": "IM", "note": "주제 시작 문장: 질문 키워드를 한 번 되묻고 시작"},
-    {"en": "I go jogging three times a week after work.", "ko": "저는 일주일에 세 번 퇴근 후에 조깅해요.", "level": "IM", "note": "go + -ing: 운동·여가 활동 / after work: 퇴근 후"},
-    {"en": "I usually jog along the Han River.", "ko": "저는 보통 한강을 따라 조깅해요.", "level": "IM", "note": "along + 장소: ~을 따라"},
-    {"en": "It takes about ten minutes by bike from my apartment.", "ko": "우리 아파트에서 자전거로 10분 정도 걸려요.", "level": "IM", "note": "It takes + 시간 + by 교통수단"},
-    {"en": "I run for about 30 minutes.", "ko": "30분 정도 뛰어요.", "level": "IM"},
-    {"en": "Before I run, I always stretch a little.", "ko": "뛰기 전에 항상 스트레칭을 조금 해요.", "level": "IM"},
-    {"en": "I listen to K-pop with my earphones while I run.", "ko": "뛰는 동안 이어폰으로 K-pop을 들어요.", "level": "IM", "note": "while + 주어 + 동사: ~하는 동안"},
-    {"en": "I feel so refreshed after a run.", "ko": "뛰고 나면 정말 상쾌해요.", "level": "IM", "note": "refreshed: 사람 주어 + 기분"},
-    {"en": "I sit in front of my computer all day, so I really need to move in the evening.", "ko": "하루 종일 컴퓨터 앞에 앉아 있어서 저녁엔 정말 몸을 움직여야 해요.", "level": "IH", "note": "직장인 이유 문장: all day → so → need to"},
-    {"en": "Jogging is the best way for me to get rid of stress from work.", "ko": "조깅은 저한테 회사 스트레스를 푸는 가장 좋은 방법이에요.", "level": "IH", "note": "the best way to + 동사 / get rid of: ~을 없애다"},
-    {"en": "At first, I couldn't even run for ten minutes.", "ko": "처음엔 10분도 못 뛰었어요.", "level": "IH", "note": "경험·비교 질문의 '처음' 문장. even으로 강조"},
-    {"en": "I was completely out of breath.", "ko": "완전히 숨이 찼어요.", "level": "IH", "note": "out of breath: 숨이 찬"},
-    {"en": "These days, running 30 minutes is no big deal for me.", "ko": "요즘은 30분 뛰는 게 저한테 별일 아니에요.", "level": "IH", "note": "no big deal: 별것 아닌 일 → 변화 강조"},
-    {"en": "Once I start running, all my worries just seem to disappear.", "ko": "일단 뛰기 시작하면 걱정이 그냥 다 사라지는 것 같아요.", "level": "AL", "note": "Once + 주어 + 동사: 일단 ~하면 / seem to + 동사"},
-    {"en": "So yeah, that's pretty much how jogging became a big part of my life.", "ko": "그래서 네, 그렇게 조깅이 제 삶의 큰 부분이 됐어요.", "level": "AL", "note": "마무리 문장: So yeah, that's pretty much ~"}
+    {
+      "en": "Oh, jogging? Sure, I'd love to talk about it.",
+      "ko": "아, 조깅이요? 네, 기꺼이 얘기할게요.",
+      "level": "IM",
+      "note": "주제 시작 문장: 질문 키워드를 한 번 되묻고 시작"
+    },
+    {
+      "en": "I go jogging three times a week after work.",
+      "ko": "저는 일주일에 세 번 퇴근 후에 조깅해요.",
+      "level": "IM",
+      "note": "go + -ing: 운동·여가 활동 / after work: 퇴근 후"
+    },
+    {
+      "en": "I usually jog along the Han River.",
+      "ko": "저는 보통 한강을 따라 조깅해요.",
+      "level": "IM",
+      "note": "along + 장소: ~을 따라"
+    },
+    {
+      "en": "It takes about ten minutes by bike from my apartment.",
+      "ko": "우리 아파트에서 자전거로 10분 정도 걸려요.",
+      "level": "IM",
+      "note": "It takes + 시간 + by 교통수단"
+    },
+    {
+      "en": "I run for about 30 minutes.",
+      "ko": "30분 정도 뛰어요.",
+      "level": "IM"
+    },
+    {
+      "en": "Before I run, I always stretch a little.",
+      "ko": "뛰기 전에 항상 스트레칭을 조금 해요.",
+      "level": "IM"
+    },
+    {
+      "en": "I listen to K-pop with my earphones while I run.",
+      "ko": "뛰는 동안 이어폰으로 K-pop을 들어요.",
+      "level": "IM",
+      "note": "while + 주어 + 동사: ~하는 동안"
+    },
+    {
+      "en": "I feel so refreshed after a run.",
+      "ko": "뛰고 나면 정말 상쾌해요.",
+      "level": "IM",
+      "note": "refreshed: 사람 주어 + 기분"
+    },
+    {
+      "en": "I sit in front of my computer all day, so I really need to move in the evening.",
+      "ko": "하루 종일 컴퓨터 앞에 앉아 있어서 저녁엔 정말 몸을 움직여야 해요.",
+      "level": "IH",
+      "note": "직장인 이유 문장: all day → so → need to"
+    },
+    {
+      "en": "Jogging is the best way for me to get rid of stress from work.",
+      "ko": "조깅은 저한테 회사 스트레스를 푸는 가장 좋은 방법이에요.",
+      "level": "IH",
+      "note": "the best way to + 동사 / get rid of: ~을 없애다"
+    },
+    {
+      "en": "At first, I couldn't even run for ten minutes.",
+      "ko": "처음엔 10분도 못 뛰었어요.",
+      "level": "IH",
+      "note": "경험·비교 질문의 '처음' 문장. even으로 강조"
+    },
+    {
+      "en": "I was completely out of breath.",
+      "ko": "완전히 숨이 찼어요.",
+      "level": "IH",
+      "note": "out of breath: 숨이 찬"
+    },
+    {
+      "en": "These days, running 30 minutes is no big deal for me.",
+      "ko": "요즘은 30분 뛰는 게 저한테 별일 아니에요.",
+      "level": "IH",
+      "note": "no big deal: 별것 아닌 일 → 변화 강조"
+    },
+    {
+      "en": "Once I start running, all my worries just seem to disappear.",
+      "ko": "일단 뛰기 시작하면 걱정이 그냥 다 사라지는 것 같아요.",
+      "level": "AL",
+      "note": "Once + 주어 + 동사: 일단 ~하면 / seem to + 동사"
+    },
+    {
+      "en": "So yeah, that's pretty much how jogging became a big part of my life.",
+      "ko": "그래서 네, 그렇게 조깅이 제 삶의 큰 부분이 됐어요.",
+      "level": "AL",
+      "note": "마무리 문장: So yeah, that's pretty much ~"
+    }
   ],
   "questions": [
     {
@@ -96,10 +169,80 @@
     }
   ],
   "pronunciation": [
-    {"word": "jogging", "ipa": "/ˈdʒɑː.ɡɪŋ/", "tip": "첫 음절에 강세. '조깅'처럼 '오'로 발음하지 말고 입을 크게 벌려 '아'에 가깝게 '좌-깅'"},
-    {"word": "stretch", "ipa": "/stretʃ/", "tip": "한 음절. '스트레치'처럼 4음절로 늘리지 말고 str을 한 번에 붙여서"},
-    {"word": "refreshed", "ipa": "/rɪˈfreʃt/", "tip": "-ed는 '트' 한 소리로 짧게. '리프레쉬드'가 아니라 '리프레쉬트'"},
-    {"word": "river", "ipa": "/ˈrɪv.ɚ/", "tip": "r은 혀를 입천장에 닿지 않게 말고, v는 윗니로 아랫입술을 살짝 물어서"},
-    {"word": "breath", "ipa": "/breθ/", "tip": "명사 breath는 짧은 '에'와 무성 th. 동사 breathe /briːð/와 구분 (out of breath)"}
+    {
+      "word": "jogging",
+      "ipa": "/ˈdʒɑː.ɡɪŋ/",
+      "tip": "첫 음절에 강세. '조깅'처럼 '오'로 발음하지 말고 입을 크게 벌려 '아'에 가깝게 '좌-깅'"
+    },
+    {
+      "word": "stretch",
+      "ipa": "/stretʃ/",
+      "tip": "한 음절. '스트레치'처럼 4음절로 늘리지 말고 str을 한 번에 붙여서"
+    },
+    {
+      "word": "refreshed",
+      "ipa": "/rɪˈfreʃt/",
+      "tip": "-ed는 '트' 한 소리로 짧게. '리프레쉬드'가 아니라 '리프레쉬트'"
+    },
+    {
+      "word": "river",
+      "ipa": "/ˈrɪv.ɚ/",
+      "tip": "r은 혀를 입천장에 닿지 않게 말고, v는 윗니로 아랫입술을 살짝 물어서"
+    },
+    {
+      "word": "breath",
+      "ipa": "/breθ/",
+      "tip": "명사 breath는 짧은 '에'와 무성 th. 동사 breathe /briːð/와 구분 (out of breath)"
+    }
+  ],
+  "patterns": [
+    {
+      "pid": "like#0",
+      "en": "I really enjoy jogging along the Han River in my free time.",
+      "ko": "저는 여가 시간에 한강을 따라 조깅하는 걸 정말 즐겨요.",
+      "q": "jogging-describe"
+    },
+    {
+      "pid": "place#3",
+      "en": "My favorite place to jog is the long, flat path along the Han River.",
+      "ko": "제가 제일 좋아하는 조깅 장소는 한강을 따라 난 길고 평평한 길이에요.",
+      "q": "jogging-describe"
+    },
+    {
+      "pid": "people#3",
+      "en": "I have a friend named Minji, and we used to go jogging together once a week.",
+      "ko": "Minji라는 친구가 있는데, 예전에 일주일에 한 번씩 같이 조깅을 했어요.",
+      "q": "jogging-experience"
+    },
+    {
+      "pid": "routine#0",
+      "en": "I go jogging about three times a week.",
+      "ko": "저는 일주일에 세 번 정도 조깅을 해요.",
+      "q": "jogging-routine"
+    },
+    {
+      "pid": "reason#4",
+      "en": "Whenever I run along the river after work, I feel refreshed and all my stress is gone.",
+      "ko": "퇴근 후 강을 따라 달릴 때마다 상쾌해지고 스트레스가 다 사라지는 느낌이에요.",
+      "q": "jogging-describe"
+    },
+    {
+      "pid": "start#1",
+      "en": "I started jogging about three years ago.",
+      "ko": "저는 약 3년 전에 조깅을 시작했어요.",
+      "q": "jogging-experience"
+    },
+    {
+      "pid": "memory#5",
+      "en": "I'll never forget the first time I ran for 30 minutes without stopping because I felt so proud.",
+      "ko": "처음으로 30분을 쉬지 않고 달렸던 때를 절대 잊지 못할 거예요. 정말 뿌듯했거든요.",
+      "q": "jogging-experience"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to jog only when I was really stressed, but now I go three times a week.",
+      "ko": "예전에는 정말 스트레스를 받을 때만 조깅했는데, 지금은 일주일에 세 번 가요.",
+      "q": "jogging-compare"
+    }
   ]
 }
