@@ -88,7 +88,9 @@
   지금 파일에 없는 패턴의 학습 기록(`pat:*`)은 앱이 자동으로 지웁니다.
 - `data/mock-sets.json` – 모의고사 구성. `slots` 로 문항 조합, `levels` 로 등급 커트라인.
 - 질문의 `answersKo` – 모범답안 한글 해석. `{"IM3": [...], "IH": [...], "AL": [...]}` 로, 영어 답안을 문장(. ! ? 기준)으로 나눈 개수와 **같은 개수**의 한글 문장 배열입니다. 영어 답안을 고치면 해석 개수도 맞추세요. `a.m.` 같은 약어는 문장이 잘리니 `in the morning` 처럼 풀어 씁니다.
-- 주제 파일의 `patterns` – 만능 패턴을 이 주제에 맞춰 채운 문장 8개. `{pid, en, ko, q}`: `pid` 는 `<그룹 id>#<번호>`(예: `like#0`), `en` 은 패턴 틀의 단어를 그대로 두고 빈칸만 채운 문장, `q` 는 이 문장을 쓰는 질문 id. `validate.py` 가 셋 다 검사합니다.
+- 주제 파일의 `combos` – 패턴 조합. IM3·IH·AL 각 2개, `{level, q, title, parts: [{pid, en, ko}]}`. parts 3~4개를 이으면 답변 한 단락이 되고, 조합마다 만능패턴 72(`set: kang`)와 IM3 25(`set: im3`)를 하나 이상씩 섞습니다.
+- `data/patterns.json` 의 `sets` – 패턴 세트(kang · im3)와 출처 영상. 각 그룹의 `set` 이 어느 세트인지 가리킵니다.
+- 주제 파일의 `patterns` – 만능 패턴을 이 주제에 레벨별로 적용한 문장. IM3·IH·AL 각 6개, `{level, pid, en, ko, q}`. `en` 은 `q` 질문의 그 `level` 모범답안 안에 한 문장으로 그대로 들어 있어야 하고, IM3 는 IM 패턴 틀, IH 는 IM·IH, AL 은 IH·AL 틀만 씁니다: `pid` 는 `<그룹 id>#<번호>`(예: `like#0`), `en` 은 패턴 틀의 단어를 그대로 두고 빈칸만 채운 문장, `q` 는 이 문장을 쓰는 질문 id. `validate.py` 가 셋 다 검사합니다.
   과제 `type`: `learn` `shadow` `speak` `pattern` `pron` `mock` `review`.
 
 ## 로컬에서 검증

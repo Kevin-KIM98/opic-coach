@@ -110,9 +110,9 @@
         "IH 이상은 'I first got into his music when I was in high school in Daejeon'처럼 계기 문장을 넣어 이야기를 만드세요."
       ],
       "answers": {
-        "IM3": "Oh, music? Sure, I'd love to talk about that. I really like ballads and rock music from the 90s. My favorite singer is Shin Seung-hun. His voice is soft, and his songs are really touching. I listened to his songs a lot when I was in high school. So his music brings back good memories. These days, I also listen to K-pop because my kids love it. Yeah, that's the kind of music I like.",
-        "IH": "Oh, music? Sure, I'd love to talk about that. I'm really into ballads and rock music from the 90s. My favorite singer is Shin Seung-hun. I first got into his music when I was in high school in Daejeon. Back then, I listened to his tapes every night while I studied. His voice is soft and warm, and his lyrics are about love and life, so they're easy to relate to. Even now, when I hear his songs, I feel like a teenager again. I also like old rock bands, because their songs give me energy when I'm tired. Recently, my taste has changed a little because of my kids. My son and daughter always play K-pop at home, so now I know a few K-pop songs too. Yeah, that's pretty much the kind of music I like.",
-        "AL": "Oh, music? Sure, I'd love to talk about that, because music has been a big part of my life for a long time. I'm a huge fan of ballads and rock from the 90s, and my all-time favorite singer is Shin Seung-hun. I first got into his music when I was in high school in Daejeon. I used to listen to his cassette tapes every night while studying, so I know almost all of his songs by heart. What I love about him is his warm, gentle voice. His lyrics are simple, but they're about love, missing someone, and growing up, so they really stick with you. Whenever I hear one of his songs, it takes me right back to my school days, and I can almost smell my old classroom. I also like 90s rock, because it wakes me up when I'm exhausted after a long day of meetings. The funny thing is that my taste has expanded thanks to my kids. They play K-pop all the time, and at first it all sounded the same to me, but now I actually have a couple of favorite groups, and I even hum their songs at work. So yeah, that's the kind of music I like and why I like it."
+        "IM3": "Oh, music? Sure, I'd love to talk about that. I really like ballads and rock music from the 90s. My favorite singer is Shin Seung-hun. His voice is soft, and his songs are really touching. I first got into his music when I was in high school. So his music brings back good memories. I'm really into K-pop these days, thanks to my kids. Yeah, that's the kind of music I like.",
+        "IH": "Oh, music? Sure, I'd love to talk about that. I'm really into ballads and rock music from the 90s. My favorite singer is Shin Seung-hun. I first got into his music when I was in high school in Daejeon. Back then, I listened to his tapes every night while I studied. His voice is soft and warm, and his lyrics are about love and life, so they're easy to relate to. Whenever I hear his songs, I feel like a teenager again. I also like old rock bands, because their songs give me energy when I'm tired. Recently, my taste has changed a little because of my kids. My kids got me interested in K-pop, because they always play it at home. Yeah, that's pretty much the kind of music I like.",
+        "AL": "Oh, music? Sure, I'd love to talk about that, because music has been a big part of my life for a long time. When it comes to music, I'm a huge fan of 90s ballads and rock, and my all-time favorite singer is Shin Seung-hun. I first got into his music when I was in high school in Daejeon. I used to listen to his cassette tapes every night while studying, so I know almost all of his songs by heart. Ever since then, I've been a loyal fan of his music. What I love about him is his warm, gentle voice. His lyrics are simple, but they're about love, missing someone, and growing up, so they really stick with you. Whenever I hear one of his songs, it takes me right back to my school days, and I can almost smell my old classroom. I also like 90s rock, because it wakes me up when I'm exhausted after a long day of meetings. The funny thing is that my taste has expanded thanks to my kids. They play K-pop all the time, and at first it all sounded the same to me, but now I actually have a couple of favorite groups, and I even hum their songs at work. So yeah, that's the kind of music I like and why I like it."
       },
       "answersKo": {
         "IM3": [
@@ -121,9 +121,9 @@
           "저는 90년대 발라드랑 록 음악을 정말 좋아해요.",
           "제일 좋아하는 가수는 신승훈이에요.",
           "목소리가 부드럽고, 노래가 정말 감동적이에요.",
-          "고등학교 때 그분 노래를 정말 많이 들었어요.",
+          "저는 고등학교 때 처음 그의 음악에 빠졌어요.",
           "그래서 그분 음악을 들으면 좋은 추억이 떠올라요.",
-          "요즘은 아이들이 좋아해서 K-pop도 들어요.",
+          "저는 아이들 덕분에 요즘 K-pop에 푹 빠져 있어요.",
           "네, 그게 제가 좋아하는 음악이에요."
         ],
         "IH": [
@@ -134,18 +134,19 @@
           "처음 그분 음악에 빠진 건 대전에서 고등학교 다닐 때였어요.",
           "그때는 매일 밤 공부하면서 그분 테이프를 들었어요.",
           "목소리가 부드럽고 따뜻하고, 가사가 사랑이랑 인생에 대한 거라서 공감하기 쉬워요.",
-          "지금도 그분 노래를 들으면 다시 십 대가 된 것 같은 기분이 들어요.",
+          "그의 노래를 들을 때마다 다시 십대가 된 기분이에요.",
           "옛날 록 밴드도 좋아하는데, 피곤할 때 그 노래들이 힘을 주거든요.",
           "최근에는 아이들 때문에 취향이 조금 바뀌었어요.",
-          "아들이랑 딸이 집에서 늘 K-pop을 틀어서, 이제는 저도 K-pop 노래를 몇 곡 알아요.",
+          "아이들 덕분에 K-pop에 관심이 생겼는데, 집에서 늘 틀어 놓거든요.",
           "네, 그게 대충 제가 좋아하는 음악이에요."
         ],
         "AL": [
           "아, 음악이요?",
           "네, 그 얘기 정말 하고 싶어요, 음악은 오랫동안 제 삶의 큰 부분이었거든요.",
-          "저는 90년대 발라드랑 록을 엄청 좋아하고, 지금까지 제일 좋아하는 가수는 신승훈이에요.",
+          "음악이라면, 저는 90년대 발라드와 록을 정말 좋아하고, 제일 좋아하는 가수는 신승훈이에요.",
           "처음 그분 음악에 빠진 건 대전에서 고등학교 다닐 때였어요.",
           "매일 밤 공부하면서 그분 카세트테이프를 듣곤 해서, 그분 노래는 거의 다 외우고 있어요.",
+          "그때부터 쭉 그의 음악의 열성 팬이에요.",
           "제가 그분을 좋아하는 이유는 따뜻하고 부드러운 목소리 때문이에요.",
           "가사는 단순하지만 사랑, 누군가를 그리워하는 것, 그리고 성장하는 것에 대한 거라서 정말 오래 마음에 남아요.",
           "그분 노래를 들을 때마다 학창 시절로 바로 돌아가는 것 같고, 옛날 교실 냄새까지 날 것 같아요.",
@@ -167,9 +168,9 @@
         "주말에는 아이들이 거실 스피커를 차지한다는 에피소드로 가족 이야기를 자연스럽게 연결하세요."
       ],
       "answers": {
-        "IM3": "Sure, let me tell you about when I listen to music. I usually listen to music in my car. It takes about 20 minutes to drive to my office. I connect my phone to the car with Bluetooth. Then I play my 90s playlist on a streaming app. On weekends, I listen to music at a cafe while I read. Music helps me relax. Yeah, that's how I usually listen to music.",
-        "IH": "Sure, let me tell you about when and where I listen to music. Most of the time, I listen to music in my car. I drive to my office in Pangyo every day, and it takes about 20 minutes. As soon as I get in the car, I connect my phone with Bluetooth and play my favorite playlist on a streaming app. In the morning, I listen to upbeat rock songs to wake myself up. On the way home, I usually choose calm ballads, because they help me forget about the stressful day. I also listen to music when I go jogging along the Tancheon trail, using my wireless earbuds. On weekends, the kids take over the speaker in the living room, so I end up hearing a lot of K-pop. Yeah, that's how I usually listen to music.",
-        "AL": "Sure, let me tell you about when and where I listen to music, because I listen to it pretty much every day. My main music time is in the car. I drive about 20 minutes to my office in Pangyo, and that short drive is basically my personal concert hall. The second I start the engine, my phone connects to the car's Bluetooth and my playlist starts automatically. In the morning, I play 90s rock to get myself pumped up for a day full of meetings. On the way home, I switch to slow ballads, because they help me calm down before I see my family. Sometimes I even sing along at a red light, which is a little embarrassing. I also listen to music three mornings a week when I go jogging along the Tancheon trail. I just pop in my wireless earbuds, and the music keeps me going. I use a streaming app for everything, so I can find almost any song in a few seconds. On weekends, though, I lose control of the music, because my kids take over the speaker in the living room and play K-pop nonstop. So yeah, that's how I usually listen to music."
+        "IM3": "Sure, let me tell you about when I listen to music. I usually listen to music in my car. It takes about 20 minutes to drive to my office. I connect my phone to the car with Bluetooth. Then I play my 90s playlist on a streaming app. On weekends, I usually listen to music at a cafe while I read. Music helps me relax. Yeah, that's how I usually listen to music.",
+        "IH": "Sure, let me tell you about when and where I listen to music. Most of the time, I listen to music in my car. I drive to my office in Pangyo every day, and it takes about 20 minutes. As soon as I get in the car, I connect my phone with Bluetooth and play my favorite playlist on a streaming app. In the morning, I listen to upbeat rock songs to wake myself up. On the way home, I usually choose calm ballads, because they help me forget about the stressful day. I try to listen to music whenever I have free time, like when I go jogging along the Tancheon trail with my wireless earbuds. On weekends, the kids take over the speaker in the living room, so I end up hearing a lot of K-pop. Yeah, that's how I usually listen to music.",
+        "AL": "Sure, let me tell you about when and where I listen to music, because I listen to it pretty much every day. My main music time is in the car. I drive about 20 minutes to my office in Pangyo, and that short drive is basically my personal concert hall. It has become part of my daily routine to connect my phone to the car's Bluetooth the second I start the engine. In the morning, I play 90s rock to get myself pumped up for a day full of meetings. On the way home, I switch to slow ballads, because they help me calm down before I see my family. Sometimes I even sing along at a red light, which is a little embarrassing. I also listen to music three mornings a week when I go jogging along the Tancheon trail. I just pop in my wireless earbuds, and the music keeps me going. I use a streaming app for everything, so I can find almost any song in a few seconds. On weekends, though, I lose control of the music, because my kids take over the speaker in the living room and play K-pop nonstop. So yeah, that's how I usually listen to music."
       },
       "answersKo": {
         "IM3": [
@@ -178,7 +179,7 @@
           "회사까지 운전해서 20분 정도 걸려요.",
           "휴대폰을 블루투스로 차에 연결해요.",
           "그다음에 스트리밍 앱에서 90년대 플레이리스트를 틀어요.",
-          "주말에는 카페에서 책 읽으면서 음악을 들어요.",
+          "주말에는 보통 카페에서 책을 읽으면서 음악을 들어요.",
           "음악은 마음을 편하게 해 줘요.",
           "네, 그게 제가 보통 음악 듣는 방식이에요."
         ],
@@ -189,7 +190,7 @@
           "차에 타자마자 휴대폰을 블루투스로 연결하고 스트리밍 앱에서 제일 좋아하는 플레이리스트를 틀어요.",
           "아침에는 잠을 깨려고 신나는 록 노래를 들어요.",
           "집에 오는 길에는 보통 잔잔한 발라드를 고르는데, 스트레스받은 하루를 잊는 데 도움이 되거든요.",
-          "탄천 산책로를 따라 조깅할 때도 무선 이어폰으로 음악을 들어요.",
+          "저는 시간이 날 때마다 음악을 들으려고 하는데, 무선 이어폰을 끼고 탄천을 따라 조깅할 때도 그래요.",
           "주말에는 아이들이 거실 스피커를 차지해서, 결국 K-pop을 엄청 듣게 돼요.",
           "네, 그게 제가 보통 음악 듣는 방식이에요."
         ],
@@ -197,7 +198,7 @@
           "네, 제가 언제 어디서 음악을 듣는지 말씀드릴게요, 거의 매일 듣거든요.",
           "제가 주로 음악을 듣는 시간은 차 안에서예요.",
           "판교에 있는 회사까지 20분 정도 운전하는데, 그 짧은 운전 시간이 사실상 저만의 콘서트홀이에요.",
-          "시동을 거는 순간 휴대폰이 차 블루투스에 연결되고 플레이리스트가 자동으로 시작돼요.",
+          "시동을 걸자마자 휴대폰을 차 블루투스에 연결하는 게 제 일상이 됐어요.",
           "아침에는 회의로 가득한 하루를 위해 기운을 내려고 90년대 록을 틀어요.",
           "집에 오는 길에는 느린 발라드로 바꾸는데, 가족을 보기 전에 마음을 진정시키는 데 도움이 되거든요.",
           "가끔은 빨간불에서 따라 부르기도 하는데, 그건 좀 민망해요.",
@@ -220,9 +221,9 @@
         "AL은 'It turns out ~', 'I'll never forget ~' 같은 반전·감정 표현으로 이야기에 클라이맥스를 만드세요."
       ],
       "answers": {
-        "IM3": "Oh, a concert? Yes, I have. Last December, I went to a concert in Seoul with my family. It was Shin Seung-hun's year-end concert. It was my first concert in a long time. The hall was full, and the atmosphere was really warm. He sang a lot of his old hits. Everyone sang along, including my kids. They knew the songs from my car! I was really happy. Yeah, that was a really memorable concert.",
-        "IH": "Oh, a concert? Yes, I have. The most memorable one was last December. For my birthday, my family surprised me with tickets to Shin Seung-hun's year-end concert in Seoul. It was my first concert in more than ten years, so I was really excited. The concert hall was huge, and it was full of people around my age. When he came out and started singing, the whole crowd cheered. He sang most of his old hits from the 90s, and everyone sang along. The best part was that my son and daughter sang along too. They knew the songs because I always play them in the car! I was so surprised and touched. After the concert, we had a late dinner together and talked about our favorite songs. Yeah, that's why I'll never forget that concert.",
-        "AL": "Oh, a concert? Yes, I have, and one of them was really special. Last December, on my birthday, my family surprised me with tickets to Shin Seung-hun's year-end concert in Seoul. Honestly, I hadn't been to a concert in over ten years, because I'm always so busy with work, so I was as excited as a kid. The concert hall was packed, and most of the audience was around my age, which made me laugh. When the lights went down and he started singing his biggest hit, I got goosebumps all over. He sang one old song after another, and the whole crowd sang along like a giant choir. But the moment I'll never forget happened in the middle of the show. I looked over and saw my son and daughter singing every word. It turns out they had learned the lyrics from hearing them in my car every weekend. I was so touched that I got a little teary, and I just put my arm around them and kept singing. On the way home, we played his songs in the car and sang together again. So yeah, that's the concert I'll remember for the rest of my life."
+        "IM3": "Oh, a concert? Yes, I have. Last December, I went to a concert in Seoul with my family. It was Shin Seung-hun's year-end concert. It was my first concert in a long time. The hall was full, and the atmosphere was really warm. He sang a lot of his old hits. Everyone sang along, including my kids. They knew the songs from my car! It was so touching when I heard them singing. Yeah, that was a really memorable concert.",
+        "IH": "Oh, a concert? Yes, I have. The most memorable one was last December. For my birthday, my family surprised me with tickets to Shin Seung-hun's year-end concert in Seoul. It was my first concert in more than ten years, so I was really excited. The concert hall was huge, and it was full of people around my age. When he came out and started singing, the whole crowd cheered. He sang most of his old hits from the 90s, and everyone sang along. To my surprise, my son and daughter sang along too. They knew the songs because I always play them in the car! I was so surprised and touched. After the concert, we had a late dinner together and talked about our favorite songs. Yeah, that's why I'll never forget that concert.",
+        "AL": "Oh, a concert? Yes, I have, and one of them was really special. Last December, on my birthday, my family surprised me with tickets to Shin Seung-hun's year-end concert in Seoul. Honestly, I hadn't been to a concert in over ten years, because I'm always so busy with work, so I was as excited as a kid. The concert hall was packed, and most of the audience was around my age, which made me laugh. When the lights went down and he started singing his biggest hit, I got goosebumps all over. He sang one old song after another, and the whole crowd sang along like a giant choir. I'll never forget that night because something amazing happened in the middle of the show. I looked over and saw my son and daughter singing every word. It turns out they had learned the lyrics from hearing them in my car every weekend. I was so touched that I got a little teary, and I just put my arm around them and kept singing. On the way home, we played his songs in the car and sang together again. So yeah, that's the concert I'll remember for the rest of my life."
       },
       "answersKo": {
         "IM3": [
@@ -235,7 +236,7 @@
           "그분이 옛날 히트곡을 많이 불렀어요.",
           "아이들까지 포함해서 모두가 따라 불렀어요.",
           "아이들은 제 차에서 그 노래들을 들어서 알고 있었더라고요!",
-          "저는 정말 행복했어요.",
+          "아이들이 노래하는 걸 들었을 때 정말 감동이었어요.",
           "네, 그게 정말 기억에 남는 콘서트였어요."
         ],
         "IH": [
@@ -247,7 +248,7 @@
           "공연장은 엄청 컸고, 제 또래 사람들로 가득 차 있었어요.",
           "그분이 나와서 노래를 시작하자 관객 전체가 환호했어요.",
           "90년대 옛날 히트곡을 거의 다 불렀고, 모두가 따라 불렀어요.",
-          "제일 좋았던 건 아들이랑 딸도 같이 따라 불렀다는 거예요.",
+          "놀랍게도 아들과 딸도 따라 불렀어요.",
           "제가 차에서 늘 그 노래들을 틀어서 알고 있었던 거예요!",
           "정말 놀랐고 감동받았어요.",
           "콘서트가 끝나고 같이 늦은 저녁을 먹으면서 제일 좋았던 노래에 대해 얘기했어요.",
@@ -261,7 +262,7 @@
           "공연장은 꽉 찼고, 관객 대부분이 제 또래여서 웃음이 났어요.",
           "불이 꺼지고 그분이 최고 히트곡을 부르기 시작하자 온몸에 소름이 돋았어요.",
           "옛날 노래를 한 곡 한 곡 이어서 불렀고, 관객 전체가 거대한 합창단처럼 따라 불렀어요.",
-          "그런데 제가 절대 못 잊을 순간은 공연 중간에 있었어요.",
+          "공연 중간에 놀라운 일이 있어서 그날 밤은 절대 잊지 못할 거예요.",
           "옆을 봤더니 아들이랑 딸이 한 소절도 빠짐없이 따라 부르고 있었어요.",
           "알고 보니 아이들이 주말마다 제 차에서 그 노래들을 듣다가 가사를 외운 거였어요.",
           "너무 감동해서 눈물이 조금 났고, 그냥 아이들 어깨에 팔을 두르고 계속 노래를 불렀어요.",
@@ -281,18 +282,19 @@
         "'아이들은 SNS 짧은 영상으로 새 노래를 찾는다'처럼 가족 사례를 하나 넣으면 IH 이상 답변이 됩니다."
       ],
       "answers": {
-        "IM3": "Okay, let me think about how things have changed. When I was young in Daejeon, I listened to cassette tapes. Later, I bought CDs and used a CD player. Now, I just use a streaming app on my phone. I can listen to any song anytime. It's much easier and cheaper. These days, my kids find new songs on short videos. But I miss buying albums a little. Yeah, that's how listening to music has changed.",
-        "IH": "Okay, let me think about how things have changed. The way people listen to music has changed a lot. When I was a teenager in Daejeon, I used to buy cassette tapes at a music store near my school. I even recorded songs from the radio onto blank tapes. In college, I switched to CDs and carried a portable CD player everywhere. Now, I just use a streaming app on my phone, and I can listen to millions of songs anytime. The biggest difference is how people find new music. Back then, we heard new songs on the radio or TV, but these days my kids find new songs through short videos on social media. It's much more convenient now, but I kind of miss waiting for an album to come out. Yeah, that's how it's changed.",
-        "AL": "Okay, let me think about how things have changed, because it's honestly a huge difference. When I was a teenager in Daejeon, music was something you had to work for. I used to save my pocket money to buy cassette tapes at a little music store near my school, and I'd sit by the radio for hours to record my favorite songs onto blank tapes. If the DJ talked over the beginning of a song, it drove me crazy. In college, I moved on to CDs and carried a bulky CD player everywhere. Now, everything is on my phone. With a streaming app, I can play almost any song in the world in a few seconds, in my car or on my earbuds. I think the biggest change is how people discover music. Back then, we found new songs on the radio or music shows, but these days my kids find them through short videos on social media, and a song can become a hit overnight. It's way more convenient now, but I kind of miss the excitement of unwrapping a new album. So yeah, that's how listening to music has changed."
+        "IM3": "Okay, let me think about how things have changed. The way I listen to music has changed a lot over the years. When I was young in Daejeon, I listened to cassette tapes. Later, I bought CDs and used a CD player. Now, I just use a streaming app on my phone. I can listen to any song anytime. In my opinion, it's much easier and cheaper now. These days, my kids find new songs on short videos. But I miss buying albums a little. Yeah, that's how listening to music has changed.",
+        "IH": "Okay, let me think about how things have changed. The way people listen to music has changed a lot. When I was a teenager in Daejeon, I used to buy cassette tapes at a music store near my school. I even recorded songs from the radio onto blank tapes. In college, I switched to CDs and carried a portable CD player everywhere. Now, I just use a streaming app on my phone, and I can listen to millions of songs anytime. The biggest difference is that people find new music in different ways. Back then, we heard new songs on the radio or TV. These days, people tend to find new songs through short videos on social media. It's much more convenient now, but I kind of miss waiting for an album to come out. Yeah, that's how it's changed.",
+        "AL": "Okay, let me think about how things have changed, because it's honestly a huge difference. When I was a teenager in Daejeon, music was something you had to work for. I used to save my pocket money to buy cassette tapes at a little music store near my school, and I'd sit by the radio for hours to record my favorite songs onto blank tapes. If the DJ talked over the beginning of a song, it drove me crazy. In college, I moved on to CDs and carried a bulky CD player everywhere. Now, everything is on my phone. With a streaming app, I can play almost any song in the world in a few seconds, in my car or on my earbuds. I think the biggest change is how people discover music. Back then, we found new songs on the radio or music shows, but these days my kids find them through short videos on social media, and a song can become a hit overnight. I think this change is because of smartphones and social media. Compared to the old days, listening to music is much more convenient now, but I kind of miss the excitement of unwrapping a new album. So yeah, that's how listening to music has changed."
       },
       "answersKo": {
         "IM3": [
           "네, 어떻게 바뀌었는지 생각해 볼게요.",
+          "제가 음악을 듣는 방식은 세월이 흐르면서 많이 바뀌었어요.",
           "제가 어릴 때 대전에서는 카세트테이프로 음악을 들었어요.",
           "나중에는 CD를 사서 CD 플레이어를 썼어요.",
           "지금은 그냥 휴대폰에 있는 스트리밍 앱을 써요.",
           "어떤 노래든 아무 때나 들을 수 있어요.",
-          "훨씬 쉽고 싸요.",
+          "제 생각엔 지금이 훨씬 쉽고 저렴해요.",
           "요즘 아이들은 짧은 영상에서 새 노래를 찾아요.",
           "그래도 앨범 사던 때가 조금 그리워요.",
           "네, 그게 음악 듣는 방식이 바뀐 거예요."
@@ -304,8 +306,9 @@
           "라디오에서 나오는 노래를 공테이프에 녹음하기도 했어요.",
           "대학교 때는 CD로 바꿔서 휴대용 CD 플레이어를 어디든 들고 다녔어요.",
           "지금은 그냥 휴대폰에 있는 스트리밍 앱을 쓰는데, 수백만 곡을 아무 때나 들을 수 있어요.",
-          "제일 큰 차이는 사람들이 새 음악을 찾는 방식이에요.",
-          "그때는 라디오나 TV에서 새 노래를 들었는데, 요즘 우리 아이들은 소셜 미디어의 짧은 영상으로 새 노래를 찾아요.",
+          "가장 큰 차이는 사람들이 새 음악을 찾는 방식이 달라졌다는 거예요.",
+          "그때는 라디오나 TV에서 새 노래를 들었어요.",
+          "요즘은 사람들이 SNS의 짧은 영상으로 새 노래를 찾는 편이에요.",
           "지금이 훨씬 편하긴 한데, 앨범이 나오길 기다리던 때가 좀 그리워요.",
           "네, 그게 바뀐 점이에요."
         ],
@@ -319,7 +322,8 @@
           "스트리밍 앱으로 차에서든 이어폰으로든, 세상 거의 모든 노래를 몇 초 만에 틀 수 있어요.",
           "제 생각에 제일 큰 변화는 사람들이 음악을 발견하는 방식이에요.",
           "그때는 라디오나 음악 프로그램에서 새 노래를 찾았는데, 요즘 우리 아이들은 소셜 미디어의 짧은 영상으로 찾고, 노래 한 곡이 하룻밤 사이에 히트곡이 되기도 해요.",
-          "지금이 훨씬 편하긴 한데, 새 앨범 포장을 뜯던 그 설렘이 좀 그리워요.",
+          "이런 변화는 스마트폰과 SNS 때문이라고 생각해요.",
+          "예전에 비하면 지금은 음악 듣기가 훨씬 편하지만, 새 앨범 포장을 뜯던 설렘이 좀 그리워요.",
           "그래서 네, 그게 음악 듣는 방식이 바뀐 거예요."
         ]
       }
@@ -327,52 +331,294 @@
   ],
   "patterns": [
     {
+      "level": "IM3",
+      "pid": "start#0",
+      "en": "I first got into his music when I was in high school.",
+      "ko": "저는 고등학교 때 처음 그의 음악에 빠졌어요.",
+      "q": "music-describe"
+    },
+    {
+      "level": "IM3",
       "pid": "like#2",
       "en": "I'm really into K-pop these days, thanks to my kids.",
       "ko": "저는 아이들 덕분에 요즘 K-pop에 푹 빠져 있어요.",
       "q": "music-describe"
     },
     {
-      "pid": "start#0",
-      "en": "I first got into Shin Seung-hun's music when I was in high school in Daejeon.",
-      "ko": "저는 대전에서 고등학교에 다닐 때 처음 신승훈 음악에 빠졌어요.",
-      "q": "music-describe"
-    },
-    {
-      "pid": "reason#0",
-      "en": "I like his songs because his voice is warm and his lyrics are easy to relate to.",
-      "ko": "저는 그의 목소리가 따뜻하고 가사에 공감이 잘 돼서 그의 노래를 좋아해요.",
-      "q": "music-describe"
-    },
-    {
+      "level": "IM3",
       "pid": "place#0",
-      "en": "I usually play upbeat rock songs at full volume in my car on the way to work.",
-      "ko": "저는 보통 출근길 차 안에서 신나는 록 음악을 크게 틀어요.",
+      "en": "On weekends, I usually listen to music at a cafe while I read.",
+      "ko": "주말에는 보통 카페에서 책을 읽으면서 음악을 들어요.",
       "q": "music-routine"
     },
     {
-      "pid": "routine#5",
-      "en": "It has become part of my daily routine to listen to calm ballads on the drive home.",
-      "ko": "퇴근길 운전하면서 잔잔한 발라드를 듣는 게 제 일상 루틴이 됐어요.",
-      "q": "music-routine"
-    },
-    {
-      "pid": "memory#5",
-      "en": "I'll never forget that concert because my kids sang along to every song.",
-      "ko": "그 콘서트는 절대 못 잊을 거예요. 아이들이 모든 노래를 따라 불렀거든요.",
+      "level": "IM3",
+      "pid": "memory#1",
+      "en": "It was so touching when I heard them singing.",
+      "ko": "아이들이 노래하는 걸 들었을 때 정말 감동이었어요.",
       "q": "music-experience"
     },
     {
-      "pid": "change#0",
-      "en": "I used to buy cassette tapes, but now I just stream music on my phone.",
-      "ko": "예전에는 카세트테이프를 샀는데, 지금은 그냥 휴대폰으로 음악을 스트리밍해요.",
+      "level": "IM3",
+      "pid": "change#4",
+      "en": "The way I listen to music has changed a lot over the years.",
+      "ko": "제가 음악을 듣는 방식은 세월이 흐르면서 많이 바뀌었어요.",
       "q": "music-compare"
     },
     {
-      "pid": "opinion#3",
-      "en": "On the other hand, I kind of miss the excitement of unwrapping a new album.",
-      "ko": "한편으로는, 새 앨범 포장을 뜯던 설렘이 조금 그리워요.",
+      "level": "IM3",
+      "pid": "opinion#0",
+      "en": "In my opinion, it's much easier and cheaper now.",
+      "ko": "제 생각엔 지금이 훨씬 쉽고 저렴해요.",
       "q": "music-compare"
+    },
+    {
+      "level": "IH",
+      "pid": "reason#4",
+      "en": "Whenever I hear his songs, I feel like a teenager again.",
+      "ko": "그의 노래를 들을 때마다 다시 십대가 된 기분이에요.",
+      "q": "music-describe"
+    },
+    {
+      "level": "IH",
+      "pid": "start#4",
+      "en": "My kids got me interested in K-pop, because they always play it at home.",
+      "ko": "아이들 덕분에 K-pop에 관심이 생겼는데, 집에서 늘 틀어 놓거든요.",
+      "q": "music-describe"
+    },
+    {
+      "level": "IH",
+      "pid": "routine#1",
+      "en": "I try to listen to music whenever I have free time, like when I go jogging along the Tancheon trail with my wireless earbuds.",
+      "ko": "저는 시간이 날 때마다 음악을 들으려고 하는데, 무선 이어폰을 끼고 탄천을 따라 조깅할 때도 그래요.",
+      "q": "music-routine"
+    },
+    {
+      "level": "IH",
+      "pid": "memory#3",
+      "en": "To my surprise, my son and daughter sang along too.",
+      "ko": "놀랍게도 아들과 딸도 따라 불렀어요.",
+      "q": "music-experience"
+    },
+    {
+      "level": "IH",
+      "pid": "change#3",
+      "en": "The biggest difference is that people find new music in different ways.",
+      "ko": "가장 큰 차이는 사람들이 새 음악을 찾는 방식이 달라졌다는 거예요.",
+      "q": "music-compare"
+    },
+    {
+      "level": "IH",
+      "pid": "change#2",
+      "en": "These days, people tend to find new songs through short videos on social media.",
+      "ko": "요즘은 사람들이 SNS의 짧은 영상으로 새 노래를 찾는 편이에요.",
+      "q": "music-compare"
+    },
+    {
+      "level": "AL",
+      "pid": "like#5",
+      "en": "When it comes to music, I'm a huge fan of 90s ballads and rock, and my all-time favorite singer is Shin Seung-hun.",
+      "ko": "음악이라면, 저는 90년대 발라드와 록을 정말 좋아하고, 제일 좋아하는 가수는 신승훈이에요.",
+      "q": "music-describe"
+    },
+    {
+      "level": "AL",
+      "pid": "start#5",
+      "en": "Ever since then, I've been a loyal fan of his music.",
+      "ko": "그때부터 쭉 그의 음악의 열성 팬이에요.",
+      "q": "music-describe"
+    },
+    {
+      "level": "AL",
+      "pid": "routine#5",
+      "en": "It has become part of my daily routine to connect my phone to the car's Bluetooth the second I start the engine.",
+      "ko": "시동을 걸자마자 휴대폰을 차 블루투스에 연결하는 게 제 일상이 됐어요.",
+      "q": "music-routine"
+    },
+    {
+      "level": "AL",
+      "pid": "memory#5",
+      "en": "I'll never forget that night because something amazing happened in the middle of the show.",
+      "ko": "공연 중간에 놀라운 일이 있어서 그날 밤은 절대 잊지 못할 거예요.",
+      "q": "music-experience"
+    },
+    {
+      "level": "AL",
+      "pid": "change#5",
+      "en": "I think this change is because of smartphones and social media.",
+      "ko": "이런 변화는 스마트폰과 SNS 때문이라고 생각해요.",
+      "q": "music-compare"
+    },
+    {
+      "level": "AL",
+      "pid": "change#1",
+      "en": "Compared to the old days, listening to music is much more convenient now, but I kind of miss the excitement of unwrapping a new album.",
+      "ko": "예전에 비하면 지금은 음악 듣기가 훨씬 편하지만, 새 앨범 포장을 뜯던 설렘이 좀 그리워요.",
+      "q": "music-compare"
+    }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "music-routine",
+      "title": "출퇴근길 음악 루틴",
+      "parts": [
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes about 20 minutes to drive to my office in Pangyo.",
+          "ko": "판교에 있는 회사까지 차로 20분 정도 걸려요."
+        },
+        {
+          "pid": "im3-routine#3",
+          "en": "I always connect my phone to the car with Bluetooth.",
+          "ko": "저는 항상 휴대폰을 블루투스로 차에 연결해요."
+        },
+        {
+          "pid": "im3-routine#6",
+          "en": "And then, I play my 90s playlist on a streaming app.",
+          "ko": "그다음에 스트리밍 앱에서 90년대 플레이리스트를 틀어요."
+        },
+        {
+          "pid": "reason#2",
+          "en": "It helps me relax before a busy day.",
+          "ko": "바쁜 하루를 시작하기 전에 마음을 편하게 해 줘요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "music-describe",
+      "title": "좋아하는 가수 신승훈",
+      "parts": [
+        {
+          "pid": "like#1",
+          "en": "One of my favorite things to do is listening to ballads from the 90s.",
+          "ko": "제가 가장 좋아하는 일 중 하나는 90년대 발라드를 듣는 거예요."
+        },
+        {
+          "pid": "start#0",
+          "en": "I first got into Shin Seung-hun's music when I was in high school.",
+          "ko": "고등학생 때 처음 신승훈의 음악에 빠졌어요."
+        },
+        {
+          "pid": "im3-routine#1",
+          "en": "I often sing his songs in the car on my way to work.",
+          "ko": "출근길 차 안에서 그의 노래를 자주 따라 불러요."
+        },
+        {
+          "pid": "im3-describe#6",
+          "en": "I get a warm feeling whenever I hear his soft voice.",
+          "ko": "그의 부드러운 목소리를 들을 때마다 마음이 따뜻해져요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "music-experience",
+      "title": "연말 콘서트 경험",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "Last December, I went to Shin Seung-hun's year-end concert in Seoul with my family.",
+          "ko": "작년 12월에 가족과 서울에서 열린 신승훈 연말 콘서트에 갔어요."
+        },
+        {
+          "pid": "im3-past#1",
+          "en": "It was my first concert in more than ten years.",
+          "ko": "10년도 넘어서 처음 가 본 콘서트였어요."
+        },
+        {
+          "pid": "memory#3",
+          "en": "To my surprise, my son and daughter sang along to his old hits.",
+          "ko": "놀랍게도 아들과 딸이 그의 옛 히트곡을 따라 불렀어요."
+        },
+        {
+          "pid": "memory#4",
+          "en": "It turned out to be the best birthday present I have ever gotten.",
+          "ko": "알고 보니 지금까지 받은 생일 선물 중 최고였어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "music-compare",
+      "title": "음악 듣는 방식 변화",
+      "parts": [
+        {
+          "pid": "change#0",
+          "en": "I used to buy cassette tapes, but now I just use a streaming app on my phone.",
+          "ko": "예전에는 카세트테이프를 샀지만, 지금은 휴대폰 스트리밍 앱만 써요."
+        },
+        {
+          "pid": "change#3",
+          "en": "The biggest difference is that people find new music in different ways.",
+          "ko": "가장 큰 차이는 사람들이 새 음악을 찾는 방식이 달라졌다는 거예요."
+        },
+        {
+          "pid": "change#2",
+          "en": "These days, people tend to find new songs through short videos on social media.",
+          "ko": "요즘 사람들은 SNS의 짧은 영상으로 새 노래를 찾는 편이에요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's much more convenient now, but I kind of miss waiting for a new album.",
+          "ko": "지금이 훨씬 편하긴 하지만, 새 앨범을 기다리던 때가 조금 그리워요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "music-routine",
+      "title": "운전길 나만의 콘서트",
+      "parts": [
+        {
+          "pid": "routine#5",
+          "en": "It has become part of my daily routine to connect my phone to the car's Bluetooth the second I start the engine.",
+          "ko": "시동을 걸자마자 휴대폰을 차 블루투스에 연결하는 게 제 일상이 됐어요."
+        },
+        {
+          "pid": "im3-describe#4",
+          "en": "It takes only about 20 minutes to drive to my office in Pangyo, but that short drive is basically my personal concert hall.",
+          "ko": "판교 회사까지 차로 20분 정도밖에 안 걸리지만, 그 짧은 운전 시간이 사실상 저만의 콘서트장이에요."
+        },
+        {
+          "pid": "reason#4",
+          "en": "Whenever I play 90s rock in the morning, I feel pumped up for a day full of meetings.",
+          "ko": "아침에 90년대 록을 틀 때마다 회의로 가득한 하루를 앞두고 힘이 솟아요."
+        },
+        {
+          "pid": "im3-routine#2",
+          "en": "I sometimes even sing along at a red light, which is a little embarrassing.",
+          "ko": "가끔은 빨간불에서 따라 부르기도 하는데, 조금 민망하죠."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "music-describe",
+      "title": "신승훈 오랜 팬",
+      "parts": [
+        {
+          "pid": "like#3",
+          "en": "Listening to 90s ballads and rock is a big part of my life, even after all these years.",
+          "ko": "이렇게 오랜 세월이 지나도 90년대 발라드와 록을 듣는 건 제 삶의 큰 부분이에요."
+        },
+        {
+          "pid": "start#0",
+          "en": "I first got into Shin Seung-hun's music when I was in high school in Daejeon, listening to his cassette tapes every night while I studied.",
+          "ko": "대전에서 고등학교에 다닐 때 매일 밤 공부하면서 그의 카세트테이프를 듣다가 처음 신승훈 음악에 빠졌어요."
+        },
+        {
+          "pid": "start#5",
+          "en": "Ever since then, I've been a loyal fan who knows almost all of his songs by heart.",
+          "ko": "그때부터 저는 그의 노래를 거의 다 외우는 충성스러운 팬이에요."
+        },
+        {
+          "pid": "im3-describe#6",
+          "en": "I get goosebumps whenever I hear his warm, gentle voice, because it takes me right back to my school days.",
+          "ko": "그의 따뜻하고 부드러운 목소리를 들으면 학창 시절로 바로 돌아가는 것 같아서 소름이 돋아요."
+        }
+      ]
     }
   ]
 }

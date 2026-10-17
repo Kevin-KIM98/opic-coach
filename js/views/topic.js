@@ -17,7 +17,7 @@ export async function render(root, route) {
   const [topic, patterns] = await Promise.all([data.topic(id), data.patterns()]);
   let tab = route.query.tab || 'expr';
   if (tab === 'pron' || tab === 'guide') tab = 'tips';   // 예전 링크 호환
-  const level = route.query.level || store.settings.target || 'IM3';
+  let level = route.query.level || store.settings.target || 'IM3';
   store.setLastTopic(topic.id);
 
   root.innerHTML = html`
@@ -42,7 +42,9 @@ export async function render(root, route) {
     drawSteps();
     const base = `#/topic/${topic.id}?tab=${t}`;
     if (t === 'expr') player = renderExpr(body, topic, mode, base);
-    else if (t === 'pat') player = renderTopicPatterns(body, topic, patterns, drawSteps, mode, base);
+    else if (t === 'pat') player = renderTopicPatterns(body, topic, patterns, drawSteps, mode, level, (lv) => {
+      level = lv; replaceQuery(`#/topic/${topic.id}?tab=pat&level=${lv}`); renderTab('pat');
+    });
     else if (t === 'q') renderQuestions(body, topic, level, route.query);
     else player = renderTips(body, topic);
   };
@@ -60,18 +62,55 @@ export function topicPatternCards(topic, patterns) {
   (patterns.groups || []).forEach(g => g.items.forEach((it, i) => { frames[`${g.id}#${i}`] = { pattern: it.pattern, level: it.level, group: g.title }; }));
   return (topic.patterns || []).map((p, i) => {
     const f = frames[p.pid] || {};
-    return { ...p, id: `${topic.id}#p${i}`, no: i + 1, pattern: f.pattern, level: f.level || 'IM', group: f.group || '', note: f.pattern ? `패턴: ${f.pattern}` : '' };
+    // level: 이 문장을 쓰는 답안 레벨(IM3·IH·AL). 예전 데이터처럼 없으면 패턴 틀 레벨(IM·IH·AL)
+    return { ...p, id: `${topic.id}#p${i}`, no: i + 1, pattern: f.pattern, answerLevel: p.level || '', level: f.level || 'IM', group: f.group || '', note: f.pattern ? `패턴: ${f.pattern}` : '' };
   });
 }
 
-function renderTopicPatterns(body, topic, patterns, onChange, mode = '', base = '') {
-  const cards = topicPatternCards(topic, patterns);
+// ---------- 패턴 조합: 두 영상의 패턴을 이어 붙여 만든 답변 한 단락 ----------
+function comboSection(topic, patterns, level, qById) {
+  const frames = {};
+  (patterns.groups || []).forEach(g => g.items.forEach((it, i) => { frames[`${g.id}#${i}`] = { pattern: it.pattern || it.en, set: g.set || 'kang' }; }));
+  const combos = (topic.combos || []).filter(c => !level || c.level === level);
+  if (!combos.length) return '';
+  const setName = { kang: '만능 72', im3: 'IM3 25' };
+  return `<div class="section-title">🔗 패턴 조합 · ${level || ''}</div>
+    <p class="xs muted mb12">패턴 여러 개를 이어 붙이면 답변 한 단락이 됩니다. ▶ 로 통째로 듣고 따라 말해 보세요.</p>
+    <div class="list">${combos.map(c => {
+      const q = qById[c.q];
+      const text = c.parts.map(p => p.en).join(' ');
+      return `<div class="combo">
+        <div class="row between"><div class="h3">${c.title}</div><button class="play" data-say="${encodeURIComponent(text)}" aria-label="조합 듣기">▶</button></div>
+        <div class="combo-chain mt8">${c.parts.map((p, k) => `${k ? '<span class="plus">+</span>' : ''}<span class="link ${frames[p.pid]?.set || ''}" title="${setName[frames[p.pid]?.set] || ''}">${(frames[p.pid]?.pattern || '').replace(/_{2,}\.?/g, '…')}</span>`).join('')}</div>
+        <div class="combo-body mt12">${c.parts.map(p => `<div class="combo-line"><div class="en">${p.en}</div><div class="ko">${p.ko}</div></div>`).join('')}</div>
+        ${q ? `<a class="note mt8" href="#/practice/${topic.id}/${q.id}?level=${c.level}">💬 ${TYPE_LABEL[q.type] || q.type} ${c.level} 답안으로 ›</a>` : ''}
+      </div>`;
+    }).join('')}</div>`;
+}
+
+// 모범답안에서 패턴 문장 찾기: { 영어 문장: 패턴 틀 } (그 레벨에 적용한 문장만)
+export function patternSentenceMap(topic, patterns, level) {
+  const out = {};
+  topicPatternCards(topic, patterns).filter(c => c.answerLevel === level && c.pattern).forEach(c => { out[c.en.trim()] = c.pattern; });
+  return out;
+}
+
+const LEVELS = ['IM3', 'IH', 'AL'];
+
+function renderTopicPatterns(body, topic, patterns, onChange, mode = '', level = 'IM3', setLevel = () => {}) {
+  const every = topicPatternCards(topic, patterns);
+  const leveled = every.some(c => c.answerLevel);
+  if (leveled && !LEVELS.includes(level)) level = 'IM3';
+  // 레벨별로 적용한 패턴이면 고른 레벨 것만 — 같은 패턴 틀도 레벨이 오를수록 더 길고 풍부하게 채워진다
+  const cards = (leveled ? every.filter(c => c.answerLevel === level) : every).map((c, k) => ({ ...c, no: k + 1 }));
+  const base = `#/topic/${topic.id}?tab=pat${leveled ? `&level=${level}` : ''}`;
   const qById = Object.fromEntries((topic.questions || []).map(q => [q.id, q]));
   const handle = { stop() {}, destroy() {} };
   const list = () => {
     onChange();
     body.innerHTML = html`
-      <div class="row between mb12"><div class="small muted">만능 패턴을 ${topic.title} 답변에 맞춰 채웠어요. 빈칸(___)만 바꾸면 내 이야기가 됩니다.</div>
+      ${leveled ? raw(`<div class="seg mb12" data-levels>${LEVELS.map(l => `<button data-lv="${l}" class="${l === level ? 'active' : ''}">${l}${l === (store.settings.target || 'IM3') ? ' 🎯' : ''}</button>`).join('')}</div>`) : ''}
+      <div class="row between mb12"><div class="small muted">${leveled ? `${level} 모범답안에 실제로 들어간 만능 패턴 문장이에요.` : `만능 패턴을 ${topic.title} 답변에 맞춰 채웠어요.`} 빈칸(___)만 바꾸면 내 이야기가 됩니다.</div>
         <span class="row" style="gap:6px"><button class="btn sm" data-quiz>🎙️ 퀴즈</button><button class="btn sm dark" data-flash>카드</button></span></div>
       <div data-autoplay></div>
       <div class="list mt12" data-list>${raw(cards.map(c => {
@@ -80,15 +119,16 @@ function renderTopicPatterns(body, topic, patterns, onChange, mode = '', base = 
         const q = qById[c.q];
         return `<div class="expr"><button class="play" data-say="${encodeURIComponent(c.en)}">🔊</button>
           <div class="grow">${c.pattern ? `<div class="pat-frame">${c.no}. ${c.pattern}</div>` : ''}<div class="en">${c.en} <span class="xs">${dot}</span></div><div class="ko">${c.ko}</div>
-          ${q ? `<a class="note" href="#/practice/${topic.id}/${q.id}">💬 ${TYPE_LABEL[q.type] || q.type} 답변에 쓰기 ›</a>` : ''}</div>
+          ${q ? `<a class="note" href="#/practice/${topic.id}/${q.id}${c.answerLevel ? `?level=${c.answerLevel}` : ''}">💬 ${TYPE_LABEL[q.type] || q.type} ${c.answerLevel ? `${c.answerLevel} 답안에서 보기` : '답변에 쓰기'} ›</a>` : ''}</div>
           <span class="badge ${c.level}">${c.level}</span></div>`;
       }).join(''))}</div>
       ${cards.length ? '' : raw('<div class="empty">이 주제에는 아직 패턴이 없어요.</div>')}
-      <a class="btn ghost block mt12" href="#/drill?tab=patterns">🧩 만능 패턴 72문장 전체 보기</a>`;
+      ${raw(comboSection(topic, patterns, leveled ? level : null, qById))}
+      <a class="btn ghost block mt12" href="#/drill?tab=patterns">🧩 만능 패턴 전체 보기 (72 · IM3 25)</a>`;
     bindPlay(body);
     const player = createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]'));
     handle.stop = () => player.stop(); handle.destroy = () => player.destroy();
-    const swap = (p) => { handle.stop = p.stop; handle.destroy = p.destroy; };
+    body.querySelectorAll('[data-lv]').forEach(b => b.addEventListener('click', () => { if (b.dataset.lv !== level) { player.destroy(); setLevel(b.dataset.lv); } }));
     body.querySelector('[data-flash]')?.addEventListener('click', () => { player.destroy(); openMode(`${base}&mode=cards`); });
     body.querySelector('[data-quiz]')?.addEventListener('click', () => { player.destroy(); openMode(`${base}&mode=quiz`); });
   };

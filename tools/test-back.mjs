@@ -36,7 +36,7 @@ const back = async (page) => { await page.goBack(); await wait(page, 700); };
   await page.click('[data-flash]'); await wait(page, 800);
   check('카드 모드 진입', !!(await page.$('.flash')));
   await back(page);
-  check('뒤로 → 카드에서 패턴 목록으로', !(await page.$('.flash')) && (await activeTab(page)) === 'pat' && (await page.$$('[data-list] .expr')).length === 8);
+  check('뒤로 → 카드에서 패턴 목록으로', !(await page.$('.flash')) && (await activeTab(page)) === 'pat' && (await page.$$('[data-list] .expr')).length === 6);
   await back(page);
   check('뒤로 한 번 더 → 홈 (탭 수만큼 되돌아가지 않음)', page.url().includes('#/home'), page.url());
   check('콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
@@ -87,9 +87,9 @@ const back = async (page) => { await page.goBack(); await wait(page, 700); };
   const { page } = await open('#/topic/park?tab=pat&mode=quiz');
   check('퀴즈 첫 문제 이전 비활성', await page.$eval('[data-prev]', x => x.disabled));
   await page.click('[data-next]'); await wait(page, 300);
-  check('퀴즈 다음 → 2 / 8', (await page.innerText('.flash')).includes('2 / 8'));
+  check('퀴즈 다음 → 2 / 6', (await page.innerText('.flash')).includes('2 / 6'));
   await page.click('[data-prev]'); await wait(page, 300);
-  check('퀴즈 이전 → 1 / 8', (await page.innerText('.flash')).includes('1 / 8'));
+  check('퀴즈 이전 → 1 / 6', (await page.innerText('.flash')).includes('1 / 6'));
   await page.close();
 }
 
@@ -102,7 +102,7 @@ const back = async (page) => { await page.goBack(); await wait(page, 700); };
   await back(page);
   check('뒤로 → 그룹 목록', (await page.$$('[data-list] .expr')).length === 6);
   await back(page);
-  check('뒤로 → 만능 패턴 개요', (await page.$$('#dbody .list .list-row')).length === 12);
+  check('뒤로 → 만능 패턴 개요', (await page.$$('#dbody .list .list-row')).length === 16);
   await page.close();
 }
 

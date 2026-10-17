@@ -116,18 +116,18 @@
         "냄새(smell of coffee)나 음악(soft jazz) 같은 감각 묘사 한 문장이 점수를 올려 줘요"
       ],
       "answers": {
-        "IM3": "Oh, cafes? Sure, I'd love to talk about my favorite cafe. There's a small cafe near my apartment in Bundang. It's only a five-minute walk from my house, right next to Central Park. It's not very big, but it's really cozy. There are wooden tables and lots of plants inside. Big windows face the park, so it's bright in the morning. I usually go there on weekend mornings to read a book. Yeah, that's my favorite cafe.",
+        "IM3": "Oh, cafes? Sure, I'd love to talk about my favorite cafe. There's a small cafe near my place in Bundang. It's only a five-minute walk from my house, right next to Central Park. It's not very big, but it's really cozy. It's a quiet place with wooden tables and lots of green plants. Big windows face the park, so it's bright in the morning. I usually go there on weekend mornings to read a book. Yeah, that's my favorite cafe.",
         "IH": "Sure, I'd love to talk about the cafe I often go to. I'm the kind of person who loves a quiet cup of coffee on weekend mornings, so I have a favorite spot. It's a small cafe near Central Park, and it's only a five-minute walk from my house. When you walk in, the first thing you notice is the smell of fresh coffee. The owner roasts the beans right there. There are about eight wooden tables, a long counter, and lots of green plants. My favorite seat is by the big window, because I can see people walking in the park. They play soft jazz, and it's never too crowded in the morning. It has a warm atmosphere that makes me feel relaxed. So yeah, that's the cafe I go to almost every weekend.",
-        "AL": "Oh, cafes? Let me think. Well, there are tons of cafes in my neighborhood, but there's one little place I keep going back to. It's tucked away on a quiet street right next to Central Park, and it's only a five-minute walk from my apartment, which is perfect for me. From the outside, it doesn't look like much, just a small brick building with a wooden sign. But when you walk in, the first thing you notice is the rich smell of coffee, because the owner roasts the beans in the back. Inside, it's not very big, maybe eight or nine tables, but every corner feels cozy. There are wooden tables, shelves full of old books, and plants hanging from the ceiling. My favorite seat is a corner table by the big window, where the morning sun comes in and I can watch people jogging and walking their dogs in the park. The owner is a friendly guy around my age, and he already knows my order, a hot Americano with no sugar. There's soft jazz playing in the background, so it's the perfect place to sit with a book for an hour. Honestly, it feels like my little hideaway from a busy week. So yeah, that's pretty much my favorite cafe."
+        "AL": "Oh, cafes? Let me think. Well, there are tons of cafes in my neighborhood, but there's one little place I keep going back to. It's tucked away on a quiet street right next to Central Park, and it's only a five-minute walk from my apartment, which is perfect for me. From the outside, it doesn't look like much, just a small brick building with a wooden sign. But when you walk in, the first thing you notice is the rich smell of coffee, because the owner roasts the beans in the back. Inside, it's not very big, maybe eight or nine tables, but every corner feels cozy. There are wooden tables, shelves full of old books, and plants hanging from the ceiling. My favorite seat is a corner table by the big window, where the morning sun comes in and I can watch people jogging and walking their dogs in the park. The owner is a friendly guy around my age, and he already knows my order, a hot Americano with no sugar. It has a calm atmosphere that makes me feel relaxed, with soft jazz playing in the background. What I like most about the place is that it feels like my little hideaway from a busy week. So yeah, that's pretty much my favorite cafe."
       },
       "answersKo": {
         "IM3": [
           "아, 카페요?",
           "네, 제가 제일 좋아하는 카페에 대해 기꺼이 얘기해 드릴게요.",
-          "분당에 있는 저희 아파트 근처에 작은 카페가 하나 있어요.",
+          "분당에 있는 저희 집 근처에 작은 카페가 하나 있어요.",
           "집에서 걸어서 5분밖에 안 걸리고, 중앙공원 바로 옆이에요.",
           "그렇게 크지는 않지만 정말 아늑해요.",
-          "안에는 나무 테이블이 있고 식물이 많아요.",
+          "나무 테이블과 초록 식물이 많은 조용한 곳이에요.",
           "큰 창문들이 공원 쪽으로 나 있어서 아침에 밝아요.",
           "저는 보통 주말 아침에 책을 읽으러 거기에 가요.",
           "네, 거기가 제가 제일 좋아하는 카페예요."
@@ -155,8 +155,8 @@
           "나무 테이블이 있고, 오래된 책이 가득한 책장이 있고, 천장에는 식물들이 매달려 있어요.",
           "제가 제일 좋아하는 자리는 큰 창가 옆 구석 테이블인데, 아침 햇살이 들어오고 공원에서 조깅하거나 개를 산책시키는 사람들을 볼 수 있어요.",
           "사장님은 제 또래의 친절한 분인데, 제 주문을 이미 알고 계세요, 설탕 없는 따뜻한 아메리카노요.",
-          "배경으로 잔잔한 재즈가 흘러서, 책 한 권 들고 한 시간 앉아 있기에 딱 좋은 곳이에요.",
-          "솔직히 바쁜 한 주로부터 벗어나는 저만의 작은 은신처 같아요.",
+          "잔잔한 재즈가 흘러나와서, 마음이 편안해지는 차분한 분위기가 있어요.",
+          "그곳에서 제가 가장 좋아하는 점은 바쁜 한 주를 피해 숨는 저만의 작은 은신처처럼 느껴진다는 거예요.",
           "그래서, 네, 거기가 대충 제가 제일 좋아하는 카페예요."
         ]
       }
@@ -172,9 +172,9 @@
         "이유는 '평일엔 회의와 메시지, 집에선 아이들'처럼 대비로 말하면 설득력이 생겨요"
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about what I do at cafes. I usually go to a cafe on Saturday or Sunday morning. I go there alone because I want some quiet time. First, I order a hot Americano. Then, I sit by the window and read a book. I usually stay for about an hour. Before I leave, I sometimes buy some muffins for my kids. Yeah, that's what I usually do at cafes.",
-        "IH": "Sure, I'd love to talk about why I go to cafes. I mostly go to a cafe for some quiet time on weekend mornings. My weekdays are full of meetings and messages, and at home, my kids are always busy and noisy. So I go to the cafe near Central Park around eight on Saturday morning. I usually go alone because my family likes to sleep in. First, I order an Americano. Then, I find a seat by the window and open my book. These days, I'm reading some history books and novels. I put my phone on silent so nobody can bother me. I usually stay about an hour. Before I leave, I buy some pastries for my family, so everyone is happy when I get home. It helps me recharge before a busy week. So yeah, that's pretty much my cafe routine.",
-        "AL": "Oh, why I go to cafes? Let me think. Well, for me, a cafe isn't really about the coffee. It's about having an hour to myself. During the week, I'm in meetings all day, my phone keeps buzzing with messages from my team, and at home, there's always something going on with the kids. So on Saturday mornings, I quietly slip out of the apartment while my family is still asleep and walk to my favorite cafe near Central Park. The owner usually starts making my Americano the moment he sees me at the door, which always makes me smile. First, I grab my coffee and settle into the corner seat by the window. Then, I put my phone on silent and open whatever book I'm reading. Lately it's been a mystery novel that I just can't put down. Every once in a while, I look up and watch people jogging in the park. After about an hour, I order a few croissants and muffins to go, because if I come home empty-handed, my kids definitely let me know about it. Honestly, that hour helps me recharge more than anything else. Yeah, that's my little cafe ritual."
+        "IM3": "Okay, let me tell you about what I do at cafes. I usually go to a cafe on Saturday or Sunday morning. I go there alone because I want some quiet time. First, I order a hot Americano. Then, I sit by the window and read a book. I usually stay for about an hour. It helps me relax before a busy week. Before I leave, I always buy some muffins for my kids. Yeah, that's what I usually do at cafes.",
+        "IH": "Sure, I'd love to talk about why I go to cafes. I mostly go to a cafe for some quiet time on weekend mornings. My weekdays are full of meetings and messages, and at home, my kids are always busy and noisy. Another reason is that the coffee there is really good, because the owner roasts the beans himself. So I go to the cafe near Central Park around eight on Saturday morning. I usually go alone because my family likes to sleep in. First, I order an Americano. Then, I find a seat by the window and open my book. These days, I'm reading some history books and novels. I put my phone on silent so nobody can bother me. I usually stay about an hour. Before I leave, I always buy some pastries for my family, so everyone is happy when I get home. It helps me recharge before a busy week. So yeah, that's pretty much my cafe routine.",
+        "AL": "Oh, why I go to cafes? Let me think. Well, for me, a cafe isn't really about the coffee. It's about having an hour to myself. During the week, I'm in meetings all day, my phone keeps buzzing with messages from my team, and at home, there's always something going on with the kids. So on Saturday mornings, I quietly slip out of the apartment while my family is still asleep and walk to my favorite cafe near Central Park. The owner usually starts making my Americano the moment he sees me at the door, which always makes me smile. First, I grab my coffee and settle into the corner seat by the window. Then, I put my phone on silent and open whatever book I'm reading. Lately it's been a mystery novel that I just can't put down. Every once in a while, I look up and watch people jogging in the park. After about an hour, I order a few croissants and muffins to go, because if I come home empty-handed, my kids definitely let me know about it. Honestly, there's nothing better than that quiet hour for recharging my batteries. Yeah, that's my little cafe ritual."
       },
       "answersKo": {
         "IM3": [
@@ -184,13 +184,15 @@
           "먼저 따뜻한 아메리카노를 주문해요.",
           "그다음에 창가에 앉아서 책을 읽어요.",
           "보통 한 시간 정도 있어요.",
-          "나오기 전에 가끔 아이들 주려고 머핀을 좀 사요.",
+          "바쁜 한 주를 앞두고 긴장을 푸는 데 도움이 돼요.",
+          "나오기 전에 항상 아이들 줄 머핀을 사요.",
           "네, 그게 제가 카페에서 보통 하는 일이에요."
         ],
         "IH": [
           "네, 제가 왜 카페에 가는지 기꺼이 얘기해 드릴게요.",
           "저는 주로 주말 아침에 조용한 시간을 보내려고 카페에 가요.",
           "평일은 회의랑 메시지로 꽉 차 있고, 집에서는 아이들이 늘 바쁘고 시끄러워요.",
+          "또 다른 이유는 사장님이 직접 원두를 볶아서 그곳 커피가 정말 맛있기 때문이에요.",
           "그래서 토요일 아침 8시쯤 중앙공원 근처 카페에 가요.",
           "가족들은 늦잠 자는 걸 좋아해서 보통 혼자 가요.",
           "먼저 아메리카노를 주문해요.",
@@ -198,7 +200,7 @@
           "요즘은 역사책이랑 소설을 읽고 있어요.",
           "아무도 방해하지 못하게 휴대폰을 무음으로 해 둬요.",
           "보통 한 시간 정도 있어요.",
-          "나오기 전에 가족들 주려고 빵을 좀 사서, 집에 가면 다들 좋아해요.",
+          "나오기 전에 항상 가족을 위해 빵을 사 가서, 집에 가면 모두 좋아해요.",
           "바쁜 한 주를 앞두고 재충전하는 데 도움이 돼요.",
           "그래서, 네, 그게 대충 제 카페 루틴이에요."
         ],
@@ -215,7 +217,7 @@
           "요즘은 손에서 놓을 수가 없는 추리 소설이에요.",
           "가끔 고개를 들어 공원에서 조깅하는 사람들을 구경해요.",
           "한 시간쯤 지나면 크루아상이랑 머핀을 몇 개 포장 주문하는데, 빈손으로 집에 가면 아이들이 꼭 한마디 하거든요.",
-          "솔직히 그 한 시간이 다른 무엇보다 저를 재충전시켜 줘요.",
+          "솔직히 재충전하는 데 그 조용한 한 시간보다 더 좋은 건 없어요.",
           "네, 그게 저의 작은 카페 의식이에요."
         ]
       }
@@ -289,15 +291,15 @@
         "These days, people tend to ~ 로 사회 전체의 변화(카페에서 노트북 작업)를 한 문장 덧붙이면 IH 이상이에요"
       ],
       "answers": {
-        "IM3": "Okay, let me tell you how I use cafes now. Twenty years ago, I used to go to cafes to meet friends, but now I go there to have some quiet time. Back then, there weren't many cafes, and coffee was pretty expensive. At work, we just drank instant coffee. Now there are cafes everywhere in my neighborhood. I usually go alone on weekend mornings and read a book for an hour. Yeah, that's how my cafe life has changed.",
+        "IM3": "Okay, let me tell you how I use cafes now. I used to go to cafes to meet friends, but now I go there to have some quiet time. Twenty years ago, there weren't many cafes, and coffee was pretty expensive. At work, we just drank instant coffee. Now there are cafes everywhere in my neighborhood. I usually go alone on weekend mornings and read a book for an hour. Yeah, that's how my cafe life has changed.",
         "IH": "Sure, I'd love to talk about how I use cafes differently now. When I was a new employee about twenty years ago, there weren't as many cafes as there are now. Coffee from a cafe was kind of a treat, and at the office, we mostly drank instant coffee mix from paper cups. I used to go to cafes to meet friends, but now I go there to have some quiet time. Back then, cafes were loud places to chat for hours. These days, people tend to use cafes like offices. You see lots of people working on laptops or studying. Also, I order ahead with an app now, which saves a lot of time. The biggest difference for me is the reason I go. Now a cafe is my place to rest and read. So yeah, that's how my cafe habits have changed.",
         "AL": "Oh, that's an interesting question. Let me think. Well, my cafe habits have changed a lot over the past twenty years. When I first started working, cafes weren't on every corner like they are now. A cup of coffee from a cafe felt a bit fancy, so at the office, we mostly drank instant coffee mix from paper cups, sometimes four or five a day. Back then, I used to go to cafes on weekends to meet my college friends in Seoul, and we'd sit there for hours, talking and laughing loudly. Now it's pretty much the opposite. I go alone on weekend mornings, and the whole point is to be quiet and read. Cafes themselves have changed, too. These days, people tend to treat them like offices or study rooms, so you see rows of people with laptops and headphones. Ordering is different as well. I just tap my phone, and my coffee is ready when I walk in. I think this change is because of how busy everyone has become. People need a place that's not home and not work, and for me, a cafe is exactly that. So yeah, that's how cafes went from a place to hang out to my personal escape."
       },
       "answersKo": {
         "IM3": [
           "좋아요, 제가 요즘 카페를 어떻게 이용하는지 말씀드릴게요.",
-          "20년 전에는 친구들을 만나러 카페에 가곤 했는데, 지금은 조용한 시간을 보내러 가요.",
-          "그때는 카페가 많지 않았고, 커피가 꽤 비쌌어요.",
+          "예전에는 친구를 만나러 카페에 갔는데, 지금은 조용한 시간을 보내러 가요.",
+          "20년 전에는 카페가 많지 않았고, 커피도 꽤 비쌌어요.",
           "회사에서는 그냥 믹스커피를 마셨어요.",
           "지금은 저희 동네 어디에나 카페가 있어요.",
           "저는 보통 주말 아침에 혼자 가서 한 시간 동안 책을 읽어요.",
@@ -338,52 +340,289 @@
   ],
   "patterns": [
     {
+      "level": "IM3",
+      "pid": "place#1",
+      "en": "There's a small cafe near my place in Bundang.",
+      "ko": "분당에 있는 저희 집 근처에 작은 카페가 하나 있어요.",
+      "q": "cafe-describe"
+    },
+    {
+      "level": "IM3",
+      "pid": "describe#0",
+      "en": "It's a quiet place with wooden tables and lots of green plants.",
+      "ko": "나무 테이블과 초록 식물이 많은 조용한 곳이에요.",
+      "q": "cafe-describe"
+    },
+    {
+      "level": "IM3",
+      "pid": "reason#2",
+      "en": "It helps me relax before a busy week.",
+      "ko": "바쁜 한 주를 앞두고 긴장을 푸는 데 도움이 돼요.",
+      "q": "cafe-routine"
+    },
+    {
+      "level": "IM3",
+      "pid": "routine#2",
+      "en": "Before I leave, I always buy some muffins for my kids.",
+      "ko": "나오기 전에 항상 아이들 줄 머핀을 사요.",
+      "q": "cafe-routine"
+    },
+    {
+      "level": "IM3",
+      "pid": "memory#0",
+      "en": "I remember one time when my daughter came with me on a rainy Saturday.",
+      "ko": "비 오는 토요일에 딸이 저랑 같이 갔던 때가 기억나요.",
+      "q": "cafe-experience"
+    },
+    {
+      "level": "IM3",
+      "pid": "change#0",
+      "en": "I used to go to cafes to meet friends, but now I go there to have some quiet time.",
+      "ko": "예전에는 친구를 만나러 카페에 갔는데, 지금은 조용한 시간을 보내러 가요.",
+      "q": "cafe-compare"
+    },
+    {
+      "level": "IH",
       "pid": "like#4",
-      "en": "I'm the kind of person who loves a quiet cup of coffee on weekend mornings.",
-      "ko": "저는 주말 아침에 조용히 커피 한 잔 하는 걸 정말 좋아하는 사람이에요.",
+      "en": "I'm the kind of person who loves a quiet cup of coffee on weekend mornings, so I have a favorite spot.",
+      "ko": "저는 주말 아침에 조용히 커피 한 잔 하는 걸 정말 좋아하는 사람이라, 제일 좋아하는 곳이 있어요.",
       "q": "cafe-describe"
     },
     {
-      "pid": "place#2",
-      "en": "It's only a five-minute walk from my house.",
-      "ko": "집에서 걸어서 5분밖에 안 걸려요.",
-      "q": "cafe-describe"
-    },
-    {
+      "level": "IH",
       "pid": "describe#1",
       "en": "When you walk in, the first thing you notice is the smell of fresh coffee.",
       "ko": "들어가면 제일 먼저 신선한 커피 향이 느껴져요.",
       "q": "cafe-describe"
     },
     {
-      "pid": "describe#5",
-      "en": "It has a warm atmosphere that makes me feel relaxed.",
-      "ko": "마음이 편안해지는 따뜻한 분위기예요.",
-      "q": "cafe-describe"
-    },
-    {
-      "pid": "routine#3",
-      "en": "First, I order an Americano. Then, I find a seat by the window and open my book.",
-      "ko": "먼저 아메리카노를 시켜요. 그다음 창가 자리를 잡고 책을 펴요.",
+      "level": "IH",
+      "pid": "reason#3",
+      "en": "Another reason is that the coffee there is really good, because the owner roasts the beans himself.",
+      "ko": "또 다른 이유는 사장님이 직접 원두를 볶아서 그곳 커피가 정말 맛있기 때문이에요.",
       "q": "cafe-routine"
     },
     {
-      "pid": "reason#2",
-      "en": "It helps me recharge before a busy week.",
-      "ko": "바쁜 한 주를 앞두고 재충전하는 데 도움이 돼요.",
+      "level": "IH",
+      "pid": "routine#2",
+      "en": "Before I leave, I always buy some pastries for my family, so everyone is happy when I get home.",
+      "ko": "나오기 전에 항상 가족을 위해 빵을 사 가서, 집에 가면 모두 좋아해요.",
       "q": "cafe-routine"
     },
     {
+      "level": "IH",
       "pid": "memory#3",
-      "en": "To my surprise, the owner put her drawing up on the wall.",
-      "ko": "놀랍게도 사장님이 딸의 그림을 벽에 붙여 주셨어요.",
+      "en": "To my surprise, the owner put her drawing up on the wall next to the counter.",
+      "ko": "놀랍게도 사장님이 딸의 그림을 카운터 옆 벽에 붙여 주셨어요.",
       "q": "cafe-experience"
     },
     {
-      "pid": "change#0",
-      "en": "I used to go to cafes to meet friends, but now I go there to have some quiet time.",
-      "ko": "예전엔 친구를 만나러 카페에 갔는데, 지금은 조용히 혼자 시간을 보내러 가요.",
+      "level": "IH",
+      "pid": "change#2",
+      "en": "These days, people tend to use cafes like offices.",
+      "ko": "요즘은 사람들이 카페를 사무실처럼 쓰는 경향이 있어요.",
       "q": "cafe-compare"
+    },
+    {
+      "level": "AL",
+      "pid": "describe#5",
+      "en": "It has a calm atmosphere that makes me feel relaxed, with soft jazz playing in the background.",
+      "ko": "잔잔한 재즈가 흘러나와서, 마음이 편안해지는 차분한 분위기가 있어요.",
+      "q": "cafe-describe"
+    },
+    {
+      "level": "AL",
+      "pid": "place#5",
+      "en": "What I like most about the place is that it feels like my little hideaway from a busy week.",
+      "ko": "그곳에서 제가 가장 좋아하는 점은 바쁜 한 주를 피해 숨는 저만의 작은 은신처처럼 느껴진다는 거예요.",
+      "q": "cafe-describe"
+    },
+    {
+      "level": "AL",
+      "pid": "reason#5",
+      "en": "Honestly, there's nothing better than that quiet hour for recharging my batteries.",
+      "ko": "솔직히 재충전하는 데 그 조용한 한 시간보다 더 좋은 건 없어요.",
+      "q": "cafe-routine"
+    },
+    {
+      "level": "AL",
+      "pid": "memory#4",
+      "en": "It turned out to be one of the sweetest mornings I've had in a long time.",
+      "ko": "정말 오랜만에 보낸 가장 다정한 아침 중 하나가 됐어요.",
+      "q": "cafe-experience"
+    },
+    {
+      "level": "AL",
+      "pid": "change#2",
+      "en": "These days, people tend to treat them like offices or study rooms, so you see rows of people with laptops and headphones.",
+      "ko": "요즘은 사람들이 카페를 사무실이나 스터디룸처럼 여기는 경향이 있어서, 노트북이랑 헤드폰을 낀 사람들이 줄지어 있는 게 보여요.",
+      "q": "cafe-compare"
+    },
+    {
+      "level": "AL",
+      "pid": "change#5",
+      "en": "I think this change is because of how busy everyone has become.",
+      "ko": "이런 변화는 모두가 그만큼 바빠졌기 때문이라고 생각해요.",
+      "q": "cafe-compare"
+    }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "cafe-describe",
+      "title": "단골 카페 소개",
+      "parts": [
+        {
+          "pid": "im3-describe#1",
+          "en": "There's a small cafe near my place in Bundang.",
+          "ko": "분당 우리 집 근처에 작은 카페가 있어요."
+        },
+        {
+          "pid": "place#2",
+          "en": "It's only a five-minute walk from my house.",
+          "ko": "집에서 걸어서 5분밖에 안 걸려요."
+        },
+        {
+          "pid": "im3-describe#3",
+          "en": "It's small but really cozy, with wooden tables and lots of green plants.",
+          "ko": "작지만 나무 테이블과 초록 식물이 많아서 정말 아늑해요."
+        },
+        {
+          "pid": "im3-routine#0",
+          "en": "On weekend mornings, I usually go to this cafe to read a book.",
+          "ko": "주말 아침에는 보통 책을 읽으러 이 카페에 가요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "cafe-routine",
+      "title": "주말 아침 카페 루틴",
+      "parts": [
+        {
+          "pid": "im3-routine#0",
+          "en": "On Saturday mornings, I usually go to the cafe near Central Park.",
+          "ko": "토요일 아침이면 보통 중앙공원 옆 카페에 가요."
+        },
+        {
+          "pid": "im3-describe#6",
+          "en": "I get a hot Americano and sit by the window.",
+          "ko": "따뜻한 아메리카노를 받아서 창가에 앉아요."
+        },
+        {
+          "pid": "reason#2",
+          "en": "It helps me relax before a busy week.",
+          "ko": "바쁜 한 주를 앞두고 긴장을 푸는 데 도움이 돼요."
+        },
+        {
+          "pid": "routine#2",
+          "en": "Before I leave, I always buy some muffins for my kids.",
+          "ko": "나오기 전에 항상 아이들 주려고 머핀을 좀 사요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "cafe-experience",
+      "title": "딸과 함께한 카페",
+      "parts": [
+        {
+          "pid": "memory#0",
+          "en": "I remember one time when my daughter came with me on a rainy Saturday.",
+          "ko": "비 오는 토요일에 딸이 저와 함께 갔던 때가 기억나요."
+        },
+        {
+          "pid": "im3-past#6",
+          "en": "I enjoyed reading my book while she drew the cafe on a napkin.",
+          "ko": "딸이 냅킨에 카페를 그리는 동안 저는 책을 즐겁게 읽었어요."
+        },
+        {
+          "pid": "memory#3",
+          "en": "To my surprise, the owner put her drawing on the wall.",
+          "ko": "놀랍게도 사장님이 딸의 그림을 벽에 붙여 줬어요."
+        },
+        {
+          "pid": "im3-past#4",
+          "en": "I was so proud of her.",
+          "ko": "저는 딸이 정말 자랑스러웠어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "cafe-compare",
+      "title": "카페 이용 방식의 변화",
+      "parts": [
+        {
+          "pid": "change#0",
+          "en": "I used to go to cafes to meet friends, but now I go there to have some quiet time.",
+          "ko": "예전에는 친구를 만나러 카페에 갔는데, 지금은 조용한 시간을 보내려고 가요."
+        },
+        {
+          "pid": "change#2",
+          "en": "These days, people tend to use cafes like offices.",
+          "ko": "요즘 사람들은 카페를 사무실처럼 쓰는 경향이 있어요."
+        },
+        {
+          "pid": "im3-describe#5",
+          "en": "I prefer ordering ahead with an app because it saves a lot of time.",
+          "ko": "저는 시간이 많이 절약돼서 앱으로 미리 주문하는 걸 더 좋아해요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "cafe-describe",
+      "title": "카페의 아늑한 분위기",
+      "parts": [
+        {
+          "pid": "describe#1",
+          "en": "When you walk in, the first thing you notice is the rich smell of coffee, because the owner roasts the beans in the back.",
+          "ko": "들어가면 가장 먼저 진한 커피 향이 느껴지는데, 사장님이 안쪽에서 원두를 직접 볶기 때문이에요."
+        },
+        {
+          "pid": "describe#3",
+          "en": "It's not very big, but it's cozy in every corner, with wooden tables and lots of green plants.",
+          "ko": "그렇게 크지는 않지만 나무 테이블과 초록 식물이 많아서 구석구석 아늑해요."
+        },
+        {
+          "pid": "describe#5",
+          "en": "It has a warm atmosphere that makes me feel relaxed, especially when soft jazz is playing in the background.",
+          "ko": "특히 잔잔한 재즈가 흘러나올 때면 마음이 편안해지는 따뜻한 분위기가 있어요."
+        },
+        {
+          "pid": "im3-routine#5",
+          "en": "I visit this cafe almost every Saturday morning, and my favorite seat is the corner table by the big window.",
+          "ko": "저는 거의 매주 토요일 아침에 이 카페를 찾는데, 제일 좋아하는 자리는 큰 창가 쪽 구석 테이블이에요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "cafe-routine",
+      "title": "나만의 토요일 카페",
+      "parts": [
+        {
+          "pid": "im3-routine#0",
+          "en": "On Saturday mornings, I usually go to my favorite cafe near Central Park while my family is still asleep.",
+          "ko": "토요일 아침이면 가족이 아직 자는 동안 보통 중앙공원 옆 단골 카페에 가요."
+        },
+        {
+          "pid": "im3-describe#6",
+          "en": "I get my usual Americano, which the owner starts making the moment he sees me at the door.",
+          "ko": "늘 마시는 아메리카노를 받는데, 사장님은 제가 문 앞에 보이자마자 만들기 시작해요."
+        },
+        {
+          "pid": "reason#4",
+          "en": "Whenever I sit by the window with my coffee and a good book, I feel like the stress of the week is slowly melting away.",
+          "ko": "커피와 좋은 책을 들고 창가에 앉을 때마다 한 주의 스트레스가 서서히 녹아내리는 느낌이 들어요."
+        },
+        {
+          "pid": "reason#5",
+          "en": "Honestly, there's nothing better than having a quiet hour to myself after a busy week full of meetings and messages.",
+          "ko": "솔직히 회의와 메시지로 가득한 바쁜 한 주를 보낸 뒤 혼자만의 조용한 한 시간을 갖는 것보다 좋은 건 없어요."
+        }
+      ]
     }
   ]
 }

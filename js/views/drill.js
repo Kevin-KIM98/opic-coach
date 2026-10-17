@@ -10,7 +10,7 @@ import { openMode, closeMode } from '../app.js';
 
 export async function render(root, route) {
   root.innerHTML = html`
-    <header class="topbar"><div class="title">만능 패턴 72</div><a class="icon-btn" href="#/review" title="복습">🔁</a></header>
+    <header class="topbar"><div class="title">만능 패턴</div><a class="icon-btn" href="#/review" title="복습">🔁</a></header>
     <div id="dbody" class="mt12"></div>`;
   const body = root.querySelector('#dbody');
   // 화면을 떠나면 자동 재생을 멈춘다
@@ -23,33 +23,58 @@ export async function render(root, route) {
 const GROUP_EMOJI = ['🚀', '🖼️', '🔁', '📖', '⚖️', '💬', '🧩', '🏁', '🎯', '🌟', '📌', '🗣️'];
 const patLearned = (cards) => cards.filter(c => store.exprInfo(c.id).box >= 3).length;
 
+// 패턴 세트: 강지완 만능패턴 72(kang) · Sarah IM3 필수 패턴 25(im3). 예전 데이터에 sets 가 없으면 하나로 본다
+function patternSets(p) {
+  const sets = p.sets?.length ? p.sets : [{ id: 'kang', title: '만능 패턴', desc: p.intro || '' }];
+  return sets.map(st => {
+    const groups = p.groups.filter(g => (g.set || 'kang') === st.id);
+    return { ...st, groups };
+  }).filter(st => st.groups.length);
+}
+
 async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
   const p = await data.patterns();
-  const all = p.groups.flatMap(g => g.items.map((it, i) => ({ ...it, note: it.note || (it.pattern ? `패턴: ${it.pattern}` : ''), id: `pat:${g.id}#${i}`, group: g.title, no: 0 })));
-  all.forEach((c, i) => { c.no = i + 1; });
-  const group = groupId === 'all' ? { id: 'all', title: `전체 ${all.length}문장`, desc: '처음부터 끝까지 순서대로' } : p.groups.find(g => g.id === groupId) || null;
+  const sets = patternSets(p);
+  const cardsOf = (groups) => {
+    const out = groups.flatMap(g => g.items.map((it, i) => ({ ...it, note: it.note || (it.pattern ? `패턴: ${it.pattern}` : ''), id: `pat:${g.id}#${i}`, group: g.title, no: 0 })));
+    out.forEach((c, i) => { c.no = i + 1; });
+    return out;
+  };
+  // group: 그룹 id · 'all:<세트>' (세트 전체 순서대로) · 예전 'all' (만능패턴 72 전체)
+  const allKey = groupId === 'all' ? `all:${(sets.find(st => st.id === 'kang') || sets[0]).id}` : groupId;
+  const setOfAll = allKey?.startsWith('all:') ? sets.find(st => `all:${st.id}` === allKey) : null;
+  const group = setOfAll ? { id: allKey, title: `${setOfAll.title} · 전체`, desc: '처음부터 끝까지 순서대로', set: setOfAll }
+    : (() => { const g = p.groups.find(x => x.id === groupId); return g ? { ...g, set: sets.find(st => st.id === (g.set || 'kang')) } : null; })();
 
   if (!group) {
-    const learned = patLearned(all);
-    const src = p.source;
-    body.innerHTML = html`<p class="small ink2 mb12">${p.intro}</p>
-      ${src ? raw(`<div class="card soft mb12"><div class="xs muted">📺 학습 출처</div><div class="h3 mt8">${src.title}</div>${src.note ? `<div class="xs ink2 mt8">${src.note}</div>` : ''}<a class="btn sm mt12" href="${src.url}" target="_blank" rel="noopener">▶ 영상 보기</a></div>`) : ''}
-      <div class="card mb12"><div class="row between"><div class="h3">진행률</div><div class="small"><b>${learned}</b> / ${all.length} 문장</div></div>
-        <div class="bar teal mt8"><i style="width:${all.length ? learned / all.length * 100 : 0}%"></i></div>
-        <div class="btn-row mt12"><a class="btn dark" href="#/drill?tab=patterns&group=all">▶ ${all.length}문장 순서대로</a><a class="btn teal" href="#/drill?tab=patterns&group=all&mode=quiz">🎙️ 말하기 퀴즈</a></div>
-        <p class="xs muted mt8">퀴즈: 한국어 패턴을 보고 빈칸에 내 주제를 넣어 영어로 말하면, 음성 인식으로 채점해 복습 상자에 반영해요.</p></div>
-      <div class="list">${raw(p.groups.map((g, gi) => {
-        const cards = g.items.map((_, i) => ({ id: `pat:${g.id}#${i}` }));
-        return `<a class="list-row" href="#/drill?tab=patterns&group=${g.id}"><div class="emoji">${g.emoji || GROUP_EMOJI[gi % GROUP_EMOJI.length]}</div><div class="grow"><div class="t">${g.title} <span class="xs muted">${patLearned(cards)}/${g.items.length}</span></div><div class="s">${g.desc}</div><div class="bar teal mt8" style="height:5px"><i style="width:${patLearned(cards) / g.items.length * 100}%"></i></div></div><span class="chev">›</span></a>`;
-      }).join(''))}</div>
+    body.innerHTML = html`<p class="small ink2 mb12">유튜브 두 영상의 패턴입니다. 주제 화면의 ② 패턴에서는 이 패턴들을 주제·레벨에 맞게 조합해 연습해요.</p>
+      ${raw(sets.map(st => {
+        const all = cardsOf(st.groups);
+        const learned = patLearned(all);
+        return `<section class="pat-set">
+          <div class="card set-head">
+            <div class="row between"><div><div class="xs muted">📺 ${st.id === 'im3' ? 'IM3 기초' : '답변 뼈대'}</div><div class="h3 mt8">${st.title}</div></div>${st.url ? `<a class="btn sm ghost" href="${st.url}" target="_blank" rel="noopener">▶ 영상</a>` : ''}</div>
+            ${st.desc ? `<div class="xs ink2 mt8">${st.desc}</div>` : ''}
+            <div class="row between mt12 small"><span class="muted">진행률</span><span><b>${learned}</b> / ${all.length}</span></div>
+            <div class="bar mt8"><i style="width:${all.length ? learned / all.length * 100 : 0}%"></i></div>
+            <div class="btn-row mt12"><a class="btn sm dark" href="#/drill?tab=patterns&group=all:${st.id}">▶ ${all.length}개 순서대로</a><a class="btn sm primary" href="#/drill?tab=patterns&group=all:${st.id}&mode=quiz">🎙️ 말하기 퀴즈</a></div>
+          </div>
+          <div class="list mt12">${st.groups.map((g, gi) => {
+            const cards = g.items.map((_, i) => ({ id: `pat:${g.id}#${i}` }));
+            return `<a class="list-row" href="#/drill?tab=patterns&group=${g.id}"><div class="emoji">${g.emoji || GROUP_EMOJI[gi % GROUP_EMOJI.length]}</div><div class="grow"><div class="t">${g.title} <span class="xs muted">${patLearned(cards)}/${g.items.length}</span></div><div class="s">${g.desc}</div><div class="bar mt8" style="height:5px"><i style="width:${patLearned(cards) / g.items.length * 100}%"></i></div></div><span class="chev">›</span></a>`;
+          }).join('')}</div>
+        </section>`;
+      }).join(''))}
+      <p class="xs muted mt12">퀴즈: 한국어 패턴을 보고 빈칸에 내 이야기를 넣어 영어로 말하면, 음성 인식으로 채점해 복습 상자에 반영해요.</p>
       ${raw(editLinkHtml('data/patterns.json', '✏️ GitHub에서 패턴 수정'))}`;
     return;
   }
-  const cards = group.id === 'all' ? all : all.filter(c => c.id.startsWith(`pat:${group.id}#`));
+  const cards = setOfAll ? cardsOf(setOfAll.groups) : cardsOf([p.groups.find(g => g.id === group.id)]);
+  const sameSet = group.set ? group.set.groups : p.groups;
   const list = () => {
     body.innerHTML = html`
       <div class="row between mb12"><div><div class="h3">${group.title}</div><div class="xs muted">${group.desc} · 학습 완료 ${patLearned(cards)}/${cards.length}</div></div><span class="row" style="gap:6px"><button class="btn sm" data-quiz>🎙️ 퀴즈</button><button class="btn sm dark" data-flash>카드</button></span></div>
-      <div class="chips mb12"><a class="chip ${group.id === 'all' ? 'active' : ''}" href="#/drill?tab=patterns&group=all">전체</a>${raw(p.groups.map(g => `<a class="chip ${g.id === group.id ? 'active' : ''}" href="#/drill?tab=patterns&group=${g.id}">${g.title}</a>`).join(''))}</div>
+      <div class="chips mb12">${group.set ? raw(`<a class="chip ${setOfAll ? 'active' : ''}" href="#/drill?tab=patterns&group=all:${group.set.id}">전체</a>`) : ''}${raw(sameSet.map(g => `<a class="chip ${g.id === group.id ? 'active' : ''}" href="#/drill?tab=patterns&group=${g.id}">${g.title}</a>`).join(''))}</div>
       <div data-autoplay></div>
       <div class="list mt12" data-list>${raw(cards.map(c => patRow(c)).join(''))}</div>`;
     bindPlay(body);

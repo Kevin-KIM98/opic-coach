@@ -414,3 +414,103 @@ kbd { font-family: inherit; background: var(--surface-2); padding: 1px 6px; bord
 .answer .sent-ko { font-size: 13px; color: var(--muted); line-height: 1.5; margin-top: 2px; }
 .answer.ko-off .sent-ko { display: none; }
 .ko-cue { font-size: 15px; color: var(--ink-2); line-height: 1.5; margin-bottom: 6px; }
+.answer .sent.pat { text-decoration: underline; text-decoration-color: var(--teal); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.answer .sent-pat { font-size: 12px; color: var(--teal); margin-top: 2px; }
+
+/* =====================================================================
+   v4 디자인 — 차분한 쿨톤 · 인디고→바이올렛 그라데이션 · 떠 있는 하단 탭
+   (위 규칙을 덮어쓴다. 색은 토큰만 바꾸면 전체에 반영된다)
+   ===================================================================== */
+:root {
+  --bg: #F4F5FA; --surface: #FFFFFF; --surface-2: #EEF0F7; --ink: #0F172A; --ink-2: #475569; --muted: #94A3B8; --line: #E2E8F0;
+  --accent: #6366F1; --accent-ink: #FFFFFF; --accent-soft: #EEF0FF;
+  --teal: #0F9F8A; --teal-soft: #DDF5F0; --indigo: #4F46E5; --indigo-soft: #E8E9FF; --violet: #8B5CF6; --violet-soft: #F1EAFF;
+  --grad: linear-gradient(135deg, #6366F1 0%, #8B5CF6 55%, #D946EF 100%);
+  --grad-soft: linear-gradient(135deg, #EEF0FF 0%, #F5EEFF 100%);
+  --shadow: 0 1px 2px rgba(15,23,42,.04), 0 10px 30px -14px rgba(15,23,42,.16);
+  --shadow-lg: 0 12px 40px -12px rgba(79,70,229,.35);
+  --radius: 22px; --radius-sm: 16px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B0D14; --surface: #151824; --surface-2: #1E2232; --ink: #EEF0F7; --ink-2: #B8BFD0; --muted: #6E7792; --line: #262B3D;
+    --accent: #818CF8; --accent-soft: #1F2240; --teal-soft: #0F2E2A; --indigo-soft: #1E2046; --violet-soft: #2A1F45;
+    --grad-soft: linear-gradient(135deg, #1D2040 0%, #2A1F45 100%);
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 30px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B0D14; --surface: #151824; --surface-2: #1E2232; --ink: #EEF0F7; --ink-2: #B8BFD0; --muted: #6E7792; --line: #262B3D;
+  --accent: #818CF8; --accent-soft: #1F2240; --teal-soft: #0F2E2A; --indigo-soft: #1E2046; --violet-soft: #2A1F45;
+  --grad-soft: linear-gradient(135deg, #1D2040 0%, #2A1F45 100%);
+  --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 30px -14px rgba(0,0,0,.7);
+}
+
+.topbar .title { font-size: 18px; font-weight: 800; letter-spacing: -0.02em; }
+.section-title { text-transform: none; letter-spacing: -0.01em; font-size: 15px; font-weight: 800; color: var(--ink); margin: 26px 2px 12px; }
+
+/* 히어로 · 강조 카드: 그라데이션 + 은은한 빛 */
+.hero { background: var(--grad); color: #fff; border-radius: 26px; box-shadow: var(--shadow-lg); }
+.hero::after { right: -60px; top: -80px; width: 220px; height: 220px; background: radial-gradient(circle, rgba(255,255,255,.35), rgba(255,255,255,0) 70%); }
+.hero .eyebrow { opacity: .85; letter-spacing: .04em; }
+.card.accent { background: var(--grad); color: #fff; box-shadow: var(--shadow-lg); }
+.card.soft { background: var(--grad-soft); }
+.home-hero .streak b { font-family: var(--font); font-weight: 800; }
+.step { background: rgba(255,255,255,.16); border-radius: 12px; }
+.step i { background: rgba(255,255,255,.28); }
+
+/* 떠 있는 하단 탭 */
+.nav { left: 12px; right: 12px; bottom: calc(10px + env(safe-area-inset-bottom)); padding-bottom: 0; border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 12px 34px -12px rgba(15,23,42,.28); max-width: 496px; margin: 0 auto; }
+.nav-inner { padding: 0 6px; }
+.nav a { border-radius: 18px; margin: 6px 2px; transition: background .15s, color .15s; }
+.nav a.active { color: var(--accent); background: var(--accent-soft); }
+.page { padding-bottom: calc(var(--nav-h) + 40px + env(safe-area-inset-bottom)); }
+.installbar { bottom: calc(var(--nav-h) + 22px + env(safe-area-inset-bottom)); border-radius: 18px; }
+#toast { border-radius: 14px; }
+
+/* 버튼 · 탭 · 칩 */
+.btn { border-radius: 14px; }
+.btn.primary { background: var(--grad); box-shadow: var(--shadow-lg); }
+.btn.dark { background: var(--ink); color: var(--bg); }
+.btn.teal { background: var(--teal); }
+.btn.ghost { border-color: var(--line); background: var(--surface); }
+.tabs, .seg { background: var(--surface-2); border-radius: 16px; }
+.tabs button, .seg button { border-radius: 12px; transition: background .15s, color .15s; }
+.tabs button.active, .seg button.active { background: var(--surface); color: var(--accent); box-shadow: var(--shadow); }
+.chip.active { background: var(--accent); color: #fff; }
+.badge { border-radius: 8px; }
+
+/* 카드 · 목록 · 타일 */
+.list-row, .expr, .tile, .qcard, .flash, .task { border: 1px solid color-mix(in srgb, var(--line) 60%, transparent); }
+.list-row .emoji { background: var(--grad-soft); border-radius: 14px; }
+.tile { border-radius: 20px; padding: 14px 12px; transition: transform .12s; }
+.tile:active { transform: scale(.97); }
+.tile .emoji { width: 40px; height: 40px; border-radius: 13px; background: var(--grad-soft); display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.bar { border-radius: 999px; }
+.bar.teal i, .bar i { background: var(--grad); }
+.play { border-radius: 14px; background: var(--accent-soft); color: var(--accent); }
+.play.on { background: var(--accent); color: #fff; }
+.topic-steps .s { border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+.topic-steps .s i { background: var(--accent-soft); }
+.answer .sent.pat { text-decoration-color: var(--accent); }
+.answer .sent-pat, .pat-frame { color: var(--accent); }
+.flash { border-radius: 26px; }
+/* 이어서 학습: 히어로 아래에선 밝은 카드로 (그라데이션이 두 번 겹치지 않게) */
+.card.accent.continue { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); border: 1px solid var(--line); }
+.continue .xs { color: var(--accent); opacity: 1 !important; font-weight: 700; }
+.continue .chev { color: var(--muted) !important; }
+.continue .step { background: var(--surface-2); color: var(--ink-2); }
+.continue .step i { background: var(--accent-soft); }
+.continue .step.now { outline: 2px solid var(--accent); color: var(--accent); }
+.pat-set + .pat-set { margin-top: 26px; }
+.set-head { background: var(--grad-soft); }
+/* 패턴 조합 카드 */
+.combo { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: var(--shadow); padding: 14px 16px; }
+.combo-chain { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.combo-chain .link { font-size: 11.5px; font-weight: 700; padding: 4px 8px; border-radius: 9px; background: var(--accent-soft); color: var(--accent); }
+.combo-chain .link.im3 { background: var(--teal-soft); color: var(--teal); }
+.combo-chain .plus { color: var(--muted); font-weight: 800; font-size: 12px; }
+.combo-line + .combo-line { margin-top: 8px; }
+.combo-line .en { font-weight: 600; font-size: 14.5px; line-height: 1.45; }
+.combo-line .ko { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+.combo .note { display: inline-block; font-size: 12px; color: var(--accent); }

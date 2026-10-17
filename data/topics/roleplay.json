@@ -112,9 +112,9 @@
         "IH 이상은 '토요일 오전엔 아이들과 시간을 보내서 저녁이 좋다', '차를 가져간다'처럼 내 상황에 맞춘 이유를 한 줄씩 붙이세요."
       ],
       "answers": {
-        "IM3": "Hi, I'm calling to ask about the new sci-fi movie this Saturday. My coworker Minho and I want to see it together. He's also a good friend of mine. I have a few questions. First, I'd like to know what time the evening shows start. Also, how much are the tickets for two adults? Do you have any discounts for members? And one more thing, are there any good seats left in the middle? Okay, thank you so much. Yeah, that's all I wanted to ask. Bye!",
-        "IH": "Hi, I'm calling to ask about the new sci-fi movie this Saturday. My coworker Minho and I have worked together for almost 20 years, and we're both big sci-fi fans, so we finally decided to see it together. I have a few questions. First, I'd like to know what time the evening shows start. I usually spend Saturday mornings with my kids, so anything after six would be perfect. Also, how much are the tickets for two adults? I have a membership card, so is there any discount I can use? And are there still good seats left in the middle? We don't like sitting too close to the screen. Oh, and one more thing, is there free parking in the building? I'm going to drive there. Okay, that's really helpful. Thank you. Yeah, that's all I wanted to ask. Have a good day!",
-        "AL": "Hi there, I'm calling to ask about the new sci-fi movie this Saturday. My coworker Minho and I have been dying to see it. We've worked together for almost 20 years, and we just wrapped up a really tough project, so we decided to treat ourselves to a night out. So I have a few questions, if you don't mind. First, I'd like to know what time the evening shows start. I usually take my kids to the park on Saturday mornings, so anything after six would work best. Also, how much are the tickets for two adults? I've got a membership card for your theater, so I was wondering if there's any kind of discount. And are there still good seats left in the middle? Honestly, at our age, we get a sore neck if we sit too close to the screen. Oh, and one more thing, is the movie showing in IMAX? If it is, we'd love to see it on the big screen, since the special effects are supposed to be amazing. Lastly, is there free parking in the building, or should we just take the subway? Okay, that's super helpful. Thanks a lot for your time. So yeah, that's pretty much everything I wanted to ask. Have a great day!"
+        "IM3": "Hi, I'm calling to ask about the new sci-fi movie this Saturday. My coworker Minho and I want to see it together. He's also a good friend of mine. I have a few questions. I'd like to know what time the evening shows start. Also, how much are the tickets for two adults? Do you have any discounts for members? And one more thing, are there any good seats left in the middle? Okay, thank you so much. Yeah, that's all I wanted to ask. Bye!",
+        "IH": "Hi, I'm calling to ask about the new sci-fi movie this Saturday. My coworker Minho and I have worked together for almost 20 years, and we're both big sci-fi fans, so we finally decided to see it together. I have a few questions. I'd like to know what time the evening shows start. I usually spend Saturday mornings with my kids, so anything after six would be perfect. Also, how much are the tickets for two adults? I have a membership card, so is there any discount I can use? And are there still good seats left in the middle? We don't like sitting too close to the screen. Oh, and one more thing, is there free parking in the building? I'm going to drive there. Okay, that's really helpful. Thank you. Yeah, that's all I wanted to ask. Have a good day!",
+        "AL": "Hi there, I'm calling to ask about the new sci-fi movie this Saturday. My coworker Minho and I have been dying to see it. It's more fun to watch a big movie like this with someone than by myself. We've worked together for almost 20 years, and we just wrapped up a really tough project, so we decided to treat ourselves to a night out. So I have a few questions, if you don't mind. First, I'd like to know what time the evening shows start. I usually take my kids to the park on Saturday mornings, so anything after six would work best. Also, how much are the tickets for two adults? I've got a membership card for your theater, so I was wondering if there's any kind of discount. And are there still good seats left in the middle? Honestly, at our age, we get a sore neck if we sit too close to the screen. Oh, and one more thing, is the movie showing in IMAX? If it is, we'd love to see it on the big screen, since the special effects are supposed to be amazing. Lastly, is there free parking in the building, or should we just take the subway? Okay, that's super helpful. Thanks a lot for your time. So yeah, that's pretty much everything I wanted to ask. Have a great day!"
       },
       "answersKo": {
         "IM3": [
@@ -122,7 +122,7 @@
           "회사 동료 민호랑 같이 보고 싶어서요.",
           "민호는 제 좋은 친구이기도 해요.",
           "몇 가지 여쭤볼 게 있어요.",
-          "먼저, 저녁 상영이 몇 시에 시작하는지 알고 싶어요.",
+          "저녁 상영이 몇 시에 시작하는지 알고 싶어요.",
           "그리고 성인 두 명 티켓은 얼마예요?",
           "회원 할인도 있나요?",
           "그리고 하나 더요, 가운데 쪽에 좋은 자리가 남아 있나요?",
@@ -134,7 +134,7 @@
           "안녕하세요, 이번 주 토요일 새 SF 영화 때문에 전화드렸어요.",
           "회사 동료 민호랑 저는 거의 20년 동안 같이 일했는데, 둘 다 SF 영화를 엄청 좋아해서 드디어 같이 보기로 했어요.",
           "몇 가지 여쭤볼 게 있어요.",
-          "먼저, 저녁 상영이 몇 시에 시작하는지 알고 싶어요.",
+          "저녁 상영이 몇 시에 시작하는지 알고 싶어요.",
           "저는 보통 토요일 아침은 아이들이랑 보내서, 6시 이후면 아무 때나 딱 좋아요.",
           "그리고 성인 두 명 티켓은 얼마예요?",
           "제가 멤버십 카드가 있는데, 쓸 수 있는 할인이 있을까요?",
@@ -150,6 +150,7 @@
         "AL": [
           "안녕하세요, 이번 주 토요일 새 SF 영화 때문에 전화드렸어요.",
           "회사 동료 민호랑 저는 이 영화를 너무너무 보고 싶었거든요.",
+          "이런 대작 영화는 혼자보다 누군가와 함께 보는 게 더 재미있어요.",
           "저희가 거의 20년 동안 같이 일했는데, 막 정말 힘든 프로젝트를 끝내서 저희한테 밤 나들이를 선물하기로 했어요.",
           "그래서 괜찮으시다면 몇 가지 여쭤볼게요.",
           "먼저, 저녁 상영이 몇 시에 시작하는지 알고 싶어요.",
@@ -179,9 +180,9 @@
         "AL은 취소 규정(cancellation policy)처럼 직장인다운 질문을 하나 더 넣고 이유를 붙이세요."
       ],
       "answers": {
-        "IM3": "Hi, I'm calling to ask about your Jeju Island package. I want to go there with my family during my summer vacation. There are four of us, two adults and two kids. I have a few questions. First, how much is the package for four people? Also, is it possible to get a room with an ocean view? Does the price include the flights and a rental car? And one more thing, are there any fun activities for kids? Okay, thank you. Yeah, that's all I wanted to ask.",
-        "IH": "Hi, I'm calling to ask about the Jeju Island package I saw on your website. I'm planning a trip with my family during my summer vacation in August. There are four of us, including my son, who's in middle school, and my daughter, who's in elementary school. So I have a few questions. First, how much is the four-day package for two adults and two kids? Also, is it possible to get a room with an ocean view? My kids love waking up and seeing the sea. Next, does the price include the flights and a rental car? We definitely need a car to get around the island. And one more thing, are there any activities for kids, like horse riding or a water park? Okay, that sounds great. Could you send me the details by email? Yeah, that's all I wanted to ask. Thanks a lot!",
-        "AL": "Hi there, I'm calling to ask about the Jeju Island package I saw on your website. I'm planning a family trip for my summer vacation in early August. There are four of us in total, including my son, who's in middle school, and my daughter, who's in elementary school. We went to Jeju a few years ago and had a blast, so the kids have been begging to go back. Anyway, I have a few questions, if you don't mind. First, how much is the four-day package for two adults and two kids? Also, is it possible to get a room with an ocean view? Last time our room faced the parking lot, which was a bit disappointing. Next, does the price include the round-trip flights and a rental car? To be honest, getting around the island without a car is a real pain. And one more thing, are there any activities for kids, like horse riding or snorkeling? My son gets bored pretty easily, so that would be a big plus. Lastly, what's your cancellation policy? Things come up at work all the time, so I'd like to know just in case. Okay, that's really helpful. Could you email me all the details? So yeah, that's pretty much everything I wanted to ask. Thanks so much!"
+        "IM3": "Hi, I'm calling to ask about your Jeju Island package. I want to go there with my family during my summer vacation. There are four of us, two adults and two kids. I have a few questions. First, how much is the package for four people? Is it possible to get a room with an ocean view? Does the price include the flights and a rental car? And one more thing, are there any fun activities for kids? Okay, thank you. Yeah, that's all I wanted to ask.",
+        "IH": "Hi, I'm calling to ask about the Jeju Island package I saw on your website. I'm planning a trip with my family during my summer vacation in August. There are four of us, including my son, who's in middle school, and my daughter, who's in elementary school. So I have a few questions. First, how much is the four-day package for two adults and two kids? Is it possible to get a room with an ocean view? My kids love waking up and seeing the sea. Next, does the price include the flights and a rental car? We definitely need a car to get around the island. And one more thing, are there any activities for kids, like horse riding or a water park? Okay, that sounds great. Could you send me the details by email? Yeah, that's all I wanted to ask. Thanks a lot!",
+        "AL": "Hi there, I'm calling to ask about the Jeju Island package I saw on your website. I'm planning a family trip for my summer vacation in early August. There are four of us in total, including my son, who's in middle school, and my daughter, who's in elementary school. We went to Jeju a few years ago and had a blast, so the kids have been begging to go back. Anyway, I have a few questions, if you don't mind. First, how much is the four-day package for two adults and two kids? Also, is it possible to get a room with an ocean view? I ended up with a room facing the parking lot last time, which was a bit disappointing. Next, does the price include the round-trip flights and a rental car? To be honest, getting around the island without a car is a real pain. And one more thing, are there any activities for kids, like horse riding or snorkeling? My son gets bored pretty easily, so that would be a big plus. Lastly, what's your cancellation policy? Things come up at work all the time, so I'd like to know just in case. Okay, that's really helpful. Could you email me all the details? So yeah, that's pretty much everything I wanted to ask. Thanks so much!"
       },
       "answersKo": {
         "IM3": [
@@ -190,7 +191,7 @@
           "저희는 네 명이에요, 어른 둘에 아이 둘이요.",
           "몇 가지 여쭤볼 게 있어요.",
           "먼저, 네 명이면 패키지가 얼마예요?",
-          "그리고 바다가 보이는 방으로 받을 수 있을까요?",
+          "바다가 보이는 방으로 받을 수 있을까요?",
           "가격에 항공권이랑 렌터카가 포함돼 있나요?",
           "그리고 하나 더요, 아이들이 할 만한 재미있는 활동이 있나요?",
           "네, 감사합니다.",
@@ -202,7 +203,7 @@
           "중학생 아들이랑 초등학생 딸까지 해서 저희는 네 명이에요.",
           "그래서 몇 가지 여쭤볼 게 있어요.",
           "먼저, 어른 둘 아이 둘이면 4일짜리 패키지가 얼마예요?",
-          "그리고 바다가 보이는 방으로 받을 수 있을까요?",
+          "바다가 보이는 방으로 받을 수 있을까요?",
           "저희 아이들이 아침에 일어나서 바다 보는 걸 정말 좋아하거든요.",
           "다음으로, 가격에 항공권이랑 렌터카가 포함돼 있나요?",
           "섬을 돌아다니려면 차가 꼭 필요해서요.",
@@ -220,7 +221,7 @@
           "아무튼, 괜찮으시다면 몇 가지 여쭤볼게요.",
           "먼저, 어른 둘 아이 둘이면 4일짜리 패키지가 얼마예요?",
           "그리고 바다가 보이는 방으로 받을 수 있을까요?",
-          "지난번엔 방이 주차장 쪽이어서 좀 실망스러웠거든요.",
+          "지난번엔 결국 주차장 쪽 방을 받게 돼서 좀 실망스러웠어요.",
           "다음으로, 가격에 왕복 항공권이랑 렌터카가 포함돼 있나요?",
           "솔직히 차 없이 섬을 돌아다니는 건 정말 고생이에요.",
           "그리고 하나 더요, 승마나 스노클링처럼 아이들이 할 만한 활동이 있나요?",
@@ -245,7 +246,7 @@
         "IH 이상은 '대신 중학생 아들을 데려갈 수 있게 청소년 티켓으로 바꿔 달라'처럼 내 가족 상황을 대안에 넣으면 자연스럽습니다."
       ],
       "answers": {
-        "IM3": "Hi, I'm calling about my movie tickets. I'm afraid there's a problem with the two tickets I booked for Saturday. My friend Minho just told me that he can't come because his son is sick. So I have a couple of ideas. First, how about moving my tickets to Sunday evening instead? If that's not possible, could I get a refund for one ticket? Please call me back at this number. Thank you so much. Yeah, that's the situation. Bye!",
+        "IM3": "Hi, I'm calling about my movie tickets. I'm afraid there's a problem with the two tickets I booked for Saturday. My friend Minho just told me that he can't come because his son is sick. I didn't know what to do, so I decided to call you right away. So I have a couple of ideas. First, how about moving my tickets to Sunday evening instead? If that's not possible, could I get a refund for one ticket? Please call me back at this number. Thank you so much. Yeah, that's the situation. Bye!",
         "IH": "Hi, I'm calling about the movie tickets I booked on your app. I'm afraid there's a problem with the two tickets I booked for Saturday at seven. My coworker Minho was supposed to come with me, but he just called and said his son is sick, so he has to stay home. I totally understand, but now I have an extra ticket. So I have a couple of ideas. First, how about moving both tickets to Sunday evening instead? Minho said he'd be free then. If that doesn't work, could I change the second ticket to a youth ticket? Then I could bring my son instead. He's a big sci-fi fan too. Please call me back at this number when you get a chance. Thanks a lot. Yeah, that's the situation. Have a good day!",
         "AL": "Hi there, I'm calling about the movie tickets I booked through your app. I'm afraid there's a problem with the two tickets I booked for this Saturday at seven. My coworker Minho and I were really looking forward to it, but he just called me and said his son came down with a fever, so he has to stay home and take care of him. Of course, family comes first, so I totally get it. The thing is, the tickets are non-refundable on the app, so I'm kind of stuck. So I have a few ideas. First, how about moving both tickets to Sunday evening instead? Minho said his son should be feeling better by then. If that's not possible, could I change the second ticket to a youth ticket? My son is in middle school, and he's been begging me to see this movie, so I could bring him instead. And if neither of those works, could you give me store credit for the extra ticket so I can use it next time? Please call me back at this number whenever you get a chance. I'd really appreciate your help. So yeah, that's pretty much the situation. Thanks so much!"
       },
@@ -254,6 +255,7 @@
           "안녕하세요, 제 영화표 때문에 전화드렸어요.",
           "죄송하지만 토요일로 예매한 표 두 장에 문제가 생겼어요.",
           "친구 민호가 아들이 아파서 못 온다고 방금 말해줬어요.",
+          "어떻게 해야 할지 몰라서 바로 전화드리기로 했어요.",
           "그래서 몇 가지 생각해 본 게 있어요.",
           "먼저, 대신 표를 일요일 저녁으로 옮기는 건 어떨까요?",
           "그게 안 되면 표 한 장은 환불받을 수 있을까요?",
@@ -308,8 +310,8 @@
         "마지막은 'I'd really appreciate it if you could ~.' + 'Please call me back.' 으로 정중하게 끝내세요."
       ],
       "answers": {
-        "IM3": "Hi, I'm calling about my Jeju trip. I booked a package with your agency for my family. But I just found out that our flight tomorrow morning has been canceled. I'm afraid there's a problem with our whole schedule now. So I have two ideas. First, can we take a later flight tomorrow? Or, is it possible to move the trip to next weekend? I'd really appreciate it if you could find us another flight to Jeju. Please call me back soon. Yeah, that's the situation. Thanks!",
-        "IH": "Hi, I'm calling about the Jeju package I booked with your agency last month. It's for the four of us, two adults and two kids. I just got a text message saying that our flight tomorrow morning has been canceled because of a problem with the plane. I'm really worried because we already booked the hotel and the rental car, and I only have five days off from work. So I have a couple of ideas. First, is it possible to put us on a later flight tomorrow, maybe in the afternoon? If there are no seats, could we move the whole trip back by one day? Then you'd need to change the hotel and the car too. I'd really appreciate it if you could find us another flight to Jeju. Please call me back as soon as you can. Thank you. Yeah, that's the situation.",
+        "IM3": "Hi, I'm calling about my Jeju trip. I booked a package with your agency for my family. But I just found out that our flight tomorrow morning has been canceled. It was a big shock when I read the text message. I'm afraid there's a problem with our whole schedule now. So I have two ideas. First, can we take a later flight tomorrow? Or, is it possible to move the trip to next weekend? I'd really appreciate it if you could find us another flight to Jeju. Please call me back soon. Yeah, that's the situation. Thanks!",
+        "IH": "Hi, I'm calling about the Jeju package I booked with your agency last month. It's for the four of us, two adults and two kids. I just got a text message saying that our flight tomorrow morning has been canceled because of a problem with the plane. I'm really worried because we already booked the hotel and the rental car, and I only have five days off from work. So I have a couple of ideas. First, is it possible to put us on a later flight tomorrow, maybe in the afternoon? How about moving the whole trip back by one day instead? Then you'd need to change the hotel and the car too. I'd really appreciate it if you could find us another flight to Jeju. Please call me back as soon as you can. Thank you. Yeah, that's the situation.",
         "AL": "Hi there, I'm calling about the Jeju package I booked with your agency last month. It's for the four of us, two adults and two kids, leaving tomorrow morning at eight. I'm afraid there's a big problem. I just got a text from the airline saying our flight has been canceled because of a technical issue with the plane. To be honest, I'm pretty stressed out right now. I only managed to get five days off from work, and the kids have been counting down the days for weeks. So I have a few ideas. First, is it possible to put us on a later flight tomorrow? Even an evening flight would be totally fine. If that's not possible, could you book us on a different airline? I don't mind paying a little extra if it means we can still leave tomorrow. And if neither of those options works, could we push the whole trip back by one day and change the hotel and rental car to match? I'd really appreciate it if you could find us another flight to Jeju as soon as possible. Please call me back at this number. I'll keep my phone on. So yeah, that's the situation. Thanks so much!"
       },
       "answersKo": {
@@ -317,6 +319,7 @@
           "안녕하세요, 제 제주 여행 때문에 전화드렸어요.",
           "가족 여행으로 여기 여행사에서 패키지를 예약했어요.",
           "그런데 내일 아침 저희 비행기가 취소됐다는 걸 방금 알게 됐어요.",
+          "그 문자 메시지를 읽었을 때 정말 충격이었어요.",
           "죄송하지만 이제 일정 전체에 문제가 생겼어요.",
           "그래서 두 가지 생각해 본 게 있어요.",
           "먼저, 내일 더 늦은 비행기를 탈 수 있을까요?",
@@ -333,7 +336,7 @@
           "호텔이랑 렌터카도 이미 예약했고, 회사에서 휴가도 5일밖에 못 받아서 정말 걱정이에요.",
           "그래서 몇 가지 생각해 본 게 있어요.",
           "먼저, 내일 더 늦은 비행기, 예를 들어 오후 비행기로 바꿔주실 수 있을까요?",
-          "자리가 없으면 여행 전체를 하루 미룰 수 있을까요?",
+          "대신 여행 일정 전체를 하루 뒤로 미루면 어떨까요?",
           "그러면 호텔이랑 차도 같이 바꿔주셔야 할 거예요.",
           "제주 가는 다른 비행기를 찾아주시면 정말 감사하겠습니다.",
           "최대한 빨리 다시 전화 주세요.",
@@ -373,8 +376,8 @@
       ],
       "answers": {
         "IM3": "Oh, yes, that happened to me last spring. We planned to visit my parents in Daejeon for my dad's birthday. Something unexpected happened when we were about to leave for Daejeon. I got a call from my office. There was a big problem with our system, and I'm the team leader, so I had to go in. I felt really bad. So my family took the KTX train without me. I fixed the problem that night and drove to Daejeon the next morning. Yeah, that's how I handled it.",
-        "IH": "Oh, yes, that happened to me last spring. It was my dad's 70th birthday, so we planned to drive to my parents' place in Daejeon on Saturday morning. Something unexpected happened when we were about to leave for Daejeon. We were putting our bags in the car when my phone rang. It was a guy from my team. Our main service was down, and thousands of users couldn't log in. Since I'm the team leader, I couldn't just ignore it. My kids were really disappointed, and I felt terrible. So we changed the plan. My family took the KTX train to Daejeon, and I drove to the office. My team and I fixed the problem by around ten at night. The next morning, I drove down to Daejeon and joined the party for lunch. Yeah, that's how I handled it.",
-        "AL": "Oh, yes, that happened to me last spring, and it was pretty stressful. It was my dad's 70th birthday, which is a really big deal in Korea, so we planned to drive down to my parents' place in Daejeon on Saturday morning. Something unexpected happened when we were about to leave for Daejeon. We were literally loading our bags into the car when my phone started ringing. It was one of the developers on my team, and he sounded panicked. Our main service had crashed, and thousands of users couldn't log in. Since I'm the team leader, there was no way I could just ignore it. My kids looked so disappointed, and honestly, I felt like the worst parent in the world. So we came up with a plan B. My family took the KTX train to Daejeon, and I headed to the office. My team and I worked on the problem all day, and we finally fixed it at around ten at night. I got up at six the next morning, drove down to Daejeon, and made it just in time for the birthday lunch. My dad just laughed and said he was proud of me. After that, I trained two people on my team to handle emergencies like that. Yeah, that's how I handled it."
+        "IH": "Oh, yes, that happened to me last spring. It was my dad's 70th birthday, so we planned to drive to my parents' place in Daejeon on Saturday morning. Something unexpected happened when we were about to leave for Daejeon. We were putting our bags in the car when my phone rang. It was a guy from my team. Our main service was down, and thousands of users couldn't log in. Since I'm the team leader, I couldn't just ignore it. My kids were really disappointed, and I felt terrible. So we changed the plan. My family took the KTX train to Daejeon, and I drove to the office. I ended up fixing the problem with my team at around ten at night. The next morning, I drove down to Daejeon and joined the party for lunch. Yeah, that's how I handled it.",
+        "AL": "Oh, yes, that happened to me last spring, and it was pretty stressful. It was my dad's 70th birthday, which is a really big deal in Korea, so we planned to drive down to my parents' place in Daejeon on Saturday morning. Something unexpected happened when we were about to leave for Daejeon. We were literally loading our bags into the car when my phone started ringing. It was one of the developers on my team, and he sounded panicked. Our main service had crashed, and thousands of users couldn't log in. Since I'm the team leader, there was no way I could just ignore it. My kids looked so disappointed, and honestly, I felt like the worst parent in the world. So we came up with a plan B. My family took the KTX train to Daejeon, and I headed to the office. My team and I worked on the problem all day, and we finally fixed it at around ten at night. I got up at six the next morning, drove down to Daejeon, and made it just in time for the birthday lunch. I'll never forget that day because my dad just laughed and said he was proud of me. After that, I trained two people on my team to handle emergencies like that. Yeah, that's how I handled it."
       },
       "answersKo": {
         "IM3": [
@@ -399,7 +402,7 @@
           "아이들은 정말 실망했고, 저도 너무 미안했어요.",
           "그래서 계획을 바꿨어요.",
           "가족들은 KTX를 타고 대전에 가고, 저는 차를 몰고 회사로 갔어요.",
-          "팀원들이랑 저는 밤 10시쯤 문제를 해결했어요.",
+          "결국 밤 10시쯤 팀원들과 함께 문제를 해결했어요.",
           "다음 날 아침에 대전으로 차를 몰고 내려가서 점심 잔치에 합류했어요.",
           "네, 그렇게 해결했어요."
         ],
@@ -416,7 +419,7 @@
           "가족들은 KTX를 타고 대전에 가고, 저는 회사로 향했어요.",
           "팀원들이랑 저는 하루 종일 그 문제에 매달렸고, 결국 밤 10시쯤 해결했어요.",
           "다음 날 아침 6시에 일어나서 대전까지 차를 몰고 내려갔고, 생신 점심에 딱 맞춰 도착했어요.",
-          "아버지는 그냥 웃으시면서 제가 자랑스럽다고 하셨어요.",
+          "아버지가 그냥 웃으시면서 제가 자랑스럽다고 하셔서 그날을 절대 잊지 못할 거예요.",
           "그 일 이후로 저는 팀원 두 명에게 그런 비상 상황을 처리하는 법을 가르쳤어요.",
           "네, 그렇게 해결했어요."
         ]
@@ -433,7 +436,7 @@
         "IH 이상은 입구에서 당황한 아이들 반응, 직원과 나눈 대화를 짧게 넣으면 생생해집니다."
       ],
       "answers": {
-        "IM3": "Sure, let me tell you about one time. Last summer, my family went to Osaka. I bought Universal Studios tickets online before the trip. But at the gate, the staff said our tickets were for the next day! I chose the wrong date by mistake. My kids were almost crying. Luckily, the staff were really kind, and they changed the date for a small fee. We had a great day in the end. Since then, I always make sure to double-check the date before I pay. Yeah, that's what happened.",
+        "IM3": "Sure, let me tell you about one time. Last summer, my family went to Osaka. I bought Universal Studios tickets online before the trip. I had a problem with the tickets at the gate. The staff said our tickets were for the next day! I chose the wrong date by mistake. My kids were almost crying. Luckily, the staff were really kind, and they changed the date for a small fee. We had a great day in the end. Since then, I always make sure to double-check the date before I pay. Yeah, that's what happened.",
         "IH": "Sure, let me tell you about one time. Last summer, my family took a trip to Osaka, and the main event was Universal Studios. My kids had been talking about it for months, so I bought the tickets online a few weeks before the trip. On the day, we got there early, but at the gate, the staff told me our tickets were for the next day. I was so embarrassed. I'd chosen the wrong date on the website. My daughter started to cry, and my son just stared at me. I didn't know what to do, so I went to the ticket office and explained everything. Luckily, the staff member was really kind. She changed our tickets to that day, and we only had to pay a small fee. In the end, the kids had the best day ever. Since then, I always make sure to double-check the date before I pay. Yeah, that's what happened.",
         "AL": "Sure, let me tell you about one time that still makes me laugh, even though it wasn't funny back then. Last summer, my family took a trip to Osaka, and the highlight of the whole trip was supposed to be Universal Studios. My kids had been talking about it for months, so I booked the tickets online a few weeks in advance and felt pretty proud of myself for being so organized. On the day, we got there right when the park opened, but when the staff scanned our tickets, they told me the tickets were for the next day. My heart just sank. It turned out I'd clicked the wrong date on the website, which is kind of embarrassing for someone who's been a software developer for 20 years. My daughter burst into tears, and my son gave me a look I'll never forget. I didn't know what to do, so I took a deep breath, went to the ticket office, and explained the whole situation. Luckily, the staff member was super understanding. She switched our tickets to that day, and we only had to pay a small fee. We ended up staying until the fireworks at night. Since then, I always make sure to double-check the date before I pay. Yeah, that's what happened."
       },
@@ -442,7 +445,8 @@
           "그럼요, 한 번 있었던 일을 말씀드릴게요.",
           "작년 여름에 저희 가족이 오사카에 갔어요.",
           "여행 전에 유니버설 스튜디오 티켓을 온라인으로 샀어요.",
-          "그런데 입구에서 직원이 저희 티켓이 다음 날 거라고 하는 거예요!",
+          "입구에서 티켓에 문제가 생겼어요.",
+          "직원이 우리 티켓이 다음 날 거라고 했어요!",
           "제가 실수로 날짜를 잘못 골랐던 거예요.",
           "아이들은 거의 울 뻔했어요.",
           "다행히 직원들이 정말 친절해서, 약간의 수수료만 받고 날짜를 바꿔줬어요.",
@@ -485,52 +489,294 @@
   ],
   "patterns": [
     {
-      "pid": "roleplay#0",
-      "en": "Hi, I'm calling to ask about the new sci-fi movie this Saturday.",
-      "ko": "안녕하세요, 이번 주 토요일 새 SF 영화 때문에 전화드렸어요.",
-      "q": "roleplay-ask-movie"
-    },
-    {
+      "level": "IM3",
       "pid": "roleplay#1",
       "en": "I'd like to know what time the evening shows start.",
       "ko": "저녁 상영이 몇 시에 시작하는지 알고 싶어요.",
       "q": "roleplay-ask-movie"
     },
     {
+      "level": "IM3",
       "pid": "roleplay#2",
       "en": "Is it possible to get a room with an ocean view?",
       "ko": "바다가 보이는 방으로 받을 수 있을까요?",
       "q": "roleplay-ask-travel"
     },
     {
-      "pid": "roleplay#3",
-      "en": "I'm afraid there's a problem with the two tickets I booked for Saturday.",
-      "ko": "죄송하지만 토요일로 예매한 티켓 두 장에 문제가 있어요.",
+      "level": "IM3",
+      "pid": "problem#2",
+      "en": "I didn't know what to do, so I decided to call you right away.",
+      "ko": "어떻게 해야 할지 몰라서 바로 전화드리기로 했어요.",
       "q": "roleplay-solve-movie"
     },
     {
-      "pid": "roleplay#4",
-      "en": "How about moving my tickets to Sunday evening instead?",
-      "ko": "대신 티켓을 일요일 저녁으로 옮기면 어떨까요?",
-      "q": "roleplay-solve-movie"
-    },
-    {
-      "pid": "roleplay#5",
-      "en": "I'd really appreciate it if you could find us another flight to Jeju.",
-      "ko": "제주로 가는 다른 항공편을 찾아 주시면 정말 감사하겠어요.",
+      "level": "IM3",
+      "pid": "memory#1",
+      "en": "It was a big shock when I read the text message.",
+      "ko": "그 문자 메시지를 읽었을 때 정말 충격이었어요.",
       "q": "roleplay-solve-travel"
     },
     {
+      "level": "IM3",
       "pid": "problem#0",
       "en": "Something unexpected happened when we were about to leave for Daejeon.",
       "ko": "대전으로 막 출발하려는데 예상치 못한 일이 생겼어요.",
       "q": "roleplay-exp-plan"
     },
     {
+      "level": "IM3",
+      "pid": "problem#1",
+      "en": "I had a problem with the tickets at the gate.",
+      "ko": "입구에서 티켓에 문제가 생겼어요.",
+      "q": "roleplay-exp-ticket"
+    },
+    {
+      "level": "IH",
+      "pid": "roleplay#1",
+      "en": "I'd like to know what time the evening shows start.",
+      "ko": "저녁 상영이 몇 시에 시작하는지 알고 싶어요.",
+      "q": "roleplay-ask-movie"
+    },
+    {
+      "level": "IH",
+      "pid": "roleplay#2",
+      "en": "Is it possible to get a room with an ocean view?",
+      "ko": "바다가 보이는 방으로 받을 수 있을까요?",
+      "q": "roleplay-ask-travel"
+    },
+    {
+      "level": "IH",
+      "pid": "roleplay#3",
+      "en": "I'm afraid there's a problem with the two tickets I booked for Saturday at seven.",
+      "ko": "죄송하지만 토요일 7시로 예매한 티켓 두 장에 문제가 있어요.",
+      "q": "roleplay-solve-movie"
+    },
+    {
+      "level": "IH",
+      "pid": "roleplay#4",
+      "en": "How about moving the whole trip back by one day instead?",
+      "ko": "대신 여행 일정 전체를 하루 뒤로 미루면 어떨까요?",
+      "q": "roleplay-solve-travel"
+    },
+    {
+      "level": "IH",
+      "pid": "problem#4",
+      "en": "I ended up fixing the problem with my team at around ten at night.",
+      "ko": "결국 밤 10시쯤 팀원들과 함께 문제를 해결했어요.",
+      "q": "roleplay-exp-plan"
+    },
+    {
+      "level": "IH",
+      "pid": "problem#3",
+      "en": "Luckily, the staff member was really kind.",
+      "ko": "다행히 직원분이 정말 친절했어요.",
+      "q": "roleplay-exp-ticket"
+    },
+    {
+      "level": "AL",
+      "pid": "people#4",
+      "en": "It's more fun to watch a big movie like this with someone than by myself.",
+      "ko": "이런 대작 영화는 혼자보다 누군가와 함께 보는 게 더 재미있어요.",
+      "q": "roleplay-ask-movie"
+    },
+    {
+      "level": "AL",
+      "pid": "problem#4",
+      "en": "I ended up with a room facing the parking lot last time, which was a bit disappointing.",
+      "ko": "지난번엔 결국 주차장 쪽 방을 받게 돼서 좀 실망스러웠어요.",
+      "q": "roleplay-ask-travel"
+    },
+    {
+      "level": "AL",
+      "pid": "roleplay#3",
+      "en": "I'm afraid there's a problem with the two tickets I booked for this Saturday at seven.",
+      "ko": "죄송하지만 이번 주 토요일 7시로 예매한 티켓 두 장에 문제가 있어요.",
+      "q": "roleplay-solve-movie"
+    },
+    {
+      "level": "AL",
+      "pid": "roleplay#5",
+      "en": "I'd really appreciate it if you could find us another flight to Jeju as soon as possible.",
+      "ko": "가능한 한 빨리 제주로 가는 다른 항공편을 찾아 주시면 정말 감사하겠어요.",
+      "q": "roleplay-solve-travel"
+    },
+    {
+      "level": "AL",
+      "pid": "memory#5",
+      "en": "I'll never forget that day because my dad just laughed and said he was proud of me.",
+      "ko": "아버지가 그냥 웃으시면서 제가 자랑스럽다고 하셔서 그날을 절대 잊지 못할 거예요.",
+      "q": "roleplay-exp-plan"
+    },
+    {
+      "level": "AL",
       "pid": "problem#5",
       "en": "Since then, I always make sure to double-check the date before I pay.",
       "ko": "그 뒤로는 결제하기 전에 항상 날짜를 다시 확인해요.",
       "q": "roleplay-exp-ticket"
+    }
+  ],
+  "combos": [
+    {
+      "level": "IM3",
+      "q": "roleplay-ask-movie",
+      "title": "영화관 상영 시간 문의",
+      "parts": [
+        {
+          "pid": "roleplay#0",
+          "en": "Hi, I'm calling to ask about the new sci-fi movie this Saturday.",
+          "ko": "안녕하세요, 이번 주 토요일에 하는 새 SF 영화에 대해 여쭤보려고 전화했어요."
+        },
+        {
+          "pid": "im3-plan#0",
+          "en": "I want to see it with my coworker Minho.",
+          "ko": "회사 동료 민호랑 같이 보고 싶어요."
+        },
+        {
+          "pid": "roleplay#1",
+          "en": "I'd like to know what time the evening shows start.",
+          "ko": "저녁 상영이 몇 시에 시작하는지 알고 싶어요."
+        },
+        {
+          "pid": "im3-plan#2",
+          "en": "I need to book two tickets for adults.",
+          "ko": "성인 두 장을 예매해야 하거든요."
+        }
+      ]
+    },
+    {
+      "level": "IM3",
+      "q": "roleplay-exp-ticket",
+      "title": "오사카 티켓 날짜 실수",
+      "parts": [
+        {
+          "pid": "im3-past#0",
+          "en": "Last summer, I went to Osaka with my family.",
+          "ko": "작년 여름에 가족과 오사카에 갔어요."
+        },
+        {
+          "pid": "problem#1",
+          "en": "I had a problem with our Universal Studios tickets at the gate.",
+          "ko": "입구에서 유니버설 스튜디오 티켓에 문제가 생겼어요."
+        },
+        {
+          "pid": "im3-past#4",
+          "en": "I was really embarrassed because I chose the wrong date.",
+          "ko": "제가 날짜를 잘못 골라서 정말 당황했어요."
+        },
+        {
+          "pid": "problem#2",
+          "en": "I didn't know what to do, so I went to the ticket office.",
+          "ko": "어떻게 해야 할지 몰라서 매표소로 갔어요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "roleplay-ask-travel",
+      "title": "제주 패키지 여행 문의",
+      "parts": [
+        {
+          "pid": "roleplay#0",
+          "en": "Hi, I'm calling to ask about your Jeju Island package for my family.",
+          "ko": "안녕하세요, 가족과 갈 제주도 패키지에 대해 여쭤보려고 전화했어요."
+        },
+        {
+          "pid": "im3-plan#1",
+          "en": "I'm planning to go there during my summer vacation in August.",
+          "ko": "8월 여름휴가 때 갈 계획이에요."
+        },
+        {
+          "pid": "roleplay#2",
+          "en": "Is it possible to get a room with an ocean view?",
+          "ko": "바다 전망 방으로 받을 수 있을까요?"
+        },
+        {
+          "pid": "reason#4",
+          "en": "Whenever I wake up to an ocean view, I feel really relaxed.",
+          "ko": "아침에 일어나 바다가 보이면 언제나 마음이 정말 편해지거든요."
+        }
+      ]
+    },
+    {
+      "level": "IH",
+      "q": "roleplay-solve-movie",
+      "title": "영화표 변경 요청",
+      "parts": [
+        {
+          "pid": "roleplay#3",
+          "en": "I'm afraid there's a problem with the two tickets I booked for Saturday.",
+          "ko": "죄송하지만 토요일로 예매한 표 두 장에 문제가 생겼어요."
+        },
+        {
+          "pid": "im3-plan#2",
+          "en": "I need to change my tickets because Minho can't come.",
+          "ko": "민호가 못 오게 돼서 표를 바꿔야 해요."
+        },
+        {
+          "pid": "roleplay#4",
+          "en": "How about moving both tickets to Sunday evening instead?",
+          "ko": "대신 두 장 모두 일요일 저녁으로 옮기는 건 어떨까요?"
+        },
+        {
+          "pid": "roleplay#2",
+          "en": "Is it possible to change the second ticket to a youth ticket?",
+          "ko": "아니면 두 번째 표를 청소년 표로 바꿀 수 있을까요?"
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "roleplay-solve-travel",
+      "title": "제주 항공편 결항 대처",
+      "parts": [
+        {
+          "pid": "roleplay#3",
+          "en": "I'm afraid there's a problem with our flight to Jeju tomorrow morning, because the airline just canceled it.",
+          "ko": "죄송하지만 내일 아침 제주행 항공편에 문제가 생겼어요. 항공사에서 방금 결항시켰거든요."
+        },
+        {
+          "pid": "im3-plan#3",
+          "en": "I'd like to leave tomorrow if possible, since I only have five days off from work.",
+          "ko": "휴가가 5일밖에 없어서 가능하면 내일 출발하고 싶어요."
+        },
+        {
+          "pid": "roleplay#2",
+          "en": "Is it possible to put us on a later flight tomorrow, even in the evening?",
+          "ko": "내일 늦은 비행기, 저녁 편이라도 태워 주실 수 있을까요?"
+        },
+        {
+          "pid": "roleplay#5",
+          "en": "I'd really appreciate it if you could find us another flight to Jeju as soon as possible.",
+          "ko": "가능한 한 빨리 다른 제주행 항공편을 찾아 주시면 정말 감사하겠어요."
+        }
+      ]
+    },
+    {
+      "level": "AL",
+      "q": "roleplay-exp-plan",
+      "title": "아버지 생신 계획 변경",
+      "parts": [
+        {
+          "pid": "problem#0",
+          "en": "Last spring, something unexpected happened when we were about to leave for my dad's 70th birthday party in Daejeon.",
+          "ko": "작년 봄, 대전에서 열리는 아버지 칠순 잔치에 막 출발하려던 참에 예상치 못한 일이 생겼어요."
+        },
+        {
+          "pid": "im3-past#2",
+          "en": "I had to go to the office because our main service had crashed and thousands of users couldn't log in.",
+          "ko": "메인 서비스가 다운돼서 수천 명이 로그인을 못 하는 바람에 저는 사무실로 가야 했어요."
+        },
+        {
+          "pid": "problem#4",
+          "en": "I ended up fixing the problem with my team at around ten at night, while my family took the KTX train to Daejeon.",
+          "ko": "가족은 KTX를 타고 대전에 갔고, 저는 결국 밤 10시쯤 팀원들과 문제를 해결했어요."
+        },
+        {
+          "pid": "memory#5",
+          "en": "I'll never forget that day because my dad just laughed and said he was proud of me.",
+          "ko": "아버지가 그냥 웃으시면서 제가 자랑스럽다고 하셔서 그날을 절대 잊지 못할 거예요."
+        }
+      ]
     }
   ]
 }
