@@ -5,102 +5,100 @@
   "emoji": "🙋",
   "category": "survey",
   "priority": 0,
-  "intro": "OPIc 첫 질문은 거의 항상 'Tell me about yourself.' 자기소개입니다. 채점 비중은 낮지만 첫인상을 만들고, 여기서 말한 정보(서울 IT 회사 마케팅팀 직장인, 회사 근처 아파트에서 혼자 거주, 친구·영화 좋아함)가 뒤에 나올 집·동네·영화·여행 답변의 밑바탕이 됩니다. 모범 영상처럼 짧고 쉬운 문장 7~8개로 40초 안에 끝내는 것이 목표입니다.",
+  "intro": "OPIc 인터뷰의 첫 질문은 거의 항상 'Please tell me a little bit about yourself.'이고, 이어서 성격·여가, 평일 일과, 직업·회사 질문이 나올 수 있습니다. 답변은 '분당 IT 회사 20년차 소프트웨어 개발자, 개발팀 리드, 회사에서 차로 20분 거리 아파트에서 가족(아이 둘)과 거주'라는 하나의 페르소나로 통일하세요. 여기서 말한 집·가족·조깅·영화의 밤·동료 Minho가 이후 모든 주제에 그대로 다시 나오므로, 자기소개가 전체 시험의 뼈대가 됩니다.",
   "strategy": [
-    "답변 흐름: 'Okay, let me tell you about myself.' → 이름·직업(IT 회사 마케팅팀) → 사는 곳(회사 근처 아파트, 혼자) → 일상(회의가 많아 바쁨) → 여가(친구, 영화) → 'Yeah, that's a short introduction about myself.'",
-    "설문에서 직장인을 골랐다면 회사·업무 질문이 이어서 나옵니다. 팀(마케팅팀 6명), 업무(SNS 캠페인 기획·보고서·회의), 입사 동기 Minji를 미리 정해 두면 어떤 질문에도 같은 이야기로 답할 수 있어요.",
-    "'pretty busy', 'hanging out with my friends'처럼 실제로 말하는 쉬운 표현을 쓰고, 어려운 단어로 길게 늘이지 않습니다.",
-    "IH 이상은 이유(because)·빈도(about three times a week)·성격 한두 줄을 덧붙여 길이를 늘립니다."
+    "답변 흐름: 'Okay, let me tell you about myself.' → 이름·직업(분당 IT 회사 개발자 20년차) → 사는 곳·가족 → 바쁜 일상 한 줄 → 여가(가족 시간, 영화) → 'Yeah, that's a short introduction about myself.' 마무리",
+    "짧고 쉬운 문장으로 말하세요. 'pretty busy', 'spending time with my family'처럼 실제 말하는 표현이 어려운 단어보다 훨씬 자연스럽습니다.",
+    "배우자는 성별 단어 없이 'my family', 'we', 'the four of us'로, 아이는 'my son', 'my daughter', 'my kids'로 말하면 됩니다.",
+    "IH 이상은 팀 리드 역할, 금요일 재택, 탄천 조깅, 금요일 가족 영화의 밤 같은 디테일과 '왜 좋은지' 이유를 한두 문장씩 더하세요."
   ],
   "expressions": [
     {
       "en": "Okay, let me tell you about myself.",
       "ko": "네, 제 소개를 해 볼게요.",
       "level": "IM",
-      "note": "자기소개 시작 문장"
+      "note": "자기소개 시작 문장. 'Sure, I'd love to ~'로 바꿔도 좋아요"
     },
     {
-      "en": "I'm currently working at an IT company in Seoul.",
-      "ko": "저는 지금 서울에 있는 IT 회사에서 일하고 있어요.",
+      "en": "I'm currently working at an IT company in Bundang.",
+      "ko": "저는 현재 분당에 있는 IT 회사에서 일하고 있어요.",
       "level": "IM",
-      "note": "work at / work for + 회사 둘 다 자연스러워요"
+      "note": "currently + 현재진행형 = 지금 하는 일"
     },
     {
-      "en": "I'm on the marketing team.",
-      "ko": "저는 마케팅팀 소속이에요.",
-      "level": "IM",
-      "note": "be on the ~ team: ~팀 소속이다"
-    },
-    {
-      "en": "I live alone in a small apartment near my office.",
-      "ko": "회사 근처 작은 아파트에서 혼자 살아요.",
-      "level": "IM",
-      "note": "live alone = live by myself"
-    },
-    {
-      "en": "My daily life is pretty busy because I usually have a lot of meetings.",
-      "ko": "보통 회의가 많아서 일상이 꽤 바빠요.",
-      "level": "IM",
-      "note": "pretty = 꽤 (구어체)"
-    },
-    {
-      "en": "In my free time, I like hanging out with my friends.",
-      "ko": "여가 시간에는 친구들이랑 어울려 노는 걸 좋아해요.",
-      "level": "IM",
-      "note": "hang out with: ~와 어울려 놀다"
-    },
-    {
-      "en": "I also like watching movies at home.",
-      "ko": "집에서 영화 보는 것도 좋아해요.",
+      "en": "I'm a software developer.",
+      "ko": "저는 소프트웨어 개발자예요.",
       "level": "IM"
     },
     {
-      "en": "It takes about 15 minutes to get to work by subway.",
-      "ko": "지하철로 회사까지 15분 정도 걸려요.",
+      "en": "I've been working there for about 20 years.",
+      "ko": "거기서 일한 지 20년 정도 됐어요.",
       "level": "IM",
-      "note": "It takes + 시간 + to 동사원형"
+      "note": "have been -ing for + 기간 = ~해 온 지 …"
     },
     {
-      "en": "I've been working there for about three years.",
-      "ko": "거기서 일한 지 3년 정도 됐어요.",
+      "en": "I live with my family in an apartment.",
+      "ko": "저는 가족과 함께 아파트에 살아요.",
+      "level": "IM"
+    },
+    {
+      "en": "My daily life is pretty busy.",
+      "ko": "제 일상은 꽤 바빠요.",
+      "level": "IM",
+      "note": "pretty = 꽤 (구어체에서 very보다 자주 씀)"
+    },
+    {
+      "en": "In my free time, I like spending time with my family.",
+      "ko": "여가 시간에는 가족과 시간을 보내는 걸 좋아해요.",
+      "level": "IM"
+    },
+    {
+      "en": "I'm in charge of a team of ten developers.",
+      "ko": "저는 개발자 10명으로 된 팀을 맡고 있어요.",
       "level": "IH",
-      "note": "현재완료진행: 과거부터 지금까지 계속"
+      "note": "be in charge of = ~을 책임지다, 맡다"
     },
     {
-      "en": "I'd say I'm a pretty cheerful and outgoing person.",
-      "ko": "저는 꽤 밝고 외향적인 사람인 것 같아요.",
+      "en": "I'd say I'm a calm and responsible person.",
+      "ko": "저는 차분하고 책임감 있는 사람이라고 생각해요.",
       "level": "IH",
-      "note": "I'd say ~: 부드럽게 의견 말하기"
+      "note": "I'd say ~ = 성격을 부드럽게 말할 때"
     },
     {
-      "en": "My coworker Minji and I joined the company at the same time, so we're really close.",
-      "ko": "동료 Minji와 저는 입사 동기라서 정말 친해요.",
+      "en": "I spend most of my day in meetings and code reviews.",
+      "ko": "하루 대부분을 회의와 코드 리뷰로 보내요.",
       "level": "IH",
-      "note": "joined the company at the same time: 입사 동기"
+      "note": "spend + 시간 + in/-ing"
     },
     {
-      "en": "When I get stressed out at work, I usually go jogging or listen to music.",
-      "ko": "회사에서 스트레스를 받으면 보통 조깅을 하거나 음악을 들어요.",
+      "en": "I work from home on Fridays, which is really nice.",
+      "ko": "금요일에는 재택근무를 하는데, 그게 정말 좋아요.",
       "level": "IH",
-      "note": "get stressed out: 스트레스 받다"
+      "note": ", which ~ = 앞 문장 전체를 받는 관계사"
     },
     {
-      "en": "So yeah, that's pretty much who I am.",
-      "ko": "네, 저는 대충 이런 사람이에요.",
+      "en": "Jogging helps me clear my head after a long day.",
+      "ko": "조깅은 긴 하루 뒤에 머리를 비우는 데 도움이 돼요.",
       "level": "IH",
-      "note": "마무리 문장"
+      "note": "clear my head = 머리를 식히다"
     },
     {
-      "en": "I wouldn't say my job is easy, but it's definitely rewarding.",
-      "ko": "제 일이 쉽다고는 못 하겠지만, 확실히 보람은 있어요.",
+      "en": "Time really flies — I can't believe it's already been 20 years.",
+      "ko": "시간 정말 빠르네요. 벌써 20년이 됐다니 믿기지 않아요.",
       "level": "AL",
-      "note": "I wouldn't say ~, but ~: 부드러운 양보"
+      "note": "Time flies = 시간이 쏜살같다 (관용 표현)"
     },
     {
-      "en": "Watching a movie on Friday night is my go-to way to unwind after a long week.",
-      "ko": "금요일 밤에 영화 보는 게 긴 한 주를 보내고 쉬는 제 단골 방법이에요.",
+      "en": "No matter how busy I am, I try to have dinner with my kids.",
+      "ko": "아무리 바빠도 아이들과 저녁은 먹으려고 해요.",
       "level": "AL",
-      "note": "go-to: 늘 찾는, 단골의"
+      "note": "No matter how + 형용사 + 주어 + 동사 = 아무리 ~해도"
+    },
+    {
+      "en": "Yeah, that's a short introduction about myself.",
+      "ko": "네, 이게 저에 대한 짧은 소개예요.",
+      "level": "IM",
+      "note": "마무리 문장. 'So yeah, that's pretty much me.'도 좋아요"
     }
   ],
   "questions": [
@@ -110,14 +108,14 @@
       "en": "Let's start the interview now. Please tell me a little bit about yourself.",
       "ko": "이제 인터뷰를 시작하겠습니다. 자기소개를 간단히 해 주세요.",
       "tips": [
-        "답변 흐름: 시작 문장 → 이름·직업 → 사는 곳 → 바쁜 일상 → 여가 → 'Yeah, that's ~' 마무리",
-        "IM3 답안은 모범 영상 답변을 직장인 버전으로 바꾼 것입니다. 문장 단위로 통째로 외워 두세요.",
-        "'I'm on the marketing team', 'pretty busy'처럼 짧고 쉬운 표현이 오히려 자연스럽게 들립니다."
+        "답변 흐름: 'Okay, let me tell you about myself.' → 이름·직업·근속 연수 → 사는 곳·가족 → 바쁜 일상 → 여가 → 'Yeah, that's a short introduction about myself.' 마무리",
+        "IM3 답안은 그대로 외워 두면 어떤 시험에서도 바로 쓸 수 있는 기본 자기소개입니다.",
+        "IH·AL은 같은 뼈대에 팀 리드 역할, 아이들 나이, 금요일 영화의 밤 같은 디테일만 덧붙이세요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about myself. My name is Jenny. I'm currently working at an IT company in Seoul. I'm on the marketing team. I live alone in a small apartment near my office. My daily life is pretty busy because I usually have a lot of meetings. In my free time, I like hanging out with my friends or watching movies at home. Yeah, that's a short introduction about myself.",
-        "IH": "Okay, let me tell you about myself. My name is Jenny, and I'm in my late twenties. I'm currently working at an IT company in Seoul, near Seongsu. I'm on the marketing team, and I've been working there for about three years. I live alone in a small apartment near my office. It only takes about 15 minutes to get to work by subway, which is really nice. My family lives in Daejeon, so I visit them during the holidays. My daily life is pretty busy because I usually have a lot of meetings. But I don't mind it that much, because my coworker Minji is on the same team, and we're really close. In my free time, I like hanging out with my friends at cafes or watching movies at home. I'd say I'm a pretty cheerful person, and I really love being around people. Yeah, that's a short introduction about myself.",
-        "AL": "Okay, let me tell you about myself. My name is Jenny, and I'm in my late twenties. I'm currently working at an IT company in Seoul, and I'm on the marketing team. I majored in business in college, so marketing felt like a natural fit for me. I've been with the company for about three years now. I live alone in a small one-bedroom apartment near my office. My family lives in Daejeon, so moving out on my own was a big change at first, but now I really enjoy having my own space. To be honest, my daily life is pretty busy. I usually have a lot of meetings, and some days I barely have time to check my email. Luckily, my coworker Minji and I joined the company at the same time, so we get through the stressful days together. When I finally get some free time, I like hanging out with my friends. We usually try a new restaurant or chat at a cafe for hours. On quieter nights, I'd rather stay in and watch a movie at home. I'd say I'm a cheerful and outgoing person, but I also need some time to recharge. So when work gets stressful, I go jogging along the Han River or just put on some music. Yeah, that's pretty much who I am in a nutshell."
+        "IM3": "Okay, let me tell you about myself. My name is Alex. I'm currently working at an IT company in Bundang. I'm a software developer, and I've been working there for about 20 years. I live with my family in an apartment about 20 minutes from my office. My daily life is pretty busy because I usually have a lot of meetings and projects. In my free time, I like spending time with my family or watching movies at home. Yeah, that's a short introduction about myself.",
+        "IH": "Sure, I'd love to tell you about myself. My name is Alex, and I'm in my mid-forties. I'm a software developer at an IT company in Bundang, and I've been working there for about 20 years. These days, I lead a development team of ten people, so I have a lot of meetings and code reviews. I live with my family in an apartment about 20 minutes from my office by car. There are four of us, and my kids are in middle school and elementary school. My weekdays are pretty busy, but I try to keep my weekends free for my family. In my free time, I like jogging along the Tancheon trail or watching movies at home. Friday night is our family movie night, and everyone looks forward to it. So yeah, that's a little bit about me.",
+        "AL": "Okay, let me tell you a little bit about myself. My name is Alex, and I'm in my mid-forties. I studied electronic engineering in college, and right after I graduated, I joined an IT company in Bundang. I'm still there as a software developer, and believe it or not, it's been about 20 years. Time really flies. These days, I lead a team of ten developers, so I spend most of my day in meetings, code reviews, and mentoring new people. It's pretty busy, but I honestly enjoy it, especially watching young developers grow. I live with my family in an apartment that's only 20 minutes from my office, which is a huge plus. My son is in middle school, and my daughter is in elementary school, so our home is never quiet. No matter how busy work gets, I try to have dinner with my kids. When I have free time, I go jogging along the Tancheon trail early in the morning, and on Friday nights, the four of us have a movie night with snacks. That's what keeps me going, and it's the best part of my week. So yeah, that's a short introduction about myself."
       }
     },
     {
@@ -126,87 +124,117 @@
       "en": "Tell me more about yourself. What kind of person are you, and what do you like to do in your free time?",
       "ko": "자신에 대해 좀 더 말해 주세요. 어떤 성격이고, 여가 시간에는 무엇을 하는 걸 좋아하나요?",
       "tips": [
-        "답변 흐름: 'Sure, I'd love to talk about that.' → 성격 2가지 → 취미 2~3개와 빈도 → 취미가 주는 느낌 → 'Yeah, that's ~' 마무리",
-        "성격은 'I'd say I'm ~'로 부드럽게, 취미는 영화·음악·조깅처럼 뒤 주제와 연결되는 것으로 고르세요.",
+        "답변 흐름: 'Sure, I'd love to talk about that.' → 성격 2가지(차분함, 책임감) → 취미 2~3개와 빈도 → 취미가 주는 느낌 → 'Yeah, that's ~' 마무리",
+        "성격은 'I'd say I'm ~'로 부드럽게, 취미는 조깅·영화·음악·카페처럼 뒤 주제와 연결되는 것으로 고르세요.",
         "'about three times a week', 'on Friday nights' 같은 빈도 표현을 꼭 넣으세요."
       ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about that. I think I'm a cheerful and friendly person. I really like being with people. My closest coworker is Minji, and we're on the same team. In my free time, I like watching movies at home. I usually watch comedies or action movies on Netflix on Friday nights. I also listen to music a lot, especially K-pop. And I go jogging about three times a week. Yeah, that's what I'm like.",
-        "IH": "Sure, I'd love to talk about that. I'd say I'm a pretty cheerful and outgoing person. I love being around people, and my friends say I'm easy to talk to. My coworker Minji and I joined the company at the same time, so we hang out a lot, usually at cafes or nice restaurants after work. But I also need some quiet time, especially after a week full of meetings. That's when I watch movies at home. On Friday nights, I usually watch a comedy or an action movie on Netflix. Music is also a big part of my day. I always listen to K-pop or ballads on the subway, and my favorite singer is IU. And to stay healthy, I go jogging along the Han River about three times a week. These hobbies really help me relieve stress. Yeah, that's pretty much what I'm like.",
-        "AL": "Sure, I'd love to talk about that. I'd describe myself as a cheerful and outgoing person. I really enjoy being around people, and my coworkers often tell me I'm the one who keeps the mood light in meetings. My coworker Minji and I joined the company at the same time, so we've become really close. We often grab dinner after work or try a new cafe on the weekend. That said, I'm not out every night. Since I live alone, I actually love having quiet nights at home to recharge, and that's when movies come in. On Friday nights, I love curling up on the sofa and watching a comedy or an action movie on Netflix. Music is another big part of my life. I've always got my earphones in on the subway, usually listening to K-pop or ballads, and IU is my all-time favorite singer. On top of that, I go jogging along the Han River about three times a week. It only takes thirty minutes, but it clears my head like nothing else. So whenever work gets stressful, I've got movies, music, and jogging to fall back on. Yeah, that's pretty much what I'm like."
+        "IM3": "Sure, I'd love to talk about that. I think I'm a calm and responsible person. I don't get upset easily, and I always try to keep my promises. In my free time, I like spending time with my family. On Friday nights, we watch movies together at home. I also go jogging along the Tancheon trail about three times a week. And on weekend mornings, I read books at a cafe near my place. Yeah, that's what I'm like.",
+        "IH": "Sure, I'd love to talk about that. I'd say I'm a calm and responsible person. I've been a team lead for a while, so people on my team come to me when there's a problem, and I try to stay calm and listen first. My coworker Minho always says I never panic, even before a big deadline. Work can be really stressful, though, so my free time is important to me. I go jogging along the Tancheon trail about three times a week, early in the morning. On Friday nights, my family has a movie night, and we usually watch an action movie or an animated film on Netflix. On weekend mornings, I like reading a book at a cafe with an Americano. These small things really help me relax. Yeah, that's pretty much what I'm like.",
+        "AL": "Oh, what kind of person am I? Let me think. I'd say I'm a calm and responsible person. I've been leading a development team for years, and when something goes wrong, everyone kind of looks at me, so I've learned to take a deep breath and stay cool. My coworker Minho jokes that nothing can make me panic, not even a server going down at midnight. But to be honest, I do get stressed like anybody else. I just have my own ways of dealing with it, and they work pretty well. First, I go jogging along the Tancheon trail three times a week at six thirty in the morning. Thirty minutes of running really clears my head. Second, my family is my biggest stress reliever. Every Friday night, the four of us have a movie night with popcorn, and my kids get to pick the movie, which usually means an animated film. And on Saturday mornings, I sit in a quiet cafe in my neighborhood with an Americano and a book. Honestly, there's nothing better than that. It's simple, but it really works for me. So yeah, that's pretty much who I am."
       }
     },
     {
       "id": "self-intro-weekday",
       "type": "routine",
       "en": "Tell me about a typical weekday for you. What do you do from the time you get up until you go to bed?",
-      "ko": "평일 일상에 대해 말해 주세요. 일어나서 잠들 때까지 무엇을 하나요?",
+      "ko": "평범한 평일 하루에 대해 말해 주세요. 일어나서 잠자리에 들 때까지 무엇을 하나요?",
       "tips": [
-        "답변 흐름: 'Okay, let me tell you about my weekday.' → 아침 → 출근(지하철 15분) → 회사(회의·점심) → 퇴근 후 저녁 → 잠자기 전 → 'Yeah, that's ~' 마무리",
-        "시간 순서 표현 first, after that, then, after work를 쓰면 흐름이 깔끔해요.",
-        "'I get off work at six' / 'I work from home on Fridays' 같은 직장인 표현을 넣어 보세요."
+        "답변 흐름: 'Okay, let me tell you about my typical weekday.' → 아침(기상·조깅·아침 식사) → 출근(차로 20분) → 회사(회의·코드 리뷰·점심) → 퇴근 후(가족 저녁·숙제) → 취침 → 'Yeah, that's ~' 마무리",
+        "시간 순서 연결어 First, Then, After that, In the evening을 쓰면 흐름이 깔끔해요.",
+        "금요일은 재택근무라 조금 다르다는 한 줄을 넣으면 IH 이상의 디테일이 됩니다."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about my weekday. I get up at seven thirty. I take a quick shower and have a simple breakfast. Then I take the subway to work. It only takes about 15 minutes. I start work at nine. I usually have a lot of meetings, so it's pretty busy. I have lunch with my coworkers near the office. I get off work at six. Then I go jogging or cook dinner at home. I go to bed around midnight. Yeah, that's my typical weekday.",
-        "IH": "Okay, let me tell you about my typical weekday. I usually get up at seven thirty, take a quick shower, and have a simple breakfast, like toast and coffee. I leave home around eight thirty and take the subway to work. It only takes about 15 minutes, and I listen to music on the way. I start work at nine, and my mornings are pretty busy because I usually have two or three meetings. At lunchtime, I eat with Minji and other coworkers at a restaurant near the office. In the afternoon, I work on reports or plan our social media campaigns. I get off work at six. About three times a week, I go jogging along the Han River. Then I make a simple dinner and watch a short video before bed. I try to go to bed by midnight. Oh, and on Fridays, I work from home. Yeah, that's what my weekdays look like.",
-        "AL": "Okay, let me tell you about a typical weekday for me. My alarm goes off at seven thirty, and honestly, getting out of bed is the hardest part of my day. After a quick shower, I make some toast and coffee. Since I live alone, my mornings are pretty quiet, and I actually enjoy that peaceful time. I'm out the door by eight thirty and on the subway, which gets me to the office in about 15 minutes. I always have my earphones in, so it's kind of my little music time before things get crazy. And they do get crazy, because I usually have meetings back to back all morning. Around noon, I grab lunch with Minji and a few other coworkers near the office, and we complain about our deadlines together. In the afternoon, I sit at my desk by the window and work on reports or plan our next social media campaign. I get off work at six, and three nights a week, I go jogging along the Han River to clear my head. After that, I cook something simple and finally relax on the sofa. I try to be asleep by midnight, though that doesn't always happen. Fridays are a bit different, because I work from home. Yeah, that's pretty much my weekday in a nutshell."
+        "IM3": "Okay, let me tell you about my typical weekday. I usually get up at six. Three days a week, I go jogging for about 30 minutes. Then, I have breakfast with my family. I drive to work, and it takes about 20 minutes. I start work at nine. I have a lot of meetings and code reviews during the day. I usually leave the office at seven. After dinner, I help my kids with their homework. I go to bed at around eleven. Yeah, that's my typical weekday.",
+        "IH": "Okay, let me tell you about my typical weekday. I get up at six every morning. On Mondays, Wednesdays, and Thursdays, I go jogging along the Tancheon trail for about 30 minutes. After that, I take a quick shower and have breakfast with my family. It's a little crazy because my kids are always looking for their school bags. I drive to the office at around eight thirty, and it only takes 20 minutes. My workday starts at nine with a team meeting. Then, I spend most of the day reviewing code and helping my team members. I usually have lunch with my coworker Minho. I leave work at around seven and have dinner with my family. After dinner, I check my kids' homework or watch the news. Fridays are a little different because I work from home. Yeah, that's a typical weekday for me.",
+        "AL": "Okay, let me walk you through a typical weekday. My alarm goes off at six, and three mornings a week, I head out for a 30-minute jog along the Tancheon trail. It's still quiet at that time, and it's the only part of the day that's just for me. When I get back, the house is already noisy. My son is usually half asleep, and my daughter is looking for her socks, so breakfast is a bit chaotic, but I actually love it. I leave home at around eight thirty and drive about 20 minutes to my office near Pangyo. My day officially starts at nine with a short team meeting, and after that, it's basically back-to-back meetings, code reviews, and questions from junior developers. Around noon, I grab lunch with Minho, who's been my coworker for over 15 years, and we chat about anything but work. I try to leave by seven, though it doesn't always work out. In the evening, I have dinner with my family and help my kids with their homework. By eleven, I'm usually in bed. Fridays are easier since I work from home. So yeah, that's what my weekdays look like."
       }
     },
     {
       "id": "self-intro-job",
       "type": "describe",
       "en": "You indicated in the survey that you work at a company. Tell me about your job and your company. What do you do, and what is a typical day at work like?",
-      "ko": "설문에서 회사에 다닌다고 하셨는데요. 직업과 회사에 대해 말해 주세요. 어떤 일을 하고, 회사에서의 하루는 어떤가요?",
+      "ko": "설문에서 회사에 다닌다고 하셨습니다. 당신의 직업과 회사에 대해 말해 주세요. 무슨 일을 하고, 회사에서의 평범한 하루는 어떤가요?",
       "tips": [
-        "답변 흐름: 'Sure, I'd love to talk about my job.' → 회사·팀·근무 기간 → 맡은 업무 → 회사에서의 하루 → 좋은 점/힘든 점 → 'Yeah, that's ~' 마무리",
-        "'I'm in charge of ~' / 'What I like most about my job is that ~'을 활용하세요.",
-        "회의, 보고서 마감, 캠페인 결과처럼 직장인다운 구체적 디테일을 하나 넣으면 IH 이상이 됩니다."
+        "답변 흐름: 'Sure, let me tell you about my job.' → 회사(분당 IT 회사, 판교 쪽 큰 건물 12층) → 직무(개발팀 리드, 팀원 10명, 20년차) → 하루 업무(회의·코드 리뷰·멘토링) → 느낌·이유 → 'Yeah, that's ~' 마무리",
+        "'I'm in charge of ~', 'I'm responsible for ~'로 맡은 일을 말하면 직무 설명이 쉬워집니다.",
+        "힘든 점 하나와 보람 있는 점 하나를 같이 말하면 IH·AL 수준의 깊이가 생겨요."
       ],
       "answers": {
-        "IM3": "Sure, I'd love to talk about my job. I work at an IT company in Seoul. It's a mid-sized company near Seongsu. I'm on the marketing team, and there are six people on my team. I plan social media campaigns and write reports. I have a lot of meetings, so my days are pretty busy. My office is on the ninth floor, and my desk is by the window. My coworker Minji is on my team, too. Yeah, that's my job.",
-        "IH": "Sure, I'd love to talk about my job. I work at a mid-sized IT company near Seongsu in Seoul, and I've been there for about three years. I'm on the marketing team. There are six people on my team, including my team leader. I'm mainly in charge of planning social media campaigns for our apps. On a typical day, I start work at nine and have two or three meetings in the morning. Then I have lunch with my coworkers at a restaurant near the office. In the afternoon, I check how our campaigns are doing and write reports. What I like most about my job is that I can see the results of my ideas right away. To be honest, deadlines can be really stressful. But my teammates are great, especially Minji, who joined the company with me. Yeah, that's pretty much my job.",
-        "AL": "Sure, I'd love to talk about my job. I work at a mid-sized IT company near Seongsu in Seoul, and this is actually my fourth year there. I'm on the marketing team, which is a small team of six people, including my team leader. I'm mainly in charge of planning social media campaigns for our apps, and I also write a lot of reports. I majored in business in college, so this job felt like a perfect fit. On a typical day, I get to the office a little before nine. Our office is on the ninth floor, and I'm lucky enough to have a desk by the window. My mornings are usually packed with meetings, so I barely have time to check my email. Around noon, I grab lunch with my coworkers at one of the restaurants nearby. In the afternoon, I look at how our campaigns are doing and put together reports for my team leader. What I like most about my job is that I can see the results of my ideas right away. I'll admit the deadlines can be brutal, but Minji and I joined the company at the same time, so we always help each other out. Yeah, that's pretty much what my job looks like."
+        "IM3": "Sure, let me tell you about my job. I work at an IT company in Bundang. Our office is on the 12th floor of a big building near Pangyo. I'm a software developer, and I've worked there for about 20 years. Now I'm the leader of a development team with ten people. My day starts at nine with a team meeting. Then, I review code and help my team members. It's pretty busy, but I like my job. Yeah, that's my job.",
+        "IH": "Sure, let me tell you about my job. I'm a software developer at an IT company in Bundang. Our office is on the 12th floor of a big building near Pangyo, and it's only a 20-minute drive from my home. I've been with the company for about 20 years, and these days I lead a development team of ten people. A typical day starts at nine with a short team meeting. After that, I spend a lot of time reviewing code and talking with other teams about our projects. I also mentor new developers, which I really enjoy. Lunch is usually with my coworker Minho. The hardest part is that I have so many meetings that I sometimes don't have time to write code myself. But it's really rewarding to see my team grow. Yeah, that's what I do at work.",
+        "AL": "Sure, let me tell you about my job. I work for an IT company in Bundang, and our office is on the 12th floor of a big glass building near Pangyo. I joined the company right out of college, so I've been there for about 20 years now, which is pretty rare in this industry. I started out as a junior developer writing code all day, but these days I lead a software development team of ten people. My typical day starts at nine with a quick team meeting where we check what everyone's working on. Then, the rest of the day is a mix of code reviews, planning meetings with other teams, and mentoring our new developers. To be honest, I miss coding sometimes, because I spend more time in meetings than in front of my code. But when a junior developer I've been mentoring finally solves a tough problem alone, it makes me really proud. My longtime coworker Minho and I usually grab lunch together and talk about anything but work. On Fridays, I work from home, which gives me a nice break. So yeah, that's pretty much what my job is like."
       }
     }
   ],
   "pronunciation": [
     {
-      "word": "introduction",
-      "ipa": "/ˌɪn.trəˈdʌk.ʃən/",
-      "tip": "'덕'에 강세. '인트로덕션'보다 '인트러덕션'처럼 가볍게"
+      "word": "developer",
+      "ipa": "/dɪˈvel.ə.pər/",
+      "tip": "'디벨로퍼'가 아니라 '디벨러퍼r'. 둘째 음절 '벨'에 강세"
     },
     {
       "word": "company",
       "ipa": "/ˈkʌm.pə.ni/",
-      "tip": "'컴퍼니'. 첫 음절 '컴'에 강세, o는 '오'가 아니라 '어' 소리"
+      "tip": "'컴퍼니'의 첫 음절 '컴'에 강세, 둘째 모음은 약하게 '퍼'"
     },
     {
-      "word": "marketing",
-      "ipa": "/ˈmɑːr.kɪ.t̬ɪŋ/",
-      "tip": "'마케팅'이 아니라 '마r키딩'. 첫 음절에 강세, t는 부드럽게 굴려요"
+      "word": "software",
+      "ipa": "/ˈsɔːft.wer/",
+      "tip": "'소프트웨어'가 아니라 '쏘f트웨r'. f는 윗니를 아랫입술에 대고"
     },
     {
-      "word": "currently",
-      "ipa": "/ˈkɜːr.ənt.li/",
-      "tip": "'커런틀리'. 첫 음절에 강세, t는 거의 삼키듯"
+      "word": "responsible",
+      "ipa": "/rɪˈspɑːn.sə.bəl/",
+      "tip": "'리스판서블'. 둘째 음절 '스판'에 강세, 끝 -ble은 '블'로 짧게"
     },
     {
-      "word": "usually",
-      "ipa": "/ˈjuː.ʒu.ə.li/",
-      "tip": "'유주얼리'. s는 '스'가 아니라 '쥬' 소리"
+      "word": "family",
+      "ipa": "/ˈfæm.əl.i/",
+      "tip": "'패밀리'가 아니라 'f' 소리로 '퐤믈리'. 첫 음절에 강세"
     }
   ],
   "patterns": [
     {
+      "pid": "start#1",
+      "en": "I started working at my company about 20 years ago.",
+      "ko": "저는 약 20년 전에 지금 회사에서 일하기 시작했어요.",
+      "q": "self-intro-general"
+    },
+    {
+      "pid": "people#0",
+      "en": "I usually watch movies at home with my family.",
+      "ko": "저는 보통 가족과 함께 집에서 영화를 봐요.",
+      "q": "self-intro-general"
+    },
+    {
       "pid": "like#4",
-      "en": "I'm the kind of person who loves being around people.",
-      "ko": "저는 사람들과 함께 있는 걸 정말 좋아하는 사람이에요.",
+      "en": "I'm the kind of person who loves staying calm and listening first.",
+      "ko": "저는 차분함을 유지하고 먼저 들어 주는 걸 좋아하는 사람이에요.",
       "q": "self-intro-personality"
     },
     {
+      "pid": "routine#0",
+      "en": "I go jogging along the Tancheon trail about three times a week.",
+      "ko": "저는 일주일에 세 번 정도 탄천 산책로를 따라 조깅을 해요.",
+      "q": "self-intro-personality"
+    },
+    {
+      "pid": "reason#5",
+      "en": "Honestly, there's nothing better than reading a book at a quiet cafe on Saturday mornings.",
+      "ko": "솔직히 토요일 아침에 조용한 카페에서 책 읽는 것만큼 좋은 건 없어요.",
+      "q": "self-intro-personality"
+    },
+    {
+      "pid": "routine#3",
+      "en": "First, I go jogging for 30 minutes. Then, I have breakfast with my family.",
+      "ko": "먼저 30분 동안 조깅을 해요. 그다음 가족과 아침을 먹어요.",
+      "q": "self-intro-weekday"
+    },
+    {
       "pid": "place#0",
-      "en": "I usually work from home at my small table by the window on Fridays.",
-      "ko": "저는 금요일에는 보통 창가에 있는 작은 테이블에서 재택근무를 해요.",
+      "en": "I usually work from home at my desk in the small room on Fridays.",
+      "ko": "저는 금요일에는 보통 작은방 책상에서 재택근무를 해요.",
       "q": "self-intro-weekday"
     },
     {
@@ -214,36 +242,6 @@
       "en": "It's not very relaxing, but it's really rewarding.",
       "ko": "아주 여유롭진 않지만, 정말 보람 있어요.",
       "q": "self-intro-job"
-    },
-    {
-      "pid": "people#3",
-      "en": "I have a friend named Minji at work, and we have lunch together almost every day.",
-      "ko": "회사에 민지라는 친구가 있는데, 저희는 거의 매일 같이 점심을 먹어요.",
-      "q": "self-intro-personality"
-    },
-    {
-      "pid": "routine#0",
-      "en": "I go jogging along the Han River about three times a week.",
-      "ko": "저는 일주일에 세 번 정도 한강을 따라 조깅을 해요.",
-      "q": "self-intro-personality"
-    },
-    {
-      "pid": "reason#2",
-      "en": "It helps me relieve stress after a week full of meetings.",
-      "ko": "회의로 가득한 한 주를 보낸 뒤 스트레스를 푸는 데 도움이 돼요.",
-      "q": "self-intro-personality"
-    },
-    {
-      "pid": "start#1",
-      "en": "I started working at my company about three years ago.",
-      "ko": "저는 약 3년 전에 지금 회사에서 일하기 시작했어요.",
-      "q": "self-intro-job"
-    },
-    {
-      "pid": "change#0",
-      "en": "I used to live with my family in Daejeon, but now I live alone in Seoul.",
-      "ko": "예전에는 대전에서 가족과 함께 살았지만, 지금은 서울에서 혼자 살아요.",
-      "q": "self-intro-general"
     }
   ]
 }

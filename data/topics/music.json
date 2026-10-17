@@ -5,241 +5,111 @@
   "emoji": "🎧",
   "category": "survey",
   "priority": 4,
-  "intro": "설문에서 '음악 감상하기'를 고르면 좋아하는 장르·가수 묘사 → 언제·어디서·어떻게 듣는지 → 콘서트·공연 경험 → 음악 듣는 방식의 변화 비교가 단골로 나옵니다. K-pop·발라드를 좋아하는 IU 팬 직장인이 출퇴근 지하철에서 이어폰으로, 집에서는 블루투스 스피커로, 한강 조깅 때는 신나는 플레이리스트로 음악을 듣는다는 이야기 하나로 모든 질문을 묶으세요. 콘서트 경험은 '작년 가을 동료 Minji와 간 IU 콘서트'로 고정합니다.",
+  "intro": "설문에서 '음악 감상'을 고르면 좋아하는 장르·가수 → 언제·어디서·어떻게 듣는지 → 콘서트·공연 경험 → 음악 듣는 방식의 변화 비교가 단골로 출제됩니다. 출퇴근 차 안에서 90년대 발라드·록을 듣고, 요즘은 아이들 덕분에 K-pop도 듣게 된 20년차 개발자라는 한 가지 이야기로 모든 질문을 연결하세요. 변화 질문은 '대전에서 카세트테이프·CD를 듣던 학창 시절 vs 지금 스트리밍'으로 고정하면 쉽게 풀립니다.",
   "strategy": [
-    "답변 흐름: 'Oh, music? I listen to music all the time.' 같은 시작 문장 → 좋아하는 장르·가수 → 언제·어디서 듣는지(출퇴근 지하철, 집, 조깅) → 왜 좋은지(위로·스트레스 해소) → 'Yeah, that's why music is a big part of my life.' 마무리 문장.",
-    "가수는 IU 한 명으로 고정하고 이유 2개(목소리, 가사)를 미리 정해 두면 묘사·경험·비교 질문에 모두 재활용할 수 있습니다.",
-    "기기·앱 질문은 휴대폰 스트리밍 앱, 무선 이어폰, 집의 블루투스 스피커처럼 구체적인 물건 2~3개로 답합니다.",
-    "IH 이상은 과거(대전 본가에서 MP3 플레이어·CD) vs 현재(스트리밍·알고리즘 추천) 비교와 'gives me goosebumps' 같은 쉬운 관용 표현을 더합니다."
+    "답변 흐름: 'Oh, music? Sure, I'd love to talk about that.' 같은 시작 문장 → 좋아하는 장르·가수 → 언제·어디서 듣는지(출퇴근 차 안) → 왜 좋은지(학창 시절 추억, 스트레스 해소) → 'Yeah, that's why music is a big part of my life.' 마무리 문장.",
+    "장르는 '90년대 발라드·록 + 아이들 덕분에 요즘 K-pop', 장소는 '분당 집 ↔ 판교 사무실 20분 운전', 기기는 '휴대폰 스트리밍 앱 + 차 블루투스'로 고정해 모든 질문에서 같은 그림을 재활용합니다.",
+    "경험 질문은 작년 12월 생일에 가족이 선물해 준 90년대 발라드 가수의 연말 콘서트 하나로 준비: 언제·누구와 → 분위기 → 기억에 남는 순간(아이들이 차에서 듣던 노래를 따라 부름) → 느낌.",
+    "비교 질문은 '대전에서 자랄 때 카세트테이프·CD → 지금 스트리밍·짧은 영상'처럼 과거 → 현재 → 가장 큰 차이 → 내 생각 순서로, used to / these days 를 꼭 넣으세요."
   ],
   "expressions": [
-    {
-      "en": "Oh, music? I listen to music all the time.",
-      "ko": "아, 음악이요? 저는 항상 음악을 들어요.",
-      "level": "IM",
-      "note": "시작 문장: 주제 키워드를 되받아 말하며 자연스럽게 시작하세요."
-    },
-    {
-      "en": "I'm really into K-pop and ballads.",
-      "ko": "저는 K-pop이랑 발라드에 푹 빠져 있어요.",
-      "level": "IM",
-      "note": "be into ~: ~을 아주 좋아하다"
-    },
-    {
-      "en": "My favorite singer is IU.",
-      "ko": "제가 제일 좋아하는 가수는 아이유예요.",
-      "level": "IM"
-    },
-    {
-      "en": "Her voice is so sweet and calming.",
-      "ko": "그녀의 목소리는 정말 달콤하고 마음을 편하게 해 줘요.",
-      "level": "IM"
-    },
-    {
-      "en": "I listen to music on the subway on my way to work.",
-      "ko": "출근길 지하철에서 음악을 들어요.",
-      "level": "IM",
-      "note": "on my way to work / home: 출근길에 / 퇴근길에"
-    },
-    {
-      "en": "I use a music streaming app on my phone.",
-      "ko": "휴대폰으로 음악 스트리밍 앱을 써요.",
-      "level": "IM"
-    },
-    {
-      "en": "Music helps me forget about stress at work.",
-      "ko": "음악은 회사 스트레스를 잊게 해 줘요.",
-      "level": "IM"
-    },
-    {
-      "en": "I made a playlist just for jogging.",
-      "ko": "조깅용 플레이리스트를 따로 만들었어요.",
-      "level": "IH"
-    },
-    {
-      "en": "When I'm cooking or cleaning, I play music on my Bluetooth speaker.",
-      "ko": "요리나 청소를 할 때는 블루투스 스피커로 음악을 틀어요.",
-      "level": "IH",
-      "note": "When I'm -ing, ~: 상황별 루틴 말하기"
-    },
-    {
-      "en": "The tickets sold out in just a few minutes.",
-      "ko": "표가 단 몇 분 만에 매진됐어요.",
-      "level": "IH",
-      "note": "sell out: 매진되다 (과거형 sold out)"
-    },
-    {
-      "en": "The whole crowd sang along to her songs.",
-      "ko": "관객 전체가 그녀의 노래를 따라 불렀어요.",
-      "level": "IH",
-      "note": "sing along (to ~): (~을) 따라 부르다"
-    },
-    {
-      "en": "Back when I was in middle school, I used to listen to music on an MP3 player.",
-      "ko": "중학생 때는 MP3 플레이어로 음악을 듣곤 했어요.",
-      "level": "IH",
-      "note": "Back when ~ / used to: 과거와 현재 비교의 기본 틀"
-    },
-    {
-      "en": "Her live voice gave me goosebumps.",
-      "ko": "그녀의 라이브 목소리에 소름이 돋았어요.",
-      "level": "AL",
-      "note": "give someone goosebumps: 감동·전율로 소름 돋게 하다"
-    },
-    {
-      "en": "These days, the app knows my taste better than I do.",
-      "ko": "요즘은 앱이 저보다 제 취향을 더 잘 알아요.",
-      "level": "AL",
-      "note": "비교급 + than I do: 재치 있는 비교 표현"
-    },
-    {
-      "en": "Yeah, that's why music is a big part of my life.",
-      "ko": "네, 그래서 음악은 제 삶에서 큰 부분이에요.",
-      "level": "IM",
-      "note": "마무리 문장: 'Yeah, that's why ~'로 이유를 정리하며 끝내세요."
-    }
+    {"en": "Oh, music? Sure, I'd love to talk about that.", "ko": "아, 음악이요? 네, 그 얘기라면 좋아요.", "level": "IM", "note": "시작 문장: 질문 키워드를 되받아 말하며 자연스럽게 시작하세요."},
+    {"en": "I usually listen to music in the car.", "ko": "저는 보통 차 안에서 음악을 들어요.", "level": "IM"},
+    {"en": "My favorite singer is Shin Seung-hun.", "ko": "제가 제일 좋아하는 가수는 신승훈이에요.", "level": "IM"},
+    {"en": "I love ballads and rock music from the 90s.", "ko": "저는 90년대 발라드와 록 음악을 정말 좋아해요.", "level": "IM", "note": "the 90s 는 'the nineties'로 읽어요."},
+    {"en": "His songs bring back a lot of memories.", "ko": "그의 노래를 들으면 옛날 추억이 많이 떠올라요.", "level": "IM", "note": "bring back memories: 추억을 떠올리게 하다"},
+    {"en": "I use a streaming app on my phone.", "ko": "저는 휴대폰 스트리밍 앱을 써요.", "level": "IM"},
+    {"en": "These days, I listen to K-pop because of my kids.", "ko": "요즘은 아이들 때문에 K-pop도 들어요.", "level": "IM"},
+    {"en": "Music helps me get ready for the day on my way to work.", "ko": "출근길에 음악을 들으면 하루를 준비하는 데 도움이 돼요.", "level": "IH", "note": "help + 사람 + 동사원형"},
+    {"en": "I connect my phone to the car with Bluetooth.", "ko": "저는 블루투스로 휴대폰을 차에 연결해요.", "level": "IH"},
+    {"en": "I know all the lyrics by heart.", "ko": "저는 가사를 전부 외우고 있어요.", "level": "IH", "note": "by heart: 외워서"},
+    {"en": "I used to buy cassette tapes, but now I just stream music.", "ko": "예전엔 카세트테이프를 샀는데, 지금은 그냥 스트리밍으로 들어요.", "level": "IH", "note": "used to + 동사원형: 예전에 ~하곤 했다"},
+    {"en": "The whole crowd sang along together.", "ko": "관객 전체가 다 같이 따라 불렀어요.", "level": "IH"},
+    {"en": "The moment he started singing, I got goosebumps all over.", "ko": "그가 노래를 시작하는 순간, 온몸에 소름이 돋았어요.", "level": "AL", "note": "The moment + 주어 + 동사: ~하는 순간"},
+    {"en": "It's funny how a song can take you right back to your school days.", "ko": "노래 하나가 학창 시절로 바로 데려다주는 게 참 신기해요.", "level": "AL", "note": "It's funny how ~: ~하는 게 참 신기하다/재밌다"},
+    {"en": "Yeah, that's why music is a big part of my life.", "ko": "네, 그래서 음악은 제 삶에서 큰 부분이에요.", "level": "IM", "note": "마무리 문장"}
   ],
   "questions": [
     {
       "id": "music-describe",
       "type": "describe",
       "en": "You indicated in the survey that you enjoy listening to music. What kind of music do you like, and who is your favorite singer or band? Why do you like them?",
-      "ko": "설문에서 음악 감상을 즐긴다고 하셨습니다. 어떤 음악을 좋아하고, 가장 좋아하는 가수나 밴드는 누구인가요? 왜 좋아하나요?",
+      "ko": "설문에서 음악 듣는 것을 즐긴다고 하셨습니다. 어떤 음악을 좋아하고, 가장 좋아하는 가수나 밴드는 누구인가요? 왜 좋아하나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 좋아하는 장르(K-pop·발라드) → 좋아하는 가수(IU) → 이유 2개(목소리, 가사) → 언제 들으면 좋은지 → 마무리.",
-        "가수 이유는 'Her voice is ~', 'Her lyrics are ~' 처럼 짧은 문장 두 개면 충분합니다.",
-        "IH 이상은 '바쁜 회사 생활에서 어떤 위로가 되는지'를 구체적인 순간(야근 후 퇴근길)과 연결하세요."
+        "답변 흐름: 시작 문장 → 좋아하는 장르(90년대 발라드·록) → 좋아하는 가수 → 언제부터·왜 좋아하는지(목소리, 가사, 학창 시절 추억) → 요즘 변화(아이들 덕분에 K-pop) → 마무리.",
+        "이유는 '목소리가 따뜻하다', '가사에 공감된다'처럼 쉬운 형용사 2개면 충분합니다.",
+        "IH 이상은 'I first got into his music when I was in high school in Daejeon'처럼 계기 문장을 넣어 이야기를 만드세요."
       ],
       "answers": {
-        "IM3": "Oh, music? I listen to music all the time. I'm really into K-pop and ballads. K-pop songs are fun and upbeat, and ballads are calm and emotional. My favorite singer is IU. Her voice is so sweet and calming. Her lyrics are also really touching. My job is pretty busy, so I often feel stressed. When I listen to her songs, I feel much better. Yeah, that's why IU is my favorite singer.",
-        "IH": "Oh, music? I listen to music all the time. I like a lot of genres, but I'm especially into K-pop and ballads. K-pop is great when I need energy, like in the morning or when I go jogging. Ballads are perfect at night when I want to relax. My all-time favorite singer is IU. There are two main reasons I like her. First, her voice is so sweet and clear, and it calms me down right away. Second, her lyrics are really touching. A lot of her songs are about growing up and getting through hard times. I work on the marketing team at an IT company, and some days are really stressful. On those days, I listen to her songs on my way home, and I feel like she understands me. Yeah, that's why IU is my favorite singer.",
-        "AL": "Oh, music? I listen to music all the time, so this is an easy one for me. I'm really into K-pop and ballads, and I pick between them depending on my mood. When I need a boost of energy, like on Monday mornings or during my evening jog by the Han River, I go for upbeat K-pop. But at night, when I'm finally home and lying on my sofa, nothing works better than a slow ballad. My all-time favorite singer is IU, and I've been a fan of hers since high school. First of all, her voice is just unbelievable. It's sweet and soft, but also really powerful when she hits the high notes. Second, her lyrics hit close to home. A lot of her songs are about growing up, feeling lost, and getting through tough times, which is exactly what I've been going through as a working adult. My job in marketing can get pretty hectic, with endless meetings and deadlines, so after a long day, I put in my earbuds on the subway and play her songs. It honestly feels like a friend is telling me that everything's going to be okay. So yeah, that's why IU is my favorite singer."
+        "IM3": "Oh, music? Sure, I'd love to talk about that. I really like ballads and rock music from the 90s. My favorite singer is Shin Seung-hun. His voice is soft, and his songs are really touching. I listened to his songs a lot when I was in high school. So his music brings back good memories. These days, I also listen to K-pop because my kids love it. Yeah, that's the kind of music I like.",
+        "IH": "Oh, music? Sure, I'd love to talk about that. I'm really into ballads and rock music from the 90s. My favorite singer is Shin Seung-hun. I first got into his music when I was in high school in Daejeon. Back then, I listened to his tapes every night while I studied. His voice is soft and warm, and his lyrics are about love and life, so they're easy to relate to. Even now, when I hear his songs, I feel like a teenager again. I also like old rock bands, because their songs give me energy when I'm tired. Recently, my taste has changed a little because of my kids. My son and daughter always play K-pop at home, so now I know a few K-pop songs too. Yeah, that's pretty much the kind of music I like.",
+        "AL": "Oh, music? Sure, I'd love to talk about that, because music has been a big part of my life for a long time. I'm a huge fan of ballads and rock from the 90s, and my all-time favorite singer is Shin Seung-hun. I first got into his music when I was in high school in Daejeon. I used to listen to his cassette tapes every night while studying, so I know almost all of his songs by heart. What I love about him is his warm, gentle voice. His lyrics are simple, but they're about love, missing someone, and growing up, so they really stick with you. Whenever I hear one of his songs, it takes me right back to my school days, and I can almost smell my old classroom. I also like 90s rock, because it wakes me up when I'm exhausted after a long day of meetings. The funny thing is that my taste has expanded thanks to my kids. They play K-pop all the time, and at first it all sounded the same to me, but now I actually have a couple of favorite groups, and I even hum their songs at work. So yeah, that's the kind of music I like and why I like it."
       }
     },
     {
       "id": "music-routine",
       "type": "routine",
       "en": "When and where do you usually listen to music? Tell me about how you listen to it, such as the devices or apps you use.",
-      "ko": "주로 언제, 어디서 음악을 듣나요? 사용하는 기기나 앱 등 어떻게 음악을 듣는지 말해 주세요.",
+      "ko": "주로 언제, 어디서 음악을 듣나요? 사용하는 기기나 앱 등 음악을 어떻게 듣는지 말해 주세요.",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제·어디서(출퇴근 지하철, 집, 조깅) → 기기·앱(휴대폰 스트리밍 앱, 무선 이어폰, 블루투스 스피커) → 상황별 음악 → 마무리.",
-        "시간 순서(아침 출근길 → 점심 → 저녁 집 → 조깅)로 하루를 따라가면 말이 끊기지 않습니다.",
-        "IH 이상은 '조깅용 플레이리스트', '재택근무하는 금요일에는 잔잔한 음악' 같은 디테일을 추가하세요."
+        "답변 흐름: 시작 문장 → 언제·어디서(출퇴근 차 안 20분, 탄천 조깅, 주말 카페) → 어떻게(스트리밍 앱, 차 블루투스, 무선 이어폰) → 아침·저녁 다른 음악 → 마무리.",
+        "'아침엔 신나는 록, 퇴근길엔 잔잔한 발라드'처럼 시간대별 대비를 넣으면 루틴이 생생해집니다.",
+        "주말에는 아이들이 거실 스피커를 차지한다는 에피소드로 가족 이야기를 자연스럽게 연결하세요."
       ],
       "answers": {
-        "IM3": "Oh, music? I listen to music almost every day. I usually listen to music on the subway on my way to work. It only takes fifteen minutes, but it's my favorite time of the day. I use a music streaming app on my phone and my wireless earbuds. At home, I play music on my Bluetooth speaker. I also listen to music when I go jogging. Yeah, that's how I usually listen to music.",
-        "IH": "Oh, music? I listen to music pretty much all day. My day starts with music on the subway. My office is only fifteen minutes away by subway, but I always put in my wireless earbuds and play some upbeat K-pop to wake myself up. I use a music streaming app on my phone, and I like that it recommends new songs for me. At work, I can't really listen to music, but on Fridays, I work from home, so I play calm music in the background while I write reports. When I'm cooking or cleaning at home, I play music on my Bluetooth speaker. Since I live alone, I can turn it up as loud as I want. I also made a playlist just for jogging by the Han River. Yeah, that's pretty much how I listen to music.",
-        "AL": "Oh, music? Honestly, I listen to music pretty much from the moment I wake up. My day starts on the subway. It's only a fifteen-minute ride to my office, but the train is usually packed, so I put in my wireless earbuds and play some upbeat K-pop to get myself going. It makes the crowded subway a lot more bearable. I use a music streaming app on my phone, and I mostly listen to my own playlists, but I also check out the songs the app recommends. These days, the app knows my taste better than I do. At the office, I can't really listen to music because I'm in meetings all day, but on Fridays, I work from home, so I play some calm piano music in the background while I'm writing reports. When I get home in the evening, I connect my phone to my Bluetooth speaker and play ballads while I'm cooking or cleaning. One of the perks of living alone is that I can sing along as loudly as I want, and nobody judges me. Three times a week, I go jogging by the Han River, and I have a playlist just for that, full of fast songs that keep me moving. So yeah, that's how music fits into my day."
+        "IM3": "Sure, let me tell you about when I listen to music. I usually listen to music in my car. It takes about 20 minutes to drive to my office. I connect my phone to the car with Bluetooth. Then I play my 90s playlist on a streaming app. On weekends, I listen to music at a cafe while I read. Music helps me relax. Yeah, that's how I usually listen to music.",
+        "IH": "Sure, let me tell you about when and where I listen to music. Most of the time, I listen to music in my car. I drive to my office in Pangyo every day, and it takes about 20 minutes. As soon as I get in the car, I connect my phone with Bluetooth and play my favorite playlist on a streaming app. In the morning, I listen to upbeat rock songs to wake myself up. On the way home, I usually choose calm ballads, because they help me forget about the stressful day. I also listen to music when I go jogging along the Tancheon trail, using my wireless earbuds. On weekends, the kids take over the speaker in the living room, so I end up hearing a lot of K-pop. Yeah, that's how I usually listen to music.",
+        "AL": "Sure, let me tell you about when and where I listen to music, because I listen to it pretty much every day. My main music time is in the car. I drive about 20 minutes to my office in Pangyo, and that short drive is basically my personal concert hall. The second I start the engine, my phone connects to the car's Bluetooth and my playlist starts automatically. In the morning, I play 90s rock to get myself pumped up for a day full of meetings. On the way home, I switch to slow ballads, because they help me calm down before I see my family. Sometimes I even sing along at a red light, which is a little embarrassing. I also listen to music three mornings a week when I go jogging along the Tancheon trail. I just pop in my wireless earbuds, and the music keeps me going. I use a streaming app for everything, so I can find almost any song in a few seconds. On weekends, though, I lose control of the music, because my kids take over the speaker in the living room and play K-pop nonstop. So yeah, that's how I usually listen to music."
       }
     },
     {
       "id": "music-experience",
       "type": "experience",
       "en": "Have you ever been to a concert or a live performance? Tell me about it in detail. When was it, who did you go with, and what made it so memorable?",
-      "ko": "콘서트나 라이브 공연에 가 본 적이 있나요? 자세히 말해 주세요. 언제였고, 누구와 갔으며, 무엇이 그렇게 기억에 남았나요?",
+      "ko": "콘서트나 라이브 공연에 가 본 적이 있나요? 자세히 말해 주세요. 언제였고, 누구와 함께 갔으며, 무엇이 그렇게 기억에 남았나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제·누구와(작년 가을, 동료 Minji) → 표 구하기(점심시간 예매, 몇 분 만에 매진) → 공연 장면(떼창, 응원봉) → 느낌 → 마무리.",
-        "과거시제를 끝까지 유지하고, 'sold out', 'sang along' 같은 공연 표현을 넣으세요.",
-        "IH 이상은 '가장 좋았던 순간' 하나를 감정(goosebumps, tears)과 함께 생생하게 묘사합니다."
+        "답변 흐름: 시작 문장 → 언제·누구와(작년 12월 생일, 가족이 깜짝 선물) → 공연장 분위기 → 기억에 남는 순간(아이들이 노래를 다 따라 부름) → 느낌 → 마무리.",
+        "분위기는 'packed', 'the whole crowd sang along' 같은 쉬운 표현 2~3개로 충분합니다.",
+        "AL은 'It turns out ~', 'I'll never forget ~' 같은 반전·감정 표현으로 이야기에 클라이맥스를 만드세요."
       ],
       "answers": {
-        "IM3": "Oh, a concert? Yes, I have. Last fall, I went to an IU concert with my coworker Minji. We are both big fans of IU. It was at a big stadium in Seoul. There were so many people there. IU sang a lot of my favorite songs. Everyone sang along together, and it was really exciting. Her live voice was even better than on the radio. Yeah, that was the best concert of my life.",
-        "IH": "Oh, a concert? Yes, I have, and I still remember it clearly. Last fall, I went to an IU concert with my coworker Minji. We're both huge fans, so we tried to get tickets together during our lunch break. The tickets sold out in just a few minutes, but luckily, Minji got two seats. On the day of the concert, we left work right at six and took the subway to a big stadium in Seoul. The place was full of fans holding light sticks. When IU came out on stage, everyone screamed. She sang all of her hit songs, and the whole crowd sang along. The best part was when she sang a slow ballad at the end. I actually cried a little. Yeah, that was the most memorable concert I've ever been to.",
-        "AL": "Oh, a concert? Yes, I have, and it's one of my favorite memories ever. Last fall, I went to an IU concert with my coworker Minji. We're both huge fans, so when the tickets went on sale, we were sitting at our desks during our lunch break, refreshing the website like crazy. The tickets sold out in just a few minutes, and I honestly thought we'd failed, but then Minji suddenly shouted, 'I got them!' Everyone in the office turned around and stared at us, which was a little embarrassing. On the day of the concert, we left work right at six, which almost never happens, and rushed to a huge stadium in Seoul. The whole place was glowing with thousands of light sticks. When IU finally walked on stage, the crowd went wild, and I screamed so loudly that I almost lost my voice. She sang all of her hit songs, and everyone sang along like one big choir. The highlight was when she sang my favorite ballad at the very end. Her live voice gave me goosebumps, and I ended up crying, and so did Minji. On the subway home, we kept watching the videos we'd taken. So yeah, that's the most memorable concert I've ever been to."
+        "IM3": "Oh, a concert? Yes, I have. Last December, I went to a concert in Seoul with my family. It was Shin Seung-hun's year-end concert. It was my first concert in a long time. The hall was full, and the atmosphere was really warm. He sang a lot of his old hits. Everyone sang along, including my kids. They knew the songs from my car! I was really happy. Yeah, that was a really memorable concert.",
+        "IH": "Oh, a concert? Yes, I have. The most memorable one was last December. For my birthday, my family surprised me with tickets to Shin Seung-hun's year-end concert in Seoul. It was my first concert in more than ten years, so I was really excited. The concert hall was huge, and it was full of people around my age. When he came out and started singing, the whole crowd cheered. He sang most of his old hits from the 90s, and everyone sang along. The best part was that my son and daughter sang along too. They knew the songs because I always play them in the car! I was so surprised and touched. After the concert, we had a late dinner together and talked about our favorite songs. Yeah, that's why I'll never forget that concert.",
+        "AL": "Oh, a concert? Yes, I have, and one of them was really special. Last December, on my birthday, my family surprised me with tickets to Shin Seung-hun's year-end concert in Seoul. Honestly, I hadn't been to a concert in over ten years, because I'm always so busy with work, so I was as excited as a kid. The concert hall was packed, and most of the audience was around my age, which made me laugh. When the lights went down and he started singing his biggest hit, I got goosebumps all over. He sang one old song after another, and the whole crowd sang along like a giant choir. But the moment I'll never forget happened in the middle of the show. I looked over and saw my son and daughter singing every word. It turns out they had learned the lyrics from hearing them in my car every weekend. I was so touched that I got a little teary. On the way home, we played his songs in the car and sang together again. So yeah, that's the concert I'll remember for the rest of my life."
       }
     },
     {
       "id": "music-compare",
       "type": "comparison",
       "en": "How has the way people listen to music changed over the years? How is it different from when you were younger?",
-      "ko": "사람들이 음악을 듣는 방식은 지난 몇 년간 어떻게 변했나요? 당신이 어렸을 때와 어떻게 다른가요?",
+      "ko": "사람들이 음악을 듣는 방식은 지난 몇 년간 어떻게 변했나요? 당신이 어렸을 때와는 어떻게 다른가요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 과거(대전 본가, MP3 플레이어·컴퓨터로 다운로드, CD) → 현재(스트리밍 앱, 무선 이어폰, 추천 알고리즘, 숏폼 영상) → 내 생각(장점·아쉬운 점) → 마무리.",
-        "과거는 used to / back then, 현재는 these days / now 로 확실히 구분하세요.",
-        "IH 이상은 변화 2가지 + 장단점 한 문장('편리해졌지만 덜 특별해졌다')을 더하면 고득점에 유리합니다."
+        "답변 흐름: 시작 문장 → 과거(대전 학창 시절 카세트테이프, 라디오 녹음, 대학 때 CD) → 현재(휴대폰 스트리밍) → 가장 큰 차이(새 음악을 찾는 방법) → 내 생각 → 마무리.",
+        "used to / back then / these days / now 같은 시간 표현으로 과거와 현재를 분명하게 나누세요.",
+        "'아이들은 SNS 짧은 영상으로 새 노래를 찾는다'처럼 가족 사례를 하나 넣으면 IH 이상 답변이 됩니다."
       ],
       "answers": {
-        "IM3": "Oh, that's a good question. Let me think. The way people listen to music has changed a lot. When I was younger, I lived with my family in Daejeon. Back then, I used to listen to music on an MP3 player. I downloaded songs on my computer first. These days, I just use a streaming app on my phone. I can listen to any song anytime. It's really easy and convenient. Yeah, that's how music listening has changed.",
-        "IH": "Oh, that's a good question. Let me think. I think the way people listen to music has changed a lot over the years. When I was in middle school, I lived with my family in Daejeon, and I used to listen to music on an MP3 player. I had to download songs on our family computer and move them to the player one by one. My parents also had a lot of CDs at home. But these days, almost everyone uses streaming apps on their phones. I can listen to millions of songs for a small monthly fee, and I don't need any wires because of my wireless earbuds. Another big change is that people find new music through short videos on social media. It's much more convenient now, but sometimes I miss how special each song felt back then. Yeah, that's how music listening has changed.",
-        "AL": "Oh, that's a good question. Let me think. I'd say the way people listen to music has completely changed, even just in my lifetime. Back when I was in middle school, I lived with my family in an old apartment in Daejeon, and I used to listen to music on a tiny MP3 player. I had to download songs on our family computer and move them over one by one, so I only had about fifty songs, and I listened to them over and over. My dad still has a shelf full of CDs that he refuses to throw away. These days, it's a whole different world. I just open a streaming app on my phone, and I have millions of songs right in my pocket. On top of that, the app recommends music based on what I like, and honestly, it knows my taste better than I do. People also discover new songs through short videos on social media. As someone who works in marketing, I find that really interesting, because one viral clip can turn an old song into a hit overnight. Of course, it's way more convenient now, but I think songs felt more special back then, because I had to work a little to get them. So yeah, that's how music listening has changed."
+        "IM3": "Okay, let me think about how things have changed. When I was young in Daejeon, I listened to cassette tapes. Later, I bought CDs and used a CD player. Now, I just use a streaming app on my phone. I can listen to any song anytime. It's much easier and cheaper. These days, my kids find new songs on short videos. But I miss buying albums a little. Yeah, that's how listening to music has changed.",
+        "IH": "Okay, let me think about how things have changed. The way people listen to music has changed a lot. When I was a teenager in Daejeon, I used to buy cassette tapes at a music store near my school. I even recorded songs from the radio onto blank tapes. In college, I switched to CDs and carried a portable CD player everywhere. Now, I just use a streaming app on my phone, and I can listen to millions of songs anytime. The biggest difference is how people find new music. Back then, we heard new songs on the radio or TV, but these days my kids find new songs through short videos on social media. It's much more convenient now, but I kind of miss waiting for an album to come out. Yeah, that's how it's changed.",
+        "AL": "Okay, let me think about how things have changed, because it's honestly a huge difference. When I was a teenager in Daejeon, music was something you had to work for. I used to save my pocket money to buy cassette tapes at a little music store near my school, and I'd sit by the radio for hours to record my favorite songs onto blank tapes. If the DJ talked over the beginning of a song, it drove me crazy. In college, I moved on to CDs and carried a bulky CD player everywhere. Now, everything is on my phone. With a streaming app, I can play almost any song in the world in a few seconds, in my car or on my earbuds. I think the biggest change is how people discover music. Back then, we found new songs on the radio or music shows, but these days my kids find them through short videos on social media, and a song can become a hit overnight. It's way more convenient now, but I kind of miss the excitement of unwrapping a new album. So yeah, that's how listening to music has changed."
       }
     }
   ],
   "pronunciation": [
-    {
-      "word": "ballad",
-      "ipa": "/ˈbæləd/",
-      "tip": "'발라드'가 아니라 '밸럳'. 첫 음절 'æ'를 입을 크게 벌려 강하게, 끝 d는 살짝 멈추듯 끝냅니다."
-    },
-    {
-      "word": "playlist",
-      "ipa": "/ˈpleɪlɪst/",
-      "tip": "강세는 'play'. '플레이리스트'처럼 모음을 넣지 말고 끝 'st'를 짧게 붙여 '플레일리스트'로 말하세요."
-    },
-    {
-      "word": "lyrics",
-      "ipa": "/ˈlɪrɪks/",
-      "tip": "l과 r이 연달아 나옵니다. l은 혀끝을 윗잇몸에 대고, r은 혀를 말아 어디에도 닿지 않게 하세요."
-    },
-    {
-      "word": "concert",
-      "ipa": "/ˈkɑːnsərt/",
-      "tip": "강세는 첫 음절 'kan'. '콘서트'보다 '칸서r트'에 가깝고, 끝 t는 약하게 처리합니다."
-    },
-    {
-      "word": "earbuds",
-      "ipa": "/ˈɪrbʌdz/",
-      "tip": "'이어버즈'처럼 'ear'에 r 소리를 넣고, 끝은 '즈'(dz)로 짧게 울리게 끝내세요."
-    }
+    {"word": "ballad", "ipa": "/ˈbæləd/", "tip": "강세는 첫 음절 'bal'. '발라드'가 아니라 입을 옆으로 벌린 '배-럳'에 가깝게 짧게 말하세요."},
+    {"word": "lyrics", "ipa": "/ˈlɪrɪks/", "tip": "l로 시작해 바로 r이 이어집니다. '리릭스'로 두 음절을 짧게, 첫 음절에 강세를 주세요."},
+    {"word": "playlist", "ipa": "/ˈpleɪlɪst/", "tip": "강세는 'play'. '플레이리스트'의 '트'는 거의 들리지 않게 '플레잇리슷'처럼 끝내세요."},
+    {"word": "concert", "ipa": "/ˈkɑːnsərt/", "tip": "강세는 첫 음절 'con'. 둘째 음절은 약하게 '칸서r트'처럼 r을 살짝 굴려 주세요."},
+    {"word": "Bluetooth", "ipa": "/ˈbluːtuːθ/", "tip": "끝의 th는 혀를 이 사이에 두고 바람만 내보내세요. '블루투스'가 아니라 '블루투θ'입니다."}
   ],
   "patterns": [
-    {
-      "pid": "like#2",
-      "en": "I'm really into K-pop and ballads these days.",
-      "ko": "저는 요즘 K-pop과 발라드에 푹 빠져 있어요.",
-      "q": "music-describe"
-    },
-    {
-      "pid": "start#0",
-      "en": "I first got into IU's music when I was in high school.",
-      "ko": "저는 고등학교 때 처음 아이유 음악에 빠졌어요.",
-      "q": "music-describe"
-    },
-    {
-      "pid": "reason#0",
-      "en": "I like IU because her voice is so sweet and her lyrics are really touching.",
-      "ko": "저는 아이유의 목소리가 정말 달콤하고 가사가 정말 감동적이라서 좋아해요.",
-      "q": "music-describe"
-    },
-    {
-      "pid": "place#0",
-      "en": "I usually play music on my Bluetooth speaker at home while I'm cooking or cleaning.",
-      "ko": "저는 보통 집에서 요리하거나 청소할 때 블루투스 스피커로 음악을 틀어요.",
-      "q": "music-routine"
-    },
-    {
-      "pid": "routine#5",
-      "en": "It has become part of my daily routine to listen to upbeat K-pop on the subway to work.",
-      "ko": "출근길 지하철에서 신나는 K-pop을 듣는 게 제 일상 루틴이 됐어요.",
-      "q": "music-routine"
-    },
-    {
-      "pid": "memory#5",
-      "en": "I'll never forget the IU concert last fall because her live voice gave me goosebumps.",
-      "ko": "작년 가을 아이유 콘서트는 절대 못 잊을 거예요. 라이브 목소리에 소름이 돋았거든요.",
-      "q": "music-experience"
-    },
-    {
-      "pid": "change#0",
-      "en": "I used to listen to music on an MP3 player, but now I just use a streaming app on my phone.",
-      "ko": "예전에는 MP3 플레이어로 음악을 들었는데, 지금은 그냥 휴대폰 스트리밍 앱을 써요.",
-      "q": "music-compare"
-    },
-    {
-      "pid": "change#3",
-      "en": "The biggest difference is that people find new music through short videos on social media.",
-      "ko": "가장 큰 차이는 사람들이 SNS의 짧은 영상으로 새로운 음악을 찾는다는 거예요.",
-      "q": "music-compare"
-    }
+    {"pid": "like#2", "en": "I'm really into K-pop these days, thanks to my kids.", "ko": "저는 아이들 덕분에 요즘 K-pop에 푹 빠져 있어요.", "q": "music-describe"},
+    {"pid": "start#0", "en": "I first got into Shin Seung-hun's music when I was in high school in Daejeon.", "ko": "저는 대전에서 고등학교에 다닐 때 처음 신승훈 음악에 빠졌어요.", "q": "music-describe"},
+    {"pid": "reason#0", "en": "I like his songs because his voice is warm and his lyrics are easy to relate to.", "ko": "저는 그의 목소리가 따뜻하고 가사에 공감이 잘 돼서 그의 노래를 좋아해요.", "q": "music-describe"},
+    {"pid": "place#0", "en": "I usually play upbeat rock songs at full volume in my car on the way to work.", "ko": "저는 보통 출근길 차 안에서 신나는 록 음악을 크게 틀어요.", "q": "music-routine"},
+    {"pid": "routine#5", "en": "It has become part of my daily routine to listen to calm ballads on the drive home.", "ko": "퇴근길 운전하면서 잔잔한 발라드를 듣는 게 제 일상 루틴이 됐어요.", "q": "music-routine"},
+    {"pid": "memory#5", "en": "I'll never forget that concert because my kids sang along to every song.", "ko": "그 콘서트는 절대 못 잊을 거예요. 아이들이 모든 노래를 따라 불렀거든요.", "q": "music-experience"},
+    {"pid": "change#0", "en": "I used to buy cassette tapes, but now I just stream music on my phone.", "ko": "예전에는 카세트테이프를 샀는데, 지금은 그냥 휴대폰으로 음악을 스트리밍해요.", "q": "music-compare"},
+    {"pid": "opinion#3", "en": "On the other hand, I kind of miss the excitement of unwrapping a new album.", "ko": "한편으로는, 새 앨범 포장을 뜯던 설렘이 조금 그리워요.", "q": "music-compare"}
   ]
 }
