@@ -65,7 +65,7 @@ async function open(hash, seed = null) {
   await page.click('#tabs button[data-tab="tips"]');
   await page.waitForTimeout(300);
   const tips = await page.innerText('#tabbody');
-  check('팁: 전략 + 발음', tips.includes('출제 경향') && tips.includes('발음 체크'));
+  check('팁: 출제 경향 (발음 훈련 없음)', tips.includes('출제 경향') && !tips.includes('발음 체크'));
   check('주제: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   await page.evaluate(() => { location.hash = '#/home'; });
   await page.waitForTimeout(800);
@@ -84,6 +84,39 @@ async function open(hash, seed = null) {
   const r = await open('#/plan');
   check('없어진 #/plan 은 홈으로', (await r.page.innerText('#view')).includes('주제별 집중 학습'));
   await r.page.close();
+}
+
+// ---- 학습 기록 일괄 초기화 (resetVersion) ----
+{
+  const seed = {
+    settings: { target: 'AL', examDate: '2030-01-05' },
+    expr: { 'park#e0': { box: 4, due: 0, seen: 3 }, 'pat:like#0': { box: 3, due: 0, seen: 2 } },
+    practice: [{ qid: 'park-describe', topicId: 'park', score: 70, date: '2026-01-01T00:00:00Z' }],
+    mocks: [{ id: 'x', title: 'mini', score: 60, level: 'IM2', date: '2026-01-01T00:00:00Z' }],
+    activity: { '2026-01-01': 30 }, lastTopic: 'park',
+  };
+  const { page, errs } = await open('#/home', seed);
+  const st = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')));
+  check('초기화: 진도·연습·모의고사·학습일 삭제', !Object.keys(st.expr).length && !st.practice.length && !st.mocks.length && !Object.keys(st.activity).length && !st.lastTopic, JSON.stringify(st).slice(0, 300));
+  check('초기화: 설정은 유지', st.settings.target === 'AL' && st.settings.examDate === '2030-01-05');
+  check('초기화: 버전 기록', st.resetVersion === 1);
+  const home = await page.innerText('#view');
+  check('초기화 후 홈은 처음 상태', home.includes('처음이라면') && home.includes('목표 AL'), home.slice(0, 200));
+  await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('opic-coach:v1')); s.expr['park#e1'] = { box: 1, due: 0, seen: 1 }; localStorage.setItem('opic-coach:v1', JSON.stringify(s)); });
+  await page.reload(); await page.waitForTimeout(900);
+  check('초기화는 한 번만 (새 기록은 유지)', await page.evaluate(() => !!JSON.parse(localStorage.getItem('opic-coach:v1')).expr['park#e1']));
+  check('초기화 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
+  await page.close();
+}
+
+// ---- 발음 훈련 화면은 없어짐 ----
+{
+  const { page, errs } = await open('#/drill?tab=pron&set=sound-rl');
+  const txt = await page.innerText('#view');
+  check('발음 훈련 대신 만능 패턴', txt.includes('만능 패턴 72') && !txt.includes('발음 훈련'), txt.slice(0, 200));
+  check('하단 메뉴: 만능 패턴', (await page.innerText('#nav')).includes('만능 패턴'));
+  check('발음 링크 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
+  await page.close();
 }
 
 await b.close();

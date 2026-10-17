@@ -350,33 +350,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "vacation",
-      "ipa": "/veɪˈkeɪʃən/",
-      "tip": "가운데 '케이'에 강세. v는 윗니로 아랫입술을 살짝 물고 '베이케이션'."
-    },
-    {
-      "word": "relaxing",
-      "ipa": "/rɪˈlæksɪŋ/",
-      "tip": "'릴랙싱'에서 '랙'에 강세. 첫 r은 혀를 말아 시작하세요."
-    },
-    {
-      "word": "comfortable",
-      "ipa": "/ˈkʌmftərbəl/",
-      "tip": "'컴프터블' 세 음절처럼 말해요. 'com-for-ta-ble'로 또박또박 끊지 마세요."
-    },
-    {
-      "word": "recharge",
-      "ipa": "/riːˈtʃɑːrdʒ/",
-      "tip": "뒤 '차-지'에 강세. '리-차-쥐'처럼 끝을 부드럽게 울려요."
-    },
-    {
-      "word": "disadvantage",
-      "ipa": "/ˌdɪsədˈvæntɪdʒ/",
-      "tip": "'밴'에 강세. '디스어드밴티지'를 '디서드밴티쥐'처럼 이어서 말해요."
-    }
-  ],
   "patterns": [
     {
       "pid": "like#4",

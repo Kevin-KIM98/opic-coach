@@ -42,11 +42,12 @@
       "en": "영어 질문",
       "ko": "한국어 해석",
       "tips": ["구조 힌트", "표현 힌트"],
-      "answers": {"IM3": "...", "IH": "...", "AL": "..."}
+      "answers": {"IM3": "...", "IH": "...", "AL": "..."},
+      "answersKo": {"IM3": ["문장별 한글 해석", "..."], "IH": [...], "AL": [...]}
     }
   ],
-  "pronunciation": [
-    {"word": "apartment", "ipa": "/əˈpɑːrt.mənt/", "tip": "한국어 발음 팁"}
+  "patterns": [
+    {"pid": "place#1", "en": "There's a small park near my place.", "ko": "...", "q": "park-describe"}
   ]
 }
 ```
@@ -80,12 +81,11 @@
 
 ## 다른 파일
 
-- 주제 모범답안은 `data/index.json` 의 `persona`(한 사람의 설정)와 `flow`(답변 흐름)를 따릅니다. 주제 내용을 크게 바꿨다면 `contentVersion` 을 1 올리세요 — 앱이 예전 주제 표현 학습 기록을 한 번 지웁니다.
+- 주제 모범답안은 `data/index.json` 의 `persona`(한 사람의 설정)와 `flow`(답변 흐름)를 따릅니다. 주제 내용을 크게 바꿨다면 `contentVersion` 을 1 올리세요 — 앱이 예전 주제 표현 학습 기록을 한 번 지웁니다. 모든 학습 기록(진도·연습·모의고사·학습일)을 한 번 초기화하려면 `resetVersion` 을 1 올리세요 (설정은 유지).
 - `data/patterns.json` – 만능 패턴 72문장 (12 스토리 테마 × 6패턴). `groups[].items[]` 는 `{en, ko, level, pattern, examples}`.
   `pattern` 은 빈칸(`___`)이 있는 패턴 틀, `en` + `examples`(2개)가 예문 3개입니다. 말하기 퀴즈는 `pattern` 에서 빈칸을 뺀 단어로 채점합니다.
   그룹 id·순서를 바꾸면 주제 파일의 `patterns[].pid` 도 함께 바꾸세요.
   지금 파일에 없는 패턴의 학습 기록(`pat:*`)은 앱이 자동으로 지웁니다.
-- `data/pronunciation.json` – 발음 세트. `kind` 가 `minimal-pairs` 면 `pairs`, 그 외는 `words`/`sentences`.
 - `data/mock-sets.json` – 모의고사 구성. `slots` 로 문항 조합, `levels` 로 등급 커트라인.
 - 질문의 `answersKo` – 모범답안 한글 해석. `{"IM3": [...], "IH": [...], "AL": [...]}` 로, 영어 답안을 문장(. ! ? 기준)으로 나눈 개수와 **같은 개수**의 한글 문장 배열입니다. 영어 답안을 고치면 해석 개수도 맞추세요. `a.m.` 같은 약어는 문장이 잘리니 `in the morning` 처럼 풀어 씁니다.
 - 주제 파일의 `patterns` – 만능 패턴을 이 주제에 맞춰 채운 문장 8개. `{pid, en, ko, q}`: `pid` 는 `<그룹 id>#<번호>`(예: `like#0`), `en` 은 패턴 틀의 단어를 그대로 두고 빈칸만 채운 문장, `q` 는 이 문장을 쓰는 질문 id. `validate.py` 가 셋 다 검사합니다.

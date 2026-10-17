@@ -483,33 +483,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "reservation",
-      "ipa": "/ˌrez.ərˈveɪ.ʃən/",
-      "tip": "'베이'에 강세. 앞의 re는 약하게 '레저'"
-    },
-    {
-      "word": "available",
-      "ipa": "/əˈveɪ.lə.bəl/",
-      "tip": "'베이'에 강세, 끝은 '어블'로 짧게"
-    },
-    {
-      "word": "refund",
-      "ipa": "/ˈriː.fʌnd/",
-      "tip": "명사는 앞 '리'에 강세. f는 윗니를 아랫입술에 대고"
-    },
-    {
-      "word": "canceled",
-      "ipa": "/ˈkæn.səld/",
-      "tip": "'캔슬드'처럼 두 음절. ed를 '에드'로 따로 읽지 않기"
-    },
-    {
-      "word": "package",
-      "ipa": "/ˈpæk.ɪdʒ/",
-      "tip": "앞 '패'에 강세, 끝 '지'는 짧고 약하게 '패킺'"
-    }
-  ],
   "patterns": [
     {
       "pid": "roleplay#0",

@@ -80,7 +80,7 @@ async function open(hash, seed = null) {
 
 // ---- 예전 패턴 기록 정리 ----
 {
-  const seed = { expr: { 'pat:opener#0': { box: 3, due: 0, seen: 2 }, 'pat:filler#2': { box: 1, due: 0, seen: 1 }, 'pat:like#1': { box: 4, due: 0, seen: 3 }, 'housing#e0': { box: 2, due: 0, seen: 1 } }, topicContentVersion: 4 };
+  const seed = { expr: { 'pat:opener#0': { box: 3, due: 0, seen: 2 }, 'pat:filler#2': { box: 1, due: 0, seen: 1 }, 'pat:like#1': { box: 4, due: 0, seen: 3 }, 'housing#e0': { box: 2, due: 0, seen: 1 } }, topicContentVersion: 4, resetVersion: 1 };
   const { page } = await open('#/home', seed);
   await page.waitForTimeout(500);
   const expr = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')).expr);
@@ -92,7 +92,7 @@ async function open(hash, seed = null) {
 
 // ---- 주제 내용 교체: 예전 주제 표현 기록 한 번 정리 ----
 {
-  const seed = { expr: { 'housing#e0': { box: 3, due: 0, seen: 2 }, 'pat:like#1': { box: 4, due: 0, seen: 3 } } };
+  const seed = { expr: { 'housing#e0': { box: 3, due: 0, seen: 2 }, 'pat:like#1': { box: 4, due: 0, seen: 3 } }, resetVersion: 1 };
   const { page, errs } = await open('#/topics', seed);
   await page.waitForTimeout(500);
   const st = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')));

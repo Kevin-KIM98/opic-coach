@@ -9,7 +9,7 @@ import { createAutoPlay, createSequencePlayer, repeatCount, gapLabel, cycleRepea
 import { compareToText } from '../scoring.js';
 import { speakQuiz } from './quiz.js';
 
-// 주제 화면: ① 표현 → ② 이 주제에 쓰는 패턴 → ③ 모범답안·직접 말하기 → ④ 팁(전략·발음)
+// 주제 화면: ① 표현 → ② 이 주제에 쓰는 패턴 → ③ 모범답안·직접 말하기 → ④ 팁(출제 경향·전략)
 const TABS = [['expr', '① 표현'], ['pat', '② 패턴'], ['q', '③ 답안'], ['tips', '④ 팁']];
 
 export async function render(root, route) {
@@ -202,19 +202,6 @@ export function iconFor(type) {
   return { describe: '🖼️', routine: '🔁', experience: '📖', comparison: '⚖️', opinion: '💬', 'roleplay-ask': '📞', 'roleplay-solve': '🛠️', 'roleplay-experience': '📖' }[type] || '❔';
 }
 
-// ---------- 발음 ----------
-function renderPron(body, topic) {
-  const items = topic.pronunciation || [];
-  body.innerHTML += html`
-    <div class="section-title">발음 체크</div>
-    <p class="small muted mb12">이 주제에서 한국인이 자주 틀리는 단어. 🔊 듣고 🎙️ 녹음하면 인식 결과로 발음을 확인합니다.</p>
-    <div data-autoplay></div>
-    <div class="list mt12" data-list>${raw(items.map((p, i) => `<div class="expr" data-pron="${i}"><button class="play" data-say="${encodeURIComponent(p.word)}">🔊</button><div class="grow"><div class="en">${p.word} <span class="small muted" style="font-weight:500">${p.ipa || ''}</span></div><div class="ko">${p.tip || ''}</div><div class="xs mt8" data-result></div></div><button class="play" data-check="${i}">🎙️</button></div>`).join(''))}</div>`;
-  bindPlay(body);
-  body.querySelectorAll('[data-check]').forEach(b => b.addEventListener('click', () => quickCheck(b, items[Number(b.dataset.check)].word, body.querySelector(`[data-pron="${b.dataset.check}"] [data-result]`))));
-  return items.length ? createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]')) : null;
-}
-
 // 단어/문장 발음 빠른 확인: 4초 녹음 → 인식 결과 비교
 export async function quickCheck(btn, text, $out, { listenText = text } = {}) {
   const { Recognizer, support, sttDiagnosis } = await import('../speech.js');
@@ -234,12 +221,10 @@ export async function quickCheck(btn, text, $out, { listenText = text } = {}) {
   return cmp.score;   // 인식 실패 시 null — 말하기 퀴즈가 채점 불가로 처리한다
 }
 
-// ---------- 팁: 전략 + 발음 ----------
+// ---------- 팁: 출제 경향 · 답변 전략 ----------
 function renderTips(body, topic) {
   renderGuide(body, topic);
-  const pron = document.createElement('div');
-  body.appendChild(pron);
-  return renderPron(pron, topic);
+  return null;
 }
 
 function renderGuide(body, topic) {

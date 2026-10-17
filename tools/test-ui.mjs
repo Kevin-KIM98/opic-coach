@@ -143,22 +143,6 @@ async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
   await page.close();
 }
 
-// ---- 4. 발음 훈련 (drill) ----
-{
-  const { page, errs } = await open('http://localhost:8777/index.html#/drill?tab=pron&set=sound-rl');
-  const hasBar = await page.$('.autoplay');
-  check('발음 훈련에 자동 재생 바가 있다', !!hasBar);
-  if (hasBar) {
-    await page.click('[data-toggle]');
-    await page.waitForTimeout(900);
-    check('발음 훈련도 자동 재생된다', (await page.evaluate(() => window.__spoken.length)) >= 2);
-    await page.click('[data-toggle]');
-  }
-  check('발음 훈련 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
-  if (OUT) await page.screenshot({ path: `${OUT}/ap-pron.png` });
-  await page.close();
-}
-
 // ---- 5. 만능 패턴 ----
 {
   const { page, errs } = await open('http://localhost:8777/index.html#/drill?tab=patterns&group=like');
@@ -231,7 +215,7 @@ async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
 // ---- 6. 가로 화면 ----
 for (const [name, url] of [
   ['홈', '#/home'], ['주제 표현', '#/topic/self-intro?tab=expr'],
-  ['발음 훈련', '#/drill?tab=pron&set=sound-rl'], ['설정', '#/settings'],
+  ['만능 패턴', '#/drill?tab=patterns&group=like'], ['설정', '#/settings'],
 ]) {
   const { page, errs } = await open('http://localhost:8777/index.html' + url, { landscape: true });
   const m = await page.evaluate(() => ({

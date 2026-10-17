@@ -331,33 +331,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "pond",
-      "ipa": "/pɑːnd/",
-      "tip": "입을 크게 벌린 '아' 소리로 '판드'처럼 발음하세요. '폰드'처럼 '오'로 읽지 않도록 주의합니다."
-    },
-    {
-      "word": "trail",
-      "ipa": "/treɪl/",
-      "tip": "tr은 '츄'에 가깝게 시작하고, 끝의 l은 혀끝을 윗잇몸에 대며 '츄레이얼'처럼 마무리하세요."
-    },
-    {
-      "word": "picnic",
-      "ipa": "/ˈpɪknɪk/",
-      "tip": "강세는 첫 음절 'pic'. '피크닉'의 '크'를 거의 빼고 '픽닉'처럼 짧게 말하세요."
-    },
-    {
-      "word": "playground",
-      "ipa": "/ˈpleɪɡraʊnd/",
-      "tip": "강세는 'play'. 'ground'는 '그라운드'를 한 박자로 빠르게, 끝 d는 살짝만 내세요."
-    },
-    {
-      "word": "cherry blossom",
-      "ipa": "/ˈtʃeri ˈblɑːsəm/",
-      "tip": "cherry는 '체리', blossom은 강세를 첫 음절에 두고 '블라썸'처럼 발음하세요."
-    }
-  ],
   "patterns": [
     {
       "pid": "place#1",

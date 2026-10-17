@@ -122,7 +122,7 @@ def main():
         for p in (DATA / "topics").glob("*.json"):
             if f"topics/{p.name}" not in listed:
                 err(f"{p.relative_to(ROOT)}: index.json 에 등록되지 않았습니다")
-    for name in ("patterns.json", "pronunciation.json", "mock-sets.json"):
+    for name in ("patterns.json", "mock-sets.json"):
         d = load(DATA / name)
         if d is None:
             continue

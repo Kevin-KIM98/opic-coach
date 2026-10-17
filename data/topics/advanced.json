@@ -462,33 +462,6 @@
       }
     }
   ],
-  "pronunciation": [
-    {
-      "word": "technology",
-      "ipa": "/tekˈnɑː.lə.dʒi/",
-      "tip": "'나'에 강세. '테크놀로지'처럼 모든 음절을 똑같이 읽지 않기"
-    },
-    {
-      "word": "convenient",
-      "ipa": "/kənˈviː.ni.ənt/",
-      "tip": "'비'에 강세, v는 윗니로 아랫입술을 살짝 물고"
-    },
-    {
-      "word": "advantage",
-      "ipa": "/ədˈvæn.tɪdʒ/",
-      "tip": "'밴'에 강세. 앞 ad는 약하게 '어드'"
-    },
-    {
-      "word": "industry",
-      "ipa": "/ˈɪn.də.stri/",
-      "tip": "앞 '인'에 강세. '인더스트리'의 '더'를 강하게 읽지 않기"
-    },
-    {
-      "word": "opportunity",
-      "ipa": "/ˌɑː.pərˈtuː.nə.ti/",
-      "tip": "'투'에 강세. 미국식은 t가 부드럽게 '러'처럼 들림"
-    }
-  ],
   "patterns": [
     {
       "pid": "change#4",
