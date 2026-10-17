@@ -72,7 +72,8 @@
             "When it comes to food, I'm a huge fan of Korean dishes."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "place",
@@ -140,7 +141,8 @@
             "What I like most about the place is that it's never too crowded."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "people",
@@ -208,7 +210,8 @@
             "Spending time with my dog helps me feel calm."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "routine",
@@ -276,7 +279,8 @@
             "It has become part of my daily routine to drink coffee in the morning."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "reason",
@@ -344,7 +348,8 @@
             "Honestly, there's nothing better than a quiet walk in the park."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "start",
@@ -412,7 +417,8 @@
             "Ever since then, I've been traveling at least once a year."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "describe",
@@ -480,7 +486,8 @@
             "It has a warm atmosphere that makes me feel at home."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "memory",
@@ -548,7 +555,8 @@
             "I'll never forget that trip because I made a lifelong friend."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "problem",
@@ -616,7 +624,8 @@
             "Since then, I always make sure to book in advance."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "change",
@@ -684,7 +693,8 @@
             "I think this change is because of the pandemic."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "opinion",
@@ -752,7 +762,8 @@
             "All things considered, I think this trend will continue."
           ]
         }
-      ]
+      ],
+      "set": "kang"
     },
     {
       "id": "roleplay",
@@ -820,7 +831,335 @@
             "I'd really appreciate it if you could help me with this."
           ]
         }
+      ],
+      "set": "kang"
+    },
+    {
+      "id": "im3-routine",
+      "emoji": "🔁",
+      "set": "im3",
+      "title": "IM3 · 습관 · 루틴",
+      "desc": "평소에 하는 일. 빈도부사(usually·often·sometimes·always)와 이동(go·take·visit)으로 루틴 답변을 만듭니다.",
+      "items": [
+        {
+          "en": "After work, I usually go to the gym.",
+          "ko": "저는 보통 ___에 가요.",
+          "level": "IM",
+          "pattern": "I usually go to ___.",
+          "examples": [
+            "On weekends, I usually go to the park.",
+            "I usually go there on Fridays.",
+            "I usually go to the bank in the morning."
+          ]
+        },
+        {
+          "en": "I often go to the park.",
+          "ko": "저는 자주 ___해요.",
+          "level": "IM",
+          "pattern": "I often ___.",
+          "examples": [
+            "I often eat out with my friends.",
+            "I often take the subway.",
+            "I often visit my grandparents on holidays."
+          ]
+        },
+        {
+          "en": "I sometimes go camping with my family.",
+          "ko": "저는 가끔 ___해요.",
+          "level": "IM",
+          "pattern": "I sometimes ___.",
+          "examples": [
+            "I sometimes take a walk in the park.",
+            "I sometimes go to concerts on weekends.",
+            "I sometimes ride the bus when it rains."
+          ]
+        },
+        {
+          "en": "I always visit the park on Sundays.",
+          "ko": "저는 항상 ___해요.",
+          "level": "IM",
+          "pattern": "I always ___.",
+          "examples": [
+            "I always eat at the same restaurant.",
+            "I always take the subway to work.",
+            "I always check the weather before I go out."
+          ]
+        },
+        {
+          "en": "I take the bus to work.",
+          "ko": "저는 ___를 타요.",
+          "level": "IM",
+          "pattern": "I take ___.",
+          "examples": [
+            "I take the subway to school.",
+            "I take a taxi when it rains.",
+            "I take the train to the city."
+          ]
+        },
+        {
+          "en": "I visit my grandparents on weekends.",
+          "ko": "저는 ___를 방문해요.",
+          "level": "IM",
+          "pattern": "I visit ___.",
+          "examples": [
+            "I visit the museum when I travel.",
+            "I visit the hospital sometimes.",
+            "I visit new cities during holidays."
+          ]
+        },
+        {
+          "en": "And then, I usually walk around.",
+          "ko": "그러고 나서 저는 ___해요.",
+          "level": "IM",
+          "pattern": "And then, I ___.",
+          "examples": [
+            "And then, I met my friend.",
+            "And then, I stretch my legs.",
+            "And then, I always go back home."
+          ]
+        }
       ]
+    },
+    {
+      "id": "im3-describe",
+      "emoji": "🖼️",
+      "set": "im3",
+      "title": "IM3 · 소개 · 묘사",
+      "desc": "있는 것·좋아하는 것·걸리는 시간·느낌. 묘사와 자기소개의 기본 문장입니다.",
+      "items": [
+        {
+          "en": "I'm really into ballads these days.",
+          "ko": "저는 요즘 ___에 푹 빠져 있어요.",
+          "level": "IM",
+          "pattern": "I'm really into ___.",
+          "examples": [
+            "I'm really into jogging.",
+            "I'm really into listening to music.",
+            "I'm really into camping."
+          ]
+        },
+        {
+          "en": "There's a nice cafe near my place.",
+          "ko": "제 집 근처에 ___가 있어요.",
+          "level": "IM",
+          "pattern": "There's a ___ near my place.",
+          "examples": [
+            "There's a nice restaurant near my place.",
+            "There's a gym near my place.",
+            "There's a great view in the park."
+          ]
+        },
+        {
+          "en": "I have a big TV in my living room.",
+          "ko": "저는 ___가 있어요.",
+          "level": "IM",
+          "pattern": "I have a ___.",
+          "examples": [
+            "I have a dog at home.",
+            "I have a routine.",
+            "I have a membership at the gym."
+          ]
+        },
+        {
+          "en": "It's sunny today.",
+          "ko": "___해요. (날씨·상태)",
+          "level": "IM",
+          "pattern": "It's ___.",
+          "examples": [
+            "It's cold in the morning.",
+            "It's rainy this week.",
+            "It's windy outside."
+          ]
+        },
+        {
+          "en": "It takes 10 minutes to walk to the park.",
+          "ko": "___하는 데 ___ 걸려요.",
+          "level": "IM",
+          "pattern": "It takes ___ to ___.",
+          "examples": [
+            "It takes 30 minutes to get to the theater.",
+            "It takes an hour to go camping.",
+            "It takes 20 minutes to clean the house."
+          ]
+        },
+        {
+          "en": "I prefer buses to subways.",
+          "ko": "저는 ___를 더 좋아해요.",
+          "level": "IM",
+          "pattern": "I prefer ___.",
+          "examples": [
+            "I prefer eating outside.",
+            "I prefer going to movies to concerts.",
+            "I prefer staying home on holidays."
+          ]
+        },
+        {
+          "en": "I get tired after walking in the park.",
+          "ko": "저는 ___해져요.",
+          "level": "IM",
+          "pattern": "I get ___.",
+          "examples": [
+            "I get sick in cold weather.",
+            "I get hungry after the gym.",
+            "I get nervous before going on stage."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "im3-past",
+      "emoji": "📖",
+      "set": "im3",
+      "title": "IM3 · 과거 경험",
+      "desc": "경험 문제의 필수 과거시제. went · was · had to · stayed · didn't · enjoyed 로 끝까지 과거로 말합니다.",
+      "items": [
+        {
+          "en": "I went to a concert last Saturday.",
+          "ko": "저는 ___에 갔어요.",
+          "level": "IM",
+          "pattern": "I went to ___.",
+          "examples": [
+            "I went to the doctor yesterday.",
+            "I went to a movie theater with friends.",
+            "I went there last year."
+          ]
+        },
+        {
+          "en": "It was fun to go camping.",
+          "ko": "___였어요.",
+          "level": "IM",
+          "pattern": "It was ___.",
+          "examples": [
+            "It was crowded at the concert.",
+            "It was sunny and warm at the beach.",
+            "It was delicious."
+          ]
+        },
+        {
+          "en": "I had to wait for the bus.",
+          "ko": "저는 ___해야 했어요.",
+          "level": "IM",
+          "pattern": "I had to ___.",
+          "examples": [
+            "I had to clean my room.",
+            "I had to cancel my plan.",
+            "I had to go to the hospital."
+          ]
+        },
+        {
+          "en": "I stayed at a hotel near the beach.",
+          "ko": "저는 ___에 머물렀어요.",
+          "level": "IM",
+          "pattern": "I stayed at ___.",
+          "examples": [
+            "I stayed at my friend's house last weekend.",
+            "I stayed home all day.",
+            "I stayed at the library to study."
+          ]
+        },
+        {
+          "en": "I was tired after the concert.",
+          "ko": "저는 ___했어요.",
+          "level": "IM",
+          "pattern": "I was ___.",
+          "examples": [
+            "I was excited about the holiday.",
+            "I was happy to eat at my favorite restaurant.",
+            "I was cold at the park last night."
+          ]
+        },
+        {
+          "en": "I didn't go to the concert.",
+          "ko": "저는 ___하지 않았어요.",
+          "level": "IM",
+          "pattern": "I didn't ___.",
+          "examples": [
+            "I didn't take the bus today.",
+            "I didn't eat out last weekend.",
+            "I didn't recycle yesterday."
+          ]
+        },
+        {
+          "en": "I enjoyed the camping trip.",
+          "ko": "저는 ___가 즐거웠어요.",
+          "level": "IM",
+          "pattern": "I enjoyed ___.",
+          "examples": [
+            "I enjoyed walking in the park.",
+            "I enjoyed the food at the restaurant.",
+            "I enjoyed listening to live music."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "im3-plan",
+      "emoji": "🗓️",
+      "set": "im3",
+      "title": "IM3 · 계획 · 바람 · 요청",
+      "desc": "앞으로 할 일과 바람, 롤플레이 요청 문장. want to · planning to · need to · I'd like to.",
+      "items": [
+        {
+          "en": "I want to go there again.",
+          "ko": "저는 ___하고 싶어요.",
+          "level": "IM",
+          "pattern": "I want to ___.",
+          "examples": [
+            "I want to watch that movie again.",
+            "I want to go hiking next weekend.",
+            "I want to see it again."
+          ]
+        },
+        {
+          "en": "I'm planning to go camping.",
+          "ko": "저는 ___할 계획이에요.",
+          "level": "IM",
+          "pattern": "I'm planning to ___.",
+          "examples": [
+            "I'm planning to watch a musical.",
+            "I'm planning to meet my friends.",
+            "I'm planning to join a fitness class."
+          ]
+        },
+        {
+          "en": "I need to clean the kitchen.",
+          "ko": "저는 ___해야 해요.",
+          "level": "IM",
+          "pattern": "I need to ___.",
+          "examples": [
+            "I need to go to the bank.",
+            "I need to take the bus.",
+            "I need to recycle some bottles."
+          ]
+        },
+        {
+          "en": "I'd like to book a room.",
+          "ko": "___하고 싶어요. (정중한 요청)",
+          "level": "IM",
+          "pattern": "I'd like to ___.",
+          "examples": [
+            "I'd like to get a refund.",
+            "I'd like to book the package trip.",
+            "I'd like to try it."
+          ]
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "id": "im3",
+      "title": "IM3 필수 패턴 25",
+      "desc": "시험장 가기 전 꼭 외울 IM3 기본 패턴. 패턴마다 영상 예문 4개.",
+      "url": "https://www.youtube.com/watch?v=yFvkBuldv1Y",
+      "note": "영상(Sarah)의 25개 패턴과 예문을 그대로 옮겼습니다. 듣고 따라 말하기(섀도잉)를 반복하세요."
+    },
+    {
+      "id": "kang",
+      "title": "오픽 만능패턴 72문장",
+      "desc": "12개 스토리 테마 × 6패턴. 어떤 주제든 답변의 뼈대를 만듭니다.",
+      "url": "https://www.youtube.com/watch?v=378IPmgXaWc",
+      "note": "영상 구성(12테마×6패턴, 예문 3개)을 따라 정리한 문장입니다."
     }
   ]
 }

@@ -33,9 +33,9 @@ async function open(hash, seed = null) {
 {
   const { page, errs } = await open('#/drill?tab=patterns');
   const txt = await page.innerText('#view');
-  check('개요: 72문장 진행률', /0\s*\/\s*72 문장/.test(txt), txt.slice(0, 300));
-  check('개요: 영상 출처 링크', await page.$('a[href="https://www.youtube.com/watch?v=378IPmgXaWc"]') !== null);
-  check('개요: 12개 테마', (await page.$$('#dbody .list .list-row')).length === 12);
+  check('개요: 72 · 25 두 세트 진행률', /0\s*\/\s*72/.test(txt) && /0\s*\/\s*25/.test(txt), txt.slice(0, 400));
+  check('개요: 두 영상 출처 링크', await page.$('a[href="https://www.youtube.com/watch?v=378IPmgXaWc"]') !== null && await page.$('a[href="https://www.youtube.com/watch?v=yFvkBuldv1Y"]') !== null);
+  check('개요: 12개 테마 + IM3 4개 그룹', (await page.$$('#dbody .list .list-row')).length === 16);
   check('개요: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   if (OUT) await page.screenshot({ path: `${OUT}/patterns.png`, fullPage: true });
   await page.close();
@@ -57,6 +57,17 @@ async function open(hash, seed = null) {
   const { page } = await open('#/drill?tab=patterns&group=all');
   check('전체: 72개 패턴', (await page.$$('[data-list] .expr')).length === 72);
   check('전체: 216개 예문', (await page.$$('[data-list] [data-say]')).length === 216);
+  await page.close();
+}
+
+// ---- IM3 필수 패턴 25 (영상 예문 4개씩) ----
+{
+  const { page, errs } = await open('#/drill?tab=patterns&group=all:im3');
+  check('IM3 25: 패턴 25개', (await page.$$('[data-list] .expr')).length === 25);
+  check('IM3 25: 예문 100개', (await page.$$('[data-list] [data-say]')).length === 100);
+  check('IM3 25: 영상 예문', (await page.innerText('[data-list]')).includes('After work, I usually go to the gym.'));
+  check('IM3 25: 같은 세트 그룹 칩만', (await page.$$eval('.chips .chip', xs => xs.map(x => x.textContent))).every(t => t === '전체' || t.startsWith('IM3')));
+  check('IM3 25: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   await page.close();
 }
 

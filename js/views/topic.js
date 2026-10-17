@@ -67,6 +67,27 @@ export function topicPatternCards(topic, patterns) {
   });
 }
 
+// ---------- 패턴 조합: 두 영상의 패턴을 이어 붙여 만든 답변 한 단락 ----------
+function comboSection(topic, patterns, level, qById) {
+  const frames = {};
+  (patterns.groups || []).forEach(g => g.items.forEach((it, i) => { frames[`${g.id}#${i}`] = { pattern: it.pattern || it.en, set: g.set || 'kang' }; }));
+  const combos = (topic.combos || []).filter(c => !level || c.level === level);
+  if (!combos.length) return '';
+  const setName = { kang: '만능 72', im3: 'IM3 25' };
+  return `<div class="section-title">🔗 패턴 조합 · ${level || ''}</div>
+    <p class="xs muted mb12">패턴 여러 개를 이어 붙이면 답변 한 단락이 됩니다. ▶ 로 통째로 듣고 따라 말해 보세요.</p>
+    <div class="list">${combos.map(c => {
+      const q = qById[c.q];
+      const text = c.parts.map(p => p.en).join(' ');
+      return `<div class="combo">
+        <div class="row between"><div class="h3">${c.title}</div><button class="play" data-say="${encodeURIComponent(text)}" aria-label="조합 듣기">▶</button></div>
+        <div class="combo-chain mt8">${c.parts.map((p, k) => `${k ? '<span class="plus">+</span>' : ''}<span class="link ${frames[p.pid]?.set || ''}" title="${setName[frames[p.pid]?.set] || ''}">${(frames[p.pid]?.pattern || '').replace(/_{2,}/g, '…')}</span>`).join('')}</div>
+        <div class="combo-body mt12">${c.parts.map(p => `<div class="combo-line"><div class="en">${p.en}</div><div class="ko">${p.ko}</div></div>`).join('')}</div>
+        ${q ? `<a class="note mt8" href="#/practice/${topic.id}/${q.id}?level=${c.level}">💬 ${TYPE_LABEL[q.type] || q.type} ${c.level} 답안으로 ›</a>` : ''}
+      </div>`;
+    }).join('')}</div>`;
+}
+
 // 모범답안에서 패턴 문장 찾기: { 영어 문장: 패턴 틀 } (그 레벨에 적용한 문장만)
 export function patternSentenceMap(topic, patterns, level) {
   const out = {};
@@ -102,6 +123,7 @@ function renderTopicPatterns(body, topic, patterns, onChange, mode = '', level =
           <span class="badge ${c.level}">${c.level}</span></div>`;
       }).join(''))}</div>
       ${cards.length ? '' : raw('<div class="empty">이 주제에는 아직 패턴이 없어요.</div>')}
+      ${raw(comboSection(topic, patterns, leveled ? level : null, qById))}
       <a class="btn ghost block mt12" href="#/drill?tab=patterns">🧩 만능 패턴 72문장 전체 보기</a>`;
     bindPlay(body);
     const player = createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]'));

@@ -132,7 +132,7 @@ async function open(hash, seed = null) {
 {
   const { page, errs } = await open('#/drill?tab=pron&set=sound-rl');
   const txt = await page.innerText('#view');
-  check('발음 훈련 대신 만능 패턴', txt.includes('만능 패턴 72') && !txt.includes('발음 훈련'), txt.slice(0, 200));
+  check('발음 훈련 대신 만능 패턴', txt.includes('만능패턴 72문장') && !txt.includes('발음 훈련'), txt.slice(0, 200));
   check('하단 메뉴: 만능 패턴', (await page.innerText('#nav')).includes('만능 패턴'));
   check('발음 링크 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   await page.close();

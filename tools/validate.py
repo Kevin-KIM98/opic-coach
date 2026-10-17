@@ -121,10 +121,53 @@ def check_topic_patterns(path, t, frames, frame_levels=None):
                 err(f"{rel}: patterns 의 {lv} 문장은 6개여야 합니다 (현재 {levels.count(lv)}개)")
 
 
+def check_combos(path, t, frames, frame_levels, frame_sets):
+    """패턴 조합: 레벨별 2개(IM3·IH·AL), 조합마다 두 패턴 세트를 섞고, 각 문장이 패턴 틀을 지키는지."""
+    combos = t.get("combos")
+    if combos is None:
+        return
+    rel = path.relative_to(ROOT)
+    qids = {q.get("id") for q in t.get("questions", [])}
+    norm = lambda x: [w for w in "".join(c.lower() if c.isalnum() or c in " '" else " " for c in x).split() if w]
+    levels = [c.get("level") for c in combos]
+    for lv in LEVEL_FRAMES:
+        if levels.count(lv) != 2:
+            err(f"{rel}: combos 의 {lv} 조합은 2개여야 합니다 (현재 {levels.count(lv)}개)")
+    for i, c in enumerate(combos):
+        if c.get("q") not in qids:
+            err(f"{rel}: combos[{i}] q '{c.get('q')}' 가 이 주제의 질문 id 가 아닙니다")
+        if not c.get("title"):
+            err(f"{rel}: combos[{i}] title 누락")
+        parts = c.get("parts") or []
+        if not 3 <= len(parts) <= 4:
+            err(f"{rel}: combos[{i}] parts 는 3~4개여야 합니다 (현재 {len(parts)}개)")
+        sets = {frame_sets.get(p.get("pid")) for p in parts}
+        if not {"kang", "im3"} <= sets:
+            err(f"{rel}: combos[{i}] 는 만능패턴 72(kang)와 IM3 25(im3)를 섞어야 합니다")
+        for k, p in enumerate(parts):
+            frame = frames.get(p.get("pid"))
+            if frame is None:
+                err(f"{rel}: combos[{i}].parts[{k}] pid '{p.get('pid')}' 가 data/patterns.json 에 없습니다")
+                continue
+            if not p.get("en") or not p.get("ko"):
+                err(f"{rel}: combos[{i}].parts[{k}] en/ko 누락")
+            if len(split_sentences(p.get("en", ""))) != 1:
+                err(f"{rel}: combos[{i}].parts[{k}] en 은 한 문장이어야 합니다")
+            words, it = norm(p.get("en", "")), 0
+            for w in norm(frame.replace("___", " ")):
+                while it < len(words) and words[it] != w:
+                    it += 1
+                if it >= len(words):
+                    err(f"{rel}: combos[{i}].parts[{k}] 문장에 패턴 틀 '{frame}' 의 단어 '{w}' 가 없습니다")
+                    break
+                it += 1
+
+
 def main():
     pats = load(DATA / "patterns.json") or {}
     frames = {f"{g.get('id')}#{i}": it.get("pattern") or it.get("en", "") for g in pats.get("groups", []) for i, it in enumerate(g.get("items", []))}
     frame_levels = {f"{g.get('id')}#{i}": it.get("level", "IM") for g in pats.get("groups", []) for i, it in enumerate(g.get("items", []))}
+    frame_sets = {f"{g.get('id')}#{i}": g.get("set", "kang") for g in pats.get("groups", []) for i, it in enumerate(g.get("items", []))}
     index = load(DATA / "index.json")
     if index:
         for entry in index.get("topics", []):
@@ -136,6 +179,7 @@ def main():
             if t:
                 check_topic(p, t)
                 check_topic_patterns(p, t, frames, frame_levels)
+                check_combos(p, t, frames, frame_levels, frame_sets)
         listed = {e["file"] for e in index.get("topics", [])}
         for p in (DATA / "topics").glob("*.json"):
             if f"topics/{p.name}" not in listed:
