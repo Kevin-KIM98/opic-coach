@@ -73,7 +73,7 @@ function renderModel(body, q, level, setLevel) {
       <div class="row between wrap mb12"><span class="xs muted" data-loop-hint>${repeatLoop() ? '전체 듣기는 멈출 때까지 계속 반복돼요' : '전체 듣기는 한 바퀴만 읽고 멈춰요'}</span>
         <span class="row" style="gap:6px"><button class="chip ${repeatLoop() ? 'active' : ''}" data-loop title="멈출 때까지 계속 반복">${loopLabel()}</button><button class="chip" data-repeat>반복 ${repeatCount()}회</button><button class="chip" data-gap>${gapLabel()}</button></span></div>
       <div class="answer ${ko ? 'with-ko' : ''} ${showKo ? '' : 'ko-off'}" data-answer>${raw(sents.map((s, i) => ko
-        ? `<div class="pair"><span class="sent" data-i="${i}">${s}</span><div class="sent-ko">${ko[i]}</div></div>`
+        ? `<div class="ans-pair"><span class="sent" data-i="${i}">${s}</span><div class="sent-ko">${ko[i]}</div></div>`
         : `<span class="sent" data-i="${i}">${s}</span> `).join(''))}</div>
     </div>
     <div class="card soft mt12">

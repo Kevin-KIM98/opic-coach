@@ -70,7 +70,9 @@ def check_topic(path, t):
                 if len(piece) < 4:
                     err(f"{rel}: questions[{i}] answers.{lv} 에 잘린 문장 조각 '{piece}' 이 있습니다 (a.m., Mr. 같은 약어 대신 'in the morning' 처럼 풀어 쓰세요)")
         ko = q.get("answersKo")
-        if ko is not None:
+        if ko is None:
+            err(f"{rel}: questions[{i}] answersKo(문장별 한글 해석) 누락")
+        else:
             for lv in ("IM3", "IH", "AL"):
                 n = len(split_sentences(ans.get(lv, "")))
                 arr = ko.get(lv)

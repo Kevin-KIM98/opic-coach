@@ -409,7 +409,7 @@ kbd { font-family: inherit; background: var(--surface-2); padding: 1px 6px; bord
 .pat-frame { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
 
 /* ---- 모범답안 한글 해석 ---- */
-.answer.with-ko .pair { margin-bottom: 10px; }
+.answer.with-ko .ans-pair { margin-bottom: 10px; }
 .answer.with-ko .sent { display: inline; }
 .answer .sent-ko { font-size: 13px; color: var(--muted); line-height: 1.5; margin-top: 2px; }
 .answer.ko-off .sent-ko { display: none; }
