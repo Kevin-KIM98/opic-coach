@@ -5,100 +5,29 @@
   "emoji": "🌳",
   "category": "survey",
   "priority": 5,
-  "intro": "설문에서 '공원 가기'를 고르면 자주 가는 공원 묘사 → 공원에서 하는 일·루틴 → 기억에 남는 공원 경험 → 어릴 때 공원과 지금 공원 비교가 거의 정해진 순서로 나옵니다. 혼자 사는 아파트에서 걸어서 5분 거리인 작은 동네 공원(퇴근 후 산책, 주말 벤치 독서)과 자전거로 10분인 한강공원(조깅, 피크닉) 두 곳을 고정해 두고 모든 질문에 재활용하세요. 비교 질문은 대전 본가 아파트 놀이터 옆 공원을 과거 장면으로 씁니다.",
+  "intro": "설문에서 '공원 가기'를 고르면 자주 가는 공원 묘사 → 공원에서 하는 일·루틴 → 기억에 남는 경험 → 어릴 적 공원과 지금 비교가 자주 출제됩니다. 분당 집에서 걸어서 15분 거리인 중앙공원 하나를 정해 두고, 주말 가족 산책·아이들 자전거·평일 저녁 혼자 걷는 휴식을 모든 질문에 연결하세요. 비교 질문은 '대전에서 자랄 때의 작은 흙 놀이터 vs 지금 분당의 큰 공원'으로 고정하면 쉽게 답할 수 있습니다.",
   "strategy": [
-    "답변 흐름: 'Oh, parks? Sure, I go to the park near my place all the time.' 같은 시작 문장 → 어디에 있는 어떤 공원인지 → 무엇이 보이는지(산책로, 나무, 벤치) → 왜 좋은지(조용함, 스트레스 해소) → 'Yeah, that's why I love going to the park.' 마무리 문장.",
-    "공원 묘사는 위치(집에서 걸어서 5분) → 크기 → 눈에 보이는 것 3가지(산책로·벤치·작은 놀이터) → 사람들(강아지 산책, 운동하는 사람) 순서로 공간을 훑듯이 말합니다.",
-    "루틴·경험 질문은 퇴근 후 산책, 주말 아이스 아메리카노 + 벤치 독서, 한강 조깅·피크닉처럼 페르소나 일상과 바로 연결합니다.",
-    "IH 이상은 대전 어린 시절 공원(모래 놀이터, 남동생 Junho) vs 지금 공원(산책로·운동기구·야간 조명·푸드트럭) 비교와 'clear my head' 같은 쉬운 관용 표현을 더합니다."
+    "답변 흐름: 'Oh, parks? Sure, let me tell you about my favorite one.' 같은 시작 문장 → 공원 이름·위치(집에서 걸어서 15분) → 모습(호수, 산책로, 나무, 잔디밭, 놀이터) → 거기서 느끼는 기분·이유 → 'Yeah, that's why I love going to the park.' 마무리 문장.",
+    "공원은 '분당 중앙공원' 하나로 고정: 주말 오후 가족 산책, 아이들 자전거, 평일 저녁 혼자 걷기로 묘사·루틴 질문을 모두 커버합니다. 아침 조깅은 탄천 산책로 이야기로 따로 두세요.",
+    "경험 질문은 2년 전 봄 벚꽃 피크닉 때 딸이 처음으로 혼자 자전거를 탄 날 하나로 준비: 언제·누구와 → 무슨 일 → 기억에 남는 순간 → 느낌.",
+    "비교 질문은 '어릴 적 대전의 작은 흙 놀이터 → 지금의 크고 깨끗한 공원' 차이 2~3개(크기·시설·이용하는 사람) + 이유로 답하고, used to / these days / compared to 를 활용합니다."
   ],
   "expressions": [
-    {
-      "en": "Oh, parks? Sure, I go to the park near my place all the time.",
-      "ko": "아, 공원이요? 네, 저는 집 근처 공원에 자주 가요.",
-      "level": "IM",
-      "note": "시작 문장: my place = 우리 집 (구어체로 자주 써요)"
-    },
-    {
-      "en": "There's a small park about five minutes from my apartment.",
-      "ko": "제 아파트에서 5분 정도 거리에 작은 공원이 있어요.",
-      "level": "IM",
-      "note": "There's ~ + 거리: 장소 묘사 첫 문장으로 최고"
-    },
-    {
-      "en": "There's a walking path that goes around the park.",
-      "ko": "공원을 한 바퀴 도는 산책로가 있어요.",
-      "level": "IM"
-    },
-    {
-      "en": "There are a lot of tall trees and benches.",
-      "ko": "키 큰 나무와 벤치가 많아요.",
-      "level": "IM"
-    },
-    {
-      "en": "Many people walk their dogs there in the evening.",
-      "ko": "저녁에는 많은 사람들이 거기서 강아지를 산책시켜요.",
-      "level": "IM",
-      "note": "walk one's dog: 개를 산책시키다"
-    },
-    {
-      "en": "I usually take a walk in the park after work.",
-      "ko": "저는 보통 퇴근 후 공원에서 산책을 해요.",
-      "level": "IM",
-      "note": "take a walk: 산책하다"
-    },
-    {
-      "en": "It's quiet and peaceful, so I can relax there.",
-      "ko": "조용하고 평화로워서 거기서 쉴 수 있어요.",
-      "level": "IM"
-    },
-    {
-      "en": "On weekends, I sit on a bench with an iced Americano and read a book.",
-      "ko": "주말에는 아이스 아메리카노를 들고 벤치에 앉아 책을 읽어요.",
-      "level": "IH"
-    },
-    {
-      "en": "Walking in the park helps me clear my head after a long day.",
-      "ko": "공원 산책은 긴 하루 뒤에 머리를 맑게 해 줘요.",
-      "level": "IH",
-      "note": "clear my head: 머리를 식히다, 생각을 정리하다"
-    },
-    {
-      "en": "The Han River park is only ten minutes away by bike.",
-      "ko": "한강공원은 자전거로 10분밖에 안 걸려요.",
-      "level": "IH",
-      "note": "~ minutes away by bike / subway: 교통수단별 거리"
-    },
-    {
-      "en": "All of a sudden, it started pouring, so we ran under the bridge.",
-      "ko": "갑자기 비가 쏟아져서 저희는 다리 밑으로 뛰어갔어요.",
-      "level": "IH",
-      "note": "All of a sudden: 경험 답변에서 반전 시작 신호"
-    },
-    {
-      "en": "When I was a kid, the park near our apartment only had a sandbox and some swings.",
-      "ko": "어렸을 때 우리 아파트 근처 공원에는 모래 놀이터와 그네 몇 개뿐이었어요.",
-      "level": "IH",
-      "note": "When I was a kid ~: 비교 질문의 과거 장면 시작"
-    },
-    {
-      "en": "It's my little escape from the busy city.",
-      "ko": "그곳은 바쁜 도시에서 벗어나는 저만의 작은 탈출구예요.",
-      "level": "AL",
-      "note": "escape를 명사로 써서 감정을 담은 묘사"
-    },
-    {
-      "en": "These days, parks are not just places for kids anymore.",
-      "ko": "요즘 공원은 더 이상 아이들만을 위한 곳이 아니에요.",
-      "level": "AL",
-      "note": "not just ~ anymore: 변화를 강조하는 비교 표현"
-    },
-    {
-      "en": "Yeah, that's why I love going to the park.",
-      "ko": "네, 그래서 저는 공원 가는 걸 좋아해요.",
-      "level": "IM",
-      "note": "마무리 문장: 주제 키워드를 넣어 깔끔하게 끝내세요."
-    }
+    {"en": "Oh, parks? Sure, let me tell you about my favorite one.", "ko": "아, 공원이요? 네, 제가 제일 좋아하는 공원에 대해 말씀드릴게요.", "level": "IM", "note": "시작 문장: 질문 키워드를 되받고 바로 '제일 좋아하는 곳' 하나로 좁히세요."},
+    {"en": "There's a big park near my apartment.", "ko": "우리 아파트 근처에 큰 공원이 있어요.", "level": "IM"},
+    {"en": "It's about a 15-minute walk from my place.", "ko": "우리 집에서 걸어서 15분 정도 걸려요.", "level": "IM", "note": "a 15-minute walk: 숫자-minute 는 단수로 써요."},
+    {"en": "It has a pond, walking trails, and lots of trees.", "ko": "호수랑 산책로, 그리고 나무가 많이 있어요.", "level": "IM"},
+    {"en": "We usually go there on weekend afternoons.", "ko": "우리는 보통 주말 오후에 거기에 가요.", "level": "IM"},
+    {"en": "My kids ride their bikes around the pond.", "ko": "우리 아이들은 호수 주변에서 자전거를 타요.", "level": "IM"},
+    {"en": "It's a great place to get some fresh air.", "ko": "바람 쐬기에 정말 좋은 곳이에요.", "level": "IM"},
+    {"en": "I take a walk there to clear my head after a long day.", "ko": "긴 하루를 보낸 후에 머리를 식히려고 거기서 산책해요.", "level": "IH", "note": "clear my head: 머리를 식히다"},
+    {"en": "In spring, the cherry blossoms are really beautiful.", "ko": "봄에는 벚꽃이 정말 예뻐요.", "level": "IH"},
+    {"en": "We sometimes bring a mat and have a picnic on the grass.", "ko": "가끔 돗자리를 가져가서 잔디밭에서 피크닉을 해요.", "level": "IH"},
+    {"en": "Compared to the parks I went to as a kid, parks today are much bigger and cleaner.", "ko": "제가 어릴 때 가던 공원에 비해, 요즘 공원은 훨씬 크고 깨끗해요.", "level": "IH", "note": "Compared to A, B is much + 비교급"},
+    {"en": "These days, people tend to use parks to exercise and relax.", "ko": "요즘 사람들은 운동하고 쉬려고 공원을 이용하는 경향이 있어요.", "level": "IH", "note": "tend to + 동사원형: ~하는 경향이 있다"},
+    {"en": "It's like a little getaway right in the middle of the city.", "ko": "도시 한가운데 있는 작은 휴양지 같아요.", "level": "AL", "note": "getaway: 잠깐 벗어나 쉬는 곳"},
+    {"en": "Watching my kids run around makes all my stress melt away.", "ko": "아이들이 뛰어노는 걸 보면 스트레스가 싹 녹아 없어져요.", "level": "AL", "note": "make + 목적어 + 동사원형, melt away: 서서히 사라지다"},
+    {"en": "Yeah, that's why I love going to the park.", "ko": "네, 그래서 저는 공원 가는 걸 정말 좋아해요.", "level": "IM", "note": "마무리 문장"}
   ],
   "questions": [
     {
@@ -107,30 +36,30 @@
       "en": "You indicated in the survey that you like going to parks. Tell me about a park you often go to. Where is it, and what does it look like?",
       "ko": "설문에서 공원 가는 것을 좋아한다고 하셨습니다. 자주 가는 공원에 대해 말해 주세요. 어디에 있고, 어떻게 생겼나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 위치(아파트에서 걸어서 5분) → 크기·모습(산책로, 나무, 벤치, 작은 놀이터) → 사람들 → 좋아하는 이유 → 마무리.",
-        "There is / There are 로 보이는 것을 하나씩 나열하면 묘사가 쉬워집니다. 3~4개면 충분해요.",
-        "IH 이상은 계절·시간대 모습(봄 벚꽃, 저녁 조명)과 감정('my little escape')을 더하세요."
+        "답변 흐름: 시작 문장 → 공원 이름·위치(분당 중앙공원, 집에서 걸어서 15분) → 모습(호수, 산책로, 나무, 잔디밭, 놀이터) → 계절 풍경 → 느낌 → 마무리.",
+        "묘사는 '가운데 → 주변 → 그 밖' 순서로 공간을 따라가면 길을 잃지 않습니다.",
+        "IH 이상은 봄 벚꽃·가을 단풍처럼 계절 변화를 한두 문장 더해 생생하게 만드세요."
       ],
       "answers": {
-        "IM3": "Oh, parks? Sure, I go to the park near my place all the time. There's a small park about five minutes from my apartment. It's in a quiet neighborhood. There's a walking path that goes around the park. There are a lot of tall trees and benches. There's also a small playground for kids. In the evening, many people walk their dogs there. It's quiet and peaceful, so I can relax there. Yeah, that's the park I often go to.",
-        "IH": "Oh, parks? Sure, I go to the park near my place all the time. The park I go to the most is a small neighborhood park about five minutes from my apartment. I live alone near my office in Seoul, and this park is right on my way home from the subway station. It's not very big, but it's really nice. There's a walking path that goes around the whole park, and there are tall trees on both sides. In the middle, there's a small playground and some exercise machines. There are also a lot of benches, so people can sit and rest. In spring, the trees are full of cherry blossoms, and it's really pretty. In the evening, many people walk their dogs or jog there. Yeah, that's the park I often go to.",
-        "AL": "Oh, parks? Sure, I go to the park near my place all the time, so I can tell you a lot about it. The one I go to the most is a small neighborhood park just five minutes from my apartment. I moved to this area three years ago when I started working, and honestly, this park was one of the reasons I chose my place. It's right between the subway station and my building, so I walk through it almost every day on my way home. It's not huge, but it's really well kept. There's a walking path that loops around the whole park, and it's lined with tall trees on both sides. In the middle, there's a little playground and some outdoor exercise machines, and there are wooden benches everywhere. In spring, the cherry blossoms are absolutely gorgeous, and at night, the soft streetlights make it feel really cozy. In the evening, you can see people walking their dogs, older couples taking a stroll, and office workers like me just trying to unwind. For me, it's my little escape from the busy city. If I want something bigger, the Han River park is only ten minutes away by bike. So yeah, that's the park I often go to."
+        "IM3": "Oh, parks? Sure, let me tell you about my favorite one. It's Jungang Park in Bundang. It's about a 15-minute walk from my apartment. It's a big park with a pond and a lot of trees. There are walking trails, a grass field, and a playground. It's always clean and quiet. When I walk there, I feel really relaxed. I go there almost every weekend with my family. Yeah, that's my favorite park.",
+        "IH": "Oh, parks? Sure, let me tell you about my favorite one. It's called Jungang Park, which means Central Park, and it's in the middle of Bundang. It's only about a 15-minute walk from my apartment, so it's easy to get to. The park is really big. In the middle, there's a large pond with ducks, and there are walking trails all around it. There are tall trees everywhere, so it's nice and shady in summer. There's also a big grass field where families have picnics, and a playground for kids. In spring, the cherry blossoms along the trails are beautiful, and in fall, the leaves turn red and yellow. What I like most is that it's peaceful, even though it's in the city. Yeah, that's the park I go to most often.",
+        "AL": "Oh, parks? Sure, let me tell you about my favorite one. It's Jungang Park, which means Central Park, and as the name suggests, it's right in the middle of Bundang. It's about a 15-minute walk from our apartment, so we go there all the time. The first thing you notice when you walk in is how green it is. There are tall trees everywhere, and in the middle of the park there's a big pond surrounded by walking trails. On sunny days, the water sparkles and you can see ducks floating around. There's also a wide grass field where families spread out mats for picnics, a playground that my daughter loves, and a small hill with a nice view of the neighborhood. The park changes a lot with the seasons. In spring, the trails are covered in cherry blossoms, and in fall, the whole place turns red and gold. Even in winter, it's nice to walk there when everything is covered in snow. Honestly, it feels like a little getaway right in the middle of the city. After a stressful week at work, just walking there helps me breathe again. So yeah, that's the park I go to most often."
       }
     },
     {
       "id": "park-routine",
       "type": "routine",
       "en": "What do you usually do when you go to the park? When do you usually go, and who do you go with?",
-      "ko": "공원에 가면 보통 무엇을 하나요? 주로 언제 가고, 누구와 함께 가나요?",
+      "ko": "공원에 가면 주로 무엇을 하나요? 보통 언제 가고, 누구와 함께 가나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제(평일 퇴근 후, 주말 오후) → 누구와(주로 혼자, 가끔 Minji·친구) → 무엇을(산책·음악, 벤치 독서, 한강 조깅) → 왜 좋은지 → 마무리.",
-        "평일 루틴과 주말 루틴을 나눠서 말하면 구조가 깔끔해지고 길이도 자연스럽게 늘어납니다.",
-        "IH 이상은 '주 3회 한강 조깅 30분', '근처 카페에서 아이스 아메리카노 사서 벤치 독서' 같은 숫자·구체적 디테일을 넣으세요."
+        "답변 흐름: 시작 문장 → 얼마나 자주·언제(주 2회, 주말 오후) → 누구와(가족 / 가끔 혼자) → 하는 일(산책, 아이들 자전거, 벤치에서 간식, 피크닉) → 이유 → 마무리.",
+        "First / Then / After that 으로 공원에서 하는 일을 순서대로 말하세요.",
+        "'평일 저녁엔 혼자 걸으며 머리를 식힌다'는 문장으로 회사 스트레스와 연결하면 IH 이상 답변이 됩니다."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about what I do at the park. I usually go to the park near my apartment after work. I go there about two or three times a week. I usually go alone. I take a walk for about thirty minutes and listen to music. On weekends, I sit on a bench and read a book. Sometimes my friends come, and we walk and talk together. Yeah, that's what I usually do at the park.",
-        "IH": "Okay, let me tell you about what I usually do at the park. On weekdays, I go to the small park near my apartment after work, about two or three times a week. I usually go alone. I put in my earbuds, listen to some ballads, and walk around the park for about thirty minutes. Walking in the park helps me clear my head after a long day of meetings. On weekends, I go in the afternoon. I buy an iced Americano at a café nearby, and then I sit on a bench and read a book. Sometimes my coworker Minji comes over, and we walk around the park and chat. Also, three times a week, I go jogging at the Han River park, which is ten minutes away by bike. Yeah, that's what I usually do at the park.",
-        "AL": "Okay, let me tell you about what I usually do at the park, because it's a big part of my routine. On weekdays, I usually stop by the small park near my apartment on my way home from work. I go there two or three times a week, usually around seven, and most of the time I go alone. I put in my earbuds, play some calm ballads, and walk around the park for about thirty minutes. After a whole day of back-to-back meetings, it really helps me clear my head, and by the time I get home, I feel like a different person. On weekends, my routine is a little more relaxing. I sleep in, grab an iced Americano from a café near the park, and then I find a shady bench and read a book for an hour or so. Every now and then, my coworker Minji comes over to my neighborhood, and we walk around the park and chat about everything except work, which is kind of our rule. On top of that, three times a week, I hop on my bike and ride ten minutes to the Han River park to go jogging. Watching the sunset over the river while I run is the best part. So yeah, that's what I usually do at the park."
+        "IM3": "Sure, let me tell you about what I do at the park. I usually go to the park on weekend afternoons. I go with my family. First, we take a walk around the pond. My kids ride their bikes. Then we sit on a bench and eat some snacks. Sometimes I go there alone on weekday evenings. It helps me relax. Yeah, that's what I usually do at the park.",
+        "IH": "Sure, let me tell you about what I usually do at the park. I go to Jungang Park about twice a week. On Saturday or Sunday afternoons, I usually go with my family. We walk there together, and it takes about 15 minutes. When we arrive, my kids ride their bikes along the trail around the pond, and we walk behind them. After that, we sit on a bench and have some snacks or ice cream. When the weather is nice, we bring a mat and have a little picnic on the grass. Sometimes I also go there alone on a weekday evening after dinner. I walk slowly and listen to music, and it helps me clear my head after a long day of meetings. Yeah, that's pretty much what I do at the park.",
+        "AL": "Sure, let me tell you about what I usually do at the park, because it's a big part of our weekend. I go to Jungang Park about twice a week. The main visit is on Saturday or Sunday afternoon with my family. We walk there together, and by the time we arrive, the kids are already racing ahead on their bikes. While they ride around the pond, the rest of us take a slow walk and catch up on the week. After about an hour, we grab some ice cream from the convenience store near the entrance and sit on our favorite bench by the water. When the weather is really nice, we pack sandwiches and a mat and have a picnic on the grass, and my son usually ends up playing catch with me until we're both out of breath. On top of that, I sometimes go there alone on a weekday evening after dinner. I put on my earbuds, walk around the pond a few times, and let my mind go blank. After a day full of meetings and code reviews, it's the best way to recharge. So yeah, that's what I usually do at the park."
       }
     },
     {
@@ -139,108 +68,48 @@
       "en": "Tell me about a memorable experience you had at a park. When was it, who were you with, what happened, and why do you still remember it?",
       "ko": "공원에서 있었던 기억에 남는 경험에 대해 말해 주세요. 언제였고, 누구와 함께 있었으며, 무슨 일이 있었고, 왜 아직도 기억하나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제·어디서·누구와(작년 봄, 한강공원, Minji와 대학 친구들) → 처음 상황(치킨 배달 피크닉) → 사건(갑자기 소나기, 다리 밑으로 대피) → 결말·느낌 → 마무리.",
-        "'All of a sudden ~'으로 반전을 시작하면 이야기에 긴장감이 생깁니다. 과거시제를 끝까지 유지하세요.",
-        "IH 이상은 대사 한 줄(작은따옴표)과 '왜 아직 기억하는지' 이유를 꼭 넣으세요."
+        "답변 흐름: 시작 문장 → 언제·누구와(2년 전 봄, 가족 벚꽃 피크닉) → 무슨 일(딸이 보조바퀴 없이 자전거 연습) → 결정적 순간(몰래 손을 놓았는데 혼자 탐) → 느낌 → 마무리.",
+        "넘어지고 다시 일어나는 과정을 2~3문장으로 보여 주면 결말이 더 감동적으로 들립니다.",
+        "AL은 'to my surprise', 'Dad, look at me!' 같은 직접 인용으로 장면을 생생하게 만드세요."
       ],
       "answers": {
-        "IM3": "Oh, a memorable experience? Let me think. Last spring, I went to the Han River park with Minji and some friends. We had a picnic on the grass. We ordered fried chicken, and it was delivered right to the park. But all of a sudden, it started raining. We grabbed our food and ran under the bridge. We were all wet, but we laughed a lot. Then the rain stopped, and we saw a beautiful sunset. Yeah, that's my most memorable day at the park.",
-        "IH": "Oh, a memorable experience? Let me think. I remember one day really clearly. It was last spring, on a Saturday. My coworker Minji and two of my college friends came to my neighborhood, and we went to the Han River park for a picnic. We set up a mat on the grass, and we ordered fried chicken. It's amazing that you can get food delivered right to the park in Korea. Everything was perfect at first. But all of a sudden, the sky got dark, and it started pouring. We grabbed the chicken and ran under the bridge. We were completely soaked, but we couldn't stop laughing. After about twenty minutes, the rain stopped, and we saw a beautiful sunset over the river. I still remember it because it was such a fun surprise. Yeah, that's my most memorable day at the park.",
-        "AL": "Oh, a memorable experience? Let me think. Actually, there's one day I'll never forget. It was last spring, on a sunny Saturday afternoon. My coworker Minji and two of my college friends came over to my neighborhood, and we decided to have a picnic at the Han River park. We rode bikes there, spread out a mat on the grass, and ordered fried chicken. If you've never tried it, getting chicken delivered right to the riverside is one of the best things about living in Seoul. Everything was perfect. We were eating, chatting, and complaining about our bosses. But then, all of a sudden, the sky turned dark gray, and it started pouring. We grabbed the chicken boxes and sprinted to the bridge as fast as we could. By the time we got there, we were soaked from head to toe, and one of my friends said, 'Well, at least the chicken is safe.' We all burst out laughing, and we just ate the rest of the chicken under the bridge. About twenty minutes later, the rain stopped, and the sky turned pink and orange. It was one of the most beautiful sunsets I've ever seen. I still remember that day because, even though nothing went as planned, it turned out to be perfect. So yeah, that's my most memorable day at the park."
+        "IM3": "Oh, a memorable experience? Let me think. Two years ago in spring, my family went to Jungang Park. The cherry blossoms were beautiful. That day, my daughter was learning to ride a bike. I held the back of her bike and ran with her. Then I let go, and she rode all by herself! She was so happy, and so was I. We bought ice cream to celebrate. Yeah, that's a day I'll never forget.",
+        "IH": "Oh, a memorable experience? Let me think. I remember one time when my daughter learned to ride a bike at Jungang Park. It was two years ago in spring, and the cherry blossoms were everywhere. The four of us went there for a picnic. After lunch, my daughter wanted to try riding her bike without training wheels. She was a little scared, so I held the back of her seat and ran along with her. We tried again and again, and she fell a few times. Then, after about an hour, I let go without telling her, and she rode all the way down the trail by herself. Some people around us clapped for her. She had the biggest smile on her face. Yeah, that's why I still remember that day.",
+        "AL": "Oh, a memorable experience? Let me think. Actually, there's one day I'll never forget. It was two springs ago, when the cherry blossoms were in full bloom. The four of us packed some kimbap and went to Jungang Park for a picnic. After lunch, my daughter announced that she was ready to ride her bike without training wheels. She was only eight, and she was pretty nervous, so I held on to the back of her seat and jogged next to her. It was harder than I thought. She wobbled, fell over a few times, and even cried once, but she kept getting back on. Then, after about an hour, I quietly let go, and to my surprise, she just kept pedaling all the way down the trail under the cherry trees. When she realized I wasn't holding on, she screamed, 'Dad, look at me!' A few people walking by actually clapped for her. My son, who usually teases her, cheered the loudest. I was out of breath and sweating, but I felt so proud. So yeah, that's why that day at the park still means so much to me."
       }
     },
     {
       "id": "park-compare",
       "type": "comparison",
       "en": "How are parks today different from the parks you went to when you were a child? What has changed?",
-      "ko": "요즘 공원은 어렸을 때 갔던 공원과 어떻게 다른가요? 무엇이 변했나요?",
+      "ko": "요즘 공원은 어렸을 때 가던 공원과 어떻게 다른가요? 무엇이 바뀌었나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 과거(대전 본가 아파트 옆 작은 공원, 모래 놀이터·그네, 남동생 Junho와 놀기) → 현재(넓은 산책로, 운동기구, 야간 조명, 푸드트럭·행사) → 변화에 대한 내 생각 → 마무리.",
-        "과거는 used to / back then, 현재는 these days / now 로 확실히 나누고, bigger / cleaner / safer 같은 비교급을 쓰세요.",
-        "IH 이상은 '공원 이용자가 아이들 → 모든 연령'으로 바뀌었다는 큰 변화 하나와 이유를 덧붙이면 좋습니다."
+        "답변 흐름: 시작 문장 → 어릴 적 대전의 공원(작은 흙 놀이터, 모래밭, 그네) → 지금 분당의 공원(호수, 산책로, 자전거 도로, 운동기구) → 이용하는 사람의 변화 → 이유 → 마무리.",
+        "차이는 크기·시설·이용하는 사람 세 가지만 골라 Compared to ~, Another difference is ~ 로 연결하세요.",
+        "고난도로 이어지면 '건강과 삶의 질에 관심이 커졌다'는 이유 한 문장을 덧붙이면 됩니다."
       ],
       "answers": {
-        "IM3": "Oh, that's a good question. Let me think. When I was a kid, I lived with my family in Daejeon. There was a small park near our apartment. It only had a sandbox and some swings. I used to play there with my little brother Junho. But parks today are much bigger and cleaner. They have nice walking paths and exercise machines. They also have lights at night, so they're safer. Yeah, parks have changed a lot.",
-        "IH": "Oh, that's a good question. Let me think. Parks have changed a lot since I was a kid. When I was young, I lived with my family in an old apartment in Daejeon. There was a small park right next to our building, but it was pretty simple. It only had a sandbox, a slide, and some swings. After school, I used to play there with my little brother Junho until my mom called us for dinner. Back then, parks were mostly for kids. But these days, parks are much bigger and nicer. The park near my apartment in Seoul has a long walking path, outdoor exercise machines, and lots of benches. They also have bright lights at night, so I feel safe walking there alone after work. Now, people of all ages use parks to exercise and relax. Yeah, that's how parks have changed.",
-        "AL": "Oh, that's a good question. Let me think. I'd say parks have changed a lot since I was a kid. When I was little, I lived with my family in an old apartment in Daejeon, and there was a tiny park right next to our building. Honestly, it was nothing special. It had a sandbox, a rusty slide, and a couple of swings, and that was pretty much it. Still, my little brother Junho and I used to play there every day after school until our mom yelled at us to come home for dinner. Back then, parks were mostly for kids, and adults just sat on the benches and watched. These days, though, parks are not just places for kids anymore. The park near my apartment in Seoul has a long walking path, outdoor exercise machines, and even a small stage for events. The Han River park is on a whole different level. There are bike paths, food trucks, and festivals on weekends. Another big change is safety. Parks today are well lit at night, so as someone who lives alone, I feel totally comfortable taking a walk there after work. I think it's a great change, because now everyone, from kids to office workers like me, can enjoy them. So yeah, that's how parks have changed."
+        "IM3": "Okay, let me compare them. When I was a kid, I lived in Daejeon. The park near my house was very small. It just had a sandbox and a few swings. Back then, only kids played there. Now, the parks in Bundang are much bigger and cleaner. They have walking trails, bike paths, and exercise machines. Also, many adults go to parks to exercise. I think parks are much better now. Yeah, that's how parks have changed.",
+        "IH": "Okay, let me compare them. I grew up in Daejeon, and the park near my house was really small. It was basically a playground with a sandbox, a slide, and a few old swings. There weren't many trees, and it got really dusty when it was windy. Compared to that, the parks I go to now are much bigger and cleaner. Jungang Park has a pond, long walking trails, bike paths, and even outdoor exercise machines. Another big difference is who uses the parks. Back then, parks were mostly for kids. These days, people of all ages use them. Older people take walks, young couples have picnics, and many people jog or walk their dogs. I think it's because people care more about their health now. Yeah, that's how parks have changed.",
+        "AL": "Okay, let me compare them, because the difference is pretty huge. I grew up in Daejeon in the 80s, and the park near my house was tiny. It was basically a dirt playground with a sandbox, a metal slide that got burning hot in summer, and a couple of squeaky swings. There were hardly any trees, so whenever it was windy, we came home covered in dust. Still, my friends and I played there every day until our parents called us home for dinner. Compared to that, the parks my kids go to today are on a whole different level. Jungang Park has a big pond, long walking trails, bike lanes, clean restrooms, and even outdoor exercise machines. Another big change is who uses them, and when. Back then, parks were mainly for kids, but these days, people tend to use parks to exercise and relax. You see grandparents walking, people jogging, and lots of families walking their dogs, even late in the evening. I think this change is because people care a lot more about their health and quality of life now. So yeah, parks have really changed for the better."
       }
     }
   ],
   "pronunciation": [
-    {
-      "word": "park",
-      "ipa": "/pɑːrk/",
-      "tip": "'파크'가 아니라 입을 크게 벌린 '파-r크'. 모음 뒤에 혀를 살짝 말아 r을 넣고, 끝 k는 짧게 끊으세요."
-    },
-    {
-      "word": "bench",
-      "ipa": "/bentʃ/",
-      "tip": "'벤치'의 '치'를 길게 끌지 말고 '벤ㅊ'처럼 짧게 끝냅니다."
-    },
-    {
-      "word": "path",
-      "ipa": "/pæθ/",
-      "tip": "'패스'가 아니라 끝에 th(θ). 혀끝을 이 사이에 살짝 물고 바람만 내보내세요."
-    },
-    {
-      "word": "playground",
-      "ipa": "/ˈpleɪɡraʊnd/",
-      "tip": "강세는 'play'. 'ground'의 gr은 모음 없이 바로 붙여서 '플레이그롸운드'처럼 말합니다."
-    },
-    {
-      "word": "stroll",
-      "ipa": "/stroʊl/",
-      "tip": "'스트롤'처럼 모음을 넣지 말고 s-t-r을 한 번에. 끝 l은 혀를 윗잇몸에 대며 '오울'로 마무리하세요."
-    }
+    {"word": "pond", "ipa": "/pɑːnd/", "tip": "입을 크게 벌린 '아' 소리로 '판드'처럼 발음하세요. '폰드'처럼 '오'로 읽지 않도록 주의합니다."},
+    {"word": "trail", "ipa": "/treɪl/", "tip": "tr은 '츄'에 가깝게 시작하고, 끝의 l은 혀끝을 윗잇몸에 대며 '츄레이얼'처럼 마무리하세요."},
+    {"word": "picnic", "ipa": "/ˈpɪknɪk/", "tip": "강세는 첫 음절 'pic'. '피크닉'의 '크'를 거의 빼고 '픽닉'처럼 짧게 말하세요."},
+    {"word": "playground", "ipa": "/ˈpleɪɡraʊnd/", "tip": "강세는 'play'. 'ground'는 '그라운드'를 한 박자로 빠르게, 끝 d는 살짝만 내세요."},
+    {"word": "cherry blossom", "ipa": "/ˈtʃeri ˈblɑːsəm/", "tip": "cherry는 '체리', blossom은 강세를 첫 음절에 두고 '블라썸'처럼 발음하세요."}
   ],
   "patterns": [
-    {
-      "pid": "place#1",
-      "en": "There's a small neighborhood park near my place.",
-      "ko": "저희 집 근처에 작은 동네 공원이 있어요.",
-      "q": "park-describe"
-    },
-    {
-      "pid": "place#2",
-      "en": "It's only a five-minute walk from my house.",
-      "ko": "집에서 걸어서 5분밖에 안 걸려요.",
-      "q": "park-describe"
-    },
-    {
-      "pid": "describe#0",
-      "en": "It's a quiet place with a walking path, tall trees, and lots of benches.",
-      "ko": "산책로와 키 큰 나무들, 벤치가 많은 조용한 곳이에요.",
-      "q": "park-describe"
-    },
-    {
-      "pid": "routine#0",
-      "en": "I walk around the park after work about two or three times a week.",
-      "ko": "저는 일주일에 두세 번 정도 퇴근 후에 공원을 걸어요.",
-      "q": "park-routine"
-    },
-    {
-      "pid": "reason#2",
-      "en": "It helps me clear my head after a long day of meetings.",
-      "ko": "하루 종일 회의를 하고 나서 머리를 식히는 데 도움이 돼요.",
-      "q": "park-routine"
-    },
-    {
-      "pid": "memory#0",
-      "en": "I remember one time when it suddenly started pouring during our picnic at the Han River park.",
-      "ko": "한강공원에서 피크닉을 하던 중에 갑자기 비가 쏟아졌던 때가 기억나요.",
-      "q": "park-experience"
-    },
-    {
-      "pid": "change#1",
-      "en": "Compared to the tiny park in Daejeon, the park near my apartment is much bigger and nicer.",
-      "ko": "대전의 작은 공원에 비해, 우리 아파트 근처 공원은 훨씬 크고 좋아요.",
-      "q": "park-compare"
-    },
-    {
-      "pid": "change#2",
-      "en": "These days, people tend to use parks to exercise and relax, not just to let kids play.",
-      "ko": "요즘 사람들은 아이들 놀이뿐 아니라 운동하고 쉬려고 공원을 이용하는 경향이 있어요.",
-      "q": "park-compare"
-    }
+    {"pid": "place#1", "en": "There's a big park called Jungang Park near my place.", "ko": "우리 집 근처에 중앙공원이라는 큰 공원이 있어요.", "q": "park-describe"},
+    {"pid": "place#2", "en": "It's only a 15-minute walk from my house.", "ko": "집에서 걸어서 15분밖에 안 걸려요.", "q": "park-describe"},
+    {"pid": "describe#0", "en": "It's a big place with a pond, walking trails, and lots of tall trees.", "ko": "호수와 산책로, 키 큰 나무가 많은 넓은 곳이에요.", "q": "park-describe"},
+    {"pid": "people#0", "en": "I usually go to the park with my family on weekend afternoons.", "ko": "저는 보통 주말 오후에 가족과 함께 공원에 가요.", "q": "park-routine"},
+    {"pid": "reason#2", "en": "It helps me clear my head after a long day of meetings.", "ko": "하루 종일 회의를 하고 나서 머리를 식히는 데 도움이 돼요.", "q": "park-routine"},
+    {"pid": "memory#0", "en": "I remember one time when my daughter learned to ride a bike at the park.", "ko": "딸이 공원에서 자전거 타는 법을 배웠던 때가 기억나요.", "q": "park-experience"},
+    {"pid": "change#1", "en": "Compared to the tiny park in Daejeon, Jungang Park is much bigger and cleaner.", "ko": "대전의 작은 공원에 비해, 중앙공원은 훨씬 크고 깨끗해요.", "q": "park-compare"},
+    {"pid": "change#5", "en": "I think this change is because of people's growing interest in health.", "ko": "이런 변화는 건강에 대한 사람들의 관심이 커졌기 때문이라고 생각해요.", "q": "park-compare"}
   ]
 }

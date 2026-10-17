@@ -5,12 +5,12 @@
   "emoji": "🏃",
   "category": "survey",
   "priority": 6,
-  "intro": "'걷기·조깅'은 조깅 장소 묘사 → 조깅 루틴 → 처음 시작한 계기나 기억에 남는 경험 → 예전과 지금의 변화 비교 순서로 출제됩니다. 페르소나는 IT 회사 마케팅팀 4년차 직장인으로, 퇴근 후 일주일에 세 번 집에서 자전거로 10분 거리의 한강에서 30분씩 뛰며 회사 스트레스를 풉니다. '한강 코스'와 '하루 종일 앉아서 회의만 하다가 머리를 식힌다'는 이유 하나만 정해 두면 네 문제 모두 같은 이야기로 연결됩니다.",
+  "intro": "'걷기·조깅'은 조깅 장소 묘사 → 조깅 루틴 → 처음 시작한 계기 → 예전과 지금의 변화 비교 순서로 자주 출제됩니다. 페르소나는 분당에서 가족과 함께 사는 20년차 개발팀 리드로, 일주일에 세 번 아침 6시 반에 아파트에서 걸어서 5분 거리인 탄천 산책로를 30분씩 뜁니다. '탄천 산책로'와 '6년 전 건강검진 후 동료 Minho와 시작' 이야기 하나만 정해 두면 네 문제 모두 같은 스토리로 연결됩니다.",
   "strategy": [
-    "답변 흐름: 시작 문장(Oh, jogging? Sure, I'd love to talk about it.) → 기본 정보(어디서·얼마나 자주) → 세부(코스·준비·뛴 후) → 느낌·이유(회사 스트레스 해소) → 마무리 문장(So yeah, that's my jogging routine.)",
-    "장소는 항상 '혼자 사는 아파트에서 자전거로 10분 거리의 한강 산책로' 하나로 고정하세요. 평평한 길, 강 경치, 저녁 불빛 같은 쉬운 묘사 3개면 충분합니다.",
-    "루틴은 퇴근(get off work at six) → 집에서 옷 갈아입기 → 스트레칭·이어폰 → 30분 뛰기 → 집에 와서 샤워 순서로 시간 흐름을 따라가면 막히지 않습니다.",
-    "경험·비교 질문은 '입사 1년 차, 하루 종일 앉아 있어서 몸이 무겁고 스트레스가 쌓여 시작 → 처음엔 10분도 힘들었음 → 지금은 30분 거뜬' 이야기 하나로 둘 다 답할 수 있습니다."
+    "답변 흐름: 시작 문장(Oh, jogging? Sure, I'd love to talk about it.) → 기본 정보(어디서·얼마나 자주) → 세부(코스·준비·뛴 후) → 느낌·이유(출근 전 머리 식히기, 건강) → 마무리 문장(So yeah, that's pretty much my jogging routine.)",
+    "장소는 항상 '아파트에서 걸어서 5분 거리의 탄천 산책로' 하나로 고정하세요. 넓고 평평한 길, 옆을 흐르는 개울, 나무와 벚꽃 같은 쉬운 묘사 3개면 충분합니다.",
+    "루틴은 6시 기상 → 물 한 잔·옷 갈아입기 → 5분 스트레칭 → 탄천 30분 조깅 → 집에서 샤워 → 가족과 아침 식사 순서로 시간 흐름을 따라가면 막히지 않습니다.",
+    "경험·비교 질문은 '6년 전 큰 프로젝트로 하루 종일 앉아 있다가 건강검진에서 혈압 경고 → Minho와 첫 조깅, 10분 만에 숨이 참 → 1년 뒤 10K 완주 → 지금은 30분 거뜬' 이야기 하나로 둘 다 답할 수 있습니다."
   ],
   "expressions": [
     {
@@ -20,85 +20,87 @@
       "note": "주제 시작 문장: 질문 키워드를 한 번 되묻고 시작"
     },
     {
-      "en": "I go jogging three times a week after work.",
-      "ko": "저는 일주일에 세 번 퇴근 후에 조깅해요.",
+      "en": "I go jogging about three times a week.",
+      "ko": "저는 일주일에 세 번 정도 조깅해요.",
       "level": "IM",
-      "note": "go + -ing: 운동·여가 활동 / after work: 퇴근 후"
+      "note": "go + -ing: 운동·여가 활동 / 빈도는 문장 끝에"
     },
     {
-      "en": "I usually jog along the Han River.",
-      "ko": "저는 보통 한강을 따라 조깅해요.",
+      "en": "I usually jog along the Tancheon trail.",
+      "ko": "저는 보통 탄천 산책로를 따라 조깅해요.",
       "level": "IM",
       "note": "along + 장소: ~을 따라"
     },
     {
-      "en": "It takes about ten minutes by bike from my apartment.",
-      "ko": "우리 아파트에서 자전거로 10분 정도 걸려요.",
+      "en": "It's only a five-minute walk from my apartment.",
+      "ko": "우리 아파트에서 걸어서 5분밖에 안 걸려요.",
       "level": "IM",
-      "note": "It takes + 시간 + by 교통수단"
+      "note": "five-minute는 형용사라 minute에 s를 붙이지 않아요"
     },
     {
-      "en": "I run for about 30 minutes.",
-      "ko": "30분 정도 뛰어요.",
-      "level": "IM"
-    },
-    {
-      "en": "Before I run, I always stretch a little.",
-      "ko": "뛰기 전에 항상 스트레칭을 조금 해요.",
-      "level": "IM"
-    },
-    {
-      "en": "I listen to K-pop with my earphones while I run.",
-      "ko": "뛰는 동안 이어폰으로 K-pop을 들어요.",
+      "en": "I always stretch before I go out.",
+      "ko": "나가기 전에 항상 스트레칭을 해요.",
       "level": "IM",
-      "note": "while + 주어 + 동사: ~하는 동안"
+      "note": "always는 일반동사 앞에"
     },
     {
-      "en": "I feel so refreshed after a run.",
-      "ko": "뛰고 나면 정말 상쾌해요.",
+      "en": "I was out of breath after just ten minutes.",
+      "ko": "겨우 10분 만에 숨이 찼어요.",
       "level": "IM",
-      "note": "refreshed: 사람 주어 + 기분"
-    },
-    {
-      "en": "I sit in front of my computer all day, so I really need to move in the evening.",
-      "ko": "하루 종일 컴퓨터 앞에 앉아 있어서 저녁엔 정말 몸을 움직여야 해요.",
-      "level": "IH",
-      "note": "직장인 이유 문장: all day → so → need to"
-    },
-    {
-      "en": "Jogging is the best way for me to get rid of stress from work.",
-      "ko": "조깅은 저한테 회사 스트레스를 푸는 가장 좋은 방법이에요.",
-      "level": "IH",
-      "note": "the best way to + 동사 / get rid of: ~을 없애다"
-    },
-    {
-      "en": "At first, I couldn't even run for ten minutes.",
-      "ko": "처음엔 10분도 못 뛰었어요.",
-      "level": "IH",
-      "note": "경험·비교 질문의 '처음' 문장. even으로 강조"
-    },
-    {
-      "en": "I was completely out of breath.",
-      "ko": "완전히 숨이 찼어요.",
-      "level": "IH",
       "note": "out of breath: 숨이 찬"
     },
     {
-      "en": "These days, running 30 minutes is no big deal for me.",
-      "ko": "요즘은 30분 뛰는 게 저한테 별일 아니에요.",
+      "en": "I feel much healthier than before.",
+      "ko": "예전보다 훨씬 건강해진 느낌이에요.",
+      "level": "IM",
+      "note": "much + 비교급: 훨씬 더 ~한"
+    },
+    {
+      "en": "The path is wide and flat, so it's easy on my knees.",
+      "ko": "길이 넓고 평평해서 무릎에 부담이 없어요.",
       "level": "IH",
-      "note": "no big deal: 별것 아닌 일 → 변화 강조"
+      "note": "be easy on ~: ~에 무리가 덜 가다"
     },
     {
-      "en": "Once I start running, all my worries just seem to disappear.",
-      "ko": "일단 뛰기 시작하면 걱정이 그냥 다 사라지는 것 같아요.",
-      "level": "AL",
-      "note": "Once + 주어 + 동사: 일단 ~하면 / seem to + 동사"
+      "en": "My doctor told me I needed more exercise.",
+      "ko": "의사가 운동을 더 해야 한다고 했어요.",
+      "level": "IH",
+      "note": "told me (that) + 과거 시제: 간접화법 시제 일치"
     },
     {
-      "en": "So yeah, that's pretty much how jogging became a big part of my life.",
-      "ko": "그래서 네, 그렇게 조깅이 제 삶의 큰 부분이 됐어요.",
+      "en": "My smartwatch keeps track of my distance and heart rate.",
+      "ko": "스마트워치가 거리와 심박수를 기록해 줘요.",
+      "level": "IH",
+      "note": "keep track of ~: ~을 계속 기록·파악하다"
+    },
+    {
+      "en": "Little by little, I got better.",
+      "ko": "조금씩 실력이 늘었어요.",
+      "level": "IH",
+      "note": "little by little: 조금씩, 점차"
+    },
+    {
+      "en": "It really helps me clear my head before a busy day.",
+      "ko": "바쁜 하루 전에 머리를 맑게 하는 데 정말 도움이 돼요.",
+      "level": "IH",
+      "note": "help + 사람 + 동사원형 / clear my head: 머리를 식히다"
+    },
+    {
+      "en": "I try to get out of bed before I can talk myself out of it.",
+      "ko": "안 나갈 핑계를 만들기 전에 얼른 침대에서 일어나려고 해요.",
       "level": "AL",
+      "note": "talk oneself out of ~: 스스로 설득해서 ~을 그만두다"
+    },
+    {
+      "en": "Ever since then, I've been hooked.",
+      "ko": "그때부터 완전히 빠져 버렸어요.",
+      "level": "AL",
+      "note": "be hooked: ~에 푹 빠지다 / ever since then + 현재완료"
+    },
+    {
+      "en": "So yeah, that's pretty much my jogging routine.",
+      "ko": "네, 제 조깅 루틴은 대충 이래요.",
+      "level": "IM",
       "note": "마무리 문장: So yeah, that's pretty much ~"
     }
   ],
@@ -109,14 +111,14 @@
       "en": "You indicated in the survey that you go walking or jogging. Where do you usually go? Describe the place for me in as much detail as possible.",
       "ko": "설문에서 걷기나 조깅을 한다고 하셨네요. 보통 어디로 가나요? 그 장소를 최대한 자세히 묘사해 주세요.",
       "tips": [
-        "답변 흐름: 시작 문장 → 장소(한강, 아파트에서 자전거 10분) → 길과 풍경 묘사 → 왜 좋은지(퇴근 후 머리 식히기) → 'Yeah, that's ~' 마무리",
-        "flat, wide, quiet, pretty 같은 쉬운 형용사 3~4개면 충분해요",
-        "저녁 풍경(sunset, city lights)을 한 문장 넣으면 장면이 생생해져요"
+        "답변 흐름: 시작 문장 → 장소(탄천 산책로, 아파트에서 걸어서 5분) → 길·개울·나무 묘사 → 좋은 이유(출근 전 머리 식히기) → 'Yeah, that's ~' 마무리",
+        "wide, flat, quiet, pretty 같은 쉬운 형용사 3~4개면 충분해요",
+        "이른 아침 풍경(fresh air, sunrise)이나 봄 벚꽃을 한 문장 넣으면 장면이 생생해져요"
       ],
       "answers": {
-        "IM3": "Oh, jogging? Sure, let me tell you about my favorite place. I usually jog along the Han River. It takes about ten minutes by bike from my apartment. There is a long path next to the river. The path is flat and wide, so it's easy to run. There are trees and benches along the way. I usually go there after work, so it's already dark. I can see the city lights on the water, and it's really pretty. Yeah, that's my favorite place to jog.",
-        "IH": "Oh, jogging? Sure, I'd love to talk about it. I usually jog along the Han River, which is about ten minutes from my apartment by bike. There's a long path right next to the river, and it's really flat and wide, so it's perfect for running. On one side, you can see the water, and on the other side, there are trees, benches, and a few convenience stores. Since I go there after work, it's usually around seven or eight when I get there. At that time, the bridges are lit up and the city lights shine on the water. It's honestly so pretty. There are a lot of people jogging, walking their dogs, or riding bikes, so it feels lively but not too crowded. After sitting in the office all day, it's the perfect place to clear my head. Yeah, that's my favorite place to jog.",
-        "AL": "Oh, jogging? Sure, I'd love to talk about it, because it's honestly one of my favorite parts of the week. I usually jog along the Han River, which is only about ten minutes from my apartment by bike. That's actually one of the reasons I like living in this area. There's a long path that runs right along the river, and it's flat, wide, and really well taken care of, so even beginners can run there comfortably. On one side, there's the river, and on the other side, there are rows of trees, benches, and a few little convenience stores where people grab a drink. Since I go after work, I usually get there when it's already getting dark. The bridges light up in different colors, and the city lights sparkle on the water. It looks like a postcard, to be honest. There are always people around, like joggers, couples taking a walk, and people walking their dogs, so it feels lively, but it never feels too crowded. After a long day of meetings, just being there helps me breathe again. So yeah, that's pretty much my favorite place in the whole city to jog."
+        "IM3": "Oh, jogging? Sure, I'd love to talk about it. I usually go jogging on the Tancheon trail. It's only about five minutes from my apartment in Bundang. The trail is long and flat, and there's a small stream right next to it. There are lots of trees, so it's really pretty, especially in the spring. In the early morning, it's quiet and the air is fresh. I really like jogging there because it helps me clear my head before work. Yeah, that's my favorite place to jog.",
+        "IH": "Sure, I'd love to talk about where I go jogging. I really enjoy jogging along the Tancheon trail in my free time. My favorite place to jog is the Tancheon trail near my apartment. It's a long path along a stream, and it's only a five-minute walk from my home. It's a peaceful place with a small stream and lots of trees. The path is wide and flat, so it's easy on my knees. In the spring, cherry blossoms line the path, and it looks amazing. I usually go there around six thirty in the morning, so it's pretty quiet. I just see a few people walking their dogs or older people doing exercises. There are also benches and some outdoor exercise machines along the way. Whenever I jog there, I feel calm and ready for a busy day at work. So yeah, that's the place where I go jogging.",
+        "AL": "Oh, jogging? Let me think. Well, I'm lucky because one of the best jogging spots in the area is right near my home. It's called the Tancheon trail, and it runs along a stream that goes through Bundang. From my apartment, it's only about a five-minute walk, so I really have no excuse not to go. The trail is wide and flat, and it's split into two lanes, one for bikes and one for people walking or jogging. On one side, you can see the stream, and if you're lucky, you might even spot some ducks or a big white heron standing in the water. On the other side, there are tall trees and flower beds. In the spring, the whole path is covered with cherry blossoms, and in the fall, the leaves turn yellow and red. Since I go out at six thirty in the morning, the air is cool and fresh, and it's peaceful, with just a few early birds like me. Honestly, there's nothing better than jogging there while the sun comes up. It's the one time of day that feels like it's just for me, before the meetings and messages start. So yeah, that's pretty much my favorite place in the whole neighborhood."
       }
     },
     {
@@ -125,14 +127,14 @@
       "en": "Tell me about your typical walking or jogging routine. How often do you go, what do you do before and after, and what do you bring with you?",
       "ko": "평소 걷기나 조깅 루틴에 대해 말해 주세요. 얼마나 자주 가고, 전후에 무엇을 하며, 무엇을 가지고 가나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 빈도(주 3회, 퇴근 후) → 준비(옷 갈아입기, 스트레칭, 이어폰) → 30분 뛰기 → 귀가 후 샤워 → 마무리 문장",
-        "First, Then, After that, When I get home 같은 순서 표현으로 시간 흐름을 보여 주세요",
-        "가지고 가는 것은 phone, earphones, a water bottle 세 개면 충분해요"
+        "답변 흐름: 시작 문장 → 빈도·시간(주 3회, 아침 6시 반) → 나가기 전 준비·챙기는 것 → 30분 조깅 → 다녀온 후(샤워, 가족과 아침) → 'Yeah, that's ~' 마무리",
+        "First, Then, After that 같은 순서 표현으로 시간 흐름을 따라가세요",
+        "챙기는 물건은 phone, earphones, smartwatch, a bottle of water 정도의 쉬운 단어로"
       ],
       "answers": {
-        "IM3": "Sure, let me tell you about my jogging routine. I go jogging three times a week after work. I get off work at six and go home first. Then I change into comfortable clothes and ride my bike to the Han River. Before I run, I always stretch a little. I bring my phone, my earphones, and a water bottle. I listen to K-pop while I run for about 30 minutes. When I get home, I take a shower. I feel so refreshed. Yeah, that's my jogging routine.",
-        "IH": "Sure, I'd love to talk about my jogging routine. I usually go jogging three times a week, on Monday, Wednesday, and Friday evenings. I get off work at six, and since my office is only fifteen minutes away by subway, I'm home pretty early. First, I change into my running clothes and grab my phone, my earphones, and a small water bottle. Then I ride my bike to the Han River, which takes about ten minutes. When I get there, I stretch for five minutes so I don't hurt my legs. After that, I put on my favorite K-pop playlist and run for about 30 minutes. I don't run very fast. I just try to keep a steady pace. When I get home, I take a hot shower and have a light dinner, like a salad or some fruit. Honestly, I sleep much better on the days I run. So yeah, that's my typical jogging routine.",
-        "AL": "Sure, I'd love to talk about my jogging routine, because it's kind of become my way of switching off after work. I go jogging three times a week, usually on Monday, Wednesday, and Friday evenings. On Fridays, I work from home, so I can go a little earlier, but on the other days I get off work at six and head straight home. The first thing I do is change into my running clothes, because if I sit down on the couch, I know I'll never get up again. I always bring three things: my phone, my earphones, and a small water bottle. Then I hop on my bike and ride to the Han River, which takes about ten minutes. Before I start, I stretch for about five minutes, since I hurt my ankle once when I skipped it. After that, I put on an upbeat K-pop playlist and run for around 30 minutes at a comfortable pace. I'm not trying to break any records. I just want to clear my head. When I get home, I take a long hot shower and have a light dinner. By then, all the stress from the office is pretty much gone. So yeah, that's pretty much my jogging routine, and I really look forward to it."
+        "IM3": "Okay, let me tell you about my jogging routine. I go jogging about three times a week. I usually go at six thirty in the morning before work. Before I go out, I always stretch for five minutes. I bring my phone, my earphones, and a small bottle of water. I jog for about thirty minutes on the Tancheon trail. After that, I come home, take a quick shower, and have breakfast with my family. Yeah, that's my usual jogging routine.",
+        "IH": "Sure, I'd love to talk about my jogging routine. I go jogging about three times a week, early in the morning, usually on Monday, Wednesday, and Saturday. I wake up at six, drink a glass of water, and put on my running clothes and shoes. Before I go out, I always stretch for five minutes, because my knees aren't as young as they used to be. I take my phone, my earphones, and my smartwatch so I can check my time and heart rate. First, I walk for a few minutes to warm up. Then, I jog along the Tancheon trail for about thirty minutes while listening to some old rock songs. After I get home, I take a quick shower and have breakfast with my family. My kids are usually just getting up when I come back. It's a simple routine, but it really gives me energy for the day. So yeah, that's pretty much my jogging routine.",
+        "AL": "Oh, my jogging routine? Let me think. Well, it's pretty much the same every time, and I like it that way. I go jogging about three times a week, usually on Monday, Wednesday, and Saturday mornings. My alarm goes off at six, and I try to get out of bed before I can talk myself out of it. I drink a glass of water, put on my running gear, and grab my earphones and my smartwatch, which keeps track of my distance and heart rate. Before I head out, I always stretch for about five minutes. In my forties, skipping that is just asking for a sore knee. Once I get to the Tancheon trail, I walk for a few minutes to warm up, and then I jog for about thirty minutes at a comfortable pace. I usually listen to nineties rock, because it keeps me moving. On the way back, I slow down and cool off. When I get home, I take a quick shower, and by then the whole family is up, so we have breakfast together before my son and daughter head off to school. Honestly, it's the best way to start my day, and I really feel the difference when I skip it. Yeah, that's my jogging routine in a nutshell."
       }
     },
     {
@@ -141,14 +143,14 @@
       "en": "When did you first start walking or jogging? What made you start, and what was it like at the beginning? Tell me the story from start to finish.",
       "ko": "걷기나 조깅을 처음 시작한 건 언제인가요? 왜 시작했고, 처음엔 어땠나요? 처음부터 끝까지 이야기해 주세요.",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제(입사 1년 차, 약 3년 전) → 왜(하루 종일 앉아 있음, 스트레스) → 처음엔 어땠는지(10분도 힘듦) → 결과·느낌 → 마무리 문장",
-        "과거 시제(started, was, couldn't)를 끝까지 유지하고, 마지막 결과 문장에서만 현재 시제로 바꾸세요",
-        "'숨이 찼다(out of breath)', '다리가 아팠다(my legs hurt)' 같은 구체적인 느낌을 넣으면 이야기가 살아나요"
+        "답변 흐름: 시작 문장 → 언제(6년 전) → 계기(앉아만 있는 생활, 건강검진) → 첫날 이야기(10분 만에 숨참, 동료 Minho의 격려) → 결과·느낌 → 'Yeah, that's how ~' 마무리",
+        "경험 질문은 과거 시제로 일관되게! 마지막 한두 문장만 현재로 돌아오세요",
+        "Minho가 한 말을 직접 인용('Slow is fine.')하면 이야기가 생생해져요"
       ],
       "answers": {
-        "IM3": "Oh, let me think. I started jogging about three years ago. At that time, it was my first year at my company. I sat in front of my computer all day, and I had a lot of stress. My body felt really heavy, too. So one evening, I went to the Han River and tried to run. At first, I couldn't even run for ten minutes. I was completely out of breath, and my legs hurt a lot. But I kept going. Now I can run for 30 minutes. Yeah, that's how I started jogging.",
-        "IH": "Oh, that's a good question. Let me think. I started jogging about three years ago, during my first year at my company. Back then, everything at work was new, so I was always nervous and stressed out. I also sat in front of my computer from nine to six, and I hardly moved at all. After a few months, I gained some weight and my back started to hurt. So one evening, I decided to go to the Han River and just try running. Honestly, it was terrible. I couldn't even run for ten minutes. I was completely out of breath, and the next day my legs were so sore. But my coworker Minji said she would run with me on Wednesdays, so I didn't give up. Little by little, I could run longer. After about two months, I could finally run for 30 minutes without stopping. Yeah, that's how I started jogging, and I'm really glad I did.",
-        "AL": "Oh, that's a good question. Let me think about it for a second. I started jogging about three years ago, which was my very first year at my company. To be honest, that year was pretty tough. Everything at work was new, I was always worried about making mistakes, and I sat in front of my computer from nine to six without really moving. After a few months, I'd gained some weight, my back hurt, and I felt tired all the time. One evening, I saw people running along the Han River and thought, 'Why not?' So the next day, I put on some old sneakers and gave it a try. It was a total disaster. I couldn't even run for ten minutes, and I was so out of breath that I had to sit on a bench. The next morning, my legs were so sore that I could barely walk up the subway stairs. I almost quit right then. But my coworker Minji, who started at the company the same time as me, offered to run with me once a week. Having a partner made a huge difference. Little by little, I got stronger, and after about two months, I ran 30 minutes without stopping. I still remember how proud I felt. So yeah, that's pretty much how jogging became a big part of my life."
+        "IM3": "Okay, let me tell you how I started jogging. I started jogging about six years ago. At that time, I had a health checkup, and my doctor said I needed more exercise. I was sitting at my desk all day, and my back hurt a lot. So I decided to jog on the Tancheon trail near my apartment. At first, it was really hard. I was out of breath after just ten minutes. But I kept going, and it got easier. Yeah, that's how I got into jogging.",
+        "IH": "Sure, I'd love to talk about how I started jogging. I started jogging about six years ago. Back then, I was busy with a big project, and I sat in front of my computer for more than ten hours a day. Then I had a health checkup, and my doctor told me my blood pressure was a little high. That was a wake-up call. I have a friend named Minho, and he's been my coworker for a long time. He was already a runner, so he said, 'Why don't you come jogging with me?' The first morning, we went to the Tancheon trail, and I was totally out of breath after ten minutes. I had to stop and walk, and I felt pretty embarrassed. But Minho told me to go slowly, and little by little, I got better. A year later, we ran our first 10K race together. So yeah, that's how my jogging story started.",
+        "AL": "Oh, how I started jogging? Let me think. Well, it all started about six years ago, during one of the busiest years of my career. My team was working on a huge project, and I was basically glued to my chair for ten or twelve hours a day. Then I had my yearly health checkup, and the doctor said my blood pressure was getting high and I'd better start exercising. Honestly, that scared me, because I have two kids and I want to stay healthy for them. I have a friend named Minho, who's been my coworker for over fifteen years, and he'd been jogging for a while, so he offered to show me the ropes. The first morning on the Tancheon trail was a disaster. After about ten minutes, I was completely out of breath, my legs felt like stone, and I had to walk the rest of the way. But Minho kept saying, 'Slow is fine. Just don't stop coming.' So I kept going, and every week I could jog a little longer. About a year later, we ran our first 10K race together, and my whole family was there cheering at the finish line. Ever since then, I've been hooked. Yeah, that's how I got into jogging."
       }
     },
     {
@@ -157,14 +159,14 @@
       "en": "How has your walking or jogging changed since you first started? Compare what it was like back then with what it is like now.",
       "ko": "처음 시작했을 때와 비교해 걷기나 조깅이 어떻게 변했나요? 그때와 지금을 비교해 주세요.",
       "tips": [
-        "답변 흐름: 시작 문장 → 그때(입사 1년 차, 10분도 힘듦, 가끔) → 지금(주 3회, 30분, 습관) → 가장 큰 변화와 이유 → 마무리 문장",
-        "Back then / These days, used to + 동사 / now 로 과거와 현재를 분명히 나누세요",
-        "몸의 변화뿐 아니라 마음의 변화(스트레스를 대하는 방식)를 한 문장 넣으면 IH 이상 답변이 돼요"
+        "답변 흐름: 시작 문장 → 처음(10분도 힘듦, 주 1회, 낡은 운동화) → 지금(30분 거뜬, 주 3회, 러닝화·스마트워치) → 가장 큰 차이(몸과 마음) → 'So yeah, that's how ~' 마무리",
+        "I used to ~, but now I ~ 패턴 하나로 비교의 뼈대를 세우세요",
+        "AL은 '의무(chore) → 즐거움'처럼 마음가짐의 변화까지 말하면 깊이가 생겨요"
       ],
       "answers": {
-        "IM3": "Oh, it has changed a lot. I started jogging three years ago. Back then, I couldn't run for more than ten minutes. I only went jogging once in a while. I wore old sneakers and didn't stretch. These days, I go jogging three times a week. I can run for 30 minutes easily. I also have good running shoes now. Jogging is a habit for me now. It really helps me with stress from work. Yeah, that's how my jogging has changed.",
-        "IH": "Oh, it has changed a lot since I first started. I started jogging about three years ago, in my first year at work. Back then, I couldn't even run for ten minutes, and I only went when I felt really stressed, maybe once every two weeks. I used to wear old sneakers, and I never stretched, so my legs always hurt the next day. These days, it's totally different. I go three times a week after work, and running 30 minutes is no big deal for me. I bought good running shoes, and I always stretch before I start. The biggest change is how I feel about it. Before, jogging felt like hard work, but now it's the part of my day I look forward to the most. When I have a stressful day at the office, I just think, 'Okay, I'll go for a run tonight.' So yeah, that's how my jogging has changed.",
-        "AL": "Oh, it has changed a lot since I first started, almost like it's a completely different activity now. I started jogging about three years ago, during my first year at work. Back then, I couldn't run for even ten minutes without stopping, and I only went when I was really stressed out, maybe once every two weeks. I used to wear an old pair of sneakers, and I never bothered to stretch, so my knees and legs always ached the next day. Honestly, I didn't enjoy it at all. I just did it because I felt I had to. These days, it's a whole different story. I go three times a week after work, and running 30 minutes is no big deal for me anymore. I invested in a good pair of running shoes, I always stretch first, and I even have a special playlist just for running. But the biggest change is in my head, not my legs. Back then, jogging felt like a chore, but now it's my go-to way of dealing with stress. Whenever I have a rough day at the office, I know a run along the river will fix it. Once I start running, all my worries just seem to disappear. So yeah, that's pretty much how my jogging has changed over the years."
+        "IM3": "Okay, let me tell you how my jogging has changed. When I first started, I could only jog for about ten minutes. I got tired really fast, and I walked a lot. Now I can jog for thirty minutes without stopping. I also used to jog only once a week, but now I go three times a week. These days, I use a smartwatch to check my time. I feel much healthier than before. Yeah, that's how my jogging has changed.",
+        "IH": "Sure, I'd love to talk about how my jogging has changed. When I first started six years ago, I used to get tired after ten minutes, but now I can easily jog for thirty minutes. Back then, I only went once a week, usually on Saturday, and sometimes I skipped it because I was too tired from work. Now I go three times a week, and it's a regular part of my life. My gear has changed, too. In the beginning, I just wore old sneakers and a T-shirt. Now I have proper running shoes and a smartwatch that tracks my distance. The biggest difference is how I feel. I sleep better, my back doesn't hurt as much, and I handle stress at work much better. So yeah, jogging has changed a lot for me, in a good way.",
+        "AL": "Oh, that's a good question. Let me think. Well, my jogging has changed a lot since I first started about six years ago. In the beginning, I could barely jog for ten minutes without stopping, and I used to drag myself out of bed only once a week, mostly because Minho kept texting me. Now I go three times a week without anyone pushing me, and thirty minutes feels easy. Last year I even finished a 10K in under an hour, which I never imagined back then. My gear is completely different, too. I started out in an old pair of sneakers and a cotton T-shirt that got soaked with sweat. These days, I've got proper running shoes and a smartwatch that tracks my pace and heart rate, so I can actually see my progress. But the biggest change isn't my speed. It's my mindset. At first, jogging was something my doctor told me to do, so it felt like a chore. Now it's the part of my week that I look forward to the most. When work gets stressful, I know a run along the stream will help me calm down and think more clearly. Sometimes my son even joins me on Saturdays, which is a nice bonus. So yeah, that's how jogging went from a chore to something I really love."
       }
     }
   ],
@@ -172,7 +174,12 @@
     {
       "word": "jogging",
       "ipa": "/ˈdʒɑː.ɡɪŋ/",
-      "tip": "첫 음절에 강세. '조깅'처럼 '오'로 발음하지 말고 입을 크게 벌려 '아'에 가깝게 '좌-깅'"
+      "tip": "첫 음절에 강세. '조깅'처럼 '오'로 발음하지 말고 입을 크게 벌려 '좌-깅'에 가깝게"
+    },
+    {
+      "word": "trail",
+      "ipa": "/treɪl/",
+      "tip": "한 음절. tr은 '츄'처럼 붙여 말하고 끝의 l은 혀끝을 윗니 뒤에 대며 마무리 ('트레일'로 늘리지 않기)"
     },
     {
       "word": "stretch",
@@ -180,68 +187,63 @@
       "tip": "한 음절. '스트레치'처럼 4음절로 늘리지 말고 str을 한 번에 붙여서"
     },
     {
-      "word": "refreshed",
-      "ipa": "/rɪˈfreʃt/",
-      "tip": "-ed는 '트' 한 소리로 짧게. '리프레쉬드'가 아니라 '리프레쉬트'"
-    },
-    {
-      "word": "river",
-      "ipa": "/ˈrɪv.ɚ/",
-      "tip": "r은 혀를 입천장에 닿지 않게 말고, v는 윗니로 아랫입술을 살짝 물어서"
-    },
-    {
       "word": "breath",
       "ipa": "/breθ/",
       "tip": "명사 breath는 짧은 '에'와 무성 th. 동사 breathe /briːð/와 구분 (out of breath)"
+    },
+    {
+      "word": "healthier",
+      "ipa": "/ˈhel.θi.ɚ/",
+      "tip": "l 다음 무성 th를 혀끝을 이 사이에 살짝 물고. '헬시어'가 아니라 '헬-θi-어'"
     }
   ],
   "patterns": [
     {
       "pid": "like#0",
-      "en": "I really enjoy jogging along the Han River in my free time.",
-      "ko": "저는 여가 시간에 한강을 따라 조깅하는 걸 정말 즐겨요.",
+      "en": "I really enjoy jogging along the Tancheon trail in my free time.",
+      "ko": "저는 여가 시간에 탄천 산책로를 따라 조깅하는 걸 정말 좋아해요.",
       "q": "jogging-describe"
     },
     {
       "pid": "place#3",
-      "en": "My favorite place to jog is the long, flat path along the Han River.",
-      "ko": "제가 제일 좋아하는 조깅 장소는 한강을 따라 난 길고 평평한 길이에요.",
+      "en": "My favorite place to jog is the Tancheon trail near my apartment.",
+      "ko": "제가 제일 좋아하는 조깅 장소는 우리 아파트 근처 탄천 산책로예요.",
       "q": "jogging-describe"
     },
     {
-      "pid": "people#3",
-      "en": "I have a friend named Minji, and we used to go jogging together once a week.",
-      "ko": "Minji라는 친구가 있는데, 예전에 일주일에 한 번씩 같이 조깅을 했어요.",
-      "q": "jogging-experience"
+      "pid": "describe#0",
+      "en": "It's a peaceful place with a small stream and lots of trees.",
+      "ko": "작은 개울과 나무가 많은 평화로운 곳이에요.",
+      "q": "jogging-describe"
     },
     {
       "pid": "routine#0",
-      "en": "I go jogging about three times a week.",
-      "ko": "저는 일주일에 세 번 정도 조깅을 해요.",
+      "en": "I go jogging about three times a week, early in the morning.",
+      "ko": "저는 일주일에 세 번 정도, 이른 아침에 조깅해요.",
       "q": "jogging-routine"
     },
     {
-      "pid": "reason#4",
-      "en": "Whenever I run along the river after work, I feel refreshed and all my stress is gone.",
-      "ko": "퇴근 후 강을 따라 달릴 때마다 상쾌해지고 스트레스가 다 사라지는 느낌이에요.",
-      "q": "jogging-describe"
+      "pid": "routine#2",
+      "en": "Before I go out, I always stretch for five minutes.",
+      "ko": "나가기 전에 항상 5분 동안 스트레칭을 해요.",
+      "q": "jogging-routine"
     },
     {
       "pid": "start#1",
-      "en": "I started jogging about three years ago.",
-      "ko": "저는 약 3년 전에 조깅을 시작했어요.",
+      "en": "I started jogging about six years ago.",
+      "ko": "저는 6년 전쯤 조깅을 시작했어요.",
       "q": "jogging-experience"
     },
     {
-      "pid": "memory#5",
-      "en": "I'll never forget the first time I ran for 30 minutes without stopping because I felt so proud.",
-      "ko": "처음으로 30분을 쉬지 않고 달렸던 때를 절대 잊지 못할 거예요. 정말 뿌듯했거든요.",
+      "pid": "people#3",
+      "en": "I have a friend named Minho, and we ran our first 10K race together.",
+      "ko": "Minho라는 친구가 있는데, 우리는 첫 10킬로 대회를 함께 뛰었어요.",
       "q": "jogging-experience"
     },
     {
       "pid": "change#0",
-      "en": "I used to jog only when I was really stressed, but now I go three times a week.",
-      "ko": "예전에는 정말 스트레스를 받을 때만 조깅했는데, 지금은 일주일에 세 번 가요.",
+      "en": "I used to get tired after ten minutes, but now I can easily jog for thirty minutes.",
+      "ko": "예전엔 10분만 뛰어도 지쳤는데, 지금은 30분도 거뜬히 뛰어요.",
       "q": "jogging-compare"
     }
   ]
