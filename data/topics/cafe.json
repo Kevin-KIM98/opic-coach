@@ -119,6 +119,46 @@
         "IM3": "Oh, cafes? Sure, I'd love to talk about my favorite cafe. There's a small cafe near my apartment in Bundang. It's only a five-minute walk from my house, right next to Central Park. It's not very big, but it's really cozy. There are wooden tables and lots of plants inside. Big windows face the park, so it's bright in the morning. I usually go there on weekend mornings to read a book. Yeah, that's my favorite cafe.",
         "IH": "Sure, I'd love to talk about the cafe I often go to. I'm the kind of person who loves a quiet cup of coffee on weekend mornings, so I have a favorite spot. It's a small cafe near Central Park, and it's only a five-minute walk from my house. When you walk in, the first thing you notice is the smell of fresh coffee. The owner roasts the beans right there. There are about eight wooden tables, a long counter, and lots of green plants. My favorite seat is by the big window, because I can see people walking in the park. They play soft jazz, and it's never too crowded in the morning. It has a warm atmosphere that makes me feel relaxed. So yeah, that's the cafe I go to almost every weekend.",
         "AL": "Oh, cafes? Let me think. Well, there are tons of cafes in my neighborhood, but there's one little place I keep going back to. It's tucked away on a quiet street right next to Central Park, and it's only a five-minute walk from my apartment, which is perfect for me. From the outside, it doesn't look like much, just a small brick building with a wooden sign. But when you walk in, the first thing you notice is the rich smell of coffee, because the owner roasts the beans in the back. Inside, it's not very big, maybe eight or nine tables, but every corner feels cozy. There are wooden tables, shelves full of old books, and plants hanging from the ceiling. My favorite seat is a corner table by the big window, where the morning sun comes in and I can watch people jogging and walking their dogs in the park. The owner is a friendly guy around my age, and he already knows my order, a hot Americano with no sugar. There's soft jazz playing in the background, so it's the perfect place to sit with a book for an hour. Honestly, it feels like my little hideaway from a busy week. So yeah, that's pretty much my favorite cafe."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 카페요?",
+          "네, 제가 제일 좋아하는 카페에 대해 기꺼이 얘기해 드릴게요.",
+          "분당에 있는 저희 아파트 근처에 작은 카페가 하나 있어요.",
+          "집에서 걸어서 5분밖에 안 걸리고, 중앙공원 바로 옆이에요.",
+          "그렇게 크지는 않지만 정말 아늑해요.",
+          "안에는 나무 테이블이 있고 식물이 많아요.",
+          "큰 창문들이 공원 쪽으로 나 있어서 아침에 밝아요.",
+          "저는 보통 주말 아침에 책을 읽으러 거기에 가요.",
+          "네, 거기가 제가 제일 좋아하는 카페예요."
+        ],
+        "IH": [
+          "네, 제가 자주 가는 카페에 대해 기꺼이 얘기해 드릴게요.",
+          "저는 주말 아침에 조용히 커피 한 잔 하는 걸 정말 좋아하는 사람이라, 제일 좋아하는 곳이 있어요.",
+          "중앙공원 근처에 있는 작은 카페인데, 집에서 걸어서 5분밖에 안 걸려요.",
+          "들어가면 제일 먼저 신선한 커피 향이 느껴져요.",
+          "사장님이 거기서 직접 원두를 볶으시거든요.",
+          "나무 테이블이 여덟 개 정도 있고, 긴 카운터랑 초록 식물이 많아요.",
+          "제가 제일 좋아하는 자리는 큰 창가 자리인데, 공원에서 걸어 다니는 사람들을 볼 수 있어서요.",
+          "잔잔한 재즈를 틀어 주고, 아침에는 절대 너무 붐비지 않아요.",
+          "마음을 편안하게 해 주는 따뜻한 분위기예요.",
+          "그래서, 네, 거기가 제가 거의 매주 주말에 가는 카페예요."
+        ],
+        "AL": [
+          "아, 카페요?",
+          "음, 생각해 볼게요.",
+          "음, 저희 동네에는 카페가 엄청 많은데, 제가 계속 다시 가게 되는 작은 곳이 하나 있어요.",
+          "중앙공원 바로 옆 조용한 골목에 숨어 있는데, 저희 아파트에서 걸어서 5분밖에 안 걸려서 저한테 딱이에요.",
+          "밖에서 보면 별거 없어 보여요, 그냥 나무 간판이 달린 작은 벽돌 건물이에요.",
+          "그런데 들어가면 제일 먼저 진한 커피 향이 느껴지는데, 사장님이 안쪽에서 원두를 볶으시거든요.",
+          "안은 그렇게 크지 않아서 테이블이 여덟아홉 개 정도인데, 구석구석이 다 아늑하게 느껴져요.",
+          "나무 테이블이 있고, 오래된 책이 가득한 책장이 있고, 천장에는 식물들이 매달려 있어요.",
+          "제가 제일 좋아하는 자리는 큰 창가 옆 구석 테이블인데, 아침 햇살이 들어오고 공원에서 조깅하거나 개를 산책시키는 사람들을 볼 수 있어요.",
+          "사장님은 제 또래의 친절한 분인데, 제 주문을 이미 알고 계세요, 설탕 없는 따뜻한 아메리카노요.",
+          "배경으로 잔잔한 재즈가 흘러서, 책 한 권 들고 한 시간 앉아 있기에 딱 좋은 곳이에요.",
+          "솔직히 바쁜 한 주로부터 벗어나는 저만의 작은 은신처 같아요.",
+          "그래서, 네, 거기가 대충 제가 제일 좋아하는 카페예요."
+        ]
       }
     },
     {
@@ -135,6 +175,49 @@
         "IM3": "Okay, let me tell you about what I do at cafes. I usually go to a cafe on Saturday or Sunday morning. I go there alone because I want some quiet time. First, I order a hot Americano. Then, I sit by the window and read a book. I usually stay for about an hour. Before I leave, I sometimes buy some muffins for my kids. Yeah, that's what I usually do at cafes.",
         "IH": "Sure, I'd love to talk about why I go to cafes. I mostly go to a cafe for some quiet time on weekend mornings. My weekdays are full of meetings and messages, and at home, my kids are always busy and noisy. So I go to the cafe near Central Park around eight on Saturday morning. I usually go alone because my family likes to sleep in. First, I order an Americano. Then, I find a seat by the window and open my book. These days, I'm reading some history books and novels. I put my phone on silent so nobody can bother me. I usually stay about an hour. Before I leave, I buy some pastries for my family, so everyone is happy when I get home. It helps me recharge before a busy week. So yeah, that's pretty much my cafe routine.",
         "AL": "Oh, why I go to cafes? Let me think. Well, for me, a cafe isn't really about the coffee. It's about having an hour to myself. During the week, I'm in meetings all day, my phone keeps buzzing with messages from my team, and at home, there's always something going on with the kids. So on Saturday mornings, I quietly slip out of the apartment while my family is still asleep and walk to my favorite cafe near Central Park. The owner usually starts making my Americano the moment he sees me at the door, which always makes me smile. First, I grab my coffee and settle into the corner seat by the window. Then, I put my phone on silent and open whatever book I'm reading. Lately it's been a mystery novel that I just can't put down. Every once in a while, I look up and watch people jogging in the park. After about an hour, I order a few croissants and muffins to go, because if I come home empty-handed, my kids definitely let me know about it. Honestly, that hour helps me recharge more than anything else. Yeah, that's my little cafe ritual."
+      },
+      "answersKo": {
+        "IM3": [
+          "좋아요, 제가 카페에서 뭘 하는지 말씀드릴게요.",
+          "저는 보통 토요일이나 일요일 아침에 카페에 가요.",
+          "조용한 시간을 갖고 싶어서 혼자 가요.",
+          "먼저 따뜻한 아메리카노를 주문해요.",
+          "그다음에 창가에 앉아서 책을 읽어요.",
+          "보통 한 시간 정도 있어요.",
+          "나오기 전에 가끔 아이들 주려고 머핀을 좀 사요.",
+          "네, 그게 제가 카페에서 보통 하는 일이에요."
+        ],
+        "IH": [
+          "네, 제가 왜 카페에 가는지 기꺼이 얘기해 드릴게요.",
+          "저는 주로 주말 아침에 조용한 시간을 보내려고 카페에 가요.",
+          "평일은 회의랑 메시지로 꽉 차 있고, 집에서는 아이들이 늘 바쁘고 시끄러워요.",
+          "그래서 토요일 아침 8시쯤 중앙공원 근처 카페에 가요.",
+          "가족들은 늦잠 자는 걸 좋아해서 보통 혼자 가요.",
+          "먼저 아메리카노를 주문해요.",
+          "그다음에 창가 자리를 찾아서 책을 펴요.",
+          "요즘은 역사책이랑 소설을 읽고 있어요.",
+          "아무도 방해하지 못하게 휴대폰을 무음으로 해 둬요.",
+          "보통 한 시간 정도 있어요.",
+          "나오기 전에 가족들 주려고 빵을 좀 사서, 집에 가면 다들 좋아해요.",
+          "바쁜 한 주를 앞두고 재충전하는 데 도움이 돼요.",
+          "그래서, 네, 그게 대충 제 카페 루틴이에요."
+        ],
+        "AL": [
+          "아, 제가 왜 카페에 가냐고요?",
+          "음, 생각해 볼게요.",
+          "음, 저한테 카페는 사실 커피 때문에 가는 곳이 아니에요.",
+          "저만의 한 시간을 갖는 게 중요한 거죠.",
+          "주중에는 하루 종일 회의를 하고, 팀원들 메시지로 휴대폰이 계속 울리고, 집에서는 아이들 때문에 늘 무슨 일이 있어요.",
+          "그래서 토요일 아침에는 가족들이 아직 자는 동안 조용히 아파트를 빠져나와서 중앙공원 근처에 있는 제가 제일 좋아하는 카페로 걸어가요.",
+          "사장님은 보통 제가 문 앞에 보이는 순간 제 아메리카노를 만들기 시작하시는데, 그게 늘 저를 웃게 해요.",
+          "먼저 커피를 받아서 창가 구석 자리에 자리를 잡아요.",
+          "그다음에 휴대폰을 무음으로 해 놓고 읽고 있는 책을 펴요.",
+          "요즘은 손에서 놓을 수가 없는 추리 소설이에요.",
+          "가끔 고개를 들어 공원에서 조깅하는 사람들을 구경해요.",
+          "한 시간쯤 지나면 크루아상이랑 머핀을 몇 개 포장 주문하는데, 빈손으로 집에 가면 아이들이 꼭 한마디 하거든요.",
+          "솔직히 그 한 시간이 다른 무엇보다 저를 재충전시켜 줘요.",
+          "네, 그게 저의 작은 카페 의식이에요."
+        ]
       }
     },
     {
@@ -151,6 +234,48 @@
         "IM3": "Okay, let me tell you about a memorable time at a cafe. I remember one time when my daughter came with me on a rainy Saturday. She ordered a hot chocolate, and I had my Americano. We sat by the window and read our books together. Then she drew a picture of the cafe on a napkin. The owner liked it a lot, and he put it on the wall. She was so proud. Yeah, that's my most memorable cafe experience.",
         "IH": "Sure, I'd love to talk about a memorable cafe experience. I remember one time when my daughter came with me on a rainy Saturday. Usually I go to the cafe alone, but that day she woke up early and asked to come. She's in elementary school, so she was really excited. She ordered a hot chocolate with whipped cream, and I got my usual Americano. We sat by the window, and I read my book while she read a comic book. After a while, she started drawing the cafe on a napkin, with the plants and the rain outside. When we were leaving, she showed it to the owner. To my surprise, the owner put her drawing up on the wall next to the counter. She was so proud, and she still talks about it. So yeah, that's a day I'll always remember.",
         "AL": "Oh, a memorable cafe experience? Let me think. Well, one rainy Saturday morning really stands out. Normally, my cafe time is my alone time, but that day my daughter, who's in elementary school, woke up early and begged to come with me. I wasn't sure at first, because I thought she'd get bored in five minutes, but I said okay. We shared an umbrella on the walk over, and she chatted the whole way. At the cafe, she ordered a hot chocolate with a mountain of whipped cream, and I got my usual Americano. We sat at my corner table by the window, and for a while we just read quietly, me with my novel and her with a comic book. Then she grabbed a napkin and started drawing the cafe, with the plants, the rainy window, and even me with my coffee. When we were leaving, she shyly showed it to the owner. To my surprise, he asked if he could keep it, and he pinned it up on the wall right next to the counter. My daughter's face just lit up. It turned out to be one of the sweetest mornings I've had in a long time. The drawing is still there, and it makes me smile every time I order. So yeah, that's a cafe memory I'll never forget."
+      },
+      "answersKo": {
+        "IM3": [
+          "좋아요, 카페에서 있었던 기억에 남는 일을 말씀드릴게요.",
+          "비 오는 토요일에 딸이 저랑 같이 갔던 때가 기억나요.",
+          "딸은 핫초코를 주문했고, 저는 아메리카노를 마셨어요.",
+          "저희는 창가에 앉아서 같이 책을 읽었어요.",
+          "그러다 딸이 냅킨에 카페 그림을 그렸어요.",
+          "사장님이 그걸 아주 마음에 들어 하셔서 벽에 붙여 주셨어요.",
+          "딸이 정말 뿌듯해했어요.",
+          "네, 그게 제 가장 기억에 남는 카페 경험이에요."
+        ],
+        "IH": [
+          "네, 기억에 남는 카페 경험에 대해 기꺼이 얘기해 드릴게요.",
+          "비 오는 토요일에 딸이 저랑 같이 갔던 때가 기억나요.",
+          "보통 저는 카페에 혼자 가는데, 그날은 딸이 일찍 일어나서 같이 가자고 했어요.",
+          "딸이 초등학생이라 정말 신나 했어요.",
+          "딸은 휘핑크림 올린 핫초코를 주문했고, 저는 늘 마시던 아메리카노를 시켰어요.",
+          "저희는 창가에 앉았고, 딸이 만화책을 읽는 동안 저는 제 책을 읽었어요.",
+          "얼마 후 딸이 냅킨에 식물이랑 바깥에 내리는 비까지 넣어서 카페를 그리기 시작했어요.",
+          "나갈 때 딸이 그걸 사장님께 보여 드렸어요.",
+          "놀랍게도 사장님이 딸의 그림을 카운터 옆 벽에 붙여 주셨어요.",
+          "딸이 정말 뿌듯해했고, 아직도 그 얘기를 해요.",
+          "그래서, 네, 그날은 제가 언제까지나 기억할 날이에요."
+        ],
+        "AL": [
+          "아, 기억에 남는 카페 경험이요?",
+          "음, 생각해 볼게요.",
+          "음, 비 오던 어느 토요일 아침이 정말 기억에 남아요.",
+          "보통 카페 시간은 저 혼자만의 시간인데, 그날은 초등학생인 딸이 일찍 일어나서 같이 가자고 졸랐어요.",
+          "처음엔 5분 만에 지루해할 것 같아서 망설였는데, 그래도 알았다고 했어요.",
+          "가는 길에 우산을 같이 썼는데, 딸이 가는 내내 재잘거렸어요.",
+          "카페에서 딸은 휘핑크림이 산더미처럼 올라간 핫초코를 주문했고, 저는 늘 마시던 아메리카노를 시켰어요.",
+          "저희는 창가 옆 제 구석 테이블에 앉아서 한동안 조용히 책을 읽었어요, 저는 소설을, 딸은 만화책을요.",
+          "그러다 딸이 냅킨을 집어 들고 카페를 그리기 시작했는데, 식물이랑 비 오는 창문, 그리고 커피를 든 저까지 그렸어요.",
+          "나갈 때 딸이 수줍게 그걸 사장님께 보여 드렸어요.",
+          "놀랍게도 사장님이 그걸 가져도 되냐고 물으시더니, 카운터 바로 옆 벽에 붙여 주셨어요.",
+          "딸의 얼굴이 그냥 환하게 밝아졌어요.",
+          "정말 오랜만에 보낸 가장 다정한 아침 중 하나가 됐어요.",
+          "그 그림은 아직도 거기 있어서, 주문할 때마다 저를 미소 짓게 해요.",
+          "그래서, 네, 그게 제가 절대 잊지 못할 카페 추억이에요."
+        ]
       }
     },
     {
@@ -167,6 +292,47 @@
         "IM3": "Okay, let me tell you how I use cafes now. Twenty years ago, I used to go to cafes to meet friends, but now I go there to have some quiet time. Back then, there weren't many cafes, and coffee was pretty expensive. At work, we just drank instant coffee. Now there are cafes everywhere in my neighborhood. I usually go alone on weekend mornings and read a book for an hour. Yeah, that's how my cafe life has changed.",
         "IH": "Sure, I'd love to talk about how I use cafes differently now. When I was a new employee about twenty years ago, there weren't as many cafes as there are now. Coffee from a cafe was kind of a treat, and at the office, we mostly drank instant coffee mix from paper cups. I used to go to cafes to meet friends, but now I go there to have some quiet time. Back then, cafes were loud places to chat for hours. These days, people tend to use cafes like offices. You see lots of people working on laptops or studying. Also, I order ahead with an app now, which saves a lot of time. The biggest difference for me is the reason I go. Now a cafe is my place to rest and read. So yeah, that's how my cafe habits have changed.",
         "AL": "Oh, that's an interesting question. Let me think. Well, my cafe habits have changed a lot over the past twenty years. When I first started working, cafes weren't on every corner like they are now. A cup of coffee from a cafe felt a bit fancy, so at the office, we mostly drank instant coffee mix from paper cups, sometimes four or five a day. Back then, I used to go to cafes on weekends to meet my college friends in Seoul, and we'd sit there for hours, talking and laughing loudly. Now it's pretty much the opposite. I go alone on weekend mornings, and the whole point is to be quiet and read. Cafes themselves have changed, too. These days, people tend to treat them like offices or study rooms, so you see rows of people with laptops and headphones. Ordering is different as well. I just tap my phone, and my coffee is ready when I walk in. I think this change is because of how busy everyone has become. People need a place that's not home and not work, and for me, a cafe is exactly that. So yeah, that's how cafes went from a place to hang out to my personal escape."
+      },
+      "answersKo": {
+        "IM3": [
+          "좋아요, 제가 요즘 카페를 어떻게 이용하는지 말씀드릴게요.",
+          "20년 전에는 친구들을 만나러 카페에 가곤 했는데, 지금은 조용한 시간을 보내러 가요.",
+          "그때는 카페가 많지 않았고, 커피가 꽤 비쌌어요.",
+          "회사에서는 그냥 믹스커피를 마셨어요.",
+          "지금은 저희 동네 어디에나 카페가 있어요.",
+          "저는 보통 주말 아침에 혼자 가서 한 시간 동안 책을 읽어요.",
+          "네, 그렇게 제 카페 생활이 변했어요."
+        ],
+        "IH": [
+          "네, 요즘 제가 카페를 어떻게 다르게 이용하는지 기꺼이 얘기해 드릴게요.",
+          "20년 전쯤 제가 신입 사원이었을 때는 지금만큼 카페가 많지 않았어요.",
+          "카페 커피는 일종의 사치였고, 사무실에서는 주로 종이컵에 믹스커피를 타 마셨어요.",
+          "예전에는 친구들을 만나러 카페에 가곤 했는데, 지금은 조용한 시간을 보내러 가요.",
+          "그때 카페는 몇 시간씩 수다 떠는 시끄러운 곳이었어요.",
+          "요즘은 사람들이 카페를 사무실처럼 쓰는 경향이 있어요.",
+          "노트북으로 일하거나 공부하는 사람들이 많이 보여요.",
+          "또 저는 이제 앱으로 미리 주문하는데, 그게 시간을 많이 아껴 줘요.",
+          "저한테 가장 큰 차이는 가는 이유예요.",
+          "이제 카페는 제가 쉬고 책 읽는 곳이에요.",
+          "그래서, 네, 그렇게 제 카페 습관이 변했어요."
+        ],
+        "AL": [
+          "아, 흥미로운 질문이네요.",
+          "음, 생각해 볼게요.",
+          "음, 제 카페 습관은 지난 20년 동안 많이 변했어요.",
+          "제가 처음 일을 시작했을 때는 지금처럼 모퉁이마다 카페가 있지 않았어요.",
+          "카페 커피 한 잔이 좀 고급스럽게 느껴져서, 사무실에서는 주로 종이컵에 믹스커피를 타 마셨는데, 가끔은 하루에 네다섯 잔씩 마셨어요.",
+          "그때는 주말에 서울에서 대학 친구들을 만나러 카페에 가곤 했는데, 몇 시간씩 앉아서 크게 떠들고 웃었어요.",
+          "지금은 거의 정반대예요.",
+          "주말 아침에 혼자 가고, 핵심은 조용히 책을 읽는 거예요.",
+          "카페 자체도 변했어요.",
+          "요즘은 사람들이 카페를 사무실이나 스터디룸처럼 여기는 경향이 있어서, 노트북이랑 헤드폰을 낀 사람들이 줄지어 있는 게 보여요.",
+          "주문하는 방식도 달라졌어요.",
+          "휴대폰을 톡 누르기만 하면, 들어갈 때 커피가 준비돼 있어요.",
+          "이런 변화는 모두가 그만큼 바빠졌기 때문이라고 생각해요.",
+          "사람들은 집도 아니고 회사도 아닌 공간이 필요한데, 저한테는 카페가 바로 그런 곳이에요.",
+          "그래서, 네, 그렇게 카페가 어울려 노는 곳에서 저만의 탈출구가 됐어요."
+        ]
       }
     }
   ],

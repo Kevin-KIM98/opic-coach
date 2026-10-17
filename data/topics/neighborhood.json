@@ -113,6 +113,44 @@
         "IM3": "Okay, let me tell you about my neighborhood. I live in Bundang, and it's a quiet area with a lot of apartment buildings. There's a walking trail along the Tancheon stream near my place. Central Park is also close, so I often take walks there. The subway station is only a 10-minute walk from my house. There's a big supermarket and some nice cafes, too. It's really convenient. Yeah, that's why I really like my neighborhood.",
         "IH": "Okay, let me tell you about my neighborhood. I live in a quiet residential area in Bundang. There are lots of apartment buildings, and the streets are clean and full of trees. Right behind my apartment, there's the Tancheon trail, a long walking path along a stream, and that's where I go jogging in the morning. Central Park is also nearby, and it's great for walks on weekends. The subway station on the Bundang Line is only a 10-minute walk from my house. There's also a big supermarket, a street full of academies, and some nice cafes. My kids can walk to their academies, so it's really safe and convenient for families. It's quiet at night, too, so I sleep really well. Yeah, that's why I really like my neighborhood.",
         "AL": "Okay, let me tell you about my neighborhood. I live in a quiet residential area in Bundang, and honestly, it's the best of both worlds. It's peaceful, but everything I need is within walking distance. The area is mostly apartment complexes, and the streets are wide and lined with trees, so it looks really green, especially in spring. Right behind my building, there's the Tancheon trail, which is a long walking and biking path along a stream. I go jogging there three mornings a week, and you'll always see people walking their dogs or riding bikes. Central Park is also nearby, and it's a perfect place for a family walk on weekends. If I need to go into Seoul, the Bundang Line subway station is only a ten-minute walk away. There's also a big supermarket, a bunch of cozy cafes, and a whole street full of academies, which is super convenient for my kids. On weekend mornings, I love reading at one of those cafes. As a parent, the best part is that it feels really safe, so I don't worry when my kids walk home in the evening. So yeah, that's why I really like my neighborhood."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 우리 동네에 대해 말씀드릴게요.",
+          "저는 분당에 사는데, 아파트가 많은 조용한 동네예요.",
+          "집 근처에 탄천을 따라 산책로가 있어요.",
+          "중앙공원도 가까워서 자주 산책하러 가요.",
+          "지하철역은 집에서 걸어서 10분밖에 안 걸려요.",
+          "큰 마트랑 괜찮은 카페들도 있어요.",
+          "정말 편리해요.",
+          "네, 그래서 저는 우리 동네가 정말 좋아요."
+        ],
+        "IH": [
+          "네, 우리 동네에 대해 말씀드릴게요.",
+          "저는 분당의 조용한 주거 지역에 살아요.",
+          "아파트가 많고, 거리는 깨끗하고 나무가 많아요.",
+          "우리 아파트 바로 뒤에는 개울을 따라 길게 이어진 산책로인 탄천 산책로가 있는데, 아침에 거기서 조깅을 해요.",
+          "중앙공원도 가까워서 주말에 산책하기 좋아요.",
+          "분당선 지하철역은 집에서 걸어서 10분밖에 안 걸려요.",
+          "큰 마트, 학원가, 괜찮은 카페들도 있어요.",
+          "아이들이 학원에 걸어서 갈 수 있어서, 가족이 살기에 정말 안전하고 편리해요.",
+          "밤에도 조용해서 잠도 정말 잘 자요.",
+          "네, 그래서 저는 우리 동네가 정말 좋아요."
+        ],
+        "AL": [
+          "네, 우리 동네에 대해 말씀드릴게요.",
+          "저는 분당의 조용한 주거 지역에 사는데, 솔직히 두 가지 장점을 다 갖춘 곳이에요.",
+          "조용하면서도 필요한 건 다 걸어갈 수 있는 거리에 있어요.",
+          "대부분 아파트 단지이고, 거리가 넓고 가로수가 줄지어 있어서, 특히 봄에는 정말 푸르러 보여요.",
+          "우리 건물 바로 뒤에는 개울을 따라 길게 이어진 산책로 겸 자전거 길인 탄천 산책로가 있어요.",
+          "저는 일주일에 세 번 아침에 거기서 조깅을 하는데, 개를 산책시키거나 자전거 타는 사람들을 늘 볼 수 있어요.",
+          "중앙공원도 가까운데, 주말에 가족끼리 산책하기에 딱 좋은 곳이에요.",
+          "서울에 가야 할 때는 분당선 지하철역이 걸어서 10분밖에 안 걸려요.",
+          "큰 마트랑 아늑한 카페들도 많고, 학원이 쭉 모여 있는 거리도 있어서 아이들한테 정말 편리해요.",
+          "주말 아침에는 그 카페 중 한 곳에서 책 읽는 걸 정말 좋아해요.",
+          "부모로서 제일 좋은 점은 정말 안전하다는 거라서, 아이들이 저녁에 걸어서 집에 와도 걱정이 안 돼요.",
+          "네, 그래서 저는 우리 동네가 정말 좋아요."
+        ]
       }
     },
     {
@@ -129,6 +167,44 @@
         "IM3": "Sure, let me tell you about my weekends. On Saturday mornings, I go to a cafe near my place. I read a book there and have an Americano. In the afternoon, I take a walk in Central Park with my family. Sometimes we ride bikes along the Tancheon trail. On Sundays, we go grocery shopping at the big supermarket. My weekdays are busy, so I really enjoy my weekends. Yeah, that's what I usually do on weekends.",
         "IH": "Sure, let me tell you about my weekends. My weekdays are really busy, so I try to enjoy my neighborhood on weekends. On Saturday mornings, I go to a small cafe near my apartment by myself. I order an Americano and read a book for about an hour. I go alone because it's the only quiet time I get all week. In the afternoon, I usually take a walk in Central Park with my family. My daughter loves feeding the ducks at the pond there. On Sundays, the four of us go grocery shopping at the big supermarket, and then we sometimes ride bikes along the Tancheon trail. It's nothing special, but spending this time with my family helps me forget about work. Yeah, that's what my weekends look like.",
         "AL": "Sure, let me tell you about my weekends. Since my weekdays are packed with meetings, I really look forward to slowing down on weekends, and I don't usually go far. My Saturday always starts the same way. I walk to a little cafe around the corner, order an Americano, and read a book for an hour or so. I go alone on purpose, because honestly, it's the only time all week that nobody needs anything from me. Then, in the afternoon, my family and I head to Central Park. My daughter loves feeding the ducks at the pond, while my son usually runs off to play basketball with his friends. If the weather's nice, we rent bikes and ride along the Tancheon trail, and we usually stop for some street snacks on the way back. On Sunday mornings, the four of us go grocery shopping at the big supermarket for the week, which sounds boring, but my kids love it because they get to pick a snack. In the evening, we just stay home and relax. It's nothing special, but those simple weekends really recharge me. So yeah, that's pretty much my weekend routine."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제 주말에 대해 말씀드릴게요.",
+          "토요일 아침에는 집 근처 카페에 가요.",
+          "거기서 아메리카노를 마시면서 책을 읽어요.",
+          "오후에는 가족이랑 중앙공원에서 산책을 해요.",
+          "가끔은 탄천 산책로를 따라 자전거를 타요.",
+          "일요일에는 큰 마트에 장을 보러 가요.",
+          "평일이 바빠서 주말이 정말 즐거워요.",
+          "네, 이게 제가 주말에 보통 하는 일이에요."
+        ],
+        "IH": [
+          "네, 제 주말에 대해 말씀드릴게요.",
+          "평일이 정말 바빠서, 주말에는 우리 동네를 즐기려고 해요.",
+          "토요일 아침에는 혼자 아파트 근처 작은 카페에 가요.",
+          "아메리카노를 시키고 한 시간 정도 책을 읽어요.",
+          "혼자 가는 이유는 그게 일주일 중 유일하게 조용한 시간이기 때문이에요.",
+          "오후에는 보통 가족이랑 중앙공원에서 산책을 해요.",
+          "딸은 거기 연못에서 오리 밥 주는 걸 정말 좋아해요.",
+          "일요일에는 네 식구가 큰 마트에 장을 보러 가고, 그다음에 가끔 탄천 산책로를 따라 자전거를 타요.",
+          "별건 아니지만, 가족이랑 이렇게 시간을 보내면 일을 잊는 데 도움이 돼요.",
+          "네, 제 주말은 이런 모습이에요."
+        ],
+        "AL": [
+          "네, 제 주말에 대해 말씀드릴게요.",
+          "평일은 회의로 꽉 차 있어서 주말에 여유롭게 보내는 게 정말 기다려지고, 보통 멀리 가지는 않아요.",
+          "제 토요일은 항상 똑같이 시작해요.",
+          "모퉁이에 있는 작은 카페까지 걸어가서 아메리카노를 시키고, 한 시간 남짓 책을 읽어요.",
+          "일부러 혼자 가는데, 솔직히 일주일 중 아무도 저한테 뭘 바라지 않는 유일한 시간이거든요.",
+          "그러고 나서 오후에는 가족이랑 중앙공원에 가요.",
+          "딸은 연못에서 오리 밥 주는 걸 정말 좋아하고, 아들은 보통 친구들이랑 농구하러 뛰어가요.",
+          "날씨가 좋으면 자전거를 빌려서 탄천 산책로를 따라 타고, 돌아오는 길에 보통 길거리 간식을 사 먹어요.",
+          "일요일 아침에는 네 식구가 큰 마트에 일주일 치 장을 보러 가는데, 지루하게 들리겠지만 아이들은 간식을 하나 고를 수 있어서 정말 좋아해요.",
+          "저녁에는 그냥 집에서 쉬어요.",
+          "별건 아니지만, 이런 소소한 주말이 저를 정말 재충전해 줘요.",
+          "네, 제 주말 일과는 대충 이래요."
+        ]
       }
     },
     {
@@ -145,6 +221,46 @@
         "IM3": "Oh, that's a good question. Let me think. When I first moved here eight years ago, the Tancheon trail was old and dark. There were no lights, so I didn't go there at night or early in the morning. But about four years ago, the city fixed the trail. They added lights and a bike lane. Some new cafes opened nearby, too. After that, I started jogging there in the morning. Yeah, that's the biggest change in my neighborhood.",
         "IH": "Oh, that's a good question. Let me think. When my family first moved here about eight years ago, the Tancheon trail behind our apartment was pretty old. The path was bumpy, and there were almost no lights, so it was too dark to go there early in the morning or at night. But about four years ago, the city renovated the whole trail. They added bright lights, a separate bike lane, and some benches. A few nice cafes also opened along the stream. This change really affected my life, because that's when I started jogging there three times a week at six thirty in the morning. It's a great way to start my day before work, and I feel much healthier now than I did before. Yeah, that's the most memorable change in my neighborhood.",
         "AL": "Oh, that's a good question. Let me think. When my family first moved here about eight years ago, the Tancheon trail behind our apartment wasn't very nice, to be honest. The path was cracked and bumpy, there were barely any lights, and in the summer, the grass grew so tall that you could hardly see the stream. So, I almost never went there, especially early in the morning. But about four years ago, the city decided to renovate the whole trail. It took a few months, and the construction noise drove us a little crazy, but it turned out to be worth it. Now there are bright lights, a separate bike lane, clean benches, and even a few cozy cafes along the stream. To my surprise, this change actually changed my daily routine. Around that time, I was really stressed at work, and my doctor told me I needed more exercise. So, I started jogging on the new trail three mornings a week at six thirty. I've kept it up ever since, and it's now my favorite part of the day. So yeah, that's the change in my neighborhood I'll never forget."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 좋은 질문이네요.",
+          "생각 좀 해 볼게요.",
+          "8년 전에 처음 여기로 이사 왔을 때, 탄천 산책로는 낡고 어두웠어요.",
+          "조명이 없어서 밤이나 이른 아침에는 거기 안 갔어요.",
+          "그런데 4년 전쯤 시에서 산책로를 정비했어요.",
+          "조명이랑 자전거 도로를 새로 만들었어요.",
+          "근처에 새 카페들도 생겼어요.",
+          "그 뒤로 아침에 거기서 조깅을 하기 시작했어요.",
+          "네, 이게 우리 동네의 가장 큰 변화예요."
+        ],
+        "IH": [
+          "아, 좋은 질문이네요.",
+          "생각 좀 해 볼게요.",
+          "8년 전쯤 우리 가족이 처음 여기로 이사 왔을 때, 아파트 뒤에 있는 탄천 산책로는 꽤 낡았었어요.",
+          "길은 울퉁불퉁하고 조명도 거의 없어서, 이른 아침이나 밤에는 너무 어두워서 갈 수가 없었어요.",
+          "그런데 4년 전쯤 시에서 산책로 전체를 새로 단장했어요.",
+          "밝은 조명이랑 따로 분리된 자전거 도로, 벤치 몇 개를 새로 만들었어요.",
+          "개울을 따라 괜찮은 카페도 몇 군데 생겼어요.",
+          "이 변화가 제 생활에 정말 영향을 줬는데, 그때부터 일주일에 세 번 아침 6시 반에 거기서 조깅을 하기 시작했거든요.",
+          "출근 전에 하루를 시작하기에 정말 좋은 방법이고, 예전보다 지금 훨씬 건강해진 느낌이에요.",
+          "네, 이게 우리 동네에서 가장 기억에 남는 변화예요."
+        ],
+        "AL": [
+          "아, 좋은 질문이네요.",
+          "생각 좀 해 볼게요.",
+          "8년 전쯤 우리 가족이 처음 여기로 이사 왔을 때, 솔직히 아파트 뒤에 있는 탄천 산책로는 별로 좋지 않았어요.",
+          "길은 갈라지고 울퉁불퉁했고, 조명도 거의 없었고, 여름에는 풀이 너무 높이 자라서 개울이 거의 안 보일 정도였어요.",
+          "그래서 특히 이른 아침에는 거기 거의 안 갔어요.",
+          "그런데 4년 전쯤 시에서 산책로 전체를 새로 단장하기로 했어요.",
+          "몇 달이 걸렸고 공사 소음 때문에 좀 미칠 것 같았지만, 결국 그럴 만한 가치가 있었어요.",
+          "지금은 밝은 조명, 따로 분리된 자전거 도로, 깨끗한 벤치, 그리고 개울을 따라 아늑한 카페도 몇 군데 있어요.",
+          "놀랍게도 이 변화가 실제로 제 일상을 바꿔 놨어요.",
+          "그 무렵 저는 회사에서 스트레스를 정말 많이 받고 있었는데, 의사 선생님이 운동을 더 해야 한다고 했어요.",
+          "그래서 새로 단장한 산책로에서 일주일에 세 번 아침 6시 반에 조깅을 시작했어요.",
+          "그 뒤로 계속 꾸준히 하고 있고, 지금은 하루 중 제일 좋아하는 시간이에요.",
+          "네, 이게 제가 절대 잊지 못할 우리 동네의 변화예요."
+        ]
       }
     },
     {
@@ -161,6 +277,46 @@
         "IM3": "Oh, that's an interesting question. I grew up in Daejeon. My old neighborhood had a lot of small houses and narrow streets. There was a small market near my house. Everyone knew each other, and I played outside with my friends every day. Now I live in Bundang. There are a lot of big apartment buildings here. It's more convenient, but I don't really know my neighbors. Yeah, that's the difference.",
         "IH": "Oh, that's an interesting question. I grew up in Daejeon, in an old neighborhood with small houses and narrow alleys. There was a traditional market nearby, and my mom used to take me there every weekend. The best thing was that everyone knew each other. I used to play outside with the other kids until dinner time. Now I live in Bundang, and it's very different. The biggest difference is convenience. Here, we have a big supermarket, a subway station, and lots of academies within walking distance. On the other hand, people here are busier, so I don't really know my neighbors well. My kids also spend more time at academies than playing outside, and I feel a little sorry about that. Yeah, that's how my neighborhood is different now.",
         "AL": "Oh, that's an interesting question, because the two neighborhoods are like two different worlds. I grew up in Daejeon, in an old neighborhood full of small houses and narrow alleys. There was a traditional market just down the street, and the owners knew my name, so I'd often get a free snack when I went there with my mom. Back in the day, everyone on my street knew each other. Kids played outside until it got dark, and our neighbors would just drop by to share food. Now I live in Bundang, and compared to my hometown, it's much more modern and convenient. We have a big supermarket, a subway station, cafes, and a whole street of academies, all within walking distance. The biggest difference, though, is the relationship with neighbors. Everyone here is so busy that I barely know the people living next door, even after eight years. And my kids spend most of their afternoons at academies instead of running around outside like I did. I love how convenient it is here, but I sometimes miss that warm feeling of my old neighborhood. So yeah, that's how they're different."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 재미있는 질문이네요.",
+          "저는 대전에서 자랐어요.",
+          "예전 동네에는 작은 집들이랑 좁은 길이 많았어요.",
+          "집 근처에 작은 시장이 있었어요.",
+          "다들 서로 알고 지냈고, 저는 매일 친구들이랑 밖에서 놀았어요.",
+          "지금은 분당에 살아요.",
+          "여기는 큰 아파트가 많아요.",
+          "더 편리하긴 하지만, 이웃은 잘 몰라요.",
+          "네, 이게 차이점이에요."
+        ],
+        "IH": [
+          "아, 재미있는 질문이네요.",
+          "저는 대전에서 자랐는데, 작은 집들이랑 좁은 골목이 있는 오래된 동네였어요.",
+          "근처에 전통 시장이 있었는데, 엄마가 주말마다 저를 데리고 가시곤 했어요.",
+          "제일 좋았던 건 다들 서로 알고 지냈다는 거예요.",
+          "저는 저녁 먹을 때까지 다른 아이들이랑 밖에서 놀곤 했어요.",
+          "지금은 분당에 사는데, 정말 많이 달라요.",
+          "가장 큰 차이점은 편리함이에요.",
+          "여기는 큰 마트, 지하철역, 학원들이 다 걸어갈 수 있는 거리에 있어요.",
+          "반면에 여기 사람들은 더 바빠서, 저는 이웃을 잘 몰라요.",
+          "우리 아이들도 밖에서 노는 것보다 학원에서 시간을 더 많이 보내서, 그게 좀 안쓰러워요.",
+          "네, 지금 우리 동네는 이렇게 달라요."
+        ],
+        "AL": [
+          "아, 재미있는 질문이네요, 두 동네가 완전히 다른 세상 같거든요.",
+          "저는 대전에서 자랐는데, 작은 집들이랑 좁은 골목이 가득한 오래된 동네였어요.",
+          "길 바로 아래에 전통 시장이 있었는데, 가게 주인분들이 제 이름을 알아서, 엄마랑 가면 간식을 공짜로 얻어먹곤 했어요.",
+          "그 시절에는 우리 동네 사람들이 다 서로 알고 지냈어요.",
+          "아이들은 어두워질 때까지 밖에서 놀았고, 이웃들은 그냥 들러서 음식을 나눠 주곤 했어요.",
+          "지금은 분당에 사는데, 제 고향에 비하면 훨씬 현대적이고 편리해요.",
+          "큰 마트, 지하철역, 카페, 그리고 학원가까지 전부 걸어갈 수 있는 거리에 있어요.",
+          "그래도 가장 큰 차이점은 이웃과의 관계예요.",
+          "여기는 다들 너무 바빠서, 8년이 지났는데도 옆집 사람들을 거의 몰라요.",
+          "그리고 우리 아이들은 저처럼 밖에서 뛰어놀기보다 오후 대부분을 학원에서 보내요.",
+          "여기가 편리한 건 정말 좋지만, 가끔 예전 동네의 그 따뜻한 느낌이 그리워요.",
+          "네, 두 동네는 이렇게 달라요."
+        ]
       }
     }
   ],

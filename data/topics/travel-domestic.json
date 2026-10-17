@@ -13,21 +13,92 @@
     "비교 질문은 '대학 때는 친구들과 야간버스·게스트하우스 → 지금은 가족과 자가용·호텔, 앱으로 예약'처럼 used to / now 로 과거와 현재를 분명히 나눠 말하세요."
   ],
   "expressions": [
-    {"en": "Sure, I'd love to talk about my favorite place in Korea.", "ko": "네, 제가 한국에서 제일 좋아하는 곳에 대해 말해 볼게요.", "level": "IM", "note": "국내 여행 질문의 시작 문장으로 그대로 사용"},
-    {"en": "It takes about two and a half hours by car.", "ko": "차로 두 시간 반 정도 걸려요.", "level": "IM", "note": "It takes + 시간 + by 교통수단"},
-    {"en": "I usually go there with my family.", "ko": "저는 보통 가족이랑 거기에 가요.", "level": "IM"},
-    {"en": "We walk along the beach.", "ko": "우리는 해변을 따라 걸어요.", "level": "IM", "note": "walk along + 길/해변: ~을 따라 걷다"},
-    {"en": "The coffee is really good there.", "ko": "거기는 커피가 정말 맛있어요.", "level": "IM"},
-    {"en": "We usually stay for two nights.", "ko": "우리는 보통 2박을 해요.", "level": "IM", "note": "2박 3일은 a three-day, two-night trip"},
-    {"en": "It's a nice break from work.", "ko": "일에서 벗어나 쉬기 좋아요.", "level": "IM", "note": "a break from ~: ~에서 잠시 벗어나는 휴식"},
-    {"en": "We leave early in the morning to avoid traffic.", "ko": "차 막히는 걸 피하려고 아침 일찍 출발해요.", "level": "IH", "note": "to + 동사원형으로 목적을 덧붙이면 문장이 길어져요"},
-    {"en": "It's right next to the ocean.", "ko": "바다 바로 옆에 있어요.", "level": "IH"},
-    {"en": "The kids can't wait to get to the beach.", "ko": "아이들은 빨리 해변에 가고 싶어 안달이에요.", "level": "IH", "note": "can't wait to + 동사: 너무 하고 싶다"},
-    {"en": "Back in college, we didn't have much money.", "ko": "대학 때는 우리가 돈이 별로 없었어요.", "level": "IH", "note": "Back in ~: 비교 질문에서 과거를 꺼낼 때"},
-    {"en": "These days, I book everything on my phone.", "ko": "요즘은 전부 휴대폰으로 예약해요.", "level": "IH"},
-    {"en": "It's like hitting a reset button.", "ko": "리셋 버튼을 누르는 것 같아요.", "level": "AL", "note": "쉬고 나서 개운한 느낌을 비유로 표현"},
-    {"en": "We hit the road around six to beat the traffic.", "ko": "차 막히기 전에 6시쯤 길을 나서요.", "level": "AL", "note": "hit the road: 출발하다 / beat the traffic: 정체를 피하다"},
-    {"en": "So yeah, that's why I really like traveling in Korea.", "ko": "그래서 제가 국내 여행을 정말 좋아하는 거예요.", "level": "IM", "note": "마무리 문장으로 그대로 사용"}
+    {
+      "en": "Sure, I'd love to talk about my favorite place in Korea.",
+      "ko": "네, 제가 한국에서 제일 좋아하는 곳에 대해 말해 볼게요.",
+      "level": "IM",
+      "note": "국내 여행 질문의 시작 문장으로 그대로 사용"
+    },
+    {
+      "en": "It takes about two and a half hours by car.",
+      "ko": "차로 두 시간 반 정도 걸려요.",
+      "level": "IM",
+      "note": "It takes + 시간 + by 교통수단"
+    },
+    {
+      "en": "I usually go there with my family.",
+      "ko": "저는 보통 가족이랑 거기에 가요.",
+      "level": "IM"
+    },
+    {
+      "en": "We walk along the beach.",
+      "ko": "우리는 해변을 따라 걸어요.",
+      "level": "IM",
+      "note": "walk along + 길/해변: ~을 따라 걷다"
+    },
+    {
+      "en": "The coffee is really good there.",
+      "ko": "거기는 커피가 정말 맛있어요.",
+      "level": "IM"
+    },
+    {
+      "en": "We usually stay for two nights.",
+      "ko": "우리는 보통 2박을 해요.",
+      "level": "IM",
+      "note": "2박 3일은 a three-day, two-night trip"
+    },
+    {
+      "en": "It's a nice break from work.",
+      "ko": "일에서 벗어나 쉬기 좋아요.",
+      "level": "IM",
+      "note": "a break from ~: ~에서 잠시 벗어나는 휴식"
+    },
+    {
+      "en": "We leave early in the morning to avoid traffic.",
+      "ko": "차 막히는 걸 피하려고 아침 일찍 출발해요.",
+      "level": "IH",
+      "note": "to + 동사원형으로 목적을 덧붙이면 문장이 길어져요"
+    },
+    {
+      "en": "It's right next to the ocean.",
+      "ko": "바다 바로 옆에 있어요.",
+      "level": "IH"
+    },
+    {
+      "en": "The kids can't wait to get to the beach.",
+      "ko": "아이들은 빨리 해변에 가고 싶어 안달이에요.",
+      "level": "IH",
+      "note": "can't wait to + 동사: 너무 하고 싶다"
+    },
+    {
+      "en": "Back in college, we didn't have much money.",
+      "ko": "대학 때는 우리가 돈이 별로 없었어요.",
+      "level": "IH",
+      "note": "Back in ~: 비교 질문에서 과거를 꺼낼 때"
+    },
+    {
+      "en": "These days, I book everything on my phone.",
+      "ko": "요즘은 전부 휴대폰으로 예약해요.",
+      "level": "IH"
+    },
+    {
+      "en": "It's like hitting a reset button.",
+      "ko": "리셋 버튼을 누르는 것 같아요.",
+      "level": "AL",
+      "note": "쉬고 나서 개운한 느낌을 비유로 표현"
+    },
+    {
+      "en": "We hit the road around six to beat the traffic.",
+      "ko": "차 막히기 전에 6시쯤 길을 나서요.",
+      "level": "AL",
+      "note": "hit the road: 출발하다 / beat the traffic: 정체를 피하다"
+    },
+    {
+      "en": "So yeah, that's why I really like traveling in Korea.",
+      "ko": "그래서 제가 국내 여행을 정말 좋아하는 거예요.",
+      "level": "IM",
+      "note": "마무리 문장으로 그대로 사용"
+    }
   ],
   "questions": [
     {
@@ -44,6 +115,54 @@
         "IM3": "Sure, I'd love to talk about my favorite place in Korea. It's Gangneung. Gangneung is a city on the east coast. It takes about two and a half hours by car from my apartment in Bundang. I usually go there with my family. We walk along the beach and visit the coffee street. The coffee is really good there, and the ocean view is amazing. My kids love playing in the sand. My job is pretty busy, so it's a nice break from work. So yeah, that's why I really like Gangneung.",
         "IH": "Sure, I'd love to talk about my favorite place in Korea. It's definitely Gangneung. Gangneung is a city on the east coast, and it's right next to the ocean. It's located about two and a half hours from Bundang by car, so it's easy to get to. I usually go there with my family, maybe twice a year. We leave early on Saturday morning to avoid traffic and stay for two nights. When we get there, we walk along Gyeongpo Beach, and the kids run around in the sand. Then we go to Anmok coffee street. It's famous for its cafes with ocean views. I always order an Americano and just look at the waves. Whenever I see the ocean, I feel so relaxed. At work, I'm always in meetings or reviewing code, so the sea feels really fresh to me. So yeah, that's why I really like Gangneung.",
         "AL": "Oh, a place in Korea? Let me think. I'd have to say Gangneung, hands down. It's a city on the east coast, so you can see the ocean almost everywhere you go. It's located about two and a half hours from Bundang by car, so it's easy to get to. I usually go with my family, the four of us packed into our car with way too many snacks. Our routine is pretty much the same every time. We check into a hotel near Gyeongpo Beach, and the kids head straight for the water. My son likes to jump over the waves, and my daughter collects shells. Later, we go to Anmok coffee street, which is famous for its seaside cafes. I grab an Americano, sit by the window, and just watch the waves for a while. Honestly, it's the best coffee I've ever had, maybe because of the view. What I love most is how calm I feel there. My life in Bundang is pretty busy because I usually have a lot of meetings and projects, and my phone never stops buzzing. But in Gangneung, I can finally slow down. It's like hitting a reset button. So yeah, that's why Gangneung is my favorite place in Korea."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 한국에서 제가 제일 좋아하는 곳에 대해 얘기해 볼게요.",
+          "바로 강릉이에요.",
+          "강릉은 동해안에 있는 도시예요.",
+          "분당에 있는 저희 아파트에서 차로 두 시간 반 정도 걸려요.",
+          "저는 보통 가족이랑 같이 가요.",
+          "해변을 따라 걷고 커피 거리에도 가요.",
+          "거기 커피가 정말 맛있고, 바다 경치도 끝내줘요.",
+          "아이들은 모래에서 노는 걸 정말 좋아해요.",
+          "제 일이 꽤 바빠서, 일에서 벗어나 잠깐 쉬기에 딱 좋아요.",
+          "네, 그래서 제가 강릉을 정말 좋아해요."
+        ],
+        "IH": [
+          "네, 한국에서 제가 제일 좋아하는 곳에 대해 얘기해 볼게요.",
+          "단연 강릉이에요.",
+          "강릉은 동해안에 있는 도시인데, 바로 바다 옆에 있어요.",
+          "분당에서 차로 두 시간 반 정도 거리라서 가기도 쉬워요.",
+          "저는 보통 가족이랑 같이, 1년에 두 번 정도 가요.",
+          "차 막히는 걸 피하려고 토요일 아침 일찍 출발해서 2박을 해요.",
+          "도착하면 경포해변을 따라 걷고, 아이들은 모래사장에서 뛰어다녀요.",
+          "그다음엔 안목 커피 거리에 가요.",
+          "거기는 바다가 보이는 카페들로 유명해요.",
+          "저는 항상 아메리카노를 시켜 놓고 그냥 파도를 바라봐요.",
+          "바다를 볼 때마다 마음이 정말 편안해져요.",
+          "회사에서는 늘 회의를 하거나 코드 리뷰를 하고 있어서, 바다가 정말 상쾌하게 느껴져요.",
+          "네, 그래서 제가 강릉을 정말 좋아해요."
+        ],
+        "AL": [
+          "아, 한국에 있는 장소요?",
+          "생각 좀 해볼게요.",
+          "단연코 강릉이라고 해야겠네요.",
+          "동해안에 있는 도시라서, 어딜 가든 거의 바다가 보여요.",
+          "분당에서 차로 두 시간 반 정도 거리라서 가기도 쉬워요.",
+          "저는 보통 가족이랑 가는데, 네 식구가 간식을 잔뜩 싣고 차에 꽉 끼어 타고 가요.",
+          "저희 코스는 매번 거의 똑같아요.",
+          "경포해변 근처 호텔에 체크인하면, 아이들은 곧장 바다로 달려가요.",
+          "아들은 파도 뛰어넘는 걸 좋아하고, 딸은 조개껍데기를 모아요.",
+          "나중에는 바닷가 카페로 유명한 안목 커피 거리에 가요.",
+          "아메리카노를 하나 사서 창가에 앉아, 한동안 그냥 파도를 바라봐요.",
+          "솔직히 제가 마셔 본 커피 중에 최고예요, 아마 경치 때문인 것 같기도 하고요.",
+          "제가 제일 좋아하는 건 거기서 느끼는 그 평온함이에요.",
+          "분당에서의 제 생활은 보통 회의랑 프로젝트가 많아서 꽤 바쁘고, 휴대폰은 쉴 새 없이 울려요.",
+          "그런데 강릉에서는 드디어 여유를 가질 수 있어요.",
+          "마치 리셋 버튼을 누르는 것 같아요.",
+          "네, 그래서 강릉이 한국에서 제가 제일 좋아하는 곳이에요."
+        ]
       }
     },
     {
@@ -60,6 +179,51 @@
         "IM3": "Okay, let me tell you about how I prepare for a trip. I usually travel with my family. First, we choose a place together. My kids usually want to go to the beach. Then I book a hotel on my phone. Before I go on a trip, I always check the weather forecast. The night before, I pack clothes, chargers, and snacks for the car. My kids pack their own bags, too. On the day of the trip, we leave early in the morning to avoid traffic. Yeah, that's how I usually get ready for a trip.",
         "IH": "Sure, I'd love to talk about how I get ready for a trip. These days, I usually travel with my family, so planning is a bit of a team project. About a month before, we choose a place together at the dinner table. My kids almost always vote for the beach. Then I book a hotel on my phone. I always look for a family room, because the four of us need a lot of space. Before I go on a trip, I always check the weather forecast, because rain can ruin a beach trip. The night before, we all pack. I pack light clothes, chargers, and some snacks for the car. My kids pack their own bags, but I always double-check them, because my son once forgot his shoes. On the day, we leave around six in the morning to avoid traffic. So yeah, that's pretty much how I prepare for a trip.",
         "AL": "Oh, preparing for a trip? Let me think. Well, I usually travel with my family, so it takes a little more planning than it used to. It usually starts at the dinner table about a month before. We throw out a few ideas, and the kids almost always vote for the beach, so Gangneung wins most of the time. After that, I book a hotel on an app. I'm a developer, so I kind of can't help myself. I compare prices, read reviews, and even make a little checklist on my phone. Before I go on a trip, I always check the weather forecast, because rain can ruin a beach trip. The night before we leave, the whole family packs together. I pack light clothes, chargers, and a big bag of snacks for the car, and my kids pack their own backpacks. Of course, I double-check them, because my son once showed up with three game controllers and no socks. I also make a playlist for the drive, with some 90s ballads for me and K-pop for the kids. On the day, we hit the road around six to beat the traffic. So yeah, that's pretty much how I get ready for a trip."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제가 여행 준비를 어떻게 하는지 말씀드릴게요.",
+          "저는 보통 가족이랑 여행을 가요.",
+          "먼저, 같이 갈 곳을 정해요.",
+          "아이들은 보통 바닷가에 가고 싶어 해요.",
+          "그다음에 휴대폰으로 호텔을 예약해요.",
+          "여행 가기 전에는 항상 일기예보를 확인해요.",
+          "전날 밤에는 옷, 충전기, 그리고 차에서 먹을 간식을 챙겨요.",
+          "아이들도 자기 가방은 직접 싸요.",
+          "여행 당일에는 차 막히는 걸 피하려고 아침 일찍 출발해요.",
+          "네, 그게 제가 보통 여행 준비하는 방법이에요."
+        ],
+        "IH": [
+          "네, 제가 여행 준비를 어떻게 하는지 얘기해 볼게요.",
+          "요즘은 보통 가족이랑 여행을 가서, 계획 세우는 게 일종의 팀 프로젝트예요.",
+          "한 달쯤 전에 저녁 식탁에서 같이 갈 곳을 정해요.",
+          "아이들은 거의 항상 바닷가에 한 표를 던져요.",
+          "그다음에 휴대폰으로 호텔을 예약해요.",
+          "네 식구라 공간이 많이 필요해서 항상 패밀리룸을 찾아요.",
+          "여행 가기 전에는 항상 일기예보를 확인해요, 비가 오면 바닷가 여행을 망칠 수 있거든요.",
+          "전날 밤에는 다 같이 짐을 싸요.",
+          "저는 가벼운 옷, 충전기, 그리고 차에서 먹을 간식을 좀 챙겨요.",
+          "아이들은 자기 가방을 직접 싸는데, 아들이 한 번 신발을 깜빡한 적이 있어서 저는 항상 다시 확인해요.",
+          "당일에는 차 막히는 걸 피하려고 아침 6시쯤 출발해요.",
+          "네, 그게 대충 제가 여행 준비하는 방법이에요."
+        ],
+        "AL": [
+          "아, 여행 준비요?",
+          "생각 좀 해볼게요.",
+          "음, 저는 보통 가족이랑 여행을 가서, 예전보다 계획이 좀 더 필요해요.",
+          "보통 한 달쯤 전에 저녁 식탁에서 시작돼요.",
+          "몇 가지 아이디어를 던져 보는데, 아이들이 거의 항상 바닷가에 표를 던져서 대부분 강릉이 뽑혀요.",
+          "그다음엔 앱으로 호텔을 예약해요.",
+          "제가 개발자라서 어쩔 수가 없더라고요.",
+          "가격을 비교하고, 리뷰를 읽고, 휴대폰에 작은 체크리스트까지 만들어요.",
+          "여행 가기 전에는 항상 일기예보를 확인해요, 비가 오면 바닷가 여행을 망칠 수 있거든요.",
+          "출발 전날 밤에는 온 가족이 같이 짐을 싸요.",
+          "저는 가벼운 옷, 충전기, 그리고 차에서 먹을 간식을 한 봉지 가득 챙기고, 아이들은 자기 배낭을 직접 싸요.",
+          "물론 제가 다시 확인하는데, 아들이 한 번은 게임 컨트롤러 세 개만 챙기고 양말은 안 챙겨 온 적이 있거든요.",
+          "가는 길에 들을 플레이리스트도 만드는데, 저를 위한 90년대 발라드랑 아이들을 위한 K팝을 넣어요.",
+          "당일에는 차 막히기 전에 6시쯤 출발해요.",
+          "네, 그게 대충 제가 여행 준비하는 방법이에요."
+        ]
       }
     },
     {
@@ -76,6 +240,51 @@
         "IM3": "Okay, let me tell you about a memorable trip. About three years ago, I went to Jeju Island with my family. We took a plane from Gimpo, and it only took an hour. We rented a car and drove around the island. One morning, we woke up at five and climbed Seongsan Ilchulbong to see the sunrise. My kids were really tired and grumpy. But when the sun came up, they were so excited. I'll never forget that trip because we watched the sunrise together. Yeah, that's my most memorable trip in Korea.",
         "IH": "Sure, I'd love to talk about a memorable trip. About three years ago, I went to Jeju Island with my family for four days. We flew from Gimpo, rented a car, and drove around the whole island. We ate black pork, visited some beaches, and the kids even rode horses. But the best part was the last morning. We woke up at five and climbed Seongsan Ilchulbong, a famous hill, to see the sunrise. It was dark and windy, and my kids complained the whole way up. My daughter said her legs hurt, and my son wanted to go back to bed. But when the sun came up over the ocean, they both went quiet. Then they started taking pictures like crazy. I'll never forget that trip because it was the first time we watched the sunrise as a family. Yeah, that's my most memorable trip in Korea.",
         "AL": "Oh, a memorable trip? Let me think. There have been a few, but the one that really stands out is our family trip to Jeju about three years ago. It was early fall, so the weather was perfect. We flew from Gimpo, picked up a rental car, and spent four days driving around the island. We had grilled black pork, played on the beaches, and the kids even rode little Jeju horses. But the real highlight came on the last morning. I had this big idea to watch the sunrise from Seongsan Ilchulbong, so I dragged everyone out of bed at five. Honestly, nobody was happy with me. It was dark and windy, my daughter kept saying her legs hurt, and my son was half asleep the whole way up. I was starting to think it was a terrible idea. But then the sun slowly came up over the ocean, and the whole sky turned orange. Both kids went completely quiet, and then they started taking pictures like crazy. My son even said, 'Okay, Dad, this was worth it.' I'll never forget that trip because it was such a simple moment, but we all shared it together. Yeah, that's my most memorable trip in Korea."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 기억에 남는 여행에 대해 말씀드릴게요.",
+          "3년 전쯤에 가족이랑 제주도에 갔어요.",
+          "김포에서 비행기를 탔는데, 한 시간밖에 안 걸렸어요.",
+          "차를 빌려서 섬을 돌아다녔어요.",
+          "어느 날 아침에는 5시에 일어나서 일출을 보러 성산일출봉에 올라갔어요.",
+          "아이들은 정말 피곤해서 투덜거렸어요.",
+          "그런데 해가 뜨니까 정말 신나 했어요.",
+          "다 같이 일출을 봤기 때문에 그 여행은 절대 잊지 못할 거예요.",
+          "네, 그게 한국에서 제일 기억에 남는 여행이에요."
+        ],
+        "IH": [
+          "네, 기억에 남는 여행에 대해 얘기해 볼게요.",
+          "3년 전쯤에 가족이랑 4일 동안 제주도에 갔어요.",
+          "김포에서 비행기를 타고 가서, 차를 빌려 섬 전체를 한 바퀴 돌았어요.",
+          "흑돼지도 먹고, 해변 몇 군데도 가고, 아이들은 말도 탔어요.",
+          "그런데 제일 좋았던 건 마지막 날 아침이었어요.",
+          "5시에 일어나서 일출을 보려고 유명한 언덕인 성산일출봉에 올라갔어요.",
+          "어둡고 바람도 많이 불어서, 아이들이 올라가는 내내 불평했어요.",
+          "딸은 다리가 아프다고 하고, 아들은 다시 자러 가고 싶어 했어요.",
+          "그런데 바다 위로 해가 뜨니까 둘 다 조용해졌어요.",
+          "그러더니 미친 듯이 사진을 찍기 시작했어요.",
+          "가족이 다 같이 일출을 본 게 처음이라서 그 여행은 절대 잊지 못할 거예요.",
+          "네, 그게 한국에서 제일 기억에 남는 여행이에요."
+        ],
+        "AL": [
+          "아, 기억에 남는 여행이요?",
+          "생각 좀 해볼게요.",
+          "몇 번 있지만, 정말 눈에 띄는 건 3년 전쯤에 간 제주도 가족 여행이에요.",
+          "초가을이라 날씨가 완벽했어요.",
+          "김포에서 비행기를 타고 가서 렌터카를 받아, 4일 동안 섬을 돌아다녔어요.",
+          "흑돼지 구이도 먹고, 해변에서 놀고, 아이들은 작은 제주 조랑말도 탔어요.",
+          "그런데 진짜 하이라이트는 마지막 날 아침에 있었어요.",
+          "성산일출봉에서 일출을 보자는 거창한 생각이 들어서, 5시에 다들 침대에서 끌고 나왔어요.",
+          "솔직히 아무도 저한테 기분 좋지 않았어요.",
+          "어둡고 바람이 불었고, 딸은 계속 다리가 아프다고 하고, 아들은 올라가는 내내 반쯤 잠들어 있었어요.",
+          "저도 이게 완전 최악의 아이디어였나 싶기 시작했어요.",
+          "그런데 바다 위로 해가 천천히 떠오르더니, 하늘 전체가 주황색으로 물들었어요.",
+          "두 아이 모두 완전히 조용해지더니, 미친 듯이 사진을 찍기 시작했어요.",
+          "아들은 심지어 '알았어요, 아빠, 이건 올 만했어요.'라고 하더라고요.",
+          "정말 소박한 순간이었지만 다 같이 함께했기 때문에 그 여행은 절대 잊지 못할 거예요.",
+          "네, 그게 한국에서 제일 기억에 남는 여행이에요."
+        ]
       }
     },
     {
@@ -92,24 +301,134 @@
         "IM3": "Oh, how my trips have changed? Let me think. When I was in college, I traveled with my friends. We went to Busan by night bus because it was cheap. We stayed in a small guesthouse and ate cheap food. Now I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car. We stay in nice hotels, and I book everything on my phone. It's more comfortable, but I need to plan a lot more. Yeah, that's how my trips have changed.",
         "IH": "Sure, I'd love to talk about that. My trips have changed a lot over the years. Back in college, I traveled with my friends, and we didn't have much money. Once, we took a night bus to Busan, slept in a cheap guesthouse, and ate street food on Haeundae Beach. We didn't plan anything. We just went. Now I'm in my mid-forties, and I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car. We stay in a comfortable hotel, and I book everything on my phone. These days, the trip is all about the kids, so we choose places with beaches or parks. The biggest difference is freedom. In the past, I could go anywhere, anytime. Now I need a plan. But honestly, seeing my kids have fun is even better. Yeah, that's how my trips have changed.",
         "AL": "Oh, that's a good question. Let me think. My trips have changed a lot, mostly because my life has changed. Back in college, my friends and I had a lot of time but almost no money. I remember one summer we took a night bus to Busan, slept in a tiny guesthouse with six beds in one room, and lived on street food for three days. We didn't have smartphones, so we just asked people for directions. It was messy, but it was so much fun. Fast forward about twenty-five years, and now I travel with my family. I used to take a night bus with my friends, but now I drive my family in our car, usually to Gangneung or somewhere with a beach. I book a family room on an app, check reviews, and plan the whole schedule around the kids. So it's way more comfortable, but it's also a lot more work. The biggest difference is the spontaneity. Back then, we could just pack a bag and go. Now there's a checklist for everything. But you know what? Watching my kids get excited about the ocean is worth all the planning. Yeah, that's how my trips have changed over the years."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 제 여행이 어떻게 변했냐고요?",
+          "생각 좀 해볼게요.",
+          "대학생 때는 친구들이랑 여행을 다녔어요.",
+          "싸서 야간 버스를 타고 부산에 갔어요.",
+          "작은 게스트하우스에서 묵고 싼 음식을 먹었어요.",
+          "지금은 가족이랑 여행을 가요.",
+          "예전에는 친구들이랑 야간 버스를 탔는데, 지금은 제가 차로 가족을 태우고 가요.",
+          "좋은 호텔에 묵고, 모든 걸 휴대폰으로 예약해요.",
+          "더 편하긴 한데, 계획을 훨씬 더 많이 세워야 해요.",
+          "네, 그게 제 여행이 변한 모습이에요."
+        ],
+        "IH": [
+          "네, 그것에 대해 얘기해 볼게요.",
+          "제 여행은 세월이 지나면서 많이 바뀌었어요.",
+          "대학생 때는 친구들이랑 여행을 다녔는데, 돈이 별로 없었어요.",
+          "한 번은 야간 버스를 타고 부산에 가서, 싼 게스트하우스에서 자고 해운대 해변에서 길거리 음식을 먹었어요.",
+          "아무 계획도 안 세웠어요.",
+          "그냥 갔어요.",
+          "지금 저는 40대 중반이고, 가족이랑 여행을 가요.",
+          "예전에는 친구들이랑 야간 버스를 탔는데, 지금은 제가 차로 가족을 태우고 가요.",
+          "편한 호텔에 묵고, 모든 걸 휴대폰으로 예약해요.",
+          "요즘은 여행이 전부 아이들 중심이라서, 해변이나 공원이 있는 곳을 골라요.",
+          "가장 큰 차이는 자유예요.",
+          "예전에는 언제든 어디든 갈 수 있었어요.",
+          "지금은 계획이 필요해요.",
+          "그래도 솔직히 아이들이 즐거워하는 걸 보는 게 훨씬 더 좋아요.",
+          "네, 그게 제 여행이 변한 모습이에요."
+        ],
+        "AL": [
+          "아, 좋은 질문이네요.",
+          "생각 좀 해볼게요.",
+          "제 여행은 많이 바뀌었는데, 주로 제 삶이 바뀌었기 때문이에요.",
+          "대학생 때 친구들이랑 저는 시간은 많았지만 돈은 거의 없었어요.",
+          "어느 여름에 야간 버스를 타고 부산에 가서, 한 방에 침대가 여섯 개 있는 아주 작은 게스트하우스에서 자고, 사흘 동안 길거리 음식으로 버텼던 게 기억나요.",
+          "스마트폰이 없어서 그냥 사람들한테 길을 물어봤어요.",
+          "엉망진창이었지만 정말 재밌었어요.",
+          "그로부터 25년쯤 지나서, 지금은 가족이랑 여행을 가요.",
+          "예전에는 친구들이랑 야간 버스를 탔는데, 지금은 제가 차로 가족을 태우고, 보통 강릉이나 해변이 있는 곳으로 가요.",
+          "앱으로 패밀리룸을 예약하고, 리뷰를 확인하고, 전체 일정을 아이들에 맞춰 짜요.",
+          "그래서 훨씬 편하긴 하지만, 일도 훨씬 많아요.",
+          "가장 큰 차이는 즉흥성이에요.",
+          "그때는 그냥 가방 하나 싸서 떠날 수 있었어요.",
+          "지금은 모든 것에 체크리스트가 있어요.",
+          "그런데 있잖아요?",
+          "아이들이 바다를 보고 신나 하는 걸 보면 그 모든 계획이 다 가치가 있어요.",
+          "네, 그게 세월이 지나면서 제 여행이 변한 모습이에요."
+        ]
       }
     }
   ],
   "pronunciation": [
-    {"word": "beach", "ipa": "/biːtʃ/", "tip": "'비-치'처럼 '이' 소리를 길게 늘이세요. 짧게 말하면 전혀 다른 단어로 들릴 수 있어요."},
-    {"word": "island", "ipa": "/ˈaɪlənd/", "tip": "s는 소리 내지 않아요. '아일런드'로 발음하세요."},
-    {"word": "memorable", "ipa": "/ˈmemərəbəl/", "tip": "첫 음절 '메'에 강세. '메머러블'처럼 뒤는 약하게 흘려요."},
-    {"word": "sunrise", "ipa": "/ˈsʌnraɪz/", "tip": "앞 '썬'에 강세를 주고, 끝 s는 '즈'처럼 울리게 '썬라이즈'라고 하세요."},
-    {"word": "ocean", "ipa": "/ˈoʊʃən/", "tip": "'오-션'. c가 '쉬' 소리가 나요. '오시안'이 아닙니다."}
+    {
+      "word": "beach",
+      "ipa": "/biːtʃ/",
+      "tip": "'비-치'처럼 '이' 소리를 길게 늘이세요. 짧게 말하면 전혀 다른 단어로 들릴 수 있어요."
+    },
+    {
+      "word": "island",
+      "ipa": "/ˈaɪlənd/",
+      "tip": "s는 소리 내지 않아요. '아일런드'로 발음하세요."
+    },
+    {
+      "word": "memorable",
+      "ipa": "/ˈmemərəbəl/",
+      "tip": "첫 음절 '메'에 강세. '메머러블'처럼 뒤는 약하게 흘려요."
+    },
+    {
+      "word": "sunrise",
+      "ipa": "/ˈsʌnraɪz/",
+      "tip": "앞 '썬'에 강세를 주고, 끝 s는 '즈'처럼 울리게 '썬라이즈'라고 하세요."
+    },
+    {
+      "word": "ocean",
+      "ipa": "/ˈoʊʃən/",
+      "tip": "'오-션'. c가 '쉬' 소리가 나요. '오시안'이 아닙니다."
+    }
   ],
   "patterns": [
-    {"pid": "place#3", "en": "My favorite place to visit in Korea is Gangneung.", "ko": "제가 한국에서 가장 좋아하는 여행지는 강릉이에요.", "q": "travel-domestic-describe"},
-    {"pid": "place#4", "en": "It's located about two and a half hours from Bundang by car, so it's easy to get to.", "ko": "분당에서 차로 두 시간 반 정도 거리에 있어서 가기 쉬워요.", "q": "travel-domestic-describe"},
-    {"pid": "describe#4", "en": "It's famous for its cafes with ocean views.", "ko": "거기는 바다가 보이는 카페들로 유명해요.", "q": "travel-domestic-describe"},
-    {"pid": "reason#4", "en": "Whenever I see the ocean, I feel so relaxed.", "ko": "바다를 볼 때마다 정말 마음이 편해져요.", "q": "travel-domestic-describe"},
-    {"pid": "people#0", "en": "I usually travel with my family.", "ko": "저는 보통 가족과 함께 여행해요.", "q": "travel-domestic-routine"},
-    {"pid": "routine#2", "en": "Before I go on a trip, I always check the weather forecast.", "ko": "여행을 떠나기 전에 저는 항상 일기예보를 확인해요.", "q": "travel-domestic-routine"},
-    {"pid": "memory#5", "en": "I'll never forget that trip because we watched the sunrise together.", "ko": "다 같이 일출을 봤기 때문에 그 여행은 절대 잊지 못할 거예요.", "q": "travel-domestic-experience"},
-    {"pid": "change#0", "en": "I used to take a night bus with my friends, but now I drive my family in our car.", "ko": "예전에는 친구들과 야간버스를 탔지만, 지금은 가족을 태우고 제 차로 다녀요.", "q": "travel-domestic-compare"}
+    {
+      "pid": "place#3",
+      "en": "My favorite place to visit in Korea is Gangneung.",
+      "ko": "제가 한국에서 가장 좋아하는 여행지는 강릉이에요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "place#4",
+      "en": "It's located about two and a half hours from Bundang by car, so it's easy to get to.",
+      "ko": "분당에서 차로 두 시간 반 정도 거리에 있어서 가기 쉬워요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "describe#4",
+      "en": "It's famous for its cafes with ocean views.",
+      "ko": "거기는 바다가 보이는 카페들로 유명해요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "reason#4",
+      "en": "Whenever I see the ocean, I feel so relaxed.",
+      "ko": "바다를 볼 때마다 정말 마음이 편해져요.",
+      "q": "travel-domestic-describe"
+    },
+    {
+      "pid": "people#0",
+      "en": "I usually travel with my family.",
+      "ko": "저는 보통 가족과 함께 여행해요.",
+      "q": "travel-domestic-routine"
+    },
+    {
+      "pid": "routine#2",
+      "en": "Before I go on a trip, I always check the weather forecast.",
+      "ko": "여행을 떠나기 전에 저는 항상 일기예보를 확인해요.",
+      "q": "travel-domestic-routine"
+    },
+    {
+      "pid": "memory#5",
+      "en": "I'll never forget that trip because we watched the sunrise together.",
+      "ko": "다 같이 일출을 봤기 때문에 그 여행은 절대 잊지 못할 거예요.",
+      "q": "travel-domestic-experience"
+    },
+    {
+      "pid": "change#0",
+      "en": "I used to take a night bus with my friends, but now I drive my family in our car.",
+      "ko": "예전에는 친구들과 야간버스를 탔지만, 지금은 가족을 태우고 제 차로 다녀요.",
+      "q": "travel-domestic-compare"
+    }
   ]
 }

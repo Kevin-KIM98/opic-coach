@@ -116,6 +116,45 @@
         "IM3": "Okay, let me tell you about myself. My name is Alex. I'm currently working at an IT company in Bundang. I'm a software developer, and I've been working there for about 20 years. I live with my family in an apartment about 20 minutes from my office. My daily life is pretty busy because I usually have a lot of meetings and projects. In my free time, I like spending time with my family or watching movies at home. Yeah, that's a short introduction about myself.",
         "IH": "Sure, I'd love to tell you about myself. My name is Alex, and I'm in my mid-forties. I'm a software developer at an IT company in Bundang, and I've been working there for about 20 years. These days, I lead a development team of ten people, so I have a lot of meetings and code reviews. I live with my family in an apartment about 20 minutes from my office by car. There are four of us, and my kids are in middle school and elementary school. My weekdays are pretty busy, but I try to keep my weekends free for my family. In my free time, I like jogging along the Tancheon trail or watching movies at home. Friday night is our family movie night, and everyone looks forward to it. So yeah, that's a little bit about me.",
         "AL": "Okay, let me tell you a little bit about myself. My name is Alex, and I'm in my mid-forties. I studied electronic engineering in college, and right after I graduated, I joined an IT company in Bundang. I'm still there as a software developer, and believe it or not, it's been about 20 years. Time really flies. These days, I lead a team of ten developers, so I spend most of my day in meetings, code reviews, and mentoring new people. It's pretty busy, but I honestly enjoy it, especially watching young developers grow. I live with my family in an apartment that's only 20 minutes from my office, which is a huge plus. My son is in middle school, and my daughter is in elementary school, so our home is never quiet. No matter how busy work gets, I try to have dinner with my kids. When I have free time, I go jogging along the Tancheon trail early in the morning, and on Friday nights, the four of us have a movie night with snacks. That's what keeps me going, and it's the best part of my week. So yeah, that's a short introduction about myself."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제 소개를 해 드릴게요.",
+          "제 이름은 알렉스예요.",
+          "지금 분당에 있는 IT 회사에서 일하고 있어요.",
+          "저는 소프트웨어 개발자이고, 거기서 일한 지 20년 정도 됐어요.",
+          "회사에서 20분 정도 떨어진 아파트에서 가족과 함께 살아요.",
+          "보통 회의랑 프로젝트가 많아서 일상이 꽤 바빠요.",
+          "시간이 날 때는 가족이랑 시간을 보내거나 집에서 영화 보는 걸 좋아해요.",
+          "네, 이게 제 간단한 자기소개예요."
+        ],
+        "IH": [
+          "그럼요, 기꺼이 제 소개를 해 드릴게요.",
+          "제 이름은 알렉스이고, 40대 중반이에요.",
+          "분당에 있는 IT 회사에서 소프트웨어 개발자로 일하고 있고, 거기서 일한 지 20년 정도 됐어요.",
+          "요즘은 10명으로 된 개발팀을 이끌고 있어서 회의랑 코드 리뷰가 많아요.",
+          "회사에서 차로 20분 정도 거리에 있는 아파트에서 가족과 함께 살아요.",
+          "가족은 넷이고, 아이들은 중학생이랑 초등학생이에요.",
+          "평일은 꽤 바쁘지만, 주말은 가족을 위해 비워 두려고 해요.",
+          "시간이 날 때는 탄천 산책로를 따라 조깅하거나 집에서 영화 보는 걸 좋아해요.",
+          "금요일 밤은 우리 가족 영화의 밤이라서, 다들 그날을 손꼽아 기다려요.",
+          "네, 이게 저에 대한 간단한 소개예요."
+        ],
+        "AL": [
+          "네, 제 소개를 조금 해 드릴게요.",
+          "제 이름은 알렉스이고, 40대 중반이에요.",
+          "대학에서 전자공학을 전공했고, 졸업하자마자 분당에 있는 IT 회사에 들어갔어요.",
+          "지금도 거기서 소프트웨어 개발자로 일하고 있는데, 믿기 어려우시겠지만 벌써 20년 정도 됐어요.",
+          "시간 정말 빨라요.",
+          "요즘은 개발자 10명으로 된 팀을 이끌고 있어서, 하루 대부분을 회의하고 코드 리뷰하고 신입들 멘토링하면서 보내요.",
+          "꽤 바쁘지만 솔직히 즐겁고, 특히 젊은 개발자들이 성장하는 걸 보는 게 좋아요.",
+          "회사에서 겨우 20분 거리에 있는 아파트에서 가족과 함께 사는데, 그게 정말 큰 장점이에요.",
+          "아들은 중학생이고 딸은 초등학생이라서, 우리 집은 조용할 날이 없어요.",
+          "일이 아무리 바빠도 아이들이랑 저녁은 같이 먹으려고 해요.",
+          "시간이 날 때는 이른 아침에 탄천 산책로를 따라 조깅을 하고, 금요일 밤에는 네 식구가 간식을 먹으면서 영화의 밤을 보내요.",
+          "그게 저를 버티게 해 주는 힘이고, 한 주 중에 제일 좋은 시간이에요.",
+          "네, 이게 제 간단한 자기소개예요."
+        ]
       }
     },
     {
@@ -132,6 +171,47 @@
         "IM3": "Sure, I'd love to talk about that. I think I'm a calm and responsible person. I don't get upset easily, and I always try to keep my promises. In my free time, I like spending time with my family. On Friday nights, we watch movies together at home. I also go jogging along the Tancheon trail about three times a week. And on weekend mornings, I read books at a cafe near my place. Yeah, that's what I'm like.",
         "IH": "Sure, I'd love to talk about that. I'd say I'm a calm and responsible person. I've been a team lead for a while, so people on my team come to me when there's a problem, and I try to stay calm and listen first. My coworker Minho always says I never panic, even before a big deadline. Work can be really stressful, though, so my free time is important to me. I go jogging along the Tancheon trail about three times a week, early in the morning. On Friday nights, my family has a movie night, and we usually watch an action movie or an animated film on Netflix. On weekend mornings, I like reading a book at a cafe with an Americano. These small things really help me relax. Yeah, that's pretty much what I'm like.",
         "AL": "Oh, what kind of person am I? Let me think. I'd say I'm a calm and responsible person. I've been leading a development team for years, and when something goes wrong, everyone kind of looks at me, so I've learned to take a deep breath and stay cool. My coworker Minho jokes that nothing can make me panic, not even a server going down at midnight. But to be honest, I do get stressed like anybody else. I just have my own ways of dealing with it, and they work pretty well. First, I go jogging along the Tancheon trail three times a week at six thirty in the morning. Thirty minutes of running really clears my head. Second, my family is my biggest stress reliever. Every Friday night, the four of us have a movie night with popcorn, and my kids get to pick the movie, which usually means an animated film. And on Saturday mornings, I sit in a quiet cafe in my neighborhood with an Americano and a book. Honestly, there's nothing better than that. It's simple, but it really works for me. So yeah, that's pretty much who I am."
+      },
+      "answersKo": {
+        "IM3": [
+          "그럼요, 기꺼이 이야기해 드릴게요.",
+          "저는 차분하고 책임감 있는 사람인 것 같아요.",
+          "쉽게 화를 내지 않고, 항상 약속을 지키려고 해요.",
+          "시간이 날 때는 가족이랑 시간을 보내는 걸 좋아해요.",
+          "금요일 밤에는 집에서 다 같이 영화를 봐요.",
+          "그리고 일주일에 세 번 정도 탄천 산책로를 따라 조깅도 해요.",
+          "또 주말 아침에는 집 근처 카페에서 책을 읽어요.",
+          "네, 저는 그런 사람이에요."
+        ],
+        "IH": [
+          "그럼요, 기꺼이 이야기해 드릴게요.",
+          "저는 차분하고 책임감 있는 사람이라고 할 수 있어요.",
+          "팀장을 한 지 좀 돼서, 문제가 생기면 팀원들이 저한테 오는데, 저는 침착하게 먼저 들어 주려고 해요.",
+          "제 동료 민호는 제가 큰 마감을 앞두고도 절대 당황하지 않는다고 늘 말해요.",
+          "그래도 일이 정말 스트레스가 많아서, 저한테는 여가 시간이 중요해요.",
+          "일주일에 세 번 정도 이른 아침에 탄천 산책로를 따라 조깅을 해요.",
+          "금요일 밤에는 가족끼리 영화의 밤을 하는데, 보통 넷플릭스로 액션 영화나 애니메이션을 봐요.",
+          "주말 아침에는 카페에서 아메리카노 한 잔이랑 책 읽는 걸 좋아해요.",
+          "이런 소소한 것들이 긴장을 푸는 데 정말 도움이 돼요.",
+          "네, 저는 대충 그런 사람이에요."
+        ],
+        "AL": [
+          "아, 제가 어떤 사람이냐고요?",
+          "생각 좀 해 볼게요.",
+          "저는 차분하고 책임감 있는 사람이라고 할 수 있어요.",
+          "몇 년째 개발팀을 이끌고 있는데, 뭔가 잘못되면 다들 저를 쳐다보는 느낌이라, 심호흡하고 침착하게 있는 법을 배웠어요.",
+          "제 동료 민호는 한밤중에 서버가 다운돼도 저는 당황하지 않을 거라고 농담해요.",
+          "그런데 솔직히 말하면, 저도 다른 사람들처럼 스트레스를 받아요.",
+          "그냥 저만의 해소 방법이 있는데, 그게 꽤 효과가 좋아요.",
+          "첫째, 일주일에 세 번 아침 6시 반에 탄천 산책로를 따라 조깅을 해요.",
+          "30분 달리고 나면 머리가 정말 맑아져요.",
+          "둘째, 우리 가족이 제 최고의 스트레스 해소제예요.",
+          "매주 금요일 밤에는 네 식구가 팝콘을 먹으면서 영화의 밤을 보내는데, 영화는 아이들이 고르게 해서 보통 애니메이션이에요.",
+          "그리고 토요일 아침에는 동네의 조용한 카페에 앉아서 아메리카노 한 잔이랑 책을 읽어요.",
+          "솔직히 그것보다 좋은 건 없어요.",
+          "단순하지만 저한테는 정말 잘 맞아요.",
+          "네, 저는 대충 그런 사람이에요."
+        ]
       }
     },
     {
@@ -148,6 +228,51 @@
         "IM3": "Okay, let me tell you about my typical weekday. I usually get up at six. Three days a week, I go jogging for about 30 minutes. Then, I have breakfast with my family. I drive to work, and it takes about 20 minutes. I start work at nine. I have a lot of meetings and code reviews during the day. I usually leave the office at seven. After dinner, I help my kids with their homework. I go to bed at around eleven. Yeah, that's my typical weekday.",
         "IH": "Okay, let me tell you about my typical weekday. I get up at six every morning. On Mondays, Wednesdays, and Thursdays, I go jogging along the Tancheon trail for about 30 minutes. After that, I take a quick shower and have breakfast with my family. It's a little crazy because my kids are always looking for their school bags. I drive to the office at around eight thirty, and it only takes 20 minutes. My workday starts at nine with a team meeting. Then, I spend most of the day reviewing code and helping my team members. I usually have lunch with my coworker Minho. I leave work at around seven and have dinner with my family. After dinner, I check my kids' homework or watch the news. Fridays are a little different because I work from home. Yeah, that's a typical weekday for me.",
         "AL": "Okay, let me walk you through a typical weekday. My alarm goes off at six, and three mornings a week, I head out for a 30-minute jog along the Tancheon trail. It's still quiet at that time, and it's the only part of the day that's just for me. When I get back, the house is already noisy. My son is usually half asleep, and my daughter is looking for her socks, so breakfast is a bit chaotic, but I actually love it. I leave home at around eight thirty and drive about 20 minutes to my office near Pangyo. My day officially starts at nine with a short team meeting, and after that, it's basically back-to-back meetings, code reviews, and questions from junior developers. Around noon, I grab lunch with Minho, who's been my coworker for over 15 years, and we chat about anything but work. I try to leave by seven, though it doesn't always work out. In the evening, I have dinner with my family and help my kids with their homework. By eleven, I'm usually in bed. Fridays are easier since I work from home. So yeah, that's what my weekdays look like."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제 평범한 평일에 대해 말씀드릴게요.",
+          "저는 보통 6시에 일어나요.",
+          "일주일에 세 번은 30분 정도 조깅을 해요.",
+          "그다음에 가족이랑 아침을 먹어요.",
+          "차로 출근하는데, 20분 정도 걸려요.",
+          "9시에 일을 시작해요.",
+          "낮에는 회의랑 코드 리뷰가 많아요.",
+          "보통 7시에 퇴근해요.",
+          "저녁을 먹고 나서 아이들 숙제를 도와줘요.",
+          "11시쯤 잠자리에 들어요.",
+          "네, 이게 제 평범한 평일이에요."
+        ],
+        "IH": [
+          "네, 제 평범한 평일에 대해 말씀드릴게요.",
+          "저는 매일 아침 6시에 일어나요.",
+          "월요일, 수요일, 목요일에는 탄천 산책로를 따라 30분 정도 조깅을 해요.",
+          "그다음에 빨리 샤워하고 가족이랑 아침을 먹어요.",
+          "아이들이 맨날 책가방을 찾느라 좀 정신이 없어요.",
+          "8시 반쯤 차로 출근하는데, 20분밖에 안 걸려요.",
+          "업무는 9시에 팀 회의로 시작해요.",
+          "그다음에는 하루 대부분을 코드 리뷰하고 팀원들을 도와주면서 보내요.",
+          "점심은 보통 동료 민호랑 같이 먹어요.",
+          "7시쯤 퇴근해서 가족이랑 저녁을 먹어요.",
+          "저녁 먹고 나서는 아이들 숙제를 봐 주거나 뉴스를 봐요.",
+          "금요일은 재택근무를 해서 조금 달라요.",
+          "네, 이게 제 평범한 평일이에요."
+        ],
+        "AL": [
+          "네, 제 평범한 평일을 쭉 말씀드릴게요.",
+          "알람이 6시에 울리고, 일주일에 세 번은 아침에 탄천 산책로를 따라 30분 조깅을 하러 나가요.",
+          "그 시간엔 아직 조용하고, 하루 중에 온전히 저만을 위한 유일한 시간이에요.",
+          "돌아오면 집은 벌써 시끌벅적해요.",
+          "아들은 보통 반쯤 졸고 있고 딸은 양말을 찾고 있어서 아침은 좀 난리지만, 사실 저는 그게 너무 좋아요.",
+          "8시 반쯤 집을 나서서 판교 근처에 있는 회사까지 20분 정도 운전해요.",
+          "하루는 공식적으로 9시에 짧은 팀 회의로 시작하고, 그다음엔 거의 회의, 코드 리뷰, 주니어 개발자들 질문이 쉴 새 없이 이어져요.",
+          "정오쯤에는 15년 넘게 같이 일한 동료 민호랑 점심을 먹는데, 일 얘기만 빼고 아무 얘기나 해요.",
+          "7시까지는 퇴근하려고 하는데, 항상 그렇게 되지는 않아요.",
+          "저녁에는 가족이랑 저녁을 먹고 아이들 숙제를 도와줘요.",
+          "11시쯤이면 보통 잠자리에 들어요.",
+          "금요일은 재택근무라서 좀 더 여유로워요.",
+          "네, 제 평일은 이런 모습이에요."
+        ]
       }
     },
     {
@@ -164,6 +289,45 @@
         "IM3": "Sure, let me tell you about my job. I work at an IT company in Bundang. Our office is on the 12th floor of a big building near Pangyo. I'm a software developer, and I've worked there for about 20 years. Now I'm the leader of a development team with ten people. My day starts at nine with a team meeting. Then, I review code and help my team members. It's pretty busy, but I like my job. Yeah, that's my job.",
         "IH": "Sure, let me tell you about my job. I'm a software developer at an IT company in Bundang. Our office is on the 12th floor of a big building near Pangyo, and it's only a 20-minute drive from my home. I've been with the company for about 20 years, and these days I lead a development team of ten people. A typical day starts at nine with a short team meeting. After that, I spend a lot of time reviewing code and talking with other teams about our projects. I also mentor new developers, which I really enjoy. Lunch is usually with my coworker Minho. The hardest part is that I have so many meetings that I sometimes don't have time to write code myself. But it's really rewarding to see my team grow. Yeah, that's what I do at work.",
         "AL": "Sure, let me tell you about my job. I work for an IT company in Bundang, and our office is on the 12th floor of a big glass building near Pangyo. I joined the company right out of college, so I've been there for about 20 years now, which is pretty rare in this industry. I started out as a junior developer writing code all day, but these days I lead a software development team of ten people. My typical day starts at nine with a quick team meeting where we check what everyone's working on. Then, the rest of the day is a mix of code reviews, planning meetings with other teams, and mentoring our new developers. To be honest, I miss coding sometimes, because I spend more time in meetings than in front of my code. But when a junior developer I've been mentoring finally solves a tough problem alone, it makes me really proud. My longtime coworker Minho and I usually grab lunch together and talk about anything but work. On Fridays, I work from home, which gives me a nice break. So yeah, that's pretty much what my job is like."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제 일에 대해 말씀드릴게요.",
+          "저는 분당에 있는 IT 회사에서 일해요.",
+          "사무실은 판교 근처 큰 건물 12층에 있어요.",
+          "저는 소프트웨어 개발자이고, 거기서 20년 정도 일했어요.",
+          "지금은 10명으로 된 개발팀의 팀장이에요.",
+          "하루는 9시에 팀 회의로 시작해요.",
+          "그다음에 코드 리뷰를 하고 팀원들을 도와줘요.",
+          "꽤 바쁘지만 저는 제 일이 좋아요.",
+          "네, 이게 제 일이에요."
+        ],
+        "IH": [
+          "네, 제 일에 대해 말씀드릴게요.",
+          "저는 분당에 있는 IT 회사의 소프트웨어 개발자예요.",
+          "사무실은 판교 근처 큰 건물 12층에 있고, 집에서 차로 20분밖에 안 걸려요.",
+          "회사에 다닌 지 20년 정도 됐고, 요즘은 10명으로 된 개발팀을 이끌고 있어요.",
+          "보통 하루는 9시에 짧은 팀 회의로 시작해요.",
+          "그다음엔 코드 리뷰를 하고 다른 팀들이랑 프로젝트에 대해 이야기하면서 많은 시간을 보내요.",
+          "신입 개발자들 멘토링도 하는데, 그게 정말 즐거워요.",
+          "점심은 보통 동료 민호랑 먹어요.",
+          "제일 힘든 점은 회의가 너무 많아서 가끔 제가 직접 코드를 짤 시간이 없다는 거예요.",
+          "그래도 팀이 성장하는 걸 보면 정말 보람 있어요.",
+          "네, 이게 제가 회사에서 하는 일이에요."
+        ],
+        "AL": [
+          "네, 제 일에 대해 말씀드릴게요.",
+          "저는 분당에 있는 IT 회사에서 일하고, 사무실은 판교 근처 큰 유리 건물 12층에 있어요.",
+          "대학 졸업하자마자 입사해서 이제 20년 정도 됐는데, 이 업계에서는 꽤 드문 일이에요.",
+          "처음엔 하루 종일 코드를 짜는 주니어 개발자로 시작했는데, 요즘은 10명으로 된 소프트웨어 개발팀을 이끌고 있어요.",
+          "보통 하루는 9시에 다들 뭘 하고 있는지 확인하는 짧은 팀 회의로 시작해요.",
+          "그다음 나머지 시간은 코드 리뷰, 다른 팀들과의 기획 회의, 신입 개발자 멘토링이 섞여 있어요.",
+          "솔직히 코드 앞보다 회의실에 있는 시간이 더 많아서, 가끔 코딩이 그리워요.",
+          "그래도 제가 멘토링해 온 주니어 개발자가 마침내 어려운 문제를 혼자 해결하면, 정말 뿌듯해요.",
+          "오랜 동료 민호랑 저는 보통 같이 점심을 먹으면서 일 얘기만 빼고 아무 얘기나 해요.",
+          "금요일에는 재택근무를 해서 좋은 휴식이 돼요.",
+          "네, 제 일은 대충 이런 모습이에요."
+        ]
       }
     }
   ],
