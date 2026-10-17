@@ -13,21 +13,89 @@
     "IH 이상은 어릴 적 대전 vs 지금 비교, 이유 2개, 'nothing beats ~' 같은 쉬운 관용 표현을 더하되 문장은 짧게 유지합니다."
   ],
   "expressions": [
-    {"en": "Oh, movies? Sure, I'd love to talk about that.", "ko": "아, 영화요? 네, 그 얘기라면 좋아요.", "level": "IM", "note": "시작 문장: 질문 키워드를 한 번 되받아 말하면 자연스럽게 생각할 시간을 벌 수 있어요."},
-    {"en": "I usually watch movies at home with my family.", "ko": "저는 보통 집에서 가족과 함께 영화를 봐요.", "level": "IM"},
-    {"en": "My favorite genres are action and sci-fi.", "ko": "제가 제일 좋아하는 장르는 액션이랑 SF예요.", "level": "IM", "note": "sci-fi 는 '사이파이'로 읽어요."},
-    {"en": "Friday night is our family movie night.", "ko": "금요일 밤은 우리 가족 영화의 밤이에요.", "level": "IM"},
-    {"en": "We usually pick a movie on Netflix.", "ko": "우리는 보통 넷플릭스에서 영화를 골라요.", "level": "IM"},
-    {"en": "My kids love animated movies.", "ko": "우리 아이들은 애니메이션 영화를 정말 좋아해요.", "level": "IM"},
-    {"en": "It's a great way to relax after a busy week.", "ko": "바쁜 한 주를 보낸 후에 쉬기에 아주 좋은 방법이에요.", "level": "IM"},
-    {"en": "I work from home on Fridays, so I don't have to commute.", "ko": "금요일엔 재택근무를 해서 출퇴근을 안 해도 돼요.", "level": "IH", "note": "so 로 이유와 결과를 한 문장에 연결하세요."},
-    {"en": "It usually takes us twenty minutes just to pick a movie.", "ko": "영화 하나 고르는 데만 보통 20분이 걸려요.", "level": "IH", "note": "It takes 사람 + 시간 + to 동사: ~하는 데 시간이 걸리다"},
-    {"en": "The screen is huge, and the sound is amazing.", "ko": "스크린이 엄청 크고, 사운드가 정말 좋아요.", "level": "IH"},
-    {"en": "Compared to the theater, watching at home is much more comfortable.", "ko": "극장에 비해, 집에서 보는 게 훨씬 편해요.", "level": "IH", "note": "Compared to A, B is much + 비교급"},
-    {"en": "After the movie, we talk about our favorite scenes.", "ko": "영화가 끝나면, 우리는 각자 좋았던 장면에 대해 이야기해요.", "level": "IH"},
-    {"en": "It kept me on the edge of my seat the whole time.", "ko": "처음부터 끝까지 손에 땀을 쥐게 했어요.", "level": "AL", "note": "on the edge of my seat: 긴장감 넘쳐서 몰입한 상태를 말하는 관용 표현"},
-    {"en": "Honestly, nothing beats watching a movie with the people you love.", "ko": "솔직히, 사랑하는 사람들과 영화 보는 것보다 좋은 건 없어요.", "level": "AL", "note": "nothing beats ~: ~보다 나은 건 없다"},
-    {"en": "Yeah, that's why I really look forward to Friday nights.", "ko": "네, 그래서 저는 금요일 밤이 정말 기다려져요.", "level": "IM", "note": "마무리 문장: look forward to + 명사/동명사"}
+    {
+      "en": "Oh, movies? Sure, I'd love to talk about that.",
+      "ko": "아, 영화요? 네, 그 얘기라면 좋아요.",
+      "level": "IM",
+      "note": "시작 문장: 질문 키워드를 한 번 되받아 말하면 자연스럽게 생각할 시간을 벌 수 있어요."
+    },
+    {
+      "en": "I usually watch movies at home with my family.",
+      "ko": "저는 보통 집에서 가족과 함께 영화를 봐요.",
+      "level": "IM"
+    },
+    {
+      "en": "My favorite genres are action and sci-fi.",
+      "ko": "제가 제일 좋아하는 장르는 액션이랑 SF예요.",
+      "level": "IM",
+      "note": "sci-fi 는 '사이파이'로 읽어요."
+    },
+    {
+      "en": "Friday night is our family movie night.",
+      "ko": "금요일 밤은 우리 가족 영화의 밤이에요.",
+      "level": "IM"
+    },
+    {
+      "en": "We usually pick a movie on Netflix.",
+      "ko": "우리는 보통 넷플릭스에서 영화를 골라요.",
+      "level": "IM"
+    },
+    {
+      "en": "My kids love animated movies.",
+      "ko": "우리 아이들은 애니메이션 영화를 정말 좋아해요.",
+      "level": "IM"
+    },
+    {
+      "en": "It's a great way to relax after a busy week.",
+      "ko": "바쁜 한 주를 보낸 후에 쉬기에 아주 좋은 방법이에요.",
+      "level": "IM"
+    },
+    {
+      "en": "I work from home on Fridays, so I don't have to commute.",
+      "ko": "금요일엔 재택근무를 해서 출퇴근을 안 해도 돼요.",
+      "level": "IH",
+      "note": "so 로 이유와 결과를 한 문장에 연결하세요."
+    },
+    {
+      "en": "It usually takes us twenty minutes just to pick a movie.",
+      "ko": "영화 하나 고르는 데만 보통 20분이 걸려요.",
+      "level": "IH",
+      "note": "It takes 사람 + 시간 + to 동사: ~하는 데 시간이 걸리다"
+    },
+    {
+      "en": "The screen is huge, and the sound is amazing.",
+      "ko": "스크린이 엄청 크고, 사운드가 정말 좋아요.",
+      "level": "IH"
+    },
+    {
+      "en": "Compared to the theater, watching at home is much more comfortable.",
+      "ko": "극장에 비해, 집에서 보는 게 훨씬 편해요.",
+      "level": "IH",
+      "note": "Compared to A, B is much + 비교급"
+    },
+    {
+      "en": "After the movie, we talk about our favorite scenes.",
+      "ko": "영화가 끝나면, 우리는 각자 좋았던 장면에 대해 이야기해요.",
+      "level": "IH"
+    },
+    {
+      "en": "It kept me on the edge of my seat the whole time.",
+      "ko": "처음부터 끝까지 손에 땀을 쥐게 했어요.",
+      "level": "AL",
+      "note": "on the edge of my seat: 긴장감 넘쳐서 몰입한 상태를 말하는 관용 표현"
+    },
+    {
+      "en": "Honestly, nothing beats watching a movie with the people you love.",
+      "ko": "솔직히, 사랑하는 사람들과 영화 보는 것보다 좋은 건 없어요.",
+      "level": "AL",
+      "note": "nothing beats ~: ~보다 나은 건 없다"
+    },
+    {
+      "en": "Yeah, that's why I really look forward to Friday nights.",
+      "ko": "네, 그래서 저는 금요일 밤이 정말 기다려져요.",
+      "level": "IM",
+      "note": "마무리 문장: look forward to + 명사/동명사"
+    }
   ],
   "questions": [
     {
@@ -44,6 +112,45 @@
         "IM3": "Oh, movies? Sure, I'd love to talk about that. I really like action and sci-fi movies. They're exciting, and they help me forget about work for a while. My weekdays are pretty busy because I have a lot of meetings and projects. I usually watch movies at home with my family. We have a big TV and a comfy sofa in the living room. My kids like animated movies, so sometimes we watch those too. Yeah, that's the kind of movies I like.",
         "IH": "Oh, movies? Sure, I'd love to talk about that. My favorite genres are action and sci-fi. I've been a software developer for about 20 years, and these days I lead a team of ten people, so my days are full of meetings and code reviews. After a long week, I just want to watch something exciting and not think too much. Action movies are fun, and sci-fi movies make me imagine the future, which I love as a developer. Most of the time, I watch movies at home. We live in an apartment in Bundang, and our living room has a big TV and a soft sofa where all four of us can sit together. My son likes action movies like me, and my daughter loves animated movies, so we take turns choosing. Yeah, that's pretty much the kind of movies I like and where I watch them.",
         "AL": "Oh, movies? Sure, I'd love to talk about that, because it's probably my favorite way to relax. I'm really into action and sci-fi movies. I've worked as a software developer for about 20 years, and now I lead a team of ten, so my week is packed with meetings, code reviews, and deadlines. By Friday, my brain is pretty much fried. Action movies keep me on the edge of my seat, so I totally forget about work, and sci-fi movies are fun for me because I love imagining what technology will look like in the future. Most of the time, I watch movies at home with my family. Our apartment is on the 15th floor, and the living room has a big TV and a long sofa that fits the four of us. My son is a huge action fan like me, while my daughter would watch animated movies all day if she could, so we take turns picking. Every once in a while, we also go to the theater near the subway station for big movies. Honestly, nothing beats sitting on the sofa with my kids and a bowl of popcorn. So yeah, that's what kind of movies I like and where I usually watch them."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 영화요?",
+          "네, 그 얘기 정말 하고 싶어요.",
+          "저는 액션 영화랑 SF 영화를 정말 좋아해요.",
+          "신나기도 하고, 잠깐이나마 일을 잊게 해 줘요.",
+          "주중에는 회의랑 프로젝트가 많아서 꽤 바빠요.",
+          "보통 집에서 가족이랑 영화를 봐요.",
+          "거실에 큰 TV랑 편안한 소파가 있거든요.",
+          "아이들이 애니메이션을 좋아해서 가끔은 그것도 같이 봐요.",
+          "네, 그게 제가 좋아하는 영화예요."
+        ],
+        "IH": [
+          "아, 영화요?",
+          "네, 그 얘기 정말 하고 싶어요.",
+          "제가 제일 좋아하는 장르는 액션이랑 SF예요.",
+          "저는 소프트웨어 개발자로 20년 정도 일했고, 요즘은 열 명짜리 팀을 이끌고 있어서 하루가 회의랑 코드 리뷰로 꽉 차 있어요.",
+          "긴 한 주를 보내고 나면, 그냥 너무 생각 안 하고 신나는 걸 보고 싶어요.",
+          "액션 영화는 재밌고, SF 영화는 미래를 상상하게 해 주는데, 개발자로서 그게 너무 좋아요.",
+          "대부분은 집에서 영화를 봐요.",
+          "저희는 분당에 있는 아파트에 사는데, 거실에 큰 TV랑 네 식구가 다 같이 앉을 수 있는 푹신한 소파가 있어요.",
+          "아들은 저처럼 액션 영화를 좋아하고 딸은 애니메이션을 엄청 좋아해서, 번갈아 가면서 골라요.",
+          "네, 그게 대충 제가 좋아하는 영화랑 영화 보는 곳이에요."
+        ],
+        "AL": [
+          "아, 영화요?",
+          "네, 그 얘기 정말 하고 싶어요, 아마 제가 제일 좋아하는 휴식 방법이거든요.",
+          "저는 액션 영화랑 SF 영화에 푹 빠져 있어요.",
+          "소프트웨어 개발자로 20년 정도 일했고 지금은 열 명짜리 팀을 이끌고 있어서, 한 주가 회의, 코드 리뷰, 마감으로 꽉 차 있어요.",
+          "금요일쯤 되면 머리가 거의 녹초가 돼요.",
+          "액션 영화는 손에 땀을 쥐게 해서 일을 완전히 잊게 되고, SF 영화는 미래에 기술이 어떤 모습일지 상상하는 걸 좋아해서 재밌어요.",
+          "대부분은 집에서 가족이랑 영화를 봐요.",
+          "저희 아파트는 15층인데, 거실에 큰 TV랑 네 식구가 다 앉을 수 있는 긴 소파가 있어요.",
+          "아들은 저처럼 액션 영화 광팬이고, 딸은 할 수만 있으면 하루 종일 애니메이션을 볼 애라서, 번갈아 가면서 골라요.",
+          "가끔은 큰 영화가 나오면 지하철역 근처 극장에도 가요.",
+          "솔직히 아이들이랑 팝콘 한 그릇 들고 소파에 앉아 있는 것만큼 좋은 건 없어요.",
+          "그래서 네, 그게 제가 좋아하는 영화랑 보통 영화 보는 곳이에요."
+        ]
       }
     },
     {
@@ -60,6 +167,47 @@
         "IM3": "Sure, let me tell you about how I watch movies. I usually watch movies on Friday nights. I work from home on Fridays, so I'm not tired from driving. I watch them with my family in the living room. Before the movie, we order some fried chicken. Then we pick a movie on Netflix together. After the movie, we talk about our favorite scenes. It's my favorite time of the week. Yeah, that's how I usually watch movies.",
         "IH": "Sure, let me tell you about how I usually watch movies. Friday night is our family movie night. I work from home on Fridays, so I don't have to commute, and I can finish work a little earlier. Around eight o'clock, the four of us get together in the living room. Before we start, we always order fried chicken or make some popcorn. Then comes the hardest part, choosing a movie on Netflix. My son wants action, my daughter wants animation, and it sometimes takes us twenty minutes just to decide. During the movie, we turn off the lights and put our phones away. After it's over, we talk about our favorite scenes, and then the kids go to bed. It's honestly the best part of my week. Yeah, that's pretty much my movie routine.",
         "AL": "Sure, let me tell you about how I usually watch movies, because it's kind of a family tradition now. Every Friday night is our family movie night. I work from home on Fridays, so I don't waste time stuck in traffic, and I can wrap up work around six. After dinner, the four of us gather in the living room. Before we start, we always order fried chicken, and my daughter makes popcorn in the microwave, which is her special job. Then comes the hardest part, picking a movie on Netflix. My son always wants an action movie, my daughter begs for an animated one, and we usually spend way too long scrolling. To keep things fair, we take turns choosing each week. Once the movie starts, we turn off the lights and put our phones away, so it almost feels like a real theater. When it's over, we chat about our favorite scenes, and sometimes the kids act them out, which cracks me up. After that, the kids head to bed, and the grown-ups finally get some quiet time. It's honestly the highlight of my week. So yeah, that's how I usually watch movies."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제가 영화를 어떻게 보는지 말씀드릴게요.",
+          "저는 보통 금요일 밤에 영화를 봐요.",
+          "금요일에는 재택근무를 해서 운전 때문에 피곤하지 않거든요.",
+          "거실에서 가족이랑 같이 봐요.",
+          "영화 보기 전에 치킨을 시켜요.",
+          "그다음에 넷플릭스에서 다 같이 영화를 골라요.",
+          "영화가 끝나면 제일 좋았던 장면에 대해 얘기해요.",
+          "일주일 중에 제가 제일 좋아하는 시간이에요.",
+          "네, 그게 제가 보통 영화 보는 방식이에요."
+        ],
+        "IH": [
+          "네, 제가 보통 영화를 어떻게 보는지 말씀드릴게요.",
+          "금요일 밤은 저희 가족 영화의 밤이에요.",
+          "금요일에는 재택근무를 해서 출퇴근할 필요가 없고, 일도 조금 일찍 끝낼 수 있어요.",
+          "8시쯤 되면 네 식구가 거실에 모여요.",
+          "시작하기 전에 항상 치킨을 시키거나 팝콘을 만들어요.",
+          "그다음에 제일 어려운 단계가 오는데, 바로 넷플릭스에서 영화 고르기예요.",
+          "아들은 액션을 원하고 딸은 애니메이션을 원해서, 가끔은 정하는 데만 20분이 걸려요.",
+          "영화 보는 동안에는 불을 끄고 휴대폰은 치워 둬요.",
+          "끝나고 나면 제일 좋았던 장면에 대해 얘기하고, 그다음에 아이들은 자러 가요.",
+          "솔직히 일주일 중에 제일 좋은 시간이에요.",
+          "네, 그게 대충 제 영화 보는 루틴이에요."
+        ],
+        "AL": [
+          "네, 제가 보통 영화를 어떻게 보는지 말씀드릴게요, 이제는 거의 가족 전통 같은 거라서요.",
+          "매주 금요일 밤은 저희 가족 영화의 밤이에요.",
+          "금요일에는 재택근무를 해서 차 막히는 데서 시간 낭비할 일도 없고, 6시쯤이면 일을 마무리할 수 있어요.",
+          "저녁 먹고 나면 네 식구가 거실에 모여요.",
+          "시작하기 전에 항상 치킨을 시키고, 딸이 전자레인지로 팝콘을 만드는데, 그게 딸의 특별 임무예요.",
+          "그다음에 제일 어려운 단계가 오는데, 바로 넷플릭스에서 영화 고르기예요.",
+          "아들은 늘 액션 영화를 원하고, 딸은 애니메이션을 보자고 조르고, 저희는 보통 너무 오랫동안 화면만 넘기고 있어요.",
+          "공평하게 하려고 매주 번갈아 가면서 골라요.",
+          "영화가 시작되면 불을 끄고 휴대폰은 치워 두는데, 그러면 거의 진짜 극장 같은 느낌이 나요.",
+          "끝나면 제일 좋았던 장면에 대해 수다를 떨고, 가끔은 아이들이 그 장면을 따라 하는데 그게 너무 웃겨요.",
+          "그다음에 아이들은 자러 가고, 어른들은 드디어 조용한 시간을 좀 갖게 돼요.",
+          "솔직히 일주일 중에 제일 좋은 시간이에요.",
+          "그래서 네, 그게 제가 보통 영화 보는 방식이에요."
+        ]
       }
     },
     {
@@ -76,6 +224,47 @@
         "IM3": "Oh, a memorable movie? Let me think. Last winter, I went to the theater with my family. We saw a sci-fi movie about astronauts in space. The story was about a dad who tries to get back home to his kids. The screen was huge, and the sound was amazing. At the end, I almost cried. My kids loved it too. We talked about it all the way home. Yeah, that's the most memorable movie I've seen recently.",
         "IH": "Oh, a memorable movie? Let me think. The most memorable movie I've seen recently was a sci-fi movie about space. Last winter break, I took my family to the theater near the subway station. The movie was about an astronaut who gets lost in space and tries really hard to come back to his family. The space scenes were beautiful on the big screen, and the sound made me feel like I was really there. What I remember most is the ending. The dad finally sees his kids again, and honestly, I almost cried. When I looked over, my son was wiping his eyes too, but he said it was just the popcorn. We talked about the movie all the way home in the car. Yeah, that's the most memorable movie I've seen lately.",
         "AL": "Oh, a memorable movie? Let me think. Actually, one comes to mind right away. Last winter break, the four of us went to the theater near the subway station to see a sci-fi movie about space. I'd heard it was good, but it turned out to be much better than I expected. It was about an astronaut who gets stuck far away from Earth and does everything he can to get back to his kids. The space scenes were amazing on the giant screen, and the sound was so loud that I could feel it in my chest. The part that hit me the hardest was the ending, when the dad finally makes it home and hugs his kids. As a parent who works long hours, I felt like the movie was talking about me, and I had tears in my eyes. When I glanced over, my son was secretly wiping his eyes too, though he swore it was just the popcorn. On the drive home, we talked about it nonstop, and my daughter even said she wants to be an astronaut now. So yeah, that's the most memorable movie I've seen recently."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 기억에 남는 영화요?",
+          "잠깐 생각해 볼게요.",
+          "작년 겨울에 가족이랑 극장에 갔어요.",
+          "우주에 있는 우주비행사들에 대한 SF 영화를 봤어요.",
+          "아이들한테 돌아가려고 애쓰는 아빠에 대한 이야기였어요.",
+          "화면은 엄청 컸고, 사운드는 정말 대단했어요.",
+          "마지막에 저는 거의 울 뻔했어요.",
+          "아이들도 정말 좋아했어요.",
+          "집에 오는 내내 그 영화 얘기를 했어요.",
+          "네, 그게 최근에 본 영화 중에 제일 기억에 남는 영화예요."
+        ],
+        "IH": [
+          "아, 기억에 남는 영화요?",
+          "잠깐 생각해 볼게요.",
+          "최근에 본 영화 중에 제일 기억에 남는 건 우주에 대한 SF 영화였어요.",
+          "작년 겨울방학에 가족을 데리고 지하철역 근처 극장에 갔어요.",
+          "우주에서 길을 잃은 우주비행사가 가족에게 돌아가려고 정말 열심히 애쓰는 내용이었어요.",
+          "우주 장면들이 큰 화면으로 보니까 너무 아름다웠고, 사운드 때문에 진짜 거기 있는 것 같은 기분이 들었어요.",
+          "제일 기억에 남는 건 결말이에요.",
+          "아빠가 마침내 아이들을 다시 만나는데, 솔직히 저는 거의 울 뻔했어요.",
+          "옆을 봤더니 아들도 눈물을 닦고 있었는데, 그냥 팝콘 때문이래요.",
+          "집에 오는 차 안에서 내내 그 영화 얘기를 했어요.",
+          "네, 그게 최근에 본 영화 중에 제일 기억에 남는 영화예요."
+        ],
+        "AL": [
+          "아, 기억에 남는 영화요?",
+          "잠깐 생각해 볼게요.",
+          "사실 바로 떠오르는 게 하나 있어요.",
+          "작년 겨울방학에 네 식구가 우주에 대한 SF 영화를 보러 지하철역 근처 극장에 갔어요.",
+          "좋다는 얘기는 들었는데, 알고 보니 기대했던 것보다 훨씬 좋았어요.",
+          "지구에서 멀리 떨어진 곳에 갇힌 우주비행사가 아이들한테 돌아가려고 할 수 있는 건 다 하는 이야기였어요.",
+          "우주 장면들은 거대한 화면으로 보니까 정말 대단했고, 사운드가 너무 커서 가슴으로 느껴질 정도였어요.",
+          "제일 크게 와닿았던 부분은 결말이었는데, 아빠가 마침내 집에 돌아와서 아이들을 안아 주는 장면이었어요.",
+          "오랜 시간 일하는 부모로서 그 영화가 꼭 제 얘기를 하는 것 같아서, 눈에 눈물이 고였어요.",
+          "슬쩍 옆을 봤더니 아들도 몰래 눈물을 닦고 있었는데, 그냥 팝콘 때문이라고 우기더라고요.",
+          "집에 오는 차 안에서 쉬지 않고 그 영화 얘기를 했고, 딸은 이제 우주비행사가 되고 싶다고까지 했어요.",
+          "그래서 네, 그게 최근에 본 영화 중에 제일 기억에 남는 영화예요."
+        ]
       }
     },
     {
@@ -92,24 +281,124 @@
         "IM3": "Okay, let me compare the two. At the theater, the screen is huge and the sound is great. It's really good for action movies. But tickets are expensive, especially for a family of four. At home, it's cheaper and more comfortable. We can pause the movie and eat whatever we want. My kids can wear their pajamas, too. So I prefer watching movies at home. Yeah, that's how they're different.",
         "IH": "Okay, let me compare the two. Watching a movie at the theater is a special experience. The screen is huge, and the sound is amazing, so it's perfect for action and sci-fi movies. But it's not cheap. For the four of us, tickets and snacks can easily cost more than eighty thousand won. Also, we have to drive there, find parking, and follow the movie schedule. At home, it's much more relaxed. We can watch whenever we want, pause the movie for a bathroom break, and eat fried chicken on the sofa in our pajamas. When I was young in Daejeon, going to the theater was a big event, but now we watch most movies on Netflix. So I prefer watching at home, but we still go to the theater for really big movies. Yeah, that's the difference.",
         "AL": "Okay, let me compare the two, because I've thought about this a lot. Watching a movie at the theater is definitely a special experience. The screen is massive, the sound surrounds you, and everyone reacts together, so it's the best place for big action or sci-fi movies. The downside is that it's pretty expensive. For a family of four, tickets and snacks easily add up to eighty or ninety thousand won. On top of that, we have to drive there, look for parking, and plan our day around the showtime. And if someone's phone lights up in the dark, it can be pretty annoying, too. At home, on the other hand, everything is on our terms. We can start whenever we want, pause for snacks or bathroom breaks, and lie on the sofa in our pajamas. When I was a kid in Daejeon, going to the theater was a huge event that happened maybe twice a year, but now, thanks to Netflix, we watch a movie almost every week. All things considered, I prefer watching at home because it's cheaper and more relaxing, but for really big movies, nothing beats the big screen. So yeah, that's how they're different."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 둘을 비교해 볼게요.",
+          "극장에서는 화면이 엄청 크고 사운드도 훌륭해요.",
+          "액션 영화 보기에 정말 좋아요.",
+          "하지만 표가 비싸요, 특히 네 식구라면요.",
+          "집에서는 더 싸고 더 편해요.",
+          "영화를 멈출 수도 있고 먹고 싶은 건 뭐든 먹을 수 있어요.",
+          "아이들은 잠옷을 입고 있어도 되고요.",
+          "그래서 저는 집에서 영화 보는 게 더 좋아요.",
+          "네, 그게 둘의 차이점이에요."
+        ],
+        "IH": [
+          "네, 둘을 비교해 볼게요.",
+          "극장에서 영화를 보는 건 특별한 경험이에요.",
+          "화면이 엄청 크고 사운드도 대단해서, 액션이나 SF 영화에 딱이에요.",
+          "하지만 싸지는 않아요.",
+          "네 식구면 표랑 간식만 해도 금방 8만 원이 넘어요.",
+          "그리고 차를 몰고 가서 주차할 곳을 찾고, 상영 시간에도 맞춰야 해요.",
+          "집에서는 훨씬 편안해요.",
+          "보고 싶을 때 아무 때나 볼 수 있고, 화장실 가려고 영화를 멈출 수도 있고, 잠옷 차림으로 소파에서 치킨을 먹을 수도 있어요.",
+          "제가 어릴 때 대전에서는 극장에 가는 게 큰 행사였는데, 지금은 대부분의 영화를 넷플릭스로 봐요.",
+          "그래서 저는 집에서 보는 게 더 좋지만, 정말 큰 영화는 여전히 극장에 가서 봐요.",
+          "네, 그게 차이점이에요."
+        ],
+        "AL": [
+          "네, 둘을 비교해 볼게요, 이건 제가 많이 생각해 본 거라서요.",
+          "극장에서 영화를 보는 건 확실히 특별한 경험이에요.",
+          "화면이 어마어마하게 크고, 사운드가 사방에서 감싸 주고, 모두가 같이 반응하니까, 큰 액션이나 SF 영화를 보기엔 최고의 장소예요.",
+          "단점은 꽤 비싸다는 거예요.",
+          "네 식구면 표랑 간식만 해도 금방 8만 원에서 9만 원이 돼요.",
+          "게다가 차를 몰고 가서 주차할 곳을 찾아야 하고, 상영 시간에 맞춰 하루 계획을 짜야 해요.",
+          "그리고 어두운 데서 누군가의 휴대폰 화면이 켜지면, 그것도 꽤 거슬릴 수 있어요.",
+          "반면에 집에서는 모든 게 저희 마음대로예요.",
+          "원할 때 아무 때나 시작할 수 있고, 간식 먹거나 화장실 가려고 멈출 수도 있고, 잠옷 차림으로 소파에 누워 있을 수도 있어요.",
+          "제가 어릴 때 대전에서는 극장에 가는 게 1년에 두 번 정도 있을까 말까 한 큰 행사였는데, 지금은 넷플릭스 덕분에 거의 매주 영화를 봐요.",
+          "모든 걸 고려하면, 더 싸고 더 편해서 저는 집에서 보는 게 더 좋지만, 정말 큰 영화는 큰 화면만 한 게 없어요.",
+          "그래서 네, 그게 둘의 차이점이에요."
+        ]
       }
     }
   ],
   "pronunciation": [
-    {"word": "theater", "ipa": "/ˈθiːətər/", "tip": "th는 혀끝을 이 사이에 살짝 물고 바람을 내보내세요. 가운데 t는 부드럽게 굴려 '씨어러'에 가깝게 발음합니다."},
-    {"word": "sci-fi", "ipa": "/ˈsaɪfaɪ/", "tip": "'싸이파이'처럼 두 음절 모두 '아이' 소리입니다. '사이피'로 읽지 않도록 주의하세요."},
-    {"word": "animated", "ipa": "/ˈænɪmeɪtɪd/", "tip": "강세는 첫 음절 'an'. '애니메이티드'를 빠르게, 끝의 t는 굴려서 '애니메이릳'처럼 말하세요."},
-    {"word": "popcorn", "ipa": "/ˈpɑːpkɔːrn/", "tip": "첫 p 뒤 모음은 입을 크게 벌린 '아'. '팝콘'보다 '팝코언'처럼 r을 살짝 굴려 주세요."},
-    {"word": "astronaut", "ipa": "/ˈæstrənɔːt/", "tip": "강세는 첫 음절 'as'. 가운데는 약하게 '애스트러놋'처럼 발음합니다."}
+    {
+      "word": "theater",
+      "ipa": "/ˈθiːətər/",
+      "tip": "th는 혀끝을 이 사이에 살짝 물고 바람을 내보내세요. 가운데 t는 부드럽게 굴려 '씨어러'에 가깝게 발음합니다."
+    },
+    {
+      "word": "sci-fi",
+      "ipa": "/ˈsaɪfaɪ/",
+      "tip": "'싸이파이'처럼 두 음절 모두 '아이' 소리입니다. '사이피'로 읽지 않도록 주의하세요."
+    },
+    {
+      "word": "animated",
+      "ipa": "/ˈænɪmeɪtɪd/",
+      "tip": "강세는 첫 음절 'an'. '애니메이티드'를 빠르게, 끝의 t는 굴려서 '애니메이릳'처럼 말하세요."
+    },
+    {
+      "word": "popcorn",
+      "ipa": "/ˈpɑːpkɔːrn/",
+      "tip": "첫 p 뒤 모음은 입을 크게 벌린 '아'. '팝콘'보다 '팝코언'처럼 r을 살짝 굴려 주세요."
+    },
+    {
+      "word": "astronaut",
+      "ipa": "/ˈæstrənɔːt/",
+      "tip": "강세는 첫 음절 'as'. 가운데는 약하게 '애스트러놋'처럼 발음합니다."
+    }
   ],
   "patterns": [
-    {"pid": "like#5", "en": "When it comes to movies, I'm a huge fan of action and sci-fi.", "ko": "영화라면, 저는 액션과 SF를 정말 좋아해요.", "q": "movies-describe"},
-    {"pid": "reason#4", "en": "Whenever I watch an action movie, I feel like all my stress from work just disappears.", "ko": "액션 영화를 볼 때마다, 회사 스트레스가 싹 사라지는 느낌이 들어요.", "q": "movies-describe"},
-    {"pid": "place#3", "en": "My favorite place to watch movies is the big sofa in our living room.", "ko": "제가 영화 보기 가장 좋아하는 곳은 우리 집 거실의 큰 소파예요.", "q": "movies-describe"},
-    {"pid": "people#0", "en": "I usually watch movies with my family on Friday nights.", "ko": "저는 보통 금요일 밤에 가족과 함께 영화를 봐요.", "q": "movies-routine"},
-    {"pid": "routine#2", "en": "Before I start a movie, I always order some fried chicken.", "ko": "영화를 시작하기 전에, 저는 항상 치킨을 시켜요.", "q": "movies-routine"},
-    {"pid": "memory#2", "en": "The most memorable movie I've seen recently was a sci-fi movie about an astronaut.", "ko": "최근에 본 가장 기억에 남는 영화는 한 우주비행사에 관한 SF 영화였어요.", "q": "movies-experience"},
-    {"pid": "change#1", "en": "Compared to the theater, watching at home is much cheaper and more comfortable.", "ko": "극장에 비해, 집에서 보는 게 훨씬 저렴하고 편해요.", "q": "movies-compare"},
-    {"pid": "opinion#5", "en": "All things considered, I think watching at home is better for a family of four.", "ko": "모든 걸 고려하면, 4인 가족에게는 집에서 보는 게 더 낫다고 생각해요.", "q": "movies-compare"}
+    {
+      "pid": "like#5",
+      "en": "When it comes to movies, I'm a huge fan of action and sci-fi.",
+      "ko": "영화라면, 저는 액션과 SF를 정말 좋아해요.",
+      "q": "movies-describe"
+    },
+    {
+      "pid": "reason#4",
+      "en": "Whenever I watch an action movie, I feel like all my stress from work just disappears.",
+      "ko": "액션 영화를 볼 때마다, 회사 스트레스가 싹 사라지는 느낌이 들어요.",
+      "q": "movies-describe"
+    },
+    {
+      "pid": "place#3",
+      "en": "My favorite place to watch movies is the big sofa in our living room.",
+      "ko": "제가 영화 보기 가장 좋아하는 곳은 우리 집 거실의 큰 소파예요.",
+      "q": "movies-describe"
+    },
+    {
+      "pid": "people#0",
+      "en": "I usually watch movies with my family on Friday nights.",
+      "ko": "저는 보통 금요일 밤에 가족과 함께 영화를 봐요.",
+      "q": "movies-routine"
+    },
+    {
+      "pid": "routine#2",
+      "en": "Before I start a movie, I always order some fried chicken.",
+      "ko": "영화를 시작하기 전에, 저는 항상 치킨을 시켜요.",
+      "q": "movies-routine"
+    },
+    {
+      "pid": "memory#2",
+      "en": "The most memorable movie I've seen recently was a sci-fi movie about an astronaut.",
+      "ko": "최근에 본 가장 기억에 남는 영화는 한 우주비행사에 관한 SF 영화였어요.",
+      "q": "movies-experience"
+    },
+    {
+      "pid": "change#1",
+      "en": "Compared to the theater, watching at home is much cheaper and more comfortable.",
+      "ko": "극장에 비해, 집에서 보는 게 훨씬 저렴하고 편해요.",
+      "q": "movies-compare"
+    },
+    {
+      "pid": "opinion#5",
+      "en": "All things considered, I think watching at home is better for a family of four.",
+      "ko": "모든 걸 고려하면, 4인 가족에게는 집에서 보는 게 더 낫다고 생각해요.",
+      "q": "movies-compare"
+    }
   ]
 }
