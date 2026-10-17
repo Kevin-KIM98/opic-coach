@@ -5,98 +5,97 @@
   "emoji": "✈️",
   "category": "survey",
   "priority": 8,
-  "intro": "해외 여행은 '가 본 나라·도시 묘사 → 여행 준비 과정 → 여행 중 문제·기억에 남는 일 → 과거와 현재 또는 국내 여행과 비교'로 출제됩니다. 작년 여름휴가 때 회사 입사 동기 Minji와 함께 간 일본 오사카(유니버설 스튜디오, 도톤보리 길거리 음식) 이야기 하나로 대부분의 질문을 해결하세요. 비교 질문에는 대학 때의 첫 해외여행을 과거 이야기로, '연차 내고 떠나는 직장인 여행'을 현재 이야기로 쓰면 됩니다.",
+  "intro": "해외 여행은 '좋아하는 나라·도시 묘사 → 여행 준비 루틴 → 여행 중 문제·돌발 상황 경험 → 첫 해외여행과 지금 비교' 순서로 자주 출제됩니다. 작년 여름 가족과 간 일본 오사카(유니버설 스튜디오, 먹자골목)와 신입 때 첫 해외였던 미국 샌프란시스코 출장 두 가지 이야기만 준비하면 묘사·경험·비교 질문을 모두 커버할 수 있습니다. 문제 경험은 '오사카 지하철에서 아들이 가방을 두고 내린 일'로 고정하세요.",
   "strategy": [
-    "답변 흐름: 시작 문장(Okay, let me tell you about ~) → 언제·어디·누구와 → 거기서 한 일·먹은 음식 세부 → 느낌·좋았던 이유 → 마무리 문장(Yeah, that's ~)",
-    "도시는 오사카 하나로 고정: 작년 여름휴가, 동료 Minji, 유니버설 스튜디오, 도톤보리 타코야키. 묘사·경험·비교에 같은 장면을 재활용하세요.",
-    "문제 경험 질문은 '무슨 일 → 당황한 감정 → 해결 방법 → 배운 점' 4단계로 말하면 IH 이상 구조가 됩니다.",
-    "비교 질문은 대학 때 첫 해외여행(과거: 종이 지도·현금·싼 호스텔) vs 지금(직장인: 앱·카드·짧은 휴가)으로 나누고 used to / these days 를 쓰세요."
+    "답변 흐름: 시작 문장(Sure, I'd love to talk about ~) → 어디를 언제 누구와 갔는지 기본 정보 → 한 일·먹은 음식·아이들 반응 세부 → 좋았던 이유·느낌 → 마무리 문장(So yeah, that's why ~)",
+    "도시는 오사카(작년 여름, 가족 넷, 유니버설 스튜디오, 도톤보리 타코야키)로 고정하고, 비교 질문에서만 20년 전 샌프란시스코 출장을 꺼내세요.",
+    "문제 경험은 '무슨 일이 생겼다 → 당황했다 → 역무실에 가서 해결 → 그 뒤로 생긴 습관' 4단계로 말하면 시간 순서가 분명해져요.",
+    "비교 질문은 '신입 때는 스마트폰도 없이 종이 지도와 출력한 일정표 → 지금은 앱으로 지도·번역·예약'처럼 기술 변화를 개발자다운 시선으로 말하세요."
   ],
   "expressions": [
     {
-      "en": "Okay, let me tell you about my trip to Osaka.",
-      "ko": "좋아요, 제 오사카 여행에 대해 말해 볼게요.",
+      "en": "Sure, I'd love to talk about my trip to Osaka.",
+      "ko": "네, 제 오사카 여행에 대해 말해 볼게요.",
       "level": "IM",
-      "note": "해외 여행 질문의 시작 문장"
+      "note": "해외 여행 질문의 시작 문장으로 그대로 사용"
     },
     {
-      "en": "I went there last summer with my coworker Minji.",
-      "ko": "작년 여름에 회사 동료 Minji랑 거기 갔어요.",
-      "level": "IM",
-      "note": "coworker: 회사 동료"
-    },
-    {
-      "en": "The flight was only about an hour and a half.",
-      "ko": "비행시간이 한 시간 반 정도밖에 안 됐어요.",
+      "en": "I went to Japan with my family last summer.",
+      "ko": "작년 여름에 가족과 일본에 갔어요.",
       "level": "IM"
     },
     {
-      "en": "I used my summer vacation days.",
-      "ko": "여름휴가(연차)를 썼어요.",
+      "en": "The flight took about an hour and a half.",
+      "ko": "비행기로 한 시간 반쯤 걸렸어요.",
       "level": "IM",
-      "note": "vacation days: 휴가 일수"
+      "note": "The flight took + 시간"
     },
     {
-      "en": "We tried a lot of street food.",
-      "ko": "길거리 음식을 정말 많이 먹어 봤어요.",
+      "en": "My kids loved Universal Studios.",
+      "ko": "아이들이 유니버설 스튜디오를 정말 좋아했어요.",
       "level": "IM"
     },
     {
-      "en": "The lines were really long.",
-      "ko": "줄이 정말 길었어요.",
+      "en": "The food was cheap and delicious.",
+      "ko": "음식이 싸고 맛있었어요.",
       "level": "IM"
     },
     {
-      "en": "I always double-check my passport.",
-      "ko": "저는 항상 여권을 다시 확인해요.",
-      "level": "IM",
-      "note": "double-check: 재확인하다"
+      "en": "I booked the flights and the hotel online.",
+      "ko": "비행기랑 호텔을 온라인으로 예약했어요.",
+      "level": "IM"
     },
     {
-      "en": "We got on the wrong train.",
-      "ko": "우리는 지하철을 잘못 탔어요.",
-      "level": "IM",
-      "note": "get on the wrong ~ : ~을 잘못 타다"
+      "en": "I always pack our passports first.",
+      "ko": "저는 항상 여권부터 챙겨요.",
+      "level": "IM"
     },
     {
-      "en": "We booked the flight two months early.",
-      "ko": "우리는 두 달 일찍 비행기를 예약했어요.",
+      "en": "I didn't know what to do.",
+      "ko": "어떻게 해야 할지 몰랐어요.",
+      "level": "IH",
+      "note": "문제 경험에서 당황한 순간을 말할 때"
+    },
+    {
+      "en": "We waited in line for over an hour.",
+      "ko": "한 시간 넘게 줄을 섰어요.",
+      "level": "IH",
+      "note": "wait in line: 줄 서서 기다리다"
+    },
+    {
+      "en": "The staff were really kind and helpful.",
+      "ko": "직원들이 정말 친절하고 도움이 많이 됐어요.",
       "level": "IH"
     },
     {
-      "en": "My phone battery was almost dead.",
-      "ko": "휴대폰 배터리가 거의 다 됐었어요.",
-      "level": "IH"
-    },
-    {
-      "en": "I tried to stay calm.",
-      "ko": "침착하려고 노력했어요.",
+      "en": "It was my first time going abroad.",
+      "ko": "그게 제 첫 해외여행이었어요.",
       "level": "IH",
-      "note": "문제 상황 경험 답변 필수 표현"
+      "note": "It was my first time + -ing"
     },
     {
-      "en": "Back then, I used to carry a paper map.",
-      "ko": "그때는 종이 지도를 들고 다녔어요.",
+      "en": "Everything is so much easier with a smartphone.",
+      "ko": "스마트폰이 있으니 모든 게 훨씬 쉬워요.",
       "level": "IH",
-      "note": "used to + 동사원형: 과거의 습관"
+      "note": "much/so much + 비교급으로 강조"
     },
     {
-      "en": "The food alone was worth the trip.",
-      "ko": "음식만으로도 여행 갈 가치가 있었어요.",
-      "level": "IH",
-      "note": "be worth + 명사: ~할 가치가 있다"
-    },
-    {
-      "en": "It turned out to be a blessing in disguise.",
-      "ko": "결과적으로 전화위복이 됐어요.",
+      "en": "My heart sank when I realized the bag was gone.",
+      "ko": "가방이 없어진 걸 알았을 때 가슴이 철렁했어요.",
       "level": "AL",
-      "note": "turn out to be ~ : 결국 ~로 밝혀지다"
+      "note": "my heart sank: 철렁하다, 덜컥 겁이 나다"
     },
     {
-      "en": "So yeah, that's why Osaka is my favorite city so far.",
-      "ko": "그래서 오사카가 지금까지 제일 좋아하는 도시예요.",
+      "en": "It was a huge weight off my shoulders.",
+      "ko": "어깨에서 큰 짐을 내려놓은 기분이었어요.",
       "level": "AL",
-      "note": "마무리 문장으로 사용"
+      "note": "걱정이 해결됐을 때 쓰는 관용 표현"
+    },
+    {
+      "en": "So yeah, that's why I love traveling abroad with my family.",
+      "ko": "그래서 제가 가족과 해외여행 가는 걸 정말 좋아해요.",
+      "level": "IM",
+      "note": "마무리 문장으로 그대로 사용"
     }
   ],
   "questions": [
@@ -104,64 +103,251 @@
       "id": "travel-overseas-describe",
       "type": "describe",
       "en": "You indicated in the survey that you like to travel abroad. Tell me about a country or city you have visited and really liked. What was it like, and what did you enjoy doing there?",
-      "ko": "설문에서 해외 여행을 좋아한다고 하셨습니다. 가 본 나라나 도시 중 정말 좋았던 곳에 대해 말해 주세요. 어떤 곳이었고, 거기서 무엇을 즐겼나요?",
+      "ko": "설문에서 해외여행을 좋아한다고 하셨습니다. 가 본 나라나 도시 중 정말 좋았던 곳에 대해 말해 주세요. 어땠고, 거기서 무엇을 즐겼나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 도시 이름·언제·누구와 → 도시 분위기 묘사 → 즐긴 것(유니버설 스튜디오, 도톤보리 음식) → 'So yeah, that's why ~' 마무리",
-        "'서울처럼 크고 바쁘지만 사람들이 더 여유로워 보였다'처럼 서울과 짧게 비교하면 묘사가 생생해져요.",
-        "Minji와 함께 간 이야기로 고정하면 경험·비교 질문에서도 같은 장면을 쓸 수 있어요."
+        "답변 흐름: 시작 문장 → 언제·누구와·어디(작년 여름, 가족, 오사카) → 한 일(유니버설 스튜디오, 도톤보리 먹거리) → 좋았던 이유 → 'So yeah, that's why ~' 마무리",
+        "과거에 다녀온 곳이므로 묘사는 과거 시제, 도시의 특징(It's famous for ~)은 현재 시제로 섞어 쓰세요.",
+        "'회사 일을 잊고 가족과 시간을 보냈다'는 직장인 감정 포인트를 이유로 넣으세요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about my trip to Osaka. Osaka is a big city in Japan. I went there last summer with my coworker Minji. The flight was only about an hour and a half. Osaka is busy like Seoul, but the people were really friendly. We went to Universal Studios. The lines were really long, but the rides were so fun. At night, we walked around Dotonbori and tried a lot of street food. So yeah, that's why Osaka is my favorite city so far.",
-        "IH": "Okay, let me tell you about a city I really liked. It's Osaka in Japan. I went there last summer with my coworker Minji. We joined the company at the same time, so we're really close. We used our summer vacation days and stayed for four days. The flight from Seoul was only about an hour and a half, so it was really easy. Osaka is a lot like Seoul because it's big and busy, but the people there seemed more relaxed and friendly. The highlight was Universal Studios. The lines were really long and it was super hot, but the rides were amazing, and we screamed the whole time. At night, we walked around Dotonbori, which is a famous street full of bright signs and food stalls. We tried takoyaki and okonomiyaki. Honestly, the food alone was worth the trip. So yeah, that's why Osaka is my favorite city so far.",
-        "AL": "Sure, I'd love to talk about that. The city I liked the most is definitely Osaka in Japan. I went there last summer with my coworker Minji. We started at the company on the same day, so we've been through a lot together, and we'd been talking about a trip for ages. We finally used our summer vacation days and went for four days. The flight was only about an hour and a half, so it felt like we were there before we even finished our snacks. Osaka is kind of like Seoul because it's big and busy, but the vibe is totally different. People seemed more laid-back, and everyone was super friendly, even when we couldn't speak Japanese. We spent one whole day at Universal Studios. It was boiling hot and the lines were crazy long, but once we got on the rides, we forgot all about it and screamed like little kids. My favorite part, though, was Dotonbori at night. The whole street was covered in bright neon signs, and there were food stalls everywhere. We tried takoyaki, okonomiyaki, and fried skewers, and honestly, the food alone was worth the trip. For once, I didn't think about work at all. So yeah, that's why Osaka is my favorite city so far."
+        "IM3": "Sure, I'd love to talk about my trip to Osaka. I went to Japan with my family last summer. The flight took about an hour and a half from Incheon. Osaka is a big and lively city. We went to Universal Studios, and my kids loved it. We also walked around Dotonbori and ate takoyaki. The food was cheap and delicious. The people were really kind, too. I forgot all about work for a few days. So yeah, that's why I really liked Osaka.",
+        "IH": "Sure, I'd love to talk about my trip to Osaka. One of my favorite things to do is traveling abroad with my family, and Osaka was our best trip so far. We went there last summer for four days. The flight from Incheon only took about an hour and a half, so it was easy with the kids. Osaka is a big city, but it's not too crowded or stressful. It has a fun and lively atmosphere that makes me feel like a kid again. On the second day, we spent the whole day at Universal Studios. My son loved the roller coasters, and my daughter loved the Minions. At night, we walked around Dotonbori and ate takoyaki and ramen. Spending time with my family helps me forget about work. So yeah, that's why I really liked Osaka.",
+        "AL": "Oh, a city I really liked? Let me think. I'd have to say Osaka, for sure. One of my favorite things to do is traveling abroad with my family, and our trip to Osaka last summer was the best one so far. It's only about an hour and a half from Incheon, so it's perfect for a short family trip. What I liked most about Osaka is the energy. The streets are full of bright signs and food stalls, and people are really friendly. It has a fun and lively atmosphere that makes me feel like a kid again. The highlight was definitely Universal Studios. We got there right when it opened and still waited in line for over an hour for some rides, but nobody complained. My son went on the biggest roller coaster three times, and my daughter took about a hundred pictures with the Minions. In the evenings, we wandered around Dotonbori, grabbing takoyaki and bowls of ramen. Honestly, I gained a few kilos. At home, I'm always busy with meetings and projects, so I don't get much time with the kids. Spending time with my family helps me forget about work. So yeah, that's why Osaka is one of my favorite cities."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제 오사카 여행에 대해 얘기해 볼게요.",
+          "작년 여름에 가족이랑 일본에 갔어요.",
+          "인천에서 비행기로 한 시간 반 정도 걸렸어요.",
+          "오사카는 크고 활기찬 도시예요.",
+          "유니버설 스튜디오에 갔는데, 아이들이 정말 좋아했어요.",
+          "도톤보리도 돌아다니면서 타코야키도 먹었어요.",
+          "음식이 싸고 맛있었어요.",
+          "사람들도 정말 친절했어요.",
+          "며칠 동안 일은 완전히 잊어버렸어요.",
+          "네, 그래서 제가 오사카를 정말 좋아했어요."
+        ],
+        "IH": [
+          "네, 제 오사카 여행에 대해 얘기해 볼게요.",
+          "제가 제일 좋아하는 것 중 하나가 가족이랑 해외여행 가는 건데, 오사카가 지금까지 최고의 여행이었어요.",
+          "작년 여름에 4일 동안 거기 갔어요.",
+          "인천에서 비행기로 한 시간 반 정도밖에 안 걸려서, 아이들이랑 가기 편했어요.",
+          "오사카는 큰 도시지만, 너무 붐비거나 스트레스 받지는 않아요.",
+          "다시 아이가 된 것 같은 기분이 드는 재밌고 활기찬 분위기가 있어요.",
+          "둘째 날에는 하루 종일 유니버설 스튜디오에서 보냈어요.",
+          "아들은 롤러코스터를 정말 좋아했고, 딸은 미니언즈를 정말 좋아했어요.",
+          "밤에는 도톤보리를 돌아다니면서 타코야키랑 라멘을 먹었어요.",
+          "가족이랑 시간을 보내면 일을 잊는 데 도움이 돼요.",
+          "네, 그래서 제가 오사카를 정말 좋아했어요."
+        ],
+        "AL": [
+          "아, 정말 좋았던 도시요?",
+          "생각 좀 해볼게요.",
+          "확실히 오사카라고 해야겠네요.",
+          "제가 제일 좋아하는 것 중 하나가 가족이랑 해외여행 가는 건데, 작년 여름 오사카 여행이 지금까지 최고였어요.",
+          "인천에서 한 시간 반 정도밖에 안 걸려서, 짧은 가족 여행으로 딱이에요.",
+          "오사카에서 제일 좋았던 건 그 에너지예요.",
+          "거리마다 화려한 간판과 먹거리 노점이 가득하고, 사람들도 정말 친절해요.",
+          "다시 아이가 된 것 같은 기분이 드는 재밌고 활기찬 분위기가 있어요.",
+          "하이라이트는 단연 유니버설 스튜디오였어요.",
+          "문 열자마자 들어갔는데도 몇몇 놀이기구는 한 시간 넘게 줄을 섰지만, 아무도 불평하지 않았어요.",
+          "아들은 제일 큰 롤러코스터를 세 번이나 탔고, 딸은 미니언즈랑 사진을 백 장쯤 찍었어요.",
+          "저녁에는 도톤보리를 이리저리 돌아다니면서 타코야키랑 라멘을 사 먹었어요.",
+          "솔직히 몇 킬로는 쪘어요.",
+          "평소에는 늘 회의랑 프로젝트로 바빠서 아이들이랑 보낼 시간이 별로 없어요.",
+          "가족이랑 시간을 보내면 일을 잊는 데 도움이 돼요.",
+          "네, 그래서 오사카가 제가 제일 좋아하는 도시 중 하나예요."
+        ]
       }
     },
     {
       "id": "travel-overseas-routine",
       "type": "routine",
       "en": "What do you usually do to prepare for a trip abroad? Tell me about all the steps you take, from booking the trip to packing your bags.",
-      "ko": "해외 여행을 가기 전에 보통 무엇을 준비하나요? 여행 예약부터 짐 싸기까지 거치는 모든 단계를 말해 주세요.",
+      "ko": "해외여행을 가기 전에 보통 어떤 준비를 하나요? 예약부터 짐 싸기까지 거치는 모든 단계를 말해 주세요.",
       "tips": [
-        "답변 흐름: 시작 문장 → 휴가 날짜 정하기(팀장님께 휴가 신청) → 항공·숙소 예약 → 일정·맛집 찾기 → 환전·데이터 → 짐 싸기 → 마무리 문장",
-        "First, Then, After that, A day or two before, Finally 순서 표현으로 단계를 나눠 말하세요.",
-        "'떠나기 전 업무 인수인계'처럼 직장인다운 단계를 하나 넣으면 답변이 자연스러워요."
+        "답변 흐름: 시작 문장 → 예약(항공권·호텔) → 일정 짜기(아이들과 함께) → 서류·환전·유심 → 짐 싸기 → 'Yeah, that's how ~' 마무리",
+        "First, Then, After that, Finally 같은 순서 표현으로 단계를 분명히 나누세요.",
+        "'개발자라 체크리스트를 만든다', '여권 4개를 한 파우치에 넣는다'처럼 나만의 습관을 하나 넣으면 IH 이상으로 들려요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about how I prepare for a trip abroad. First, I pick my vacation dates and tell my team leader. Then, I book the flight and the hotel online. I usually book two months early because it's cheaper. After that, I look for good places to eat. I also buy a data plan for my phone. A day before the trip, I pack my suitcase. I always double-check my passport. Yeah, that's how I prepare for a trip abroad.",
-        "IH": "Okay, let me tell you about how I get ready for a trip abroad. Since I work at an IT company, the first step is always picking my vacation dates. I check my team's schedule and ask my team leader for the days off. Then, my friend Minji and I book the flight and the hotel. We try to book at least two months early, because prices go up really fast. After that, my job is to make a list of places to go and things to eat. Before our trip to Osaka, I watched a lot of travel videos and found the best takoyaki places. I also buy a data plan online, so I can use maps there. A day or two before we leave, I pack my suitcase. I always bring comfortable shoes, a power adapter, and some medicine just in case. And of course, I double-check my passport the night before. So yeah, that's pretty much how I prepare for a trip abroad.",
-        "AL": "Sure, I'd love to talk about that. As an office worker, preparing for a trip abroad actually starts way before I book anything. The first thing I do is look at my team's calendar and find a week when there are no big campaigns going on. Then I ask my team leader for the days off, usually two or three months in advance. Once that's settled, my coworker Minji and I book our flight and hotel. We've learned the hard way that prices shoot up if you wait too long, so we book as early as we can. After that, we split up the planning. Minji is in charge of shopping, and I'm in charge of food, which is kind of my specialty. Before our Osaka trip, I watched tons of travel videos and saved a list of takoyaki places on my map app. I also buy a data plan online and put a little cash in my wallet, although I mostly use my card these days. About a week before I leave, I hand over my work to another teammate so nobody has to call me on vacation. Finally, I pack the night before. Comfortable shoes, a power adapter, and some medicine just in case. And I always double-check my passport, like, three times. Yeah, that's how I prepare for a trip abroad."
+        "IM3": "Okay, let me tell you about how I prepare for a trip abroad. I usually travel with my family, so I plan early. First, I book the flights and the hotel online. Then, I make a simple plan with my kids. After that, I check our passports. I also get some yen or dollars and buy a SIM card for my phone. The night before, we pack our bags together. I always pack our passports first. Yeah, that's how I get ready for a trip abroad.",
+        "IH": "Sure, I'd love to talk about how I prepare for a trip abroad. Traveling with a family of four takes a lot of planning, so I usually start about three months before. First, I book the flights and the hotel. Then, I make a simple plan with my kids. My son picks one activity, and my daughter picks one, so everyone is happy. After that, I check our passports and make sure they aren't expiring soon. A week before we leave, I exchange some money and buy a data SIM card online. The night before, we pack together. I put all four passports in one small pouch, and I keep it in my bag the whole trip. On the day, we get to the airport about three hours early. So yeah, that's pretty much how I prepare for a trip abroad.",
+        "AL": "Oh, getting ready for a trip abroad? Let me think. Honestly, with two kids, it's almost like running a small project at work. I usually start about three months before, because flights get really expensive if you wait. First, I book the flights and the hotel. Then, I make a simple plan with my kids. We sit down together, and each of them gets to choose one thing they really want to do. Last year in Osaka, my son chose Universal Studios, and my daughter chose a big cat cafe. After that, I go through all the boring stuff. I check that our passports aren't expiring, book travel insurance, and buy a data SIM card online. I'm a developer, so of course I make a checklist on my phone and check things off one by one. A week before, I exchange a bit of cash, just in case. The night before we leave, the whole family packs together. I put all four passports in one small pouch and never let it out of my sight. On the day, we get to the airport three hours early, because I hate rushing. So yeah, that's pretty much how I get ready for a trip abroad."
+      },
+      "answersKo": {
+        "IM3": [
+          "네, 제가 해외여행 준비를 어떻게 하는지 말씀드릴게요.",
+          "저는 보통 가족이랑 여행을 가서, 일찍 계획을 세워요.",
+          "먼저, 온라인으로 항공권이랑 호텔을 예약해요.",
+          "그다음에 아이들이랑 간단한 계획을 세워요.",
+          "그 후에 여권을 확인해요.",
+          "엔화나 달러도 좀 바꾸고, 휴대폰용 유심 카드도 사요.",
+          "전날 밤에는 다 같이 짐을 싸요.",
+          "저는 항상 여권부터 챙겨요.",
+          "네, 그게 제가 해외여행 준비하는 방법이에요."
+        ],
+        "IH": [
+          "네, 제가 해외여행 준비를 어떻게 하는지 얘기해 볼게요.",
+          "네 식구가 여행하려면 계획이 많이 필요해서, 보통 3개월 전쯤부터 시작해요.",
+          "먼저, 항공권이랑 호텔을 예약해요.",
+          "그다음에 아이들이랑 간단한 계획을 세워요.",
+          "아들이 하나, 딸이 하나씩 하고 싶은 걸 골라서 모두가 만족해요.",
+          "그 후에 여권을 확인하고, 곧 만료되지 않는지 꼭 확인해요.",
+          "출발 일주일 전에 환전을 좀 하고, 온라인으로 데이터 유심 카드를 사요.",
+          "전날 밤에는 다 같이 짐을 싸요.",
+          "여권 네 개를 작은 파우치 하나에 넣고, 여행 내내 제 가방에 넣어 둬요.",
+          "당일에는 공항에 세 시간 정도 일찍 도착해요.",
+          "네, 그게 대충 제가 해외여행 준비하는 방법이에요."
+        ],
+        "AL": [
+          "아, 해외여행 준비요?",
+          "생각 좀 해볼게요.",
+          "솔직히 아이가 둘이라서, 거의 회사에서 작은 프로젝트를 진행하는 것 같아요.",
+          "기다리면 항공권이 엄청 비싸져서, 보통 3개월 전쯤부터 시작해요.",
+          "먼저, 항공권이랑 호텔을 예약해요.",
+          "그다음에 아이들이랑 간단한 계획을 세워요.",
+          "같이 앉아서, 각자 정말 하고 싶은 걸 하나씩 고르게 해요.",
+          "작년 오사카에서는 아들이 유니버설 스튜디오를, 딸이 큰 고양이 카페를 골랐어요.",
+          "그다음엔 지루한 일들을 처리해요.",
+          "여권이 만료되지 않았는지 확인하고, 여행자 보험을 들고, 온라인으로 데이터 유심 카드를 사요.",
+          "제가 개발자라서 당연히 휴대폰에 체크리스트를 만들고 하나씩 체크해요.",
+          "일주일 전에는 혹시 모르니까 현금을 조금 환전해요.",
+          "출발 전날 밤에는 온 가족이 같이 짐을 싸요.",
+          "여권 네 개를 작은 파우치 하나에 넣고 절대 눈에서 떼지 않아요.",
+          "서두르는 걸 정말 싫어해서, 당일에는 공항에 세 시간 일찍 도착해요.",
+          "네, 그게 대충 제가 해외여행 준비하는 방법이에요."
+        ]
       }
     },
     {
       "id": "travel-overseas-experience",
       "type": "experience",
       "en": "Have you ever had a problem or an unexpected situation while traveling abroad? Tell me about that experience in detail. What happened, and how did you deal with it?",
-      "ko": "해외 여행 중에 문제가 생기거나 예상치 못한 상황을 겪은 적이 있나요? 그 경험을 자세히 말해 주세요. 무슨 일이 있었고, 어떻게 해결했나요?",
+      "ko": "해외여행 중에 문제나 예상치 못한 상황을 겪은 적이 있나요? 그 경험을 자세히 말해 주세요. 무슨 일이 있었고, 어떻게 해결했나요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 언제·어디서 → 무슨 문제가 생겼는지 → 당황한 감정 → 어떻게 해결했는지 → 배운 점 + 마무리 문장",
-        "All of a sudden, To make things worse, Luckily, In the end 같은 이야기 연결어로 긴장감을 만드세요.",
-        "오사카에서 Minji와 지하철을 잘못 타고 배터리가 꺼진 이야기로 고정하면 준비가 쉬워요."
+        "답변 흐름: 시작 문장 → 언제·어디서(작년 여름 오사카 지하철) → 무슨 일(아들이 가방을 두고 내림) → 어떻게 해결(역무실, 다음 역에서 찾음) → 배운 점 → 'Yeah, that's ~' 마무리",
+        "Something unexpected happened when ~ / I didn't know what to do, so I ~ / Luckily, ~ 세 문장이 문제 경험의 뼈대예요.",
+        "끝에 'Since then, I always make sure to ~'로 교훈을 붙이면 자연스럽게 마무리돼요."
       ],
       "answers": {
-        "IM3": "Oh, a problem abroad? Let me think. Last summer, I went to Osaka with my coworker Minji. One evening, we got on the wrong train. We didn't know where we were. My phone battery was almost dead, so I couldn't use the map. I was really nervous. Luckily, a station worker helped us. He wrote down the right train for us. We got back to the hotel an hour late. Yeah, that's the problem I had abroad.",
-        "IH": "Sure, I'd love to talk about that. Last summer, I went to Osaka with my coworker Minji, and something stressful happened. One evening, we went shopping and wanted to go back to our hotel. The subway system in Osaka is really complicated, and we got on the wrong train. All of a sudden, we were in a part of the city we didn't recognize at all. To make things worse, my phone battery was almost dead, and Minji's phone didn't have data. I was really nervous, but I tried to stay calm. Luckily, we found a station worker. We couldn't speak Japanese, so I just showed him our hotel name. He was so kind and wrote down the train and the stop for us. In the end, we got back safely, just an hour late. Now I always carry a portable charger. Yeah, that's the most stressful moment I've had abroad.",
-        "AL": "Oh, a problem while traveling? Yeah, I definitely have a story. Last summer, I went to Osaka with my coworker Minji. On our third night, we went shopping and stayed out pretty late. When we tried to head back to our hotel, we hopped on what we thought was the right train. But after a few stops, nothing looked familiar, and the station names didn't match our route at all. We had gotten on an express train going in the totally wrong direction. To make things worse, my phone battery was at two percent, and Minji's data wasn't working. I'm usually the calm one at work, but honestly, I was panicking inside. We got off at the next station and found a station worker. Neither of us could speak Japanese, so I just showed him our hotel's name on a receipt. He not only wrote down the right train and stop for us, but he actually walked us to the platform. I was so touched. We finally got back an hour and a half late, totally exhausted, but we couldn't stop laughing about it. It turned out to be a blessing in disguise, because now it's our favorite story to tell at the office. And these days, I never travel without a portable charger. Yeah, that's the craziest thing that's happened to me abroad."
+        "IM3": "Oh, a problem while traveling? Let me think. Last summer, I went to Osaka with my family. Something unexpected happened when we were taking the subway. My son left his backpack on the train. His wallet and phone were in it. I didn't know what to do, so I went to the station office. The staff called the next station. Luckily, they found the bag, and we got it back an hour later. Since then, I always make sure to check our seats before we get off. Yeah, that's my story.",
+        "IH": "Sure, I'd love to talk about that. Last summer, my family and I went to Osaka for four days. Something unexpected happened when we were taking the subway back to our hotel. Everyone was really tired after a long day at Universal Studios. When we got off the train, my son suddenly shouted, 'My backpack!' He left it on the seat, and his phone and wallet were inside. The train was already gone. I didn't know what to do, so I went to the station office. My Japanese is terrible, so I used a translation app on my phone. The staff were really kind. They called the next station, and luckily, someone found the bag. We took the next train and picked it up. Nothing was missing. Since then, I always make sure to check our seats before we get off. Yeah, that's my story.",
+        "AL": "Oh, an unexpected situation? Actually, yes, I have a pretty good one. Last summer, my family and I went to Osaka. Something unexpected happened when we were taking the subway back to our hotel. We had just spent the whole day at Universal Studios, so all four of us were completely exhausted. We got off at our stop, and about ten seconds later, my son shouted, 'My backpack!' He'd left it on the seat, with his phone, his wallet, and all the souvenirs he'd bought. My heart sank when I realized the train was already gone. I didn't know what to do, so I went to the station office. My Japanese is pretty much limited to 'thank you,' so I typed everything into a translation app and showed the staff my phone. They were incredibly calm and kind. One staff member called the next station, and within a few minutes, they found the bag. We hopped on the next train, and there it was, waiting for us at the counter. Nothing was missing. It was a huge weight off my shoulders. It turned out to be a great lesson, though. Since then, I always make sure to check our seats before we get off. Yeah, that's my story."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 여행 중에 생긴 문제요?",
+          "생각 좀 해볼게요.",
+          "작년 여름에 가족이랑 오사카에 갔어요.",
+          "지하철을 타고 있을 때 예상치 못한 일이 생겼어요.",
+          "아들이 배낭을 열차에 두고 내렸어요.",
+          "그 안에 지갑이랑 휴대폰이 들어 있었어요.",
+          "어떻게 해야 할지 몰라서 역무실로 갔어요.",
+          "직원이 다음 역에 전화를 해 줬어요.",
+          "다행히 가방을 찾아서, 한 시간 뒤에 돌려받았어요.",
+          "그 이후로는 내리기 전에 항상 자리를 꼭 확인해요.",
+          "네, 그게 제 이야기예요."
+        ],
+        "IH": [
+          "네, 그것에 대해 얘기해 볼게요.",
+          "작년 여름에 가족이랑 4일 동안 오사카에 갔어요.",
+          "호텔로 돌아가는 지하철을 타고 있을 때 예상치 못한 일이 생겼어요.",
+          "유니버설 스튜디오에서 긴 하루를 보내고 나서 다들 정말 피곤했어요.",
+          "열차에서 내렸을 때 아들이 갑자기 '내 배낭!' 하고 소리쳤어요.",
+          "자리에 두고 내렸는데, 안에 휴대폰이랑 지갑이 있었어요.",
+          "열차는 이미 떠나 버렸어요.",
+          "어떻게 해야 할지 몰라서 역무실로 갔어요.",
+          "제 일본어 실력이 형편없어서, 휴대폰 번역 앱을 썼어요.",
+          "직원들이 정말 친절했어요.",
+          "다음 역에 전화를 해 줬는데, 다행히 누가 가방을 찾았어요.",
+          "저희는 다음 열차를 타고 가서 가방을 찾아왔어요.",
+          "없어진 건 하나도 없었어요.",
+          "그 이후로는 내리기 전에 항상 자리를 꼭 확인해요.",
+          "네, 그게 제 이야기예요."
+        ],
+        "AL": [
+          "아, 예상치 못한 상황이요?",
+          "사실 네, 꽤 괜찮은 이야기가 하나 있어요.",
+          "작년 여름에 가족이랑 오사카에 갔어요.",
+          "호텔로 돌아가는 지하철을 타고 있을 때 예상치 못한 일이 생겼어요.",
+          "유니버설 스튜디오에서 하루 종일 보내고 난 참이라, 네 명 모두 완전히 녹초가 돼 있었어요.",
+          "저희 역에서 내렸는데, 한 10초쯤 뒤에 아들이 '내 배낭!' 하고 소리쳤어요.",
+          "휴대폰, 지갑, 그리고 자기가 산 기념품까지 전부 든 채로 자리에 두고 내린 거예요.",
+          "열차가 이미 떠났다는 걸 깨달았을 때 가슴이 철렁했어요.",
+          "어떻게 해야 할지 몰라서 역무실로 갔어요.",
+          "제 일본어는 거의 '고맙습니다' 정도가 전부라서, 번역 앱에 다 입력해서 직원한테 휴대폰을 보여 줬어요.",
+          "직원들은 놀라울 정도로 침착하고 친절했어요.",
+          "직원 한 분이 다음 역에 전화를 했고, 몇 분 만에 가방을 찾았어요.",
+          "다음 열차에 올라탔더니, 가방이 카운터에서 저희를 기다리고 있었어요.",
+          "없어진 건 하나도 없었어요.",
+          "어깨에서 큰 짐을 내려놓은 것 같았어요.",
+          "그래도 결과적으로는 좋은 교훈이 됐어요.",
+          "그 이후로는 내리기 전에 항상 자리를 꼭 확인해요.",
+          "네, 그게 제 이야기예요."
+        ]
       }
     },
     {
       "id": "travel-overseas-compare",
       "type": "comparison",
       "en": "How is the way you travel abroad now different from the first time you traveled overseas? Or, how does traveling abroad compare to traveling within Korea?",
-      "ko": "지금 해외 여행하는 방식은 처음 해외여행을 갔을 때와 어떻게 다른가요? 또는 해외 여행은 국내 여행과 비교해 어떤가요?",
+      "ko": "지금의 해외여행 방식은 처음 해외에 나갔을 때와 어떻게 다른가요? 또는 해외여행은 국내 여행과 비교해 어떤가요?",
       "tips": [
-        "답변 흐름: 시작 문장 → 처음 해외여행(대학 때, 긴장·종이 지도·현금·싼 호스텔) → 지금(직장인: 앱·카드·짧은 휴가·좋은 호텔) → 느낌·어느 쪽이 좋은지 → 마무리 문장",
-        "Back then / used to 와 These days / now 로 과거와 현재를 분명히 나누세요.",
-        "국내 여행 비교가 나오면 '부산은 주말에 쉽게, 오사카는 연차를 길게 써야 함'으로 바꿔 말할 수 있어요."
+        "답변 흐름: 시작 문장 → 첫 해외(20년 전 신입 때 샌프란시스코 출장, 스마트폰 없음) → 지금(가족 여행, 앱으로 지도·번역·예약) → 가장 큰 차이와 이유 → 'Yeah, that's how ~' 마무리",
+        "Compared to ~, ~ is much ~ 패턴으로 핵심 차이를 한 문장에 정리하세요.",
+        "'출력한 지도와 일정표 → 스마트폰 앱'처럼 기술 변화를 말하면 개발자 페르소나와 잘 어울려요."
       ],
       "answers": {
-        "IM3": "Okay, let me tell you about how my trips abroad have changed. My first trip abroad was in college. I went with my college friends. Back then, I was really nervous because everything was new. We used a paper map and carried a lot of cash. We stayed in a cheap hostel. These days, I use map apps and pay with my card. But I'm busy at work, so my trips are short. Yeah, that's how my trips abroad have changed.",
-        "IH": "Sure, I'd love to talk about that. My first trip abroad was in college, and it was really different from how I travel now. I went with two friends during winter break. Back then, I was really nervous because everything was new. I didn't even know how to check in at the airport. We also had to exchange a lot of cash and carry a paper map. Since we were students, we stayed in a cheap hostel and ate convenience store food a lot. These days, things are much easier. When I went to Osaka with my coworker Minji last summer, I used a map app to find the subway, and I paid for almost everything with my card. We also stayed in a nice hotel. The only downside is that I can't take long vacations anymore. So yeah, that's pretty much how my trips abroad have changed.",
-        "AL": "Oh, that's an interesting question. Let me think. My first trip abroad was back in college, and looking back, it was a completely different experience. I went with two friends during winter break, and I was so nervous that I barely slept the night before. I didn't even know how to check in at the airport, so I just followed my friends around like a lost puppy. We used to carry paper maps and a big envelope of cash, and we stayed in the cheapest hostel we could find. We lived on convenience store sandwiches to save money, but honestly, it felt like a huge adventure. These days, I travel in a totally different way. Now that I have a steady job, I can afford a nice hotel and good restaurants. When Minji and I went to Osaka last summer, I used a map app for the subway, a translation app to order food, and my card for almost everything. It's so much more comfortable. But there's a catch. Back in college, I had weeks of vacation, and now I have to squeeze a trip into four or five days off. If I had to choose, I'd still pick traveling now, because I'm more confident. So yeah, that's how my trips abroad have changed."
+        "IM3": "Oh, how my travel has changed? Let me think. My first trip abroad was about twenty years ago. I went to San Francisco on a business trip. I was a new employee, and I was really nervous. I didn't have a smartphone, so I used paper maps. Now I travel with my family. I use apps for maps, booking, and translation. Compared to my first trip, traveling abroad now is much easier. Yeah, that's how my trips abroad have changed.",
+        "IH": "Sure, I'd love to talk about that. My first trip abroad was about twenty years ago, when I was a new developer. My company sent me to San Francisco on a business trip with two seniors. I was so nervous because my English wasn't very good. Back then, I didn't have a smartphone, so I printed out maps and the hotel address before I left. I even got lost once on the way to a meeting. Now everything is different. I travel for fun with my family, and I do everything on my phone. I book flights with an app, use maps to find restaurants, and use a translation app when I need it. Compared to my first trip, traveling abroad now is much easier. The biggest difference is technology. Yeah, that's how my trips abroad have changed.",
+        "AL": "Oh, that's a fun one. Let me think. My first trip abroad was about twenty years ago, right after I joined my company. They sent me to San Francisco on a business trip with two senior developers. I was excited, but honestly, I was terrified. My English was pretty basic, and I didn't have a smartphone. I printed out maps, the hotel address, and even the directions to the office, and I carried them everywhere in a folder. One morning, I took the wrong bus and showed up twenty minutes late to a meeting. I still remember how red my face was. Fast forward to now, and it's a completely different world. These days, I travel with my family, mostly for fun, and my phone does almost everything. I book flights on an app, find restaurants with a map, and if I get stuck, I just open a translation app. Last summer in Osaka, I barely needed any Japanese at all. Compared to my first trip, traveling abroad now is much easier and much less stressful. I think this change is mostly because of smartphones. Yeah, that's how my trips abroad have changed over the years."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 제 여행이 어떻게 변했냐고요?",
+          "생각 좀 해볼게요.",
+          "제 첫 해외여행은 20년쯤 전이었어요.",
+          "출장으로 샌프란시스코에 갔어요.",
+          "신입 사원이라서 정말 긴장했어요.",
+          "스마트폰이 없어서 종이 지도를 썼어요.",
+          "지금은 가족이랑 여행을 가요.",
+          "지도, 예약, 번역에 다 앱을 써요.",
+          "첫 여행과 비교하면 지금 해외여행은 훨씬 쉬워요.",
+          "네, 그게 제 해외여행이 변한 모습이에요."
+        ],
+        "IH": [
+          "네, 그것에 대해 얘기해 볼게요.",
+          "제 첫 해외여행은 20년쯤 전, 제가 신입 개발자였을 때였어요.",
+          "회사에서 선배 두 명이랑 같이 샌프란시스코로 출장을 보냈어요.",
+          "영어를 잘 못해서 정말 긴장했어요.",
+          "그때는 스마트폰이 없어서, 떠나기 전에 지도랑 호텔 주소를 출력해 갔어요.",
+          "회의 가는 길에 한 번 길을 잃기도 했어요.",
+          "지금은 모든 게 달라요.",
+          "가족이랑 놀러 다니고, 모든 걸 휴대폰으로 해요.",
+          "앱으로 항공권을 예약하고, 지도로 식당을 찾고, 필요할 땐 번역 앱을 써요.",
+          "첫 여행과 비교하면 지금 해외여행은 훨씬 쉬워요.",
+          "가장 큰 차이는 기술이에요.",
+          "네, 그게 제 해외여행이 변한 모습이에요."
+        ],
+        "AL": [
+          "아, 재밌는 질문이네요.",
+          "생각 좀 해볼게요.",
+          "제 첫 해외여행은 20년쯤 전, 회사에 입사하자마자였어요.",
+          "회사에서 선배 개발자 두 명이랑 같이 샌프란시스코로 출장을 보냈어요.",
+          "설레기도 했지만, 솔직히 엄청 겁이 났어요.",
+          "영어는 꽤 기초 수준이었고, 스마트폰도 없었어요.",
+          "지도, 호텔 주소, 심지어 사무실 가는 길까지 출력해서, 폴더에 넣어 어디든 들고 다녔어요.",
+          "어느 날 아침에는 버스를 잘못 타서 회의에 20분 늦게 나타났어요.",
+          "그때 얼굴이 얼마나 빨개졌는지 아직도 기억나요.",
+          "지금으로 와 보면, 완전히 다른 세상이에요.",
+          "요즘은 주로 놀러 가족이랑 여행을 가는데, 휴대폰이 거의 모든 걸 해 줘요.",
+          "앱으로 항공권을 예약하고, 지도로 식당을 찾고, 막히면 그냥 번역 앱을 열어요.",
+          "작년 여름 오사카에서는 일본어가 거의 필요 없었어요.",
+          "첫 여행과 비교하면 지금 해외여행은 훨씬 쉽고 스트레스도 훨씬 덜해요.",
+          "이런 변화는 대부분 스마트폰 덕분인 것 같아요.",
+          "네, 그게 세월이 지나면서 제 해외여행이 변한 모습이에요."
+        ]
       }
     }
   ],
@@ -169,76 +355,76 @@
     {
       "word": "abroad",
       "ipa": "/əˈbrɔːd/",
-      "tip": "두 번째 음절 '브로-'에 강세. 첫 a는 약하게 '어'로 흘려요."
+      "tip": "뒤 '브로-드'에 강세. 앞 a는 '어'로 약하게 흘려요."
     },
     {
       "word": "passport",
       "ipa": "/ˈpæspɔːrt/",
-      "tip": "첫 음절 '패'에 강세. 끝 t는 살짝 끊듯이 약하게."
+      "tip": "앞 '패'에 강세를 주고 '패스포-트'. 끝 t는 살짝만 끊어요."
     },
     {
-      "word": "suitcase",
-      "ipa": "/ˈsuːtkeɪs/",
-      "tip": "'수트케이스'. suit의 t는 거의 들리지 않게 멈추듯 발음해요."
-    },
-    {
-      "word": "vacation",
-      "ipa": "/veɪˈkeɪʃən/",
-      "tip": "두 번째 음절 '케이'에 강세. v는 윗니를 아랫입술에 대고 '브'가 아닌 진동 소리로."
+      "word": "souvenir",
+      "ipa": "/ˌsuːvəˈnɪr/",
+      "tip": "마지막 '니어'에 강세. '수버니어'처럼 말하고 '수베니르'로 읽지 마세요."
     },
     {
       "word": "schedule",
       "ipa": "/ˈskedʒuːl/",
-      "tip": "미국식은 '스케줄', s 다음에 k 소리를 분명히 내세요."
+      "tip": "미국식은 '스케줄', 영국식은 '셰듈'. 한 가지로 일관되게 쓰세요."
+    },
+    {
+      "word": "Universal",
+      "ipa": "/ˌjuːnɪˈvɜːrsəl/",
+      "tip": "'유니-버-설'에서 '버'에 강세. r 소리를 살짝 굴려요."
     }
   ],
   "patterns": [
     {
       "pid": "like#1",
-      "en": "One of my favorite things to do is trying street food in a new city.",
-      "ko": "제가 가장 좋아하는 일 중 하나는 새로운 도시에서 길거리 음식을 먹어 보는 거예요.",
+      "en": "One of my favorite things to do is traveling abroad with my family.",
+      "ko": "제가 가장 좋아하는 일 중 하나는 가족과 해외여행을 가는 거예요.",
       "q": "travel-overseas-describe"
     },
     {
       "pid": "describe#5",
-      "en": "It has a lively atmosphere that makes me feel excited.",
-      "ko": "그곳은 활기찬 분위기가 있어서 저를 신나게 해요.",
+      "en": "It has a fun and lively atmosphere that makes me feel like a kid again.",
+      "ko": "다시 아이가 된 기분이 들게 하는 즐겁고 활기찬 분위기가 있어요.",
       "q": "travel-overseas-describe"
     },
     {
-      "pid": "people#3",
-      "en": "I have a friend named Minji, and we went to Osaka together last summer.",
-      "ko": "저에게는 민지라는 친구가 있는데, 작년 여름에 같이 오사카에 갔어요.",
+      "pid": "people#5",
+      "en": "Spending time with my family helps me forget about work.",
+      "ko": "가족과 시간을 보내면 일을 잊는 데 도움이 돼요.",
       "q": "travel-overseas-describe"
     },
     {
       "pid": "routine#3",
-      "en": "First, I ask my team leader for the days off. Then, I book the flight and the hotel.",
-      "ko": "먼저 팀장님께 휴가를 신청해요. 그다음 항공권과 호텔을 예약해요.",
+      "en": "First, I book the flights and the hotel. Then, I make a simple plan with my kids.",
+      "ko": "먼저 항공권과 호텔을 예약해요. 그다음 아이들과 간단한 일정을 짜요.",
       "q": "travel-overseas-routine"
     },
     {
       "pid": "problem#0",
-      "en": "Something unexpected happened when Minji and I got on the wrong train in Osaka.",
-      "ko": "민지와 제가 오사카에서 지하철을 잘못 탔을 때 예상치 못한 일이 일어났어요.",
+      "en": "Something unexpected happened when we were taking the subway.",
+      "ko": "지하철을 타고 가던 중에 예상치 못한 일이 생겼어요.",
       "q": "travel-overseas-experience"
     },
     {
-      "pid": "memory#4",
-      "en": "It turned out to be a blessing in disguise.",
-      "ko": "결과적으로 오히려 전화위복이 되었어요.",
+      "pid": "problem#2",
+      "en": "I didn't know what to do, so I went to the station office.",
+      "ko": "어떻게 해야 할지 몰라서 역무실로 갔어요.",
       "q": "travel-overseas-experience"
     },
     {
       "pid": "problem#5",
-      "en": "Since then, I always make sure to bring a portable charger.",
-      "ko": "그 이후로 저는 항상 보조배터리를 꼭 챙겨요.",
+      "en": "Since then, I always make sure to check our seats before we get off.",
+      "ko": "그 뒤로 저는 내리기 전에 항상 자리를 꼭 확인해요.",
       "q": "travel-overseas-experience"
     },
     {
       "pid": "change#1",
-      "en": "Compared to my first trip abroad, traveling now is much more comfortable.",
-      "ko": "처음 해외여행을 갔을 때와 비교하면, 지금 여행하는 게 훨씬 더 편해요.",
+      "en": "Compared to my first trip, traveling abroad now is much easier.",
+      "ko": "첫 여행에 비해 지금은 해외여행이 훨씬 쉬워요.",
       "q": "travel-overseas-compare"
     }
   ]

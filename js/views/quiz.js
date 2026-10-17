@@ -9,6 +9,7 @@ export function speakQuiz(body, cards, onExit) {
   const rank = (c) => { const inf = store.exprInfo(c.id); return due.has(c.id) ? 0 : inf.box === 0 ? 1 : 2 + inf.box; };
   const deck = cards.slice().sort((a, b) => rank(a) - rank(b) || a.no - b.no);
   let i = 0, right = 0, tried = 0, busy = false;
+  const trail = [];   // '이전'은 바로 직전에 푼 문제로만
   const draw = () => {
     const c = deck[i];
     const frame = c.pattern || c.en;
@@ -27,13 +28,14 @@ export function speakQuiz(body, cards, onExit) {
       </div>
       <div class="btn-row mt12"><button class="btn primary" data-speak>🎙️ 영어로 말하기</button></div>
       <div class="btn-row mt8"><button class="btn ghost" data-hint-btn>💡 힌트</button><button class="btn ghost" data-show>정답 보기</button></div>
-      <div class="btn-row mt8"><button class="btn ghost" data-exit>목록으로</button><button class="btn ghost" data-next>다음 ›</button></div>
+      <div class="btn-row mt8"><button class="btn ghost" data-prev ${trail.length ? '' : 'disabled'}>‹ 이전</button><button class="btn ghost" data-exit>목록으로</button><button class="btn ghost" data-next>다음 ›</button></div>
       <p class="xs muted center mt12">${tried ? `이번 퀴즈 ${right} / ${tried} 통과` : '일치율 80% 이상이면 통과 · 정답을 먼저 보면 "아직 몰라요"로 기록돼요'}</p>`;
     const $res = body.querySelector('[data-result]');
     const reveal = () => { body.querySelector('[data-ans]').classList.remove('hidden'); speak(c.en); };
     body.querySelector('[data-hint-btn]').addEventListener('click', () => body.querySelector('[data-hint]').classList.remove('hidden'));
     body.querySelector('[data-show]').addEventListener('click', () => { if (!busy) { store.rateExpr(c.id, false); reveal(); } });
     body.querySelector('[data-next]').addEventListener('click', next);
+    body.querySelector('[data-prev]').addEventListener('click', () => { if (busy || !trail.length) return; stopSpeaking(); i = trail.pop(); draw(); });
     body.querySelector('[data-exit]').addEventListener('click', () => { stopSpeaking(); onExit(); });
     const $sp = body.querySelector('[data-speak]');
     $sp.addEventListener('click', async () => {
@@ -47,7 +49,7 @@ export function speakQuiz(body, cards, onExit) {
       reveal();
     });
   };
-  const next = () => { stopSpeaking(); if (i + 1 >= deck.length) { toast(`퀴즈 한 바퀴 완료! ${right}/${tried} 통과 🎉`); i = 0; } else i++; draw(); };
+  const next = () => { stopSpeaking(); trail.push(i); if (i + 1 >= deck.length) { toast(`퀴즈 한 바퀴 완료! ${right}/${tried} 통과 🎉`); i = 0; } else i++; draw(); };
   draw();
   return { stop: () => stopSpeaking(), destroy: () => stopSpeaking() };
 }

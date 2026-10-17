@@ -21,6 +21,16 @@ let currentCleanup = null;
 
 export function navigate(hash) { location.hash = hash; }
 
+// 뒤로 가기는 늘 '바로 직전 화면'으로 가야 한다.
+// - 같은 화면 안의 탭 전환: 주소만 바꾼다(기록 X) → 다른 화면에서 돌아오면 보던 탭이 그대로
+// - 카드·퀴즈 같은 하위 모드: 기록을 남긴다 → 뒤로 가기 한 번이면 목록으로
+export function replaceQuery(hash) { history.replaceState(null, '', hash); }
+export function openMode(hash) { history.pushState({ mode: true }, '', hash); render(); }
+export function closeMode(hash) {
+  if (history.state?.mode) history.back();
+  else { history.replaceState(null, '', hash); render(); }
+}
+
 export function header(title, { back = true, right = '' } = {}) {
   return html`<header class="topbar">
     ${back ? raw(`<button class="icon-btn" data-back aria-label="뒤로">‹</button>`) : ''}

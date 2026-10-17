@@ -5,99 +5,96 @@
   "emoji": "🎲",
   "category": "unexpected",
   "priority": 12,
-  "intro": "돌발 주제는 Background Survey에서 고르지 않은 날씨·교통·재활용·휴대폰·인터넷·명절·가구·은행 같은 일상 소재가 갑자기 나오는 문제입니다. 처음 듣는 주제라도 당황하지 말고 '서울에서 혼자 사는 IT 회사 마케팅팀 직장인'이라는 내 페르소나로 끌어오면 됩니다. 출근 지하철, 7층 아파트, 한강 조깅, 대전 본가처럼 이미 준비한 이야기를 재활용하면 어떤 돌발 질문에도 1분 이상 말할 수 있습니다.",
+  "intro": "돌발 주제는 Background Survey에서 고르지 않은 날씨·교통·재활용·휴대폰·인터넷·명절·가구·은행 같은 일상 주제가 갑자기 나오는 문제입니다. 준비가 안 됐다고 당황하지 말고, 분당에서 가족과 사는 20년차 개발자라는 내 페르소나로 끌고 오면 됩니다. 탄천 조깅, 차로 20분 출퇴근, 대전 부모님 댁, 거실 소파의 금요일 영화의 밤처럼 이미 준비한 소재를 재활용하세요.",
   "strategy": [
-    "답변 흐름: 시작 문장('Oh, ~? Let me think.') → 기본 정보(한국은/서울은 보통 ~) → 내 일상·세부(혼자 사는 직장인인 나는 ~) → 느낌·이유 → 마무리 문장('Yeah, that's ~.')",
-    "모르는 주제일수록 '나'의 이야기로 바로 연결하세요. 일반론 2문장 + 내 출퇴근·집·주말 이야기 4~5문장이면 충분합니다.",
-    "생각할 시간이 필요하면 'That's a good question.' / 'Let me think for a second.' 로 자연스럽게 시간을 버세요.",
-    "경험형(명절, 은행 문제)은 언제 → 무슨 일 → 내가 한 행동 → 결과·느낀 점 순서로 과거시제를 지키면 됩니다."
+    "답변 흐름: 시작 문장('Oh, ~? Let me think.') → 기본 정보(한국/우리 집은 어떤지) → 내 일상·경험 디테일 → 느낌·이유 → 마무리 문장('Yeah, that's ~.')",
+    "모르는 주제일수록 '우리 가족', '내 출퇴근', '탄천', '대전 부모님'처럼 이미 준비한 페르소나 소재로 바로 연결하세요.",
+    "비교·변화 질문(휴대폰 등)은 '20년 전 신입 때 vs 지금' 틀을 쓰고, 경험 질문은 언제 → 무슨 일 → 해결 → 느낀 점 순서로 과거시제를 지킵니다.",
+    "IM3는 쉬운 문장 6~9개면 충분합니다. IH·AL은 이유 한 가지와 생생한 디테일(숫자, 시간, 가족 반응)을 더하세요."
   ],
   "expressions": [
     {
-      "en": "Oh, the weather? Let me think.",
-      "ko": "아, 날씨요? 음, 생각해 볼게요.",
+      "en": "Oh, that's an interesting question. Let me think.",
+      "ko": "오, 재밌는 질문이네요. 생각해 볼게요.",
       "level": "IM",
-      "note": "돌발 주제 만능 시작 문장. 주제 단어만 바꾸기"
+      "note": "돌발 주제 만능 시작 문장. 생각할 시간을 벌어 줌"
     },
     {
-      "en": "That's a good question.",
-      "ko": "좋은 질문이네요.",
-      "level": "IM",
-      "note": "생각할 시간을 버는 말"
-    },
-    {
-      "en": "In Korea, most people ~.",
-      "ko": "한국에서는 대부분의 사람들이 ~해요.",
-      "level": "IM",
-      "note": "기본 정보를 꺼낼 때"
-    },
-    {
-      "en": "Since I live alone, I ~.",
-      "ko": "저는 혼자 살아서 ~해요.",
-      "level": "IM",
-      "note": "어떤 주제든 내 페르소나로 연결하는 문장"
-    },
-    {
-      "en": "I take the subway to work every day.",
-      "ko": "저는 매일 지하철로 출근해요.",
+      "en": "We have four seasons in Korea.",
+      "ko": "한국에는 사계절이 있어요.",
       "level": "IM"
     },
     {
-      "en": "It's really convenient.",
-      "ko": "정말 편리해요.",
-      "level": "IM"
-    },
-    {
-      "en": "It takes about fifteen minutes.",
-      "ko": "15분 정도 걸려요.",
+      "en": "I usually drive to work. It takes about 20 minutes.",
+      "ko": "보통 차로 출근해요. 20분 정도 걸려요.",
       "level": "IM",
       "note": "It takes + 시간 = 시간이 걸리다"
     },
     {
-      "en": "I use it almost every day.",
-      "ko": "거의 매일 써요.",
+      "en": "We separate plastic, paper, and cans.",
+      "ko": "플라스틱, 종이, 캔을 분리해요.",
       "level": "IM"
     },
     {
-      "en": "These days, it's hard to imagine life without ~.",
-      "ko": "요즘은 ~ 없는 생활은 상상하기 어려워요.",
-      "level": "IH",
-      "note": "휴대폰·인터넷 주제에 딱 맞는 문장"
+      "en": "I use my phone for almost everything.",
+      "ko": "거의 모든 걸 휴대폰으로 해요.",
+      "level": "IM"
     },
     {
-      "en": "Back when I was in middle school, ~.",
-      "ko": "제가 중학생이었을 때는 ~.",
-      "level": "IH",
-      "note": "비교 질문에서 과거를 꺼낼 때"
+      "en": "We visit my parents in Daejeon.",
+      "ko": "대전에 계신 부모님 댁에 가요.",
+      "level": "IM"
     },
     {
-      "en": "It's a lot more ~ than it used to be.",
-      "ko": "예전보다 훨씬 더 ~해요.",
-      "level": "IH",
-      "note": "변화를 말하는 비교급 문장"
+      "en": "It's the most comfortable spot in our home.",
+      "ko": "우리 집에서 제일 편한 자리예요.",
+      "level": "IM"
     },
     {
-      "en": "The best part is that ~.",
-      "ko": "가장 좋은 점은 ~라는 거예요.",
+      "en": "It gets really hot and humid in summer.",
+      "ko": "여름엔 정말 덥고 습해져요.",
+      "level": "IH",
+      "note": "get + 형용사 = ~해지다"
+    },
+    {
+      "en": "Back when I first started working, I had a flip phone.",
+      "ko": "제가 처음 일을 시작했을 땐 폴더폰을 썼어요.",
+      "level": "IH",
+      "note": "Back when ~ = ~하던 그 시절에"
+    },
+    {
+      "en": "I can't imagine my life without it.",
+      "ko": "그게 없는 생활은 상상이 안 돼요.",
       "level": "IH"
+    },
+    {
+      "en": "The whole family gets together.",
+      "ko": "온 가족이 다 모여요.",
+      "level": "IH"
+    },
+    {
+      "en": "I was locked out of my account.",
+      "ko": "제 계정이 잠겨서 들어갈 수 없었어요.",
+      "level": "IH",
+      "note": "be locked out of ~ = ~에 못 들어가다"
+    },
+    {
+      "en": "It's a hassle, but it's worth it.",
+      "ko": "귀찮긴 하지만 그만한 가치가 있어요.",
+      "level": "AL",
+      "note": "hassle = 번거로운 일"
+    },
+    {
+      "en": "It's become second nature to me.",
+      "ko": "이제는 몸에 완전히 배었어요.",
+      "level": "AL",
+      "note": "습관이 된 것을 자연스럽게 표현"
     },
     {
       "en": "Yeah, that's pretty much it.",
       "ko": "네, 대충 그 정도예요.",
-      "level": "IH",
-      "note": "돌발 주제 공통 마무리 문장"
-    },
-    {
-      "en": "It's one of those things you don't appreciate until it's gone.",
-      "ko": "없어져 봐야 소중함을 아는 것 중 하나예요.",
-      "level": "AL",
-      "note": "휴대폰·은행 앱·가구 등에 두루 쓰는 감정 표현"
-    },
-    {
-      "en": "I can't stress enough how ~ it is.",
-      "ko": "그게 얼마나 ~한지 아무리 강조해도 지나치지 않아요.",
-      "level": "AL",
-      "note": "강조하는 관용 표현"
+      "level": "IM",
+      "note": "돌발 주제 만능 마무리 문장"
     }
   ],
   "questions": [
@@ -105,96 +102,345 @@
       "id": "unexpected-weather",
       "type": "describe",
       "en": "Tell me about the weather in your country. What are the seasons like, and which season do you like the most?",
-      "ko": "당신 나라의 날씨에 대해 말해 주세요. 계절은 어떤가요? 어떤 계절을 가장 좋아하나요?",
+      "ko": "당신 나라의 날씨에 대해 말해 주세요. 계절은 어떤가요? 어느 계절을 가장 좋아하나요?",
       "tips": [
-        "답변 흐름: 'Oh, the weather in Korea? Let me think.' → 사계절 기본 정보(여름 덥고 습함·장마, 겨울 추움) → 내가 좋아하는 계절(가을 — 한강 조깅) → 이유 → 'Yeah, that's ~.'",
-        "계절마다 형용사 하나씩(hot and humid, freezing, warm, cool)만 붙여도 IM3 답이 됩니다.",
-        "IH 이상은 '혼자 살아서 여름엔 에어컨 전기요금이 걱정'처럼 내 생활과 연결한 디테일을 넣으세요."
+        "답변 흐름: 'Oh, the weather in Korea? Let me think.' → 사계절 기본 정보 → 계절별 특징 한 줄씩 → 좋아하는 계절(가을)과 이유(탄천 조깅) → 'Yeah, that's ~.'",
+        "When it comes to ~, I'm a huge fan of ~ 로 좋아하는 계절을 분명하게 말하세요.",
+        "IH 이상은 여름 장마·겨울 미세먼지 같은 단점과 내 생활(조깅, 가족 나들이)을 연결하세요."
       ],
       "answers": {
-        "IM3": "Oh, the weather in Korea? Let me think. Korea has four seasons. Spring is warm, and there are a lot of cherry blossoms. Summer is really hot and humid, and it rains a lot in July. Winter is very cold and dry. I don't like it much. My favorite season is fall. The weather is cool and sunny, so I love jogging along the Han River after work. Yeah, that's the weather in Korea.",
-        "IH": "Oh, the weather in Korea? Sure, let me think. Korea has four clear seasons. Spring is warm and beautiful, and there are cherry blossoms everywhere, but there's also a lot of fine dust. Summer is really hot and humid, and we have a rainy season in July. Since I live alone, I worry about my electric bill because I use the air conditioner a lot. Winter is freezing and dry, so I don't go out much. My favorite season is definitely fall. The sky is clear, and the air is cool. I go jogging along the Han River three times a week, and in fall it's just perfect. The trees turn red and yellow, and the view is amazing. It really helps me relax after a busy day. Yeah, that's why I like fall the most.",
-        "AL": "Oh, the weather in Korea? That's a good question. Well, Korea has four pretty distinct seasons, and each one has its own charm. Spring is warm and lovely, and the whole city turns pink with cherry blossoms, although the fine dust can be really annoying some days. Summer, on the other hand, is brutally hot and humid, and we get a long rainy season in July. Since I live alone, I'm always a little nervous about my electric bill, because my air conditioner basically runs all night. Winter is freezing and dry, so on weekends I mostly stay in, wrap myself in a blanket and watch movies. But if I had to pick one, I'd say fall is hands down my favorite. The sky is so clear and blue, and the air is cool and crisp. I usually go jogging along the Han River three times a week after work, and in the fall it's just the best. The trees turn red and yellow, and watching the sunset over the river really helps me forget about my stressful day at the office. So yeah, that's pretty much the weather in Korea, and that's why fall is my favorite season."
+        "IM3": "Oh, the weather in Korea? Let me think. We have four seasons in Korea. Spring is warm, and there are a lot of flowers. Summer is really hot and humid, and it rains a lot. Fall is cool and sunny. Winter is very cold and dry. When it comes to seasons, I'm a huge fan of fall. I go jogging by the Tancheon stream three times a week, and running in the cool air feels great. Yeah, that's why I really like fall.",
+        "IH": "Oh, the weather in Korea? Let me think. We have four clear seasons here. Spring is warm and beautiful, but there's a lot of fine dust, so I sometimes wear a mask. Summer is really hot and humid, and we have a rainy season in July. Fall is cool, sunny, and dry. Winter is freezing, and it sometimes snows. When it comes to seasons, I'm a huge fan of fall. I go jogging by the Tancheon stream three times a week at 6:30 in the morning, and in fall, the air is so fresh. The leaves in Central Park turn red and yellow, so my family often takes walks there on weekends. In summer, I can barely run because it's so hot, even early in the morning. So yeah, that's why fall is my favorite season.",
+        "AL": "Oh, the weather in Korea? That's an interesting question. Let me think. We have four distinct seasons here, and each one has its own charm. Spring is mild and lovely, with cherry blossoms everywhere, but the fine dust can be pretty bad, so I check the air quality app every morning. Summer is brutally hot and humid, and there's a rainy season in July when it pours for days. Fall is cool, sunny, and crisp. And winter is freezing, especially in January, when the wind cuts right through your coat. When it comes to seasons, I'm a huge fan of fall, hands down. I go jogging by the Tancheon stream three times a week at 6:30 in the morning, and in fall, the air is so fresh that I feel like I could run forever. On weekends, my family walks around Central Park, and the kids love kicking through piles of red and yellow leaves. In summer, on the other hand, I'm soaked in sweat after just ten minutes, even at dawn. Honestly, after a long week of meetings, a cool fall morning is the best way to clear my head. So yeah, that's why fall is my favorite season."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 한국 날씨요?",
+          "생각해 볼게요.",
+          "한국에는 사계절이 있어요.",
+          "봄은 따뜻하고 꽃이 많이 펴요.",
+          "여름은 정말 덥고 습하고, 비가 많이 와요.",
+          "가을은 선선하고 화창해요.",
+          "겨울은 아주 춥고 건조해요.",
+          "계절 얘기라면, 저는 가을을 정말 좋아해요.",
+          "일주일에 세 번 탄천에서 조깅을 하는데, 선선한 공기 속에서 뛰면 기분이 정말 좋아요.",
+          "네, 그래서 저는 가을을 정말 좋아해요."
+        ],
+        "IH": [
+          "아, 한국 날씨요?",
+          "생각해 볼게요.",
+          "여기는 사계절이 뚜렷해요.",
+          "봄은 따뜻하고 예쁘지만 미세먼지가 많아서 가끔 마스크를 써요.",
+          "여름은 정말 덥고 습하고, 7월에는 장마가 있어요.",
+          "가을은 선선하고 화창하고 건조해요.",
+          "겨울은 엄청 춥고 가끔 눈이 와요.",
+          "계절 얘기라면, 저는 가을을 정말 좋아해요.",
+          "일주일에 세 번 아침 6시 반에 탄천에서 조깅을 하는데, 가을엔 공기가 정말 상쾌해요.",
+          "중앙공원 나뭇잎이 빨갛고 노랗게 물들어서 주말엔 가족들이랑 자주 거기로 산책을 가요.",
+          "여름엔 이른 아침에도 너무 더워서 거의 못 뛰어요.",
+          "네, 그래서 가을이 제가 제일 좋아하는 계절이에요."
+        ],
+        "AL": [
+          "아, 한국 날씨요?",
+          "재미있는 질문이네요.",
+          "생각해 볼게요.",
+          "여기는 사계절이 뚜렷하고, 계절마다 각자의 매력이 있어요.",
+          "봄은 포근하고 아름답고 벚꽃이 사방에 피지만, 미세먼지가 꽤 심할 수 있어서 저는 매일 아침 대기질 앱을 확인해요.",
+          "여름은 지독하게 덥고 습하고, 7월에는 며칠씩 비가 쏟아지는 장마가 있어요.",
+          "가을은 선선하고 화창하고 상쾌해요.",
+          "그리고 겨울은 엄청 추운데, 특히 1월엔 바람이 코트를 그냥 뚫고 들어와요.",
+          "계절 얘기라면, 저는 단연코 가을을 정말 좋아해요.",
+          "일주일에 세 번 아침 6시 반에 탄천에서 조깅을 하는데, 가을엔 공기가 너무 상쾌해서 끝없이 달릴 수 있을 것 같은 기분이에요.",
+          "주말엔 가족들이랑 중앙공원을 산책하는데, 아이들은 빨갛고 노란 낙엽 더미를 발로 차면서 노는 걸 정말 좋아해요.",
+          "반면 여름엔 새벽에도 10분만 뛰면 땀범벅이 돼요.",
+          "솔직히 회의로 가득한 긴 한 주를 보내고 나면, 선선한 가을 아침이 머리를 비우는 데 최고예요.",
+          "네, 그래서 가을이 제가 제일 좋아하는 계절이에요."
+        ]
       }
     },
     {
       "id": "unexpected-transport",
       "type": "routine",
       "en": "How do you usually get around in your city? Tell me about the public transportation you use and what a typical trip is like.",
-      "ko": "당신은 도시에서 보통 어떻게 이동하나요? 이용하는 대중교통과 평소 이동 과정에 대해 말해 주세요.",
+      "ko": "사는 도시에서 보통 어떻게 이동하나요? 이용하는 대중교통과 평소 이동이 어떤지 말해 주세요.",
       "tips": [
-        "답변 흐름: 'Oh, how I get around? Let me tell you.' → 서울 대중교통 기본 정보(지하철·버스, 교통카드) → 내 출근길(지하철역 5분, 15분, 이어폰으로 음악) → 기타 이동(따릉이로 한강, KTX로 대전) → 'Yeah, that's ~.'",
-        "First / Then / After that 으로 출근 과정을 순서대로 말하면 routine 질문에 딱 맞습니다.",
-        "IH 이상은 출근 시간 지옥철 같은 단점도 하나 넣어 균형을 맞추세요."
+        "답변 흐름: 'Sure, let me tell you about how I get around.' → 출근은 차로 20분 → 대중교통은 서울 갈 때 분당선 지하철(집에서 걸어서 10분) → 이동 과정 순서대로 → 장단점·느낌 → 'Yeah, that's ~.'",
+        "It's only a ___-minute walk from my house / First, ~. Then, ~. 로 루틴을 순서대로 말하세요.",
+        "아이들은 학원 셔틀·버스를 탄다는 가족 디테일을 넣으면 IH 이상 답변이 풍부해집니다."
       ],
       "answers": {
-        "IM3": "Oh, how I get around? Let me tell you. I live in Seoul, and the public transportation here is really good. I usually take the subway. Every morning, I walk to the subway station near my apartment. It takes about five minutes. Then I take the subway to my office. It only takes fifteen minutes. I listen to music on the way. The subway is cheap and fast, but it's really crowded in the morning. Yeah, that's how I get around.",
-        "IH": "Oh, how I get around the city? Sure, let me tell you. I live in Seoul, and the public transportation here is really convenient. There are subways and buses everywhere, and you can use one card for both. I usually take the subway. Every morning, I leave my apartment around eight thirty and walk to the station. It's only five minutes away. Then I take the subway to my office, and it takes about fifteen minutes. I always put in my earphones and listen to K-pop on the way. The only bad thing is that the subway is super crowded during rush hour. On weekends, I sometimes ride a public bike to the Han River. And when I visit my family in Daejeon, I take the KTX. Yeah, that's how I usually get around.",
-        "AL": "Oh, how I get around the city? Sure, that's an easy one for me. I live in Seoul, and honestly, I can't stress enough how convenient the public transportation is here. There are subway lines and buses going pretty much everywhere, and you just tap one card for all of them, so I've never really felt the need to buy a car. My typical trip is my morning commute. I leave my apartment around eight thirty and walk about five minutes to the subway station. Then I hop on the train, and I'm at my office in just fifteen minutes. I always put in my earphones and listen to some IU songs, which helps me wake up and get ready for a long day of meetings. The one thing I can't stand, though, is rush hour. The trains are so packed that sometimes I can barely move, and it can be pretty exhausting. On weekends, I like to rent one of the city's public bikes and ride to the Han River, which takes about ten minutes. And when I go down to see my family in Daejeon, I take the KTX, which is fast and comfortable. So yeah, that's pretty much how I get around."
+        "IM3": "Sure, let me tell you about how I get around. I usually drive to work. My office is only 20 minutes away by car. But when I go to Seoul, I take the subway. There's a Bundang Line station near my apartment. It's only a 10-minute walk from my house. The subway is clean and fast, and it comes every few minutes. I listen to music or read the news on the way. Yeah, that's how I usually get around.",
+        "IH": "Sure, let me tell you about how I get around. On weekdays, I usually drive to work because my office is only 20 minutes away by car. But when I go to Seoul for meetings or to see friends, I always take the subway, because traffic and parking in Seoul are terrible. There's a Bundang Line station near my apartment. It's only a 10-minute walk from my house. First, I tap my card at the gate. Then, I transfer to Line 2 at Seolleung Station. The whole trip takes about 40 minutes. During rush hour, the trains are really crowded, so I try to avoid that time. My kids take the bus to their academies, and the bus stop is right in front of our complex. Yeah, public transportation in my area is really convenient.",
+        "AL": "Sure, let me tell you about how I get around. On weekdays, I mostly drive, since my office is only about 20 minutes away by car, and I love having that quiet time to listen to 90s ballads. But whenever I head into Seoul, for a meeting or to catch up with old friends, I leave the car at home, because traffic in Seoul is a nightmare and parking costs a fortune. Luckily, there's a Bundang Line station near my apartment. It's only a 10-minute walk from my house. First, I tap my transit card at the gate. Then, I ride a few stops and transfer to Line 2 at Seolleung Station. The whole trip usually takes about 40 minutes, and I spend it reading the news or catching up on emails. If I'm unlucky enough to hit rush hour, the trains are packed like sardines, so I try to avoid that. My kids, on the other hand, take the bus to their academies, and the stop is right in front of our complex, which is a huge relief for us as parents. Honestly, public transportation in Korea is so cheap and reliable that I sometimes feel spoiled. Yeah, that's pretty much how I get around."
+      },
+      "answersKo": {
+        "IM3": [
+          "그럼요, 제가 어떻게 다니는지 말씀드릴게요.",
+          "저는 보통 차로 출근해요.",
+          "회사가 차로 20분밖에 안 걸려요.",
+          "그런데 서울에 갈 때는 지하철을 타요.",
+          "저희 아파트 근처에 분당선 역이 있어요.",
+          "집에서 걸어서 10분밖에 안 걸려요.",
+          "지하철은 깨끗하고 빠르고, 몇 분마다 와요.",
+          "가는 동안 음악을 듣거나 뉴스를 읽어요.",
+          "네, 저는 보통 그렇게 다녀요."
+        ],
+        "IH": [
+          "그럼요, 제가 어떻게 다니는지 말씀드릴게요.",
+          "평일에는 회사가 차로 20분밖에 안 걸려서 보통 차로 출근해요.",
+          "그런데 회의나 친구를 만나러 서울에 갈 때는 서울 교통이랑 주차가 너무 안 좋아서 항상 지하철을 타요.",
+          "저희 아파트 근처에 분당선 역이 있어요.",
+          "집에서 걸어서 10분밖에 안 걸려요.",
+          "먼저 개찰구에서 카드를 찍어요.",
+          "그다음 선릉역에서 2호선으로 갈아타요.",
+          "전체 이동 시간은 40분 정도 걸려요.",
+          "출퇴근 시간엔 지하철이 정말 붐벼서 그 시간은 피하려고 해요.",
+          "저희 아이들은 버스를 타고 학원에 다니는데, 버스 정류장이 저희 단지 바로 앞에 있어요.",
+          "네, 저희 동네 대중교통은 정말 편리해요."
+        ],
+        "AL": [
+          "그럼요, 제가 어떻게 다니는지 말씀드릴게요.",
+          "평일에는 주로 차를 타는데, 회사가 차로 20분 정도밖에 안 걸리고, 90년대 발라드를 들으면서 보내는 그 조용한 시간이 정말 좋아요.",
+          "그런데 회의나 옛 친구들을 만나러 서울에 갈 때는 차를 집에 두고 가요, 서울 교통은 악몽이고 주차비가 엄청 비싸거든요.",
+          "다행히 저희 아파트 근처에 분당선 역이 있어요.",
+          "집에서 걸어서 10분밖에 안 걸려요.",
+          "먼저 개찰구에서 교통카드를 찍어요.",
+          "그다음 몇 정거장 가서 선릉역에서 2호선으로 갈아타요.",
+          "전체 이동은 보통 40분 정도 걸리는데, 그 시간엔 뉴스를 읽거나 밀린 이메일을 확인해요.",
+          "운 나쁘게 출퇴근 시간에 걸리면 지하철이 콩나물시루처럼 꽉 차서 그 시간은 피하려고 해요.",
+          "반면 저희 아이들은 버스를 타고 학원에 다니는데, 정류장이 단지 바로 앞에 있어서 부모로서 정말 안심이 돼요.",
+          "솔직히 한국 대중교통은 너무 싸고 믿을 만해서 가끔 제가 호강한다는 생각이 들어요.",
+          "네, 저는 대충 그렇게 다녀요."
+        ]
       }
     },
     {
       "id": "unexpected-recycling",
       "type": "describe",
       "en": "Tell me about recycling in your country. How does it work, and what do you do at home to recycle?",
-      "ko": "당신 나라의 재활용에 대해 말해 주세요. 어떻게 이루어지며, 집에서 재활용을 위해 무엇을 하나요?",
+      "ko": "당신 나라의 재활용에 대해 말해 주세요. 어떻게 이루어지고, 집에서는 재활용을 위해 무엇을 하나요?",
       "tips": [
-        "답변 흐름: 'Oh, recycling in Korea? Let me think.' → 기본 정보(종류별 분리: 플라스틱·캔·종이·음식물) → 우리 아파트 방식(1층 분리수거장, 정해진 요일) → 혼자 사는 나의 습관(배달 용기 씻기) → 'Yeah, that's ~.'",
-        "plastic, cans, paper, glass, food waste 다섯 단어만 알아도 기본 설명이 됩니다.",
-        "IH 이상은 '혼자 살아서 배달 음식 용기가 많이 나온다'는 솔직한 디테일로 진정성을 더하세요."
+        "답변 흐름: 'Oh, recycling? Sure, let me tell you about it.' → 한국은 분리수거가 엄격하다 → 우리 아파트 방식(요일, 장소) → 우리 가족이 하는 일(아이들과 같이) → 느낌 → 'Yeah, that's ~.'",
+        "plastic, paper, cans, glass, food waste 같은 기본 단어만으로도 충분합니다.",
+        "Whenever I ~, I feel ~ 로 아이들과 함께 분리수거할 때의 느낌을 넣으세요."
       ],
       "answers": {
-        "IM3": "Oh, recycling in Korea? Let me think. In Korea, people recycle a lot. We separate plastic, cans, paper and glass. Food waste goes in a special bag. In my apartment building, there is a recycling area on the first floor. I live alone, so I don't have a lot of trash. But I order delivery food sometimes, so I wash the plastic containers. I take out my recycling every Sunday night. Yeah, that's how recycling works.",
-        "IH": "Oh, recycling in Korea? Sure, let me think. Recycling is really important in Korea, and the rules are pretty strict. People separate their trash into plastic, cans, paper, glass and food waste. You also have to buy special trash bags for general garbage. In my apartment building, there's a recycling area on the first floor, and we can only use it on certain days. I live alone, so I don't make a lot of trash. But to be honest, I order delivery food a lot after work, so I get many plastic containers. I always wash them and take off the labels before I throw them out. Every Sunday night, I take everything down from the seventh floor. It's a little annoying, but it makes me feel good. Yeah, that's pretty much how recycling works here.",
-        "AL": "Oh, recycling in Korea? That's a good question. Well, Korea takes recycling really seriously, and the rules are a lot stricter than in many other countries. Basically, you have to sort your trash into plastic, cans, paper, glass and food waste, and for regular garbage you need to buy special bags from the convenience store. If you don't follow the rules, you can actually get fined. In my apartment building, there's a recycling area on the first floor, and we're only allowed to use it on certain days of the week. Since I live alone, I don't produce that much trash, but I have to admit I order delivery food a lot, especially after a long day at work. So I end up with a mountain of plastic containers. I always rinse them out and peel off the labels, which is kind of a pain, but I know it really helps. Every Sunday night, I carry everything down from the seventh floor, and it's become a little routine for me. Actually, after doing this for three years, I've started to cook at home more just to cut down on waste. So yeah, that's pretty much how recycling works in Korea."
+        "IM3": "Oh, recycling? Sure, let me tell you about it. Recycling is really important in Korea. We have to separate plastic, paper, cans, glass, and food waste. In my apartment complex, we can recycle every Wednesday evening. There's a big recycling area in front of our building. My son and I usually take the bags down together. Whenever I sort the recycling with my kids, I feel like we're doing something good. Yeah, that's how we recycle at home.",
+        "IH": "Oh, recycling? Sure, let me tell you about it. In Korea, recycling rules are pretty strict. We have to separate plastic, paper, cans, glass, and food waste, and we also have to buy special trash bags for regular garbage. In my apartment complex, recycling day is every Wednesday evening. There's a big recycling area in front of our building with a bin for each type. At home, we keep a few boxes on the veranda, and everyone in the family sorts their own trash. On Wednesday nights, my son and I take everything down together. We wash the plastic containers and take the labels off the bottles first. Whenever I sort the recycling with my kids, I feel like we're doing something good for the planet. So yeah, that's how recycling works at our place.",
+        "AL": "Oh, recycling? Sure, let me tell you about it. In Korea, recycling rules are pretty strict, and honestly, I think we're one of the best countries at it. We have to separate plastic, paper, cans, glass, styrofoam, and food waste, and regular garbage has to go into special bags that you buy at the supermarket. In my apartment complex, recycling day is every Wednesday evening, and there's a big area in front of our building with a separate bin for each type. At home, we keep a few boxes on the veranda, and everyone in the family is in charge of sorting their own trash. On Wednesday nights, my son and I carry everything down together. Before that, we rinse out the plastic containers and peel the labels off the bottles, which is a bit of a hassle, but it's worth it. When I was a kid in Daejeon, we just threw everything into one bag, so it's amazing to see how much things have changed. Now it's become second nature to me. Whenever I sort the recycling with my kids, I feel like we're doing something small but meaningful for the planet. So yeah, that's how recycling works at our place."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 재활용이요?",
+          "그럼요, 말씀드릴게요.",
+          "한국에서는 재활용이 정말 중요해요.",
+          "플라스틱, 종이, 캔, 유리, 음식물 쓰레기를 분리해야 해요.",
+          "저희 아파트 단지에서는 매주 수요일 저녁에 재활용을 할 수 있어요.",
+          "저희 동 앞에 큰 분리수거장이 있어요.",
+          "보통 아들이랑 제가 같이 봉투를 들고 내려가요.",
+          "아이들이랑 분리수거를 할 때마다 뭔가 좋은 일을 하는 기분이 들어요.",
+          "네, 저희 집은 그렇게 재활용해요."
+        ],
+        "IH": [
+          "아, 재활용이요?",
+          "그럼요, 말씀드릴게요.",
+          "한국은 재활용 규칙이 꽤 엄격해요.",
+          "플라스틱, 종이, 캔, 유리, 음식물 쓰레기를 분리해야 하고, 일반 쓰레기는 전용 종량제 봉투를 사서 버려야 해요.",
+          "저희 아파트 단지는 매주 수요일 저녁이 분리수거 날이에요.",
+          "저희 동 앞에 종류별로 수거함이 있는 큰 분리수거장이 있어요.",
+          "집에서는 베란다에 상자를 몇 개 두고, 가족 모두가 자기 쓰레기는 직접 분리해요.",
+          "수요일 밤마다 아들이랑 제가 같이 전부 들고 내려가요.",
+          "먼저 플라스틱 용기는 씻고 병에 붙은 라벨은 떼요.",
+          "아이들이랑 분리수거를 할 때마다 지구를 위해 뭔가 좋은 일을 하는 기분이 들어요.",
+          "네, 저희 집에서는 재활용을 그렇게 해요."
+        ],
+        "AL": [
+          "아, 재활용이요?",
+          "그럼요, 말씀드릴게요.",
+          "한국은 재활용 규칙이 꽤 엄격한데, 솔직히 저희가 재활용을 제일 잘하는 나라 중 하나라고 생각해요.",
+          "플라스틱, 종이, 캔, 유리, 스티로폼, 음식물 쓰레기를 분리해야 하고, 일반 쓰레기는 마트에서 사는 전용 봉투에 넣어야 해요.",
+          "저희 아파트 단지는 매주 수요일 저녁이 분리수거 날인데, 저희 동 앞에 종류별로 수거함이 따로 있는 큰 공간이 있어요.",
+          "집에서는 베란다에 상자를 몇 개 두고, 가족 모두가 각자 자기 쓰레기 분리를 책임져요.",
+          "수요일 밤마다 아들이랑 제가 같이 전부 들고 내려가요.",
+          "그 전에 플라스틱 용기는 헹구고 병에 붙은 라벨은 떼는데, 좀 귀찮긴 해도 그럴 만한 가치가 있어요.",
+          "제가 어릴 때 대전에서는 그냥 전부 한 봉투에 버렸는데, 그래서 얼마나 많이 바뀌었는지 보면 정말 놀라워요.",
+          "이제는 저한테 완전히 몸에 밴 습관이 됐어요.",
+          "아이들이랑 분리수거를 할 때마다 지구를 위해 작지만 의미 있는 일을 하는 기분이 들어요.",
+          "네, 저희 집에서는 재활용을 그렇게 해요."
+        ]
       }
     },
     {
       "id": "unexpected-phone",
       "type": "comparison",
       "en": "How has the way people use phones changed over the years? How is it different from when you were younger?",
-      "ko": "사람들이 휴대폰을 쓰는 방식은 그동안 어떻게 바뀌었나요? 당신이 어렸을 때와 어떻게 다른가요?",
+      "ko": "사람들이 휴대폰을 쓰는 방식은 수년간 어떻게 변했나요? 당신이 더 어렸을 때와 어떻게 다른가요?",
       "tips": [
-        "답변 흐름: 'Oh, how phones have changed? Let me think.' → 과거(중학생 때 폴더폰, 문자·전화만) → 현재(스마트폰으로 업무 메신저·은행·넷플릭스) → 내 생각(편하지만 너무 의존) → 'Yeah, that's ~.'",
-        "used to + 동사원형(과거 습관) 과 These days / Now 를 대비시키는 것이 비교 질문의 핵심입니다.",
-        "IH 이상은 '퇴근 후에도 업무 메시지가 와서 쉬기 어렵다'처럼 직장인 관점의 단점을 넣으세요."
+        "답변 흐름: 'Oh, phones? They've changed a lot. Let me think.' → 예전(20년 전 신입 때 폴더폰, 통화·문자만) → 지금(스마트폰으로 업무·은행·쇼핑) → 가장 큰 차이와 내 생각 → 'Yeah, that's ~.'",
+        "I used to ~, but now I ~ / The biggest difference is that ~ 로 과거와 현재를 대비하세요.",
+        "AL은 아이들의 휴대폰 사용(장점과 걱정)까지 넣어 의견을 덧붙이면 좋습니다."
       ],
       "answers": {
-        "IM3": "Oh, how phones have changed? Let me think. When I was in middle school, I had a flip phone. I only used it to call my parents and send text messages. Now everyone has a smartphone. I use my phone for everything. I check my work messages, watch Netflix on the subway and use banking apps. It's really convenient. But I think I use it too much. Yeah, that's how phones have changed.",
-        "IH": "Oh, how phones have changed over the years? Sure, let me think. When I was in middle school, I had a small flip phone. Back then, I only used it to call my parents or text my friends. Texting was expensive, so I tried to keep my messages short. These days, it's hard to imagine life without a smartphone. I use my phone for almost everything. I check my work messenger, pay for things, do my banking and watch Netflix on the subway. It's a lot more convenient than it used to be. But there's a downside too. Even after work, my team sometimes sends me messages, so it's hard to really relax. Also, people look at their phones all the time instead of talking. Yeah, that's how phones have changed.",
-        "AL": "Oh, how the way people use phones has changed? That's a good question. Back when I was in middle school, I had a tiny pink flip phone, and I only used it to call my parents or text my friends. Texting actually cost money back then, so I used to squeeze everything into really short messages. These days, it's hard to imagine life without a smartphone. It's basically a computer in your pocket. I use mine for pretty much everything, from checking our team messenger and joining video calls to paying for coffee, doing my banking and watching Netflix on the subway. Since I work in marketing, I also check social media all day to keep up with the latest trends. So in a lot of ways, life has become much more convenient. But honestly, there's a dark side too. Because my phone is always with me, work never really ends, and I sometimes get messages from my team late at night. On top of that, when I meet my friends, everyone keeps checking their phones instead of actually talking. So these days I try to put my phone away at dinner. Yeah, that's pretty much how phones have changed."
+        "IM3": "Oh, phones? They've changed a lot. Let me think. When I started working about 20 years ago, I had a small flip phone. I could only make calls and send short text messages. I used to carry a flip phone, but now I do almost everything on my smartphone. I check emails, join video meetings, and pay for things with it. My kids also use their phones all the time. Yeah, that's how phones have changed.",
+        "IH": "Oh, phones? They've changed so much. Let me think. When I was a kid in Daejeon, we only had one phone at home, and it was on a table in the living room. Then, when I started working about 20 years ago, I got a flip phone. I could only make calls and send short texts, and the screen was tiny. I used to carry a flip phone, but now I do almost everything on my smartphone. I check work emails, join video meetings, do online banking, and even open my car with it. The biggest difference is that we're always connected now. That's convenient, but sometimes my team messages me late at night, which is kind of stressful. My kids even do their homework on their phones these days. Yeah, that's how phones have changed over the years.",
+        "AL": "Oh, phones? Wow, they've changed so much that it's hard to know where to start. Let me think. When I was growing up in Daejeon, we had just one phone at home, sitting on a little table in the living room, and if a friend called, my whole family could hear the conversation. Then, when I started working about 20 years ago, I got my first flip phone. It could only make calls and send short texts, and I thought it was the coolest thing ever. I used to carry a flip phone, but now I do almost everything on my smartphone. I check work emails, join video meetings, review code changes, pay for groceries, and even unlock my car with it. The biggest difference is that we're connected 24 hours a day now. On one hand, it's incredibly convenient. On the other hand, it's hard to switch off, since my team chat keeps buzzing even on weekends. What worries me most is my kids. My son would stare at his screen all day if we let him, so we have a rule: no phones at the dinner table. So yeah, that's how phones have changed over the years."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 휴대폰이요?",
+          "정말 많이 바뀌었죠.",
+          "생각해 볼게요.",
+          "제가 20년 전쯤 일을 시작했을 때는 작은 폴더폰을 썼어요.",
+          "전화하고 짧은 문자 보내는 것밖에 못 했어요.",
+          "예전엔 폴더폰을 들고 다녔는데, 지금은 거의 모든 걸 스마트폰으로 해요.",
+          "스마트폰으로 이메일도 확인하고, 화상 회의도 하고, 결제도 해요.",
+          "저희 아이들도 항상 휴대폰을 써요.",
+          "네, 휴대폰은 그렇게 바뀌었어요."
+        ],
+        "IH": [
+          "아, 휴대폰이요?",
+          "정말 많이 바뀌었죠.",
+          "생각해 볼게요.",
+          "제가 어릴 때 대전에서는 집에 전화가 한 대뿐이었는데, 거실 탁자 위에 있었어요.",
+          "그러다 20년 전쯤 일을 시작했을 때 폴더폰을 샀어요.",
+          "전화하고 짧은 문자 보내는 것밖에 못 했고, 화면도 아주 작았어요.",
+          "예전엔 폴더폰을 들고 다녔는데, 지금은 거의 모든 걸 스마트폰으로 해요.",
+          "업무 이메일도 확인하고, 화상 회의도 하고, 인터넷 뱅킹도 하고, 심지어 차 문도 휴대폰으로 열어요.",
+          "가장 큰 차이는 이제 우리가 항상 연결돼 있다는 거예요.",
+          "편리하긴 한데, 가끔 팀원들이 밤늦게 메시지를 보내서 좀 스트레스예요.",
+          "요즘엔 저희 아이들이 휴대폰으로 숙제까지 해요.",
+          "네, 휴대폰은 그동안 그렇게 바뀌었어요."
+        ],
+        "AL": [
+          "아, 휴대폰이요?",
+          "와, 너무 많이 바뀌어서 어디서부터 얘기해야 할지 모르겠네요.",
+          "생각해 볼게요.",
+          "제가 대전에서 자랄 때는 집에 전화가 딱 한 대 있었는데, 거실의 작은 탁자 위에 놓여 있어서 친구한테 전화가 오면 온 가족이 통화 내용을 다 들을 수 있었어요.",
+          "그러다 20년 전쯤 일을 시작했을 때 첫 폴더폰을 샀어요.",
+          "전화하고 짧은 문자 보내는 것밖에 안 됐지만, 그때는 그게 세상에서 제일 멋진 물건인 줄 알았어요.",
+          "예전엔 폴더폰을 들고 다녔는데, 지금은 거의 모든 걸 스마트폰으로 해요.",
+          "업무 이메일도 확인하고, 화상 회의도 하고, 코드 변경 사항도 검토하고, 장 본 것도 계산하고, 심지어 차 잠금도 휴대폰으로 풀어요.",
+          "가장 큰 차이는 이제 하루 24시간 연결돼 있다는 거예요.",
+          "한편으로는 엄청나게 편리하죠.",
+          "다른 한편으로는 주말에도 팀 채팅이 계속 울려서 일에서 벗어나기가 어려워요.",
+          "제가 제일 걱정되는 건 아이들이에요.",
+          "아들은 그냥 두면 하루 종일 화면만 볼 거라서, 저희는 식탁에서는 휴대폰 금지라는 규칙이 있어요.",
+          "네, 휴대폰은 그동안 그렇게 바뀌었어요."
+        ]
       }
     },
     {
       "id": "unexpected-internet",
       "type": "routine",
       "en": "What do you usually do on the internet? Tell me about the websites or apps you use most and when you use them.",
-      "ko": "인터넷으로 보통 무엇을 하나요? 가장 많이 쓰는 웹사이트나 앱과, 언제 쓰는지 말해 주세요.",
+      "ko": "인터넷으로 보통 무엇을 하나요? 가장 많이 쓰는 웹사이트나 앱과 언제 쓰는지 말해 주세요.",
       "tips": [
-        "답변 흐름: 'Oh, what I do online? Let me tell you.' → 회사에서(SNS 트렌드 조사, 메일·메신저) → 출퇴근길(음악 스트리밍, 유튜브) → 집에서(넷플릭스, 온라인 쇼핑) → 'Yeah, that's ~.'",
-        "In the morning / At work / After work 처럼 시간대별로 나누면 routine 질문이 깔끔하게 정리됩니다.",
-        "IH 이상은 '마케팅팀이라 인스타그램을 일로도 본다'는 페르소나 디테일로 차별화하세요."
+        "답변 흐름: 'Sure, I'd love to talk about that.' → 개발자라 하루 종일 인터넷을 쓴다 → 아침·회사·저녁 시간 순서로 쓰는 앱 → 가장 좋아하는 용도와 이유 → 'Yeah, that's ~.'",
+        "First, ~. Then, ~. After that, ~ 로 하루 순서대로 말하면 루틴 문제에 딱 맞습니다.",
+        "뉴스, 팀 채팅, 유튜브(기술 영상), 온라인 쇼핑, 넷플릭스처럼 쉬운 단어로 충분합니다."
       ],
       "answers": {
-        "IM3": "Oh, what I do on the internet? Let me tell you. I use the internet all day. At work, I check emails and look at Instagram for my marketing job. On the subway, I listen to music on a streaming app. After work, I watch YouTube or Netflix at home. I also shop online a lot, because I live alone and I'm busy. It's really convenient. Yeah, that's what I usually do on the internet.",
-        "IH": "Oh, what I do on the internet? Sure, let me tell you. Honestly, I'm online almost all day. In the morning, I listen to K-pop on a music streaming app on the subway. At work, I'm on the marketing team, so I use the internet a lot for my job. I check emails, use our team messenger and look at Instagram to see what's trending. After work, I usually relax by watching YouTube videos or a movie on Netflix. On Friday nights, I watch movies for hours. I also do a lot of online shopping, because I live alone and don't have much time. I even buy groceries online, and they come the next morning. It saves me a lot of time. Yeah, that's pretty much what I do on the internet.",
-        "AL": "Oh, what I usually do on the internet? Well, to be honest, I'm pretty much online from the moment I wake up until I go to bed. In the morning, I put on a music streaming app and listen to my IU playlist on the subway. Once I get to the office, the internet basically is my job. Since I'm on the marketing team at an IT company, I spend a lot of time on Instagram and YouTube, checking out what's trending and what our competitors are posting. Of course, I'm also constantly answering emails and messages from my team. After work, I like to unwind with YouTube or Netflix, and on Friday nights I usually binge-watch a comedy or an action movie. I also do a ton of online shopping. Since I live alone and I'm always busy, I even order my groceries online, and they show up at my door early the next morning, which is a total lifesaver. The only problem is that I sometimes stay up way too late scrolling on my phone. So these days, I'm trying to put it down an hour before bed. Yeah, that's pretty much what I do online."
+        "IM3": "Sure, I'd love to talk about that. I'm a software developer, so I use the internet all day. First, I check the news on my phone. Then, I open our team chat. At work, I search for information and read tech blogs. In the evening, I watch YouTube videos or shop online for my family. On Friday nights, we watch movies on Netflix. Yeah, that's what I usually do on the internet.",
+        "IH": "Sure, I'd love to talk about that. I'm a software developer, so honestly, I'm on the internet almost all day. Every morning, I follow the same routine. First, I check the news on my phone. Then, I open our team chat to see if anything happened overnight. At work, I use a lot of websites to search for solutions and read tech blogs, because technology changes so fast. In the evening, I relax by watching YouTube videos, usually about new gadgets or travel. I also do most of our shopping online, from groceries to the kids' school supplies, since it saves a lot of time. On weekends, I look up nice restaurants or places for family outings. And every Friday night, my family watches a movie on Netflix together. Yeah, that's how I use the internet.",
+        "AL": "Sure, I'd love to talk about that. As a software developer, I pretty much live on the internet, so it's hard to imagine my life without it. My day starts the same way every morning. First, I check the news on my phone. Then, I open our team chat to see if anything blew up overnight, which happens more often than I'd like. At work, I'm constantly searching for answers to tricky problems and reading tech blogs, because if you stop learning in this field, you fall behind really quickly. During my lunch break, I sometimes watch short YouTube videos about new gadgets, just to give my brain a rest. In the evening, I handle a lot of family stuff online. I order groceries, pay the kids' academy fees, and book things for our weekend trips. It's so much faster than doing it in person. And every Friday night, the four of us pile onto the sofa and pick a movie on Netflix, which usually takes longer than the movie itself. I'd say that's my favorite way to use the internet, because it brings us all together. Yeah, that's pretty much what I do online."
+      },
+      "answersKo": {
+        "IM3": [
+          "그럼요, 그 얘기라면 좋죠.",
+          "저는 소프트웨어 개발자라서 하루 종일 인터넷을 써요.",
+          "먼저 휴대폰으로 뉴스를 확인해요.",
+          "그다음 팀 채팅을 열어요.",
+          "회사에서는 정보를 검색하고 기술 블로그를 읽어요.",
+          "저녁에는 유튜브 영상을 보거나 가족을 위해 온라인 쇼핑을 해요.",
+          "금요일 밤에는 넷플릭스로 영화를 봐요.",
+          "네, 저는 인터넷으로 보통 그런 걸 해요."
+        ],
+        "IH": [
+          "그럼요, 그 얘기라면 좋죠.",
+          "저는 소프트웨어 개발자라서 솔직히 거의 하루 종일 인터넷을 해요.",
+          "매일 아침 같은 루틴을 따라요.",
+          "먼저 휴대폰으로 뉴스를 확인해요.",
+          "그다음 밤사이에 무슨 일이 있었는지 보려고 팀 채팅을 열어요.",
+          "회사에서는 기술이 너무 빨리 바뀌어서 해결 방법을 검색하고 기술 블로그를 읽느라 여러 웹사이트를 많이 써요.",
+          "저녁에는 보통 새로운 전자기기나 여행에 관한 유튜브 영상을 보면서 쉬어요.",
+          "시간이 많이 절약돼서 장보기부터 아이들 학용품까지 쇼핑도 대부분 온라인으로 해요.",
+          "주말에는 괜찮은 식당이나 가족 나들이 장소를 찾아봐요.",
+          "그리고 매주 금요일 밤엔 가족이 다 같이 넷플릭스로 영화를 봐요.",
+          "네, 저는 인터넷을 그렇게 써요."
+        ],
+        "AL": [
+          "그럼요, 그 얘기라면 좋죠.",
+          "소프트웨어 개발자로서 저는 거의 인터넷 속에서 살아서, 인터넷 없는 제 삶은 상상하기도 어려워요.",
+          "제 하루는 매일 아침 똑같이 시작돼요.",
+          "먼저 휴대폰으로 뉴스를 확인해요.",
+          "그다음 밤사이에 뭐 터진 일은 없는지 보려고 팀 채팅을 여는데, 그런 일이 생각보다 자주 생겨요.",
+          "회사에서는 까다로운 문제의 답을 계속 검색하고 기술 블로그를 읽는데, 이 분야는 공부를 멈추면 정말 금방 뒤처지거든요.",
+          "점심시간에는 가끔 머리를 좀 쉬게 하려고 새로운 전자기기에 관한 짧은 유튜브 영상을 봐요.",
+          "저녁에는 집안일을 온라인으로 많이 처리해요.",
+          "장도 보고, 아이들 학원비도 내고, 주말여행 예약도 해요.",
+          "직접 가서 하는 것보다 훨씬 빠르거든요.",
+          "그리고 매주 금요일 밤엔 저희 넷이 소파에 우르르 앉아서 넷플릭스로 영화를 고르는데, 고르는 게 보통 영화 보는 시간보다 더 오래 걸려요.",
+          "그게 제가 제일 좋아하는 인터넷 사용법인 것 같아요, 우리 모두를 하나로 모아주니까요.",
+          "네, 저는 온라인에서 대충 그런 걸 해요."
+        ]
       }
     },
     {
       "id": "unexpected-holiday",
       "type": "experience",
       "en": "Tell me about a memorable holiday you celebrated, like Chuseok or New Year's. What did you do, who were you with, and why was it special?",
-      "ko": "추석이나 설날처럼 기억에 남는 명절에 대해 말해 주세요. 무엇을 했고, 누구와 함께였고, 왜 특별했나요?",
+      "ko": "추석이나 설날처럼 기억에 남는 명절에 대해 말해 주세요. 무엇을 했고, 누구와 함께했으며, 왜 특별했나요?",
       "tips": [
-        "답변 흐름: 'Oh, a memorable holiday? Let me think.' → 언제(작년 추석) → 무엇을(KTX로 대전 본가, 엄마 음식, 남동생 Junho와 송편) → 왜 특별했는지(혼자 살아서 가족이 더 소중) → 'Yeah, that's ~.'",
-        "과거시제를 지키고, 장소(Daejeon)·사람(my parents, Junho)·음식(songpyeon) 고유명사를 넣으면 생생해집니다.",
-        "AL은 '혼자 살다 보니 집밥이 그리웠다'는 감정으로 특별한 이유를 깊게 말하세요."
+        "답변 흐름: 'Oh, a memorable holiday? Let me think.' → 언제(작년 추석) → 누구와(가족 넷, 대전 부모님, 친척들) → 무엇을(송편 빚기, 성묘, 윷놀이) → 특별했던 이유 → 'Yeah, that's ~.'",
+        "I'll never forget ~ because ~ 로 특별했던 이유를 한 문장에 담으세요.",
+        "IH 이상은 꽉 막힌 고속도로, 아이들과 할아버지의 모습처럼 장면 디테일을 넣으세요."
       ],
       "answers": {
-        "IM3": "Oh, a memorable holiday? Let me think. Last Chuseok, I visited my family in Daejeon. I live alone in Seoul, so I don't see them often. I took the KTX, and it was really crowded. My mom made a lot of delicious food. My younger brother Junho and I made songpyeon together. We also watched movies and talked a lot. It was so nice to be home. Yeah, that's my most memorable holiday.",
-        "IH": "Oh, a memorable holiday? Sure, let me think. I think last Chuseok was really special. I live alone in Seoul, and I'm always busy with work, so I don't get to see my family very often. So I took a few extra days off and went down to Daejeon on the KTX. The train was packed, but I was so excited. When I got home, my mom had already made tons of food, like japchae and pancakes. My younger brother Junho and I made songpyeon together, and his were really ugly, so we laughed a lot. At night, we all watched a comedy movie in the living room. It felt just like when I was a kid. I really missed my mom's cooking. Yeah, that's why last Chuseok was so special for me.",
-        "AL": "Oh, a memorable holiday? Let me think for a second. I'd have to say last Chuseok was really special. Since I moved to Seoul for work three years ago, I've been living on my own, and with all the meetings and deadlines, I honestly don't get to see my family as much as I'd like. So last year, I took a couple of extra days off and headed down to Daejeon on the KTX. The train was absolutely packed with people carrying gift boxes, but I didn't mind at all because I was so excited. When I walked into my parents' apartment, the whole place smelled amazing. My mom had been cooking all morning, and the table was covered with japchae, pancakes and all my favorite dishes. My younger brother Junho and I made songpyeon together, and his came out so lumpy that we couldn't stop laughing. That night, the four of us watched a comedy movie in the living room, just like we used to when I was in school. Living alone, I'd kind of forgotten how warm that feels. It's one of those things you don't appreciate until it's gone. So yeah, that's why last Chuseok was so memorable for me."
+        "IM3": "Oh, a memorable holiday? Let me think. Last Chuseok, my family drove to my parents' house in Daejeon. The traffic was terrible, so it took almost four hours. Some of our relatives came too. We made songpyeon together and played yut. My kids had so much fun with their cousins. I'll never forget that Chuseok because my whole family was together for the first time in years. Yeah, that's my most memorable holiday.",
+        "IH": "Oh, a memorable holiday? Let me think. Last Chuseok was really special for me. My family drove down to my parents' house in Daejeon, where I grew up. The traffic was terrible, so a two-hour drive took almost four hours. My uncle's family also came from Busan, which doesn't happen often. On the first night, we all sat on the floor and made songpyeon together. My daughter's rice cakes looked really funny, and everyone laughed. The next morning, we visited my grandparents' graves, and in the afternoon, we played yut in the yard. My dad was so happy to see all his grandkids in one place, and we stayed up late talking. I'll never forget that Chuseok because my whole family was together for the first time in years. Yeah, that's my most memorable holiday.",
+        "AL": "Oh, a memorable holiday? Let me think. I'd have to say last Chuseok, because it was really special for our family. We drove down to my parents' house in Daejeon, where I grew up. The highway was a total parking lot, so a two-hour drive turned into almost four hours, and the kids kept asking, 'Are we there yet?' But it was totally worth it, because my uncle's family also came up from Busan, which almost never happens. On the first night, we all sat around a big table and made songpyeon together. My daughter's rice cakes came out in all kinds of weird shapes, and my mom said she'd have pretty kids someday, which is an old saying for people who make nice songpyeon, so everyone burst out laughing. The next morning, we visited my grandparents' graves, and in the afternoon, we played yut in the yard. The kids got so competitive that my dad had to be the referee. Seeing him surrounded by all his grandkids, smiling from ear to ear, really touched me. I'll never forget that Chuseok because my whole family was together for the first time in years. Yeah, that's my most memorable holiday."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 기억에 남는 명절이요?",
+          "생각해 볼게요.",
+          "지난 추석에 저희 가족은 대전 부모님 댁까지 차로 갔어요.",
+          "차가 엄청 막혀서 거의 4시간이 걸렸어요.",
+          "친척들도 몇 분 오셨어요.",
+          "다 같이 송편을 빚고 윷놀이를 했어요.",
+          "아이들은 사촌들이랑 정말 재미있게 놀았어요.",
+          "몇 년 만에 처음으로 온 가족이 다 모였기 때문에 그 추석은 절대 못 잊을 거예요.",
+          "네, 그게 제 가장 기억에 남는 명절이에요."
+        ],
+        "IH": [
+          "아, 기억에 남는 명절이요?",
+          "생각해 볼게요.",
+          "지난 추석이 저한테는 정말 특별했어요.",
+          "저희 가족은 제가 자란 대전의 부모님 댁까지 차로 내려갔어요.",
+          "차가 엄청 막혀서 2시간 거리가 거의 4시간이나 걸렸어요.",
+          "부산에서 삼촌네 가족도 왔는데, 그건 자주 있는 일이 아니에요.",
+          "첫날 밤에는 다 같이 바닥에 앉아서 송편을 빚었어요.",
+          "딸이 빚은 송편 모양이 너무 웃겨서 모두가 웃었어요.",
+          "다음 날 아침에는 조부모님 산소에 다녀오고, 오후에는 마당에서 윷놀이를 했어요.",
+          "아버지는 손주들이 한자리에 다 모인 걸 보고 정말 기뻐하셨고, 저희는 늦게까지 이야기꽃을 피웠어요.",
+          "몇 년 만에 처음으로 온 가족이 다 모였기 때문에 그 추석은 절대 못 잊을 거예요.",
+          "네, 그게 제 가장 기억에 남는 명절이에요."
+        ],
+        "AL": [
+          "아, 기억에 남는 명절이요?",
+          "생각해 볼게요.",
+          "지난 추석이라고 해야겠어요, 저희 가족한테 정말 특별했거든요.",
+          "저희는 제가 자란 대전의 부모님 댁까지 차로 내려갔어요.",
+          "고속도로가 완전 주차장이어서 2시간 거리가 거의 4시간이 됐고, 아이들은 계속 '아직 멀었어?' 하고 물어봤어요.",
+          "그래도 정말 그만한 가치가 있었어요, 부산에서 삼촌네 가족도 올라왔는데 그건 거의 없는 일이거든요.",
+          "첫날 밤에는 다 같이 큰 상에 둘러앉아 송편을 빚었어요.",
+          "딸이 빚은 송편이 온갖 이상한 모양으로 나왔는데, 어머니가 나중에 예쁜 아이를 낳겠다고 하셨어요, 송편을 예쁘게 빚는 사람한테 하는 옛말인데, 그래서 다들 빵 터졌어요.",
+          "다음 날 아침에는 조부모님 산소에 다녀오고, 오후에는 마당에서 윷놀이를 했어요.",
+          "아이들이 너무 승부욕에 불타서 아버지가 심판을 보셔야 했어요.",
+          "손주들에게 둘러싸여 입이 귀에 걸리도록 웃으시는 아버지를 보니 정말 뭉클했어요.",
+          "몇 년 만에 처음으로 온 가족이 다 모였기 때문에 그 추석은 절대 못 잊을 거예요.",
+          "네, 그게 제 가장 기억에 남는 명절이에요."
+        ]
       }
     },
     {
@@ -203,58 +449,139 @@
       "en": "Tell me about your favorite piece of furniture in your home. What does it look like, where is it, and why do you like it?",
       "ko": "집에서 가장 좋아하는 가구에 대해 말해 주세요. 어떻게 생겼고, 어디에 있으며, 왜 좋아하나요?",
       "tips": [
-        "답변 흐름: 'Oh, my favorite piece of furniture? Let me think.' → 무엇(거실의 회색 소파) → 생김새·위치(TV 맞은편, 발코니 옆) → 이유(금요일 밤 영화, 퇴근 후 휴식) → 'Yeah, that's ~.'",
-        "색깔·크기·재질(gray, soft, a two-seater) 형용사 3개만 넣어도 묘사가 풍성해집니다.",
-        "IH 이상은 '이사 올 때 처음 내 돈으로 산 가구'처럼 사연을 붙여 이유를 강화하세요."
+        "답변 흐름: 'Oh, my favorite furniture? That's easy.' → 무엇(거실의 큰 소파) → 생김새·위치 → 언제 쓰는지(금요일 가족 영화의 밤) → 좋아하는 이유 → 'Yeah, that's ~.'",
+        "It's not very ___, but it's ___ 로 단점과 장점을 한 문장에 담으면 자연스럽습니다.",
+        "IH 이상은 산 시기(8년 전 이사 올 때), 얽힌 가족 추억을 넣으세요."
       ],
       "answers": {
-        "IM3": "Oh, my favorite piece of furniture? Let me think. I think it's my sofa. It's in my living room, right in front of the TV. It's gray, and it's really soft and comfortable. It's not very big, but it's perfect for me because I live alone. After work, I lie on the sofa and relax. On Friday nights, I watch movies on it. Yeah, that's my favorite piece of furniture.",
-        "IH": "Oh, my favorite piece of furniture? Sure, let me think. I'd say it's definitely my sofa. It's in my living room, right across from the TV and next to the balcony door. It's a light gray two-seater, and it's really soft. I also put a few cute cushions and a warm blanket on it. I bought it when I moved into this apartment three years ago. It was the first expensive thing I bought with my own salary, so it means a lot to me. After a long day of meetings, I just lie down on it and listen to music. And every Friday night, I sit there with some snacks and watch Netflix. Sometimes I even fall asleep on it. It's my favorite spot in the whole apartment. Yeah, that's why I love my sofa.",
-        "AL": "Oh, my favorite piece of furniture? That's an easy one. It's definitely my sofa. It sits in my living room, right across from the TV and next to the door to my little balcony, so I can see my plants from there. It's a light gray two-seater, and it's so soft that you kind of sink into it. I've also covered it with a few cute cushions and a fluffy blanket, so it's super cozy. I actually bought it when I moved into this apartment three years ago, right after I started working. It was the first really expensive thing I ever bought with my own salary, so it means a lot more to me than just a place to sit. These days, it's pretty much the center of my life at home. After a long, stressful day of meetings, I just collapse onto it and put on some ballads. And every Friday night, I curl up there with a bag of chips and binge-watch movies on Netflix. To be honest, I fall asleep on it more often than I'd like to admit. Living alone, it's kind of my little safe place. So yeah, that's why my sofa is my favorite piece of furniture."
+        "IM3": "Oh, my favorite furniture? That's easy. It's the big gray sofa in our living room. It faces the TV, and there's a window behind it. We bought it when we moved into this apartment eight years ago. It's not very new, but it's super comfortable. Every Friday night, my family sits on it and watches a movie together. Sometimes I take a nap on it on weekends. Yeah, that's why I love our sofa.",
+        "IH": "Oh, my favorite furniture? That's easy. It's the big gray sofa in our living room. It's an L-shaped sofa, so all four of us can sit on it at the same time. It faces the TV, and behind it, there's a big window that looks out on the park. We bought it when we moved into this apartment eight years ago. It's not very new, but it's super comfortable, and the cushions are really soft. Every Friday night, we have a family movie night, and everyone grabs their favorite spot on the sofa. On weekends, I sometimes take a nap there after jogging. My kids have spilled juice on it a few times, but luckily, the cover is washable. Yeah, that's why our sofa is my favorite piece of furniture.",
+        "AL": "Oh, my favorite piece of furniture? That's an easy one. It's definitely the big gray sofa in our living room. It's an L-shaped sofa, so all four of us can stretch out on it at the same time without fighting over space, well, most of the time. It faces the TV, and right behind it, there's a big window, so on sunny afternoons the whole living room fills with light. We bought it when we moved into this apartment eight years ago, and I remember spending a whole weekend at the furniture store testing every sofa they had. It's not very new, but it's super comfortable, and it's kind of shaped itself to our bodies over the years. Every Friday night, we have our family movie night, and each of us has our own spot. My son always takes the corner, and my daughter curls up next to me with a blanket. On lazy weekend afternoons, I sometimes doze off there after my morning jog. The cover has survived juice, popcorn, and even crayons, so thank goodness it's washable. Honestly, that sofa holds so many family memories that I can't imagine replacing it. Yeah, that's why it's my favorite piece of furniture."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 제가 제일 좋아하는 가구요?",
+          "그건 쉽죠.",
+          "거실에 있는 큰 회색 소파예요.",
+          "TV를 마주 보고 있고, 뒤에는 창문이 있어요.",
+          "8년 전에 이 아파트로 이사 올 때 샀어요.",
+          "아주 새것은 아니지만, 정말 편해요.",
+          "매주 금요일 밤에 가족이 거기 앉아서 다 같이 영화를 봐요.",
+          "주말엔 가끔 거기서 낮잠도 자요.",
+          "네, 그래서 저는 저희 소파가 정말 좋아요."
+        ],
+        "IH": [
+          "아, 제가 제일 좋아하는 가구요?",
+          "그건 쉽죠.",
+          "거실에 있는 큰 회색 소파예요.",
+          "ㄱ자 소파라서 저희 넷이 한꺼번에 앉을 수 있어요.",
+          "TV를 마주 보고 있고, 뒤에는 공원이 내다보이는 큰 창문이 있어요.",
+          "8년 전에 이 아파트로 이사 올 때 샀어요.",
+          "아주 새것은 아니지만, 정말 편하고 쿠션이 정말 푹신해요.",
+          "매주 금요일 밤에 가족 영화의 밤을 하는데, 다들 소파에서 자기가 좋아하는 자리를 차지해요.",
+          "주말엔 조깅하고 나서 가끔 거기서 낮잠을 자요.",
+          "아이들이 몇 번 주스를 쏟긴 했는데, 다행히 커버를 빨 수 있어요.",
+          "네, 그래서 저희 소파가 제가 제일 좋아하는 가구예요."
+        ],
+        "AL": [
+          "아, 제가 제일 좋아하는 가구요?",
+          "그건 쉬운 질문이네요.",
+          "단연 거실에 있는 큰 회색 소파예요.",
+          "ㄱ자 소파라서 저희 넷이 자리 싸움 없이 한꺼번에 쭉 뻗고 누울 수 있어요, 뭐, 대부분은요.",
+          "TV를 마주 보고 있고, 바로 뒤에 큰 창문이 있어서 해가 좋은 오후엔 거실 전체가 햇살로 가득 차요.",
+          "8년 전에 이 아파트로 이사 올 때 샀는데, 가구점에서 주말 내내 있는 소파를 전부 앉아 봤던 게 기억나요.",
+          "아주 새것은 아니지만 정말 편하고, 몇 년 지나면서 저희 몸에 맞게 모양이 잡힌 것 같아요.",
+          "매주 금요일 밤엔 가족 영화의 밤을 하는데, 각자 자기 자리가 있어요.",
+          "아들은 항상 구석 자리를 차지하고, 딸은 담요를 덮고 제 옆에 웅크리고 앉아요.",
+          "느긋한 주말 오후엔 아침 조깅을 하고 나서 가끔 거기서 꾸벅꾸벅 졸아요.",
+          "커버가 주스, 팝콘, 심지어 크레용까지 견뎌냈는데, 빨 수 있어서 정말 다행이에요.",
+          "솔직히 그 소파엔 가족 추억이 너무 많아서 바꾸는 건 상상도 못 하겠어요.",
+          "네, 그래서 그게 제가 제일 좋아하는 가구예요."
+        ]
       }
     },
     {
       "id": "unexpected-bank",
       "type": "experience",
       "en": "Have you ever had a problem at a bank or with a banking app? Tell me what happened and how you solved it.",
-      "ko": "은행이나 은행 앱에서 문제가 생긴 적이 있나요? 무슨 일이 있었고 어떻게 해결했는지 말해 주세요.",
+      "ko": "은행이나 은행 앱에서 문제를 겪은 적이 있나요? 무슨 일이 있었고 어떻게 해결했는지 말해 주세요.",
       "tips": [
-        "답변 흐름: 'Oh, a problem with a bank? Let me think.' → 언제(작년, 휴대폰을 바꾼 뒤) → 문제(비밀번호 오류로 은행 앱 잠김, 친구에게 돈을 못 보냄) → 해결(점심시간에 신분증 들고 회사 근처 지점 방문) → 'Yeah, that's ~.'",
-        "문제 상황 → 내 행동 → 결과의 3단계를 과거시제로 지키세요.",
-        "IH 이상은 '은행이 6시에 닫아서 점심시간밖에 갈 수 없었다'처럼 직장인다운 어려움을 넣으세요."
+        "답변 흐름: 'Oh, yes, I had a problem like that once.' → 언제(아이 학원비 내던 날) → 무슨 문제(비밀번호 오류로 은행 앱 잠김) → 해결(점심시간에 은행 방문) → 교훈 → 'Yeah, that's ~.'",
+        "I had a problem with ~ / I didn't know what to do, so I ~ / Luckily, ~ 패턴으로 이야기를 이어 가세요.",
+        "개발자인데 앱 문제로 고생했다는 아이러니를 AL에서 살짝 넣으면 재밌는 답이 됩니다."
       ],
       "answers": {
-        "IM3": "Oh, a problem with a bank? Let me think. Last year, I got a new phone and downloaded my banking app again. But I forgot my password. I tried too many times, and the app got locked. I couldn't send money to my friend for dinner. So I went to a bank near my office during lunch. I showed my ID, and they fixed it. Yeah, that's how I solved the problem.",
-        "IH": "Oh, a problem with a bank? Sure, let me think. Last year, I got a new phone, so I had to set up my banking app again. But I couldn't remember my password. I tried a few times, and then the app got locked. That was a big problem, because I had to send money to my friends for a dinner we had. I called the bank, but they said I had to visit a branch with my ID. The problem was that banks close at four, and I work until six. So I went to a branch near my office during my lunch break. I had to wait for almost thirty minutes, so I couldn't eat lunch. But they unlocked my account quickly. Yeah, that's how I solved the problem.",
-        "AL": "Oh, a problem with a banking app? Actually, yes, I've had one. Last year, I finally upgraded to a new phone, so I had to set up my banking app all over again. The problem was that I couldn't remember my password at all, because I'd been using my fingerprint for years. I tried a few different passwords, and after the fifth try, the app just locked me out. That was a real headache, because my friends and I had just had a big dinner together, and I was supposed to send them my share that night. I called the bank's customer center, and they told me I had to visit a branch in person with my ID. But here's the thing. Banks in Korea close at four, and I work until six, so it was almost impossible. In the end, I rushed to a branch near my office during my lunch break. There was a long line, and I had to wait for about thirty minutes, so I ended up skipping lunch. But the staff were really kind, and they unlocked my account in just a few minutes. Since then, I've written my password down in a safe place. So yeah, that's how I solved my banking problem."
+        "IM3": "Oh, yes, I had a problem like that once. Last year, I wanted to pay my son's academy fee. But I had a problem with my banking app. I typed the wrong password five times, and my account got locked. The fee was due that day, so I was really worried. So I went to the bank near my office during lunch. The staff helped me unlock it in ten minutes. Yeah, that's how I solved it.",
+        "IH": "Oh, yes, I had a problem like that once. Last year, I was trying to pay my son's academy fee on the due date. But I had a problem with my banking app. The app had just updated, and it asked me to log in again. I couldn't remember my password, and after five wrong tries, my account got locked. I tried to reset it online, but it needed a code from my old phone number. I didn't know what to do, so I went to the bank near my office during my lunch break. I had to wait about 30 minutes, but luckily, the staff member was really helpful. She checked my ID and unlocked my account. I paid the fee right there. Yeah, that's how I solved it.",
+        "AL": "Oh, yes, I had a problem like that once, and it was kind of embarrassing for a software developer. Last year, I was trying to pay my son's academy fee, and it was due that same day. But I had a problem with my banking app. It had just updated overnight, and it suddenly asked me to log in again. For some reason, my mind went completely blank, and after five wrong tries, my account got locked. I tried to reset the password online, but it wanted a verification code sent to my old phone number, which I hadn't used in years. I didn't know what to do, so I rushed to the bank branch near my office during my lunch break. The waiting room was packed, and I ended up waiting about 30 minutes, checking the clock the whole time. Luckily, the staff member was really patient. She checked my ID, updated my phone number, and unlocked my account in just a few minutes. I paid the fee right there and made it back just in time for my afternoon meeting. Since then, I always use a password manager, and I make sure my contact info is up to date. Yeah, that's how I solved it."
+      },
+      "answersKo": {
+        "IM3": [
+          "아, 네, 그런 문제가 한 번 있었어요.",
+          "작년에 아들 학원비를 내려고 했어요.",
+          "그런데 은행 앱에 문제가 생겼어요.",
+          "비밀번호를 다섯 번 잘못 입력해서 계정이 잠겼어요.",
+          "학원비가 그날까지 내야 하는 거라 정말 걱정됐어요.",
+          "그래서 점심시간에 회사 근처 은행에 갔어요.",
+          "직원이 10분 만에 잠금을 풀어줬어요.",
+          "네, 그렇게 해결했어요."
+        ],
+        "IH": [
+          "아, 네, 그런 문제가 한 번 있었어요.",
+          "작년에 납부 마감일에 아들 학원비를 내려고 하고 있었어요.",
+          "그런데 은행 앱에 문제가 생겼어요.",
+          "앱이 막 업데이트돼서 다시 로그인하라고 하더라고요.",
+          "비밀번호가 기억이 안 났고, 다섯 번 틀리고 나니 계정이 잠겼어요.",
+          "온라인으로 재설정하려고 했는데, 예전 휴대폰 번호로 오는 인증번호가 필요했어요.",
+          "어떻게 해야 할지 몰라서 점심시간에 회사 근처 은행에 갔어요.",
+          "30분 정도 기다려야 했지만, 다행히 직원분이 정말 많이 도와줬어요.",
+          "그분이 제 신분증을 확인하고 계정 잠금을 풀어줬어요.",
+          "저는 그 자리에서 학원비를 냈어요.",
+          "네, 그렇게 해결했어요."
+        ],
+        "AL": [
+          "아, 네, 그런 문제가 한 번 있었는데, 소프트웨어 개발자로서는 좀 창피한 일이었어요.",
+          "작년에 아들 학원비를 내려고 하고 있었는데, 마감이 바로 그날이었어요.",
+          "그런데 은행 앱에 문제가 생겼어요.",
+          "밤사이에 앱이 막 업데이트되더니 갑자기 다시 로그인하라고 하더라고요.",
+          "왠지 머릿속이 완전히 하얘졌고, 다섯 번 틀리고 나니 계정이 잠겼어요.",
+          "온라인으로 비밀번호를 재설정하려고 했는데, 몇 년 동안 안 쓴 예전 휴대폰 번호로 인증번호를 보내야 한다는 거예요.",
+          "어떻게 해야 할지 몰라서 점심시간에 회사 근처 은행 지점으로 서둘러 갔어요.",
+          "대기실이 꽉 차 있어서 결국 30분 정도 기다렸는데, 내내 시계만 봤어요.",
+          "다행히 직원분이 정말 참을성 있게 도와줬어요.",
+          "그분이 제 신분증을 확인하고 휴대폰 번호를 업데이트해서 몇 분 만에 계정 잠금을 풀어줬어요.",
+          "저는 그 자리에서 학원비를 내고 오후 회의에 딱 맞춰 돌아왔어요.",
+          "그 뒤로는 항상 비밀번호 관리 앱을 쓰고, 연락처 정보가 최신인지 꼭 확인해요.",
+          "네, 그렇게 해결했어요."
+        ]
       }
     }
   ],
   "pronunciation": [
     {
-      "word": "recycling",
-      "ipa": "/riːˈsaɪ.klɪŋ/",
-      "tip": "'싸이'에 강세. 끝 -ing는 '잉'으로 콧소리"
-    },
-    {
       "word": "humid",
       "ipa": "/ˈhjuː.mɪd/",
-      "tip": "'휴'를 길게. '후미드'가 아니라 '휴-믿'"
+      "tip": "'휴'에 강세. '휴미드'가 아니라 '휴믿'처럼 짧게"
+    },
+    {
+      "word": "recycling",
+      "ipa": "/ˌriːˈsaɪ.klɪŋ/",
+      "tip": "'사이'에 강세. cy는 '싸이'처럼 발음"
+    },
+    {
+      "word": "transportation",
+      "ipa": "/ˌtræn.spɔːrˈteɪ.ʃən/",
+      "tip": "'테이'에 강세. 앞부분은 빠르게"
     },
     {
       "word": "furniture",
       "ipa": "/ˈfɜːr.nɪ.tʃər/",
-      "tip": "f로 시작, '퍼r'에 강세. 끝은 '쳐r'로 약하게"
+      "tip": "앞 '퍼'에 강세, f는 윗니로 아랫입술을 살짝. 끝은 '처'"
     },
     {
-      "word": "convenient",
-      "ipa": "/kənˈviː.ni.ənt/",
-      "tip": "'비-'에 강세. v는 윗니를 아랫입술에 대고"
-    },
-    {
-      "word": "subway",
-      "ipa": "/ˈsʌb.weɪ/",
-      "tip": "'써ㅂ'에 강세. b를 살짝 닫고 바로 '웨이'"
+      "word": "account",
+      "ipa": "/əˈkaʊnt/",
+      "tip": "'카운'에 강세. 앞 a는 약하게 '어'"
     }
   ],
   "patterns": [
@@ -266,45 +593,45 @@
     },
     {
       "pid": "place#2",
-      "en": "It's only a five-minute walk from my house to the subway station.",
-      "ko": "집에서 지하철역까지 걸어서 5분밖에 안 걸려요.",
+      "en": "It's only a 10-minute walk from my house.",
+      "ko": "우리 집에서 걸어서 10분밖에 안 걸려요.",
       "q": "unexpected-transport"
     },
     {
-      "pid": "describe#3",
-      "en": "It's not very big, but it's perfect for me because I live alone.",
-      "ko": "아주 크진 않지만, 혼자 사는 저한테는 딱 좋아요.",
-      "q": "unexpected-furniture"
-    },
-    {
-      "pid": "routine#3",
-      "en": "First, I listen to K-pop on the subway. Then, I check emails and Instagram trends at work.",
-      "ko": "먼저 지하철에서 K-pop을 들어요. 그다음 회사에서 이메일과 인스타그램 트렌드를 확인해요.",
-      "q": "unexpected-internet"
-    },
-    {
       "pid": "reason#4",
-      "en": "Whenever I take out my recycling on Sunday night, I feel good about protecting the environment.",
-      "ko": "일요일 밤에 분리수거를 내놓을 때마다 환경을 지키는 것 같아 기분이 좋아요.",
+      "en": "Whenever I sort the recycling with my kids, I feel like we're doing something good.",
+      "ko": "아이들과 분리수거를 할 때마다 좋은 일을 하고 있는 기분이 들어요.",
       "q": "unexpected-recycling"
     },
     {
+      "pid": "change#0",
+      "en": "I used to carry a flip phone, but now I do almost everything on my smartphone.",
+      "ko": "예전엔 폴더폰을 들고 다녔는데, 지금은 거의 모든 걸 스마트폰으로 해요.",
+      "q": "unexpected-phone"
+    },
+    {
+      "pid": "routine#3",
+      "en": "First, I check the news on my phone. Then, I open our team chat.",
+      "ko": "먼저 휴대폰으로 뉴스를 확인해요. 그다음 팀 채팅방을 열어요.",
+      "q": "unexpected-internet"
+    },
+    {
       "pid": "memory#5",
-      "en": "I'll never forget last Chuseok because my brother Junho and I laughed so much while making songpyeon.",
-      "ko": "남동생 준호와 송편을 빚으며 정말 많이 웃어서 작년 추석은 절대 못 잊을 거예요.",
+      "en": "I'll never forget that Chuseok because my whole family was together for the first time in years.",
+      "ko": "몇 년 만에 온 가족이 다 모였기 때문에 그 추석을 절대 잊지 못할 거예요.",
       "q": "unexpected-holiday"
     },
     {
-      "pid": "problem#1",
-      "en": "I had a problem with my banking app after I got a new phone.",
-      "ko": "새 휴대폰으로 바꾼 뒤 은행 앱에 문제가 생겼어요.",
-      "q": "unexpected-bank"
+      "pid": "describe#3",
+      "en": "It's not very new, but it's super comfortable.",
+      "ko": "아주 새것은 아니지만 정말 편해요.",
+      "q": "unexpected-furniture"
     },
     {
-      "pid": "change#0",
-      "en": "I used to only call my parents and text my friends on my flip phone, but now I use my smartphone for almost everything.",
-      "ko": "예전에는 폴더폰으로 부모님께 전화하고 친구들에게 문자만 했지만, 지금은 스마트폰으로 거의 모든 걸 해요.",
-      "q": "unexpected-phone"
+      "pid": "problem#1",
+      "en": "I had a problem with my banking app.",
+      "ko": "은행 앱에 문제가 생겼어요.",
+      "q": "unexpected-bank"
     }
   ]
 }

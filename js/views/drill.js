@@ -6,6 +6,7 @@ import { bindPlay, flashcards, quickCheck } from './topic.js';
 import { speakQuiz } from './quiz.js';
 import { createAutoPlay } from '../autoplay.js';
 import { editLinkHtml } from '../config.js';
+import { replaceQuery, openMode, closeMode } from '../app.js';
 
 export async function render(root, route) {
   const tab = route.query.tab || 'patterns';
@@ -24,7 +25,7 @@ export async function render(root, route) {
     if (t === 'patterns') await renderPatterns(body, route.query.group, setPlayer, route.query.mode);
     else await renderPron(body, route.query.set, setPlayer);
   };
-  root.querySelectorAll('#dtabs button').forEach(b => b.addEventListener('click', () => show(b.dataset.t)));
+  root.querySelectorAll('#dtabs button').forEach(b => b.addEventListener('click', () => { replaceQuery(`#/drill?tab=${b.dataset.t}`); route.query = { tab: b.dataset.t }; show(b.dataset.t); }));
   show(tab);
   return () => { player?.destroy(); stopSpeaking(); };
 }
@@ -64,13 +65,13 @@ async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
     bindPlay(body);
     const player = createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]'));
     setPlayer(player);
-    body.querySelector('[data-flash]').addEventListener('click', () => {
-      player.destroy();
-      setPlayer(flashcards(body, cards, list));   // 카드 모드도 탭 이동 시 함께 멈추도록
-    });
-    body.querySelector('[data-quiz]').addEventListener('click', () => { player.destroy(); setPlayer(speakQuiz(body, cards, list)); });
+    // 카드·퀴즈는 기록을 남겨 열어서, 뒤로 가기 한 번이면 이 목록으로 돌아온다
+    body.querySelector('[data-flash]').addEventListener('click', () => { player.destroy(); openMode(`${base}&mode=cards`); });
+    body.querySelector('[data-quiz]').addEventListener('click', () => { player.destroy(); openMode(`${base}&mode=quiz`); });
   };
-  if (mode === 'quiz') setPlayer(speakQuiz(body, cards, list));
+  const base = `#/drill?tab=patterns&group=${group.id}`;
+  if (mode === 'quiz') setPlayer(speakQuiz(body, cards, () => closeMode(base)));
+  else if (mode === 'cards') setPlayer(flashcards(body, cards, () => closeMode(base)));
   else list();
 }
 

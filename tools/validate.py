@@ -3,6 +3,7 @@ Run: python tools/validate.py   (exit code 1 on any error)
 Used by GitHub Actions on every push so edits made from the phone are checked automatically.
 """
 import json
+import re
 import sys
 
 try:
@@ -29,6 +30,11 @@ def load(path):
     except Exception as e:  # noqa: BLE001
         err(f"{path.relative_to(ROOT)}: JSON 파싱 실패 - {e}")
         return None
+
+
+def split_sentences(text):
+    """앱(js/util.js splitSentences)과 같은 규칙으로 문장을 나눈다."""
+    return [x.strip() for x in re.findall(r'[^.!?]+[.!?]+["\']?|[^.!?]+$', text or "") if x.strip()]
 
 
 def check_topic(path, t):
@@ -59,6 +65,19 @@ def check_topic(path, t):
         for lv in ("IM3", "IH", "AL"):
             if not ans.get(lv):
                 err(f"{rel}: questions[{i}] answers.{lv} 누락")
+        for lv in ("IM3", "IH", "AL"):
+            for piece in split_sentences(ans.get(lv, "")):
+                if len(piece) < 4:
+                    err(f"{rel}: questions[{i}] answers.{lv} 에 잘린 문장 조각 '{piece}' 이 있습니다 (a.m., Mr. 같은 약어 대신 'in the morning' 처럼 풀어 쓰세요)")
+        ko = q.get("answersKo")
+        if ko is None:
+            err(f"{rel}: questions[{i}] answersKo(문장별 한글 해석) 누락")
+        else:
+            for lv in ("IM3", "IH", "AL"):
+                n = len(split_sentences(ans.get(lv, "")))
+                arr = ko.get(lv)
+                if not isinstance(arr, list) or len(arr) != n or not all(isinstance(x, str) and x.strip() for x in arr):
+                    err(f"{rel}: questions[{i}] answersKo.{lv} 는 영어 답안 문장 수({n})와 같은 개수의 한글 문장이어야 합니다 (현재 {len(arr) if isinstance(arr, list) else '없음'})")
 
 
 def check_topic_patterns(path, t, frames):

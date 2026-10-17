@@ -80,7 +80,7 @@ async function open(hash, seed = null) {
 
 // ---- 예전 패턴 기록 정리 ----
 {
-  const seed = { expr: { 'pat:opener#0': { box: 3, due: 0, seen: 2 }, 'pat:filler#2': { box: 1, due: 0, seen: 1 }, 'pat:like#1': { box: 4, due: 0, seen: 3 }, 'housing#e0': { box: 2, due: 0, seen: 1 } }, topicContentVersion: 3 };
+  const seed = { expr: { 'pat:opener#0': { box: 3, due: 0, seen: 2 }, 'pat:filler#2': { box: 1, due: 0, seen: 1 }, 'pat:like#1': { box: 4, due: 0, seen: 3 }, 'housing#e0': { box: 2, due: 0, seen: 1 } }, topicContentVersion: 4 };
   const { page } = await open('#/home', seed);
   await page.waitForTimeout(500);
   const expr = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')).expr);
@@ -98,9 +98,9 @@ async function open(hash, seed = null) {
   const st = await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')));
   check('주제 교체: 예전 주제 표현 기록 삭제', !st.expr['housing#e0'], JSON.stringify(st.expr));
   check('주제 교체: 패턴 기록은 유지', st.expr['pat:like#1']?.box === 4);
-  check('주제 교체: 버전 기록', st.topicContentVersion === 3);
+  check('주제 교체: 버전 기록', st.topicContentVersion === 4);
   const txt = await page.innerText('#view');
-  check('주제 목록: 페르소나 카드', txt.includes('직장인') && txt.includes('답변 흐름'), txt.slice(0, 400));
+  check('주제 목록: 페르소나 카드', txt.includes('20년차') && txt.includes('답변 흐름'), txt.slice(0, 400));
   check('주제 목록: 출처 영상 링크', await page.$('a[href="https://youtu.be/fG3VEfKBkgw"]') !== null);
   check('주제 목록: 직장 주제', txt.includes('직장 · 업무'));
   check('주제 목록: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));

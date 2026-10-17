@@ -3,7 +3,7 @@ import { data, TYPE_LABEL } from '../data.js';
 import { store } from '../store.js';
 import { speak, stopSpeaking, isSpeaking } from '../speech.js';
 import { editLinkHtml } from '../config.js';
-import { header } from '../app.js';
+import { header, replaceQuery, openMode, closeMode } from '../app.js';
 import { createRecorderUI } from '../recorder-ui.js';
 import { createAutoPlay, createSequencePlayer, repeatCount, gapLabel, cycleRepeat, cycleGap, repeatLoop, toggleLoop, loopLabel } from '../autoplay.js';
 import { compareToText } from '../scoring.js';
@@ -35,18 +35,22 @@ export async function render(root, route) {
 
   const body = root.querySelector('#tabbody');
   let player = null;
-  const renderTab = (t) => {
+  const renderTab = (t, mode = '') => {
     root.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === t));
     player?.destroy(); player = null;
     stopSpeaking();
     drawSteps();
-    if (t === 'expr') player = renderExpr(body, topic);
-    else if (t === 'pat') player = renderTopicPatterns(body, topic, patterns, drawSteps);
+    const base = `#/topic/${topic.id}?tab=${t}`;
+    if (t === 'expr') player = renderExpr(body, topic, mode, base);
+    else if (t === 'pat') player = renderTopicPatterns(body, topic, patterns, drawSteps, mode, base);
     else if (t === 'q') renderQuestions(body, topic, level, route.query);
     else player = renderTips(body, topic);
   };
-  root.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => renderTab(b.dataset.tab)));
-  renderTab(tab);
+  root.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => {
+    replaceQuery(`#/topic/${topic.id}?tab=${b.dataset.tab}`);   // 탭은 기록에 쌓지 않는다
+    renderTab(b.dataset.tab);
+  }));
+  renderTab(tab, route.query.mode || '');
   return () => { player?.destroy(); stopSpeaking(); };
 }
 
@@ -60,7 +64,7 @@ export function topicPatternCards(topic, patterns) {
   });
 }
 
-function renderTopicPatterns(body, topic, patterns, onChange) {
+function renderTopicPatterns(body, topic, patterns, onChange, mode = '', base = '') {
   const cards = topicPatternCards(topic, patterns);
   const qById = Object.fromEntries((topic.questions || []).map(q => [q.id, q]));
   const handle = { stop() {}, destroy() {} };
@@ -85,16 +89,20 @@ function renderTopicPatterns(body, topic, patterns, onChange) {
     const player = createAutoPlay(body.querySelector('[data-autoplay]'), body.querySelector('[data-list]'));
     handle.stop = () => player.stop(); handle.destroy = () => player.destroy();
     const swap = (p) => { handle.stop = p.stop; handle.destroy = p.destroy; };
-    body.querySelector('[data-flash]')?.addEventListener('click', () => { player.destroy(); swap(flashcards(body, cards, list)); });
-    body.querySelector('[data-quiz]')?.addEventListener('click', () => { player.destroy(); swap(speakQuiz(body, cards, list)); });
+    body.querySelector('[data-flash]')?.addEventListener('click', () => { player.destroy(); openMode(`${base}&mode=cards`); });
+    body.querySelector('[data-quiz]')?.addEventListener('click', () => { player.destroy(); openMode(`${base}&mode=quiz`); });
   };
-  list();
+  const back = () => closeMode(base);
+  if (mode === 'cards' && cards.length) { const p = flashcards(body, cards, back); handle.stop = p.stop; handle.destroy = p.destroy; }
+  else if (mode === 'quiz' && cards.length) { const p = speakQuiz(body, cards, back); handle.stop = p.stop; handle.destroy = p.destroy; }
+  else list();
   return handle;
 }
 
 // ---------- 표현: 리스트 + 플래시카드 ----------
-function renderExpr(body, topic) {
+function renderExpr(body, topic, mode = '', base = '') {
   const exprs = topic.expressions || [];
+  if (mode === 'cards' && exprs.length) return flashcards(body, exprs.map((e, i) => ({ ...e, id: `${topic.id}#e${i}` })), () => closeMode(base));
   body.innerHTML = html`
     <div class="row between mb12">
       <div class="small muted">${exprs.length}개 표현 · 🔊 탭하면 발음, 카드 모드로 암기</div>
@@ -107,12 +115,8 @@ function renderExpr(body, topic) {
   const list = body.querySelector('[data-list]');
   const player = createAutoPlay(body.querySelector('[data-autoplay]'), list);
   const handle = { stop: () => player.stop(), destroy: () => player.destroy() };
-  body.querySelector('[data-flash]').addEventListener('click', () => {
-    player.destroy();
-    // 카드 모드 플레이어로 교체해 탭 이동·화면 이탈 시 함께 멈추도록 한다
-    const fc = flashcards(body, exprs.map((e, i) => ({ ...e, id: `${topic.id}#e${i}` })), () => renderExpr(body, topic));
-    handle.stop = fc.stop; handle.destroy = fc.destroy;
-  });
+  // 카드 모드는 기록을 남겨 열어서, 뒤로 가기 한 번이면 이 목록으로 돌아온다
+  body.querySelector('[data-flash]').addEventListener('click', () => { player.destroy(); openMode(`${base}&mode=cards`); });
   return handle;
 }
 
@@ -137,6 +141,7 @@ export function bindPlay(scope) {
 
 export function flashcards(body, cards, onExit) {
   let i = 0, showKo = false;
+  const trail = [];   // 지나온 카드 순서 — '이전'은 바로 직전에 본 카드로만 간다
   const player = createSequencePlayer();   // 카드마다 반복 재생 + 화면 유지 (🔁 켜져 있으면 멈출 때까지 계속)
   const due = new Set(store.dueExprs());
   // 복습 대상 우선, 그 다음 미학습, 마지막 학습완료
@@ -160,12 +165,12 @@ export function flashcards(body, cards, onExit) {
       <div class="xs muted mt8">${repeatLoop() ? '멈추거나 카드를 넘길 때까지 계속 반복해요.' : `이 카드를 ${repeatCount()}번 읽고 멈춰요.`}</div>
       <p class="xs muted center mt12">듣고 → 소리 내어 따라 말한 뒤 → 뜻을 보지 않고 말할 수 있으면 "알아요"</p>
       <div class="btn-row mt12"><button class="btn" data-rate="0">🙈 아직 몰라요</button><button class="btn teal" data-rate="1">✅ 알아요</button></div>
-      <div class="btn-row mt8"><button class="btn ghost" data-prev>‹ 이전</button><button class="btn ghost" data-exit>목록으로</button><button class="btn ghost" data-next>다음 ›</button></div>`;
+      <div class="btn-row mt8"><button class="btn ghost" data-prev ${trail.length ? '' : 'disabled'}>‹ 이전</button><button class="btn ghost" data-exit>목록으로</button><button class="btn ghost" data-next>다음 ›</button></div>`;
     bindPlay(body);
     body.querySelector('[data-reveal]').addEventListener('click', () => { showKo = !showKo; body.querySelectorAll('[data-ko]').forEach(x => x.classList.toggle('hidden', !showKo)); body.querySelector('[data-reveal]').textContent = showKo ? '뜻 숨기기' : '뜻 보기'; });
     body.querySelectorAll('[data-rate]').forEach(b => b.addEventListener('click', () => { store.rateExpr(c.id, b.dataset.rate === '1'); next(); }));
     body.querySelector('[data-next]').addEventListener('click', next);
-    body.querySelector('[data-prev]').addEventListener('click', () => { i = (i - 1 + cards.length) % cards.length; showKo = false; draw(); });
+    body.querySelector('[data-prev]').addEventListener('click', () => { if (!trail.length) return; i = trail.pop(); showKo = false; draw(); });
     body.querySelector('[data-exit]').addEventListener('click', () => { player.stop(); stopSpeaking(); onExit(); });
     body.querySelector('[data-repeat]').addEventListener('click', () => { cycleRepeat(); draw(); });
     body.querySelector('[data-gap]').addEventListener('click', () => { cycleGap(); draw(); });
@@ -179,7 +184,7 @@ export function flashcards(body, cards, onExit) {
     body.querySelectorAll('[data-say]').forEach(b => b.addEventListener('click', () => { player.stop(); setPlayUI(false); }, true));
     play();
   };
-  const next = () => { if (i + 1 >= cards.length) { toast('한 바퀴 완료! 🎉'); i = 0; } else i++; showKo = false; draw(); };
+  const next = () => { trail.push(i); if (i + 1 >= cards.length) { toast('한 바퀴 완료! 🎉'); i = 0; } else i++; showKo = false; draw(); };
   draw();
   return { stop: () => player.stop(), destroy: () => player.stop() };
 }
