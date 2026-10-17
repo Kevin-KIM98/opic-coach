@@ -1144,15 +1144,333 @@
           ]
         }
       ]
+    },
+    {
+      "id": "im3b-feel",
+      "emoji": "💭",
+      "set": "im3b",
+      "title": "Part 2 · 감정 · 솔직한 의견",
+      "desc": "느낌과 호불호를 솔직하게. 묘사·의견 답변에 감정을 한 줄 더하면 IM3 이상으로 들립니다.",
+      "items": [
+        {
+          "en": "I get excited when I watch concerts.",
+          "ko": "저는 ___할 때 ___해져요.",
+          "level": "IM",
+          "pattern": "I get ___ when ___.",
+          "examples": [
+            "I get tired when I work for a long time.",
+            "I get nervous when I speak English.",
+            "I get happy when I spend time with friends."
+          ]
+        },
+        {
+          "en": "To be honest, I don't like crowded places.",
+          "ko": "솔직히 말하면, ___.",
+          "level": "IM",
+          "pattern": "To be honest, ___.",
+          "examples": [
+            "To be honest, I'm not good at cooking.",
+            "To be honest, I prefer staying home.",
+            "To be honest, I was surprised."
+          ]
+        },
+        {
+          "en": "I can't stand waiting in traffic.",
+          "ko": "저는 ___를 정말 못 참아요.",
+          "level": "IM",
+          "pattern": "I can't stand ___.",
+          "examples": [
+            "I can't stand noisy places.",
+            "I can't stand eating spicy food.",
+            "I can't stand being late."
+          ]
+        },
+        {
+          "en": "I don't mind waiting.",
+          "ko": "저는 ___는 괜찮아요.",
+          "level": "IM",
+          "pattern": "I don't mind ___.",
+          "examples": [
+            "I don't mind doing chores.",
+            "I don't mind working late.",
+            "I don't mind trying new food."
+          ]
+        },
+        {
+          "en": "I'm used to getting up early.",
+          "ko": "저는 ___에 익숙해요.",
+          "level": "IM",
+          "pattern": "I'm used to ___.",
+          "examples": [
+            "I'm used to cold weather.",
+            "I'm used to studying alone.",
+            "I'm used to crowded places."
+          ]
+        },
+        {
+          "en": "It seemed interesting.",
+          "ko": "___해 보였어요.",
+          "level": "IM",
+          "pattern": "It seemed ___.",
+          "examples": [
+            "It seemed amazing.",
+            "It seemed nice.",
+            "It seemed expensive."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "im3b-habit",
+      "emoji": "⏱️",
+      "set": "im3b",
+      "title": "Part 2 · 노력 · 빈도 · 상황",
+      "desc": "평소에 애쓰는 일, 대부분 하는 일, 상황에 따라 다른 일. 루틴 답변을 풍성하게 만듭니다.",
+      "items": [
+        {
+          "en": "I try to exercise every day.",
+          "ko": "저는 ___하려고 노력해요.",
+          "level": "IM",
+          "pattern": "I try to ___.",
+          "examples": [
+            "I try to eat healthy food.",
+            "I try to sleep early on weekdays.",
+            "I try to avoid crowded places."
+          ]
+        },
+        {
+          "en": "I make time for exercise every day.",
+          "ko": "저는 일부러 ___할 시간을 내요.",
+          "level": "IM",
+          "pattern": "I make time for ___.",
+          "examples": [
+            "I make time for a walk.",
+            "I make time for reading at night.",
+            "I make time for myself."
+          ]
+        },
+        {
+          "en": "Most of the time, I stay home.",
+          "ko": "대부분은 ___해요.",
+          "level": "IM",
+          "pattern": "Most of the time, I ___.",
+          "examples": [
+            "Most of the time, I take the subway.",
+            "Most of the time, I go there to jog.",
+            "Most of the time, I listen to jazz."
+          ]
+        },
+        {
+          "en": "It depends on the weather.",
+          "ko": "___에 따라 달라요.",
+          "level": "IM",
+          "pattern": "It depends on ___.",
+          "examples": [
+            "It depends on my mood.",
+            "It depends on the place.",
+            "It depends on the time."
+          ]
+        },
+        {
+          "en": "It takes 30 minutes.",
+          "ko": "___ 걸려요.",
+          "level": "IM",
+          "pattern": "It takes ___.",
+          "examples": [
+            "It takes an hour.",
+            "It takes about 10 minutes.",
+            "It takes a while."
+          ]
+        },
+        {
+          "en": "Whenever I go there, I get excited.",
+          "ko": "___할 때마다 ___해요.",
+          "level": "IM",
+          "pattern": "Whenever I ___, ___.",
+          "examples": [
+            "Whenever I jog, I get excited.",
+            "Whenever I listen to that song, I get relaxed.",
+            "Whenever I watch it, I get happy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "im3b-story",
+      "emoji": "🎬",
+      "set": "im3b",
+      "title": "Part 2 · 경험 이야기 전개",
+      "desc": "갑자기 → 그 후 → ~하자마자 → 돌아다니며. 경험 답변을 시간 순서로 끌고 가는 연결 패턴입니다.",
+      "items": [
+        {
+          "en": "Out of nowhere, it started raining.",
+          "ko": "갑자기 ___했어요.",
+          "level": "IM",
+          "pattern": "Out of nowhere, ___.",
+          "examples": [
+            "Out of nowhere, I got a call from an old friend.",
+            "Out of nowhere, the concert got canceled.",
+            "Out of nowhere, I felt really happy."
+          ]
+        },
+        {
+          "en": "After that, I usually go back home.",
+          "ko": "그 후에 ___했어요.",
+          "level": "IM",
+          "pattern": "After that, ___.",
+          "examples": [
+            "After that, I ate something.",
+            "After that, we took a picture.",
+            "After that, I felt better."
+          ]
+        },
+        {
+          "en": "As soon as I got there, I took a picture.",
+          "ko": "___하자마자 ___했어요.",
+          "level": "IM",
+          "pattern": "As soon as I ___, ___.",
+          "examples": [
+            "As soon as I went jogging, I felt better.",
+            "As soon as I got bored, I went for a walk.",
+            "As soon as I get up, I drink a glass of water."
+          ]
+        },
+        {
+          "en": "I walked around and drank coffee.",
+          "ko": "저는 돌아다니면서 ___했어요.",
+          "level": "IM",
+          "pattern": "I walked around and ___.",
+          "examples": [
+            "I walked around and talked with my friend.",
+            "I walked around and took a picture.",
+            "I walked around and looked at the shops."
+          ]
+        },
+        {
+          "en": "There were some people.",
+          "ko": "___가 있었어요. (There are ___: 있어요)",
+          "level": "IM",
+          "pattern": "There were ___.",
+          "examples": [
+            "There were some places to rest.",
+            "There are so many people.",
+            "There are many types of restaurants."
+          ]
+        },
+        {
+          "en": "It was really great.",
+          "ko": "정말 ___했어요.",
+          "level": "IM",
+          "pattern": "It was really ___.",
+          "examples": [
+            "It was really satisfying.",
+            "It was really exciting.",
+            "It was one of the best concerts."
+          ]
+        },
+        {
+          "en": "I liked the view.",
+          "ko": "저는 그 ___가 좋았어요.",
+          "level": "IM",
+          "pattern": "I liked the ___.",
+          "examples": [
+            "I liked the song.",
+            "I liked the atmosphere.",
+            "I liked the food."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "im3b-reason",
+      "emoji": "💡",
+      "set": "im3b",
+      "title": "Part 2 · 좋아하는 것 · 이유",
+      "desc": "제일 좋아하는 것과 가장 큰 이유, 그래서 ~해요. 묘사·의견 답변의 핵심 뼈대입니다.",
+      "items": [
+        {
+          "en": "One of my favorite bands is BTS.",
+          "ko": "제가 가장 좋아하는 ___ 중 하나는 ___예요.",
+          "level": "IM",
+          "pattern": "One of my favorite ___ is ___.",
+          "examples": [
+            "One of my favorite movie genres is action.",
+            "One of my favorite foods is Korean food.",
+            "One of my favorite places is Haeundae."
+          ]
+        },
+        {
+          "en": "The biggest reason is that it's exciting.",
+          "ko": "가장 큰 이유는 ___라는 거예요.",
+          "level": "IM",
+          "pattern": "The biggest reason is that ___.",
+          "examples": [
+            "The biggest reason is that I was tired.",
+            "The biggest reason is that I want to lose weight.",
+            "The biggest reason is that it's energetic."
+          ]
+        },
+        {
+          "en": "That's why I like it.",
+          "ko": "그래서 저는 ___해요.",
+          "level": "IM",
+          "pattern": "That's why I ___.",
+          "examples": [
+            "That's why I like to go there.",
+            "That's why I can't forget about it.",
+            "That's why I think so."
+          ]
+        },
+        {
+          "en": "It helps me relax.",
+          "ko": "그건 제가 ___하는 데 도움이 돼요.",
+          "level": "IM",
+          "pattern": "It helps me ___.",
+          "examples": [
+            "It helps me clear my mind.",
+            "It helps me release stress.",
+            "It helps me feel better."
+          ]
+        },
+        {
+          "en": "Since I was tired, I went to bed early.",
+          "ko": "___해서 ___했어요. (이유)",
+          "level": "IM",
+          "pattern": "Since I was ___, ___.",
+          "examples": [
+            "Since I was surprised, I didn't say anything.",
+            "Since I was excited, I couldn't sleep.",
+            "Since I'm a student, I don't have much money."
+          ]
+        },
+        {
+          "en": "It's one of the most popular songs.",
+          "ko": "가장 인기 있는 ___ 중 하나예요.",
+          "level": "IM",
+          "pattern": "It's one of the most popular ___.",
+          "examples": [
+            "It's one of the most popular movies.",
+            "It's one of the most popular bands.",
+            "It's one of the most popular places."
+          ]
+        }
+      ]
     }
   ],
   "sets": [
     {
       "id": "im3",
-      "title": "IM3 필수 패턴 25",
+      "title": "IM3 필수 패턴 25 · Part 1",
       "desc": "시험장 가기 전 꼭 외울 IM3 기본 패턴. 패턴마다 영상 예문 4개.",
       "url": "https://www.youtube.com/watch?v=yFvkBuldv1Y",
       "note": "영상(Sarah)의 25개 패턴과 예문을 그대로 옮겼습니다. 듣고 따라 말하기(섀도잉)를 반복하세요."
+    },
+    {
+      "id": "im3b",
+      "title": "IM3 필수 패턴 25 · Part 2",
+      "desc": "감정·노력·경험 전개·이유까지. Part 1 다음에 외울 IM3 패턴, 패턴마다 영상 예문 4개.",
+      "url": "https://www.youtube.com/watch?v=Ivwc3Ou0Z9E",
+      "note": "영상(Sarah)의 25개 패턴과 예문을 옮겼습니다. 'Since I was / As soon as I' 는 영상의 앞부분에 뒷문장을 이어 완성했습니다."
     },
     {
       "id": "kang",

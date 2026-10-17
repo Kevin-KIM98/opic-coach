@@ -504,9 +504,9 @@
           "ko": "맛있는 커피와 멋진 바다 전망이 있는 아름다운 곳이에요."
         },
         {
-          "pid": "reason#2",
-          "en": "It helps me take a break from my busy job.",
-          "ko": "바쁜 회사 일에서 벗어나 쉬는 데 도움이 돼요."
+          "pid": "im3b-feel#1",
+          "en": "To be honest, I never get tired of the ocean view there.",
+          "ko": "솔직히 거기 바다 풍경은 아무리 봐도 질리지 않아요."
         }
       ]
     },
@@ -526,9 +526,9 @@
           "ko": "성산일출봉에서 해돋이를 보려고 새벽 다섯 시에 일어났던 때가 기억나요."
         },
         {
-          "pid": "im3-past#1",
-          "en": "It was dark and windy on the way up.",
-          "ko": "올라가는 길은 어둡고 바람이 많이 불었어요."
+          "pid": "im3b-story#2",
+          "en": "As soon as I reached the top, the sun started to come up over the ocean.",
+          "ko": "정상에 도착하자마자 바다 위로 해가 떠오르기 시작했어요."
         },
         {
           "pid": "memory#1",
@@ -548,9 +548,9 @@
           "ko": "저는 보통 한 달쯤 전에 가족과 함께 여행 계획을 세워요."
         },
         {
-          "pid": "im3-routine#3",
-          "en": "I always check the weather forecast because rain can ruin a beach trip.",
-          "ko": "비가 오면 바다 여행을 망칠 수 있어서 항상 일기예보를 확인해요."
+          "pid": "im3b-habit#0",
+          "en": "I try to check the weather forecast a week before because rain can ruin a beach trip.",
+          "ko": "비가 오면 바다 여행을 망칠 수 있어서 일주일 전부터 일기예보를 확인하려고 해요."
         },
         {
           "pid": "start#3",
@@ -597,9 +597,9 @@
       "title": "안목 커피거리의 여유",
       "parts": [
         {
-          "pid": "im3-routine#5",
-          "en": "On every trip, I visit Anmok coffee street, which is famous for its seaside cafes.",
-          "ko": "여행 갈 때마다 바닷가 카페로 유명한 안목 커피거리에 들러요."
+          "pid": "im3b-habit#5",
+          "en": "Whenever I go to Gangneung, I stop by Anmok coffee street, which is famous for its seaside cafes.",
+          "ko": "강릉에 갈 때마다 바닷가 카페로 유명한 안목 커피거리에 들러요."
         },
         {
           "pid": "place#5",

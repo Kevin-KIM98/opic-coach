@@ -711,9 +711,9 @@
           "ko": "집에서 걸어서 10분밖에 안 걸려요."
         },
         {
-          "pid": "im3-routine#6",
-          "en": "And then, I listen to music or read the news on the way.",
-          "ko": "그리고 가는 길에 음악을 듣거나 뉴스를 읽어요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I listen to music or read the news on the way.",
+          "ko": "가는 길에는 대부분 음악을 듣거나 뉴스를 읽어요."
         }
       ]
     },
@@ -733,9 +733,9 @@
           "ko": "차가 너무 막혀서 오래 운전했어요."
         },
         {
-          "pid": "im3-past#6",
-          "en": "I enjoyed making songpyeon with my whole family.",
-          "ko": "온 가족이 함께 송편을 빚어서 즐거웠어요."
+          "pid": "im3b-story#1",
+          "en": "After that, we made songpyeon together with the whole family.",
+          "ko": "그 후에는 온 가족이 함께 송편을 빚었어요."
         },
         {
           "pid": "memory#2",
@@ -760,9 +760,9 @@
           "ko": "보통 일주일에 세 번 탄천에 조깅하러 가요."
         },
         {
-          "pid": "im3-describe#3",
-          "en": "In fall, it's cool and sunny, so the air feels really fresh.",
-          "ko": "가을에는 선선하고 맑아서 공기가 정말 상쾌해요."
+          "pid": "im3b-feel#2",
+          "en": "I can't stand running in the hot and humid summer, though.",
+          "ko": "그런데 덥고 습한 여름에 달리는 건 정말 못 견디겠어요."
         },
         {
           "pid": "reason#0",
@@ -782,9 +782,9 @@
           "ko": "작년에 아들 학원비를 내려다가 은행 앱에 문제가 생겼어요."
         },
         {
-          "pid": "im3-past#4",
-          "en": "I was really worried because my account got locked after five wrong tries.",
-          "ko": "비밀번호를 다섯 번 틀려서 계정이 잠기는 바람에 정말 걱정됐어요."
+          "pid": "im3b-story#2",
+          "en": "As soon as I entered the wrong password for the fifth time, my account got locked.",
+          "ko": "비밀번호를 다섯 번째로 틀리자마자 계정이 잠겨 버렸어요."
         },
         {
           "pid": "problem#2",
@@ -819,9 +819,9 @@
           "ko": "특히 햇살 좋은 오후에 거실 전체가 빛으로 가득 찰 때면 아늑한 분위기 덕분에 마음이 편안해져요."
         },
         {
-          "pid": "reason#5",
-          "en": "Honestly, there's nothing better than dozing off on it after my morning jog on a lazy weekend.",
-          "ko": "솔직히 느긋한 주말에 아침 조깅을 하고 나서 거기서 꾸벅꾸벅 조는 것만큼 좋은 건 없어요."
+          "pid": "im3b-habit#5",
+          "en": "Whenever I come back from my morning jog on a lazy weekend, I doze off on it for a while.",
+          "ko": "느긋한 주말에 아침 조깅을 하고 돌아올 때마다 거기서 한동안 꾸벅꾸벅 졸아요."
         }
       ]
     },

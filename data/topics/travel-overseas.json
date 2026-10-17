@@ -504,9 +504,9 @@
           "ko": "가장 기억에 남는 곳은 아이들이 정말 좋아했던 유니버설 스튜디오였어요."
         },
         {
-          "pid": "im3-past#6",
-          "en": "I enjoyed walking around Dotonbori and eating takoyaki at night.",
-          "ko": "밤에는 도톤보리를 걸어 다니며 타코야키를 먹는 게 즐거웠어요."
+          "pid": "im3b-story#3",
+          "en": "At night, I walked around and tried takoyaki at the food stalls in Dotonbori.",
+          "ko": "밤에는 여기저기 걸어 다니며 도톤보리 노점에서 타코야키를 먹어 봤어요."
         }
       ]
     },
@@ -521,9 +521,9 @@
           "ko": "저는 보통 가족과 해외여행을 가서 일찍 계획을 세워요."
         },
         {
-          "pid": "im3-routine#3",
-          "en": "I always book the flights and the hotel online first.",
-          "ko": "항상 먼저 항공권과 호텔을 온라인으로 예약해요."
+          "pid": "im3b-habit#0",
+          "en": "I try to book the flights and the hotel online at least two months before.",
+          "ko": "적어도 두 달 전에는 항공권과 호텔을 온라인으로 예약하려고 해요."
         },
         {
           "pid": "routine#2",
@@ -548,9 +548,9 @@
           "ko": "작년 여름 오사카에서 지하철을 탈 때 예상치 못한 일이 생겼어요."
         },
         {
-          "pid": "im3-past#4",
-          "en": "I was really worried because my son left his backpack on the train.",
-          "ko": "아들이 배낭을 지하철에 두고 내려서 정말 걱정됐어요."
+          "pid": "im3b-story#0",
+          "en": "Out of nowhere, my son shouted that he had left his backpack on the train.",
+          "ko": "갑자기 아들이 배낭을 지하철에 두고 내렸다고 소리쳤어요."
         },
         {
           "pid": "problem#2",
@@ -612,9 +612,9 @@
           "ko": "저녁마다 아이들과 도톤보리를 돌아다니며 타코야키와 라멘을 사 먹는 게 즐거웠어요."
         },
         {
-          "pid": "people#5",
-          "en": "Spending time with my family helps me forget about all the meetings and projects waiting for me at work.",
-          "ko": "가족과 시간을 보내면 회사에서 저를 기다리는 회의와 프로젝트를 다 잊을 수 있어요."
+          "pid": "im3b-reason#2",
+          "en": "That's why I want to take my kids back to Osaka next summer.",
+          "ko": "그래서 내년 여름에 아이들을 데리고 오사카에 다시 가고 싶어요."
         }
       ]
     },

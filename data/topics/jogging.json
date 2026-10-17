@@ -491,9 +491,9 @@
           "ko": "작은 개울과 나무가 많은 평화로운 곳이에요."
         },
         {
-          "pid": "reason#0",
-          "en": "I like jogging there because the air is fresh in the early morning.",
-          "ko": "이른 아침에 공기가 상쾌해서 거기서 조깅하는 걸 좋아해요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I jog there early in the morning because the air is fresh.",
+          "ko": "저는 공기가 상쾌한 이른 아침에 주로 거기서 조깅해요."
         }
       ]
     },
@@ -508,14 +508,14 @@
           "ko": "저는 일주일에 세 번 정도 조깅을 해요."
         },
         {
+          "pid": "im3b-habit#0",
+          "en": "I try to go out early in the morning before work.",
+          "ko": "출근 전 이른 아침에 나가려고 해요."
+        },
+        {
           "pid": "routine#2",
           "en": "Before I go out, I always stretch for five minutes.",
           "ko": "나가기 전에 항상 5분 동안 스트레칭을 해요."
-        },
-        {
-          "pid": "im3-routine#4",
-          "en": "I take my phone, my earphones, and a small bottle of water.",
-          "ko": "휴대폰, 이어폰, 그리고 작은 물병을 챙겨요."
         },
         {
           "pid": "im3-routine#6",
@@ -545,9 +545,9 @@
           "ko": "민호라는 친구가 있는데, 같이 탄천 산책로에 갔어요."
         },
         {
-          "pid": "im3-past#1",
-          "en": "It was really hard, and I was out of breath after just ten minutes.",
-          "ko": "정말 힘들었고, 10분 만에 숨이 찼어요."
+          "pid": "im3b-feel#5",
+          "en": "It seemed easy at first, but I was out of breath after just ten minutes.",
+          "ko": "처음엔 쉬워 보였는데, 겨우 10분 만에 숨이 찼어요."
         }
       ]
     },
@@ -616,9 +616,9 @@
           "ko": "모든 건 연례 건강검진에서 의사가 제 혈압이 높아지고 있다고 말했을 때 시작됐어요."
         },
         {
-          "pid": "im3-past#0",
-          "en": "Soon after that, I went to the Tancheon trail with my friend Minho, who had already been jogging for a while.",
-          "ko": "얼마 후, 이미 한동안 조깅을 해 온 친구 민호와 함께 탄천 산책로에 갔어요."
+          "pid": "im3b-story#1",
+          "en": "After that, I went to the Tancheon trail with my coworker Minho, who had already been jogging for a while.",
+          "ko": "그 후에 이미 한동안 조깅을 해 온 친구 민호와 함께 탄천 산책로에 갔어요."
         },
         {
           "pid": "memory#5",

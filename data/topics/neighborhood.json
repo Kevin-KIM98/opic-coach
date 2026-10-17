@@ -474,9 +474,9 @@
           "ko": "우리 집에서 걸어서 10분밖에 안 걸려요."
         },
         {
-          "pid": "im3-routine#1",
-          "en": "I often take walks along the Tancheon trail and in Central Park.",
-          "ko": "저는 탄천 산책로와 중앙공원을 자주 산책해요."
+          "pid": "im3b-habit#5",
+          "en": "Whenever I have free time, I take a walk along the Tancheon trail or in Central Park.",
+          "ko": "시간이 날 때마다 탄천 산책로나 중앙공원을 산책해요."
         }
       ]
     },
@@ -501,9 +501,9 @@
           "ko": "오후에는 보통 가족과 함께 중앙공원을 산책해요."
         },
         {
-          "pid": "im3-routine#2",
-          "en": "I sometimes ride bikes along the Tancheon trail with my kids.",
-          "ko": "가끔은 아이들과 함께 탄천 산책로를 따라 자전거를 타요."
+          "pid": "im3b-habit#1",
+          "en": "On Sunday afternoons, I make time for a bike ride along the Tancheon trail with my kids.",
+          "ko": "일요일 오후에는 아이들과 탄천 산책로를 따라 자전거를 타려고 시간을 내요."
         }
       ]
     },
@@ -523,9 +523,9 @@
           "ko": "모든 건 약 4년 전에 시에서 산책로 전체를 새로 단장하면서 시작됐어요."
         },
         {
-          "pid": "change#1",
-          "en": "Compared to before, the trail is much brighter and safer now.",
-          "ko": "예전에 비하면 지금 산책로는 훨씬 밝고 안전해요."
+          "pid": "im3b-story#5",
+          "en": "After the renovation, it was really nice to see the trail become so much brighter and safer.",
+          "ko": "단장이 끝난 뒤 산책로가 훨씬 밝고 안전해진 걸 보니 정말 좋았어요."
         },
         {
           "pid": "start#3",
@@ -545,9 +545,9 @@
           "ko": "대전에 살던 어린 시절에는 주말마다 엄마와 함께 전통시장에 갔어요."
         },
         {
-          "pid": "memory#2",
-          "en": "The most memorable thing was that everyone in the neighborhood knew each other.",
-          "ko": "가장 기억에 남는 건 동네 사람들이 모두 서로 알고 지냈다는 거예요."
+          "pid": "im3b-story#4",
+          "en": "Back then, there were a lot of neighbors who knew my family by name.",
+          "ko": "그때는 우리 가족 이름을 아는 이웃들이 정말 많았어요."
         },
         {
           "pid": "change#3",
@@ -572,9 +572,9 @@
           "ko": "주말에 관해서라면, 저는 속도를 늦추고 우리 동네에 머무르는 걸 정말 좋아해요."
         },
         {
-          "pid": "im3-routine#3",
-          "en": "On Saturday mornings, I always walk to a little cafe around the corner and read a book for an hour or so over an Americano.",
-          "ko": "토요일 아침에는 항상 길모퉁이의 작은 카페로 걸어가서 아메리카노를 마시며 한 시간쯤 책을 읽어요."
+          "pid": "im3b-habit#1",
+          "en": "On Saturday mornings, I make time for an hour of reading over an Americano at a little cafe around the corner.",
+          "ko": "토요일 아침에는 길모퉁이의 작은 카페에서 아메리카노를 마시며 한 시간쯤 책 읽을 시간을 내요."
         },
         {
           "pid": "reason#4",

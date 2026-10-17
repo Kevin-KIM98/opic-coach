@@ -35,7 +35,8 @@ async function open(hash, seed = null) {
   const txt = await page.innerText('#view');
   check('개요: 72 · 25 두 세트 진행률', /0\s*\/\s*72/.test(txt) && /0\s*\/\s*25/.test(txt), txt.slice(0, 400));
   check('개요: 두 영상 출처 링크', await page.$('a[href="https://www.youtube.com/watch?v=378IPmgXaWc"]') !== null && await page.$('a[href="https://www.youtube.com/watch?v=yFvkBuldv1Y"]') !== null);
-  check('개요: 12개 테마 + IM3 4개 그룹', (await page.$$('#dbody .list .list-row')).length === 16);
+  check('개요: 12개 테마 + IM3 Part 1·2 각 4개 그룹', (await page.$$('#dbody .list .list-row')).length === 20);
+  check('개요: Part 2 영상 링크', await page.$('a[href="https://www.youtube.com/watch?v=Ivwc3Ou0Z9E"]') !== null);
   check('개요: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   if (OUT) await page.screenshot({ path: `${OUT}/patterns.png`, fullPage: true });
   await page.close();
@@ -67,6 +68,14 @@ async function open(hash, seed = null) {
   check('IM3 25: 예문 100개', (await page.$$('[data-list] [data-say]')).length === 100);
   check('IM3 25: 영상 예문', (await page.innerText('[data-list]')).includes('After work, I usually go to the gym.'));
   check('IM3 25: 같은 세트 그룹 칩만', (await page.$$eval('.chips .chip', xs => xs.map(x => x.textContent))).every(t => t === '전체' || t.startsWith('IM3')));
+  await page.close();
+}
+{
+  const { page, errs } = await open('#/drill?tab=patterns&group=all:im3b');
+  check('Part 2: 패턴 25개 · 예문 100개', (await page.$$('[data-list] .expr')).length === 25 && (await page.$$('[data-list] [data-say]')).length === 100);
+  check('Part 2: 영상 예문', (await page.innerText('[data-list]')).includes('Out of nowhere, it started raining.'));
+  check('Part 2: 같은 세트 그룹 칩만', (await page.$$eval('.chips .chip', xs => xs.map(x => x.textContent))).every(t => t === '전체' || t.startsWith('Part 2')));
+  check('Part 2: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   check('IM3 25: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   await page.close();
 }

@@ -483,9 +483,9 @@
           "ko": "연못과 나무가 많은 넓고 푸른 곳이에요."
         },
         {
-          "pid": "im3-describe#3",
-          "en": "It's always clean and quiet.",
-          "ko": "항상 깨끗하고 조용해요."
+          "pid": "im3b-feel#3",
+          "en": "I don't mind going there every weekend because it's always clean and quiet.",
+          "ko": "항상 깨끗하고 조용해서 매주 가도 전혀 질리지 않아요."
         }
       ]
     },
@@ -510,9 +510,9 @@
           "ko": "아이들이 자전거를 타는 동안 저는 연못 주변을 산책해요."
         },
         {
-          "pid": "im3-routine#6",
-          "en": "And then, I sit on a bench and eat some snacks with my family.",
-          "ko": "그다음에 가족과 벤치에 앉아 간식을 먹어요."
+          "pid": "im3b-habit#5",
+          "en": "Whenever I get tired of walking, I sit on a bench and eat some snacks with my family.",
+          "ko": "걷다가 지칠 때마다 가족과 벤치에 앉아 간식을 먹어요."
         }
       ]
     },
@@ -527,9 +527,9 @@
           "ko": "딸이 중앙공원에서 자전거 타는 법을 배웠던 때가 기억나요."
         },
         {
-          "pid": "im3-past#1",
-          "en": "It was two years ago in spring, and the cherry blossoms were everywhere.",
-          "ko": "2년 전 봄이었고, 사방에 벚꽃이 피어 있었어요."
+          "pid": "im3b-story#4",
+          "en": "There were cherry blossoms all along the trail that spring, about two years ago.",
+          "ko": "2년 전쯤 그해 봄, 산책로를 따라 벚꽃이 가득 피어 있었어요."
         },
         {
           "pid": "im3-past#2",
@@ -564,9 +564,9 @@
           "ko": "요즘은 나이에 상관없이 사람들이 공원을 찾는 편이에요."
         },
         {
-          "pid": "im3-describe#3",
-          "en": "It's because people care more about their health now.",
-          "ko": "이제 사람들이 건강에 더 신경을 쓰기 때문이에요."
+          "pid": "im3b-reason#1",
+          "en": "The biggest reason is that people care more about their health now.",
+          "ko": "가장 큰 이유는 이제 사람들이 건강에 더 신경을 쓰기 때문이에요."
         }
       ]
     },
@@ -581,14 +581,14 @@
           "ko": "주말 오후에 중앙공원에서 가족과 시간을 보내면 회의로 가득했던 긴 한 주의 피로가 풀려요."
         },
         {
-          "pid": "im3-describe#4",
-          "en": "It takes about 15 minutes to walk there, and by the time we arrive, the kids are already racing ahead on their bikes.",
-          "ko": "걸어서 15분 정도 걸리는데, 도착할 즈음이면 아이들은 벌써 자전거를 타고 앞서 달려가요."
+          "pid": "im3b-habit#1",
+          "en": "I make time for this walk every weekend, no matter how busy work gets.",
+          "ko": "회사 일이 아무리 바빠도 매주 주말 이 산책 시간은 꼭 따로 내요."
         },
         {
           "pid": "im3-routine#4",
-          "en": "I take a slow walk around the pond while they ride, and we catch up on the week.",
-          "ko": "아이들이 자전거를 타는 동안 저는 연못 주변을 천천히 걸으며 한 주 동안의 이야기를 나눠요."
+          "en": "I take a slow walk around the pond while the kids ride their bikes, and then we all catch up on the week.",
+          "ko": "아이들이 자전거를 타는 동안 저는 연못 주변을 천천히 걷고, 그다음 다 같이 한 주 동안의 이야기를 나눠요."
         },
         {
           "pid": "routine#4",

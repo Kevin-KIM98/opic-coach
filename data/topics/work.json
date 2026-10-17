@@ -491,14 +491,14 @@
           "ko": "아파트에서 사무실까지 차로 20분 정도 걸려요."
         },
         {
+          "pid": "im3b-feel#3",
+          "en": "I don't mind the drive because the traffic is usually light in the morning.",
+          "ko": "아침에는 보통 차가 많이 막히지 않아서 운전해서 가는 건 괜찮아요."
+        },
+        {
           "pid": "describe#0",
           "en": "It's a bright, open place with big windows and long desks.",
           "ko": "큰 창문과 긴 책상이 있는 밝고 탁 트인 곳이에요."
-        },
-        {
-          "pid": "people#2",
-          "en": "My coworker Minho and I have a lot in common.",
-          "ko": "동료 민호와 저는 공통점이 많아요."
         }
       ]
     },
@@ -513,9 +513,9 @@
           "ko": "저는 보통 9시에 출근해요."
         },
         {
-          "pid": "im3-routine#1",
-          "en": "I often review my team's code in the morning.",
-          "ko": "오전에는 팀원들의 코드를 자주 검토해요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I review my team's code in the morning.",
+          "ko": "오전에는 주로 팀원들의 코드를 검토해요."
         },
         {
           "pid": "people#0",
@@ -540,9 +540,9 @@
           "ko": "5년 전쯤 새 쇼핑 앱을 출시했을 때 예상치 못한 일이 일어났어요."
         },
         {
-          "pid": "im3-past#2",
-          "en": "When the server crashed, I had to call my whole team back to the office.",
-          "ko": "서버가 다운되자 팀원 전체를 사무실로 다시 불러야 했어요."
+          "pid": "im3b-story#2",
+          "en": "As soon as the server crashed, I called my whole team back to the office.",
+          "ko": "서버가 다운되자마자 팀원 전체를 사무실로 다시 불렀어요."
         },
         {
           "pid": "problem#3",
@@ -616,9 +616,9 @@
           "ko": "서비스를 연 지 겨우 10분 만에 서버가 다운돼서, 5년 전쯤 새 쇼핑 앱을 출시한 그날 밤을 절대 잊지 못할 거예요."
         },
         {
-          "pid": "im3-past#4",
-          "en": "I was so nervous that my heart sank, and my boss kept calling me every five minutes.",
-          "ko": "너무 긴장해서 가슴이 철렁했고, 상사는 5분마다 계속 전화를 했어요."
+          "pid": "im3b-story#1",
+          "en": "After that, my boss kept calling me every five minutes, and I was so nervous that my heart sank.",
+          "ko": "그 후로 상사가 5분마다 계속 전화를 했고, 저는 너무 긴장해서 가슴이 철렁했어요."
         },
         {
           "pid": "problem#2",

@@ -480,9 +480,9 @@
           "ko": "일주일에 세 번 정도 탄천 산책로를 따라 조깅을 해요."
         },
         {
-          "pid": "im3-describe#4",
-          "en": "It takes about 20 minutes to drive to my office.",
-          "ko": "회사까지 차로 20분 정도 걸려요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I drive to my office, and it takes about 20 minutes.",
+          "ko": "대부분은 차로 출근하는데, 20분 정도 걸려요."
         },
         {
           "pid": "im3-routine#6",
@@ -512,9 +512,9 @@
           "ko": "바쁜 한 주를 보낸 뒤 긴장을 푸는 데 도움이 돼요."
         },
         {
-          "pid": "people#0",
-          "en": "On Friday nights, I usually watch movies with my family at home.",
-          "ko": "금요일 밤에는 보통 집에서 가족과 영화를 봐요."
+          "pid": "im3b-habit#1",
+          "en": "On Friday nights, I make time for a movie night with my family at home.",
+          "ko": "금요일 밤에는 집에서 가족과 영화의 밤을 보내려고 시간을 내요."
         }
       ]
     },
@@ -534,9 +534,9 @@
           "ko": "중학생 아들과 초등학생 딸이 있어요."
         },
         {
-          "pid": "im3-describe#4",
-          "en": "It takes only 20 minutes to drive from our apartment to my office.",
-          "ko": "우리 아파트에서 회사까지 차로 20분밖에 안 걸려요."
+          "pid": "im3b-habit#0",
+          "en": "On weekends, I try to spend as much time as I can with my kids.",
+          "ko": "주말에는 아이들과 최대한 많은 시간을 보내려고 해요."
         },
         {
           "pid": "like#3",
@@ -566,9 +566,9 @@
           "ko": "그러고 나서 하루 대부분을 코드 리뷰와 팀원들을 돕는 데 써요."
         },
         {
-          "pid": "people#0",
-          "en": "I usually have lunch with my coworker Minho.",
-          "ko": "점심은 보통 동료 민호와 함께 먹어요."
+          "pid": "im3b-feel#1",
+          "en": "To be honest, I enjoy helping my team members more than writing code myself.",
+          "ko": "솔직히 말하면, 직접 코드를 짜는 것보다 팀원들을 돕는 게 더 즐거워요."
         }
       ]
     },
@@ -588,9 +588,9 @@
           "ko": "그때부터 쭉 분당의 같은 IT 회사에서 일하고 있는데, 이 업계에서는 꽤 드문 일이에요."
         },
         {
-          "pid": "im3-describe#3",
-          "en": "It's pretty busy because I have back-to-back meetings and code reviews, but I honestly enjoy it.",
-          "ko": "회의와 코드 리뷰가 줄줄이 이어져서 꽤 바쁘지만, 솔직히 즐기고 있어요."
+          "pid": "im3b-feel#1",
+          "en": "To be honest, my days are pretty busy with back-to-back meetings and code reviews, but I really enjoy them.",
+          "ko": "솔직히 회의와 코드 리뷰가 줄줄이 이어져서 하루하루가 꽤 바쁘지만, 정말 즐기고 있어요."
         },
         {
           "pid": "like#4",

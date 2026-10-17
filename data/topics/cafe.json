@@ -488,9 +488,9 @@
           "ko": "작지만 나무 테이블과 초록 식물이 많아서 정말 아늑해요."
         },
         {
-          "pid": "im3-routine#0",
-          "en": "On weekend mornings, I usually go to this cafe to read a book.",
-          "ko": "주말 아침에는 보통 책을 읽으러 이 카페에 가요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I go there on weekend mornings to read a book.",
+          "ko": "저는 주로 주말 아침에 책을 읽으러 거기에 가요."
         }
       ]
     },
@@ -510,9 +510,9 @@
           "ko": "따뜻한 아메리카노를 받아서 창가에 앉아요."
         },
         {
-          "pid": "reason#2",
-          "en": "It helps me relax before a busy week.",
-          "ko": "바쁜 한 주를 앞두고 긴장을 푸는 데 도움이 돼요."
+          "pid": "im3b-feel#1",
+          "en": "To be honest, this quiet time is my favorite part of the week.",
+          "ko": "솔직히 이 조용한 시간이 한 주 중에 제일 좋아요."
         },
         {
           "pid": "routine#2",
@@ -564,6 +564,11 @@
           "ko": "요즘 사람들은 카페를 사무실처럼 쓰는 경향이 있어요."
         },
         {
+          "pid": "im3b-feel#2",
+          "en": "I can't stand crowded cafes, so I usually go early in the morning.",
+          "ko": "저는 붐비는 카페를 정말 못 견뎌서 보통 이른 아침에 가요."
+        },
+        {
           "pid": "im3-describe#5",
           "en": "I prefer ordering ahead with an app because it saves a lot of time.",
           "ko": "저는 시간이 많이 절약돼서 앱으로 미리 주문하는 걸 더 좋아해요."
@@ -608,9 +613,9 @@
           "ko": "토요일 아침이면 가족이 아직 자는 동안 보통 중앙공원 옆 단골 카페에 가요."
         },
         {
-          "pid": "im3-describe#6",
-          "en": "I get my usual Americano, which the owner starts making the moment he sees me at the door.",
-          "ko": "늘 마시는 아메리카노를 받는데, 사장님은 제가 문 앞에 보이자마자 만들기 시작해요."
+          "pid": "im3b-story#2",
+          "en": "As soon as I walk in, the owner starts making my usual Americano.",
+          "ko": "제가 들어서자마자 사장님이 늘 마시는 아메리카노를 만들기 시작해요."
         },
         {
           "pid": "reason#4",
