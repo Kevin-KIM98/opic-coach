@@ -501,9 +501,9 @@
           "ko": "집 근처에 조용한 카페가 있어서 가끔 거기서 책을 읽어요."
         },
         {
-          "pid": "reason#0",
-          "en": "I like staying home because I'm really busy at work and just want to rest.",
-          "ko": "회사 일이 정말 바빠서 그냥 쉬고 싶기 때문에 집에 있는 게 좋아요."
+          "pid": "im3b-feel#3",
+          "en": "I don't mind staying home because I'm really busy at work and just want to rest.",
+          "ko": "회사 일이 정말 바빠서 그냥 쉬고 싶기 때문에 집에 있는 것도 괜찮아요."
         }
       ]
     },
@@ -523,9 +523,9 @@
           "ko": "가족과 집에 있으면서 보드게임을 했어요."
         },
         {
-          "pid": "memory#1",
-          "en": "It was such a happy moment when I opened the door and saw my parents from Daejeon.",
-          "ko": "문을 열고 대전에서 오신 부모님을 봤을 때 정말 행복한 순간이었어요."
+          "pid": "im3b-story#0",
+          "en": "Out of nowhere, someone rang the doorbell, and it was my parents from Daejeon.",
+          "ko": "갑자기 누가 초인종을 눌렀는데, 대전에서 오신 부모님이었어요."
         },
         {
           "pid": "im3-past#1",
@@ -550,9 +550,9 @@
           "ko": "그다음 가족을 위해 브런치를 만들어요."
         },
         {
-          "pid": "im3-routine#1",
-          "en": "In the afternoon, I often take a walk in Central Park with my family.",
-          "ko": "오후에는 가족과 자주 중앙공원을 산책해요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I take a walk in Central Park with my family in the afternoon.",
+          "ko": "오후에는 대부분 가족과 중앙공원을 산책해요."
         },
         {
           "pid": "routine#4",
@@ -599,9 +599,9 @@
           "ko": "동료들은 매년 여름 어디론가 비행기를 타고 떠나지만, 저는 휴가 때 집에서 쉬는 걸 좋아하는 사람이에요."
         },
         {
-          "pid": "im3-describe#5",
-          "en": "I prefer sleeping in until nine, which feels like a real luxury because I'm usually up at six thirty for my jog along Tancheon.",
-          "ko": "평소에는 탄천 조깅 때문에 여섯 시 반에 일어나서, 아홉 시까지 늦잠 자는 게 진짜 호사처럼 느껴져 더 좋아요."
+          "pid": "im3b-feel#4",
+          "en": "I'm used to getting up at six thirty for my jog along Tancheon, so sleeping in until nine feels like a real luxury.",
+          "ko": "평소 탄천 조깅 때문에 여섯 시 반에 일어나는 게 익숙해서, 아홉 시까지 늦잠 자는 게 진짜 호사처럼 느껴져요."
         },
         {
           "pid": "place#3",

@@ -460,9 +460,9 @@
       "title": "금요일 밤 영화 루틴",
       "parts": [
         {
-          "pid": "im3-routine#1",
-          "en": "On Friday nights, I often watch movies with my family in the living room.",
-          "ko": "금요일 밤에는 거실에서 가족과 자주 영화를 봐요."
+          "pid": "im3b-habit#1",
+          "en": "On Friday nights, I make time for a movie night with my family in the living room.",
+          "ko": "금요일 밤에는 거실에서 가족과 영화 보는 시간을 꼭 따로 내요."
         },
         {
           "pid": "routine#2",
@@ -529,9 +529,9 @@
           "ko": "놀랍게도 아들도 눈물을 닦고 있었어요."
         },
         {
-          "pid": "im3-past#6",
-          "en": "I enjoyed talking about the movie with my kids all the way home.",
-          "ko": "집에 오는 내내 아이들과 영화 이야기를 하며 즐거웠어요."
+          "pid": "im3b-story#1",
+          "en": "After that, we talked about the movie all the way home.",
+          "ko": "그 후에 집에 오는 내내 영화 이야기를 나눴어요."
         }
       ]
     },
@@ -556,9 +556,9 @@
           "ko": "예를 들어 영화를 잠깐 멈추고 잠옷 차림으로 소파에서 치킨을 먹을 수 있어요."
         },
         {
-          "pid": "im3-describe#5",
-          "en": "I prefer watching movies at home because it's cheaper and more comfortable.",
-          "ko": "더 저렴하고 편해서 저는 집에서 영화 보는 걸 더 좋아해요."
+          "pid": "im3b-reason#2",
+          "en": "That's why I usually watch movies at home these days.",
+          "ko": "그래서 요즘은 주로 집에서 영화를 봐요."
         }
       ]
     },
@@ -583,9 +583,9 @@
           "ko": "또 다른 이유는 액션 영화가 손에 땀을 쥐게 해서 회의와 코드 리뷰로 가득한 한 주를 완전히 잊게 해 주기 때문이에요."
         },
         {
-          "pid": "im3-describe#5",
-          "en": "I prefer watching them at home on our big TV, because the long sofa in our living room fits all four of us.",
-          "ko": "거실의 긴 소파에 네 식구가 다 앉을 수 있어서 저는 집에서 큰 TV로 보는 걸 더 좋아해요."
+          "pid": "im3b-feel#1",
+          "en": "To be honest, I prefer watching them at home on our big TV, because the long sofa in our living room fits all four of us.",
+          "ko": "솔직히 거실의 긴 소파에 네 식구가 다 앉을 수 있어서 저는 집에서 큰 TV로 보는 걸 더 좋아해요."
         }
       ]
     },

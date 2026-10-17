@@ -102,7 +102,7 @@ const back = async (page) => { await page.goBack(); await wait(page, 700); };
   await back(page);
   check('뒤로 → 그룹 목록', (await page.$$('[data-list] .expr')).length === 6);
   await back(page);
-  check('뒤로 → 만능 패턴 개요', (await page.$$('#dbody .list .list-row')).length === 16);
+  check('뒤로 → 만능 패턴 개요', (await page.$$('#dbody .list .list-row')).length === 20);
   await page.close();
 }
 

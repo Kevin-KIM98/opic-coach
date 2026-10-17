@@ -614,9 +614,9 @@
           "ko": "예전에는 CD를 들었는데, 지금은 차에서 음악을 스트리밍해요."
         },
         {
-          "pid": "im3-routine#3",
-          "en": "I always connect my phone and play my 90s ballad playlist on my way to work.",
-          "ko": "출근길에는 항상 휴대폰을 연결해서 90년대 발라드 플레이리스트를 틀어요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I play my 90s ballad playlist on my way to work.",
+          "ko": "출근길에는 대부분 90년대 발라드 플레이리스트를 틀어요."
         }
       ]
     },
@@ -663,9 +663,9 @@
           "ko": "예전에 비해 집에서 영화를 보는 게 훨씬 싸고 편해요."
         },
         {
-          "pid": "im3-routine#1",
-          "en": "I often watch movies at home with my family on Friday nights.",
-          "ko": "저도 금요일 밤이면 가족과 집에서 영화를 자주 봐요."
+          "pid": "im3b-habit#0",
+          "en": "I try to watch a movie at home with my family every Friday night.",
+          "ko": "저도 금요일 밤마다 가족과 집에서 영화를 한 편씩 보려고 해요."
         },
         {
           "pid": "opinion#3",
@@ -685,8 +685,8 @@
           "ko": "저는 두 가지 이유로 젊은 사람들에게는 대도시가 더 낫다고 생각해요."
         },
         {
-          "pid": "reason#1",
-          "en": "The main reason is that there are many more job opportunities in big cities.",
+          "pid": "im3b-reason#1",
+          "en": "The biggest reason is that there are many more job opportunities in big cities.",
           "ko": "가장 큰 이유는 대도시에 일자리 기회가 훨씬 많다는 거예요."
         },
         {
@@ -744,9 +744,9 @@
           "ko": "작년 여름에 가족과 오사카에 갔는데, 말 그대로 어디에나 관광객이 있었어요."
         },
         {
-          "pid": "im3-past#2",
-          "en": "I had to carry my daughter on my back because she got so exhausted after waiting almost two hours for one ride at Universal Studios.",
-          "ko": "유니버설 스튜디오에서 놀이기구 하나에 거의 두 시간을 기다리고 나니 딸이 너무 지쳐서 업어 줘야 했어요."
+          "pid": "im3b-story#4",
+          "en": "There were long lines for every ride at Universal Studios, so we waited almost two hours for just one ride.",
+          "ko": "유니버설 스튜디오는 놀이기구마다 줄이 길어서 하나 타는 데 거의 두 시간을 기다렸어요."
         },
         {
           "pid": "opinion#5",

@@ -659,9 +659,9 @@
           "ko": "입구에서 유니버설 스튜디오 티켓에 문제가 생겼어요."
         },
         {
-          "pid": "im3-past#4",
-          "en": "I was really embarrassed because I chose the wrong date.",
-          "ko": "제가 날짜를 잘못 골라서 정말 당황했어요."
+          "pid": "im3b-story#2",
+          "en": "As soon as I showed our tickets, the staff told me they were for the next day.",
+          "ko": "표를 보여 주자마자 직원이 다음 날 표라고 알려 줬어요."
         },
         {
           "pid": "problem#2",
@@ -681,9 +681,9 @@
           "ko": "안녕하세요, 가족과 갈 제주도 패키지에 대해 여쭤보려고 전화했어요."
         },
         {
-          "pid": "im3-plan#1",
-          "en": "I'm planning to go there during my summer vacation in August.",
-          "ko": "8월 여름휴가 때 갈 계획이에요."
+          "pid": "im3b-habit#0",
+          "en": "I try to take my family on a trip every August during my summer vacation.",
+          "ko": "저는 매년 8월 여름휴가 때 가족과 여행을 가려고 해요."
         },
         {
           "pid": "roleplay#2",
@@ -718,9 +718,9 @@
           "ko": "대신 두 장 모두 일요일 저녁으로 옮기는 건 어떨까요?"
         },
         {
-          "pid": "roleplay#2",
-          "en": "Is it possible to change the second ticket to a youth ticket?",
-          "ko": "아니면 두 번째 표를 청소년 표로 바꿀 수 있을까요?"
+          "pid": "im3b-feel#3",
+          "en": "I don't mind sitting a little closer to the screen if those are the only seats left.",
+          "ko": "남은 자리가 그것뿐이라면 화면에 조금 더 가까이 앉아도 괜찮아요."
         }
       ]
     },
@@ -762,9 +762,9 @@
           "ko": "작년 봄, 대전에서 열리는 아버지 칠순 잔치에 막 출발하려던 참에 예상치 못한 일이 생겼어요."
         },
         {
-          "pid": "im3-past#2",
-          "en": "I had to go to the office because our main service had crashed and thousands of users couldn't log in.",
-          "ko": "메인 서비스가 다운돼서 수천 명이 로그인을 못 하는 바람에 저는 사무실로 가야 했어요."
+          "pid": "im3b-story#0",
+          "en": "Out of nowhere, my team called me because our main service had crashed and thousands of users couldn't log in.",
+          "ko": "갑자기 팀에서 전화가 왔는데, 메인 서비스가 다운돼서 수천 명이 로그인을 못 하고 있었어요."
         },
         {
           "pid": "problem#4",

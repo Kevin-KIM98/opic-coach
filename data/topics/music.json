@@ -474,9 +474,9 @@
           "ko": "저는 항상 휴대폰을 블루투스로 차에 연결해요."
         },
         {
-          "pid": "im3-routine#6",
-          "en": "And then, I play my 90s playlist on a streaming app.",
-          "ko": "그다음에 스트리밍 앱에서 90년대 플레이리스트를 틀어요."
+          "pid": "im3b-habit#5",
+          "en": "Whenever I start the car, I play my 90s playlist on a streaming app.",
+          "ko": "시동을 걸 때마다 스트리밍 앱에서 90년대 플레이리스트를 틀어요."
         },
         {
           "pid": "reason#2",
@@ -523,9 +523,9 @@
           "ko": "작년 12월에 가족과 서울에서 열린 신승훈 연말 콘서트에 갔어요."
         },
         {
-          "pid": "im3-past#1",
-          "en": "It was my first concert in more than ten years.",
-          "ko": "10년도 넘어서 처음 가 본 콘서트였어요."
+          "pid": "im3b-story#2",
+          "en": "As soon as I sat down, the lights went off and he came out on stage.",
+          "ko": "제가 자리에 앉자마자 조명이 꺼지고 그가 무대에 나왔어요."
         },
         {
           "pid": "memory#3",
@@ -560,9 +560,9 @@
           "ko": "요즘 사람들은 SNS의 짧은 영상으로 새 노래를 찾는 편이에요."
         },
         {
-          "pid": "im3-describe#3",
-          "en": "It's much more convenient now, but I kind of miss waiting for a new album.",
-          "ko": "지금이 훨씬 편하긴 하지만, 새 앨범을 기다리던 때가 조금 그리워요."
+          "pid": "im3b-feel#1",
+          "en": "To be honest, it's much more convenient now, but I kind of miss waiting for a new album.",
+          "ko": "솔직히 지금이 훨씬 편하긴 하지만, 새 앨범을 기다리던 때가 조금 그리워요."
         }
       ]
     },
@@ -587,9 +587,9 @@
           "ko": "아침에 90년대 록을 틀 때마다 회의로 가득한 하루를 앞두고 힘이 솟아요."
         },
         {
-          "pid": "im3-routine#2",
-          "en": "I sometimes even sing along at a red light, which is a little embarrassing.",
-          "ko": "가끔은 빨간불에서 따라 부르기도 하는데, 조금 민망하죠."
+          "pid": "im3b-feel#3",
+          "en": "I don't mind looking a little silly when I sing along at a red light.",
+          "ko": "빨간불에서 따라 부를 때 좀 우스워 보여도 저는 괜찮아요."
         }
       ]
     },

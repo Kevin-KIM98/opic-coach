@@ -481,9 +481,9 @@
           "ko": "들어서면 가장 먼저 눈에 띄는 건 거실의 큰 회색 소파예요."
         },
         {
-          "pid": "like#1",
-          "en": "One of my favorite things to do is relaxing on that sofa after work.",
-          "ko": "제가 가장 좋아하는 일 중 하나는 퇴근 후 그 소파에서 쉬는 거예요."
+          "pid": "im3b-habit#2",
+          "en": "Most of the time, I relax on that sofa after work.",
+          "ko": "퇴근 후에는 대부분 그 소파에서 쉬어요."
         }
       ]
     },
@@ -498,9 +498,9 @@
           "ko": "지난겨울에 주방에 물이 새는 문제가 있었어요."
         },
         {
-          "pid": "memory#1",
-          "en": "It was late on a Sunday night when I noticed the kitchen floor was all wet.",
-          "ko": "주방 바닥이 흥건히 젖은 걸 알아챈 건 일요일 밤늦은 시간이었어요."
+          "pid": "im3b-story#2",
+          "en": "As soon as I walked into the kitchen late on a Sunday night, I noticed the floor was all wet.",
+          "ko": "일요일 밤늦게 주방에 들어서자마자 바닥이 흥건히 젖은 걸 알아챘어요."
         },
         {
           "pid": "problem#2",
@@ -525,9 +525,9 @@
           "ko": "평일에는 저녁 7시 반쯤 집에 도착해요."
         },
         {
-          "pid": "im3-routine#6",
-          "en": "And then, I have dinner with my family at the kitchen table.",
-          "ko": "그러고 나서 주방 식탁에서 가족과 저녁을 먹어요."
+          "pid": "im3b-habit#0",
+          "en": "I try to have dinner with my family at the kitchen table every evening.",
+          "ko": "매일 저녁 주방 식탁에서 가족과 함께 저녁을 먹으려고 해요."
         },
         {
           "pid": "place#3",
@@ -552,7 +552,7 @@
           "ko": "예전에는 대전의 오래된 2층 주택에 살았지만, 지금은 분당의 아파트 15층에 살아요."
         },
         {
-          "pid": "im3-past#1",
+          "pid": "im3b-story#5",
           "en": "It was really cold in winter, and we had to walk a long way to the market.",
           "ko": "그 집은 겨울에 정말 추웠고, 시장까지 한참을 걸어가야 했어요."
         },
@@ -584,9 +584,9 @@
           "ko": "놀랍게도 주방 바닥 전체가 물바다였는데, 싱크대 아래 낡은 배관에서 새고 있었어요."
         },
         {
-          "pid": "im3-past#2",
-          "en": "I had to turn off the main water valve right away while my family grabbed every towel in the house.",
-          "ko": "가족들이 집에 있는 수건을 모두 가져오는 동안 저는 바로 메인 수도 밸브를 잠가야 했어요."
+          "pid": "im3b-story#2",
+          "en": "As soon as I saw the water, I turned off the main water valve while my family grabbed every towel in the house.",
+          "ko": "물을 보자마자 저는 메인 수도 밸브를 잠갔고, 그동안 가족들은 집에 있는 수건을 모두 가져왔어요."
         },
         {
           "pid": "problem#5",

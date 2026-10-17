@@ -142,8 +142,8 @@ def check_combos(path, t, frames, frame_levels, frame_sets):
         if not 3 <= len(parts) <= 4:
             err(f"{rel}: combos[{i}] parts 는 3~4개여야 합니다 (현재 {len(parts)}개)")
         sets = {frame_sets.get(p.get("pid")) for p in parts}
-        if not {"kang", "im3"} <= sets:
-            err(f"{rel}: combos[{i}] 는 만능패턴 72(kang)와 IM3 25(im3)를 섞어야 합니다")
+        if "kang" not in sets or not any(str(x).startswith("im3") for x in sets):
+            err(f"{rel}: combos[{i}] 는 만능패턴 72(kang)와 IM3 필수 패턴(im3·im3b)을 섞어야 합니다")
         for k, p in enumerate(parts):
             frame = frames.get(p.get("pid"))
             if frame is None:

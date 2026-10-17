@@ -73,7 +73,7 @@ function comboSection(topic, patterns, level, qById) {
   (patterns.groups || []).forEach(g => g.items.forEach((it, i) => { frames[`${g.id}#${i}`] = { pattern: it.pattern || it.en, set: g.set || 'kang' }; }));
   const combos = (topic.combos || []).filter(c => !level || c.level === level);
   if (!combos.length) return '';
-  const setName = { kang: '만능 72', im3: 'IM3 25' };
+  const setName = { kang: '만능 72', im3: 'IM3 Part 1', im3b: 'IM3 Part 2' };
   return `<div class="section-title">🔗 패턴 조합 · ${level || ''}</div>
     <p class="xs muted mb12">패턴 여러 개를 이어 붙이면 답변 한 단락이 됩니다. ▶ 로 통째로 듣고 따라 말해 보세요.</p>
     <div class="list">${combos.map(c => {
