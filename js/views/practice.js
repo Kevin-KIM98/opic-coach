@@ -17,20 +17,26 @@ export async function render(root, route) {
   const topic = await data.topic(topicId);
   const q = (topic.questions || []).find(x => x.id === qid);
   if (!q) { root.innerHTML = '<div class="empty">질문을 찾을 수 없습니다.</div>'; return; }
-
-  const mode = route.query.mode || 'model';
-  let level = route.query.level || store.settings.target || 'IM3';
   const patterns = await data.patterns();
   const exprBank = [...(topic.expressions || []).map(e => e.en), ...patterns.groups.flatMap(g => g.items.map(i => i.en))];
+  return renderQuestion(root, { title: topic.title, topic, q, exprBank, query: route.query, patternMap: (lv) => patternSentenceMap(topic, patterns, lv) });
+}
+
+// 질문 하나의 '모범답안 · 섀도잉' / '직접 답변 · 채점' 화면. 주제 질문과 실전 답변 모음(bank)이 같이 쓴다.
+// extra: 질문 카드 아래에 붙일 HTML (영상 링크·이전/다음 문항 등)
+export function renderQuestion(root, { title, topic, q, exprBank = [], query = {}, patternMap = () => ({}), extra = '' }) {
+  const mode = query.mode || 'model';
+  let level = query.level || store.settings.target || 'IM3';
 
   root.innerHTML = html`
-    ${raw(header(topic.title))}
+    ${raw(header(title))}
     <div class="qcard">
       <div class="row between mb8"><span class="badge type">${TYPE_LABEL[q.type] || q.type}</span><button class="play sm" data-say="${encodeURIComponent(q.en)}">🔊</button></div>
       <div class="q-en">${q.en}</div>
       <div class="q-ko">${q.ko}</div>
       <div class="mt12">${raw((q.tips || []).map(t => `<div class="tip">💡 ${t}</div>`).join(''))}</div>
     </div>
+    ${raw(extra)}
     <div class="tabs mt12" id="ptabs"><button data-m="model" class="${mode === 'model' ? 'active' : ''}">모범답안 · 섀도잉</button><button data-m="speak" class="${mode === 'speak' ? 'active' : ''}">직접 답변 · 채점</button></div>
     <div id="pbody" class="mt12"></div>`;
   bindPlay(root);
@@ -39,7 +45,7 @@ export async function render(root, route) {
   // 레벨(IM3·IH·AL)은 몇 번이든 바꿀 수 있어야 한다 — 바꿀 때마다 같은 콜백으로 다시 그린다
   const showModel = () => {
     stopSpeaking(); shadowPlayer?.stop(); shadowPlayer = null;
-    level = renderModel(body, q, level, (lv) => { if (lv !== level) { level = lv; showModel(); } }, (lv) => patternSentenceMap(topic, patterns, lv));
+    level = renderModel(body, q, level, (lv) => { if (lv !== level) { level = lv; showModel(); } }, patternMap);
   };
   const show = (m) => {
     root.querySelectorAll('#ptabs button').forEach(b => b.classList.toggle('active', b.dataset.m === m));
@@ -56,7 +62,8 @@ export async function render(root, route) {
 // 선택된 레벨로 섀도잉 화면을 그리고, 실제로 사용한 레벨을 돌려준다
 function renderModel(body, q, level, setLevel, patternMap = () => ({})) {
   const answers = q.answers || {};
-  const levels = ['IM3', 'IH', 'AL'].filter(l => answers[l]);
+  // 주제 질문은 IM3·IH·AL, 실전 답변 모음은 레벨 하나('IH–AL')
+  const levels = [...['IM3', 'IH', 'AL'].filter(l => answers[l]), ...Object.keys(answers).filter(l => !['IM3', 'IH', 'AL'].includes(l))];
   if (!answers[level]) level = levels[0];
   const sents = splitSentences(answers[level]);
   const words = answers[level].split(/\s+/).length;
@@ -69,7 +76,7 @@ function renderModel(body, q, level, setLevel, patternMap = () => ({})) {
   const pats = patternMap(level);
   const patCount = sents.filter(s => pats[s.trim()]).length;
   body.innerHTML = html`
-    <div class="seg">${raw(levels.map(l => `<button data-lv="${l}" class="${l === level ? 'active' : ''}" style="${l === level ? `color:${levelColor(l)}` : ''}">${l}</button>`).join(''))}</div>
+    <div class="seg ${levels.length > 1 ? '' : 'hidden'}">${raw(levels.map(l => `<button data-lv="${l}" class="${l === level ? 'active' : ''}" style="${l === level ? `color:${levelColor(l)}` : ''}">${l}</button>`).join(''))}</div>
     <div class="card mt12">
       <div class="xs muted mb8">${words}단어 · ${sents.length}문장${patCount ? ` · 🧩 만능 패턴 ${patCount}문장` : ''} · 문장을 탭하면 재생</div>
       <div class="row mb12 wrap" style="gap:6px"><button class="btn sm" data-all>▶ 전체 듣기</button><button class="btn sm" data-slow>🐢 느리게</button><button class="btn sm ghost" data-hide>🙈 가리기</button>${ko ? raw(`<button class="btn sm ghost" data-ko-toggle>${showKo ? '🇰🇷 해석 숨기기' : '🇰🇷 해석 보기'}</button>`) : ''}</div>

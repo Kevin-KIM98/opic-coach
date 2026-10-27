@@ -5,7 +5,7 @@ import { examInfo } from '../exam.js';
 
 // 홈: D-day · 이어서 학습 · 주제 고르기. 주제 하나를 골라 끝까지 파는 흐름만 남겼다.
 export async function render(root) {
-  const [idx, topics, exam] = await Promise.all([data.index(), data.topics(), examInfo().catch(() => null)]);
+  const [idx, topics, exam, bank] = await Promise.all([data.index(), data.topics(), examInfo().catch(() => null), data.bank().catch(() => null)]);
   const s = store.settings;
   const streak = store.streak();
   const dueCount = store.dueExprs().length;
@@ -34,6 +34,8 @@ export async function render(root) {
 
     <div class="section-title">실전 유형</div>
     <div class="topic-grid">${raw([...byCat('roleplay'), ...byCat('unexpected'), ...byCat('advanced')].map(topicTile).join(''))}</div>
+
+    ${raw(bank ? bankCard(bank) : '')}
 
     <div class="btn-row mt16">
       <a class="btn" href="#/mock">🎯 모의고사</a>
@@ -64,6 +66,18 @@ function startCard(topics) {
     <div class="row between mt8"><div class="h2">${first.emoji} ${first.title}부터</div><span class="chev" style="color:inherit;opacity:.7">›</span></div>
     <div class="xs mt8" style="opacity:.8">주제 하나를 골라 표현 → 패턴 → 답안 순서로 끝까지 연습하세요</div>
   </a>` : '';
+}
+
+// 실전 답변 모음 (영상 속 IH–AL 답변) 바로 가기
+export function bankCard(bank) {
+  const items = bank.groups.flatMap(g => g.items);
+  const done = new Set(store.state.practice.map(p => p.qid));
+  const n = items.filter(it => done.has(`bank:${it.id}`)).length;
+  return `<a class="list-row mt12 bank-card" href="#/bank">
+    <div class="emoji">🗂️</div>
+    <div class="grow"><div class="t">${bank.title}</div><div class="s">${bank.subtitle} · 연습 ${n}/${items.length}</div>
+      <div class="bar teal mt8" style="height:5px"><i style="width:${items.length ? n / items.length * 100 : 0}%"></i></div></div>
+    <span class="chev">›</span></a>`;
 }
 
 function topicTile(t) {

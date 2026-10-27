@@ -1,9 +1,10 @@
 import { html, raw } from '../util.js';
 import { data } from '../data.js';
 import { store } from '../store.js';
+import { bankCard } from './home.js';
 
 export async function render(root, route) {
-  const [idx, topics] = await Promise.all([data.index(), data.topics()]);
+  const [idx, topics, bank] = await Promise.all([data.index(), data.topics(), data.bank().catch(() => null)]);
   const cat = route.query.cat || 'all';
   const cats = [['all', '전체'], ...Object.entries(idx.categories).map(([k, v]) => [k, v.title])];
   const list = cat === 'all' ? topics : topics.filter(t => t.category === cat);
@@ -12,6 +13,7 @@ export async function render(root, route) {
     <header class="topbar"><div class="title">주제별 학습</div><a class="icon-btn" href="#/settings">⚙️</a></header>
     <div class="chips">${raw(cats.map(([k, v]) => `<a class="chip ${k === cat ? 'active' : ''}" href="#/topics?cat=${k}">${v}</a>`).join(''))}</div>
     ${idx.persona ? raw(personaCard(idx)) : ''}
+    ${bank ? raw(bankCard(bank)) : ''}
     <p class="small muted mt12">${idx.categories[cat]?.desc || '설문 주제는 OPIc 2~10번, 롤플레이 11~13번, 고난도 14~15번에 출제됩니다. 우선순위 순으로 정렬되어 있어요.'}</p>
     <div class="list mt12">
       ${raw(list.map(t => topicRow(t)).join(''))}
