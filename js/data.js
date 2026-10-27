@@ -20,6 +20,8 @@ export const data = {
   patterns: () => getJSON('data/patterns.json').then(p => { store.prunePatterns(patternIds(p)); return p; }),
   mockSets: () => getJSON('data/mock-sets.json'),
   examSchedule: () => getJSON('data/exam-schedule.json'),
+  // 실전 답변 모음 (유튜브 영상 속 IH–AL 답변). groups[].items[] 에 질문·답변·문장별 해석
+  bank: () => getJSON('data/answer-bank.json'),
 
   async topic(id) {
     const idx = await this.index();

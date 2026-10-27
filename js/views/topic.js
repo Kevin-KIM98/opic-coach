@@ -235,7 +235,16 @@ function renderQuestions(body, topic, level, query) {
   body.innerHTML = html`
     <p class="small muted mb12">질문을 탭하면 IM3 / IH / AL 모범답안을 문장별로 듣고 섀도잉하거나, 직접 녹음해 채점받을 수 있어요.</p>
     <div class="list">${raw(qs.map(q => `<a class="list-row" href="#/practice/${topic.id}/${q.id}${query.mode === 'speak' ? '?mode=speak' : `?level=${level}`}"><div class="emoji">${iconFor(q.type)}</div><div class="grow"><div class="t">${q.en}</div><div class="s">${TYPE_LABEL[q.type] || q.type} · ${practiceCount(q.id)}회 연습</div></div><span class="chev">›</span></a>`).join(''))}</div>
+    <div data-bank-link></div>
 `;
+  // 같은 주제의 실전 답변(영상 속 IH–AL 답변)이 있으면 바로 가기
+  data.bank().then(bank => {
+    const gs = bank.groups.filter(g => (g.topics || []).includes(topic.id));
+    const n = gs.reduce((a, g) => a + g.items.length, 0);
+    const $l = body.querySelector('[data-bank-link]');
+    if (!n || !$l) return;
+    $l.innerHTML = gs.map(g => `<a class="btn ghost block mt12" href="#/bank?g=${g.id}">${g.emoji} 실전 답변 · ${g.title} ${g.items.length}문항 (${bank.level})</a>`).join('');
+  }).catch(() => {});
 }
 function practiceCount(qid) { return store.state.practice.filter(p => p.qid === qid).length; }
 export function iconFor(type) {

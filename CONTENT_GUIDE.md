@@ -86,6 +86,9 @@
   `pattern` 은 빈칸(`___`)이 있는 패턴 틀, `en` + `examples`(2개)가 예문 3개입니다. 말하기 퀴즈는 `pattern` 에서 빈칸을 뺀 단어로 채점합니다.
   그룹 id·순서를 바꾸면 주제 파일의 `patterns[].pid` 도 함께 바꾸세요.
   지금 파일에 없는 패턴의 학습 기록(`pat:*`)은 앱이 자동으로 지웁니다.
+- `data/answer-bank.json` – 실전 답변 모음 (영상 속 IH–AL 답변). `groups[]` 는 `{id, title, emoji, topics, items}` 이고, `topics` 에 적은 주제의 ③ 답안 탭에 바로 가기가 생깁니다.
+  `items[]` 는 `{id, type, t, en, ko, answer, answerKo}`: `t` 는 영상에서 그 질문이 시작하는 초, `answer` 는 한 줄 영어 답변, `answerKo` 는 답변을 문장(. ! ? 기준)으로 나눈 개수와 같은 개수의 한글 해석입니다.
+  문항 `id` 를 바꾸면 그 문항의 연습 기록이 이어지지 않습니다.
 - `data/mock-sets.json` – 모의고사 구성. `slots` 로 문항 조합, `levels` 로 등급 커트라인.
 - 질문의 `answersKo` – 모범답안 한글 해석. `{"IM3": [...], "IH": [...], "AL": [...]}` 로, 영어 답안을 문장(. ! ? 기준)으로 나눈 개수와 **같은 개수**의 한글 문장 배열입니다. 영어 답안을 고치면 해석 개수도 맞추세요. `a.m.` 같은 약어는 문장이 잘리니 `in the morning` 처럼 풀어 씁니다.
 - 주제 파일의 `combos` – 패턴 조합. IM3·IH·AL 각 2개, `{level, q, title, parts: [{pid, en, ko}]}`. parts 3~4개를 이으면 답변 한 단락이 되고, 조합마다 만능패턴 72(`set: kang`)와 IM3 필수 패턴(`set: im3` Part 1 · `im3b` Part 2)을 하나 이상씩 섞습니다.

@@ -163,6 +163,46 @@ def check_combos(path, t, frames, frame_levels, frame_sets):
                 it += 1
 
 
+def check_bank(path, d):
+    """실전 답변 모음: 그룹·문항 id, 질문 유형, 문장별 한글 해석 개수."""
+    rel = path.relative_to(ROOT)
+    for key in ("title", "level", "source", "groups"):
+        if key not in d:
+            err(f"{rel}: '{key}' 필드가 없습니다")
+    if not str((d.get("source") or {}).get("url", "")).startswith("https://"):
+        err(f"{rel}: source.url 이 없습니다")
+    topic_ids = {e["id"] for e in (load(DATA / "index.json") or {}).get("topics", [])}
+    ids = set()
+    for g in d.get("groups", []):
+        gid = g.get("id")
+        if not gid or not g.get("title") or not g.get("emoji"):
+            err(f"{rel}: 그룹 '{gid}' 에 id/title/emoji 가 필요합니다")
+        for t in g.get("topics", []):
+            if t not in topic_ids:
+                err(f"{rel}: 그룹 '{gid}' topics 의 '{t}' 는 index.json 의 주제가 아닙니다")
+        for i, it in enumerate(g.get("items", [])):
+            where = f"{rel}: {gid}.items[{i}]"
+            if not it.get("id"):
+                err(f"{where} id 누락")
+            elif it["id"] in ids:
+                err(f"{where} id 중복 '{it['id']}'")
+            ids.add(it.get("id"))
+            if it.get("type") not in TYPES:
+                err(f"{where} type '{it.get('type')}' 은 허용되지 않습니다. 가능: {sorted(TYPES)}")
+            if not isinstance(it.get("t"), int) or it["t"] < 0:
+                err(f"{where} t(영상 시작 초)는 0 이상의 정수여야 합니다")
+            for key in ("en", "ko", "answer"):
+                if not it.get(key):
+                    err(f"{where} {key} 누락")
+            sents = split_sentences(it.get("answer", ""))
+            for piece in sents:
+                if len(piece) < 4:
+                    err(f"{where} answer 에 잘린 문장 조각 '{piece}' 이 있습니다")
+            arr = it.get("answerKo")
+            if not isinstance(arr, list) or len(arr) != len(sents) or not all(isinstance(x, str) and x.strip() for x in arr):
+                err(f"{where} answerKo 는 영어 답변 문장 수({len(sents)})와 같은 개수의 한글 문장이어야 합니다 (현재 {len(arr) if isinstance(arr, list) else '없음'})")
+
+
 def main():
     pats = load(DATA / "patterns.json") or {}
     frames = {f"{g.get('id')}#{i}": it.get("pattern") or it.get("en", "") for g in pats.get("groups", []) for i, it in enumerate(g.get("items", []))}
@@ -184,6 +224,11 @@ def main():
         for p in (DATA / "topics").glob("*.json"):
             if f"topics/{p.name}" not in listed:
                 err(f"{p.relative_to(ROOT)}: index.json 에 등록되지 않았습니다")
+    bank_path = DATA / "answer-bank.json"
+    if bank_path.exists():
+        bank = load(bank_path)
+        if bank:
+            check_bank(bank_path, bank)
     for name in ("patterns.json", "mock-sets.json"):
         d = load(DATA / name)
         if d is None:
