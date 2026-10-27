@@ -1,10 +1,12 @@
 // 자동 반복 재생: 문장 목록을 순서대로, 각 문장을 설정한 횟수만큼 읽어 줍니다.
 // 🔁 켜져 있으면 목록 끝까지 간 뒤 처음부터 다시 — 멈출 때까지 계속 반복합니다(기본값).
 // 버튼을 매번 누르지 않아도 듣고 → 따라 말하기를 반복할 수 있게 하는 것이 목적입니다.
-// 재생 중에는 화면이 꺼지지 않도록 wake lock 을 잡습니다.
+// 재생 중에는 화면이 꺼지지 않도록 wake lock 을 잡고, 화면을 꺼도 이어지도록 백그라운드 재생을 켭니다.
+// 이어폰을 빼면 멈춥니다 (background.js).
 import { speak, stopSpeaking, support } from './speech.js';
 import { store } from './store.js';
 import { keepAwake, wakeLockSupported } from './wake-lock.js';
+import { startBackground, nowPlaying, stopReasonText } from './background.js';
 
 const REPEATS = [1, 2, 3, 5];
 const GAPS = [0, 0.8, 1.5, 2.5];
@@ -26,6 +28,7 @@ export const loopLabel = () => (repeatLoop() ? '🔁 계속' : '🔂 한 번');
 export function createSequencePlayer() {
   let token = 0;          // 세대 번호 — 늘어나면 진행 중인 루프는 스스로 빠져나온다
   let release = null;     // wake lock 해제
+  let releaseBg = null;   // 백그라운드 재생 해제
   let cancelWait = null;
   let playing = false;
 
@@ -42,11 +45,13 @@ export function createSequencePlayer() {
     stopSpeaking();
     cancelWait?.();
     release?.(); release = null;
+    releaseBg?.(); releaseBg = null;
   }
 
   /**
    * @param {Function|string[]} texts 문장 배열 또는 매번 새로 계산할 함수
-   * @param {object} opts {rate, loop, onItem(i, total), onEnd(completed)}
+   * @param {object} opts {rate, loop, onItem(i, total), onEnd(completed), onInterrupt(message)}
+   *   onInterrupt: 이어폰 분리 · 잠금 화면 ⏸ 등으로 밖에서 멈췄을 때 (없으면 onEnd(false))
    */
   async function run(texts, opts = {}) {
     if (!support.tts) return;
@@ -54,6 +59,14 @@ export function createSequencePlayer() {
     const my = ++token;
     playing = true;
     release = keepAwake();
+    releaseBg = startBackground({
+      onStop: (reason) => {
+        if (!live()) return;
+        releaseBg = null;
+        stop();
+        if (opts.onInterrupt) opts.onInterrupt(stopReasonText(reason)); else opts.onEnd?.(false);
+      },
+    });
     const list = () => (typeof texts === 'function' ? texts() : texts);
     const live = () => my === token;
 
@@ -66,6 +79,7 @@ export function createSequencePlayer() {
         const n = repeatCount();
         for (let r = 0; r < n; r++) {
           if (!live()) return;
+          nowPlaying(items[i]);
           const ok = await speak(items[i], { rate: opts.rate });
           if (!live()) return;
           if (!ok) { stop(); return; }                       // TTS 실패 시 무한 루프 방지
@@ -135,7 +149,7 @@ export function createAutoPlay(mount, scope, opts = {}) {
     $toggle.classList.remove('on');
     mount.classList.remove('on');
     clearHighlight();
-    $status.textContent = msg ?? (wakeLockSupported ? '재생 중에는 화면이 꺼지지 않아요.' : '');
+    $status.textContent = msg ?? (wakeLockSupported ? '재생 중에는 화면이 꺼지지 않아요. 직접 꺼도 계속 들려요 · 이어폰을 빼면 멈춰요.' : '화면을 꺼도 계속 들려요 · 이어폰을 빼면 멈춰요.');
   }
 
   function start() {
@@ -153,6 +167,7 @@ export function createAutoPlay(mount, scope, opts = {}) {
         if (i === 0) store.logActivity(0.5);
       },
       onEnd: () => idle('한 바퀴 다 읽었어요. 🔁 을 켜면 멈출 때까지 계속 반복해요.'),
+      onInterrupt: (msg) => idle(msg),
     });
   }
 
