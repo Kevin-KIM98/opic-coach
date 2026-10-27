@@ -164,13 +164,15 @@ def check_combos(path, t, frames, frame_levels, frame_sets):
 
 
 def check_bank(path, d):
-    """실전 답변 모음: 그룹·문항 id, 질문 유형, 문장별 한글 해석 개수."""
+    """실전 답변 모음: 레벨(영상)·그룹·문항 id, 질문 유형, 레벨별 답변과 문장별 한글 해석 개수."""
     rel = path.relative_to(ROOT)
-    for key in ("title", "level", "source", "groups"):
+    for key in ("title", "levels", "groups"):
         if key not in d:
             err(f"{rel}: '{key}' 필드가 없습니다")
-    if not str((d.get("source") or {}).get("url", "")).startswith("https://"):
-        err(f"{rel}: source.url 이 없습니다")
+    levels = [l.get("id") for l in d.get("levels", [])]
+    for l in d.get("levels", []):
+        if not l.get("id") or not str((l.get("source") or {}).get("url", "")).startswith("https://"):
+            err(f"{rel}: levels 의 각 항목에 id 와 source.url 이 필요합니다 ({l.get('id')})")
     topic_ids = {e["id"] for e in (load(DATA / "index.json") or {}).get("topics", [])}
     ids = set()
     for g in d.get("groups", []):
@@ -189,18 +191,24 @@ def check_bank(path, d):
             ids.add(it.get("id"))
             if it.get("type") not in TYPES:
                 err(f"{where} type '{it.get('type')}' 은 허용되지 않습니다. 가능: {sorted(TYPES)}")
-            if not isinstance(it.get("t"), int) or it["t"] < 0:
-                err(f"{where} t(영상 시작 초)는 0 이상의 정수여야 합니다")
-            for key in ("en", "ko", "answer"):
+            for key in ("en", "ko"):
                 if not it.get(key):
                     err(f"{where} {key} 누락")
-            sents = split_sentences(it.get("answer", ""))
-            for piece in sents:
-                if len(piece) < 4:
-                    err(f"{where} answer 에 잘린 문장 조각 '{piece}' 이 있습니다")
-            arr = it.get("answerKo")
-            if not isinstance(arr, list) or len(arr) != len(sents) or not all(isinstance(x, str) and x.strip() for x in arr):
-                err(f"{where} answerKo 는 영어 답변 문장 수({len(sents)})와 같은 개수의 한글 문장이어야 합니다 (현재 {len(arr) if isinstance(arr, list) else '없음'})")
+            answers, ko, ts = it.get("answers") or {}, it.get("answersKo") or {}, it.get("t") or {}
+            if not answers:
+                err(f"{where} answers 가 비어 있습니다")
+            for lv, text in answers.items():
+                if lv not in levels:
+                    err(f"{where} answers 의 레벨 '{lv}' 가 levels 에 없습니다")
+                if not isinstance(ts.get(lv), int) or ts[lv] < 0:
+                    err(f"{where} t.{lv}(영상 시작 초)는 0 이상의 정수여야 합니다")
+                sents = split_sentences(text)
+                for piece in sents:
+                    if len(piece) < 4:
+                        err(f"{where} answers.{lv} 에 잘린 문장 조각 '{piece}' 이 있습니다")
+                arr = ko.get(lv)
+                if not isinstance(arr, list) or len(arr) != len(sents) or not all(isinstance(x, str) and x.strip() for x in arr):
+                    err(f"{where} answersKo.{lv} 는 영어 답변 문장 수({len(sents)})와 같은 개수의 한글 문장이어야 합니다 (현재 {len(arr) if isinstance(arr, list) else '없음'})")
 
 
 def main():
