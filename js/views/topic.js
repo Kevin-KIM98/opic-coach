@@ -217,7 +217,7 @@ export function flashcards(body, cards, onExit) {
 
     const $toggle = body.querySelector('[data-toggle]');
     const setPlayUI = (on) => { $toggle.textContent = on ? '⏸ 멈춤' : '▶ 다시 듣기'; $toggle.classList.toggle('on', on); };
-    const play = () => { setPlayUI(true); player.run([c.en], { loop: repeatLoop(), onEnd: () => setPlayUI(false) }); };
+    const play = () => { setPlayUI(true); player.run([c.en], { loop: repeatLoop(), onEnd: () => setPlayUI(false), onInterrupt: (msg) => { setPlayUI(false); if (msg) toast(msg, 3000); } }); };
     $toggle.addEventListener('click', () => { if (player.playing) { player.stop(); setPlayUI(false); } else play(); });
     body.querySelector('[data-loop]').addEventListener('click', () => { toggleLoop(); draw(); });
     // 🔊 / 🐢 를 직접 누르면 자동 반복은 비켜 준다

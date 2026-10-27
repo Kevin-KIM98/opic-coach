@@ -141,7 +141,7 @@ function renderModel(body, q, level, setLevel, patternMap = () => ({})) {
   const playAll = (rate, which) => {
     if (player.playing) { player.stop(); setPlayingUI(false); return; }
     setPlayingUI(true, which);
-    player.run(sents, { rate, loop: repeatLoop(), onItem: (i) => setCur(i), onEnd: () => setPlayingUI(false) });
+    player.run(sents, { rate, loop: repeatLoop(), onItem: (i) => setCur(i), onEnd: () => setPlayingUI(false), onInterrupt: (msg) => { setPlayingUI(false); if (msg) toast(msg, 3000); } });
   };
   $all.addEventListener('click', () => playAll(undefined, 'all'));
   $slow.addEventListener('click', () => playAll(0.72, 'slow'));
