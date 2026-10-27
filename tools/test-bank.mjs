@@ -93,6 +93,52 @@ async function open(hash) {
   }
 }
 
+// ---- 목록 전체 듣기: 질문 한 번 → 답변 문장, 재생 중 문항 표시, 레벨 · 필터 ----
+{
+  const split = (t) => t.match(/[^.!?]+[.!?]+["']?|[^.!?]+$/g).map(x => x.trim()).filter(Boolean);
+  const { page, errs } = await open('#/bank?g=housing');
+  const hs = bank.groups.find(g => g.id === 'housing').items;
+  check('전체 듣기: 버튼', !!(await page.$('[data-bank-play] [data-toggle]')));
+  // 간격 1.5초 → 2.5초 → 없음
+  await page.click('[data-bank-play] [data-gap]');
+  await page.click('[data-bank-play] [data-gap]');
+  await page.click('[data-bank-play] [data-lv="IM"]');
+  await page.click('[data-bank-play] [data-toggle]');
+  await page.waitForTimeout(700);
+  const spoken = await page.evaluate(() => window.__spoken);
+  check('전체 듣기: 질문부터 한 번', spoken[0] === hs[0].en && spoken[1] !== hs[0].en, JSON.stringify(spoken.slice(0, 3)));
+  check('전체 듣기: 이어서 IM 답변 첫 문장', spoken[1] === split(hs[0].answers.IM)[0], JSON.stringify(spoken.slice(0, 3)));
+  // 목업 음성은 문장당 30ms 라 이미 몇 문항 지났을 수 있다 — 표시가 하나뿐이고 상태와 맞는지 본다
+  const marked = await page.$$eval('.list-row.saying', els => els.map(e => e.dataset.id));
+  const status = await page.innerText('[data-bank-play] [data-status]');
+  const n = hs.findIndex(x => x.id === marked[0]) + 1;
+  check('전체 듣기: 재생 중 문항 표시', marked.length === 1 && n > 0, JSON.stringify(marked));
+  check('전체 듣기: 상태 문구', status.startsWith(`${n} / ${hs.length}`), status);
+  check('전체 듣기: 🌙 버튼', await page.$eval('.dim-btn', el => !el.classList.contains('hidden')));
+  // 레벨을 바꾸면 그 레벨로 처음부터
+  await page.evaluate(() => { window.__spoken = []; });
+  await page.click('[data-bank-play] [data-lv="IH–AL"]');
+  await page.waitForTimeout(700);
+  const sp2 = await page.evaluate(() => window.__spoken);
+  check('전체 듣기: IH–AL 로 바꾸면 그 답변', sp2.includes(split(hs[0].answers['IH–AL'])[0]), JSON.stringify(sp2.slice(0, 3)));
+  await page.click('[data-bank-play] [data-toggle]');
+  await page.waitForTimeout(200);
+  check('전체 듣기: 멈춤', (await page.innerText('[data-bank-play] [data-toggle]')).includes('전체 듣기'));
+  check('전체 듣기: 멈추면 표시 지움', !(await page.$('.list-row.saying')));
+  // 질문 끄기
+  await page.click('[data-bank-play] [data-q]');
+  await page.evaluate(() => { window.__spoken = []; });
+  await page.click('[data-bank-play] [data-toggle]');
+  await page.waitForTimeout(500);
+  check('전체 듣기: 질문 끄면 답변부터', (await page.evaluate(() => window.__spoken[0])) === split(hs[0].answers['IH–AL'])[0]);
+  // 다른 주제로 바꾸면 멈춘다
+  await page.click('a.chip[href="#/bank?g=shopping"]');
+  await page.waitForTimeout(800);
+  check('전체 듣기: 주제를 바꾸면 멈춤', (await page.innerText('[data-bank-play] [data-toggle]')).includes('전체 듣기'));
+  check('오류 없음 (전체 듣기)', !errs.length, errs.join('\n'));
+  await page.close();
+}
+
 // ---- 주제 ③ 답안 탭의 바로 가기 ----
 {
   const { page, errs } = await open('#/topic/housing?tab=q');

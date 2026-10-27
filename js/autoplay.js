@@ -52,7 +52,7 @@ export function createSequencePlayer() {
   }
 
   /**
-   * @param {Function|string[]} texts 문장 배열 또는 매번 새로 계산할 함수
+   * @param {Function|Array<string|{text:string, once?:boolean}>} texts 문장 배열 또는 매번 새로 계산할 함수
    * @param {object} opts {rate, loop, onItem(i, total), onEnd(completed), onInterrupt(message)}
    *   onInterrupt: 이어폰 분리 · 잠금 화면 ⏸ 등으로 밖에서 멈췄을 때 (없으면 onEnd(false))
    */
@@ -80,11 +80,13 @@ export function createSequencePlayer() {
       for (let i = 0; i < items.length; i++) {
         if (!live()) return;
         opts.onItem?.(i, items.length);
-        const n = repeatCount();
+        // 항목은 문장 또는 {text, once} — once 면 반복 횟수와 상관없이 한 번만 읽는다 (예: 질문)
+        const text = typeof items[i] === 'string' ? items[i] : items[i].text;
+        const n = items[i].once ? 1 : repeatCount();
         for (let r = 0; r < n; r++) {
           if (!live()) return;
-          nowPlaying(items[i]);
-          const ok = await speak(items[i], { rate: opts.rate });
+          nowPlaying(text);
+          const ok = await speak(text, { rate: opts.rate });
           if (!live()) return;
           if (!ok) { stop(); return; }                       // TTS 실패 시 무한 루프 방지
           const last = r === n - 1 && i === items.length - 1;
