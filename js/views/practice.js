@@ -24,7 +24,8 @@ export async function render(root, route) {
 
 // 질문 하나의 '모범답안 · 섀도잉' / '직접 답변 · 채점' 화면. 주제 질문과 실전 답변 모음(bank)이 같이 쓴다.
 // extra: 질문 카드 아래에 붙일 HTML (영상 링크·이전/다음 문항 등)
-export function renderQuestion(root, { title, topic, q, exprBank = [], query = {}, patternMap = () => ({}), extra = '' }) {
+// onLevel: 레벨을 바꿨을 때 알림 (실전 답변 모음은 고른 레벨을 다음 문항에도 쓴다)
+export function renderQuestion(root, { title, topic, q, exprBank = [], query = {}, patternMap = () => ({}), extra = '', onLevel = () => {} }) {
   const mode = query.mode || 'model';
   let level = query.level || store.settings.target || 'IM3';
 
@@ -45,7 +46,7 @@ export function renderQuestion(root, { title, topic, q, exprBank = [], query = {
   // 레벨(IM3·IH·AL)은 몇 번이든 바꿀 수 있어야 한다 — 바꿀 때마다 같은 콜백으로 다시 그린다
   const showModel = () => {
     stopSpeaking(); shadowPlayer?.stop(); shadowPlayer = null;
-    level = renderModel(body, q, level, (lv) => { if (lv !== level) { level = lv; showModel(); } }, patternMap);
+    level = renderModel(body, q, level, (lv) => { if (lv !== level) { level = lv; onLevel(lv); showModel(); } }, patternMap);
   };
   const show = (m) => {
     root.querySelectorAll('#ptabs button').forEach(b => b.classList.toggle('active', b.dataset.m === m));

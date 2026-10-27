@@ -39,7 +39,7 @@ async function open(hash) {
   const txt = await page.innerText('#view');
   check('목록: 전체 문항 수', txt.includes(`전체 ${items.length}`));
   check('목록: 문항 행 수', (await page.$$('#view .list-row')).length === items.length);
-  check('목록: 영상 링크', !!(await page.$(`a[href="${bank.source.url}"]`)));
+  check('목록: 영상 링크 (레벨별)', (await Promise.all(bank.levels.map(l => page.$(`a[href="${l.source.url}"]`)))).every(Boolean));
   await page.click('a.chip[href="#/bank?g=roleplay"]');
   await page.waitForTimeout(600);
   const rp = bank.groups.find(g => g.id === 'roleplay').items.length;
@@ -48,27 +48,49 @@ async function open(hash) {
   await page.close();
 }
 
-// ---- 문항: 해석 · 섀도잉 · 이전/다음 ----
+// ---- 문항: 레벨 전환 · 해석 · 섀도잉 · 이전/다음 ----
 {
-  const it = items[1];
+  const it = items.find(x => Object.keys(x.answers).length > 1) || items[1];
+  const idx = items.indexOf(it);
+  const lvs = bank.levels.map(l => l.id).filter(l => it.answers[l]);
   const { page, errs } = await open(`#/bank/${it.id}`);
   const txt = await page.innerText('#view');
   check('문항: 질문 · 해석', txt.includes(it.en.slice(0, 30)) && txt.includes(it.ko.slice(0, 10)));
-  check('문항: 문장 수 = 해석 수', (await page.$$('.sent')).length === it.answerKo.length && (await page.$$('.sent-ko')).length === it.answerKo.length);
-  check('문항: 레벨 버튼 숨김', await page.$eval('.seg', el => el.classList.contains('hidden')));
-  const vid = await page.$eval('a[target=_blank]', a => a.href);
-  check('문항: 영상 시작 시간 링크', vid.endsWith(`t=${it.t}`), vid);
+  // 목표 등급 기본값 IM3 → IM 답변부터
+  const first = lvs.find(l => l.startsWith('IM')) || lvs[0];
+  check('문항: 기본 레벨 IM', (await page.$$('.sent')).length === it.answersKo[first].length && (await page.$$('.sent-ko')).length === it.answersKo[first].length);
+  const hrefs = await page.$$eval('a[target=_blank]', as => as.map(a => a.href));
+  check('문항: 레벨별 영상 시작 시간 링크', lvs.every(l => hrefs.some(h => h.endsWith(`t=${it.t[l]}`))), hrefs.join(' '));
+  if (lvs.length > 1) {
+    const other = lvs.find(l => l !== first);
+    await page.click(`[data-lv="${other}"]`);
+    await page.waitForTimeout(300);
+    check('문항: 레벨 전환', (await page.$$('.sent')).length === it.answersKo[other].length && (await page.innerText('[data-answer]')).includes(it.answers[other].slice(0, 25)));
+    await page.click('text=다음 문항 ›');
+    await page.waitForTimeout(800);
+    check('문항: 다음 문항으로', page.url().endsWith(`#/bank/${items[idx + 1].id}`));
+    const nx = items[idx + 1];
+    if (nx.answers[other]) check('문항: 고른 레벨 유지', (await page.innerText('[data-answer]')).includes(nx.answers[other].slice(0, 25)));
+  }
   await page.click('.sent[data-i="0"]');
   await page.waitForTimeout(300);
   check('문항: 문장 탭하면 재생', (await page.evaluate(() => window.__spoken)).length > 0);
-  await page.click('text=다음 ›');
-  await page.waitForTimeout(800);
-  check('문항: 다음 문항으로', page.url().endsWith(`#/bank/${items[2].id}`));
   await page.click('#ptabs [data-m=speak]');
   await page.waitForTimeout(300);
   check('문항: 직접 답변 탭', !!(await page.$('#rec')));
   check('오류 없음 (문항)', !errs.length, errs.join('\n'));
   await page.close();
+}
+
+// ---- IH–AL 만 있는 문항: 레벨 버튼 숨김 ----
+{
+  const it = items.find(x => Object.keys(x.answers).length === 1);
+  if (it) {
+    const { page, errs } = await open(`#/bank/${it.id}`);
+    check('단일 레벨 문항: 레벨 버튼 숨김', await page.$eval('.seg', el => el.classList.contains('hidden')));
+    check('오류 없음 (단일 레벨)', !errs.length, errs.join('\n'));
+    await page.close();
+  }
 }
 
 // ---- 주제 ③ 답안 탭의 바로 가기 ----

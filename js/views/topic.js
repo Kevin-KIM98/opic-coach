@@ -243,7 +243,7 @@ function renderQuestions(body, topic, level, query) {
     const n = gs.reduce((a, g) => a + g.items.length, 0);
     const $l = body.querySelector('[data-bank-link]');
     if (!n || !$l) return;
-    $l.innerHTML = gs.map(g => `<a class="btn ghost block mt12" href="#/bank?g=${g.id}">${g.emoji} 실전 답변 · ${g.title} ${g.items.length}문항 (${bank.level})</a>`).join('');
+    $l.innerHTML = gs.map(g => `<a class="btn ghost block mt12" href="#/bank?g=${g.id}">${g.emoji} 실전 답변 · ${g.title} ${g.items.length}문항 (${bank.levels.map(l => l.id).join(' · ')})</a>`).join('');
   }).catch(() => {});
 }
 function practiceCount(qid) { return store.state.practice.filter(p => p.qid === qid).length; }
