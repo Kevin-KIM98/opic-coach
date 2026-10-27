@@ -38,7 +38,7 @@ async function open(hash, seed = null) {
   check('홈: 예전 학습 일정 없음', !txt.includes('오늘의 학습') && !txt.includes('밀린 과제') && !txt.includes('집중 학습 — 서베이'));
   check('홈: 모의고사 · 복습 버튼', txt.includes('모의고사') && txt.includes('복습'));
   check('홈: 잘못된 링크 없음', (await page.evaluate(() => [...document.querySelectorAll('#view a[href^="#/"]')].map(a => a.getAttribute('href'))
-    .filter(h => !/^#\/(topic|topics|drill|mock|home|settings|progress|review|practice)(\/|\?|$)/.test(h)))).length === 0);
+    .filter(h => !/^#\/(topic|topics|drill|mock|home|settings|progress|review|practice|bank)(\/|\?|$)/.test(h)))).length === 0);
   check('홈: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   if (OUT) await page.screenshot({ path: `${OUT}/home.png`, fullPage: true });
   await page.close();
