@@ -519,3 +519,17 @@ kbd { font-family: inherit; background: var(--surface-2); padding: 1px 6px; bord
 /* 홈 상단: 지금 실행 중인 버전 · 업데이트 시각 */
 .topbar .title .ver { font-size: 11px; font-weight: 500; letter-spacing: 0; color: var(--muted); margin-top: 1px; }
 .topbar .ver-update { display: block; margin-top: 4px; font-size: 11px; padding: 3px 9px; }
+
+/* 🌙 화면 어둡게: 재생 중 떠 있는 버튼 · 검은 덮개 */
+.dim-btn {
+  position: fixed; right: 14px; bottom: calc(var(--nav-h) + 16px + env(safe-area-inset-bottom)); z-index: 45;
+  padding: 10px 14px; border-radius: 999px; font-size: 14px; font-weight: 700;
+  background: #111; color: #f2f2f2; box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+}
+body.has-installbar .dim-btn { bottom: calc(var(--nav-h) + 84px + env(safe-area-inset-bottom)); }
+.dim-overlay {
+  position: fixed; inset: 0; z-index: 9999; background: #000; touch-action: none; user-select: none; -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent; cursor: none;
+}
+.dim-overlay .dim-hint { position: absolute; color: #888; opacity: .35; filter: grayscale(1); font-size: 13px; line-height: 1.6; text-align: center; transition: top 2s, left 2s; }
+body.dimmed { overflow: hidden; }

@@ -1,4 +1,4 @@
-// 화면이 꺼져도 계속 재생 · 이어폰을 빼면 멈춤 (Chromium)
+// 🌙 화면 어둡게 · 화면 꺼짐 처리 · 이어폰을 빼면 멈춤 (Chromium)
 //
 // 이어폰 분리는 안드로이드가 미디어를 일시정지하는 것(becoming noisy)과 같으므로, 백그라운드 재생용
 // <audio> 를 바깥에서 pause() 해서 흉내 낸다. 화면 꺼짐은 visibilitychange(hidden) 로 흉내 낸다.
@@ -72,29 +72,62 @@ const spokenCount = (page) => page.evaluate(() => window.__spoken.length);
   await page.close();
 }
 
-// ---- 화면 꺼짐(hidden): 기본값은 계속 재생 ----
+// ---- 화면 꺼짐(hidden): 폰의 음성 합성이 멈추므로 재생도 멈추고 🌙 를 안내 ----
 {
   const { page, errs } = await open('#/drill?tab=patterns&group=all:im3');
-  await page.click('[data-toggle]');
-  await page.waitForTimeout(600);
-  await page.evaluate(() => window.__hide());
-  const n = await spokenCount(page);
-  await page.waitForTimeout(2500);
-  check('화면 꺼짐: 계속 읽음', (await spokenCount(page)) > n, `${n} → ${await spokenCount(page)}`);
-  check('오류 없음 (화면 꺼짐)', !errs.length, errs.join('\n'));
-  await page.close();
-}
-
-// ---- 화면 꺼짐 + '계속 재생' 끔: 멈춤 ----
-{
-  const { page } = await open('#/drill?tab=patterns&group=all:im3', { bgPlay: false });
   await page.click('[data-toggle]');
   await page.waitForTimeout(600);
   await page.evaluate(() => window.__hide());
   await page.waitForTimeout(200);
   const n = await spokenCount(page);
   await page.waitForTimeout(1500);
-  check('계속 재생 끔: 화면 꺼지면 멈춤', (await spokenCount(page)) === n);
+  check('화면 꺼짐: 멈춤', (await spokenCount(page)) === n);
+  check('화면 꺼짐: 🌙 안내', (await page.innerText('[data-status]')).includes('화면 어둡게'));
+  check('오류 없음 (화면 꺼짐)', !errs.length, errs.join('\n'));
+  await page.close();
+}
+
+// ---- 🌙 화면 어둡게: 재생은 계속, 두 번 탭하면 돌아옴, 끝나면 걷힘 ----
+{
+  const { page, errs } = await open('#/drill?tab=patterns&group=all:im3');
+  check('재생 전: 🌙 버튼 없음', await page.$eval('.dim-btn', el => el.classList.contains('hidden')).catch(() => true));
+  await page.click('[data-toggle]');
+  await page.waitForTimeout(400);
+  check('재생 중: 🌙 버튼', await page.$eval('.dim-btn', el => !el.classList.contains('hidden')));
+  await page.click('.dim-btn');
+  await page.waitForTimeout(200);
+  check('어둡게: 검은 덮개', await page.$eval('.dim-overlay', el => !el.classList.contains('hidden') && getComputedStyle(el).backgroundColor === 'rgb(0, 0, 0)'));
+  const n = await spokenCount(page);
+  await page.waitForTimeout(1500);
+  check('어둡게: 재생은 계속', (await spokenCount(page)) > n, `${n} → ${await spokenCount(page)}`);
+  await page.mouse.click(200, 400);
+  await page.waitForTimeout(600);
+  check('어둡게: 한 번 탭으로는 안 풀림', await page.$eval('.dim-overlay', el => !el.classList.contains('hidden')));
+  await page.mouse.click(200, 400);
+  await page.mouse.click(200, 400);
+  await page.waitForTimeout(200);
+  check('어둡게: 두 번 탭하면 돌아옴', await page.$eval('.dim-overlay', el => el.classList.contains('hidden')));
+  check('돌아온 뒤에도 재생 중', (await page.innerText('[data-toggle]')).includes('멈춤'));
+  // 어두운 채로 재생을 멈추면(이어폰 분리) 덮개가 걷힌다
+  await page.click('.dim-btn');
+  await page.waitForTimeout(200);
+  await page.evaluate(() => window.__audios.find(a => a.loop).pause());
+  await page.waitForTimeout(300);
+  check('재생이 멈추면 덮개 걷힘', await page.$eval('.dim-overlay', el => el.classList.contains('hidden')));
+  check('재생이 멈추면 🌙 버튼 숨김', await page.$eval('.dim-btn', el => el.classList.contains('hidden')));
+  check('오류 없음 (화면 어둡게)', !errs.length, errs.join('\n'));
+  await page.close();
+}
+
+// ---- 자동으로 어둡게 (설정 15초 → 테스트는 시계를 빠르게) ----
+{
+  const { page } = await open('#/drill?tab=patterns&group=all:im3', { autoDim: 15 });
+  await page.clock.install().catch(() => {});
+  await page.click('[data-toggle]');
+  await page.waitForTimeout(300);
+  await page.clock.runFor(16000).catch(() => {});
+  await page.waitForTimeout(300);
+  check('자동 어둡게: 15초 뒤 덮개', await page.$eval('.dim-overlay', el => !el.classList.contains('hidden')).catch(() => false));
   await page.close();
 }
 
@@ -116,8 +149,8 @@ const spokenCount = (page) => page.evaluate(() => window.__spoken.length);
   const { page } = await open('#/settings');
   await page.click('#unplug [data-v="0"]');
   check('설정: 이어폰 옵션 저장', await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')).settings.stopOnUnplug === false));
-  await page.click('#bgplay [data-v="0"]');
-  check('설정: 계속 재생 옵션 저장', await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')).settings.bgPlay === false));
+  await page.click('#autodim [data-v="30"]');
+  check('설정: 자동 어둡게 저장', await page.evaluate(() => JSON.parse(localStorage.getItem('opic-coach:v1')).settings.autoDim === 30));
   await page.close();
 }
 

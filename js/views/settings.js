@@ -4,6 +4,7 @@ import { data } from '../data.js';
 import { englishVoices, speak, support, requestMic, Recognizer, sttDiagnosis } from '../speech.js';
 import { header, promptInstall } from '../app.js';
 import { versionLabel } from '../version.js';
+import { AUTO_DIM } from '../dim.js';
 import { CONFIG, githubUrl, isEditor, setEditor, contentBranch } from '../config.js';
 
 export async function render(root) {
@@ -28,8 +29,8 @@ export async function render(root) {
         <div class="field"><label>재생 속도 <span id="rateval">${s.ttsRate}</span>x</label><input type="range" id="rate" min="0.6" max="1.3" step="0.05" value="${s.ttsRate}"></div>
         <div class="field"><label>답변 오디오 녹음</label><div class="seg" id="recaudio">${raw([[1, '켬'], [0, '끔']].map(([v, t]) => `<button data-v="${v}" class="${(s.recordAudio !== false) === !!v ? 'active' : ''}">${t}</button>`).join(''))}</div>
           <div class="xs muted">켜면 답변을 다시 들어볼 수 있습니다. 안드로이드에서 <b>음성 인식이 계속 실패</b>하면 녹음이 마이크를 잡고 있는 경우가 있으니 꺼 보세요.</div></div>
-        <div class="field"><label>화면이 꺼져도 계속 재생</label><div class="seg" id="bgplay">${raw([[1, '켬'], [0, '끔']].map(([v, t]) => `<button data-v="${v}" class="${(s.bgPlay !== false) === !!v ? 'active' : ''}">${t}</button>`).join(''))}</div>
-          <div class="xs muted">자동 재생 · 전체 듣기 중에 화면을 꺼도(전원 버튼) 계속 들려요. 잠금 화면에서 ⏸ 로 멈출 수 있어요. iPhone Safari 는 화면이 꺼지면 음성이 멈출 수 있어요.</div></div>
+        <div class="field"><label>재생 중 자동으로 화면 어둡게</label><div class="seg" id="autodim">${raw(AUTO_DIM.map(v => `<button data-v="${v}" class="${(s.autoDim ?? 0) === v ? 'active' : ''}">${v ? (v < 60 ? `${v}초` : '1분') : '끔'}</button>`).join(''))}</div>
+          <div class="xs muted">폰은 화면이 꺼지면 음성을 멈춰요. 그래서 재생 중에는 <b>🌙 화면 어둡게</b> 버튼으로 화면을 검게 덮어 끈 것처럼 두고 계속 들어요 (두 번 탭하면 돌아와요). 여기서 시간을 고르면 그동안 화면을 만지지 않을 때 저절로 어두워져요.</div></div>
         <div class="field"><label>이어폰을 빼면 멈춤</label><div class="seg" id="unplug">${raw([[1, '켬'], [0, '끔']].map(([v, t]) => `<button data-v="${v}" class="${(s.stopOnUnplug !== false) === !!v ? 'active' : ''}">${t}</button>`).join(''))}</div>
           <div class="xs muted">유선 이어폰을 뽑거나 블루투스 이어폰 연결이 끊기면 재생을 멈춰 스피커로 소리가 나지 않게 해요.</div></div>
         <div class="btn-row"><button class="btn" id="test">🔊 테스트</button><button class="btn" id="mic">🎙️ 마이크 권한</button></div>
@@ -65,7 +66,10 @@ export async function render(root) {
       store.setSetting(key, b.dataset.v === '1');
       root.querySelectorAll(`#${id} button`).forEach(x => x.classList.toggle('active', x === b));
     }));
-    seg('bgplay', 'bgPlay');
+    root.querySelectorAll('#autodim button').forEach(b => b.addEventListener('click', () => {
+      store.setSetting('autoDim', Number(b.dataset.v));
+      root.querySelectorAll('#autodim button').forEach(x => x.classList.toggle('active', x === b));
+    }));
     seg('unplug', 'stopOnUnplug');
     root.querySelector('#sttcheck').addEventListener('click', e => runSttCheck(e.currentTarget, root.querySelector('#sttresult')));
     root.querySelectorAll('#theme button').forEach(b => b.addEventListener('click', () => { store.setSetting('theme', b.dataset.v); if (b.dataset.v) document.documentElement.dataset.theme = b.dataset.v; else delete document.documentElement.dataset.theme; draw(); }));
