@@ -15,7 +15,9 @@ const check = (l, c, d = '') => { if (!c) { fails++; console.log(`FAIL ${l}${d ?
 const wait = (p, ms = 500) => p.waitForTimeout(ms);
 
 async function open(hash) {
-  const page = await b.newPage({ viewport: { width: 412, height: 915 } });
+  const page = await b.newPage({ serviceWorkers: 'block', viewport: { width: 412, height: 915 } });
+  // 녹음 파일 대신 음성 합성(목업)으로 읽게 한다 — 녹음 재생은 test-background.mjs 에서 따로 본다
+  await page.route('**/data/audio/index.json', r => r.fulfill({ json: { keys: [] } }));
   const errs = [];
   page.on('pageerror', e => errs.push('pageerror: ' + e.message));
   page.on('console', m => { const t = m.text(); if (m.type() === 'error' && !/Failed to load resource|Failed to fetch/.test(t)) errs.push('console: ' + t); });

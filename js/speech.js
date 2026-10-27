@@ -5,7 +5,7 @@ const synth = window.speechSynthesis;
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 export const support = {
-  tts: !!synth,
+  tts: !!synth || typeof Audio !== 'undefined',
   stt: !!SR,
   recorder: !!(navigator.mediaDevices && window.MediaRecorder),
 };
@@ -32,7 +32,63 @@ function pickVoice() {
 }
 
 let currentUtter = null;
-export function speak(text, { rate, onBoundary } = {}) {
+
+// ---------- 녹음된 음성 (data/audio) ----------
+// 브라우저 음성 합성은 화면이 꺼지면 멈춘다. 그래서 앱이 읽는 문장은 미리 녹음해 두고(tools/make-audio.py)
+// <audio> 로 재생한다 — 화면이 꺼져도 계속 들리고, 이어폰이 빠지면 안드로이드가 일시정지한다.
+// 녹음이 없는 문장(새로 고친 내용 등)이나 설정에서 끈 경우에는 음성 합성으로 읽는다.
+export const useRecorded = () => store.settings.recordedVoice !== false;
+let audioIndex = null;
+const loadAudioIndex = () => (audioIndex ||= fetch('data/audio/index.json', { cache: 'no-cache' })
+  .then(r => (r.ok ? r.json() : { keys: [] }))
+  .then(d => new Set(d.keys || []))
+  .catch(() => { audioIndex = null; return new Set(); }));
+
+const normText = (t) => String(t).split(/\s+/).filter(Boolean).join(' ');
+/** tools/make-audio.py audio_key() 와 같은 키: sha1(공백 정리한 문장) 앞 16자리 */
+export async function audioKey(text) {
+  const buf = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(normText(text)));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 16);
+}
+
+let voiceEl = null;          // 문장 재생용 <audio> 하나를 계속 쓴다
+let finishVoice = null;      // 재생 중인 문장의 Promise 를 끝내는 함수
+let speakGen = 0;            // speak/stop 마다 늘어난다 — 파일을 찾는 사이에 멈췄으면 재생하지 않는다
+function voice() {
+  if (!voiceEl) { voiceEl = new Audio(); voiceEl.preload = 'auto'; voiceEl.setAttribute('playsinline', ''); }
+  return voiceEl;
+}
+async function playRecorded(text, rate) {
+  if (!useRecorded() || typeof Audio === 'undefined' || !window.crypto?.subtle) return null;
+  const gen = speakGen;
+  const [index, key] = await Promise.all([loadAudioIndex(), audioKey(text).catch(() => null)]);
+  if (gen !== speakGen) return true;          // 그 사이에 멈췄거나 다른 문장을 재생했다
+  if (!key || !index.has(key)) return null;
+  const v = voice();
+  return new Promise(resolve => {
+    let done = false;
+    const end = (ok) => { if (done) return; done = true; finishVoice = null; v.onended = v.onerror = null; resolve(ok); };
+    finishVoice = end;
+    v.onended = () => end(true);
+    v.onerror = () => end(null);          // 파일을 못 받으면(오프라인 등) 음성 합성으로 대신 읽는다
+    v.muted = false;
+    v.src = `data/audio/${key}.mp3`;
+    v.playbackRate = rate;
+    v.preservesPitch = true;
+    v.play().catch(() => end(null));
+  });
+}
+
+export async function speak(text, { rate, onBoundary } = {}) {
+  stopSpeaking();
+  const r = rate ?? store.settings.ttsRate ?? 0.95;
+  const gen = ++speakGen;
+  const rec = await playRecorded(text, r);
+  if (rec !== null || gen !== speakGen) return rec ?? true;
+  return speakSynth(text, { rate: r, onBoundary });
+}
+
+function speakSynth(text, { rate, onBoundary } = {}) {
   return new Promise(resolve => {
     if (!synth) return resolve(false);
     synth.cancel();
@@ -40,7 +96,7 @@ export function speak(text, { rate, onBoundary } = {}) {
     const v = pickVoice();
     if (v) u.voice = v;
     u.lang = v?.lang || 'en-US';
-    u.rate = rate ?? store.settings.ttsRate ?? 0.95;
+    u.rate = rate;
     u.pitch = 1;
     // 일부 기기에서 onend 가 오지 않는 경우를 대비한 안전 타이머
     const watchdog = setTimeout(() => { currentUtter = null; resolve(true); }, (2000 + text.length * 100) / u.rate);
@@ -51,8 +107,14 @@ export function speak(text, { rate, onBoundary } = {}) {
     synth.speak(u);
   });
 }
-export function stopSpeaking() { if (synth) synth.cancel(); currentUtter = null; }
-export function isSpeaking() { return !!synth && synth.speaking; }
+export function stopSpeaking() {
+  speakGen++;
+  if (synth) synth.cancel();
+  currentUtter = null;
+  if (voiceEl && !voiceEl.paused) voiceEl.pause();
+  finishVoice?.(true);
+}
+export function isSpeaking() { return (!!synth && synth.speaking) || (!!voiceEl && !voiceEl.paused && !voiceEl.ended); }
 
 // ---------- STT ----------
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9' ]+/g, ' ').replace(/\s+/g, ' ').trim();

@@ -1,5 +1,5 @@
 // 서비스워커: 모든 동일 출처 파일은 네트워크 우선(오프라인 시 캐시). CDN 폰트는 캐시 우선.
-const VERSION = 'v4.5.0';
+const VERSION = 'v4.6.0';
 const SHELL = `opic-shell-${VERSION}`;
 const DATA = `opic-data`;
 const SHELL_FILES = [
@@ -21,6 +21,8 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET') return;
+  // 녹음 파일(data/audio/*.mp3): <audio> 가 구간(Range) 요청으로 받으므로 브라우저에 맡긴다
+  if (url.origin === location.origin && url.pathname.includes('/data/audio/') && url.pathname.endsWith('.mp3')) return;
   // 데이터: 네트워크 우선
   if (url.origin === location.origin && url.pathname.includes('/data/')) {
     e.respondWith(

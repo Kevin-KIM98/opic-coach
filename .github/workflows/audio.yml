@@ -1,0 +1,65 @@
+name: Record audio
+
+# 앱이 읽는 문장을 녹음 파일(data/audio)로 만든다 — 화면이 꺼져도 재생되도록.
+# 폰에서 주제·답변을 고쳐 main 에 올리면, 새로 생기거나 바뀐 문장만 녹음해 커밋한다 (보통 몇 분).
+# 녹음이 생기기 전까지는 앱이 폰의 음성 합성으로 읽는다.
+on:
+  push:
+    branches: [main]
+    paths: ["data/**", "!data/audio/**", "tools/make-audio.py"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: record-audio
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Count missing recordings
+        id: count
+        run: |
+          python tools/make-audio.py --list | tee count.txt
+          grep -q "녹음 없음 0개" count.txt && echo "missing=0" >> "$GITHUB_OUTPUT" || echo "missing=1" >> "$GITHUB_OUTPUT"
+
+      - name: Install Kokoro TTS
+        if: steps.count.outputs.missing == '1'
+        run: |
+          mkdir -p ~/.cache/kokoro && cd ~/.cache/kokoro
+          python -m venv venv
+          venv/bin/pip install -q kokoro-onnx soundfile
+          BASE=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
+          curl -fsSL -o kokoro-v1.0.onnx "$BASE/kokoro-v1.0.onnx"
+          curl -fsSL -o voices-v1.0.bin "$BASE/voices-v1.0.bin"
+          command -v ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+
+      - name: Record missing sentences
+        run: |
+          if [ "${{ steps.count.outputs.missing }}" = "1" ]; then
+            ~/.cache/kokoro/venv/bin/python -I tools/make-audio.py --prune
+          else
+            python tools/make-audio.py --prune
+          fi
+
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain -- data/audio)" ]; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/audio
+          git commit -m "녹음 파일 자동 갱신"
+          git pull --rebase -q origin main
+          git push
