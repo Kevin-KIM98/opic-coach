@@ -10,7 +10,6 @@
 import { store } from './store.js';
 
 export const backgroundSupported = typeof Audio !== 'undefined';
-export const bgPlayOn = () => store.settings.bgPlay ?? true;
 export const stopOnUnplugOn = () => store.settings.stopOnUnplug ?? true;
 
 let audio = null;
@@ -61,9 +60,10 @@ navigator.mediaDevices?.addEventListener?.('devicechange', async () => {
   else if (now) outputs = now;
 });
 
-// '화면 꺼져도 계속 재생'을 끈 경우: 화면이 꺼지거나 다른 앱으로 가면 멈춘다
+// 화면이 꺼지거나 다른 앱으로 가면 폰의 음성 합성이 멈춘다 → 재생 상태도 멈춤으로 맞추고 이유를 알려 준다.
+// 화면을 끈 것처럼 두고 들으려면 🌙 화면 어둡게(dim.js)를 쓴다.
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'hidden' && session && !bgPlayOn()) interrupt('hidden');
+  if (document.visibilityState === 'hidden' && session) interrupt('hidden');
 });
 
 function interrupt(reason) {
@@ -93,7 +93,7 @@ function end() {
  */
 export function startBackground({ onStop, title = 'OPIc Coach' }) {
   if (!backgroundSupported) return () => {};
-  const mine = { onStop, audio: bgPlayOn() || stopOnUnplugOn() };
+  const mine = { onStop, audio: stopOnUnplugOn() };
   session = mine;
   if (mine.audio) {
     const a = ensureAudio();
@@ -124,5 +124,5 @@ export function nowPlaying(text) {
 
 /** 멈춘 이유를 사람 말로 */
 export function stopReasonText(reason) {
-  return { unplug: '🎧 이어폰이 빠졌거나 다른 앱이 소리를 가져가서 멈췄어요.', remote: '잠금 화면에서 멈췄어요.', hidden: '화면이 꺼져서 멈췄어요. (설정에서 화면이 꺼져도 계속 재생을 켤 수 있어요)' }[reason] || '';
+  return { unplug: '🎧 이어폰이 빠졌거나 다른 앱이 소리를 가져가서 멈췄어요.', remote: '잠금 화면에서 멈췄어요.', hidden: '화면이 꺼져서 멈췄어요. 🌙 화면 어둡게를 쓰면 화면을 끈 것처럼 두고 계속 들을 수 있어요.' }[reason] || '';
 }

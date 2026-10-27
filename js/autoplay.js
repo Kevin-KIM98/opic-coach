@@ -1,12 +1,13 @@
 // 자동 반복 재생: 문장 목록을 순서대로, 각 문장을 설정한 횟수만큼 읽어 줍니다.
 // 🔁 켜져 있으면 목록 끝까지 간 뒤 처음부터 다시 — 멈출 때까지 계속 반복합니다(기본값).
 // 버튼을 매번 누르지 않아도 듣고 → 따라 말하기를 반복할 수 있게 하는 것이 목적입니다.
-// 재생 중에는 화면이 꺼지지 않도록 wake lock 을 잡고, 화면을 꺼도 이어지도록 백그라운드 재생을 켭니다.
+// 재생 중에는 화면이 꺼지지 않도록 wake lock 을 잡고, 🌙 화면 어둡게(dim.js)로 화면을 끈 것처럼 둘 수 있습니다.
 // 이어폰을 빼면 멈춥니다 (background.js).
 import { speak, stopSpeaking, support } from './speech.js';
 import { store } from './store.js';
 import { keepAwake, wakeLockSupported } from './wake-lock.js';
 import { startBackground, nowPlaying, stopReasonText } from './background.js';
+import { holdDim } from './dim.js';
 
 const REPEATS = [1, 2, 3, 5];
 const GAPS = [0, 0.8, 1.5, 2.5];
@@ -29,6 +30,7 @@ export function createSequencePlayer() {
   let token = 0;          // 세대 번호 — 늘어나면 진행 중인 루프는 스스로 빠져나온다
   let release = null;     // wake lock 해제
   let releaseBg = null;   // 백그라운드 재생 해제
+  let releaseDim = null;  // 🌙 화면 어둡게 버튼 해제
   let cancelWait = null;
   let playing = false;
 
@@ -46,6 +48,7 @@ export function createSequencePlayer() {
     cancelWait?.();
     release?.(); release = null;
     releaseBg?.(); releaseBg = null;
+    releaseDim?.(); releaseDim = null;
   }
 
   /**
@@ -59,6 +62,7 @@ export function createSequencePlayer() {
     const my = ++token;
     playing = true;
     release = keepAwake();
+    releaseDim = holdDim();
     releaseBg = startBackground({
       onStop: (reason) => {
         if (!live()) return;
@@ -149,7 +153,7 @@ export function createAutoPlay(mount, scope, opts = {}) {
     $toggle.classList.remove('on');
     mount.classList.remove('on');
     clearHighlight();
-    $status.textContent = msg ?? (wakeLockSupported ? '재생 중에는 화면이 꺼지지 않아요. 직접 꺼도 계속 들려요 · 이어폰을 빼면 멈춰요.' : '화면을 꺼도 계속 들려요 · 이어폰을 빼면 멈춰요.');
+    $status.textContent = msg ?? '재생 중에는 화면이 꺼지지 않아요. 🌙 화면 어둡게로 끈 것처럼 두고 들을 수 있어요 · 이어폰을 빼면 멈춰요.';
   }
 
   function start() {

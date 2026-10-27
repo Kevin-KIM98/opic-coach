@@ -4,8 +4,8 @@
 // 편집자 모드가 꺼져 있으면 앱 어디에도 저장소 주소·계정이 드러나지 않는다.
 export const CONFIG = {
   appName: 'OPIc Coach',
-  version: '4.5.0',
-  updated: '2026-10-27 11:34',   // 이 버전을 올린 시각 (한국 시간). 홈 상단에 표시
+  version: '4.6.0',
+  updated: '2026-10-27 11:59',   // 이 버전을 올린 시각 (한국 시간). 홈 상단에 표시
   // 기본 설정값 (설정 화면에서 변경 가능)
   defaults: {
     target: 'IM3',          // IM3 | IH | AL
@@ -16,7 +16,7 @@ export const CONFIG = {
     repeatCount: 2,         // 자동 재생: 한 항목을 읽는 횟수
     repeatLoop: true,       // 자동 재생: 끝까지 가면 처음부터 다시 (멈출 때까지 계속)
     repeatGap: 1.5,         // 자동 재생: 따라 말할 간격(초)
-    bgPlay: true,           // 자동 재생: 화면이 꺼져도 계속 (백그라운드 재생)
+    autoDim: 0,             // 자동 재생: 화면을 만지지 않으면 N초 뒤 🌙 화면 어둡게 (0 = 끔)
     stopOnUnplug: true,     // 자동 재생: 이어폰을 빼면 멈춤
   },
 };
