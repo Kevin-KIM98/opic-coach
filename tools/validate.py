@@ -211,6 +211,19 @@ def check_bank(path, d):
                     err(f"{where} answersKo.{lv} 는 영어 답변 문장 수({len(sents)})와 같은 개수의 한글 문장이어야 합니다 (현재 {len(arr) if isinstance(arr, list) else '없음'})")
 
 
+def check_version():
+    """js/config.js 의 version · updated 와 sw.js 의 VERSION 이 맞는지 (홈 상단 버전 표시 · 캐시 갱신)."""
+    cfg = (ROOT / "js" / "config.js").read_text(encoding="utf-8")
+    sw = (ROOT / "sw.js").read_text(encoding="utf-8")
+    v = re.search(r"version:\s*'([^']+)'", cfg)
+    u = re.search(r"updated:\s*'([^']+)'", cfg)
+    s = re.search(r"const VERSION = 'v([^']+)'", sw)
+    if not v or not s or v.group(1) != s.group(1):
+        err(f"js/config.js version({v and v.group(1)}) 과 sw.js VERSION({s and s.group(1)}) 이 다릅니다 — 함께 올리세요")
+    if not u or not re.fullmatch(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}", u.group(1)):
+        err("js/config.js 의 updated 는 'YYYY-MM-DD HH:MM' (한국 시간) 이어야 합니다")
+
+
 def main():
     pats = load(DATA / "patterns.json") or {}
     frames = {f"{g.get('id')}#{i}": it.get("pattern") or it.get("en", "") for g in pats.get("groups", []) for i, it in enumerate(g.get("items", []))}
@@ -250,6 +263,7 @@ def main():
                         err(f"data/patterns.json: group '{g.get('id')}' items[{i}] pattern 에 빈칸(___)이 없습니다")
                     if not isinstance(it.get("examples", []), list):
                         err(f"data/patterns.json: group '{g.get('id')}' items[{i}] examples 는 문장 목록이어야 합니다")
+    check_version()
     if errors:
         print("❌ 검증 실패:")
         for e in errors:
