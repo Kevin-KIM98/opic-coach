@@ -3,6 +3,7 @@ import { store } from '../store.js';
 import { data } from '../data.js';
 import { englishVoices, speak, support, requestMic, Recognizer, sttDiagnosis } from '../speech.js';
 import { header, promptInstall } from '../app.js';
+import { versionLabel } from '../version.js';
 import { CONFIG, githubUrl, isEditor, setEditor, contentBranch } from '../config.js';
 
 export async function render(root) {
@@ -50,7 +51,7 @@ export async function render(root) {
       </div>
 
       ${raw(isEditor() ? editorCard() : '')}
-      <div class="xs muted center mt12" id="about" role="button" tabindex="0">${CONFIG.appName} v${CONFIG.version}</div>`;
+      <div class="xs muted center mt12" id="about" role="button" tabindex="0">${CONFIG.appName} ${versionLabel()}</div>`;
 
     root.querySelector('#name').addEventListener('change', e => store.setSetting('name', e.target.value.trim()));
     root.querySelectorAll('#target button').forEach(b => b.addEventListener('click', () => { store.setSetting('target', b.dataset.v); draw(); }));

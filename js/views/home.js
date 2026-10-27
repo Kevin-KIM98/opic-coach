@@ -2,6 +2,7 @@ import { html, raw, fmtDate } from '../util.js';
 import { store } from '../store.js';
 import { data } from '../data.js';
 import { examInfo } from '../exam.js';
+import { versionLabel, checkForUpdate, applyUpdate, fmtUpdated } from '../version.js';
 
 // 홈: D-day · 이어서 학습 · 주제 고르기. 주제 하나를 골라 끝까지 파는 흐름만 남겼다.
 export async function render(root) {
@@ -14,7 +15,7 @@ export async function render(root) {
 
   root.innerHTML = html`
     <header class="topbar">
-      <div class="title">OPIc Coach</div>
+      <div class="title">OPIc Coach<div class="ver" data-ver>${versionLabel()}</div></div>
       <a class="icon-btn" href="#/settings" aria-label="설정">⚙️</a>
     </header>
 
@@ -43,6 +44,13 @@ export async function render(root) {
     </div>
     ${idx.persona ? raw(`<p class="xs muted center mt16">모범답안 속 '나' — ${idx.persona.split(' · ').slice(0, 3).join(' · ')}</p>`) : ''}
   `;
+  // 서버에 더 새 버전이 있으면 알려 주고, 누르면 바로 적용
+  checkForUpdate().then(nv => {
+    const $v = root.querySelector('[data-ver]');
+    if (!nv || !$v) return;
+    $v.insertAdjacentHTML('afterend', `<button class="chip active ver-update" data-update>🔄 새 버전 v${nv.version}${nv.updated ? ` (${fmtUpdated(nv.updated)})` : ''} 적용</button>`);
+    root.querySelector('[data-update]').addEventListener('click', (e) => { e.currentTarget.textContent = '적용 중…'; applyUpdate(); });
+  });
 }
 
 const STEPS = [['expr', '표현'], ['pat', '패턴'], ['ans', '답안']];
