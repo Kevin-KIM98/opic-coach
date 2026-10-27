@@ -17,9 +17,7 @@ const BASE = process.env.BASE || 'http://localhost:8777';
 
 // 인식은 시나리오대로 실패시키고, TTS·녹음·Wake Lock 은 가짜로 대체한다
 async function openApp(scenario) {
-  const page = await b.newPage({ serviceWorkers: 'block', viewport: { width: 412, height: 915 } });
-  // 녹음 파일 대신 음성 합성(목업)으로 읽게 한다 — 녹음 재생은 test-background.mjs 에서 따로 본다
-  await page.route('**/data/audio/index.json', r => r.fulfill({ json: { keys: [] } }));
+  const page = await b.newPage({ viewport: { width: 412, height: 915 } });
   const errs = [];
   page.on('pageerror', e => { if (!/Failed to fetch/.test(e.message)) errs.push('pageerror: ' + e.message); });
   await page.addInitScript(({ scenario }) => {

@@ -21,9 +21,7 @@ let fails = 0;
 const check = (l, c, dd = '') => { if (!c) { fails++; console.log(`FAIL ${l}${dd ? '\n     ' + dd : ''}`); } else console.log(`ok   ${l}`); };
 
 async function open(hash, serverConfig = null) {
-  const page = await b.newPage({ serviceWorkers: 'block', viewport: { width: 412, height: 915 } });
-  // 녹음 파일 대신 음성 합성(목업)으로 읽게 한다 — 녹음 재생은 test-background.mjs 에서 따로 본다
-  await page.route('**/data/audio/index.json', r => r.fulfill({ json: { keys: [] } }));
+  const page = await b.newPage({ viewport: { width: 412, height: 915 } });
   const errs = [];
   page.on('pageerror', e => errs.push('pageerror: ' + e.message));
   if (serverConfig) await page.route(/js\/config\.js\?check=/, r => r.fulfill({ contentType: 'text/javascript', body: serverConfig }));

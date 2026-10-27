@@ -20,12 +20,10 @@ let fails = 0;
 const check = (l, c, d = '') => { if (!c) { fails++; console.log(`FAIL ${l}${d ? '\n     ' + d : ''}`); } else console.log(`ok   ${l}`); };
 
 async function open(url, { landscape = false, repeat = 2, gap = 0 } = {}) {
-  const page = await b.newPage({ serviceWorkers: 'block',
+  const page = await b.newPage({
     viewport: landscape ? { width: 915, height: 412 } : { width: 412, height: 915 },
     deviceScaleFactor: 2,
   });
-  // 녹음 파일 대신 음성 합성(목업)으로 읽게 한다 — 녹음 재생은 test-background.mjs 에서 따로 본다
-  await page.route('**/data/audio/index.json', r => r.fulfill({ json: { keys: [] } }));
   const errs = [];
   page.on('pageerror', e => { if (!/Failed to fetch/.test(e.message)) errs.push('pageerror: ' + e.message); });
   page.on('console', m => { const t = m.text(); if (m.type() === 'error' && !/Failed to load resource|Failed to fetch/.test(t)) errs.push('console: ' + t); });
