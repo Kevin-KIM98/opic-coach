@@ -1455,6 +1455,627 @@
           ]
         }
       ]
+    },
+    {
+      "id": "daily-want",
+      "set": "daily54",
+      "emoji": "🙋",
+      "title": "1. 바람 · 계획 (Want · Plan)",
+      "desc": "하고 싶은 것, 할 계획을 말하는 첫 문장.",
+      "items": [
+        {
+          "en": "I want to learn how to swim.",
+          "ko": "___하고 싶어요.",
+          "level": "IM",
+          "pattern": "I want to ___.",
+          "examples": [
+            "I want to take a break this weekend.",
+            "I want to try that new restaurant."
+          ]
+        },
+        {
+          "en": "I'm going to visit my parents this weekend.",
+          "ko": "___할 거예요.",
+          "level": "IM",
+          "pattern": "I'm going to ___.",
+          "examples": [
+            "I'm going to go to bed early tonight.",
+            "I'm going to start jogging again."
+          ]
+        },
+        {
+          "en": "I'm planning to travel to Jeju next month.",
+          "ko": "___할 계획이에요.",
+          "level": "IM",
+          "pattern": "I'm planning to ___.",
+          "examples": [
+            "I'm planning to buy a new laptop.",
+            "I'm planning to cook dinner for my family."
+          ]
+        },
+        {
+          "en": "I'm thinking about changing my phone.",
+          "ko": "___할까 생각 중이에요.",
+          "level": "IM",
+          "pattern": "I'm thinking about ___.",
+          "examples": [
+            "I'm thinking about taking a cooking class.",
+            "I'm thinking about moving closer to work."
+          ]
+        },
+        {
+          "en": "I'd like to order a coffee, please.",
+          "ko": "___하고 싶어요. (정중하게)",
+          "level": "IM",
+          "pattern": "I'd like to ___.",
+          "examples": [
+            "I'd like to book a table for four.",
+            "I'd like to ask you something."
+          ]
+        },
+        {
+          "en": "I can't wait to see you.",
+          "ko": "빨리 ___하고 싶어요.",
+          "level": "IM",
+          "pattern": "I can't wait to ___.",
+          "examples": [
+            "I can't wait to go on vacation.",
+            "I can't wait to try the new menu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-feel",
+      "set": "daily54",
+      "emoji": "😊",
+      "title": "2. 감정 · 상태 (Feelings)",
+      "desc": "기분과 상태를 한 문장으로. 대화를 자연스럽게 이어 줍니다.",
+      "items": [
+        {
+          "en": "I feel like eating something spicy.",
+          "ko": "___하고 싶은 기분이에요.",
+          "level": "IM",
+          "pattern": "I feel like ___.",
+          "examples": [
+            "I feel like staying home today.",
+            "I feel like going for a walk."
+          ]
+        },
+        {
+          "en": "I'm worried about the weather tomorrow.",
+          "ko": "___가 걱정돼요.",
+          "level": "IM",
+          "pattern": "I'm worried about ___.",
+          "examples": [
+            "I'm worried about my health.",
+            "I'm worried about the meeting."
+          ]
+        },
+        {
+          "en": "I'm excited about the trip.",
+          "ko": "___가 정말 기대돼요.",
+          "level": "IM",
+          "pattern": "I'm excited about ___.",
+          "examples": [
+            "I'm excited about my new project.",
+            "I'm excited about the concert."
+          ]
+        },
+        {
+          "en": "I'm tired of eating the same food.",
+          "ko": "___하는 게 지겨워요.",
+          "level": "IH",
+          "pattern": "I'm tired of ___.",
+          "examples": [
+            "I'm tired of waiting in line.",
+            "I'm tired of working late."
+          ]
+        },
+        {
+          "en": "I'm glad that you're here.",
+          "ko": "___해서 다행이에요 / 기뻐요.",
+          "level": "IM",
+          "pattern": "I'm glad that ___.",
+          "examples": [
+            "I'm glad that it stopped raining.",
+            "I'm glad that we met today."
+          ]
+        },
+        {
+          "en": "I can't stand hot and humid weather.",
+          "ko": "___는 정말 못 참겠어요.",
+          "level": "IH",
+          "pattern": "I can't stand ___.",
+          "examples": [
+            "I can't stand loud noise at night.",
+            "I can't stand being late."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-ask",
+      "set": "daily54",
+      "emoji": "❓",
+      "title": "3. 질문하기 (Asking)",
+      "desc": "상대에게 묻는 문장. 대화를 이어 가는 가장 쉬운 방법입니다.",
+      "items": [
+        {
+          "en": "Do you want to grab a coffee?",
+          "ko": "___할래요?",
+          "level": "IM",
+          "pattern": "Do you want to ___?",
+          "examples": [
+            "Do you want to watch a movie tonight?",
+            "Do you want to come with me?"
+          ]
+        },
+        {
+          "en": "Have you ever been to Busan?",
+          "ko": "___해 본 적 있어요?",
+          "level": "IM",
+          "pattern": "Have you ever ___?",
+          "examples": [
+            "Have you ever tried Korean barbecue?",
+            "Have you ever lived abroad?"
+          ]
+        },
+        {
+          "en": "How about meeting at seven?",
+          "ko": "___는 어때요?",
+          "level": "IM",
+          "pattern": "How about ___?",
+          "examples": [
+            "How about this one?",
+            "How about going for a walk?"
+          ]
+        },
+        {
+          "en": "What do you think about this plan?",
+          "ko": "___에 대해 어떻게 생각해요?",
+          "level": "IM",
+          "pattern": "What do you think about ___?",
+          "examples": [
+            "What do you think about working from home?",
+            "What do you think about the new office?"
+          ]
+        },
+        {
+          "en": "How long does it take to get there?",
+          "ko": "___하는 데 얼마나 걸려요?",
+          "level": "IM",
+          "pattern": "How long does it take to ___?",
+          "examples": [
+            "How long does it take to learn English?",
+            "How long does it take to cook this?"
+          ]
+        },
+        {
+          "en": "Is there any coffee left?",
+          "ko": "혹시 ___ 있어요?",
+          "level": "IM",
+          "pattern": "Is there any ___?",
+          "examples": [
+            "Is there any problem?",
+            "Is there any place to park nearby?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-favor",
+      "set": "daily54",
+      "emoji": "🙏",
+      "title": "4. 부탁 · 허락 (Requests)",
+      "desc": "도움을 청하고 허락을 구하는 공손한 문장.",
+      "items": [
+        {
+          "en": "Can you help me with this?",
+          "ko": "___해 줄 수 있어요?",
+          "level": "IM",
+          "pattern": "Can you ___?",
+          "examples": [
+            "Can you send me the file?",
+            "Can you speak a little slower?"
+          ]
+        },
+        {
+          "en": "Could you please open the window?",
+          "ko": "___해 주시겠어요?",
+          "level": "IM",
+          "pattern": "Could you please ___?",
+          "examples": [
+            "Could you please say that again?",
+            "Could you please check this for me?"
+          ]
+        },
+        {
+          "en": "Do you mind if I sit here?",
+          "ko": "제가 ___해도 될까요?",
+          "level": "IH",
+          "pattern": "Do you mind if I ___?",
+          "examples": [
+            "Do you mind if I open the window?",
+            "Do you mind if I call you later?"
+          ]
+        },
+        {
+          "en": "Is it okay if I leave a little early?",
+          "ko": "___해도 괜찮아요?",
+          "level": "IM",
+          "pattern": "Is it okay if I ___?",
+          "examples": [
+            "Is it okay if I bring a friend?",
+            "Is it okay if I use your charger?"
+          ]
+        },
+        {
+          "en": "Let me check my schedule.",
+          "ko": "제가 ___할게요.",
+          "level": "IM",
+          "pattern": "Let me ___.",
+          "examples": [
+            "Let me think about it.",
+            "Let me help you with that."
+          ]
+        },
+        {
+          "en": "Feel free to ask me anything.",
+          "ko": "편하게 ___하세요.",
+          "level": "IH",
+          "pattern": "Feel free to ___.",
+          "examples": [
+            "Feel free to call me anytime.",
+            "Feel free to take a seat."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-suggest",
+      "set": "daily54",
+      "emoji": "💡",
+      "title": "5. 제안 · 조언 (Suggestions)",
+      "desc": "같이 하자고 하거나 조언할 때.",
+      "items": [
+        {
+          "en": "Why don't we take a taxi?",
+          "ko": "우리 ___하는 게 어때요?",
+          "level": "IM",
+          "pattern": "Why don't we ___?",
+          "examples": [
+            "Why don't we have lunch together?",
+            "Why don't we meet tomorrow instead?"
+          ]
+        },
+        {
+          "en": "Let's take a short break.",
+          "ko": "___합시다.",
+          "level": "IM",
+          "pattern": "Let's ___.",
+          "examples": [
+            "Let's go out for dinner.",
+            "Let's meet in front of the station."
+          ]
+        },
+        {
+          "en": "You should get some rest.",
+          "ko": "___하는 게 좋겠어요.",
+          "level": "IM",
+          "pattern": "You should ___.",
+          "examples": [
+            "You should try this cake.",
+            "You should see a doctor."
+          ]
+        },
+        {
+          "en": "You'd better hurry up.",
+          "ko": "___하는 게 좋을 거예요. (안 하면 곤란)",
+          "level": "IH",
+          "pattern": "You'd better ___.",
+          "examples": [
+            "You'd better take an umbrella.",
+            "You'd better save your file now."
+          ]
+        },
+        {
+          "en": "You don't have to pay for me.",
+          "ko": "___하지 않아도 돼요.",
+          "level": "IM",
+          "pattern": "You don't have to ___.",
+          "examples": [
+            "You don't have to worry about it.",
+            "You don't have to come early."
+          ]
+        },
+        {
+          "en": "Make sure you lock the door.",
+          "ko": "꼭 ___하세요.",
+          "level": "IH",
+          "pattern": "Make sure you ___.",
+          "examples": [
+            "Make sure you bring your passport.",
+            "Make sure you drink enough water."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-past",
+      "set": "daily54",
+      "emoji": "📖",
+      "title": "6. 과거 · 경험 (Past)",
+      "desc": "예전 습관과 겪은 일을 말하는 과거 패턴.",
+      "items": [
+        {
+          "en": "I used to play soccer every weekend.",
+          "ko": "예전에는 ___하곤 했어요.",
+          "level": "IM",
+          "pattern": "I used to ___.",
+          "examples": [
+            "I used to live in Seoul.",
+            "I used to drink a lot of soda."
+          ]
+        },
+        {
+          "en": "I've never been to Europe.",
+          "ko": "___해 본 적이 없어요.",
+          "level": "IM",
+          "pattern": "I've never ___.",
+          "examples": [
+            "I've never tried scuba diving.",
+            "I've never seen snow in April."
+          ]
+        },
+        {
+          "en": "I was about to call you.",
+          "ko": "막 ___하려던 참이었어요.",
+          "level": "IH",
+          "pattern": "I was about to ___.",
+          "examples": [
+            "I was about to leave the office.",
+            "I was about to go to bed."
+          ]
+        },
+        {
+          "en": "I ended up staying home all day.",
+          "ko": "결국 ___하게 됐어요.",
+          "level": "AL",
+          "pattern": "I ended up ___.",
+          "examples": [
+            "I ended up buying two pairs of shoes.",
+            "I ended up missing the last bus."
+          ]
+        },
+        {
+          "en": "I should have left earlier.",
+          "ko": "___했어야 했는데요.",
+          "level": "AL",
+          "pattern": "I should have ___.",
+          "examples": [
+            "I should have listened to you.",
+            "I should have brought a jacket."
+          ]
+        },
+        {
+          "en": "I forgot to bring my wallet.",
+          "ko": "___하는 걸 깜빡했어요.",
+          "level": "IM",
+          "pattern": "I forgot to ___.",
+          "examples": [
+            "I forgot to reply to your message.",
+            "I forgot to turn off the lights."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-now",
+      "set": "daily54",
+      "emoji": "⏳",
+      "title": "7. 지금 · 진행 (Right now)",
+      "desc": "지금 하는 일, 곧 할 일을 말할 때.",
+      "items": [
+        {
+          "en": "I'm about to leave the office.",
+          "ko": "곧 ___하려고 해요.",
+          "level": "IM",
+          "pattern": "I'm about to ___.",
+          "examples": [
+            "I'm about to have lunch.",
+            "I'm about to start a meeting."
+          ]
+        },
+        {
+          "en": "I'm on my way to work.",
+          "ko": "___ 가는 길이에요.",
+          "level": "IM",
+          "pattern": "I'm on my way to ___.",
+          "examples": [
+            "I'm on my way to the gym.",
+            "I'm on my way to pick up my kids."
+          ]
+        },
+        {
+          "en": "I'm in the middle of a meeting.",
+          "ko": "한창 ___하는 중이에요.",
+          "level": "IH",
+          "pattern": "I'm in the middle of ___.",
+          "examples": [
+            "I'm in the middle of cooking dinner.",
+            "I'm in the middle of something right now."
+          ]
+        },
+        {
+          "en": "I'm trying to eat healthier.",
+          "ko": "___하려고 노력 중이에요.",
+          "level": "IM",
+          "pattern": "I'm trying to ___.",
+          "examples": [
+            "I'm trying to save money.",
+            "I'm trying to read more books."
+          ]
+        },
+        {
+          "en": "I'm getting used to my new job.",
+          "ko": "___에 점점 익숙해지고 있어요.",
+          "level": "IH",
+          "pattern": "I'm getting used to ___.",
+          "examples": [
+            "I'm getting used to waking up early.",
+            "I'm getting used to the cold weather."
+          ]
+        },
+        {
+          "en": "I've been working here for twenty years.",
+          "ko": "___ 동안 ___해 왔어요.",
+          "level": "IH",
+          "pattern": "I've been ___ for ___.",
+          "examples": [
+            "I've been learning English for a year.",
+            "I've been waiting for thirty minutes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-opinion",
+      "set": "daily54",
+      "emoji": "🤔",
+      "title": "8. 생각 · 의견 (Opinions)",
+      "desc": "내 생각을 부드럽게 말하는 패턴.",
+      "items": [
+        {
+          "en": "I think it's a great idea.",
+          "ko": "제 생각엔 ___예요.",
+          "level": "IM",
+          "pattern": "I think ___.",
+          "examples": [
+            "I think it's going to rain.",
+            "I think you're right."
+          ]
+        },
+        {
+          "en": "I'm not sure if he's coming.",
+          "ko": "___인지 잘 모르겠어요.",
+          "level": "IM",
+          "pattern": "I'm not sure if ___.",
+          "examples": [
+            "I'm not sure if this is right.",
+            "I'm not sure if I can make it."
+          ]
+        },
+        {
+          "en": "It seems like everyone is busy today.",
+          "ko": "___인 것 같아요.",
+          "level": "IH",
+          "pattern": "It seems like ___.",
+          "examples": [
+            "It seems like you're tired.",
+            "It seems like the store is closed."
+          ]
+        },
+        {
+          "en": "It depends on the weather.",
+          "ko": "___에 따라 달라요.",
+          "level": "IH",
+          "pattern": "It depends on ___.",
+          "examples": [
+            "It depends on my schedule.",
+            "It depends on how much it costs."
+          ]
+        },
+        {
+          "en": "I have no idea where my keys are.",
+          "ko": "___인지 전혀 모르겠어요.",
+          "level": "IM",
+          "pattern": "I have no idea ___.",
+          "examples": [
+            "I have no idea what time it is.",
+            "I have no idea how to fix this."
+          ]
+        },
+        {
+          "en": "I guess you're right.",
+          "ko": "아마 ___인 것 같아요.",
+          "level": "IM",
+          "pattern": "I guess ___.",
+          "examples": [
+            "I guess I'll stay home.",
+            "I guess it's too late now."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily-polite",
+      "set": "daily54",
+      "emoji": "🤝",
+      "title": "9. 감사 · 사과 · 연결 (Polite & linking)",
+      "desc": "고마움·미안함을 전하고 이유와 결론으로 잇기.",
+      "items": [
+        {
+          "en": "Thank you for your help.",
+          "ko": "___해 줘서 고마워요.",
+          "level": "IM",
+          "pattern": "Thank you for ___.",
+          "examples": [
+            "Thank you for waiting.",
+            "Thank you for inviting me."
+          ]
+        },
+        {
+          "en": "I'm sorry for being late.",
+          "ko": "___해서 미안해요.",
+          "level": "IM",
+          "pattern": "I'm sorry for ___.",
+          "examples": [
+            "I'm sorry for the confusion.",
+            "I'm sorry for not calling you back."
+          ]
+        },
+        {
+          "en": "That's why I like this place.",
+          "ko": "그래서 ___한 거예요.",
+          "level": "IH",
+          "pattern": "That's why ___.",
+          "examples": [
+            "That's why I left early.",
+            "That's why I'm so tired today."
+          ]
+        },
+        {
+          "en": "It's time to go home.",
+          "ko": "이제 ___할 시간이에요.",
+          "level": "IM",
+          "pattern": "It's time to ___.",
+          "examples": [
+            "It's time to wake up.",
+            "It's time to make a decision."
+          ]
+        },
+        {
+          "en": "I'm looking forward to the weekend.",
+          "ko": "___를 고대하고 있어요.",
+          "level": "IH",
+          "pattern": "I'm looking forward to ___.",
+          "examples": [
+            "I'm looking forward to seeing you.",
+            "I'm looking forward to working with you."
+          ]
+        },
+        {
+          "en": "No wonder you're hungry.",
+          "ko": "어쩐지 ___하더라.",
+          "level": "AL",
+          "pattern": "No wonder ___.",
+          "examples": [
+            "No wonder it's so crowded today.",
+            "No wonder he looks happy."
+          ]
+        }
+      ]
     }
   ],
   "sets": [
@@ -1478,6 +2099,13 @@
       "desc": "12개 스토리 테마 × 6패턴. 어떤 주제든 답변의 뼈대를 만듭니다.",
       "url": "https://www.youtube.com/watch?v=378IPmgXaWc",
       "note": "영상 구성(12테마×6패턴, 예문 3개)을 따라 정리한 문장입니다."
+    },
+    {
+      "id": "daily54",
+      "title": "일반회화 기본 패턴 54",
+      "desc": "오픽과 별개로 일상 대화에 바로 쓰는 기본 패턴 54개. 9개 상황 × 6패턴, 패턴마다 예문 3개.",
+      "url": "https://youtu.be/DS9onl6uT6M",
+      "note": "래피드 영어 '이 54개 패턴만 외우면 영어가 저절로 나와요' 영상의 구성(54개 회화 패턴)을 따라 일상 대화 상황별로 정리했습니다."
     }
   ]
 }

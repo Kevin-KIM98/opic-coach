@@ -35,7 +35,8 @@ async function open(hash, seed = null) {
   const txt = await page.innerText('#view');
   check('개요: 72 · 25 두 세트 진행률', /0\s*\/\s*72/.test(txt) && /0\s*\/\s*25/.test(txt), txt.slice(0, 400));
   check('개요: 두 영상 출처 링크', await page.$('a[href="https://www.youtube.com/watch?v=378IPmgXaWc"]') !== null && await page.$('a[href="https://www.youtube.com/watch?v=yFvkBuldv1Y"]') !== null);
-  check('개요: 12개 테마 + IM3 Part 1·2 각 4개 그룹', (await page.$$('#dbody .list .list-row')).length === 20);
+  check('개요: 12개 테마 + IM3 Part 1·2 각 4개 + 일반회화 9개 그룹', (await page.$$('#dbody .list .list-row')).length === 29);
+  check('개요: 일반회화 기본 패턴 54 세트 · 영상 링크', /0\s*\/\s*54/.test(txt) && await page.$('a[href="https://youtu.be/DS9onl6uT6M"]') !== null);
   check('개요: Part 2 영상 링크', await page.$('a[href="https://www.youtube.com/watch?v=Ivwc3Ou0Z9E"]') !== null);
   check('개요: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
   if (OUT) await page.screenshot({ path: `${OUT}/patterns.png`, fullPage: true });
