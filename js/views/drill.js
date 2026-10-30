@@ -53,7 +53,7 @@ async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
         const learned = patLearned(all);
         return `<section class="pat-set">
           <div class="card set-head">
-            <div class="row between"><div><div class="xs muted">📺 ${st.id === 'im3' ? 'IM3 기초' : st.id === 'daily54' ? '일반회화 · 오픽 외' : '답변 뼈대'}</div><div class="h3 mt8">${st.title}</div></div>${st.url ? `<a class="btn sm ghost" href="${st.url}" target="_blank" rel="noopener">▶ 영상</a>` : ''}</div>
+            <div class="row between"><div><div class="xs muted">📺 ${st.id === 'im3' ? 'IM3 기초' : st.id === 'daily54' ? '일반회화 · 오픽 외' : '답변 뼈대'}</div><div class="h3 mt8">${st.title}</div></div>${st.url ? `<a class="btn sm ghost" href="${st.url}" target="_blank" rel="noopener">▶ ${st.id === 'daily54' ? '참고 영상' : '영상'}</a>` : ''}</div>
             ${st.desc ? `<div class="xs ink2 mt8">${st.desc}</div>` : ''}
             <div class="row between mt12 small"><span class="muted">진행률</span><span><b>${learned}</b> / ${all.length}</span></div>
             <div class="bar mt8"><i style="width:${all.length ? learned / all.length * 100 : 0}%"></i></div>
