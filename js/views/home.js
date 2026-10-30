@@ -36,6 +36,9 @@ export async function render(root) {
     <div class="section-title">실전 유형</div>
     <div class="topic-grid">${raw([...byCat('roleplay'), ...byCat('unexpected'), ...byCat('advanced')].map(topicTile).join(''))}</div>
 
+    ${byCat('general').length ? raw(`<div class="section-title">일반회화 · 오픽 외 기본 영어</div>
+    <div class="topic-grid">${byCat('general').map(topicTile).join('')}</div>`) : ''}
+
     ${raw(bank ? bankCard(bank) : '')}
 
     <div class="btn-row mt16">

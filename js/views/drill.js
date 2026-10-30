@@ -23,7 +23,7 @@ export async function render(root, route) {
 const GROUP_EMOJI = ['🚀', '🖼️', '🔁', '📖', '⚖️', '💬', '🧩', '🏁', '🎯', '🌟', '📌', '🗣️'];
 const patLearned = (cards) => cards.filter(c => store.exprInfo(c.id).box >= 3).length;
 
-// 패턴 세트: 강지완 만능패턴 72(kang) · Sarah IM3 필수 패턴 25(im3). 예전 데이터에 sets 가 없으면 하나로 본다
+// 패턴 세트: 강지완 만능패턴 72(kang) · Sarah IM3 필수 패턴 25(im3) · 일반회화 기본 패턴 54(daily54). 예전 데이터에 sets 가 없으면 하나로 본다
 function patternSets(p) {
   const sets = p.sets?.length ? p.sets : [{ id: 'kang', title: '만능 패턴', desc: p.intro || '' }];
   return sets.map(st => {
@@ -47,13 +47,13 @@ async function renderPatterns(body, groupId, setPlayer = () => {}, mode = '') {
     : (() => { const g = p.groups.find(x => x.id === groupId); return g ? { ...g, set: sets.find(st => st.id === (g.set || 'kang')) } : null; })();
 
   if (!group) {
-    body.innerHTML = html`<p class="small ink2 mb12">유튜브 두 영상의 패턴입니다. 주제 화면의 ② 패턴에서는 이 패턴들을 주제·레벨에 맞게 조합해 연습해요.</p>
+    body.innerHTML = html`<p class="small ink2 mb12">유튜브 영상의 패턴입니다. 주제 화면의 ② 패턴에서는 이 패턴들을 주제·레벨에 맞게 조합해 연습해요.</p>
       ${raw(sets.map(st => {
         const all = cardsOf(st.groups);
         const learned = patLearned(all);
         return `<section class="pat-set">
           <div class="card set-head">
-            <div class="row between"><div><div class="xs muted">📺 ${st.id === 'im3' ? 'IM3 기초' : '답변 뼈대'}</div><div class="h3 mt8">${st.title}</div></div>${st.url ? `<a class="btn sm ghost" href="${st.url}" target="_blank" rel="noopener">▶ 영상</a>` : ''}</div>
+            <div class="row between"><div><div class="xs muted">📺 ${st.id === 'im3' ? 'IM3 기초' : st.id === 'daily54' ? '일반회화 · 오픽 외' : '답변 뼈대'}</div><div class="h3 mt8">${st.title}</div></div>${st.url ? `<a class="btn sm ghost" href="${st.url}" target="_blank" rel="noopener">▶ 영상</a>` : ''}</div>
             ${st.desc ? `<div class="xs ink2 mt8">${st.desc}</div>` : ''}
             <div class="row between mt12 small"><span class="muted">진행률</span><span><b>${learned}</b> / ${all.length}</span></div>
             <div class="bar mt8"><i style="width:${all.length ? learned / all.length * 100 : 0}%"></i></div>

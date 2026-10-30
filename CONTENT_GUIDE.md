@@ -28,7 +28,7 @@
   "title": "집 · 거주지",         ← 앱에 표시되는 한국어 제목
   "titleEn": "Housing",
   "emoji": "🏠",
-  "category": "survey",          ← survey | roleplay | advanced | unexpected
+  "category": "survey",          ← survey | roleplay | advanced | unexpected | general (오픽 외 일반회화)
   "priority": 1,                 ← 목록 정렬 순서 (작을수록 위)
   "intro": "출제 경향과 전략 설명 (한국어)",
   "strategy": ["전략 1", "전략 2", "전략 3"],
@@ -92,7 +92,7 @@
 - `data/mock-sets.json` – 모의고사 구성. `slots` 로 문항 조합, `levels` 로 등급 커트라인.
 - 질문의 `answersKo` – 모범답안 한글 해석. `{"IM3": [...], "IH": [...], "AL": [...]}` 로, 영어 답안을 문장(. ! ? 기준)으로 나눈 개수와 **같은 개수**의 한글 문장 배열입니다. 영어 답안을 고치면 해석 개수도 맞추세요. `a.m.` 같은 약어는 문장이 잘리니 `in the morning` 처럼 풀어 씁니다.
 - 주제 파일의 `combos` – 패턴 조합. IM3·IH·AL 각 2개, `{level, q, title, parts: [{pid, en, ko}]}`. parts 3~4개를 이으면 답변 한 단락이 되고, 조합마다 만능패턴 72(`set: kang`)와 IM3 필수 패턴(`set: im3` Part 1 · `im3b` Part 2)을 하나 이상씩 섞습니다.
-- `data/patterns.json` 의 `sets` – 패턴 세트(im3 · im3b · kang)와 출처 영상. 각 그룹의 `set` 이 어느 세트인지 가리킵니다.
+- `data/patterns.json` 의 `sets` – 패턴 세트(im3 · im3b · kang · daily54)와 출처 영상. `daily54` 는 오픽 외 일반회화 기본 패턴 54 (9 상황 × 6패턴) 로, `general` 주제(`daily-talk`)의 ② 패턴이 이 세트를 씁니다. 각 그룹의 `set` 이 어느 세트인지 가리킵니다.
 - 주제 파일의 `patterns` – 만능 패턴을 이 주제에 레벨별로 적용한 문장. IM3·IH·AL 각 6개, `{level, pid, en, ko, q}`. `en` 은 `q` 질문의 그 `level` 모범답안 안에 한 문장으로 그대로 들어 있어야 하고, IM3 는 IM 패턴 틀, IH 는 IM·IH, AL 은 IH·AL 틀만 씁니다: `pid` 는 `<그룹 id>#<번호>`(예: `like#0`), `en` 은 패턴 틀의 단어를 그대로 두고 빈칸만 채운 문장, `q` 는 이 문장을 쓰는 질문 id. `validate.py` 가 셋 다 검사합니다.
   과제 `type`: `learn` `shadow` `speak` `pattern` `pron` `mock` `review`.
 

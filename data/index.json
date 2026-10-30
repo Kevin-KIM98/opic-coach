@@ -75,6 +75,10 @@
     {
       "id": "advanced",
       "file": "topics/advanced.json"
+    },
+    {
+      "id": "daily-talk",
+      "file": "topics/daily-talk.json"
     }
   ],
   "categories": {
@@ -93,6 +97,10 @@
     "unexpected": {
       "title": "돌발 주제",
       "desc": "설문과 무관하게 나오는 주제"
+    },
+    "general": {
+      "title": "일반회화",
+      "desc": "오픽 외 기본 영어 학습. 일상 대화 상황 + 일반회화 기본 패턴 54"
     }
   }
 }
