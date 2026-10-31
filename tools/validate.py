@@ -224,6 +224,25 @@ def check_version():
         err("js/config.js 의 updated 는 'YYYY-MM-DD HH:MM' (한국 시간) 이어야 합니다")
 
 
+def check_survey(path, d, topic_ids):
+    """서베이 체크: 문항·보기 id 가 겹치지 않고, 연결한 주제가 index.json 에 있는지."""
+    rel = path.relative_to(ROOT)
+    seen = set()
+    for q in d.get("questions", []):
+        if q.get("type") not in ("single", "multi"):
+            err(f"{rel}: 문항 '{q.get('id')}' type 은 single | multi 여야 합니다")
+        if not q.get("options"):
+            err(f"{rel}: 문항 '{q.get('id')}' 보기가 비어 있습니다")
+        for o in q.get("options", []):
+            if o.get("id") in seen:
+                err(f"{rel}: 보기 id '{o.get('id')}' 가 중복됩니다")
+            seen.add(o.get("id"))
+            if not o.get("label"):
+                err(f"{rel}: 보기 '{o.get('id')}' label 이 없습니다")
+            if o.get("topic") and o["topic"] not in topic_ids:
+                err(f"{rel}: 보기 '{o.get('id')}' 의 topic '{o['topic']}' 는 index.json 의 주제가 아닙니다")
+
+
 def main():
     pats = load(DATA / "patterns.json") or {}
     frames = {f"{g.get('id')}#{i}": it.get("pattern") or it.get("en", "") for g in pats.get("groups", []) for i, it in enumerate(g.get("items", []))}
@@ -263,6 +282,11 @@ def main():
                         err(f"data/patterns.json: group '{g.get('id')}' items[{i}] pattern 에 빈칸(___)이 없습니다")
                     if not isinstance(it.get("examples", []), list):
                         err(f"data/patterns.json: group '{g.get('id')}' items[{i}] examples 는 문장 목록이어야 합니다")
+    survey_path = DATA / "survey.json"
+    if survey_path.exists():
+        survey = load(survey_path)
+        if survey:
+            check_survey(survey_path, survey, {e["id"] for e in (index or {}).get("topics", [])})
     check_version()
     if errors:
         print("❌ 검증 실패:")
