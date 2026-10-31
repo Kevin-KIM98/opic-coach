@@ -47,6 +47,7 @@ for (const tab of ['expr', 'pat', 'q', 'tips']) {
   const txt = await page.innerText('#view');
   check(`주제(${tab}): 제목`, txt.includes('10/31 시험 기출'), txt.slice(0, 200));
   if (tab === 'q') check('주제(답안): 13문항 · 서점 particular 질문', txt.includes('particular book') && txt.includes('new neighbor') && txt.includes('golf'), txt.slice(0, 400));
+  if (tab === 'q') check('주제(답안): 집 · 방 묘사 질문', txt.includes('Describe your home') && txt.includes('favorite room in your home'));
   if (tab === 'tips') check('주제(팁): 혼자 사는 페르소나 안내', txt.includes('혼자 살고'));
   check(`주제(${tab}): 콘솔 오류 없음`, errs.length === 0, JSON.stringify(errs));
   if (OUT) await page.screenshot({ path: `${OUT}/exam-${tab}.png` });

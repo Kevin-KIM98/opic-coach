@@ -5,7 +5,7 @@
  "emoji": "📝",
  "category": "exam",
  "priority": -1,
- "intro": "2026년 10월 31일 실제 시험(난이도 4)에 나온 주제 묶음입니다: 자기소개 · 서점(particular 책) · 골프 · 새로운 이웃 · 기념 휴일. 주제는 실제 기출이고, 질문 문장은 그 주제로 자주 나오는 형태로 만든 예상 질문입니다. 모범답안의 '나'는 이날 서베이에 맞춰 '분당 아파트에 혼자 살고, 지금은 일을 하지 않음, 여가: 독서 · 골프 · 조깅 · 카페 · 영화 · TV'로 통일했습니다. 서베이를 이번과 같게 고르면 이 답안을 그대로 쓸 수 있어요.",
+ "intro": "2026년 10월 31일 실제 시험(난이도 4)에 나온 주제 묶음입니다: 자기소개 · 서점(particular 책) · 골프 · 새로운 이웃 · 기념 휴일. 서베이 '홀로 거주'로 나올 수 있는 집 · 방 묘사 2문항도 함께 넣었습니다. 주제는 실제 기출이고, 질문 문장은 그 주제로 자주 나오는 형태로 만든 예상 질문입니다. 모범답안의 '나'는 이날 서베이에 맞춰 '분당 아파트에 혼자 살고, 지금은 일을 하지 않음, 여가: 독서 · 골프 · 조깅 · 카페 · 영화 · TV'로 통일했습니다. 서베이를 이번과 같게 고르면 이 답안을 그대로 쓸 수 있어요.",
  "strategy": [
   "자기소개에서 말한 소재(혼자 사는 집 · 서현역 서점 · 골프 연습장 · 탄천 조깅)를 다른 문제에서 그대로 다시 쓰세요.",
   "서점 · 골프는 설문 주제라 묘사 → 루틴 → 경험 콤보로 나옵니다. 경험 질문은 반드시 과거시제로 말하세요.",
@@ -24,6 +24,23 @@
    "ko": "지금은 일을 하지 않아서 시간이 많아요.",
    "level": "IM",
    "note": "서베이 '일 경험 없음'에 맞춘 표현"
+  },
+  {
+   "en": "There are two rooms, a living room, a kitchen, and a bathroom.",
+   "ko": "방 두 개, 거실, 부엌, 욕실이 있어요.",
+   "level": "IM",
+   "note": "집 묘사: There are ~ 로 공간을 나열"
+  },
+  {
+   "en": "By the window, there's a comfortable armchair.",
+   "ko": "창가에는 편안한 안락의자가 있어요.",
+   "level": "IM",
+   "note": "방 묘사: 위치 표현 + there's"
+  },
+  {
+   "en": "It's not big, but it's clean and cozy.",
+   "ko": "크지는 않지만 깨끗하고 아늑해요.",
+   "level": "IM"
   },
   {
    "en": "It's only a 15-minute walk from my apartment.",
@@ -155,6 +172,111 @@
      "혼자 사는 게 가끔은 좀 적막하지만, 나만의 공간이 주는 자유가 정말 좋아졌어요.",
      "지금은 이런 생활이 저한테 정말 잘 맞는 것 같아요.",
      "네, 이게 대략 저라는 사람이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-home-describe",
+   "type": "describe",
+   "en": "You indicated in the survey that you live alone in a house or an apartment. Describe your home to me. What does it look like, and how many rooms does it have?",
+   "ko": "설문에서 주택이나 아파트에 혼자 산다고 하셨습니다. 집을 묘사해 주세요. 어떻게 생겼고, 방은 몇 개인가요?",
+   "tips": [
+    "서베이 '홀로 거주'를 고르면 2~4번에 자주 나오는 거주 묘사 질문입니다(예상 질문).",
+    "위치(분당 · 몇 층) → 크기 · 방 개수 → 방마다 한 문장 → 좋아하는 점 → 마무리. There is / There are 를 꼭 쓰세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about my home. I live alone in a small apartment in Bundang. It's on the 9th floor of a 15-story building. There are two rooms, a living room, a kitchen, and a bathroom. I use the bigger room as my bedroom. The smaller room is my reading room, and there's a big bookshelf in it. The living room has a big window, so it's always bright. It's not big, but it's clean and cozy. I really like my home because it's quiet and comfortable. Yeah, that's my home.",
+    "IH": "Okay, let me tell you about my home. I live alone in a small two-bedroom apartment in Bundang, about 15 minutes on foot from Seohyeon Station. It's on the 9th floor, so I have a nice view of the mountains from my living room. When you walk in, there's a small entrance where I keep my shoes and my golf bag. The living room is the heart of my home, with a soft gray sofa, a TV, and a big window facing south. Next to it, there's a small kitchen with a round table where I eat and sometimes read. I use the bigger room as my bedroom and the smaller one as a reading room full of books. Since I live alone, I decorated everything the way I like, mostly with wood and white colors. It's not a big place, but it's bright, quiet, and really cozy. Yeah, that's my home, and it's my favorite place to relax.",
+    "AL": "Okay, let me tell you about my home. I live on my own in a compact two-bedroom apartment in Bundang, about a 15-minute walk from Seohyeon Station. It's on the 9th floor, so I get a lovely view of the mountains, especially when the leaves change color in the fall. As soon as you step inside, there's a small entryway where my shoes and, of course, my golf bag live. The living room is definitely the heart of the place, with a comfy gray sofa, a TV, and a huge south-facing window that floods the room with sunlight. Right next to it is a tiny kitchen with a round wooden table, which doubles as my dining table and my desk. I use the bigger room as my bedroom, and I turned the smaller one into a reading room lined with bookshelves from floor to ceiling. Because I live alone, I got to decorate every corner exactly the way I wanted, so it's mostly warm wood and white tones. It's definitely not a big place, but it's bright, peaceful, and it really feels like me. Yeah, that's my home, and honestly, there's no place I'd rather be."
+   },
+   "answersKo": {
+    "IM3": [
+     "제 집에 대해 말해 볼게요.",
+     "저는 분당의 작은 아파트에 혼자 살아요.",
+     "15층짜리 건물의 9층에 있어요.",
+     "방 두 개, 거실, 부엌, 욕실이 있어요.",
+     "큰 방은 침실로 써요.",
+     "작은 방은 독서방인데, 큰 책장이 하나 있어요.",
+     "거실에는 큰 창문이 있어서 항상 밝아요.",
+     "크지는 않지만 깨끗하고 아늑해요.",
+     "조용하고 편해서 제 집이 정말 좋아요.",
+     "네, 이게 제 집이에요."
+    ],
+    "IH": [
+     "제 집에 대해 말해 볼게요.",
+     "저는 서현역에서 걸어서 15분쯤 되는 분당의 작은 방 두 개짜리 아파트에 혼자 살아요.",
+     "9층이라 거실에서 산이 잘 보여요.",
+     "들어가면 신발이랑 골프백을 두는 작은 현관이 있어요.",
+     "거실이 우리 집의 중심인데, 부드러운 회색 소파와 TV, 남향의 큰 창문이 있어요.",
+     "그 옆에는 작은 부엌이 있고, 거기 둥근 식탁에서 밥도 먹고 가끔 책도 읽어요.",
+     "큰 방은 침실로, 작은 방은 책으로 가득한 독서방으로 써요.",
+     "혼자 살아서 모든 걸 제 취향대로 꾸몄는데, 주로 나무와 흰색으로 했어요.",
+     "큰 집은 아니지만 밝고, 조용하고, 정말 아늑해요.",
+     "네, 이게 제 집이고, 제가 제일 좋아하는 휴식 공간이에요."
+    ],
+    "AL": [
+     "제 집에 대해 말해 볼게요.",
+     "저는 서현역에서 걸어서 15분쯤 되는 분당의 아담한 방 두 개짜리 아파트에 혼자 살아요.",
+     "9층이라 산 경치가 정말 좋은데, 특히 가을에 단풍이 들 때 그래요.",
+     "들어서자마자 신발과, 물론 제 골프백이 자리 잡은 작은 현관이 있어요.",
+     "거실이 확실히 집의 중심인데, 푹신한 회색 소파와 TV, 그리고 햇빛이 가득 들어오는 큰 남향 창문이 있어요.",
+     "바로 옆에는 작은 부엌이 있고, 둥근 나무 식탁이 밥상 겸 책상 역할을 해요.",
+     "큰 방은 침실로 쓰고, 작은 방은 바닥부터 천장까지 책장으로 둘러싼 독서방으로 바꿨어요.",
+     "혼자 살다 보니 구석구석 제가 원하는 대로 꾸밀 수 있어서, 주로 따뜻한 나무와 흰색 톤이에요.",
+     "절대 큰 집은 아니지만, 밝고 평화롭고, 정말 저다운 공간이에요.",
+     "네, 이게 제 집이고, 솔직히 여기보다 더 있고 싶은 곳은 없어요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-home-room",
+   "type": "describe",
+   "en": "Tell me about your favorite room in your home. What does it look like, and what do you usually do there?",
+   "ko": "집에서 가장 좋아하는 방에 대해 말해 주세요. 어떻게 생겼고, 거기서 보통 무엇을 하나요?",
+   "tips": [
+    "거주 주제의 방 묘사 질문입니다(예상 질문). 방 하나(독서방)를 정해 가구 위치를 순서대로 말하세요.",
+    "in the corner, next to, by the window 같은 위치 표현과 '왜 좋아하는지' 한 문장을 넣으면 IM3로 충분합니다."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about my favorite room. My favorite room is my small reading room. There's a big bookshelf on one wall, and it's full of novels. By the window, there's a comfortable armchair and a small lamp. In the corner, there's a small speaker for music. I usually read books there in the afternoon. Sometimes I listen to music and drink coffee there. I love this room because it's quiet and relaxing. Yeah, that's my favorite room.",
+    "IH": "Okay, let me tell you about my favorite room. My favorite room is definitely the small reading room right next to my bedroom. One whole wall is covered with a tall bookshelf, and it's packed with mystery novels and travel books. By the window, there's a soft armchair with a warm reading lamp next to it. In the corner, I put a small speaker, so I can play calm music while I read. I usually spend my afternoons there with a cup of coffee and a new book from the bookstore. On rainy days, I just sit there and listen to the rain for a while. Since I live alone, this room is where I really recharge. I think it's the most peaceful place in my whole home. Yeah, that's my favorite room.",
+    "AL": "Okay, let me tell you about my favorite room. Without a doubt, it's the little reading room right next to my bedroom. When I first moved in, it was just an empty spare room, but I slowly turned it into my own private library. One entire wall is lined with a floor-to-ceiling bookshelf, crammed with mystery novels, travel books, and a few golf magazines. By the window, there's a deep, comfy armchair with a warm reading lamp, which is honestly my favorite spot in the world. In the corner, I set up a small speaker, so there's always some soft jazz playing in the background. Most afternoons, I curl up there with a cup of coffee and whatever book I picked up at the bookstore that week. On rainy days, I sometimes put the book down and just watch the rain hitting the window. Living alone, I think everyone needs a space like this where they can completely switch off. Yeah, that's my favorite room, and it's where I feel most like myself."
+   },
+   "answersKo": {
+    "IM3": [
+     "제가 제일 좋아하는 방에 대해 말해 볼게요.",
+     "제가 제일 좋아하는 방은 작은 독서방이에요.",
+     "한쪽 벽에 큰 책장이 있는데, 소설로 가득해요.",
+     "창가에는 편안한 안락의자와 작은 스탠드가 있어요.",
+     "구석에는 음악을 듣는 작은 스피커가 있어요.",
+     "보통 오후에 거기서 책을 읽어요.",
+     "가끔은 거기서 음악을 들으며 커피를 마셔요.",
+     "조용하고 편안해서 이 방이 정말 좋아요.",
+     "네, 그게 제가 제일 좋아하는 방이에요."
+    ],
+    "IH": [
+     "제가 제일 좋아하는 방에 대해 말해 볼게요.",
+     "제가 제일 좋아하는 방은 단연 침실 바로 옆의 작은 독서방이에요.",
+     "한쪽 벽 전체가 높은 책장으로 덮여 있는데, 추리 소설과 여행 책으로 꽉 차 있어요.",
+     "창가에는 푹신한 안락의자가 있고, 그 옆에 따뜻한 독서 스탠드가 있어요.",
+     "구석에는 작은 스피커를 둬서 책 읽는 동안 잔잔한 음악을 틀 수 있어요.",
+     "보통 오후를 거기서 커피 한 잔과 서점에서 산 새 책과 함께 보내요.",
+     "비 오는 날에는 거기 앉아서 한동안 빗소리를 들어요.",
+     "혼자 살다 보니 이 방이 제가 진짜로 재충전하는 곳이에요.",
+     "집 전체에서 가장 평화로운 곳인 것 같아요.",
+     "네, 그게 제가 제일 좋아하는 방이에요."
+    ],
+    "AL": [
+     "제가 제일 좋아하는 방에 대해 말해 볼게요.",
+     "의심의 여지 없이 침실 바로 옆의 작은 독서방이에요.",
+     "처음 이사 왔을 때는 그냥 빈 남는 방이었는데, 조금씩 저만의 개인 서재로 바꿨어요.",
+     "한쪽 벽 전체에 바닥부터 천장까지 책장이 있는데, 추리 소설, 여행 책, 골프 잡지 몇 권이 빽빽하게 꽂혀 있어요.",
+     "창가에는 푹 꺼지는 편안한 안락의자와 따뜻한 독서 스탠드가 있는데, 솔직히 세상에서 제일 좋아하는 자리예요.",
+     "구석에는 작은 스피커를 설치해서 배경에 늘 잔잔한 재즈가 흘러요.",
+     "대부분의 오후에는 커피 한 잔과 그 주에 서점에서 고른 책을 들고 거기 웅크리고 앉아 있어요.",
+     "비 오는 날에는 가끔 책을 내려놓고 창문에 부딪히는 비를 그냥 바라봐요.",
+     "혼자 살다 보면 완전히 쉴 수 있는 이런 공간이 누구에게나 필요하다고 생각해요.",
+     "네, 그게 제가 제일 좋아하는 방이고, 제가 가장 저다워지는 곳이에요."
     ]
    }
   },
