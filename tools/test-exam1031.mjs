@@ -42,7 +42,28 @@ const IDS = ['exam1031-intro', 'exam1031-home-describe', 'exam1031-home-room', '
   await page.close();
 }
 
-for (const tab of ['expr', 'pat', 'q', 'tips']) {
+// 기출 주제: 질문·답안이 첫 탭, 빈 패턴 탭은 없음, 질문마다 레벨별 모범답안이 붙어 있음
+{
+  const { page, errs } = await open('#/topic/exam-1031');
+  const tabs = await page.$$eval('#tabs button', bs => bs.map(x => x.textContent));
+  check('기출 주제: 탭은 질문·답안 → 표현 → 팁', JSON.stringify(tabs) === JSON.stringify(['① 질문·답안', '② 표현', '③ 팁']), JSON.stringify(tabs));
+  check('기출 주제: 처음 열면 질문·답안 탭', (await page.$eval('#tabs button.active', x => x.dataset.tab)) === 'q');
+  check('기출 주제: 패턴 0/0 진행 막대 없음', !(await page.innerText('[data-steps]')).includes('패턴'));
+  check('기출 주제: 질문 카드 15개', (await page.$$('.qa')).length === 15);
+  check('기출 주제: 모의고사 바로 가기', (await page.$('a[href="#/mock/run/exam-1031"]')) !== null);
+  await page.click('.qa >> nth=1 >> summary');
+  const ans = await page.innerText('.qa >> nth=1 >> .answer');
+  check('기출 주제: Q2 아래 IM3 집 묘사 답안', ans.startsWith("Okay, let me tell you about my home.") && ans.includes('There are two rooms'), ans.slice(0, 120));
+  await page.click('[data-lv="IH"]'); await page.waitForTimeout(300);
+  check('기출 주제: IH 로 바꾸면 IH 답안', (await page.innerText('.qa >> nth=1 >> summary')).includes('IH') && (await page.$eval('.qa >> nth=1 >> .answer', e => e.textContent)).includes('ladder') === false && (await page.$eval('.qa >> nth=1 >> .answer', e => e.textContent)).includes('south'));
+  check('기출 주제: 레벨이 주소에 남음', page.url().includes('level=IH'));
+  check('기출 주제: 연습 링크', (await page.$$('.qa a[href^="#/practice/exam-1031/"]')).length === 15);
+  check('기출 주제: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
+  if (OUT) await page.screenshot({ path: `${OUT}/exam-qa.png` });
+  await page.close();
+}
+
+for (const tab of ['expr', 'q', 'tips']) {
   const { page, errs } = await open(`#/topic/exam-1031?tab=${tab}`);
   const txt = await page.innerText('#view');
   check(`주제(${tab}): 제목`, txt.includes('10/31 시험 기출'), txt.slice(0, 200));
