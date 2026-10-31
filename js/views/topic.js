@@ -10,25 +10,35 @@ import { compareToText } from '../scoring.js';
 import { speakQuiz } from './quiz.js';
 
 // 주제 화면: ① 표현 → ② 이 주제에 쓰는 패턴 → ③ 모범답안·직접 말하기 → ④ 팁(출제 경향·전략)
-const TABS = [['expr', '① 표현'], ['pat', '② 패턴'], ['q', '③ 답안'], ['tips', '④ 팁']];
+const TABS = [['expr', '표현'], ['pat', '패턴'], ['q', '답안'], ['tips', '팁']];
+const NUM = ['①', '②', '③', '④'];
+
+// 기출 주제는 질문·모범답안이 먼저, 패턴이 없는 주제는 패턴 탭을 뺀다
+function tabsFor(topic) {
+  let tabs = TABS.filter(([k]) => k !== 'pat' || (topic.patterns || []).length);
+  if (topic.category === 'exam') tabs = [['q', '질문·답안'], ...tabs.filter(([k]) => k !== 'q')];
+  return tabs.map(([k, t], i) => [k, `${NUM[i]} ${t}`]);
+}
 
 export async function render(root, route) {
   const id = route.parts[0];
   const [topic, patterns] = await Promise.all([data.topic(id), data.patterns()]);
-  let tab = route.query.tab || 'expr';
+  const tabs = tabsFor(topic);
+  let tab = route.query.tab || tabs[0][0];
   if (tab === 'pron' || tab === 'guide') tab = 'tips';   // 예전 링크 호환
+  if (!tabs.some(([k]) => k === tab)) tab = tabs[0][0];
   let level = route.query.level || store.settings.target || 'IM3';
   store.setLastTopic(topic.id);
 
   root.innerHTML = html`
     ${raw(header(`${topic.emoji} ${topic.title}`, { right: editLinkHtml(topic.file, '✏️', 'icon-btn') }))}
     <div class="topic-steps" data-steps></div>
-    <div class="tabs mt12" id="tabs">${raw(TABS.map(([k, t]) => `<button data-tab="${k}" class="${tab === k ? 'active' : ''}">${t}</button>`).join(''))}</div>
+    <div class="tabs mt12" id="tabs">${raw(tabs.map(([k, t]) => `<button data-tab="${k}" class="${tab === k ? 'active' : ''}">${t}</button>`).join(''))}</div>
     <div id="tabbody" class="mt12"></div>`;
 
   const drawSteps = () => {
     const p = store.topicProgress(topic);
-    root.querySelector('[data-steps]').innerHTML = [['expr', '표현'], ['pat', '패턴'], ['ans', '답안 연습']]
+    root.querySelector('[data-steps]').innerHTML = [['expr', '표현'], ['pat', '패턴'], ['ans', '답안 연습']].filter(([k]) => p[k][1])
       .map(([k, l]) => `<div class="s"><i style="width:${p[k][1] ? p[k][0] / p[k][1] * 100 : 0}%"></i><span>${l} ${p[k][0]}/${p[k][1]}</span></div>`).join('');
   };
   drawSteps();
@@ -45,7 +55,9 @@ export async function render(root, route) {
     else if (t === 'pat') player = renderTopicPatterns(body, topic, patterns, drawSteps, mode, level, (lv) => {
       level = lv; replaceQuery(`#/topic/${topic.id}?tab=pat&level=${lv}`); renderTab('pat');
     });
-    else if (t === 'q') renderQuestions(body, topic, level, route.query);
+    else if (t === 'q') renderQuestions(body, topic, level, route.query, (lv) => {
+      level = lv; replaceQuery(`#/topic/${topic.id}?tab=q&level=${lv}`); renderTab('q');
+    });
     else player = renderTips(body, topic);
   };
   root.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => {
@@ -230,13 +242,43 @@ export function flashcards(body, cards, onExit) {
 }
 
 // ---------- 질문·모범답안 ----------
-function renderQuestions(body, topic, level, query) {
+// 질문과 모범답안을 세트로: 레벨을 고르면 질문마다 그 레벨 답안을 바로 펼쳐 볼 수 있다
+function renderQuestions(body, topic, level, query, setLevel = () => {}) {
   const qs = topic.questions || [];
+  const levels = ['IM3', 'IH', 'AL'].filter(l => qs.some(q => q.answers?.[l]));
+  if (!levels.includes(level)) level = levels[0];
+  const href = (q) => `#/practice/${topic.id}/${q.id}${query.mode === 'speak' ? '?mode=speak' : `?level=${level}`}`;
   body.innerHTML = html`
-    <p class="small muted mb12">질문을 탭하면 IM3 / IH / AL 모범답안을 문장별로 듣고 섀도잉하거나, 직접 녹음해 채점받을 수 있어요.</p>
-    <div class="list">${raw(qs.map(q => `<a class="list-row" href="#/practice/${topic.id}/${q.id}${query.mode === 'speak' ? '?mode=speak' : `?level=${level}`}"><div class="emoji">${iconFor(q.type)}</div><div class="grow"><div class="t">${q.en}</div><div class="s">${TYPE_LABEL[q.type] || q.type} · ${practiceCount(q.id)}회 연습</div></div><span class="chev">›</span></a>`).join(''))}</div>
+    <div data-mock-link></div>
+    <p class="small muted mb12">질문 ${qs.length}개 · 레벨을 고르고 <b>모범답안 보기</b>를 누르면 질문 바로 아래에 답안이 나와요. <b>🎙️ 연습</b>에서는 문장별로 듣고 섀도잉하거나 직접 녹음해 채점받을 수 있어요.</p>
+    <div class="seg mb12" data-levels>${raw(levels.map(l => `<button data-lv="${l}" class="${l === level ? 'active' : ''}">${l} 모범답안</button>`).join(''))}</div>
+    <div class="list qa-list">${raw(qs.map((q, i) => {
+      const ans = q.answers?.[level] || '';
+      const ko = q.answersKo?.[level];
+      return `<div class="card qa">
+        <div class="row between"><span class="xs muted">${iconFor(q.type)} Q${i + 1} · ${TYPE_LABEL[q.type] || q.type}</span><span class="xs muted">${practiceCount(q.id)}회 연습</span></div>
+        <div class="q-en mt8">${q.en}</div>
+        ${q.ko ? `<div class="small ink2 mt8">${q.ko}</div>` : ''}
+        <details class="mt12" data-qa><summary class="btn sm">💡 ${level} 모범답안 보기</summary>
+          <p class="answer mt12">${ans}</p>
+          ${ko ? `<details class="mt8"><summary class="xs muted">한글 해석</summary><p class="small ink2 mt8">${ko.join(' ')}</p></details>` : ''}
+        </details>
+        <div class="btn-row mt12"><button class="btn sm" data-say="${encodeURIComponent(ans)}">🔊 답안 듣기</button><a class="btn sm primary" href="${href(q)}">🎙️ 연습 ›</a></div>
+      </div>`;
+    }).join(''))}</div>
     <div data-bank-link></div>
 `;
+  body.querySelectorAll('[data-lv]').forEach(b => b.addEventListener('click', () => setLevel(b.dataset.lv)));
+  body.querySelectorAll('[data-say]').forEach(b => b.addEventListener('click', () => {
+    if (isSpeaking()) { stopSpeaking(); return; }
+    speak(decodeURIComponent(b.dataset.say));
+  }));
+  // 이 주제 문항만으로 짠 모의고사(기출 다시 보기)가 있으면 맨 위에 바로 가기
+  data.mockSets().then(ms => {
+    const set = ms.sets.find(st => st.slots.some(sl => sl.topic === topic.id && sl.ids));
+    const $m = body.querySelector('[data-mock-link]');
+    if (set && $m) $m.innerHTML = `<a class="btn primary block mb12" href="#/mock/run/${set.id}">🎯 ${set.title} · 실전처럼 풀기</a>`;
+  }).catch(() => {});
   // 같은 주제의 실전 답변(영상 속 IH–AL 답변)이 있으면 바로 가기
   data.bank().then(bank => {
     const gs = bank.groups.filter(g => (g.topics || []).includes(topic.id));

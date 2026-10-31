@@ -541,3 +541,10 @@ body.dimmed { overflow: hidden; }
 .survey-opts .task.on .check { background: var(--good); border-color: var(--good); }
 .survey-opts .check.round { border-radius: 50%; }
 .survey-total { position: sticky; top: calc(60px + env(safe-area-inset-top)); z-index: 5; background: var(--surface); box-shadow: var(--shadow); }
+
+/* 주제 ③ 질문·답안 세트 */
+.qa .q-en { font-weight: 700; font-size: 15px; line-height: 1.45; }
+.qa details > summary { list-style: none; cursor: pointer; display: inline-flex; }
+.qa details > summary::-webkit-details-marker { display: none; }
+.qa details[open] > summary.btn { background: var(--surface-2); }
+.qa .answer { font-size: 15px; }

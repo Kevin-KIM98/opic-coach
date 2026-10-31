@@ -59,7 +59,7 @@ const back = async (page) => { await page.goBack(); await wait(page, 700); };
 {
   const { page } = await open('#/topic/housing');
   await page.click('#tabs button[data-tab="q"]'); await wait(page);
-  await page.click('a.list-row[href^="#/practice/housing/"]'); await wait(page, 900);
+  await page.click('a[href^="#/practice/housing/"]'); await wait(page, 900);
   check('질문 연습 화면', page.url().includes('#/practice/housing/'));
   await back(page);
   check('뒤로 → 보던 ③ 답안 탭', (await activeTab(page)) === 'q', String(await activeTab(page)));
