@@ -5,7 +5,7 @@
       "id": "exam-1031",
       "title": "10/31 기출 다시 보기",
       "kind": "opic",
-      "desc": "13문항 · 약 30분. 2026-10-31 시험 주제 그대로: 자기소개 → 서점 3 → 골프 3 → 새로운 이웃 3 → 기념 휴일 3",
+      "desc": "15문항 · 약 35분. 2026-10-31 시험 주제 그대로: 자기소개 → 집/방 2 → 서점 3 → 골프 3 → 새로운 이웃 3 → 기념 휴일 3",
       "answerSeconds": 120,
       "prepSeconds": 0,
       "slots": [
@@ -13,6 +13,8 @@
           "topic": "exam-1031",
           "ids": [
             "exam1031-intro",
+            "exam1031-home-describe",
+            "exam1031-home-room",
             "exam1031-bookstore-describe",
             "exam1031-bookstore-routine",
             "exam1031-bookstore-particular",

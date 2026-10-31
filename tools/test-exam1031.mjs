@@ -1,4 +1,4 @@
-// 10/31 기출: 홈 기출 타일 · 주제 화면 · 기출 모의고사 13문항 순서 (Chromium)
+// 10/31 기출: 홈 기출 타일 · 주제 화면 · 기출 모의고사 15문항 순서 (Chromium)
 //
 // 돌려 보려면: npm i -D playwright && npx playwright install chromium
 //              python3 -m http.server 8777 &
@@ -29,7 +29,7 @@ async function open(hash, seed = null) {
   return { page, errs };
 }
 
-const IDS = ['exam1031-intro', 'exam1031-bookstore-describe', 'exam1031-bookstore-routine', 'exam1031-bookstore-particular',
+const IDS = ['exam1031-intro', 'exam1031-home-describe', 'exam1031-home-room', 'exam1031-bookstore-describe', 'exam1031-bookstore-routine', 'exam1031-bookstore-particular',
   'exam1031-golf-describe', 'exam1031-golf-routine', 'exam1031-golf-experience',
   'exam1031-neighbor-describe', 'exam1031-neighbor-new', 'exam1031-neighbor-roleplay',
   'exam1031-holiday-describe', 'exam1031-holiday-experience', 'exam1031-holiday-compare'];
@@ -73,7 +73,7 @@ for (const tab of ['expr', 'pat', 'q', 'tips']) {
   }
   const t = await import('fs').then(fs => JSON.parse(fs.readFileSync('data/topics/exam-1031.json', 'utf8')));
   const expected = IDS.map(id => t.questions.find(q => q.id === id).en.slice(0, 30));
-  check('기출 모의고사: 13문항이 정해진 순서로', JSON.stringify(seen) === JSON.stringify(expected), JSON.stringify(seen));
+  check('기출 모의고사: 15문항이 정해진 순서로', JSON.stringify(seen) === JSON.stringify(expected), JSON.stringify(seen));
   await page.waitForTimeout(1500);
   check('기출 모의고사: 결과 화면', page.url().includes('#/mock/result/'), page.url());
   check('기출 모의고사: 콘솔 오류 없음', errs.length === 0, JSON.stringify(errs));
