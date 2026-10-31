@@ -1,0 +1,464 @@
+{
+ "title": "Background Survey",
+ "desc": "시험에서 실제로 체크한 항목을 골라 두면, 2~10번에 나올 설문 주제를 그 기준으로 반복 학습할 수 있어요.",
+ "minTotal": 12,
+ "questions": [
+  {
+   "id": "job",
+   "no": "1",
+   "q": "현재 귀하는 어느 분야에 종사하고 계십니까?",
+   "type": "single",
+   "options": [
+    {
+     "id": "job1",
+     "label": "사업/회사",
+     "topic": "work"
+    },
+    {
+     "id": "job2",
+     "label": "재택근무/재택사업"
+    },
+    {
+     "id": "job3",
+     "label": "교사/교육자"
+    },
+    {
+     "id": "job4",
+     "label": "군 복무"
+    },
+    {
+     "id": "job5",
+     "label": "일 경험 없음"
+    }
+   ]
+  },
+  {
+   "id": "job-period",
+   "no": "1-1",
+   "q": "현재 직장에서 근무한 기간은? (일하는 경우)",
+   "type": "single",
+   "options": [
+    {
+     "id": "jobp1",
+     "label": "2개월 미만 — 첫 직장"
+    },
+    {
+     "id": "jobp2",
+     "label": "2개월 미만 — 이전 직장 경험 있음"
+    },
+    {
+     "id": "jobp3",
+     "label": "2개월 이상"
+    }
+   ]
+  },
+  {
+   "id": "job-manager",
+   "no": "1-2",
+   "q": "부하 직원을 관리하는 관리직입니까? (2개월 이상 근무)",
+   "type": "single",
+   "options": [
+    {
+     "id": "jobm1",
+     "label": "예"
+    },
+    {
+     "id": "jobm2",
+     "label": "아니오"
+    }
+   ]
+  },
+  {
+   "id": "student",
+   "no": "2",
+   "q": "현재 당신은 학생입니까?",
+   "type": "single",
+   "options": [
+    {
+     "id": "stu1",
+     "label": "예"
+    },
+    {
+     "id": "stu2",
+     "label": "아니오"
+    }
+   ]
+  },
+  {
+   "id": "student-recent",
+   "no": "2-1",
+   "q": "최근 어떤 강의를 수강했습니까? (학생이 아닌 경우)",
+   "type": "single",
+   "options": [
+    {
+     "id": "stur1",
+     "label": "학위 과정 수업"
+    },
+    {
+     "id": "stur2",
+     "label": "전문 기술 향상을 위한 평생 학습"
+    },
+    {
+     "id": "stur3",
+     "label": "어학 수업"
+    },
+    {
+     "id": "stur4",
+     "label": "수강 후 5년 이상 지남"
+    }
+   ]
+  },
+  {
+   "id": "housing",
+   "no": "3",
+   "q": "현재 귀하는 어디에 살고 계십니까?",
+   "type": "single",
+   "options": [
+    {
+     "id": "home1",
+     "label": "개인주택이나 아파트에 홀로 거주",
+     "topic": "housing"
+    },
+    {
+     "id": "home2",
+     "label": "친구나 룸메이트와 함께 주택이나 아파트에 거주",
+     "topic": "housing"
+    },
+    {
+     "id": "home3",
+     "label": "가족(배우자/자녀/기타 가족)과 함께 주택이나 아파트에 거주",
+     "topic": "housing"
+    },
+    {
+     "id": "home4",
+     "label": "학교 기숙사"
+    },
+    {
+     "id": "home5",
+     "label": "군대 막사"
+    }
+   ]
+  },
+  {
+   "id": "leisure",
+   "no": "4",
+   "q": "여가 활동으로 주로 무엇을 하십니까?",
+   "type": "multi",
+   "min": 2,
+   "count": true,
+   "options": [
+    {
+     "id": "lei1",
+     "label": "영화 보기",
+     "topic": "movies"
+    },
+    {
+     "id": "lei2",
+     "label": "클럽/나이트클럽 가기"
+    },
+    {
+     "id": "lei3",
+     "label": "공연 보기"
+    },
+    {
+     "id": "lei4",
+     "label": "콘서트 보기"
+    },
+    {
+     "id": "lei5",
+     "label": "박물관 가기"
+    },
+    {
+     "id": "lei6",
+     "label": "공원 가기",
+     "topic": "park"
+    },
+    {
+     "id": "lei7",
+     "label": "캠핑하기"
+    },
+    {
+     "id": "lei8",
+     "label": "해변 가기"
+    },
+    {
+     "id": "lei9",
+     "label": "스포츠 관람"
+    },
+    {
+     "id": "lei10",
+     "label": "주거 개선"
+    },
+    {
+     "id": "lei11",
+     "label": "술집/바에 가기"
+    },
+    {
+     "id": "lei12",
+     "label": "카페/커피전문점 가기",
+     "topic": "cafe"
+    },
+    {
+     "id": "lei13",
+     "label": "게임하기 (비디오·카드·보드·휴대폰 등)"
+    },
+    {
+     "id": "lei14",
+     "label": "당구 치기"
+    },
+    {
+     "id": "lei15",
+     "label": "체스 하기"
+    },
+    {
+     "id": "lei16",
+     "label": "SNS에 글 올리기"
+    },
+    {
+     "id": "lei17",
+     "label": "친구들과 문자 대화하기"
+    },
+    {
+     "id": "lei18",
+     "label": "시험 대비 과정 수강하기"
+    },
+    {
+     "id": "lei19",
+     "label": "뉴스를 보거나 듣기"
+    },
+    {
+     "id": "lei20",
+     "label": "TV 시청하기"
+    },
+    {
+     "id": "lei21",
+     "label": "리얼리티쇼 시청하기"
+    },
+    {
+     "id": "lei22",
+     "label": "쇼핑하기"
+    },
+    {
+     "id": "lei23",
+     "label": "스파/마사지샵 가기"
+    },
+    {
+     "id": "lei24",
+     "label": "구직 활동하기"
+    },
+    {
+     "id": "lei25",
+     "label": "자원봉사하기"
+    }
+   ]
+  },
+  {
+   "id": "hobby",
+   "no": "5",
+   "q": "귀하의 취미나 관심사는 무엇입니까?",
+   "type": "multi",
+   "min": 1,
+   "count": true,
+   "options": [
+    {
+     "id": "hob1",
+     "label": "아이에게 책 읽어주기"
+    },
+    {
+     "id": "hob2",
+     "label": "음악 감상하기",
+     "topic": "music"
+    },
+    {
+     "id": "hob3",
+     "label": "악기 연주하기"
+    },
+    {
+     "id": "hob4",
+     "label": "혼자 노래 부르거나 합창하기"
+    },
+    {
+     "id": "hob5",
+     "label": "춤추기"
+    },
+    {
+     "id": "hob6",
+     "label": "글쓰기 (편지·단문·시 등)"
+    },
+    {
+     "id": "hob7",
+     "label": "그림 그리기"
+    },
+    {
+     "id": "hob8",
+     "label": "요리하기"
+    },
+    {
+     "id": "hob9",
+     "label": "애완동물 기르기"
+    },
+    {
+     "id": "hob10",
+     "label": "독서"
+    },
+    {
+     "id": "hob11",
+     "label": "주식 투자하기"
+    },
+    {
+     "id": "hob12",
+     "label": "신문 읽기"
+    },
+    {
+     "id": "hob13",
+     "label": "여행 관련 잡지나 블로그 읽기"
+    },
+    {
+     "id": "hob14",
+     "label": "사진 촬영하기"
+    }
+   ]
+  },
+  {
+   "id": "sports",
+   "no": "6",
+   "q": "주로 즐기는 운동은 무엇입니까?",
+   "type": "multi",
+   "min": 1,
+   "count": true,
+   "options": [
+    {
+     "id": "spo1",
+     "label": "농구"
+    },
+    {
+     "id": "spo2",
+     "label": "야구/소프트볼"
+    },
+    {
+     "id": "spo3",
+     "label": "축구"
+    },
+    {
+     "id": "spo4",
+     "label": "미식축구"
+    },
+    {
+     "id": "spo5",
+     "label": "하키"
+    },
+    {
+     "id": "spo6",
+     "label": "크리켓"
+    },
+    {
+     "id": "spo7",
+     "label": "골프"
+    },
+    {
+     "id": "spo8",
+     "label": "배구"
+    },
+    {
+     "id": "spo9",
+     "label": "테니스"
+    },
+    {
+     "id": "spo10",
+     "label": "배드민턴"
+    },
+    {
+     "id": "spo11",
+     "label": "탁구"
+    },
+    {
+     "id": "spo12",
+     "label": "수영"
+    },
+    {
+     "id": "spo13",
+     "label": "자전거"
+    },
+    {
+     "id": "spo14",
+     "label": "스키/스노보드"
+    },
+    {
+     "id": "spo15",
+     "label": "아이스 스케이트"
+    },
+    {
+     "id": "spo16",
+     "label": "조깅",
+     "topic": "jogging"
+    },
+    {
+     "id": "spo17",
+     "label": "걷기",
+     "topic": "jogging"
+    },
+    {
+     "id": "spo18",
+     "label": "요가"
+    },
+    {
+     "id": "spo19",
+     "label": "하이킹/트레킹"
+    },
+    {
+     "id": "spo20",
+     "label": "낚시"
+    },
+    {
+     "id": "spo21",
+     "label": "헬스"
+    },
+    {
+     "id": "spo22",
+     "label": "태권도"
+    },
+    {
+     "id": "spo23",
+     "label": "운동 수업 수강하기"
+    },
+    {
+     "id": "spo24",
+     "label": "운동을 전혀 하지 않음"
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "no": "7",
+   "q": "휴가나 출장을 다닌 경험이 있습니까?",
+   "type": "multi",
+   "min": 1,
+   "count": true,
+   "options": [
+    {
+     "id": "tra1",
+     "label": "국내 출장"
+    },
+    {
+     "id": "tra2",
+     "label": "해외 출장"
+    },
+    {
+     "id": "tra3",
+     "label": "집에서 보내는 휴가",
+     "topic": "vacation-home"
+    },
+    {
+     "id": "tra4",
+     "label": "국내 여행",
+     "topic": "travel-domestic"
+    },
+    {
+     "id": "tra5",
+     "label": "해외 여행",
+     "topic": "travel-overseas"
+    }
+   ]
+  }
+ ]
+}

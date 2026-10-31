@@ -16,6 +16,8 @@ const defaultState = () => ({
   bookmarks: [],
   // 마지막으로 공부한 주제 (홈의 '이어서 학습')
   lastTopic: null,
+  // Background Survey 체크: {시험일 'YYYY-MM-DD': [선택한 항목 id]}
+  surveys: {},
 });
 
 let state = load();
@@ -139,6 +141,14 @@ export const store = {
     return i < 0;
   },
   isBookmarked(id) { return state.bookmarks.includes(id); },
+
+  // ---- 서베이 체크 (시험일별) ----
+  surveyPicks(date) { return (state.surveys || {})[date] || []; },
+  setSurveyPicks(date, ids) {
+    state.surveys = state.surveys || {};
+    if (ids.length) state.surveys[date] = ids; else delete state.surveys[date];
+    save();
+  },
 
   // ---- 백업 ----
   exportJSON() { return JSON.stringify(state, null, 1); },

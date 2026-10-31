@@ -29,6 +29,7 @@ export async function render(root) {
     </section>
 
     ${raw(last ? continueCard(last) : startCard(topics))}
+    ${raw(surveyCard())}
 
     <div class="section-title">주제별 집중 학습</div>
     <div class="topic-grid">${raw(byCat('survey').map(topicTile).join(''))}</div>
@@ -88,6 +89,16 @@ export function bankCard(bank) {
     <div class="emoji">🗂️</div>
     <div class="grow"><div class="t">${bank.title}</div><div class="s">${bank.subtitle} · 연습 ${n}/${items.length}</div>
       <div class="bar teal mt8" style="height:5px"><i style="width:${items.length ? n / items.length * 100 : 0}%"></i></div></div>
+    <span class="chev">›</span></a>`;
+}
+
+// 서베이 체크 바로 가기: 가장 최근 시험일의 선택 수
+function surveyCard() {
+  const surveys = store.state.surveys || {};
+  const last = Object.keys(surveys).sort().pop();
+  return `<a class="list-row mt12" href="#/survey">
+    <div class="emoji">☑️</div>
+    <div class="grow"><div class="t">서베이 체크</div><div class="s">${last ? `${fmtDate(last)} 시험 · ${surveys[last].length}개 선택` : '시험에서 고른 Background Survey 항목 체크'}</div></div>
     <span class="chev">›</span></a>`;
 }
 

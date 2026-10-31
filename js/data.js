@@ -19,6 +19,8 @@ export const data = {
   // 불러올 때마다 지금 패턴에 없는 예전 패턴 기록을 정리한다 (idempotent)
   patterns: () => getJSON('data/patterns.json').then(p => { store.prunePatterns(patternIds(p)); return p; }),
   mockSets: () => getJSON('data/mock-sets.json'),
+  // Background Survey 항목 (서베이 체크 화면)
+  survey: () => getJSON('data/survey.json'),
   examSchedule: () => getJSON('data/exam-schedule.json'),
   // 실전 답변 모음 (유튜브 영상 속 IH–AL 답변). groups[].items[] 에 질문·답변·문장별 해석
   bank: () => getJSON('data/answer-bank.json'),

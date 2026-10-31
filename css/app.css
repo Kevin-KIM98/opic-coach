@@ -533,3 +533,11 @@ body.has-installbar .dim-btn { bottom: calc(var(--nav-h) + 84px + env(safe-area-
 }
 .dim-overlay .dim-hint { position: absolute; color: #888; opacity: .35; filter: grayscale(1); font-size: 13px; line-height: 1.6; text-align: center; transition: top 2s, left 2s; }
 body.dimmed { overflow: hidden; }
+
+/* 서베이 체크 */
+.survey-opts .task { width: 100%; text-align: left; font: inherit; color: inherit; border: 0; cursor: pointer; }
+.survey-opts .task .t { font-weight: 600; }
+.survey-opts .task.on { box-shadow: inset 0 0 0 2px var(--good); }
+.survey-opts .task.on .check { background: var(--good); border-color: var(--good); }
+.survey-opts .check.round { border-radius: 50%; }
+.survey-total { position: sticky; top: calc(60px + env(safe-area-inset-top)); z-index: 5; background: var(--surface); box-shadow: var(--shadow); }
