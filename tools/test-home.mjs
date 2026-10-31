@@ -34,7 +34,7 @@ async function open(hash, seed = null) {
   const { page, errs } = await open('#/home');
   const txt = await page.innerText('#view');
   check('홈: 처음이면 자기소개부터 안내', txt.includes('처음이라면') && txt.includes('자기소개'), txt.slice(0, 300));
-  check('홈: 주제 타일 16개 (일반회화 포함)', (await page.$$('.tile')).length === 16);
+  check('홈: 주제 타일 17개 (일반회화 · 기출 포함)', (await page.$$('.tile')).length === 17);
   check('홈: 일반회화 섹션 · 일상 대화 타일', txt.includes('일반회화') && await page.$('.tile[href="#/topic/daily-talk"]') !== null);
   check('홈: 예전 학습 일정 없음', !txt.includes('오늘의 학습') && !txt.includes('밀린 과제') && !txt.includes('집중 학습 — 서베이'));
   check('홈: 모의고사 · 복습 버튼', txt.includes('모의고사') && txt.includes('복습'));

@@ -31,6 +31,9 @@ export async function render(root) {
     ${raw(last ? continueCard(last) : startCard(topics))}
     ${raw(surveyCard())}
 
+    ${byCat('exam').length ? raw(`<div class="section-title">시험 기출 · 반복 학습</div>
+    <div class="topic-grid">${byCat('exam').map(topicTile).join('')}</div>`) : ''}
+
     <div class="section-title">주제별 집중 학습</div>
     <div class="topic-grid">${raw(byCat('survey').map(topicTile).join(''))}</div>
 

@@ -2,6 +2,36 @@
   "intro": "실제 시험 구성 그대로 문제를 뽑아 녹음·전사·채점합니다. 점수는 발화량·속도·연결어·시제·표현 다양성 등을 분석한 추정치이며, 실제 채점과 차이가 있을 수 있습니다.",
   "sets": [
     {
+      "id": "exam-1031",
+      "title": "10/31 기출 다시 보기",
+      "kind": "opic",
+      "desc": "15문항 · 약 35분. 2026-10-31 시험 주제 그대로: 자기소개 → 집/방 2 → 서점 3 → 골프 3 → 새로운 이웃 3 → 기념 휴일 3",
+      "answerSeconds": 120,
+      "prepSeconds": 0,
+      "slots": [
+        {
+          "topic": "exam-1031",
+          "ids": [
+            "exam1031-intro",
+            "exam1031-home-describe",
+            "exam1031-home-room",
+            "exam1031-bookstore-describe",
+            "exam1031-bookstore-routine",
+            "exam1031-bookstore-particular",
+            "exam1031-golf-describe",
+            "exam1031-golf-routine",
+            "exam1031-golf-experience",
+            "exam1031-neighbor-describe",
+            "exam1031-neighbor-new",
+            "exam1031-neighbor-roleplay",
+            "exam1031-holiday-describe",
+            "exam1031-holiday-experience",
+            "exam1031-holiday-compare"
+          ]
+        }
+      ]
+    },
+    {
       "id": "opic-full",
       "title": "OPIc 실전 모의고사",
       "kind": "opic",
