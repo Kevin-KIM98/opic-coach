@@ -5,7 +5,7 @@
       "id": "exam-1031",
       "title": "10/31 기출 다시 보기",
       "kind": "opic",
-      "desc": "15문항 · 약 35분. 2026-10-31 시험 주제 그대로: 자기소개 → 집/방 2 → 서점 3 → 골프 3 → 새로운 이웃 3 → 기념 휴일 3",
+      "desc": "17문항 · 약 40분. 2026-10-31 시험 주제 그대로: 자기소개 → 집/방 2 → 서점 3 → 골프 3 → 새로운 이웃 2 → 롤플레이(골프장 추천) 3 → 기념 휴일 3",
       "answerSeconds": 120,
       "prepSeconds": 0,
       "slots": [
@@ -23,7 +23,9 @@
             "exam1031-golf-experience",
             "exam1031-neighbor-describe",
             "exam1031-neighbor-new",
-            "exam1031-neighbor-roleplay",
+            "exam1031-rp-golf-ask",
+            "exam1031-rp-golf-solve",
+            "exam1031-rp-golf-exp",
             "exam1031-holiday-describe",
             "exam1031-holiday-experience",
             "exam1031-holiday-compare"

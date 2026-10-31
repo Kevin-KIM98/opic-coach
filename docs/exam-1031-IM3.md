@@ -3,8 +3,8 @@
 2026-10-31 시험(난이도 4) 주제로 만든 **질문 + IM3 모범답안 세트**입니다. 질문(Q)을 먼저 소리 내 읽고, 답변(A)을 보지 않고 말해 본 뒤 확인하세요.
 
 - '나' 설정: 분당 아파트에 혼자 거주 · 지금은 일하지 않음 · 독서 · 골프 · 조깅
-- 주제(자기소개 · 집/방 · 서점 · 골프 · 새로운 이웃 · 기념 휴일)는 모두 실제 기출이고, 질문 문장은 그 주제로 만든 예상 질문입니다.
-- 앱: 📝 10/31 시험 기출 → ③ 답안에서 같은 질문을 누르면 IM3 · IH · AL 답안을 듣고 녹음할 수 있어요.
+- 주제(자기소개 · 집/방 · 서점 · 골프 · 새로운 이웃 · 기념 휴일 · 롤플레이 골프장 추천)는 모두 실제 기출이고, 질문 문장은 그 주제로 만든 예상 질문입니다.
+- 앱: 📝 10/31 시험 기출 → ① 질문·답안에서 레벨(IM3 · IH · AL)을 고르고 '모범답안 보기'를 누르면 질문 아래에 답안이 나와요.
 
 ## 자기소개
 
@@ -327,38 +327,97 @@
 
 ---
 
+## 롤플레이: 골프장 추천 (기출)
+
 ### 세트 12 · 롤플레이 · 질문하기
 
-**Q.** I'd like to give you a situation and ask you to act it out. You have just moved into a new apartment. Introduce yourself to your neighbor and ask three or four questions about the neighborhood.  
+**Q.** I'd like to give you a situation and ask you to act it out. A friend of yours recommended a golf course to you. Call your friend and ask three or four questions about the golf course.  
 
-*상황을 드릴 테니 연기해 주세요. 당신은 새 아파트로 막 이사했습니다. 이웃에게 자신을 소개하고 동네에 대해 서너 가지 질문을 하세요.*
+*상황을 드릴 테니 연기해 주세요. 친구가 골프장 한 곳을 추천해 줬습니다. 친구에게 전화해서 그 골프장에 대해 서너 가지 질문을 하세요.*
 
-**A. (IM3)** Hi, I'm sorry to bother you. I just moved into the apartment next door. I wanted to say hello and give you this small gift. Can I ask you a few questions about the neighborhood? First, is there a good supermarket near here? Second, where is the nearest subway station? Also, what day do we take out the recycling? Lastly, do you know any good cafes around here? Thank you so much for your help. I hope we can be good neighbors.
+**A. (IM3)** Hi, Jiho, it's me. You told me about a golf course last week, right? I'm thinking about going there, so can I ask you a few questions? First, where exactly is the golf course? How long does it take to get there by car? Second, how much is the green fee? Also, is the course good for beginners like me? Lastly, is it easy to book a tee time on weekdays? Thanks a lot for your help. Let's play there together sometime.
 
 <details><summary>문장별 해석</summary>
 
 | 영어 | 한국어 |
 |---|---|
-| Hi, I'm sorry to bother you. | 안녕하세요, 방해해서 죄송해요. |
-| I just moved into the apartment next door. | 옆집에 막 이사 왔어요. |
-| I wanted to say hello and give you this small gift. | 인사드리고 이 작은 선물을 드리고 싶었어요. |
-| Can I ask you a few questions about the neighborhood? | 동네에 대해 몇 가지 여쭤봐도 될까요? |
-| First, is there a good supermarket near here? | 먼저, 이 근처에 괜찮은 마트가 있나요? |
-| Second, where is the nearest subway station? | 두 번째로, 가장 가까운 지하철역은 어디예요? |
-| Also, what day do we take out the recycling? | 그리고 분리수거는 무슨 요일에 내놓나요? |
-| Lastly, do you know any good cafes around here? | 마지막으로, 이 근처에 괜찮은 카페 아세요? |
-| Thank you so much for your help. | 도와주셔서 정말 감사해요. |
-| I hope we can be good neighbors. | 우리 좋은 이웃이 되면 좋겠어요. |
+| Hi, Jiho, it's me. | 안녕, 지호야, 나야. |
+| You told me about a golf course last week, right? | 지난주에 나한테 골프장 하나 얘기해 줬잖아, 그렇지? |
+| I'm thinking about going there, so can I ask you a few questions? | 거기 가 볼까 생각 중이라 몇 가지 물어봐도 될까? |
+| First, where exactly is the golf course? | 먼저, 그 골프장이 정확히 어디에 있어? |
+| How long does it take to get there by car? | 차로 가면 얼마나 걸려? |
+| Second, how much is the green fee? | 두 번째로, 그린피는 얼마야? |
+| Also, is the course good for beginners like me? | 그리고 나 같은 초보한테도 괜찮은 코스야? |
+| Lastly, is it easy to book a tee time on weekdays? | 마지막으로, 평일에 예약하기 쉬워? |
+| Thanks a lot for your help. | 도와줘서 정말 고마워. |
+| Let's play there together sometime. | 언제 거기서 같이 치자. |
 
 </details>
 
-💡 인사 → 자기소개 → 질문 3~4개(First, Also, And one more thing) → 감사 → 마무리. 질문 문장이 3개 이상이어야 합니다.
+💡 인사 → 전화한 이유 → 질문 3~4개(위치 · 가격 · 난이도 · 예약) → 감사 → 같이 가자는 마무리. 질문 문장이 3개 이상이어야 합니다.
+
+---
+
+### 세트 13 · 롤플레이 · 문제 해결
+
+**Q.** I'm sorry, but there is a problem you need to resolve. You booked a tee time at the golf course your friend recommended, but heavy rain is forecast for that day. Call the golf course, explain the situation, and suggest two or three alternatives.  
+
+*죄송하지만 해결해야 할 문제가 생겼습니다. 친구가 추천한 골프장에 예약했는데, 그날 폭우가 예보되어 있습니다. 골프장에 전화해서 상황을 설명하고 두세 가지 대안을 제시하세요.*
+
+**A. (IM3)** Hello, I booked a tee time for this Saturday at 8 in the morning. But I just heard that it's going to rain heavily on Saturday. So I don't think we can play that day. I'm sorry for the trouble. Could I change my reservation to another day? First, is Sunday morning available? If not, can I come next Wednesday instead? Or, if it's possible, I'd like to cancel without a fee. Please let me know what is possible. Thank you for your help.
+
+<details><summary>문장별 해석</summary>
+
+| 영어 | 한국어 |
+|---|---|
+| Hello, I booked a tee time for this Saturday at 8 in the morning. | 안녕하세요, 이번 토요일 아침 8시에 골프 예약을 했는데요. |
+| But I just heard that it's going to rain heavily on Saturday. | 그런데 토요일에 비가 많이 온다고 방금 들었어요. |
+| So I don't think we can play that day. | 그래서 그날은 칠 수 없을 것 같아요. |
+| I'm sorry for the trouble. | 번거롭게 해서 죄송해요. |
+| Could I change my reservation to another day? | 예약을 다른 날로 바꿀 수 있을까요? |
+| First, is Sunday morning available? | 먼저, 일요일 아침 가능한가요? |
+| If not, can I come next Wednesday instead? | 안 되면 대신 다음 주 수요일에 가도 될까요? |
+| Or, if it's possible, I'd like to cancel without a fee. | 아니면 가능하다면 수수료 없이 취소하고 싶어요. |
+| Please let me know what is possible. | 어떤 게 가능한지 알려 주세요. |
+| Thank you for your help. | 도와주셔서 감사합니다. |
+
+</details>
+
+💡 인사 · 예약 정보 → 문제 설명 → 사과 → 대안 2~3개(다른 날 · 다른 시간 · 수수료 없는 취소) → 답변 부탁 → 감사.
+
+---
+
+### 세트 14 · 롤플레이 · 관련 경험
+
+**Q.** That's the end of the situation. Have you ever had a problem when you made plans to play golf? Tell me what happened and how you dealt with it.  
+
+*상황극은 끝났습니다. 골프 치러 가기로 계획했을 때 문제가 생긴 적이 있나요? 무슨 일이 있었고, 어떻게 해결했는지 말해 주세요.*
+
+**A. (IM3)** Yes, I had a problem like that last summer. I booked a tee time with three friends at a golf course in Yongin. But on that morning, one of my friends got sick. So we only had three people. I called the golf course and explained the situation. Luckily, they let another golfer join our group. He was really friendly, and we had a great time. In the end, it was a good day. Yeah, that's the problem I had when I planned to play golf.
+
+<details><summary>문장별 해석</summary>
+
+| 영어 | 한국어 |
+|---|---|
+| Yes, I had a problem like that last summer. | 네, 작년 여름에 그런 문제가 있었어요. |
+| I booked a tee time with three friends at a golf course in Yongin. | 친구 세 명과 용인에 있는 골프장을 예약했어요. |
+| But on that morning, one of my friends got sick. | 그런데 그날 아침에 친구 한 명이 아팠어요. |
+| So we only had three people. | 그래서 세 명밖에 없었어요. |
+| I called the golf course and explained the situation. | 골프장에 전화해서 상황을 설명했어요. |
+| Luckily, they let another golfer join our group. | 다행히 다른 골퍼 한 명을 우리 조에 넣어 줬어요. |
+| He was really friendly, and we had a great time. | 그분이 정말 친절해서 즐거운 시간을 보냈어요. |
+| In the end, it was a good day. | 결국 좋은 하루였어요. |
+| Yeah, that's the problem I had when I planned to play golf. | 네, 그게 골프 치러 갈 때 겪은 문제예요. |
+
+</details>
+
+💡 언제 · 누구와 → 무슨 문제 → 어떻게 해결 → 결과 · 느낀 점. 과거시제를 끝까지 지키세요.
 
 ---
 
 ## 기념 휴일 (기출)
 
-### 세트 13 · 묘사
+### 세트 15 · 묘사
 
 **Q.** Tell me about the holidays in your country. What are some of the major holidays, and what do people usually do on those days?  
 
@@ -386,7 +445,7 @@
 
 ---
 
-### 세트 14 · 경험
+### 세트 16 · 경험
 
 **Q.** Tell me about a memorable holiday you celebrated recently. What did you do, and who were you with?  
 
@@ -415,7 +474,7 @@
 
 ---
 
-### 세트 15 · 비교·변화
+### 세트 17 · 비교·변화
 
 **Q.** How have holidays in your country changed compared to the past? What are some of the differences?  
 

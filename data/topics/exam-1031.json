@@ -5,11 +5,11 @@
  "emoji": "📝",
  "category": "exam",
  "priority": -1,
- "intro": "2026년 10월 31일 실제 시험(난이도 4)에 나온 주제 묶음입니다: 자기소개 · 집/방 묘사 · 서점(particular 책) · 골프 · 새로운 이웃 · 기념 휴일. 주제는 실제 기출이고, 질문 문장은 그 주제로 자주 나오는 형태로 만든 예상 질문입니다. 모범답안의 '나'는 이날 서베이에 맞춰 '분당 아파트에 혼자 살고, 지금은 일을 하지 않음, 여가: 독서 · 골프 · 조깅 · 카페 · 영화 · TV'로 통일했습니다. 서베이를 이번과 같게 고르면 이 답안을 그대로 쓸 수 있어요.",
+ "intro": "2026년 10월 31일 실제 시험(난이도 4)에 나온 주제 묶음입니다: 자기소개 · 집/방 묘사 · 서점(particular 책) · 골프 · 새로운 이웃 · 기념 휴일, 롤플레이는 골프장 추천(질문하기 → 문제 해결 → 관련 경험). 주제는 실제 기출이고, 질문 문장은 그 주제로 자주 나오는 형태로 만든 예상 질문입니다. 모범답안의 '나'는 이날 서베이에 맞춰 '분당 아파트에 혼자 살고, 지금은 일을 하지 않음, 여가: 독서 · 골프 · 조깅 · 카페 · 영화 · TV'로 통일했습니다. 서베이를 이번과 같게 고르면 이 답안을 그대로 쓸 수 있어요.",
  "strategy": [
   "자기소개에서 말한 소재(혼자 사는 집 · 서현역 서점 · 골프 연습장 · 탄천 조깅)를 다른 문제에서 그대로 다시 쓰세요.",
   "서점 · 골프는 설문 주제라 묘사 → 루틴 → 경험 콤보로 나옵니다. 경험 질문은 반드시 과거시제로 말하세요.",
-  "새로운 이웃 · 기념 휴일은 돌발 주제로 나왔습니다. 옆집 박 할머니, 위층 새 부부, 대전 부모님 댁 추석처럼 이야기 하나씩을 정해 두면 당황하지 않아요.",
+  "새로운 이웃 · 기념 휴일은 돌발 주제로, 롤플레이는 골프장 추천 상황으로 나왔습니다. 롤플레이는 질문 3개 이상 → 사과 + 대안 2~3개 → 과거 경험 순서를 지키세요. 옆집 박 할머니, 위층 새 부부, 대전 부모님 댁 추석처럼 이야기 하나씩을 정해 두면 당황하지 않아요.",
   "난이도 4는 IM2~IH를 노리는 구간입니다. IM3 답안을 먼저 입에 붙이고, 여유가 생기면 IH 디테일을 한두 문장씩 더하세요."
  ],
  "expressions": [
@@ -97,10 +97,27 @@
    "level": "IH"
   },
   {
-   "en": "Would you mind if I asked you a few questions?",
-   "ko": "몇 가지 여쭤봐도 괜찮을까요?",
-   "level": "IH",
+   "en": "I'm thinking about going there, so can I ask you a few questions?",
+   "ko": "거기 가 볼까 해서 몇 가지 물어봐도 될까?",
+   "level": "IM",
    "note": "롤플레이 질문하기 시작 문장"
+  },
+  {
+   "en": "How much is the green fee?",
+   "ko": "그린피는 얼마예요?",
+   "level": "IM",
+   "note": "green fee = 골프장 이용료"
+  },
+  {
+   "en": "Could I change my reservation to another day?",
+   "ko": "예약을 다른 날로 바꿀 수 있을까요?",
+   "level": "IM",
+   "note": "롤플레이 문제 해결: 대안 제시"
+  },
+  {
+   "en": "Would it be possible to cancel without a cancellation fee?",
+   "ko": "취소 수수료 없이 취소할 수 있을까요?",
+   "level": "IH"
   },
   {
    "en": "Chuseok is often described as Korean Thanksgiving.",
@@ -721,57 +738,165 @@
    }
   },
   {
-   "id": "exam1031-neighbor-roleplay",
+   "id": "exam1031-rp-golf-ask",
    "type": "roleplay-ask",
-   "en": "I'd like to give you a situation and ask you to act it out. You have just moved into a new apartment. Introduce yourself to your neighbor and ask three or four questions about the neighborhood.",
-   "ko": "상황을 드릴 테니 연기해 주세요. 당신은 새 아파트로 막 이사했습니다. 이웃에게 자신을 소개하고 동네에 대해 서너 가지 질문을 하세요.",
+   "en": "I'd like to give you a situation and ask you to act it out. A friend of yours recommended a golf course to you. Call your friend and ask three or four questions about the golf course.",
+   "ko": "상황을 드릴 테니 연기해 주세요. 친구가 골프장 한 곳을 추천해 줬습니다. 친구에게 전화해서 그 골프장에 대해 서너 가지 질문을 하세요.",
    "tips": [
-    "10/31 기출 주제 '새로운 이웃'에서 나올 수 있는 롤플레이(11번 유형) 예상 문제입니다.",
-    "인사 → 자기소개 → 질문 3~4개(First, Also, And one more thing) → 감사 → 마무리. 질문 문장이 3개 이상이어야 합니다."
+    "10/31 기출 롤플레이(11번 유형): 골프장 추천. 친구에게 전화로 질문하는 상황입니다.",
+    "인사 → 전화한 이유 → 질문 3~4개(위치 · 가격 · 난이도 · 예약) → 감사 → 같이 가자는 마무리. 질문 문장이 3개 이상이어야 합니다."
    ],
    "answers": {
-    "IM3": "Hi, I'm sorry to bother you. I just moved into the apartment next door. I wanted to say hello and give you this small gift. Can I ask you a few questions about the neighborhood? First, is there a good supermarket near here? Second, where is the nearest subway station? Also, what day do we take out the recycling? Lastly, do you know any good cafes around here? Thank you so much for your help. I hope we can be good neighbors.",
-    "IH": "Hi there, I'm sorry to bother you. I just moved into the apartment next door, so I wanted to stop by and introduce myself. This is a small box of rice cakes for you. Since I'm new here, would you mind if I asked you a few questions about the neighborhood? First of all, is there a supermarket around here that's open late? Also, what's the fastest way to get to the subway station from here? I heard the recycling rules are different in every building, so could you tell me which days we take out the recycling? And one more thing, are there any quiet cafes or parks where I can read a book? Thank you so much, that's really helpful. If you ever need anything, please feel free to knock on my door. I hope we can be good neighbors.",
-    "AL": "Hi there, I'm so sorry to bother you. I just moved into the apartment next door, and I thought I'd stop by and introduce myself. Here, I brought a little box of rice cakes, just as a small hello. Since I'm completely new to the area, would you mind if I asked you a couple of quick questions? First of all, is there a supermarket nearby that stays open late, because I usually shop in the evening? Also, what's the quickest way to get to the subway station, and is it walkable? I've heard that every building has its own recycling rules, so which days do we take out the recycling, and where do we leave it? Oh, and one more thing, I'm a big reader, so are there any quiet cafes or parks around here where I could relax with a book? Wow, thank you so much, that's incredibly helpful. If there's ever anything I can do for you, please don't hesitate to knock on my door. I really hope we can be good neighbors."
+    "IM3": "Hi, Jiho, it's me. You told me about a golf course last week, right? I'm thinking about going there, so can I ask you a few questions? First, where exactly is the golf course? How long does it take to get there by car? Second, how much is the green fee? Also, is the course good for beginners like me? Lastly, is it easy to book a tee time on weekdays? Thanks a lot for your help. Let's play there together sometime.",
+    "IH": "Hi, Jiho, it's me. Do you have a minute? You told me about that golf course you played at last weekend, and I've been thinking about it ever since. I'm planning to go there soon, so I just have a few questions for you. First of all, where is it exactly, and how long does it take to get there from Bundang? Also, how much is the green fee, and does it include the cart? I'm still not that good, so is the course too difficult for someone at my level? And one more thing, is it hard to book a tee time, or can I just reserve online? Oh, that's really helpful. Thanks so much for the recommendation. Let's go there together sometime, and dinner is on me.",
+    "AL": "Hi, Jiho, it's me. Are you free to talk for a minute? You know that golf course you couldn't stop talking about after last weekend? Well, you totally sold me on it, and I'm thinking of booking a round there. Before I do, though, I just wanted to ask you a few quick questions. First of all, where is it exactly, and how long would it take to drive there from Bundang on a weekday morning? Also, what's the green fee like, and does that include the cart and the caddie, or are those extra? Since I'm still pretty much a beginner, are the fairways forgiving, or are there water hazards everywhere? Oh, and one last thing, is it hard to get a tee time, or can I just book it online a few days in advance? Okay, that's super helpful, thanks. Actually, why don't you come with me, and I'll treat you to dinner afterward as a thank-you? Let me know when you're free."
    },
    "answersKo": {
     "IM3": [
-     "안녕하세요, 방해해서 죄송해요.",
-     "옆집에 막 이사 왔어요.",
-     "인사드리고 이 작은 선물을 드리고 싶었어요.",
-     "동네에 대해 몇 가지 여쭤봐도 될까요?",
-     "먼저, 이 근처에 괜찮은 마트가 있나요?",
-     "두 번째로, 가장 가까운 지하철역은 어디예요?",
-     "그리고 분리수거는 무슨 요일에 내놓나요?",
-     "마지막으로, 이 근처에 괜찮은 카페 아세요?",
-     "도와주셔서 정말 감사해요.",
-     "우리 좋은 이웃이 되면 좋겠어요."
+     "안녕, 지호야, 나야.",
+     "지난주에 나한테 골프장 하나 얘기해 줬잖아, 그렇지?",
+     "거기 가 볼까 생각 중이라 몇 가지 물어봐도 될까?",
+     "먼저, 그 골프장이 정확히 어디에 있어?",
+     "차로 가면 얼마나 걸려?",
+     "두 번째로, 그린피는 얼마야?",
+     "그리고 나 같은 초보한테도 괜찮은 코스야?",
+     "마지막으로, 평일에 예약하기 쉬워?",
+     "도와줘서 정말 고마워.",
+     "언제 거기서 같이 치자."
     ],
     "IH": [
-     "안녕하세요, 방해해서 죄송해요.",
-     "옆집에 막 이사 와서 들러서 인사드리고 싶었어요.",
-     "이건 작은 떡 한 상자예요.",
-     "여기가 처음이라서 그런데, 동네에 대해 몇 가지 여쭤봐도 괜찮을까요?",
-     "우선, 이 근처에 늦게까지 여는 마트가 있나요?",
-     "그리고 여기서 지하철역까지 제일 빨리 가는 방법이 뭐예요?",
-     "분리수거 규칙이 건물마다 다르다고 들었는데, 무슨 요일에 내놓는지 알려 주실 수 있나요?",
-     "그리고 하나 더, 책 읽기 좋은 조용한 카페나 공원이 있을까요?",
-     "정말 감사해요, 정말 도움이 됐어요.",
-     "혹시 필요한 게 있으면 언제든 편하게 문 두드려 주세요.",
-     "우리 좋은 이웃이 되면 좋겠어요."
+     "안녕, 지호야, 나야.",
+     "잠깐 시간 돼?",
+     "지난 주말에 쳤다는 그 골프장 얘기해 줬잖아, 그 후로 계속 생각나더라.",
+     "곧 거기 가 보려고 해서 몇 가지만 물어볼게.",
+     "우선, 정확히 어디에 있고 분당에서 가는 데 얼마나 걸려?",
+     "그리고 그린피는 얼마고, 카트비도 포함이야?",
+     "내가 아직 실력이 별로라서, 내 수준에는 코스가 너무 어렵지 않을까?",
+     "그리고 하나 더, 예약하기 어려워, 아니면 그냥 온라인으로 예약하면 돼?",
+     "아, 정말 도움이 된다.",
+     "추천해 줘서 정말 고마워.",
+     "언제 거기 같이 가자, 저녁은 내가 살게."
     ],
     "AL": [
-     "안녕하세요, 방해해서 정말 죄송해요.",
-     "옆집에 막 이사 와서 들러서 인사드리려고 했어요.",
-     "여기, 작은 인사로 떡을 조금 가져왔어요.",
-     "이 동네가 완전히 처음이라서 그런데, 간단히 몇 가지 여쭤봐도 괜찮을까요?",
-     "우선, 제가 보통 저녁에 장을 봐서 그런데, 근처에 늦게까지 여는 마트가 있을까요?",
-     "그리고 지하철역까지 제일 빨리 가는 길이 뭐고, 걸어갈 만한가요?",
-     "건물마다 분리수거 규칙이 다르다고 들었는데, 무슨 요일에 어디에 내놓으면 되나요?",
-     "아, 그리고 하나 더요, 제가 책을 정말 좋아해서 그런데, 이 근처에 책 들고 쉬기 좋은 조용한 카페나 공원이 있을까요?",
-     "와, 정말 감사해요, 엄청 도움이 됐어요.",
-     "혹시 제가 도와드릴 일이 있으면 언제든 망설이지 말고 문 두드려 주세요.",
-     "우리 정말 좋은 이웃이 되면 좋겠어요."
+     "안녕, 지호야, 나야.",
+     "잠깐 통화할 수 있어?",
+     "지난 주말 이후로 네가 계속 얘기하던 그 골프장 있잖아?",
+     "글쎄, 네 말에 완전히 넘어가서 거기서 한 번 칠까 생각 중이야.",
+     "그 전에 몇 가지만 간단히 물어보고 싶었어.",
+     "우선, 정확히 어디에 있고, 평일 아침에 분당에서 차로 가면 얼마나 걸릴까?",
+     "그리고 그린피는 어느 정도고, 카트랑 캐디가 포함이야 아니면 따로야?",
+     "내가 아직 거의 초보라서 그런데, 페어웨이가 넓은 편이야, 아니면 사방이 해저드야?",
+     "아, 그리고 마지막으로, 예약 잡기 어려워, 아니면 며칠 전에 온라인으로 예약하면 돼?",
+     "좋아, 정말 큰 도움이 됐어, 고마워.",
+     "사실 너도 같이 가는 게 어때, 고마운 의미로 끝나고 저녁은 내가 살게.",
+     "시간 될 때 알려 줘."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-rp-golf-solve",
+   "type": "roleplay-solve",
+   "en": "I'm sorry, but there is a problem you need to resolve. You booked a tee time at the golf course your friend recommended, but heavy rain is forecast for that day. Call the golf course, explain the situation, and suggest two or three alternatives.",
+   "ko": "죄송하지만 해결해야 할 문제가 생겼습니다. 친구가 추천한 골프장에 예약했는데, 그날 폭우가 예보되어 있습니다. 골프장에 전화해서 상황을 설명하고 두세 가지 대안을 제시하세요.",
+   "tips": [
+    "10/31 기출 롤플레이(12번 유형): 골프장 예약 문제 해결. 실제 문제 상황은 다를 수 있어요. 예약 변경 · 취소 상황이면 이 틀을 그대로 쓰면 됩니다.",
+    "인사 · 예약 정보 → 문제 설명 → 사과 → 대안 2~3개(다른 날 · 다른 시간 · 수수료 없는 취소) → 답변 부탁 → 감사."
+   ],
+   "answers": {
+    "IM3": "Hello, I booked a tee time for this Saturday at 8 in the morning. But I just heard that it's going to rain heavily on Saturday. So I don't think we can play that day. I'm sorry for the trouble. Could I change my reservation to another day? First, is Sunday morning available? If not, can I come next Wednesday instead? Or, if it's possible, I'd like to cancel without a fee. Please let me know what is possible. Thank you for your help.",
+    "IH": "Hello, I'm calling about a reservation. I booked a tee time for four people this Saturday at 8 in the morning under the name Kim. Unfortunately, I just checked the weather forecast, and it says there will be heavy rain all day on Saturday. Some of my friends are beginners, so playing in the rain would be really difficult for us. I'm really sorry to ask, but could we change our reservation? First, do you have any tee times available on Sunday morning? If Sunday is fully booked, we could also come next Wednesday or Thursday, since I'm free on weekdays. And if none of those work, would it be possible to cancel without a cancellation fee because of the weather? Please call me back at this number when you check the schedule. Thank you so much for understanding.",
+    "AL": "Hi, good morning, I'm calling about a tee time I booked. The reservation is under the name Kim, for a group of four this Saturday at 8 in the morning. I was really looking forward to it, especially since a friend of mine recommended your course so highly. Unfortunately, I just checked the forecast, and it looks like there's going to be a downpour pretty much all day. A couple of people in my group are beginners, so playing in that kind of weather would be no fun, and honestly, a little risky. I'm so sorry for the short notice, but I was wondering if we could work something out. Ideally, we'd love to move it to Sunday morning if you have any openings. If Sunday is already full, we're pretty flexible, so any weekday next week would work for us as well. And if neither of those options works, would you be able to waive the cancellation fee, given that it's because of the weather? Whatever you decide, I'd really appreciate it if you could get back to me at this number by tomorrow. Thanks so much for your help, and sorry again for the trouble."
+   },
+   "answersKo": {
+    "IM3": [
+     "안녕하세요, 이번 토요일 아침 8시에 골프 예약을 했는데요.",
+     "그런데 토요일에 비가 많이 온다고 방금 들었어요.",
+     "그래서 그날은 칠 수 없을 것 같아요.",
+     "번거롭게 해서 죄송해요.",
+     "예약을 다른 날로 바꿀 수 있을까요?",
+     "먼저, 일요일 아침 가능한가요?",
+     "안 되면 대신 다음 주 수요일에 가도 될까요?",
+     "아니면 가능하다면 수수료 없이 취소하고 싶어요.",
+     "어떤 게 가능한지 알려 주세요.",
+     "도와주셔서 감사합니다."
+    ],
+    "IH": [
+     "안녕하세요, 예약 건으로 전화드렸어요.",
+     "이번 토요일 아침 8시에 김 이름으로 네 명 예약을 했어요.",
+     "그런데 방금 일기 예보를 봤더니 토요일에 하루 종일 폭우가 온다고 하네요.",
+     "친구 몇 명이 초보라서 빗속에서 치는 건 정말 힘들 것 같아요.",
+     "정말 죄송하지만 예약을 변경할 수 있을까요?",
+     "먼저, 일요일 아침에 빈 시간이 있나요?",
+     "일요일이 다 찼다면, 제가 평일에 시간이 돼서 다음 주 수요일이나 목요일에 가도 돼요.",
+     "그것도 다 안 되면, 날씨 때문이니 취소 수수료 없이 취소할 수 있을까요?",
+     "일정 확인하시면 이 번호로 다시 전화 주세요.",
+     "이해해 주셔서 정말 감사합니다."
+    ],
+    "AL": [
+     "안녕하세요, 좋은 아침이에요, 예약한 라운드 건으로 전화드렸어요.",
+     "예약은 김 이름으로, 이번 토요일 아침 8시 네 명이에요.",
+     "친구가 이 골프장을 정말 강력하게 추천해 줘서 무척 기대하고 있었어요.",
+     "그런데 아쉽게도 방금 예보를 봤더니 거의 하루 종일 폭우가 쏟아질 것 같더라고요.",
+     "일행 중 두 명이 초보라 그런 날씨에 치면 재미도 없고, 솔직히 좀 위험할 것 같아요.",
+     "갑작스럽게 연락드려 정말 죄송하지만, 방법을 좀 찾아볼 수 있을까 해서요.",
+     "가능하다면 일요일 아침에 빈자리가 있으면 그리로 옮기고 싶어요.",
+     "일요일이 이미 찼다면 저희는 일정이 꽤 자유로워서 다음 주 평일 아무 때나 괜찮아요.",
+     "그것도 둘 다 안 되면, 날씨 때문인 만큼 취소 수수료를 면제해 주실 수 있을까요?",
+     "어떻게 정하시든 내일까지 이 번호로 연락 주시면 정말 감사하겠어요.",
+     "도와주셔서 정말 감사하고, 번거롭게 해서 다시 한번 죄송해요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-rp-golf-exp",
+   "type": "roleplay-experience",
+   "en": "That's the end of the situation. Have you ever had a problem when you made plans to play golf? Tell me what happened and how you dealt with it.",
+   "ko": "상황극은 끝났습니다. 골프 치러 가기로 계획했을 때 문제가 생긴 적이 있나요? 무슨 일이 있었고, 어떻게 해결했는지 말해 주세요.",
+   "tips": [
+    "10/31 기출 롤플레이(13번 유형): 관련 경험. 실제 질문 문장은 다를 수 있어요. '계획이 틀어진 경험'으로 준비해 두면 대부분의 13번에 쓸 수 있어요.",
+    "언제 · 누구와 → 무슨 문제 → 어떻게 해결 → 결과 · 느낀 점. 과거시제를 끝까지 지키세요."
+   ],
+   "answers": {
+    "IM3": "Yes, I had a problem like that last summer. I booked a tee time with three friends at a golf course in Yongin. But on that morning, one of my friends got sick. So we only had three people. I called the golf course and explained the situation. Luckily, they let another golfer join our group. He was really friendly, and we had a great time. In the end, it was a good day. Yeah, that's the problem I had when I planned to play golf.",
+    "IH": "Yes, actually, something like that happened to me last summer. I booked a tee time for four people at a golf course in Yongin, and we had been planning it for weeks. But early that morning, one of my friends called me and said he had a terrible stomachache. I was worried, because the course usually doesn't let groups of three play on weekends. So I called the front desk right away and explained what had happened. The staff member was really kind, and she found a man who was playing alone that day. He joined our group, and it turned out he was a great golfer who gave us lots of tips. We even exchanged numbers after the round, and we still play together sometimes. From that experience, I learned that it's always better to call and ask than to just give up. Yeah, that's the problem I had, and it actually turned out well.",
+    "AL": "Yes, actually, something just like that happened to me last summer, and it ended up being a blessing in disguise. My friends and I had booked a weekend tee time at a course in Yongin, and we'd been looking forward to it for weeks. But at around six that morning, one of them called me, sounding awful, and told me he'd come down with a nasty stomach bug. My heart sank, because that course has a strict rule that weekend groups have to be four players. Instead of canceling, I decided to call the front desk as soon as they opened and explain the situation. Fortunately, the staff member was incredibly understanding, and she managed to pair us with a gentleman who had come to play on his own. It turned out he'd been playing for over twenty years, so he gave us all kinds of tips on our swings and putting. By the end of the round, we were laughing like old friends, and we even swapped numbers. We still play together every now and then, and my sick friend is a little jealous. Looking back, it taught me that when plans fall apart, a polite phone call can solve more than you'd expect. Yeah, that's the problem I had, and it actually turned out to be one of my favorite golf memories."
+   },
+   "answersKo": {
+    "IM3": [
+     "네, 작년 여름에 그런 문제가 있었어요.",
+     "친구 세 명과 용인에 있는 골프장을 예약했어요.",
+     "그런데 그날 아침에 친구 한 명이 아팠어요.",
+     "그래서 세 명밖에 없었어요.",
+     "골프장에 전화해서 상황을 설명했어요.",
+     "다행히 다른 골퍼 한 명을 우리 조에 넣어 줬어요.",
+     "그분이 정말 친절해서 즐거운 시간을 보냈어요.",
+     "결국 좋은 하루였어요.",
+     "네, 그게 골프 치러 갈 때 겪은 문제예요."
+    ],
+    "IH": [
+     "네, 사실 작년 여름에 그런 일이 있었어요.",
+     "용인에 있는 골프장에 네 명으로 예약했는데, 몇 주 동안 계획한 거였어요.",
+     "그런데 그날 아침 일찍 친구 한 명이 전화해서 배가 너무 아프다고 했어요.",
+     "그 골프장은 보통 주말에 세 명은 못 치게 해서 걱정됐어요.",
+     "그래서 바로 프런트에 전화해서 무슨 일이 있었는지 설명했어요.",
+     "직원분이 정말 친절해서 그날 혼자 치러 온 남자분을 찾아 줬어요.",
+     "그분이 우리 조에 합류했는데, 알고 보니 실력이 정말 좋아서 팁을 많이 알려 줬어요.",
+     "라운드 후에 연락처까지 주고받았고, 지금도 가끔 같이 쳐요.",
+     "그 경험으로 그냥 포기하기보다 전화해서 물어보는 게 항상 낫다는 걸 배웠어요.",
+     "네, 그게 제가 겪은 문제인데, 오히려 잘 풀렸어요."
+    ],
+    "AL": [
+     "네, 사실 작년 여름에 딱 그런 일이 있었는데, 결과적으로 전화위복이 됐어요.",
+     "친구들과 용인에 있는 골프장에 주말 라운드를 예약했고, 몇 주 동안 손꼽아 기다렸어요.",
+     "그런데 그날 아침 6시쯤 한 친구가 기운 없는 목소리로 전화해서 심한 장염에 걸렸다고 했어요.",
+     "가슴이 철렁했어요, 그 골프장은 주말에는 반드시 네 명이어야 한다는 규칙이 엄격했거든요.",
+     "취소하는 대신 프런트가 문을 열자마자 전화해서 상황을 설명하기로 했어요.",
+     "다행히 직원분이 정말 너그러워서, 혼자 치러 온 신사분과 우리를 한 조로 묶어 줬어요.",
+     "알고 보니 그분은 20년 넘게 골프를 친 분이라 스윙이며 퍼팅이며 온갖 팁을 알려 줬어요.",
+     "라운드가 끝날 무렵엔 오랜 친구처럼 웃고 있었고, 연락처까지 주고받았어요.",
+     "지금도 가끔 같이 치는데, 그때 아팠던 친구는 좀 샘을 내요.",
+     "돌이켜 보면, 계획이 틀어졌을 때 정중한 전화 한 통이 생각보다 많은 걸 해결해 준다는 걸 배웠어요.",
+     "네, 그게 제가 겪은 문제인데, 오히려 제일 좋아하는 골프 추억 중 하나가 됐어요."
     ]
    }
   },
