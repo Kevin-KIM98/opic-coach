@@ -1,0 +1,821 @@
+{
+ "id": "exam-1031",
+ "title": "10/31 시험 기출",
+ "titleEn": "Oct 31 exam topics",
+ "emoji": "📝",
+ "category": "exam",
+ "priority": -1,
+ "intro": "2026년 10월 31일 실제 시험(난이도 4)에 나온 주제 묶음입니다: 자기소개 · 서점(particular 책) · 골프 · 새로운 이웃 · 기념 휴일. 주제는 실제 기출이고, 질문 문장은 그 주제로 자주 나오는 형태로 만든 예상 질문입니다. 모범답안의 '나'는 이날 서베이에 맞춰 '분당 아파트에 혼자 살고, 지금은 일을 하지 않음, 여가: 독서 · 골프 · 조깅 · 카페 · 영화 · TV'로 통일했습니다. 서베이를 이번과 같게 고르면 이 답안을 그대로 쓸 수 있어요.",
+ "strategy": [
+  "자기소개에서 말한 소재(혼자 사는 집 · 서현역 서점 · 골프 연습장 · 탄천 조깅)를 다른 문제에서 그대로 다시 쓰세요.",
+  "서점 · 골프는 설문 주제라 묘사 → 루틴 → 경험 콤보로 나옵니다. 경험 질문은 반드시 과거시제로 말하세요.",
+  "새로운 이웃 · 기념 휴일은 돌발 주제로 나왔습니다. 옆집 박 할머니, 위층 새 부부, 대전 부모님 댁 추석처럼 이야기 하나씩을 정해 두면 당황하지 않아요.",
+  "난이도 4는 IM2~IH를 노리는 구간입니다. IM3 답안을 먼저 입에 붙이고, 여유가 생기면 IH 디테일을 한두 문장씩 더하세요."
+ ],
+ "expressions": [
+  {
+   "en": "I live alone in a small apartment in Bundang.",
+   "ko": "분당의 작은 아파트에서 혼자 살아요.",
+   "level": "IM",
+   "note": "서베이 '홀로 거주'와 맞춘 자기소개 첫 문장"
+  },
+  {
+   "en": "I'm not working at the moment, so I have a lot of free time.",
+   "ko": "지금은 일을 하지 않아서 시간이 많아요.",
+   "level": "IM",
+   "note": "서베이 '일 경험 없음'에 맞춘 표현"
+  },
+  {
+   "en": "It's only a 15-minute walk from my apartment.",
+   "ko": "우리 아파트에서 걸어서 15분밖에 안 걸려요.",
+   "level": "IM"
+  },
+  {
+   "en": "I lose track of time browsing new books.",
+   "ko": "새 책을 구경하다 시간 가는 줄 몰라요.",
+   "level": "IH"
+  },
+  {
+   "en": "A novel caught my eye.",
+   "ko": "소설 한 권이 눈에 들어왔어요.",
+   "level": "IH",
+   "note": "catch one's eye = 눈길을 끌다"
+  },
+  {
+   "en": "I was hooked right away.",
+   "ko": "바로 빠져들었어요.",
+   "level": "IH"
+  },
+  {
+   "en": "It came to me at just the right time.",
+   "ko": "딱 맞는 때에 저한테 와 줬어요.",
+   "level": "IH"
+  },
+  {
+   "en": "I practice at a driving range near my place.",
+   "ko": "집 근처 골프 연습장에서 연습해요.",
+   "level": "IM",
+   "note": "driving range = 골프 연습장"
+  },
+  {
+   "en": "We book a tee time at a golf course in Yongin.",
+   "ko": "용인에 있는 골프장을 예약해요.",
+   "level": "IH",
+   "note": "tee time = 라운드 예약 시간"
+  },
+  {
+   "en": "It was my very first birdie.",
+   "ko": "제 생애 첫 버디였어요.",
+   "level": "IM"
+  },
+  {
+   "en": "We bump into each other in the elevator.",
+   "ko": "엘리베이터에서 마주쳐요.",
+   "level": "IH",
+   "note": "bump into = 우연히 마주치다"
+  },
+  {
+   "en": "In Korea, people share rice cakes with their neighbors when they move in.",
+   "ko": "한국에서는 이사 오면 이웃과 떡을 나눠요.",
+   "level": "IH"
+  },
+  {
+   "en": "Would you mind if I asked you a few questions?",
+   "ko": "몇 가지 여쭤봐도 괜찮을까요?",
+   "level": "IH",
+   "note": "롤플레이 질문하기 시작 문장"
+  },
+  {
+   "en": "Chuseok is often described as Korean Thanksgiving.",
+   "ko": "추석은 흔히 한국의 추수감사절이라고 해요.",
+   "level": "IH"
+  },
+  {
+   "en": "The highways turn into huge parking lots.",
+   "ko": "고속도로가 거대한 주차장이 돼요.",
+   "level": "IH"
+  },
+  {
+   "en": "Holidays are less stressful now than they used to be.",
+   "ko": "명절이 예전보다 스트레스가 덜해요.",
+   "level": "IH",
+   "note": "비교 · 변화 질문: than they used to be"
+  }
+ ],
+ "questions": [
+  {
+   "id": "exam1031-intro",
+   "type": "describe",
+   "en": "Let's start the interview now. Tell me a little bit about yourself.",
+   "ko": "이제 인터뷰를 시작하겠습니다. 자기소개를 해 주세요.",
+   "tips": [
+    "10/31 기출: 1번 자기소개. 서베이대로 '혼자 거주 · 지금은 일하지 않음'으로 말합니다.",
+    "여기서 말한 서점 · 골프 · 조깅 · 혼자 사는 집이 뒤 문제에 다시 나오니 소재를 미리 깔아 두세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about myself. I live alone in a small apartment in Bundang, near Seoul. I'm not working at the moment, so I have a lot of free time. I'm a calm person, and I like quiet places. In my free time, I read books, go jogging, and play golf. On weekends, I often go to a bookstore or a cafe near my place. Living alone is really comfortable, and I enjoy my own time. Yeah, that's a little bit about me.",
+    "IH": "Okay, let me tell you a little bit about myself. I live alone in a small apartment in Bundang, which is just south of Seoul. I'm not working at the moment, so my days are pretty flexible. I'd describe myself as a calm and curious person. I don't like crowded places, but I love learning new things. That's why I spend a lot of time reading, especially at a big bookstore near Seohyeon Station. To stay healthy, I go jogging along the Tancheon stream a few times a week. I also got into golf a couple of years ago, and now I practice at a driving range near my place. In the evenings, I usually watch TV or listen to music at home. Living alone can be a little quiet sometimes, but I really enjoy having my own space. Yeah, that's a little bit about me.",
+    "AL": "Okay, let me tell you a little bit about myself. I live on my own in a cozy apartment in Bundang, a quiet area just south of Seoul. I'm not working at the moment, so I have a lot of control over my schedule, which I really appreciate. If I had to describe myself in a few words, I'd say I'm calm, curious, and a bit of a homebody. I'm not really into crowded places, but I never get tired of learning something new. So a typical day for me starts with a jog along the Tancheon stream, where the air is fresh in the morning. After that, I often head to a big bookstore near Seohyeon Station and lose track of time browsing new books. A couple of years ago, I also picked up golf, and honestly, it has become a bit of an obsession. I hit balls at a driving range near my place, and once in a while, I play a real round with my friends. In the evenings, I just relax at home with some music or a TV show. Living alone can feel a little quiet at times, but I've come to love the freedom of having my own space. I think this lifestyle really suits me right now. Yeah, that's pretty much who I am."
+   },
+   "answersKo": {
+    "IM3": [
+     "네, 제 소개를 할게요.",
+     "저는 서울 근처 분당의 작은 아파트에서 혼자 살아요.",
+     "지금은 일을 하지 않아서 시간이 많아요.",
+     "저는 차분한 사람이고 조용한 곳을 좋아해요.",
+     "여가 시간에는 책을 읽고, 조깅을 하고, 골프를 쳐요.",
+     "주말에는 집 근처 서점이나 카페에 자주 가요.",
+     "혼자 사는 건 정말 편하고, 저만의 시간을 즐겨요.",
+     "네, 이게 제 소개예요."
+    ],
+    "IH": [
+     "네, 제 소개를 조금 할게요.",
+     "저는 서울 바로 남쪽에 있는 분당의 작은 아파트에서 혼자 살아요.",
+     "지금은 일을 하지 않아서 하루 일정이 꽤 자유로워요.",
+     "저는 차분하고 호기심이 많은 사람이라고 할 수 있어요.",
+     "붐비는 곳은 싫어하지만 새로운 걸 배우는 건 정말 좋아해요.",
+     "그래서 책 읽는 데 시간을 많이 쓰는데, 특히 서현역 근처 큰 서점에서요.",
+     "건강을 위해 일주일에 몇 번 탄천을 따라 조깅을 해요.",
+     "2년 전쯤 골프에도 빠져서 지금은 집 근처 연습장에서 연습해요.",
+     "저녁에는 보통 집에서 TV를 보거나 음악을 들어요.",
+     "혼자 살면 가끔 좀 적막하지만, 저만의 공간이 있는 게 정말 좋아요.",
+     "네, 이게 제 소개예요."
+    ],
+    "AL": [
+     "네, 제 소개를 조금 할게요.",
+     "저는 서울 바로 남쪽의 조용한 동네인 분당의 아늑한 아파트에서 혼자 살아요.",
+     "지금은 일을 하지 않아서 일정을 제 마음대로 정할 수 있는데, 그게 정말 좋아요.",
+     "저를 몇 단어로 표현하자면 차분하고, 호기심 많고, 약간 집순이/집돌이 같아요.",
+     "붐비는 곳은 별로지만 새로운 걸 배우는 건 절대 질리지 않아요.",
+     "그래서 제 하루는 보통 아침 공기가 상쾌한 탄천에서 조깅하는 걸로 시작해요.",
+     "그다음엔 서현역 근처 큰 서점에 가서 새 책을 구경하다 시간 가는 줄 몰라요.",
+     "2년 전쯤엔 골프도 시작했는데, 솔직히 좀 푹 빠져 버렸어요.",
+     "집 근처 연습장에서 공을 치고, 가끔은 친구들과 필드에 나가요.",
+     "저녁에는 그냥 집에서 음악이나 TV 프로그램을 보며 쉬어요.",
+     "혼자 사는 게 가끔은 좀 적막하지만, 나만의 공간이 주는 자유가 정말 좋아졌어요.",
+     "지금은 이런 생활이 저한테 정말 잘 맞는 것 같아요.",
+     "네, 이게 대략 저라는 사람이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-bookstore-describe",
+   "type": "describe",
+   "en": "You indicated in the survey that you enjoy reading. Tell me about a bookstore you often go to. Where is it, and what does it look like?",
+   "ko": "설문에서 독서를 즐긴다고 하셨습니다. 자주 가는 서점에 대해 말해 주세요. 어디에 있고, 어떻게 생겼나요?",
+   "tips": [
+    "10/31 기출 주제: 서점(bookstore). 질문 문장은 기출 주제를 바탕으로 만든 예상 질문입니다.",
+    "위치(서현역 근처, 걸어서 15분) → 입구 → 책장 · 큰 테이블 → 분위기 → 좋아하는 이유 순서로 묘사하세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about the bookstore I often go to. It's a big bookstore near Seohyeon Station in Bundang. It's only a 15-minute walk from my apartment. The bookstore is in the basement of a shopping mall. There are lots of bookshelves, and there's a big reading table in the middle. It's always bright, clean, and quiet. There's also a small cafe inside, so I can have coffee there. I really like this place because I feel relaxed there. Yeah, that's the bookstore I often go to.",
+    "IH": "Okay, let me tell you about my favorite bookstore. It's a huge bookstore in the basement of a shopping mall near Seohyeon Station, about 15 minutes on foot from my place. When you walk in, the first thing you see is the bestseller section right by the entrance. Behind that, there are rows of tall bookshelves divided into sections like novels, travel, and self-help. In the middle of the store, there's a long wooden table where anyone can sit and read for free. The lighting is warm, and soft music is always playing in the background. There's also a small stationery shop and a cafe inside, so it's easy to spend a few hours there. Even on weekends when it gets crowded, it still feels calm somehow. For someone who lives alone like me, it's kind of like a second living room. Yeah, that's the bookstore I love to visit.",
+    "AL": "Okay, let me tell you about my favorite bookstore, because it's honestly one of my favorite places in the whole city. It's a huge bookstore tucked away in the basement of a shopping mall near Seohyeon Station, just a 15-minute walk from my apartment. As soon as you walk in, you're greeted by a big display of bestsellers and new releases right by the entrance. Beyond that, there are endless rows of tall bookshelves, neatly organized into sections like fiction, history, travel, and self-help. What really makes the place special, though, is the long wooden table in the middle of the store. It's made from one giant piece of wood, and anyone can sit there and read as long as they want without buying anything. The lighting is warm and soft, and there's always some calm piano music playing in the background. On top of that, there's a little stationery shop and a cafe inside, so it's really easy to lose track of time. Even on busy weekends, the atmosphere somehow stays peaceful. Since I live alone, it has become kind of a second living room for me. Yeah, that's the bookstore I keep going back to."
+   },
+   "answersKo": {
+    "IM3": [
+     "제가 자주 가는 서점에 대해 말해 볼게요.",
+     "분당 서현역 근처에 있는 큰 서점이에요.",
+     "우리 아파트에서 걸어서 15분밖에 안 걸려요.",
+     "서점은 쇼핑몰 지하에 있어요.",
+     "책장이 정말 많고, 가운데에 큰 독서 테이블이 있어요.",
+     "항상 밝고, 깨끗하고, 조용해요.",
+     "안에 작은 카페도 있어서 거기서 커피를 마실 수 있어요.",
+     "거기 있으면 마음이 편해서 이곳을 정말 좋아해요.",
+     "네, 그게 제가 자주 가는 서점이에요."
+    ],
+    "IH": [
+     "제가 제일 좋아하는 서점에 대해 말해 볼게요.",
+     "서현역 근처 쇼핑몰 지하에 있는 아주 큰 서점인데, 집에서 걸어서 15분 정도예요.",
+     "들어가면 제일 먼저 입구 바로 옆 베스트셀러 코너가 보여요.",
+     "그 뒤로는 소설, 여행, 자기계발 같은 분야별로 나뉜 높은 책장들이 줄지어 있어요.",
+     "매장 가운데에는 누구나 앉아서 무료로 책을 읽을 수 있는 긴 나무 테이블이 있어요.",
+     "조명은 따뜻하고, 배경으로 늘 잔잔한 음악이 흘러요.",
+     "안에 작은 문구점과 카페도 있어서 몇 시간이고 있기 쉬워요.",
+     "사람이 많은 주말에도 왠지 차분한 느낌이에요.",
+     "저처럼 혼자 사는 사람한테는 두 번째 거실 같은 곳이에요.",
+     "네, 그게 제가 즐겨 가는 서점이에요."
+    ],
+    "AL": [
+     "제가 제일 좋아하는 서점에 대해 말해 볼게요, 솔직히 이 도시에서 제일 좋아하는 곳 중 하나거든요.",
+     "서현역 근처 쇼핑몰 지하에 자리 잡은 아주 큰 서점인데, 우리 아파트에서 걸어서 15분밖에 안 돼요.",
+     "들어서자마자 입구 바로 옆에 베스트셀러와 신간이 크게 진열되어 있어요.",
+     "그 너머로는 소설, 역사, 여행, 자기계발처럼 깔끔하게 분류된 높은 책장이 끝없이 이어져요.",
+     "그런데 이곳을 정말 특별하게 만드는 건 매장 한가운데 있는 긴 나무 테이블이에요.",
+     "거대한 통나무 하나로 만든 건데, 누구나 아무것도 사지 않고 원하는 만큼 앉아서 읽을 수 있어요.",
+     "조명은 따뜻하고 부드럽고, 배경에는 늘 잔잔한 피아노 음악이 흘러요.",
+     "게다가 안에 작은 문구점과 카페까지 있어서 시간 가는 줄 모르기 쉬워요.",
+     "붐비는 주말에도 분위기는 어쩐지 평화로워요.",
+     "혼자 살다 보니 거기가 제 두 번째 거실처럼 됐어요.",
+     "네, 그게 제가 계속 다시 찾는 서점이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-bookstore-routine",
+   "type": "routine",
+   "en": "What do you usually do when you go to a bookstore? Describe a typical visit from beginning to end.",
+   "ko": "서점에 가면 보통 무엇을 하나요? 처음부터 끝까지 평소 방문 과정을 설명해 주세요.",
+   "tips": [
+    "10/31 기출 주제: 서점. 루틴 질문은 First → Then → After that → Before I leave 순서 연결어로 이어 가세요.",
+    "usually · always · sometimes 같은 빈도 부사를 꼭 넣으세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you what I usually do at the bookstore. I usually go there on weekday afternoons because it's not crowded. First, I check the bestseller section near the entrance. Then, I go to the novel section and look around for a while. If I find an interesting book, I sit at the big table and read a few pages. After that, I usually buy one or two books. Sometimes I also buy a coffee at the cafe inside. I usually stay there for about two hours. Yeah, that's what I usually do at the bookstore.",
+    "IH": "Okay, let me walk you through a typical visit to the bookstore. Since I'm not working right now, I usually go there on weekday afternoons when it's nice and quiet. The first thing I do is check the bestseller list near the entrance to see what people are reading these days. After that, I head straight to the fiction section, because I'm a big fan of mystery novels. When a book catches my eye, I take it to the big wooden table and read the first chapter. If it hooks me, I buy it, and if not, I just put it back and keep looking. I also like to stop by the stationery corner and look at notebooks and pens, even though I don't really need them. Before I leave, I usually grab an iced americano at the cafe inside. All in all, I end up staying there for two or three hours without even noticing. Yeah, that's how a typical visit goes for me.",
+    "AL": "Okay, let me walk you through what a typical bookstore visit looks like for me. Since I'm not working at the moment, I usually go on a weekday afternoon, when the place is quiet and I can actually find a seat. I always start at the bestseller display by the entrance, just to get a sense of what people are into these days. Then I make my way to the fiction section, because I'm a sucker for mystery novels. My rule is pretty simple: if a book catches my eye, I read the first chapter at the big wooden table before deciding. If the story grabs me, I buy it right away, but if it doesn't, I put it back without any guilt. Along the way, I usually wander into the stationery corner and end up buying a notebook I definitely don't need. Before heading home, I treat myself to an iced americano at the little cafe inside and flip through my new book. Before I know it, two or three hours have flown by. For me, it's not just shopping, it's more like a small ritual that recharges me. Yeah, that's pretty much how my bookstore visits go."
+   },
+   "answersKo": {
+    "IM3": [
+     "제가 서점에서 보통 뭘 하는지 말해 볼게요.",
+     "붐비지 않아서 보통 평일 오후에 가요.",
+     "먼저 입구 근처 베스트셀러 코너를 봐요.",
+     "그다음 소설 코너에 가서 한동안 둘러봐요.",
+     "재미있는 책을 찾으면 큰 테이블에 앉아서 몇 페이지 읽어요.",
+     "그 후에 보통 책을 한두 권 사요.",
+     "가끔은 안에 있는 카페에서 커피도 사요.",
+     "보통 거기서 두 시간 정도 있어요.",
+     "네, 그게 제가 서점에서 보통 하는 일이에요."
+    ],
+    "IH": [
+     "서점에 가는 평소 과정을 하나씩 말해 볼게요.",
+     "지금은 일을 하지 않아서 보통 한적하고 조용한 평일 오후에 가요.",
+     "제일 먼저 입구 근처 베스트셀러 목록을 보면서 요즘 사람들이 뭘 읽는지 확인해요.",
+     "그다음엔 추리 소설을 정말 좋아해서 곧장 소설 코너로 가요.",
+     "눈에 띄는 책이 있으면 큰 나무 테이블로 가져가서 첫 장을 읽어요.",
+     "빠져들면 사고, 아니면 그냥 제자리에 두고 계속 찾아봐요.",
+     "딱히 필요 없는데도 문구 코너에 들러 노트랑 펜을 구경하는 것도 좋아해요.",
+     "나가기 전에는 보통 안에 있는 카페에서 아이스 아메리카노를 사요.",
+     "결국 저도 모르게 두세 시간을 거기서 보내게 돼요.",
+     "네, 이게 제 평소 서점 방문이에요."
+    ],
+    "AL": [
+     "제 평소 서점 방문이 어떤지 하나씩 말해 볼게요.",
+     "지금은 일을 하지 않아서 보통 조용하고 자리도 잡을 수 있는 평일 오후에 가요.",
+     "항상 입구 옆 베스트셀러 진열대부터 보면서 요즘 사람들이 뭐에 빠져 있는지 감을 잡아요.",
+     "그다음엔 추리 소설이라면 사족을 못 써서 소설 코너로 가요.",
+     "제 규칙은 간단해요, 눈에 띄는 책이 있으면 정하기 전에 큰 나무 테이블에서 첫 장을 읽어 봐요.",
+     "이야기가 끌리면 바로 사고, 아니면 미련 없이 제자리에 둬요.",
+     "그러다 보통 문구 코너에 흘러 들어가서 전혀 필요 없는 노트를 결국 사요.",
+     "집에 가기 전엔 안에 있는 작은 카페에서 아이스 아메리카노를 사 마시며 새 책을 훑어봐요.",
+     "정신 차려 보면 두세 시간이 훌쩍 지나 있어요.",
+     "저한테는 그냥 쇼핑이 아니라 저를 재충전해 주는 작은 의식 같은 거예요.",
+     "네, 이게 대략 제 서점 방문이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-bookstore-particular",
+   "type": "experience",
+   "en": "Tell me about a particular book you found at a bookstore. What was the book, why did you choose it, and how did you feel after reading it?",
+   "ko": "서점에서 발견한 특정한 책에 대해 말해 주세요. 어떤 책이었고, 왜 골랐으며, 읽고 나서 어떤 느낌이었나요?",
+   "tips": [
+    "10/31 기출: 'particular' 질문(서점 · 책 관련). 특정한 책 하나를 정해 두면 독서 · 서점 경험 질문에 모두 쓸 수 있어요.",
+    "경험 질문은 과거시제가 핵심입니다. 언제 → 어떻게 발견 → 내용 → 읽고 난 느낌 → I'll never forget ~ because ~."
+   ],
+   "answers": {
+    "IM3": "Oh, a particular book? Let me think. Last spring, I found a novel called The Midnight Library at the bookstore. It was on the bestseller shelf, and the cover looked really pretty. I read the first few pages at the table, and it was very interesting. So I bought it and finished it in just three days. The story was about a woman who could try different lives. After reading it, I felt more thankful for my own life. I'll never forget that book because it really changed my mind. Yeah, that's a particular book I found at the bookstore.",
+    "IH": "Oh, a particular book? Let me think. Last spring, I found a novel called The Midnight Library at my favorite bookstore near Seohyeon Station. To be honest, I picked it up just because the dark blue cover looked so beautiful. I sat down at the big table and read the first chapter, and I was hooked right away. The story is about a woman who gets a chance to try all the different lives she could have lived. I bought the book and finished it in just three days, which is really fast for me. At that time, I was feeling a little lonely and worried about my future. But the book made me realize that my life isn't so bad after all. After that, I started recommending it to all my friends. I'll never forget that book because it came to me at just the right time. Yeah, that's the book I'll always remember.",
+    "AL": "Oh, a particular book? Let me think, because there's one that really stands out. Last spring, I was wandering around my favorite bookstore near Seohyeon Station when a novel called The Midnight Library caught my eye. Honestly, I only picked it up because the dark blue cover was so gorgeous, so you could say I judged a book by its cover. I sat down at the big wooden table to read the first chapter, and before I knew it, I was forty pages in. The story follows a woman who gets to try out all the different lives she could have lived if she had made different choices. I ended up buying it and finishing it in just three days, which is pretty rare for me. The timing was kind of perfect, because I had been feeling a bit lonely and anxious about my future back then. Reading it made me realize that I'd been so focused on what I didn't have that I'd forgotten what I did have. It sounds a little dramatic, but I walked away feeling much lighter. Since then, I've recommended it to just about everyone I know. I'll never forget that book because it found me at exactly the right moment. Yeah, that's the book that stuck with me the most."
+   },
+   "answersKo": {
+    "IM3": [
+     "아, 특정한 책이요?",
+     "생각해 볼게요.",
+     "지난봄에 서점에서 《미드나잇 라이브러리》라는 소설을 발견했어요.",
+     "베스트셀러 책장에 있었는데, 표지가 정말 예뻤어요.",
+     "테이블에서 처음 몇 페이지를 읽었는데 정말 재미있었어요.",
+     "그래서 사서 딱 사흘 만에 다 읽었어요.",
+     "다른 인생들을 살아 볼 수 있는 한 여자에 관한 이야기였어요.",
+     "다 읽고 나니 제 삶에 더 감사하게 됐어요.",
+     "제 생각을 정말 바꿔 놓아서 그 책을 절대 잊지 못할 거예요.",
+     "네, 그게 제가 서점에서 발견한 특별한 책이에요."
+    ],
+    "IH": [
+     "아, 특정한 책이요?",
+     "생각해 볼게요.",
+     "지난봄에 서현역 근처 제가 제일 좋아하는 서점에서 《미드나잇 라이브러리》라는 소설을 발견했어요.",
+     "솔직히 짙은 파란색 표지가 너무 예뻐서 집어 들었어요.",
+     "큰 테이블에 앉아 첫 장을 읽었는데 바로 빠져들었어요.",
+     "자신이 살 수 있었던 온갖 다른 인생을 살아 볼 기회를 얻는 한 여자의 이야기예요.",
+     "책을 사서 딱 사흘 만에 다 읽었는데, 저로서는 정말 빠른 거예요.",
+     "그때 저는 조금 외롭고 미래가 걱정되던 참이었어요.",
+     "그런데 그 책 덕분에 제 삶이 그렇게 나쁘지 않다는 걸 깨달았어요.",
+     "그 후로 친구들 모두에게 그 책을 추천하기 시작했어요.",
+     "딱 맞는 때에 저한테 와 준 책이라 절대 잊지 못할 거예요.",
+     "네, 그게 제가 늘 기억할 책이에요."
+    ],
+    "AL": [
+     "아, 특정한 책이요?",
+     "생각해 볼게요, 유난히 기억에 남는 책이 하나 있거든요.",
+     "지난봄 서현역 근처 제가 제일 좋아하는 서점을 돌아다니다가 《미드나잇 라이브러리》라는 소설이 눈에 들어왔어요.",
+     "솔직히 짙은 파란색 표지가 너무 멋져서 집어 든 거라, 말 그대로 표지만 보고 책을 고른 셈이죠.",
+     "첫 장만 읽으려고 큰 나무 테이블에 앉았는데, 정신 차려 보니 40페이지를 읽고 있었어요.",
+     "다른 선택을 했다면 살았을 온갖 인생을 직접 살아 보게 되는 한 여자를 따라가는 이야기예요.",
+     "결국 사서 딱 사흘 만에 다 읽었는데, 저로서는 꽤 드문 일이에요.",
+     "그때 제가 좀 외롭고 미래가 불안하던 참이라 타이밍이 딱 맞았어요.",
+     "읽으면서 제가 없는 것에만 너무 집중하느라 가진 것을 잊고 있었다는 걸 깨달았어요.",
+     "좀 과장처럼 들리겠지만, 훨씬 가벼운 마음이 됐어요.",
+     "그 후로 아는 사람 거의 모두에게 그 책을 추천했어요.",
+     "딱 맞는 순간에 저를 찾아온 책이라 절대 잊지 못할 거예요.",
+     "네, 그게 제 마음에 가장 오래 남은 책이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-golf-describe",
+   "type": "describe",
+   "en": "You indicated in the survey that you play golf. Where do you usually play golf, and why do you like it?",
+   "ko": "설문에서 골프를 친다고 하셨습니다. 보통 어디서 골프를 치고, 왜 좋아하나요?",
+   "tips": [
+    "10/31 기출 주제: 골프. 연습장 · 스크린골프 · 필드 세 곳을 묘사하고, 좋아하는 이유 두 가지로 마무리하세요.",
+    "driving range(연습장), screen golf(스크린골프), golf course(필드), tee time(예약 시간)을 익혀 두세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about playing golf. I started playing golf about two years ago. I usually practice at a driving range near my apartment. It's only a 10-minute drive from my place. Sometimes I also play screen golf with my friends. A few times a year, we go to a real golf course outside the city. I like golf because I can enjoy nature and get some exercise. Also, it's a great way to spend time with my friends. Yeah, that's why I love playing golf.",
+    "IH": "Okay, let me tell you about golf, which is my favorite sport these days. I picked it up about two years ago when a friend of mine dragged me to a driving range. Now I practice at a driving range near my apartment, just a 10-minute drive away. It's a three-story building with a big green net, and there are about fifty booths. When the weather is bad, my friends and I play screen golf instead, which is really popular in Korea. A few times a year, we also book a tee time at a real golf course in Yongin. What I like most about golf is that it's just me and the ball, so I can really focus. Plus, walking on the green grass under the open sky is so refreshing. It's not a cheap sport, but I think it's totally worth it. Yeah, that's why golf is such a big part of my life now.",
+    "AL": "Okay, let me tell you about golf, because it's pretty much my favorite thing to do these days. I got into it about two years ago, when a friend practically dragged me to a driving range, and I've been hooked ever since. These days, I practice at a driving range about 10 minutes from my apartment by car. It's a huge three-story building surrounded by a giant green net, with around fifty booths facing the field. When the weather doesn't cooperate, my friends and I go for screen golf instead, which is a really big thing in Korea. And a few times a year, we book a tee time at a real course in Yongin, which always feels like a special occasion. What I love most about golf is that it's just you and the ball, so it forces me to slow down and focus. On top of that, walking across the green fairway under a wide-open sky clears my head like nothing else. Of course, it can be frustrating, and my score is still nothing to brag about. It's also a pretty expensive hobby, but I honestly think every penny is worth it. Yeah, that's why golf has become such a big part of my life."
+   },
+   "answersKo": {
+    "IM3": [
+     "골프 치는 것에 대해 말해 볼게요.",
+     "저는 2년 전쯤 골프를 시작했어요.",
+     "보통 아파트 근처 골프 연습장에서 연습해요.",
+     "집에서 차로 10분밖에 안 걸려요.",
+     "가끔은 친구들과 스크린골프도 쳐요.",
+     "1년에 몇 번은 도시 밖에 있는 진짜 골프장에 가요.",
+     "자연을 즐기면서 운동도 할 수 있어서 골프를 좋아해요.",
+     "그리고 친구들과 시간을 보내기에 정말 좋은 방법이에요.",
+     "네, 그래서 제가 골프를 좋아해요."
+    ],
+    "IH": [
+     "요즘 제가 제일 좋아하는 운동인 골프에 대해 말해 볼게요.",
+     "2년 전쯤 친구가 저를 연습장에 끌고 가면서 시작하게 됐어요.",
+     "지금은 차로 10분 거리인 아파트 근처 연습장에서 연습해요.",
+     "큰 초록색 그물이 쳐진 3층 건물이고, 타석이 50개쯤 있어요.",
+     "날씨가 안 좋으면 친구들과 대신 스크린골프를 치는데, 한국에서 정말 인기가 많아요.",
+     "1년에 몇 번은 용인에 있는 골프장도 예약해요.",
+     "골프에서 제일 좋은 건 저와 공뿐이라 정말 집중할 수 있다는 거예요.",
+     "게다가 탁 트인 하늘 아래 초록 잔디를 걷는 건 정말 상쾌해요.",
+     "싼 운동은 아니지만 충분히 그럴 가치가 있다고 생각해요.",
+     "네, 그래서 골프가 지금 제 삶에서 큰 부분이에요."
+    ],
+    "AL": [
+     "골프에 대해 말해 볼게요, 요즘 제가 제일 좋아하는 일이거든요.",
+     "2년 전쯤 친구가 거의 억지로 연습장에 끌고 가면서 시작했는데, 그 후로 푹 빠졌어요.",
+     "요즘은 아파트에서 차로 10분 정도 거리의 연습장에서 연습해요.",
+     "거대한 초록 그물로 둘러싸인 큰 3층 건물이고, 필드를 향한 타석이 50개쯤 있어요.",
+     "날씨가 안 도와주면 친구들과 대신 스크린골프를 치러 가는데, 한국에서 정말 인기예요.",
+     "그리고 1년에 몇 번은 용인에 있는 골프장을 예약하는데, 갈 때마다 특별한 행사 같아요.",
+     "골프에서 제일 좋은 건 나와 공뿐이라, 속도를 늦추고 집중하게 만든다는 거예요.",
+     "게다가 탁 트인 하늘 아래 초록 페어웨이를 걸으면 그 무엇보다 머리가 맑아져요.",
+     "물론 답답할 때도 있고, 제 점수는 아직 자랑할 만한 수준이 아니에요.",
+     "꽤 비싼 취미이기도 하지만, 솔직히 한 푼 한 푼이 다 아깝지 않아요.",
+     "네, 그래서 골프가 제 삶에서 이렇게 큰 부분이 됐어요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-golf-routine",
+   "type": "routine",
+   "en": "Tell me about your routine when you practice golf. What do you do before, during, and after practice?",
+   "ko": "골프 연습할 때의 루틴을 말해 주세요. 연습 전, 연습 중, 연습 후에 무엇을 하나요?",
+   "tips": [
+    "10/31 기출 주제: 골프. 전 → 중 → 후 세 단계로 나누어 말하면 루틴 질문이 쉬워집니다.",
+    "about three times a week, usually, always, After that 같은 빈도 · 순서 표현을 넣으세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about my golf routine. I go to the driving range about three times a week. I usually go in the morning because it's not busy. First, I stretch for about five minutes. Then, I hit about two hundred balls for an hour. I start with short clubs and finish with the driver. After practice, I check my swing videos on my phone. Then I go home and take a shower. Yeah, that's my usual golf routine.",
+    "IH": "Okay, let me walk you through my golf routine. I go to the driving range about three times a week, usually in the morning when it's quiet. Before I start, I always stretch my shoulders and back for about five minutes, because I hurt my back once. Then I warm up with short wedge shots and slowly move up to the longer irons. I always save the driver for last, since that's the most fun part. In total, I hit around two hundred balls in an hour. While I practice, I record my swing on my phone so I can check what I'm doing wrong. After that, I often go to the putting green and practice short putts for about twenty minutes. When I get home, I watch my swing videos and compare them with golf lessons on YouTube. Yeah, that's pretty much my golf routine.",
+    "AL": "Okay, let me walk you through my golf routine, because I'm actually pretty strict about it. I hit the driving range about three times a week, usually first thing in the morning, when it's nice and empty. Before I even touch a club, I spend about five minutes stretching my shoulders and lower back, since I strained my back once and learned my lesson. Then I warm up with short wedge shots and gradually work my way up to the longer irons. I always save the driver for last, because, let's be honest, smashing the ball as far as I can is the most satisfying part. All in all, I go through around two hundred balls in about an hour. While I'm practicing, I set up my phone on a little tripod and record my swing from the side. Once I'm done with full swings, I head over to the putting green and spend another twenty minutes on short putts, which is where most of my strokes are wasted. Later at home, I go over the videos and compare my swing with lessons on YouTube. It might sound a bit obsessive, but seeing even a small improvement makes it all worth it. Yeah, that's pretty much my golf routine."
+   },
+   "answersKo": {
+    "IM3": [
+     "제 골프 루틴에 대해 말해 볼게요.",
+     "일주일에 세 번 정도 연습장에 가요.",
+     "붐비지 않아서 보통 아침에 가요.",
+     "먼저 5분 정도 스트레칭을 해요.",
+     "그다음 한 시간 동안 공을 200개 정도 쳐요.",
+     "짧은 클럽으로 시작해서 드라이버로 끝내요.",
+     "연습이 끝나면 휴대폰으로 스윙 영상을 확인해요.",
+     "그리고 집에 가서 샤워를 해요.",
+     "네, 그게 제 평소 골프 루틴이에요."
+    ],
+    "IH": [
+     "제 골프 루틴을 하나씩 말해 볼게요.",
+     "일주일에 세 번 정도, 보통 조용한 아침에 연습장에 가요.",
+     "예전에 허리를 다친 적이 있어서, 시작하기 전에 항상 어깨와 허리를 5분 정도 스트레칭해요.",
+     "그다음 짧은 웨지 샷으로 몸을 풀고 천천히 긴 아이언으로 넘어가요.",
+     "드라이버는 제일 재미있는 부분이라 항상 마지막에 남겨 둬요.",
+     "다 해서 한 시간에 공을 200개 정도 쳐요.",
+     "연습하는 동안 뭘 잘못하는지 확인하려고 휴대폰으로 스윙을 찍어요.",
+     "그 후엔 자주 퍼팅 그린에 가서 20분 정도 짧은 퍼팅을 연습해요.",
+     "집에 오면 스윙 영상을 보면서 유튜브 골프 레슨과 비교해요.",
+     "네, 이게 대략 제 골프 루틴이에요."
+    ],
+    "AL": [
+     "제 골프 루틴을 하나씩 말해 볼게요, 사실 꽤 철저하게 지키거든요.",
+     "일주일에 세 번 정도, 보통 한산한 아침 일찍 연습장에 가요.",
+     "한 번 허리를 삐끗하고 교훈을 얻어서, 클럽을 잡기도 전에 어깨와 허리를 5분 정도 스트레칭해요.",
+     "그다음 짧은 웨지 샷으로 몸을 풀고 점점 긴 아이언으로 올라가요.",
+     "드라이버는 항상 마지막에 남겨 두는데, 솔직히 공을 최대한 멀리 날리는 게 제일 짜릿하거든요.",
+     "다 해서 한 시간 정도에 공을 200개쯤 쳐요.",
+     "연습하는 동안 작은 삼각대에 휴대폰을 세워 두고 옆에서 스윙을 찍어요.",
+     "풀스윙이 끝나면 퍼팅 그린으로 가서 짧은 퍼팅에 20분을 더 쓰는데, 제 타수를 제일 많이 까먹는 데가 거기거든요.",
+     "나중에 집에서 영상을 다시 보면서 제 스윙을 유튜브 레슨과 비교해요.",
+     "좀 집착처럼 들릴 수 있지만, 조금이라도 나아지는 걸 보면 다 보람이 있어요.",
+     "네, 이게 대략 제 골프 루틴이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-golf-experience",
+   "type": "experience",
+   "en": "Tell me about a memorable experience you had while playing golf. What happened, and why was it memorable?",
+   "ko": "골프를 치면서 겪은 기억에 남는 경험을 말해 주세요. 무슨 일이 있었고, 왜 기억에 남았나요?",
+   "tips": [
+    "10/31 기출 주제: 골프. 처음엔 망했다가 → 반전(첫 버디) → 친구들 반응 → 느낀 점 구조로 극적인 흐름을 만드세요.",
+    "과거시제를 지키고, Last October 처럼 시간 표현으로 시작하세요."
+   ],
+   "answers": {
+    "IM3": "Oh, a memorable golf experience? Let me think. Last fall, I played a round with my friends at a golf course in Yongin. The weather was perfect, and the trees were red and yellow. On the seventh hole, I hit my best shot ever. The ball landed really close to the hole. Then I made the putt and got my first birdie. My friends cheered for me, and I was so happy. After the game, I bought dinner for everyone. Yeah, I'll never forget that day.",
+    "IH": "Oh, a memorable golf experience? Let me think. Last October, I played a round with three of my old friends at a golf course in Yongin. The weather was perfect, and the mountains around the course were full of red and yellow leaves. For the first six holes, I played terribly and even lost two balls in the water. I was so embarrassed that I wanted to go home. But on the seventh hole, I hit my second shot really well, and the ball stopped just a meter from the hole. I was so nervous that my hands were shaking, but I made the putt. It was my very first birdie, and my friends screamed and gave me high fives. To celebrate, I bought everyone dinner after the round, which cost a lot, but I didn't care at all. Yeah, that's a golf day I'll never forget.",
+    "AL": "Oh, a memorable golf experience? Let me think, because there's one round I still talk about. Last October, I played with three of my old friends at a course in Yongin. The weather couldn't have been better, and the mountains surrounding the course were covered in red and yellow leaves. Unfortunately, my game didn't match the scenery at all. For the first six holes, I was all over the place, and I even lost two balls in the pond. Honestly, I was so embarrassed that I was ready to call it a day. But on the seventh hole, everything suddenly clicked, and my second shot landed just a meter from the pin. Standing over that putt, my hands were literally shaking, but somehow the ball dropped right into the cup. It was my very first birdie, and my friends went absolutely wild, screaming and giving me high fives. To celebrate, I treated everyone to dinner, and even though the bill was pretty painful, I couldn't stop smiling. I'll never forget that day because it reminded me why I fell in love with golf in the first place. Yeah, that's my most memorable round so far."
+   },
+   "answersKo": {
+    "IM3": [
+     "아, 기억에 남는 골프 경험이요?",
+     "생각해 볼게요.",
+     "지난가을에 친구들과 용인에 있는 골프장에서 라운드를 했어요.",
+     "날씨가 완벽했고, 나무들이 빨갛고 노랗게 물들어 있었어요.",
+     "7번 홀에서 제 인생 최고의 샷을 쳤어요.",
+     "공이 홀 바로 가까이에 떨어졌어요.",
+     "그리고 퍼팅을 넣어서 첫 버디를 했어요.",
+     "친구들이 환호해 줬고, 저는 너무 기뻤어요.",
+     "경기가 끝나고 제가 모두에게 저녁을 샀어요.",
+     "네, 그날을 절대 잊지 못할 거예요."
+    ],
+    "IH": [
+     "아, 기억에 남는 골프 경험이요?",
+     "생각해 볼게요.",
+     "지난 10월에 오랜 친구 세 명과 용인에 있는 골프장에서 라운드를 했어요.",
+     "날씨가 완벽했고, 골프장 주변 산들은 빨갛고 노란 단풍으로 가득했어요.",
+     "처음 여섯 홀 동안은 형편없이 쳐서 물에 공을 두 개나 빠뜨렸어요.",
+     "너무 창피해서 집에 가고 싶었어요.",
+     "그런데 7번 홀에서 두 번째 샷을 정말 잘 쳐서, 공이 홀에서 겨우 1미터 앞에 멈췄어요.",
+     "너무 긴장해서 손이 떨렸지만 퍼팅을 넣었어요.",
+     "제 생애 첫 버디였고, 친구들이 소리 지르며 하이파이브를 해 줬어요.",
+     "축하하려고 라운드 후에 모두에게 저녁을 샀는데, 돈이 많이 들었지만 전혀 상관없었어요.",
+     "네, 그게 제가 절대 잊지 못할 골프 날이에요."
+    ],
+    "AL": [
+     "아, 기억에 남는 골프 경험이요?",
+     "생각해 볼게요, 아직도 얘기하는 라운드가 하나 있거든요.",
+     "지난 10월에 오랜 친구 세 명과 용인에 있는 골프장에서 쳤어요.",
+     "날씨는 더할 나위 없었고, 골프장을 둘러싼 산은 빨갛고 노란 단풍으로 덮여 있었어요.",
+     "안타깝게도 제 실력은 경치와 전혀 어울리지 않았어요.",
+     "처음 여섯 홀 동안 공이 사방으로 튀었고, 연못에 공을 두 개나 빠뜨렸어요.",
+     "솔직히 너무 창피해서 그만 접고 싶었어요.",
+     "그런데 7번 홀에서 갑자기 모든 게 맞아떨어지더니, 두 번째 샷이 핀에서 겨우 1미터 거리에 떨어졌어요.",
+     "그 퍼팅 앞에 섰을 때 손이 말 그대로 떨렸지만, 어찌 된 일인지 공이 컵 안으로 쏙 들어갔어요.",
+     "제 생애 첫 버디였고, 친구들은 소리 지르며 하이파이브를 하면서 완전히 난리가 났어요.",
+     "축하하는 의미로 모두에게 저녁을 샀는데, 계산서가 꽤 아팠지만 웃음이 멈추질 않았어요.",
+     "애초에 제가 왜 골프에 빠졌는지 다시 일깨워 준 날이라 절대 잊지 못할 거예요.",
+     "네, 그게 지금까지 제일 기억에 남는 라운드예요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-neighbor-describe",
+   "type": "describe",
+   "en": "Tell me about one of your neighbors. Who is this person, and what is this person like?",
+   "ko": "이웃 중 한 명에 대해 말해 주세요. 어떤 사람이고, 성격은 어떤가요?",
+   "tips": [
+    "10/31 기출 주제: 이웃. 혼자 사는 설정에 맞춰 '옆집 할머니'처럼 이웃 한 명을 정해 두세요.",
+    "누구(나이 · 사는 곳) → 성격 → 평소 주고받는 일 → 일화 하나 → 느낌 순서로 말하세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about one of my neighbors. There's an older woman who lives right next door to me. She's in her seventies, and she lives alone like me. She is very kind and always smiles at me. When we meet in the elevator, we talk about the weather. Sometimes she gives me fruit or kimchi. So I sometimes help her carry heavy bags. I feel lucky to have such a nice neighbor. Yeah, that's one of my neighbors.",
+    "IH": "Okay, let me tell you about my favorite neighbor. There's an older woman who lives right next door to me, and everyone in my building calls her Grandma Park. She's in her seventies, and like me, she lives alone. She's really friendly and always greets me with a big smile. Whenever we bump into each other in the elevator, we chat about the weather or the news. She also loves cooking, so she often drops by with some kimchi or fresh fruit. In return, I help her carry heavy grocery bags or fix things on her phone. Last winter, when I caught a bad cold, she even brought me a bowl of hot porridge. I was really touched, because living alone can be lonely when you're sick. I feel really lucky to have a neighbor like her. Yeah, that's my favorite neighbor.",
+    "AL": "Okay, let me tell you about my favorite neighbor, because she's honestly like family to me now. There's an older woman living right next door, and everybody in my building calls her Grandma Park. She's in her mid-seventies, and just like me, she lives on her own. She's one of the warmest people I've ever met, and she never fails to greet me with a big smile. Whenever we run into each other in the elevator, we end up chatting about anything from the weather to the latest news. She's also an amazing cook, so every now and then she'll drop by with a container of homemade kimchi or some fresh fruit. To return the favor, I carry her heavy grocery bags upstairs and help her out whenever her phone acts up. What really won me over was last winter, when I was stuck in bed with a terrible cold. She must have noticed I hadn't been out in a while, because she showed up at my door with a bowl of hot pumpkin porridge. When you live alone, a small gesture like that means the world. I really think having a good neighbor makes a huge difference in your quality of life. Yeah, that's my favorite neighbor."
+   },
+   "answersKo": {
+    "IM3": [
+     "제 이웃 중 한 명에 대해 말해 볼게요.",
+     "바로 옆집에 사시는 할머니가 한 분 계세요.",
+     "70대이시고, 저처럼 혼자 사세요.",
+     "정말 친절하시고 늘 저를 보고 웃어 주세요.",
+     "엘리베이터에서 만나면 날씨 이야기를 해요.",
+     "가끔 저한테 과일이나 김치를 주세요.",
+     "그래서 저도 가끔 무거운 짐을 들어 드려요.",
+     "이렇게 좋은 이웃이 있어서 운이 좋다고 느껴요.",
+     "네, 그게 제 이웃 중 한 분이에요."
+    ],
+    "IH": [
+     "제가 제일 좋아하는 이웃에 대해 말해 볼게요.",
+     "바로 옆집에 할머니 한 분이 사시는데, 우리 건물 사람들은 모두 그분을 박 할머니라고 불러요.",
+     "70대이시고, 저처럼 혼자 사세요.",
+     "정말 다정하시고 늘 환하게 웃으며 인사해 주세요.",
+     "엘리베이터에서 마주칠 때마다 날씨나 뉴스 이야기를 나눠요.",
+     "요리도 좋아하셔서 김치나 신선한 과일을 들고 자주 들르세요.",
+     "그 보답으로 저는 무거운 장바구니를 들어 드리거나 휴대폰 문제를 해결해 드려요.",
+     "지난겨울 제가 독감에 걸렸을 때는 뜨거운 죽까지 한 그릇 가져다주셨어요.",
+     "혼자 살면 아플 때 외로울 수 있어서 정말 감동받았어요.",
+     "그런 이웃이 있어서 정말 운이 좋다고 느껴요.",
+     "네, 그게 제가 제일 좋아하는 이웃이에요."
+    ],
+    "AL": [
+     "제가 제일 좋아하는 이웃에 대해 말해 볼게요, 솔직히 이제는 가족 같은 분이거든요.",
+     "바로 옆집에 할머니 한 분이 사시는데, 우리 건물 사람들은 모두 그분을 박 할머니라고 불러요.",
+     "70대 중반이시고, 저처럼 혼자 사세요.",
+     "제가 만난 사람 중 가장 따뜻한 분이고, 한 번도 빠짐없이 환한 미소로 인사해 주세요.",
+     "엘리베이터에서 마주칠 때마다 날씨부터 최신 뉴스까지 이런저런 이야기를 나누게 돼요.",
+     "요리 솜씨도 대단하셔서 가끔 직접 담근 김치 한 통이나 신선한 과일을 들고 들르세요.",
+     "그 보답으로 저는 무거운 장바구니를 위층까지 들어 드리고, 휴대폰이 말썽일 때마다 도와드려요.",
+     "제 마음을 완전히 사로잡은 건 지난겨울, 제가 독감으로 침대에서 꼼짝 못 하고 있을 때였어요.",
+     "제가 한동안 밖에 안 나온 걸 눈치채셨는지, 뜨거운 호박죽 한 그릇을 들고 문 앞에 오셨어요.",
+     "혼자 살면 그런 작은 배려가 정말 큰 의미가 돼요.",
+     "좋은 이웃이 있으면 삶의 질이 정말 크게 달라진다고 생각해요.",
+     "네, 그게 제가 제일 좋아하는 이웃이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-neighbor-new",
+   "type": "experience",
+   "en": "Tell me about a time when a new neighbor moved into your building. How did you first meet, and what happened?",
+   "ko": "새 이웃이 건물에 이사 왔을 때의 일을 말해 주세요. 처음에 어떻게 만났고, 무슨 일이 있었나요?",
+   "tips": [
+    "10/31 기출 주제: 새로운 이웃. 이사 날 상황 → 걱정 → 떡 들고 인사 → 동네 안내 → 지금 관계 순서로 말하세요.",
+    "한국 문화(이사 떡 돌리기)를 한 문장 넣으면 IH 이상 디테일이 됩니다."
+   ],
+   "answers": {
+    "IM3": "Oh, a new neighbor? Let me think. About six months ago, a young couple moved into the apartment upstairs. On moving day, the elevator was very busy all day. That evening, they knocked on my door. They gave me a box of rice cakes and said hello. They said sorry for the noise during the move. I told them it was okay and welcomed them. Now we always say hello when we meet. Yeah, that's how I met my new neighbors.",
+    "IH": "Oh, a new neighbor? Let me think. About six months ago, a young couple moved into the apartment right above mine. On moving day, there was a huge ladder truck outside, and the elevator was busy all day. To be honest, I was a little worried, because my old neighbors upstairs used to be really noisy. But that evening, the couple knocked on my door with a box of rice cakes. In Korea, people often share rice cakes with their neighbors when they move in. They apologized for the noise during the move and introduced themselves. They seemed really polite, so I told them not to worry and welcomed them to the building. I also told them about the good restaurants and the nearest supermarket. Since then, we always say hello, and they're very careful about noise. Yeah, that's how I met my new neighbors.",
+    "AL": "Oh, a new neighbor? Let me think. About six months ago, a young couple moved into the apartment right above mine. On moving day, there was a giant ladder truck parked outside, and the elevator was tied up for hours. I'll admit I was a little nervous, because the people who lived up there before were really noisy, and I'd had more than enough of that. But that evening, there was a knock on my door, and it was the couple holding a box of rice cakes. In Korea, it's a nice old custom to share rice cakes with your new neighbors when you move in. They apologized for all the noise and introduced themselves, and they couldn't have been more polite. So I welcomed them to the building and gave them a quick rundown of the neighborhood, like where the best noodle place and the nearest supermarket are. They looked so relieved, since they had just moved from another city and didn't know anyone here. These days, we always stop and chat when we bump into each other, and they're super careful about noise. It goes to show that first impressions really matter. Yeah, that's how I got to know my new neighbors."
+   },
+   "answersKo": {
+    "IM3": [
+     "아, 새 이웃이요?",
+     "생각해 볼게요.",
+     "6개월 전쯤 젊은 부부가 위층 집으로 이사 왔어요.",
+     "이삿날에는 하루 종일 엘리베이터가 정말 붐볐어요.",
+     "그날 저녁 그 부부가 우리 집 문을 두드렸어요.",
+     "떡 한 상자를 주면서 인사를 했어요.",
+     "이사하는 동안 시끄러웠던 것에 대해 미안하다고 했어요.",
+     "저는 괜찮다고 말하고 환영해 줬어요.",
+     "지금은 만나면 항상 인사해요.",
+     "네, 이게 제가 새 이웃을 만난 이야기예요."
+    ],
+    "IH": [
+     "아, 새 이웃이요?",
+     "생각해 볼게요.",
+     "6개월 전쯤 젊은 부부가 우리 집 바로 위층으로 이사 왔어요.",
+     "이삿날 밖에는 큰 사다리차가 서 있었고, 엘리베이터는 하루 종일 바빴어요.",
+     "솔직히 예전 위층 이웃이 정말 시끄러웠어서 좀 걱정됐어요.",
+     "그런데 그날 저녁 그 부부가 떡 한 상자를 들고 우리 집 문을 두드렸어요.",
+     "한국에서는 이사 오면 이웃과 떡을 나누는 경우가 많아요.",
+     "이사하는 동안 시끄러웠던 걸 사과하고 자기소개를 했어요.",
+     "정말 예의 바른 것 같아서 걱정 말라고 하고 건물에 온 걸 환영해 줬어요.",
+     "괜찮은 식당과 가장 가까운 마트도 알려 줬어요.",
+     "그 후로 우리는 늘 인사하고, 그 부부는 소음에 정말 신경을 써요.",
+     "네, 이게 제가 새 이웃을 만난 이야기예요."
+    ],
+    "AL": [
+     "아, 새 이웃이요?",
+     "생각해 볼게요.",
+     "6개월 전쯤 젊은 부부가 우리 집 바로 위층으로 이사 왔어요.",
+     "이삿날 밖에는 거대한 사다리차가 서 있었고, 엘리베이터는 몇 시간 동안 묶여 있었어요.",
+     "솔직히 좀 긴장됐어요, 전에 위층에 살던 사람들이 정말 시끄러워서 그런 건 지긋지긋했거든요.",
+     "그런데 그날 저녁 누가 문을 두드려서 보니 그 부부가 떡 한 상자를 들고 서 있었어요.",
+     "한국에는 이사 오면 새 이웃과 떡을 나누는 정겨운 옛 풍습이 있어요.",
+     "시끄러웠던 걸 사과하고 자기소개를 했는데, 더할 나위 없이 예의 발랐어요.",
+     "그래서 건물에 온 걸 환영하고, 제일 맛있는 국숫집이나 가장 가까운 마트가 어디 있는지 같은 동네 정보를 간단히 알려 줬어요.",
+     "다른 도시에서 막 이사 와서 여기 아는 사람이 아무도 없었던 터라 정말 안심하는 표정이었어요.",
+     "요즘은 마주치면 늘 멈춰서 이야기를 나누고, 그 부부는 소음에 정말 조심해요.",
+     "첫인상이 정말 중요하다는 걸 보여 주는 일이었죠.",
+     "네, 이게 제가 새 이웃과 알게 된 이야기예요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-neighbor-roleplay",
+   "type": "roleplay-ask",
+   "en": "I'd like to give you a situation and ask you to act it out. You have just moved into a new apartment. Introduce yourself to your neighbor and ask three or four questions about the neighborhood.",
+   "ko": "상황을 드릴 테니 연기해 주세요. 당신은 새 아파트로 막 이사했습니다. 이웃에게 자신을 소개하고 동네에 대해 서너 가지 질문을 하세요.",
+   "tips": [
+    "10/31 기출 주제 '새로운 이웃'에서 나올 수 있는 롤플레이(11번 유형) 예상 문제입니다.",
+    "인사 → 자기소개 → 질문 3~4개(First, Also, And one more thing) → 감사 → 마무리. 질문 문장이 3개 이상이어야 합니다."
+   ],
+   "answers": {
+    "IM3": "Hi, I'm sorry to bother you. I just moved into the apartment next door. I wanted to say hello and give you this small gift. Can I ask you a few questions about the neighborhood? First, is there a good supermarket near here? Second, where is the nearest subway station? Also, what day do we take out the recycling? Lastly, do you know any good cafes around here? Thank you so much for your help. I hope we can be good neighbors.",
+    "IH": "Hi there, I'm sorry to bother you. I just moved into the apartment next door, so I wanted to stop by and introduce myself. This is a small box of rice cakes for you. Since I'm new here, would you mind if I asked you a few questions about the neighborhood? First of all, is there a supermarket around here that's open late? Also, what's the fastest way to get to the subway station from here? I heard the recycling rules are different in every building, so could you tell me which days we take out the recycling? And one more thing, are there any quiet cafes or parks where I can read a book? Thank you so much, that's really helpful. If you ever need anything, please feel free to knock on my door. I hope we can be good neighbors.",
+    "AL": "Hi there, I'm so sorry to bother you. I just moved into the apartment next door, and I thought I'd stop by and introduce myself. Here, I brought a little box of rice cakes, just as a small hello. Since I'm completely new to the area, would you mind if I asked you a couple of quick questions? First of all, is there a supermarket nearby that stays open late, because I usually shop in the evening? Also, what's the quickest way to get to the subway station, and is it walkable? I've heard that every building has its own recycling rules, so which days do we take out the recycling, and where do we leave it? Oh, and one more thing, I'm a big reader, so are there any quiet cafes or parks around here where I could relax with a book? Wow, thank you so much, that's incredibly helpful. If there's ever anything I can do for you, please don't hesitate to knock on my door. I really hope we can be good neighbors."
+   },
+   "answersKo": {
+    "IM3": [
+     "안녕하세요, 방해해서 죄송해요.",
+     "옆집에 막 이사 왔어요.",
+     "인사드리고 이 작은 선물을 드리고 싶었어요.",
+     "동네에 대해 몇 가지 여쭤봐도 될까요?",
+     "먼저, 이 근처에 괜찮은 마트가 있나요?",
+     "두 번째로, 가장 가까운 지하철역은 어디예요?",
+     "그리고 분리수거는 무슨 요일에 내놓나요?",
+     "마지막으로, 이 근처에 괜찮은 카페 아세요?",
+     "도와주셔서 정말 감사해요.",
+     "우리 좋은 이웃이 되면 좋겠어요."
+    ],
+    "IH": [
+     "안녕하세요, 방해해서 죄송해요.",
+     "옆집에 막 이사 와서 들러서 인사드리고 싶었어요.",
+     "이건 작은 떡 한 상자예요.",
+     "여기가 처음이라서 그런데, 동네에 대해 몇 가지 여쭤봐도 괜찮을까요?",
+     "우선, 이 근처에 늦게까지 여는 마트가 있나요?",
+     "그리고 여기서 지하철역까지 제일 빨리 가는 방법이 뭐예요?",
+     "분리수거 규칙이 건물마다 다르다고 들었는데, 무슨 요일에 내놓는지 알려 주실 수 있나요?",
+     "그리고 하나 더, 책 읽기 좋은 조용한 카페나 공원이 있을까요?",
+     "정말 감사해요, 정말 도움이 됐어요.",
+     "혹시 필요한 게 있으면 언제든 편하게 문 두드려 주세요.",
+     "우리 좋은 이웃이 되면 좋겠어요."
+    ],
+    "AL": [
+     "안녕하세요, 방해해서 정말 죄송해요.",
+     "옆집에 막 이사 와서 들러서 인사드리려고 했어요.",
+     "여기, 작은 인사로 떡을 조금 가져왔어요.",
+     "이 동네가 완전히 처음이라서 그런데, 간단히 몇 가지 여쭤봐도 괜찮을까요?",
+     "우선, 제가 보통 저녁에 장을 봐서 그런데, 근처에 늦게까지 여는 마트가 있을까요?",
+     "그리고 지하철역까지 제일 빨리 가는 길이 뭐고, 걸어갈 만한가요?",
+     "건물마다 분리수거 규칙이 다르다고 들었는데, 무슨 요일에 어디에 내놓으면 되나요?",
+     "아, 그리고 하나 더요, 제가 책을 정말 좋아해서 그런데, 이 근처에 책 들고 쉬기 좋은 조용한 카페나 공원이 있을까요?",
+     "와, 정말 감사해요, 엄청 도움이 됐어요.",
+     "혹시 제가 도와드릴 일이 있으면 언제든 망설이지 말고 문 두드려 주세요.",
+     "우리 정말 좋은 이웃이 되면 좋겠어요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-holiday-describe",
+   "type": "describe",
+   "en": "Tell me about the holidays in your country. What are some of the major holidays, and what do people usually do on those days?",
+   "ko": "당신 나라의 휴일에 대해 말해 주세요. 주요 휴일은 무엇이 있고, 사람들은 그날 보통 무엇을 하나요?",
+   "tips": [
+    "10/31 기출 주제: 기념 휴일. 설날 · 추석 두 개를 중심으로, 기타 국경일 한 문장을 덧붙이세요.",
+    "Seollal(설날) = Lunar New Year, Chuseok(추석) = Korean Thanksgiving 처럼 영어로 풀어 주는 게 핵심입니다."
+   ],
+   "answers": {
+    "IM3": "Okay, let me tell you about holidays in Korea. The two biggest holidays in Korea are Seollal and Chuseok. Seollal is the Lunar New Year, and Chuseok is like Thanksgiving. On these holidays, people visit their hometowns to see their families. So the highways are always full of cars. On Seollal, people eat rice cake soup and bow to their parents. On Chuseok, people make songpyeon and visit their ancestors' graves. There are also other holidays like Children's Day and Christmas. Yeah, those are the main holidays in Korea.",
+    "IH": "Okay, let me tell you about the holidays in Korea. The two biggest holidays here are Seollal, which is the Lunar New Year, and Chuseok, which is kind of like Thanksgiving. Both of them last about three days, and they're all about family. During these holidays, millions of people travel back to their hometowns, so the highways turn into huge parking lots. On Seollal morning, people wear hanbok, eat rice cake soup, and bow deeply to their parents. In return, the elders give money to the kids, so children love this holiday. On Chuseok, families make half-moon shaped rice cakes called songpyeon and visit their ancestors' graves. Besides those two, we also have national holidays like Independence Movement Day and Children's Day. Recently, a lot of people use long holidays to travel abroad instead of visiting family. Yeah, those are the major holidays in Korea.",
+    "AL": "Okay, let me tell you about holidays in Korea. The two biggest ones by far are Seollal, which is the Lunar New Year, and Chuseok, which is often described as Korean Thanksgiving. Each of them lasts about three days, and at their core, they're all about family. During these holidays, millions of people head back to their hometowns at the same time, so the highways basically turn into giant parking lots. On Seollal morning, people dress up in hanbok, eat a bowl of rice cake soup, and perform a deep bow to their elders. In return, the elders hand out envelopes of money along with words of wisdom, which is why kids look forward to it all year. Chuseok, on the other hand, is a harvest festival, so families make half-moon shaped rice cakes called songpyeon and pay respects at their ancestors' graves. On top of these, we have national holidays like Independence Movement Day and Hangeul Day, which celebrate important moments in our history. Interestingly, these days more and more people take advantage of long holidays to travel abroad rather than stick to the old traditions. Personally, since I live alone, I see the holidays as a precious chance to reconnect with my family. Yeah, that's a quick overview of holidays in Korea."
+   },
+   "answersKo": {
+    "IM3": [
+     "한국의 휴일에 대해 말해 볼게요.",
+     "한국에서 가장 큰 두 명절은 설날과 추석이에요.",
+     "설날은 음력 새해이고, 추석은 추수감사절 같은 날이에요.",
+     "이 명절에는 사람들이 가족을 만나러 고향에 가요.",
+     "그래서 고속도로가 항상 차로 가득해요.",
+     "설날에는 떡국을 먹고 부모님께 세배를 해요.",
+     "추석에는 송편을 빚고 조상님 산소에 가요.",
+     "어린이날이나 크리스마스 같은 다른 휴일도 있어요.",
+     "네, 이게 한국의 주요 휴일이에요."
+    ],
+    "IH": [
+     "한국의 휴일에 대해 말해 볼게요.",
+     "여기서 가장 큰 두 명절은 음력 새해인 설날과 추수감사절 비슷한 추석이에요.",
+     "둘 다 사흘 정도 이어지고, 가족이 중심인 명절이에요.",
+     "이 명절 동안 수백만 명이 고향으로 가서 고속도로가 거대한 주차장이 돼요.",
+     "설날 아침에는 한복을 입고, 떡국을 먹고, 부모님께 큰절을 해요.",
+     "그 대신 어른들이 아이들에게 세뱃돈을 줘서 아이들이 이 명절을 정말 좋아해요.",
+     "추석에는 가족들이 송편이라는 반달 모양 떡을 빚고 조상님 산소에 가요.",
+     "그 두 명절 말고도 삼일절이나 어린이날 같은 공휴일도 있어요.",
+     "요즘은 긴 연휴에 가족을 찾아가는 대신 해외여행을 가는 사람도 많아요.",
+     "네, 이게 한국의 주요 휴일이에요."
+    ],
+    "AL": [
+     "한국의 휴일에 대해 말해 볼게요.",
+     "단연 가장 큰 두 명절은 음력 새해인 설날과, 흔히 한국의 추수감사절이라고 하는 추석이에요.",
+     "각각 사흘 정도 이어지고, 본질적으로는 가족이 중심이에요.",
+     "이 명절에는 수백만 명이 한꺼번에 고향으로 가서 고속도로가 사실상 거대한 주차장이 돼요.",
+     "설날 아침에는 한복을 차려입고, 떡국 한 그릇을 먹고, 어른들께 큰절을 올려요.",
+     "그 대신 어른들은 덕담과 함께 세뱃돈 봉투를 나눠 주셔서 아이들이 1년 내내 손꼽아 기다려요.",
+     "반면 추석은 추수 감사 명절이라 가족들이 송편이라는 반달 모양 떡을 빚고 조상님 산소에 성묘를 가요.",
+     "이 외에도 삼일절과 한글날처럼 우리 역사의 중요한 순간을 기념하는 국경일이 있어요.",
+     "흥미롭게도 요즘은 옛 전통을 지키기보다 긴 연휴를 이용해 해외여행을 가는 사람이 점점 늘고 있어요.",
+     "개인적으로는 혼자 살다 보니 명절을 가족과 다시 가까워질 소중한 기회로 생각해요.",
+     "네, 이게 한국 휴일에 대한 간단한 소개예요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-holiday-experience",
+   "type": "experience",
+   "en": "Tell me about a memorable holiday you celebrated recently. What did you do, and who were you with?",
+   "ko": "최근에 보낸 기억에 남는 명절에 대해 말해 주세요. 무엇을 했고, 누구와 함께했나요?",
+   "tips": [
+    "10/31 기출 주제: 기념 휴일. 혼자 사는 설정이니 '부모님 댁(대전)에 내려간 추석'으로 가족과 모인 이야기를 하세요.",
+    "언제 · 어떻게 갔는지(KTX) → 누가 모였는지 → 송편 · 저녁 · 보름달 → 느낌(혼자 살아서 더 소중했다) 순서입니다."
+   ],
+   "answers": {
+    "IM3": "Oh, a memorable holiday? Let me think. Last Chuseok, I went to my parents' house in Daejeon. I took the KTX train because the highways were too busy. My brother's family was also there. We made songpyeon together and ate a big dinner. In the evening, we went for a walk and looked at the full moon. I made a wish for my family's health. Since I live alone, it was really nice to be with my family. Yeah, that's my most memorable holiday.",
+    "IH": "Oh, a memorable holiday? Let me think. Last Chuseok, I went down to my parents' house in Daejeon, where I grew up. I took the KTX train instead of driving, because I knew the highways would be packed. My older brother's family came from Busan, so the house was full of people for the first time in a long time. On the first day, we all sat around the table and made songpyeon together. My little niece made some really strange-looking rice cakes, and everyone burst out laughing. That night, we had a huge dinner with japchae, jeon, and grilled fish. After dinner, we went for a walk and looked up at the full moon. I made a wish for my parents' health, and it felt really special. Since I live alone, I don't get to feel that kind of warmth very often. Yeah, that's my most memorable holiday.",
+    "AL": "Oh, a memorable holiday? Let me think. Last Chuseok really stands out, because it was the first time in years that my whole family got together. I went down to my parents' place in Daejeon, where I grew up, and I took the KTX train since I knew the highways would be a nightmare. My older brother's family came all the way from Busan, so the house was buzzing with people for the first time in ages. On the first day, we all sat around the low table and made songpyeon together. My little niece's rice cakes came out in the weirdest shapes, and my mom joked that they looked like tiny dinosaurs, so everyone cracked up. That evening, we had a feast with japchae, all kinds of jeon, and grilled fish, and I definitely ate way too much. After dinner, we took a walk around the old neighborhood and looked up at the huge full moon. I quietly made a wish for my parents' health, and for some reason, it got me a little emotional. Living alone, I don't often get to feel that kind of warmth, so the whole weekend really filled me up. Yeah, that's the holiday I remember most."
+   },
+   "answersKo": {
+    "IM3": [
+     "아, 기억에 남는 명절이요?",
+     "생각해 볼게요.",
+     "지난 추석에 대전 부모님 댁에 갔어요.",
+     "고속도로가 너무 막혀서 KTX를 탔어요.",
+     "형(오빠) 가족도 와 있었어요.",
+     "다 같이 송편을 빚고 푸짐한 저녁을 먹었어요.",
+     "저녁에는 산책을 하면서 보름달을 봤어요.",
+     "가족의 건강을 빌었어요.",
+     "혼자 살다 보니 가족과 함께 있는 게 정말 좋았어요.",
+     "네, 그게 제일 기억에 남는 명절이에요."
+    ],
+    "IH": [
+     "아, 기억에 남는 명절이요?",
+     "생각해 볼게요.",
+     "지난 추석에 제가 자란 대전의 부모님 댁에 내려갔어요.",
+     "고속도로가 꽉 막힐 걸 알아서 운전 대신 KTX를 탔어요.",
+     "형(오빠) 가족이 부산에서 와서 오랜만에 집이 사람들로 가득했어요.",
+     "첫날에는 다 같이 상에 둘러앉아 송편을 빚었어요.",
+     "어린 조카가 정말 이상하게 생긴 송편을 만들어서 다들 웃음이 터졌어요.",
+     "그날 밤에는 잡채, 전, 생선구이로 푸짐한 저녁을 먹었어요.",
+     "저녁을 먹고 나서 산책하며 보름달을 올려다봤어요.",
+     "부모님 건강을 빌었는데, 정말 특별한 기분이었어요.",
+     "혼자 살다 보니 그런 따뜻함을 자주 느끼지 못하거든요.",
+     "네, 그게 제일 기억에 남는 명절이에요."
+    ],
+    "AL": [
+     "아, 기억에 남는 명절이요?",
+     "생각해 볼게요.",
+     "지난 추석이 유난히 기억에 남아요, 몇 년 만에 온 가족이 모인 날이었거든요.",
+     "제가 자란 대전의 부모님 댁에 내려갔는데, 고속도로가 지옥일 걸 알아서 KTX를 탔어요.",
+     "형(오빠) 가족이 부산에서 먼 길을 와서 정말 오랜만에 집이 사람들로 북적였어요.",
+     "첫날에는 다 같이 좌식 상에 둘러앉아 송편을 빚었어요.",
+     "어린 조카의 송편이 정말 희한한 모양으로 나와서 엄마가 꼬마 공룡 같다고 농담하시자 다들 빵 터졌어요.",
+     "그날 저녁엔 잡채, 온갖 전, 생선구이로 잔치를 벌였고, 저는 확실히 너무 많이 먹었어요.",
+     "저녁을 먹고 옛 동네를 산책하며 커다란 보름달을 올려다봤어요.",
+     "조용히 부모님 건강을 빌었는데, 왠지 좀 뭉클해졌어요.",
+     "혼자 살면 그런 따뜻함을 자주 느끼지 못해서, 그 주말이 마음을 가득 채워 줬어요.",
+     "네, 그게 제가 가장 기억하는 명절이에요."
+    ]
+   }
+  },
+  {
+   "id": "exam1031-holiday-compare",
+   "type": "comparison",
+   "en": "How have holidays in your country changed compared to the past? What are some of the differences?",
+   "ko": "당신 나라의 명절은 예전과 비교해 어떻게 달라졌나요? 어떤 차이가 있나요?",
+   "tips": [
+    "10/31 기출 주제: 기념 휴일 (14~15번 고난도 비교 · 변화 유형 대비).",
+    "In the past / When I was a kid → But these days → 내 생각(좋은 점 · 아쉬운 점) 순서로 used to, compared to 를 쓰세요."
+   ],
+   "answers": {
+    "IM3": "Okay, let me talk about how holidays have changed. In the past, holidays were all about family. Everyone went to their hometown, and big families got together. Women used to cook a lot of food for many days. But these days, things are very different. Many people travel abroad during long holidays. Also, families buy food instead of cooking everything at home. I think holidays are more relaxing now compared to the past. Yeah, that's how holidays have changed in Korea.",
+    "IH": "Okay, let me talk about how holidays have changed in Korea. When I was a kid, holidays were all about big family gatherings. Dozens of relatives used to come to my grandparents' house, and we stayed there for three days. The women in the family spent days cooking food for the ancestral rites, which was really hard work. But these days, things have changed a lot. Families are smaller, and many people just meet their parents for one day. Also, more and more people buy ready-made food or skip the rites altogether. On top of that, a lot of people use long holidays to travel abroad or simply rest at home. I think it's a good change, because holidays are less stressful now than they used to be. But at the same time, I sometimes miss the noisy, crowded holidays of my childhood. Yeah, that's how holidays have changed.",
+    "AL": "Okay, let me talk about how holidays have changed in Korea, because the difference is pretty striking. When I was a kid, holidays meant one thing: huge family gatherings. Dozens of relatives would pack into my grandparents' house, and we'd spend all three days there together. Behind the scenes, though, the women in the family were stuck in the kitchen for days, preparing food for the ancestral rites, which was honestly exhausting for them. Fast forward to today, and things look completely different. Families have gotten smaller, and a lot of people just visit their parents for a day and head back home. More and more families also buy ready-made holiday food, or even skip the rites altogether. On top of that, the airports are packed during long holidays, because people would rather travel abroad or simply recharge at home. Overall, I think it's a healthy change, since holidays have become much less of a burden compared to the past, especially for women. That said, I do miss the noisy, crowded holidays of my childhood sometimes. Yeah, that's how holidays have changed over the years."
+   },
+   "answersKo": {
+    "IM3": [
+     "명절이 어떻게 달라졌는지 말해 볼게요.",
+     "예전에는 명절이 온통 가족 중심이었어요.",
+     "모두 고향에 갔고, 대가족이 모였어요.",
+     "여자들은 며칠 동안 음식을 잔뜩 만들곤 했어요.",
+     "하지만 요즘은 많이 달라요.",
+     "긴 연휴에 해외여행을 가는 사람이 많아요.",
+     "그리고 집에서 다 만들지 않고 음식을 사는 집도 많아요.",
+     "예전에 비해 지금 명절이 더 여유로운 것 같아요.",
+     "네, 이게 한국 명절이 달라진 모습이에요."
+    ],
+    "IH": [
+     "한국 명절이 어떻게 달라졌는지 말해 볼게요.",
+     "제가 어릴 때 명절은 온통 대가족 모임이었어요.",
+     "친척 수십 명이 할머니 할아버지 댁에 모여서 사흘 동안 지내곤 했어요.",
+     "집안 여자들은 차례 음식을 만드느라 며칠을 보냈는데, 정말 힘든 일이었어요.",
+     "하지만 요즘은 많이 달라졌어요.",
+     "가족 규모가 작아졌고, 부모님을 하루만 뵙고 오는 사람도 많아요.",
+     "또 완성된 음식을 사거나 차례를 아예 생략하는 사람도 점점 늘고 있어요.",
+     "게다가 긴 연휴에 해외여행을 가거나 그냥 집에서 쉬는 사람도 많아요.",
+     "명절이 예전보다 스트레스가 덜해서 좋은 변화라고 생각해요.",
+     "그래도 가끔은 어린 시절의 시끌벅적하고 북적이던 명절이 그리워요.",
+     "네, 이게 명절이 달라진 모습이에요."
+    ],
+    "AL": [
+     "한국 명절이 어떻게 달라졌는지 말해 볼게요, 차이가 꽤 뚜렷하거든요.",
+     "제가 어릴 때 명절은 딱 하나, 대가족 모임을 뜻했어요.",
+     "친척 수십 명이 할머니 할아버지 댁에 꽉 들어차서 사흘 내내 함께 지냈어요.",
+     "그런데 그 뒤에서는 집안 여자들이 차례 음식을 준비하느라 며칠씩 부엌에 묶여 있었는데, 솔직히 정말 고된 일이었어요.",
+     "지금으로 넘어오면 모습이 완전히 달라요.",
+     "가족 규모가 작아졌고, 많은 사람이 부모님을 하루만 뵙고 집으로 돌아가요.",
+     "명절 음식을 사 오거나 아예 차례를 생략하는 집도 점점 늘고 있어요.",
+     "게다가 사람들이 해외여행을 가거나 그냥 집에서 재충전하는 걸 더 원해서 긴 연휴엔 공항이 꽉 차요.",
+     "전반적으로 예전에 비해 명절이 특히 여성들에게 훨씬 덜 부담스러워져서 건강한 변화라고 생각해요.",
+     "그렇긴 해도 어린 시절의 시끌벅적하고 북적이던 명절이 가끔 정말 그리워요.",
+     "네, 이게 세월이 흐르며 명절이 달라진 모습이에요."
+    ]
+   }
+  }
+ ]
+}

@@ -51,6 +51,11 @@ async function buildQuestions(set, opts = {}) {
     }
     const t = byId[slot.topic];
     if (!t) continue;
+    // 기출 다시 보기: 정해 둔 문항을 순서대로
+    if (slot.ids) {
+      slot.ids.map(id => (t.questions || []).find(q => q.id === id)).filter(Boolean).forEach(q => items.push({ kind: 'q', topic: t, q, prep, ans, type: q.type }));
+      continue;
+    }
     let pool = (t.questions || []).filter(q => !slot.type || q.type === slot.type);
     pick(pool, slot.count || 1).forEach(q => items.push({ kind: 'q', topic: t, q, prep, ans, type: q.type }));
   }

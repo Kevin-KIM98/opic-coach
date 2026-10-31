@@ -273,6 +273,16 @@ def main():
         d = load(DATA / name)
         if d is None:
             continue
+        if name == "mock-sets.json":
+            for st in d.get("sets", []):
+                for slot in st.get("slots", []):
+                    if not slot.get("ids"):
+                        continue
+                    entry = next((e for e in (index or {}).get("topics", []) if e["id"] == slot.get("topic")), None)
+                    qids = {q.get("id") for q in ((load(DATA / entry["file"]) or {}).get("questions", []) if entry else [])}
+                    for qid in slot["ids"]:
+                        if qid not in qids:
+                            err(f"data/mock-sets.json: 세트 '{st.get('id')}' 의 문항 '{qid}' 가 주제 '{slot.get('topic')}' 에 없습니다")
         if name == "patterns.json":
             for g in d.get("groups", []):
                 for i, it in enumerate(g.get("items", [])):
