@@ -1,6 +1,6 @@
 {
   "_comment": "OPIc 시험 운영 규칙과 공휴일. 앱은 이 파일로 '다음 응시 가능일'과 접수 마감을 계산합니다. holidays / coverageUntil 은 tools/update-exam-schedule.mjs 가 자동 갱신합니다.",
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-11-01",
   "coverageUntil": "2027-12-31",
   "exam": {
     "id": "opic",
